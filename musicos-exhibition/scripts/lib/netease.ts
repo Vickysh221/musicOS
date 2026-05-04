@@ -72,6 +72,8 @@
  */
 
 import { createRequire } from 'node:module';
+import { readFileSync } from 'node:fs';
+import path from 'node:path';
 
 const require = createRequire(import.meta.url);
 
@@ -90,17 +92,44 @@ export interface AudioResult {
 }
 
 /**
+ * Try to load a NetEase session cookie from ncm-cli config.
+ *
+ * ncm-cli stores its config at ~/.config/ncm-cli/config.json.
+ * If a `cookie` field is present there, we pass it to API calls to get
+ * full-length tracks instead of 30-second trial clips.
+ *
+ * @returns Cookie string (e.g. "MUSIC_U=<token>; __csrf=<csrf>") or undefined
+ */
+function loadNcmCookie(): string | undefined {
+  try {
+    const configPath = path.join(
+      process.env['HOME'] ?? '',
+      '.config/ncm-cli/config.json',
+    );
+    const config = JSON.parse(readFileSync(configPath, 'utf8')) as Record<string, unknown>;
+    const cookie = config['cookie'] as string | undefined;
+    return cookie ?? undefined;
+  } catch {
+    return undefined;
+  }
+}
+
+/**
  * Resolve a NetEase audio streaming URL for a given numeric song ID.
  *
  * @param originalId - The numeric (original) song ID, e.g. 21968201
  * @param level      - Quality level; default 'standard' (128kbps mp3)
+ * @param cookie     - Optional NetEase session cookie for full-length tracks
  * @returns AudioResult or null if the song is unavailable/login-gated
  */
 export async function getAudioUrl(
   originalId: number,
-  level: 'standard' | 'higher' | 'exhigh' | 'lossless' = 'standard'
+  level: 'standard' | 'higher' | 'exhigh' | 'lossless' = 'standard',
+  cookie?: string,
 ): Promise<AudioResult | null> {
-  const result = await song_url_v1({ id: originalId, level });
+  const params: Record<string, unknown> = { id: originalId, level };
+  if (cookie) params['cookie'] = cookie;
+  const result = await song_url_v1(params);
   const body = result.body as {
     data?: Array<{
       url: string | null;
@@ -122,22 +151,32 @@ export async function getAudioUrl(
 }
 
 /**
- * Resolve cover image URL and artist name for a given numeric song ID.
+ * Resolve cover image URL, duration, and artist name for a given numeric song ID.
  *
  * @param originalId - The numeric (original) song ID, e.g. 21968201
- * @returns { coverUrl, name, artists } or null
+ * @param cookie     - Optional NetEase session cookie
+ * @returns { name, coverUrl, artists, durationMs } or null
  */
-export async function getSongDetail(originalId: number): Promise<{
+export async function getSongDetail(
+  originalId: number,
+  cookie?: string,
+): Promise<{
   name: string;
   coverUrl: string;
   artists: string[];
+  /** Full track duration in milliseconds (from metadata, always correct regardless of auth) */
+  durationMs: number;
 } | null> {
-  const result = await song_detail({ ids: String(originalId) });
+  const params: Record<string, unknown> = { ids: String(originalId) };
+  if (cookie) params['cookie'] = cookie;
+  const result = await song_detail(params);
   const body = result.body as {
     songs?: Array<{
       name: string;
       al: { picUrl: string };
       ar: Array<{ name: string }>;
+      /** Duration in milliseconds */
+      dt: number;
     }>;
   };
   const song = body?.songs?.[0];
@@ -146,5 +185,46 @@ export async function getSongDetail(originalId: number): Promise<{
     name: song.name,
     coverUrl: song.al.picUrl,
     artists: song.ar.map((a) => a.name),
+    durationMs: song.dt,
   };
+}
+
+/**
+ * Unified meta fetch: audio CDN URL + album cover + duration for a NetEase song.
+ *
+ * Duration is always read from song metadata (dt field), so it reflects the full
+ * track length even when auth is unavailable and the audio URL is a 30s preview.
+ *
+ * @param neteaseSongId - NetEase song ID as a string, e.g. '21968201'
+ * @returns SongMeta or null if the song is unavailable
+ */
+export async function fetchSongMeta(neteaseSongId: string): Promise<SongMeta | null> {
+  const id = Number(neteaseSongId);
+
+  // Try auth cookie from ncm-cli — allows full-length playback if available
+  const cookie = loadNcmCookie();
+
+  const [audioResult, detail] = await Promise.all([
+    getAudioUrl(id, 'standard', cookie),
+    getSongDetail(id, cookie),
+  ]);
+
+  if (!audioResult || !detail) return null;
+
+  return {
+    audio_url: audioResult.url,
+    cover_url: detail.coverUrl,
+    // Use metadata duration (always full track length regardless of auth)
+    duration_seconds: Math.round(detail.durationMs / 1000),
+    free_trial: audioResult.freeTrialInfo !== null,
+  };
+}
+
+export interface SongMeta {
+  audio_url: string;
+  cover_url: string;
+  /** Full track duration in seconds (from metadata, accurate even for trial clips) */
+  duration_seconds: number;
+  /** true = audio_url is a 30s preview clip; false = full track */
+  free_trial: boolean;
 }
