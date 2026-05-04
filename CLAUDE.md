@@ -5,6 +5,8 @@ anchor outward, overlaying the user's listening data, and producing annotated pl
 
 **Full spec:** `Foundations/sonic_cartography_spec_v0.3.md` — read it before starting any task.
 
+**Sourcing principles:** `docs/superpowers/plans/sonic_cartography_sourcing_principles.md` — read it before any generative task (map expansion, playlist annotation, episode narration, fact-check pass). Core rule: every `fact`-tier claim requires ≥2 independent sources, at least 1 Tier 1–2. Run the §8 self-check before every delivery.
+
 ---
 
 ## Core architectural rule: nodes are permanent singletons
@@ -74,7 +76,7 @@ Never embed full node objects in a map file. Maps store `node_ids` (references).
 4. **Expand map.** Three axes (upward/lateral/downward), depth caps 15/12/20, stopping rules §3.3.
 5. **For each node:** check registry first → `put_node(enrich=True)` if exists, `put_node()` if new.
 6. **Compute coverage.** `from tools.node_registry import update_coverage_for_node`. Run after each node is saved.
-7. **Research.** ≤25 web searches, ≤15 web fetches. Cite epistemic tier per §4.3.
+7. **Research.** ≤25 web searches, ≤15 web fetches. Cite epistemic tier per §4.3. Apply double-reference rule per sourcing principles (see above): fact-tier claims need ≥2 independent sources; downgrade or remove if unverifiable. Extra caution on chart positions, personnel, equipment, direct quotations.
 8. **Narrative slots.** Priority: production_facts → member_dynamics → cultural_venue → instrumentation_details → release_circumstances.
 9. **Self-check.** Run spec §9.3 checklist. Use `resolve_map()` to dereference node_ids for inspection.
 10. **Write output.** `maps/<slug>.map.json` + `playlists/<slug>.playlist.md` + (if audio mode) `episodes/<slug>.episode.json` + `episodes/<slug>.episode.md`.
