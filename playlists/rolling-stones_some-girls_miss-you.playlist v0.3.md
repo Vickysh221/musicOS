@@ -173,7 +173,7 @@ Blondie's internal discomfort with the disco direction — Stein and Burke both 
 
 **Genre**: Art punk / proto-new-wave
 **Bass role in this episode**: muted — Devo's story is voicing/refusal, not bass; revisit in episode 2
-**Bridge**: Devo 把迪斯科的节拍工具用来拒绝迪斯科——第 9 首再回贝斯主线。
+**Bridge**: Devo 把迪斯科的节拍工具用来拒绝迪斯科,这条贝斯线索在这里短暂沉默,等会儿到 Chic 的 Good Times 再续上主线。
 
 [Listen on NetEase](https://music.163.com/#/song?id=6316)
 
