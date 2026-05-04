@@ -1,3 +1,33 @@
+export type RedHeartTier = 'hit' | 'adjacent' | 'blind_spot';
+
+export interface RedHeartSeed {
+  type: 'song' | 'artist' | 'album';
+  value: string;
+}
+
+export type ConnectionKind =
+  | 'bassline_prototype'
+  | 'groove_dna'
+  | 'personnel_bridge_bass'
+  | 'gear_lineage_bass';
+
+export type ConnectionDirection =
+  | 'from_inspires_to'
+  | 'lateral_dialogue'
+  | 'inversion_counterpoint';
+
+export type EvidenceBasis = 'musicological' | 'historical' | 'sensory';
+
+export interface ConnectionRef {
+  id: string;
+  other_position: number;
+  other_label: string;
+  kind: ConnectionKind;
+  evidence_basis: EvidenceBasis;
+  narration_zh: string;
+  narration_en: string;
+}
+
 export type ExhibitType =
   | 'opening'
   | 'ancestor'
@@ -36,6 +66,16 @@ export interface TrackExhibit extends ExhibitBase {
   album_cover_url: string | null;
   duration_seconds: number | null;
   unavailable: boolean;
+  genre: string | null;
+  episode_focus: string;
+  red_heart_tier: RedHeartTier;
+  red_heart_matched_seeds: RedHeartSeed[];
+  muted_this_episode: boolean;
+  bridge_narration_zh: string | null;
+  bridge_narration_en: string | null;
+  connections_in: ConnectionRef[];
+  connections_out: ConnectionRef[];
+  connections_lateral: ConnectionRef[];
 }
 
 export interface NonTrackExhibit extends ExhibitBase {

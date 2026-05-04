@@ -25,6 +25,16 @@ describe('Exhibit types', () => {
       transcript_en_status: 'missing',
       narrator_persona_zh: null,
       narrator_persona_en: null,
+      genre: 'funk rock',
+      episode_focus: 'bassline_DNA',
+      red_heart_tier: 'hit',
+      red_heart_matched_seeds: [{ type: 'song', value: 'Miss You' }],
+      muted_this_episode: false,
+      bridge_narration_zh: null,
+      bridge_narration_en: null,
+      connections_in: [],
+      connections_out: [],
+      connections_lateral: [],
     };
     expect(t.kind).toBe('track');
     expect(t.position).toBe(6);
