@@ -7,7 +7,14 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run sync-data && vite",
+    "build": "npm run sync-data && vite build",
+    "preview": "vite preview --port 4173",
+    "test": "vitest run",
+    "sync-data": "mkdir -p public/data && cp data/exhibition.json public/data/exhibition.json 2>/dev/null || true",
+    "build-data": "tsx scripts/build-exhibition-json.ts && npm run sync-data",
+    "fetch-audio": "tsx scripts/fetch-audio.ts && npm run sync-data",
+    "spike": "tsx scripts/spike-ncm.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,10 +22,19 @@
   "type": "module",
   "devDependencies": {
     "@types/node": "^25.6.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
     "tsx": "^4.21.0",
-    "typescript": "^6.0.3"
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10",
+    "vitest": "^4.1.5"
   },
   "dependencies": {
-    "NeteaseCloudMusicApi": "^4.31.0"
+    "NeteaseCloudMusicApi": "^4.31.0",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "wouter": "^3.9.0",
+    "zustand": "^5.0.12"
   }
 }
