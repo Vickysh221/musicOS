@@ -9,7 +9,7 @@ const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const VAULT_ROOT = path.resolve(__dirname, '../..');
 const PLAYLIST = path.join(
   VAULT_ROOT,
-  'playlists/rolling-stones_some-girls_miss-you.playlist v0.2.md',
+  'playlists/rolling-stones_some-girls_miss-you.playlist v0.3.md',
 );
 const EPISODE = path.join(
   VAULT_ROOT,
