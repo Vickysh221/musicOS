@@ -1,0 +1,52 @@
+{
+  "id": "khruangbin_con-todo-el-mundo_maria-tambien",
+  "artist": "Khruangbin",
+  "period": {
+    "label": "Con Todo el Mundo era / 2018-2019 global funk",
+    "year_start": 2017,
+    "year_end": 2019
+  },
+  "works": [
+    {
+      "title": "Maria Tambien",
+      "type": "track",
+      "year": 2018
+    },
+    {
+      "title": "Friday Morning",
+      "type": "track",
+      "year": 2018
+    },
+    {
+      "title": "Con Todo el Mundo",
+      "type": "album",
+      "year": 2018
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "global funk / psychedelic soul / neo-soul",
+    "geographic_locus": "Houston, TX — Lincoln Manor (rural Texas barn studio)",
+    "historical_role": "Khruangbin operationalized the Remain in Light-descended working method — building tracks from drum loop foundations upward — to absorb and re-emit non-Western funk and soul from Iran, Thailand, and the Mediterranean, demonstrating that the rock x funk translation aesthetic could be applied to any global source material without collapsing the two-layer distinctness."
+  },
+  "narrative_slots": {
+    "member_dynamics": "The trio of Laura Lee (bass), Mark Speer (guitar), and Donald Ray 'DJ' Williams Jr. (drums) works from a self-described formula: DJ's drum foundation first, then Laura Lee's bass overdub, then Mark's guitar last. This production hierarchy — rhythm section before melody instrument — mirrors Talking Heads/Brian Eno's Remain in Light session approach and is the inverse of conventional rock recording.",
+    "production_facts": "Con Todo el Mundo was recorded and mixed at Lincoln Manor, a converted Texas barn, and released January 26, 2018 on Dead Oceans and Night Time Stories. The album draws from 1970s Iranian funk and soul alongside earlier Southeast Asian and Mediterranean source material, filtered through the band's minimal psychedelic approach. The NME review highlighted the album's 'spacious, psychedelic funk.'",
+    "instrumentation_details": "Laura Lee's bass playing on tracks like 'Maria Tambien' provides the rhythmic anchor that in conventional funk would be shared between bass and rhythm guitar — Khruangbin compresses the two-instrument funk engine into one instrument, letting Speer's guitar float above like a lead vocalist. The tonal palette is clean and warm, recalling the Chic/Nile Rodgers approach of clarity over grit.",
+    "release_circumstances": "Con Todo el Mundo was released January 26, 2018 to widespread critical acclaim and established Khruangbin as one of the defining acts of the 2010s global-funk revival. A dub companion album, Hasta El Cielo, was released the following year.",
+    "cultural_venue": null
+  },
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2026-05-04: August 10",
+      "红心 2026-05-04: Maria También"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Con_Todo_el_Mundo",
+    "https://en.wikipedia.org/wiki/Khruangbin",
+    "https://www.nme.com/reviews/khruangbin-con-todo-el-mundo-review-2222812"
+  ]
+}

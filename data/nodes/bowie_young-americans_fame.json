@@ -1,0 +1,52 @@
+{
+  "id": "bowie_young-americans_fame",
+  "artist": "David Bowie",
+  "period": {
+    "label": "Young Americans era / plastic soul pivot",
+    "year_start": 1974,
+    "year_end": 1975
+  },
+  "works": [
+    {
+      "title": "Fame",
+      "type": "track",
+      "year": 1975
+    },
+    {
+      "title": "Young Americans",
+      "type": "track",
+      "year": 1975
+    },
+    {
+      "title": "Young Americans",
+      "type": "album",
+      "year": 1975
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "blue-eyed soul / plastic soul — white rock star translating Black R&B",
+    "geographic_locus": "Sigma Sound Studios, Philadelphia / Electric Lady Studios, New York City",
+    "historical_role": "David Bowie's Philadelphia soul pivot on Young Americans (1975) — recording at Sigma Sound with Black session musicians and labelling the result 'plastic soul' — established the template for white rock stars translating Black American music three years before Miss You executed the same move with disco, making Bowie's soul experiment the direct precedent for the Stones' disco experiment."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Guitarist Carlos Alomar, recruited for the sessions, served as Bowie's guide into Black American music and became one of his most frequent long-term collaborators. Luther Vandross — then unknown — contributed backing vocal arrangements. John Lennon co-wrote 'Fame' (with Alomar) at Electric Lady Studios, adding backing vocals and acoustic guitar; it became Bowie's first US #1 single.",
+    "cultural_venue": "Sigma Sound in Philadelphia was the home of the Philadelphia International Records empire — the studio of Gamble and Huff, the architects of the Philly soul sound. Bowie recording there was a deliberate immersion in Black American musical infrastructure, analogous to Jagger studying disco at Studio 54.",
+    "production_facts": "Sessions at Sigma Sound ran August-November 1974, moving rapidly — most tracks recorded live with full band as continuous single takes. Producers Tony Visconti and Harry Maslin. 'Fame' was recorded later at Electric Lady Studios, NYC. Album reached #9 US, #2 UK; 'Fame' hit US #1 in 1975.",
+    "instrumentation_details": "Willie Weeks played bass and Andy Newmark played drums — both Black American session musicians who had worked in soul and R&B contexts. Their rhythm section work gave Young Americans its authentic groove foundation, displacing Bowie's previous glam-rock band entirely.",
+    "release_circumstances": "Young Americans released March 7, 1975 on RCA Records. Bowie called the album's sound 'plastic soul' — an honest self-description of a white British artist performing Black American music with high craft but acknowledged artificiality, the same dynamic that Keith Richards described when he said Miss You 'was calculated to be a disco record.'"
+  },
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2021-10-25: Fame"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Young_Americans",
+    "https://en.wikipedia.org/wiki/Young_Americans_(song)",
+    "https://www.phillyvoice.com/sigma-kids-david-bowie-philadelphia-young-americans/",
+    "https://www.davidbowie.com/blog/2025/1/16/young-americans-50th-anniversary-vinyl-due-in-march"
+  ]
+}

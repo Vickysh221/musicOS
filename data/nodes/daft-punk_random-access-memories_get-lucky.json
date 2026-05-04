@@ -1,0 +1,52 @@
+{
+  "id": "daft-punk_random-access-memories_get-lucky",
+  "artist": "Daft Punk",
+  "period": {
+    "label": "Random Access Memories era / 2008-2013 disco revival",
+    "year_start": 2008,
+    "year_end": 2013
+  },
+  "works": [
+    {
+      "title": "Get Lucky",
+      "type": "track",
+      "year": 2013
+    },
+    {
+      "title": "Lose Yourself to Dance",
+      "type": "track",
+      "year": 2013
+    },
+    {
+      "title": "Random Access Memories",
+      "type": "album",
+      "year": 2013
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "French electronic / disco revival / funk-pop",
+    "geographic_locus": "Paris (duo origin) / Los Angeles and New York (recording sessions, 2008-2012)",
+    "historical_role": "Daft Punk explicitly closed the Chic-to-Miss-You-to-RAM lineage arc by recruiting Nile Rodgers — Chic's co-founder and the guitarist whose rhythm playing defined the disco sound that the Rolling Stones translated on 'Miss You' — to perform on 'Get Lucky,' making the descent line audible and intentional: Rodgers's guitar is the same instrument in the same idiom, six years removed."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Daft Punk (Thomas Bangalter and Guy-Manuel de Homem-Christo) first met Nile Rodgers at a 1997 New York listening party for their debut album Homework and became friends. Their RAM collaboration was therefore a reunion spanning 16 years of mutual respect. Rodgers won three Grammy Awards for his work on RAM at the 2014 ceremony.",
+    "production_facts": "Recording sessions for Random Access Memories took place from 2008 to 2012 across Henson Recording Studios and Conway Studios (Los Angeles), Electric Lady Studios (New York), and Gang Recording Studio (Paris). The album was released May 17, 2013 on Columbia Records and won Album of the Year, Record of the Year, and Best Pop Duo/Group Performance at the 2014 Grammys.",
+    "instrumentation_details": "Nile Rodgers played his 1959 'Hitmaker' Fender Stratocaster on 'Get Lucky' — the same guitar he used on Chic recordings in the 1977-1979 period. The track features live drums by Omar Hakim (who also played on Bowie's 'Let's Dance') and Pharrell Williams on vocals, creating a direct personnel overlap with multiple nodes in this lineage.",
+    "release_circumstances": "Released April 19, 2013 as lead single from Random Access Memories. Became a worldwide #1 hit. The album sold over 3.7 million copies in its first week across all formats and became a cultural event marking a mainstream re-embrace of live-instrumented disco-funk.",
+    "cultural_venue": null
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2023-10-11: I Feel It Coming (同艺人不同时期)",
+      "红心 2025-04-16: Veridis Quo (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Get_Lucky_(Daft_Punk_song)",
+    "https://en.wikipedia.org/wiki/Random_Access_Memories",
+    "https://en.wikipedia.org/wiki/Nile_Rodgers"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "sly-family-stone_riot_family-affair",
+  "artist": "Sly & the Family Stone",
+  "period": {
+    "label": "There's a Riot Goin' On era",
+    "year_start": 1971,
+    "year_end": 1971
+  },
+  "works": [
+    {
+      "title": "Family Affair",
+      "type": "track",
+      "year": 1971
+    },
+    {
+      "title": "There's a Riot Goin' On",
+      "type": "album",
+      "year": 1971
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "psychedelic funk / proto-soul — drum machine introspection",
+    "geographic_locus": "Record Plant Studios, Sausalito, CA / Stone home studio, Bel Air",
+    "historical_role": "Sly Stone's dark, drug-addled 1971 album reoriented funk from collective euphoria toward solitary density — its primitive drum machine on 'Family Affair' prefigured the mechanized rhythms that would define late-70s disco and post-disco production, including the four-on-the-floor pulse of Miss You."
+  },
+  "narrative_slots": {
+    "member_dynamics": "According to other Family Stone members, most of the album was performed by Sly alone, overdubbing and using a drum machine while the band fractured. For 'Family Affair', Stone enlisted outside collaborators including Billy Preston, Ike Turner, and Bobby Womack instead of his bandmates, marking the end of the band's communal creative model.",
+    "cultural_venue": "The shift from the utopian Haight-Ashbury scene of the late 1960s to the paranoid isolation of Stone's Bel Air home studio encapsulates the collapse of the counterculture — the album is as much a document of a cultural moment as a piece of music.",
+    "production_facts": "Stone used the Maestro Rhythm King MRK-2 drum machine, overdubbing its sounds manually rather than using its presets, creating a deliberately dense and claustrophobic mix. 'Family Affair' is one of the earliest hit recordings to prominently feature a drum machine, predating its widespread adoption by nearly a decade.",
+    "instrumentation_details": "Sly Stone overdubbed nearly all instruments himself—vocals, bass guitar, electric guitar, and rhythm machine preset—while Billy Preston played electric piano. Stone deliberately abandoned the Maestro Rhythm King MRK-2's preset rhythms, manually overdubbing and re-recording drum layers multiple times to create the record's signature dense, claustrophobic texture.",
+    "release_circumstances": "Released November 1971 on Epic Records. 'Family Affair' became the band's fourth and final number-one pop hit. The album is now ranked among Rolling Stone's 500 Greatest Albums of All Time and is widely cited as a turning point in funk and soul history."
+  },
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/There's_a_Riot_Goin'_On",
+    "https://howlandechoes.com/2016/11/making-of-sly-and-the-family-stone-theres-a-riot-goin-on/",
+    "https://reverb.com/news/gear-tribute-the-maestro-rhythm-king-mrk2-sly-stones-favorite-drum-machine"
+  ]
+}

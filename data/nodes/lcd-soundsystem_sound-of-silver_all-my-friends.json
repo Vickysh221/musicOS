@@ -1,0 +1,51 @@
+{
+  "id": "lcd-soundsystem_sound-of-silver_all-my-friends",
+  "artist": "LCD Soundsystem",
+  "period": {
+    "label": "Sound of Silver era / 2005-2007 DFA dance-punk",
+    "year_start": 2006,
+    "year_end": 2007
+  },
+  "works": [
+    {
+      "title": "All My Friends",
+      "type": "track",
+      "year": 2007
+    },
+    {
+      "title": "Someone Great",
+      "type": "track",
+      "year": 2007
+    },
+    {
+      "title": "Sound of Silver",
+      "type": "album",
+      "year": 2007
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "dance-punk / art-rock / post-disco",
+    "geographic_locus": "New York City, NY — DFA Records / Brooklyn scene",
+    "historical_role": "James Murphy positioned LCD Soundsystem as the obsessive rock-meets-dance translator of the 2000s; 'All My Friends' carries the same late-night emotional register as 'Miss You' — aging, melancholy, urban disco — into the 21st century, with Murphy's explicit debts to Talking Heads and 70s/80s dance music closing a direct aesthetic loop to the Miss You lineage."
+  },
+  "narrative_slots": {
+    "member_dynamics": "James Murphy wrote, produced, and performed the core of LCD Soundsystem, with 'All My Friends' co-written by Pat Mahoney and Tyler Pope. Murphy's persona as an older, self-aware rock fan making dance music — he famously called his debut single 'Losing My Edge' a farewell to being the coolest person in the room — mirrors the emotional stance of 'Miss You': rock engaging disco with full awareness of the translation involved.",
+    "production_facts": "Sound of Silver was produced by Murphy and released March 12, 2007 on DFA Records/Capitol Records. The album was named the second best album of 2007 by Pitchfork and 'All My Friends' appeared in Time magazine's Top 10 Songs of 2007. The track is built on a repetitive piano melody in A major that gradually increases in volume — a minimalist disco-rock escalation.",
+    "instrumentation_details": "The piano ostinato that drives 'All My Friends' for nearly eight minutes references Terry Riley and Krautrock minimalism filtered through the same Talking Heads influence that shaped 'Once in a Lifetime' — while the song's rhythmic bed is four-on-the-floor disco. The two layers remain audibly distinct: the piano is rock music's introspection, the beat is the dance floor.",
+    "release_circumstances": "Released as the second single from Sound of Silver on May 28, 2007. Pitchfork's track of the year candidate. Franz Ferdinand and John Cale both covered the song for B-sides — indicating its immediate cultural penetration across rock scenes.",
+    "cultural_venue": null
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2024-05-24: Dance Yrself Clean (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/All_My_Friends_(LCD_Soundsystem_song)",
+    "https://en.wikipedia.org/wiki/Sound_of_Silver",
+    "https://en.wikipedia.org/wiki/LCD_Soundsystem"
+  ]
+}

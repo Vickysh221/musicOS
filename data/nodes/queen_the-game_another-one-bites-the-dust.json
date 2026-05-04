@@ -1,0 +1,55 @@
+{
+  "id": "queen_the-game_another-one-bites-the-dust",
+  "artist": "Queen",
+  "period": {
+    "label": "The Game era / funk pivot",
+    "year_start": 1980,
+    "year_end": 1980
+  },
+  "works": [
+    {
+      "title": "Another One Bites the Dust",
+      "type": "track",
+      "year": 1980
+    },
+    {
+      "title": "Crazy Little Thing Called Love",
+      "type": "track",
+      "year": 1979
+    },
+    {
+      "title": "The Game",
+      "type": "album",
+      "year": 1980
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "arena rock pivoting to funk/disco via Chic influence",
+    "geographic_locus": "Musicland Studios, Munich",
+    "historical_role": "John Deacon translated direct studio exposure to Chic (sitting next to Nile Rodgers while Good Times was recorded) into a bass-driven funk groove two years after Miss You, demonstrating how Chic radiated outward to reshape rock bands across the Atlantic."
+  },
+  "narrative_slots": {
+    "member_dynamics": "John Deacon wrote and largely tracked the song himself -- bass, piano, electric guitar, and handclaps -- while drummer Roger Taylor actively disliked it and the band debated including it at all. Brian May contributed guitar depth but the track was functionally Deacon's vision imposed on a resistant band.",
+    "cultural_venue": "Bernard Edwards told NME that the song came about because Deacon spent some time hanging out at Chic's studio, and Nile Rodgers confirmed Deacon was sitting beside him during the Good Times recording session -- making the creative transmission unusually direct and personal.",
+    "production_facts": "Recorded at Musicland Studios in Munich, produced by Reinhold Mack. Roger Taylor added a drum loop; Brian May used an Eventide Harmonizer. Not planned as a single until Michael Jackson, a regular at Queen concerts, personally urged Deacon to release it.",
+    "instrumentation_details": null,
+    "release_circumstances": "Released as the fourth single from The Game in August 1980, it reached number one on the US Billboard Hot 100 and spent 31 weeks on the chart -- more than any other song that year."
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2022-06-27: I Want to Break Free (同艺人不同时期)",
+      "红心 2022-07-07: Radio Ga Ga (同艺人不同时期)",
+      "红心 2022-11-09: Somebody to Love (同艺人不同时期)",
+      "红心 2023-07-03: The Millionaire Waltz (同艺人不同时期)",
+      "红心 2024-04-27: Play the Game (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Another_One_Bites_the_Dust",
+    "https://ultimateclassicrock.com/queen-another-one-bites-the-dust-disco/"
+  ],
+  "secondary_anchor_candidate": true
+}

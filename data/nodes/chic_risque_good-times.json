@@ -1,0 +1,52 @@
+{
+  "id": "chic_risque_good-times",
+  "artist": "Chic",
+  "period": {
+    "label": "Risque era / disco peak",
+    "year_start": 1978,
+    "year_end": 1979
+  },
+  "works": [
+    {
+      "title": "Good Times",
+      "type": "track",
+      "year": 1979
+    },
+    {
+      "title": "Le Freak",
+      "type": "track",
+      "year": 1978
+    },
+    {
+      "title": "Risque",
+      "type": "album",
+      "year": 1979
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "disco / funk — precision groove architecture",
+    "geographic_locus": "Power Station Studio, New York City / Studio 54 (cultural locus)",
+    "historical_role": "Nile Rodgers and Bernard Edwards architected the sonic vocabulary of Studio 54's peak — their locked rhythm-guitar-and-bass interplay on 'Good Times' and 'Le Freak' defined how disco sounded at its most refined, and their bassline on 'Good Times' was directly sampled for hip-hop's founding document, 'Rapper's Delight', making Chic the hinge between disco and hip-hop."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Nile Rodgers (guitar) and Bernard Edwards (bass) formed the creative core — Rodgers described their interplay as 'telepathic.' The 'Good Times' bassline was written the morning of recording: Rodgers had written the charts, Edwards arrived late, and Rodgers started screaming 'Walk!' over the drums and Edwards walked — the bassline was essentially improvised in the session.",
+    "cultural_venue": "'Le Freak' was written on New Year's Eve 1977 after Grace Jones invited Rodgers and Edwards to Studio 54, but they couldn't get in — so they went to Rodgers' apartment and jammed instead, producing the song in a single night. The Studio 54 rejection became the fuel for the anthem of Studio 54's era.",
+    "production_facts": "'Good Times' was recorded at Power Station in New York City in 1978-79 and released June 4, 1979. It hit US #1 on August 18, 1979, becoming Atlantic Records' best-selling 45 rpm single at that time. Bernard Edwards' bassline was voted #1 greatest bassline of all time by Bass Player Magazine.",
+    "instrumentation_details": "Edwards played a Fender bass stayed at the first five frets for a fat, chunky sound on the low E and A strings. The rhythm section locked so tightly that the 'Good Times' bassline was recreated note-for-note by The Sugarhill Gang for 'Rapper's Delight' (1979), requiring a legal settlement that gave Edwards and Rodgers co-writing credit.",
+    "release_circumstances": "'Good Times' reached US #1 the same month Miss You held the top spot in summer 1978-79. The Sugarhill Gang's recreation of the bassline for 'Rapper's Delight' (1979) launched commercial hip-hop — making Chic the sonic bridge between disco and the next era."
+  },
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2026-01-07: Good Times"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Good_Times_(Chic_song)",
+    "https://en.wikipedia.org/wiki/Chic_(band)",
+    "https://en.wikipedia.org/wiki/Bernard_Edwards",
+    "https://www.mensjournal.com/news/1979-no-1-hit-voted-greatest-bassline-of-all-time-by-bass-players"
+  ]
+}

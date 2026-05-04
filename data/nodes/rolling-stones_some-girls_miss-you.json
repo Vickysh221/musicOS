@@ -1,0 +1,50 @@
+{
+  "id": "rolling-stones_some-girls_miss-you",
+  "artist": "The Rolling Stones",
+  "period": {
+    "label": "Some Girls era / 1976-1981 disco-funk pivot",
+    "year_start": 1977,
+    "year_end": 1978
+  },
+  "works": [
+    {
+      "title": "Miss You",
+      "type": "track",
+      "year": 1978
+    },
+    {
+      "title": "Some Girls",
+      "type": "album",
+      "year": 1978
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "rock x disco/funk translation",
+    "geographic_locus": "Paris (recording) / NYC Studio 54 (cultural locus)",
+    "historical_role": "Stones' first disco-influenced single, knocking Saturday Night Fever soundtrack from US #1 — became the canonical case of a major rock band performing disco's genetic material under rock's stylistic envelope, ahead of Queen's similar pivot two years later."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Recorded during Keith Richards' drug-trial distraction — Mick Jagger took unusual artistic control. The 'four-on-the-floor' pulse came from Billy Preston demoing it to Mick at El Mocambo Toronto, March 1977. Bill Wyman went 'to quite a few clubs' (per engineer Chris Kimsey) to dial in the bassline. Keith's resistance to disco is documented but he later said the song 'was a damn good disco record; it was calculated to be one'.",
+    "cultural_venue": "Studio 54 (1977-1980 NYC) is the song cultural locus. Jagger was a regular. The disco-rock fusion was reverse-imported from Black/queer/Latino dance culture into the white rock elite.",
+    "production_facts": "Engineered by Chris Kimsey at Pathe Marconi Studios, Paris. The dry drum sound — what Charlie Watts called Philadelphia-style drumming — was deliberate. The 12-inch single (8+ minutes) was mixed by Bob Clearmountain, Stones first 12-inch.",
+    "instrumentation_details": "Harmonica: Sugar Blue (James Whiting), 22-year-old American street musician discovered by Sandy Whitelaw in the Paris Metro. Saxophone: Mel Collins, brought in because Bobby Keys relationship with Jagger was strained.",
+    "release_circumstances": "Released 19 May 1978 as Some Girls' first single. Hit US #1 on 5 August, ending Andy Gibb's seven-week reign. Stones' eighth and final US number-one. Reached UK #3."
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2023-07-06: Sympathy for the Devil (同艺人不同时期)",
+      "红心 2025-05-27: Streets Of Love (Remastered 2009) (同艺人不同时期)",
+      "红心 2025-05-31: Street Fighting Man (Stereo Version) (同艺人不同时期)",
+      "红心 2025-05-31: Don't Stop (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Miss_You_(Rolling_Stones_song)",
+    "https://en.wikipedia.org/wiki/Some_Girls",
+    "https://ultimateclassicrock.com/the-rolling-stones-miss-you/"
+  ],
+  "secondary_anchor_candidate": true
+}

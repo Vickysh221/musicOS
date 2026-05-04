@@ -1,0 +1,49 @@
+{
+  "id": "mkgee_two-star_you-dreamed-of-me",
+  "artist": "Mk.gee",
+  "period": {
+    "label": "Two Star & the Dream Police era / 2024 alternative R&B",
+    "year_start": 2023,
+    "year_end": 2024
+  },
+  "works": [
+    {
+      "title": "You Dreamed of Me",
+      "type": "track",
+      "year": 2024
+    },
+    {
+      "title": "Candy",
+      "type": "track",
+      "year": 2024
+    },
+    {
+      "title": "Two Star & the Dream Police",
+      "type": "album",
+      "year": 2024
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "alternative R&B / post-punk funk / lo-fi psychedelic",
+    "geographic_locus": "New York City, NY",
+    "historical_role": "Michael Gordon (Mk.gee) represents the most contemporary active node in the Miss You lineage; Two Star & the Dream Police deploys guitar textures in the tradition of early-1980s post-punk funk — citing Genesis, Lindsay Buckingham, and Prince as touchstones — proving the rock x R&B/funk translation methodology remains productive in 2024."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Mk.gee is the solo project of Michael Gordon, who writes, records, and produces all material. Like Prince and Kevin Parker before him, the single-artist total-control model enables an undiluted execution of the translation aesthetic. Rolling Stone noted his music 'craves intimacy and creates tension.'",
+    "production_facts": "Two Star & the Dream Police was released February 9, 2024 through R&R Records. Critics drew explicit connections to Prince, Lindsay Buckingham, and Genesis as antecedents — a citation chain that runs directly through the 1978-1984 period when the rock x funk synthesis was first fully articulated. The album ranked #1 on year-end lists from Clash, Dazed, and The New York Times.",
+    "instrumentation_details": "FLOOD Magazine described 'Candy' as a 'funk-leaning lo-fi pop jam filled with psychedelic guitar squiggles and a magnificent use of vocoder' — the vocoder placing it in Prince/Zapp territory while the funk-leaning groove maintains the rock x R&B two-layer structure. Guitar work is described as technically impressive while serving the song rather than displaying virtuosity.",
+    "release_circumstances": "Album released February 9, 2024. Despite no major label backing at release, the album became a critical consensus pick for 2024's best album, with its deliberate use of vintage funk-rock aesthetics standing as a counter to maximalist contemporary production.",
+    "cultural_venue": null
+  },
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Two_Star_%26_the_Dream_Police",
+    "https://www.rollingstone.com/music/music-album-reviews/mk-gee-two-star-and-the-dream-police-1234971328/",
+    "https://theartsdesk.com/new-music/albums-year-2024-mkgee-two-star-and-dream-police"
+  ]
+}

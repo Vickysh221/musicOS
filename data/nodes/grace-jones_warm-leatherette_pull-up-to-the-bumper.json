@@ -1,0 +1,48 @@
+{
+  "id": "grace-jones_warm-leatherette_pull-up-to-the-bumper",
+  "artist": "Grace Jones",
+  "period": {
+    "label": "Compass Point trilogy / reggae-disco-post-punk fusion",
+    "year_start": 1980,
+    "year_end": 1981
+  },
+  "works": [
+    {
+      "title": "Pull Up to the Bumper",
+      "type": "track",
+      "year": 1981
+    },
+    {
+      "title": "Private Life",
+      "type": "track",
+      "year": 1980
+    },
+    {
+      "title": "Warm Leatherette",
+      "type": "album",
+      "year": 1980
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "disco/post-punk filtered through Jamaican reggae-dub rhythmic sensibility",
+    "geographic_locus": "Compass Point Studios, Nassau, Bahamas",
+    "historical_role": "Chris Blackwell assembled Jones with the Jamaican rhythm section of Sly Dunbar and Robbie Shakespeare at Compass Point Studios and produced a fusion of reggae dub-space, post-punk edges, and Studio 54 disco that brought the Caribbean perspective into the same sonic moment occupied by Miss You -- mapping how the same cultural forces looked from a Jamaican rather than London or New York vantage point."
+  },
+  "narrative_slots": {
+    "production_facts": "Island Records founder Chris Blackwell, inspired by recent Island signing Black Uhuru and by the Sly and Robbie rhythm section, stated his aim as 'a mix of the very Jamaican, a very organic groove with something technologically brand-new.' The band at Compass Point included Sly Dunbar on drums, Robbie Shakespeare on bass, Wally Badarou on keyboards, and Barry Reynolds on guitar.",
+    "cultural_venue": "Jones had been a Studio 54 fixture during its peak years, making her the direct bridge between the Jamaican sound brought into Compass Point and the New York disco world that Miss You and the Stones had dipped into -- she inhabited both spaces simultaneously rather than crossing between them as a rock outsider.",
+    "member_dynamics": null,
+    "instrumentation_details": "The Compass Point All Stars rhythm section -- Sly and Robbie -- applied a reggae-dub approach to post-punk song structures, giving tracks a stripped, cavernous bottom end that pointed toward what would become the sonic grammar of early 1980s club music.",
+    "release_circumstances": "Warm Leatherette (released May 1980) was Jones's commercial breakthrough in the UK and the first of the Compass Point trilogy, despite being her least commercially successful album in the US; critics later recognized it as her decisive artistic pivot."
+  },
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Warm_Leatherette_(album)",
+    "https://www.thevinylfactory.com/features/grace-jones-warm-leatherette-compass-point"
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "map_id": "rolling-stones_some-girls_miss-you",
+  "anchor_node_id": "rolling-stones_some-girls_miss-you",
+  "spec_version": "0.2",
+  "generated_at": "2026-05-04T14:14:49.346853+00:00",
+  "expansion_notes": "Total nodes: 21. Coverage: 6 activated, 8 touched-unactivated, 7 untouched. Edges: 21 (fact=3, consensus=14, hypothesis=4). Secondary anchor candidates: ['rolling-stones_some-girls_miss-you', 'queen_the-game_another-one-bites-the-dust', 'talking-heads_remain-in-light_once-in-a-lifetime', 'rhcp_blood-sugar_give-it-away'].",
+  "node_ids": [
+    "rolling-stones_some-girls_miss-you",
+    "bee-gees_saturday-night-fever_stayin-alive",
+    "bowie_young-americans_fame",
+    "chic_risque_good-times",
+    "james-brown_funky-drummer-era_cold-sweat",
+    "parliament_mothership-connection_give-up-the-funk",
+    "sly-family-stone_riot_family-affair",
+    "blondie_parallel-lines_heart-of-glass",
+    "devo_q-are-we-not-men_jocko-homo",
+    "grace-jones_warm-leatherette_pull-up-to-the-bumper",
+    "queen_the-game_another-one-bites-the-dust",
+    "rod-stewart_blondes-have-more-fun_do-ya-think-im-sexy",
+    "talking-heads_remain-in-light_once-in-a-lifetime",
+    "daft-punk_random-access-memories_get-lucky",
+    "joy-division_closer_isolation",
+    "khruangbin_con-todo-el-mundo_maria-tambien",
+    "lcd-soundsystem_sound-of-silver_all-my-friends",
+    "mkgee_two-star_you-dreamed-of-me",
+    "prince_purple-rain_when-doves-cry",
+    "rhcp_blood-sugar_give-it-away",
+    "tame-impala_currents_the-less-i-know-the-better"
+  ],
+  "edges": [
+    {
+      "id": "edge_james-brown_to_sly",
+      "type": "direct_influence",
+      "source_node_id": "james-brown_funky-drummer-era_cold-sweat",
+      "target_node_id": "sly-family-stone_riot_family-affair",
+      "evidence": "Sly Stone cited James Brown as a primary influence; There's a Riot Goin' On's drum machine-centered approach extends Brown's 'the beat is the song' doctrine into darker, more introspective territory.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sly_%26_the_Family_Stone"
+      ]
+    },
+    {
+      "id": "edge_james-brown_to_parliament",
+      "type": "direct_influence",
+      "source_node_id": "james-brown_funky-drummer-era_cold-sweat",
+      "target_node_id": "parliament_mothership-connection_give-up-the-funk",
+      "evidence": "George Clinton has repeatedly cited James Brown as the foundational influence for P-Funk's rhythmic vocabulary; Bootsy Collins played for James Brown before joining Parliament-Funkadelic.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Parliament_(band)"
+      ]
+    },
+    {
+      "id": "edge_james-brown_to_chic",
+      "type": "genealogical_descent",
+      "source_node_id": "james-brown_funky-drummer-era_cold-sweat",
+      "target_node_id": "chic_risque_good-times",
+      "evidence": "Nile Rodgers and Bernard Edwards built Chic's rhythmic discipline on James Brown's foundational funk vocabulary; the locked bass-and-guitar interplay of Chic is a direct evolution of Brown's JBs rhythm section approach.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chic_(band)"
+      ]
+    },
+    {
+      "id": "edge_sly_to_miss-you",
+      "type": "genealogical_descent",
+      "source_node_id": "sly-family-stone_riot_family-affair",
+      "target_node_id": "rolling-stones_some-girls_miss-you",
+      "evidence": "Sly Stone's 1971 drum-machine funk and stripped-down darkness are widely cited in funk historiography as a bridge between James Brown and the late-70s disco-soul that fed Studio 54; the nocturnal emotional register and four-on-the-floor pulse of Miss You trace through this lineage.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/There%27s_a_Riot_Goin%27_On"
+      ]
+    },
+    {
+      "id": "edge_parliament_to_miss-you",
+      "type": "translation",
+      "source_node_id": "parliament_mothership-connection_give-up-the-funk",
+      "target_node_id": "rolling-stones_some-girls_miss-you",
+      "evidence": "Parliament-Funkadelic were regular presences at Studio 54 and synonymous with the disco-funk milieu Jagger absorbed in 1977-78; both P-Funk's cosmic hedonism and the Stones' Some Girls sessions are documented within the same New York club-culture moment.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Studio_54",
+        "https://en.wikipedia.org/wiki/Parliament_(band)"
+      ]
+    },
+    {
+      "id": "edge_chic_to_miss-you",
+      "type": "direct_influence",
+      "source_node_id": "chic_risque_good-times",
+      "target_node_id": "rolling-stones_some-girls_miss-you",
+      "evidence": "Chic's earlier work and Bernard Edwards' bass approach were already on the Studio 54 floor when Miss You was being shaped in 1977-78. The relationship is not literal sampling but shared Studio 54 idiom — Bill Wyman went 'to quite a few clubs' (per engineer Chris Kimsey) to internalize the same bass language Chic was building.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://www.salon.com/2017/08/19/rolling-stones-33-13-excerpt/"
+      ]
+    },
+    {
+      "id": "edge_bee-gees_to_miss-you",
+      "type": "same_era_dialogue",
+      "source_node_id": "bee-gees_saturday-night-fever_stayin-alive",
+      "target_node_id": "rolling-stones_some-girls_miss-you",
+      "evidence": "Saturday Night Fever (1977) and Some Girls (1978) are exact contemporaries; both represent major acts translating disco's four-on-the-floor pulse, though the Bee Gees dissolved into disco where the Stones kept rock's musculature audible.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Saturday_Night_Fever_(soundtrack)"
+      ]
+    },
+    {
+      "id": "edge_bowie_to_miss-you",
+      "type": "direct_influence",
+      "source_node_id": "bowie_young-americans_fame",
+      "target_node_id": "rolling-stones_some-girls_miss-you",
+      "evidence": "Bowie's 1975 'plastic soul' pivot at Sigma Sound Studios preceded the Stones' disco move by three years and established the template: a white British rock star performing Black American rhythmic idioms without fully abandoning their rock identity.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Young_Americans_(album)"
+      ]
+    },
+    {
+      "id": "edge_miss-you_to_queen",
+      "type": "same_era_dialogue",
+      "source_node_id": "rolling-stones_some-girls_miss-you",
+      "target_node_id": "queen_the-game_another-one-bites-the-dust",
+      "evidence": "John Deacon's bass line for 'Another One Bites the Dust' is documented as directly inspired by Chic's 'Good Times'; Miss You and the Queen track represent the same 1978-1980 phenomenon — a major rock band's bass player driving a disco-funk pivot — making this a well-documented parallel translation.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Another_One_Bites_the_Dust"
+      ]
+    },
+    {
+      "id": "edge_miss-you_to_blondie",
+      "type": "same_era_dialogue",
+      "source_node_id": "rolling-stones_some-girls_miss-you",
+      "target_node_id": "blondie_parallel-lines_heart-of-glass",
+      "evidence": "Both released in 1978; both represent rock acts deliberately crossing into disco territory while maintaining their rock-band identity. Heart of Glass and Miss You are the two best-known examples of the rock-disco crossover from that year.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Heart_of_Glass_(song)"
+      ]
+    },
+    {
+      "id": "edge_miss-you_to_rod-stewart",
+      "type": "same_era_dialogue",
+      "source_node_id": "rolling-stones_some-girls_miss-you",
+      "target_node_id": "rod-stewart_blondes-have-more-fun_do-ya-think-im-sexy",
+      "evidence": "Both released in 1978 by British rock artists based in the US pursuing disco crossover; Rod Stewart's 'Do Ya Think I'm Sexy?' reached US #1 in 1979, completing the same translation as Miss You but with less critical credit.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Do_Ya_Think_I%27m_Sexy%3F"
+      ]
+    },
+    {
+      "id": "edge_chic_to_talking-heads",
+      "type": "translation",
+      "source_node_id": "chic_risque_good-times",
+      "target_node_id": "talking-heads_remain-in-light_once-in-a-lifetime",
+      "evidence": "Talking Heads/Eno's Remain in Light (1980) absorbed the same rhythmic precision and studio layering approach as Chic, but filtered through Afrobeat and art-rock rather than disco — parallel translation of similar source material.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Remain_in_Light"
+      ]
+    },
+    {
+      "id": "edge_miss-you_to_devo",
+      "type": "inversion",
+      "source_node_id": "rolling-stones_some-girls_miss-you",
+      "target_node_id": "devo_q-are-we-not-men_jocko-homo",
+      "evidence": "Devo formed explicitly as a reaction against what they saw as the devolution of rock into disco; Q: Are We Not Men? (1978) is a deliberate inversion of the Miss You cultural moment, choosing mechanical de-funk over natural groove.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Q:_Are_We_Not_Men%3F_A:_We_Are_Devo!"
+      ]
+    },
+    {
+      "id": "edge_miss-you_to_grace-jones",
+      "type": "same_era_dialogue",
+      "source_node_id": "rolling-stones_some-girls_miss-you",
+      "target_node_id": "grace-jones_warm-leatherette_pull-up-to-the-bumper",
+      "evidence": "Grace Jones occupied the same Studio 54 cultural space as Jagger; her work with Sly Dunbar and Robbie Shakespeare brought reggae/dub into the disco-rock crossover moment from the Jamaican perspective, while Miss You represented the rock-world's view of the same space.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Warm_Leatherette_(album)"
+      ]
+    },
+    {
+      "id": "edge_miss-you_to_prince",
+      "type": "genealogical_descent",
+      "source_node_id": "rolling-stones_some-girls_miss-you",
+      "target_node_id": "prince_purple-rain_when-doves-cry",
+      "evidence": "Prince's rock-funk synthesis on Purple Rain extends the rock×funk translation to its logical conclusion; where Miss You kept the layers visible, Prince internalized them so completely they became indistinguishable — the descent one generation further.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "agent synthesis — connection not previously documented in published sources"
+      ]
+    },
+    {
+      "id": "edge_james-brown_to_rhcp",
+      "type": "genealogical_descent",
+      "source_node_id": "james-brown_funky-drummer-era_cold-sweat",
+      "target_node_id": "rhcp_blood-sugar_give-it-away",
+      "evidence": "Flea has explicitly cited James Brown and Parliament-Funkadelic as the primary influences on his bass approach; Blood Sugar Sex Magik is the 90s rock-funk synthesis that descends directly from the Brown-to-disco-to-Miss You lineage.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Red_Hot_Chili_Peppers"
+      ]
+    },
+    {
+      "id": "edge_chic_to_daft-punk",
+      "type": "direct_influence",
+      "source_node_id": "chic_risque_good-times",
+      "target_node_id": "daft-punk_random-access-memories_get-lucky",
+      "evidence": "Nile Rodgers (co-founder of Chic) was recruited to play guitar on 'Get Lucky' and other Random Access Memories tracks; Daft Punk explicitly credited Chic as the inspiration for the album's live-instrumentation approach. Personnel-level documented descent.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Random_Access_Memories"
+      ]
+    },
+    {
+      "id": "edge_miss-you_to_lcd-soundsystem",
+      "type": "genealogical_descent",
+      "source_node_id": "rolling-stones_some-girls_miss-you",
+      "target_node_id": "lcd-soundsystem_sound-of-silver_all-my-friends",
+      "evidence": "James Murphy has cited the late-70s rock-meets-disco moment — exemplified by Miss You — as a formative influence on LCD Soundsystem's aesthetic; 'All My Friends' shares the slow-burn disco pulse and hedonistic melancholy of Miss You, a lineage Murphy has discussed in multiple interviews.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/LCD_Soundsystem",
+        "agent synthesis — specific Miss You citation not independently verified"
+      ]
+    },
+    {
+      "id": "edge_talking-heads_to_khruangbin",
+      "type": "methodological_descent",
+      "source_node_id": "talking-heads_remain-in-light_once-in-a-lifetime",
+      "target_node_id": "khruangbin_con-todo-el-mundo_maria-tambien",
+      "evidence": "Talking Heads/Eno's Remain in Light method: drum loop foundation, layered live jam over loop, post-arrangement. Khruangbin's documented method (per Mark Speer interviews): identical — Laura Lee starts with a drum loop, records bass over it, sends to Speer for guitar overdubs.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "https://analoguefoundation.com/voice/khruangbin/",
+        "agent synthesis — methodology lineage not previously documented"
+      ]
+    },
+    {
+      "id": "edge_miss-you_to_tame-impala",
+      "type": "translation",
+      "source_node_id": "rolling-stones_some-girls_miss-you",
+      "target_node_id": "tame-impala_currents_the-less-i-know-the-better",
+      "evidence": "Kevin Parker's Currents applies four-on-the-floor disco rhythm and funk bass in a psychedelic rock context — the same translation aesthetic as Miss You (rock musculature over disco pulse), updated for 2015 production aesthetics.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "agent synthesis — connection not previously documented in published sources"
+      ]
+    },
+    {
+      "id": "edge_miss-you_to_joy-division",
+      "type": "inversion",
+      "source_node_id": "rolling-stones_some-girls_miss-you",
+      "target_node_id": "joy-division_closer_isolation",
+      "evidence": "Joy Division represents the road not taken at the same 1978-1980 fork — choosing cold electronic minimalism over disco-funk translation. Where Miss You went warm and groove-based, Joy Division went frigid and metric, both responding to the same post-punk moment.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "agent synthesis — connection not previously documented in published sources"
+      ]
+    }
+  ]
+}

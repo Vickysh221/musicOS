@@ -1,0 +1,51 @@
+{
+  "id": "parliament_mothership-connection_give-up-the-funk",
+  "artist": "Parliament",
+  "period": {
+    "label": "Mothership Connection era / P-Funk peak",
+    "year_start": 1975,
+    "year_end": 1976
+  },
+  "works": [
+    {
+      "title": "Give Up the Funk (Tear the Roof off the Sucker)",
+      "type": "track",
+      "year": 1976
+    },
+    {
+      "title": "Mothership Connection",
+      "type": "album",
+      "year": 1975
+    },
+    {
+      "title": "P. Funk (Wants to Get Funked Up)",
+      "type": "track",
+      "year": 1975
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "P-Funk / cosmic funk / Afrofuturism",
+    "geographic_locus": "United Sound Systems, Detroit / Criteria Studios, Miami",
+    "historical_role": "Parliament's Mothership Connection (1975) delivered P-Funk's maximalist cosmic mythology — Afrofuturist concept-funk that ran in parallel to disco's hedonism as the dominant Black American dance music aesthetic, building the groove infrastructure that hip-hop would later sample wholesale."
+  },
+  "narrative_slots": {
+    "member_dynamics": "George Clinton assembled an enormous rotating collective that included Bootsy Collins on bass, Bernie Worrell on keyboards, and — crucially — Maceo Parker and Fred Wesley on horns, both poached from James Brown's JBs, creating a direct lineage from Brown's funk foundation to Parliament's maximalist peak.",
+    "cultural_venue": "Parliament's live show, featuring the Mothership landing on stage, became the spectacle of the mid-1970s Black concert circuit — a counter-mythology to disco's urban club culture, rooted in the Black South and Midwest rather than NYC's Studio 54.",
+    "production_facts": "Mothership Connection was recorded in 1975 and released December 15 on Casablanca Records. It became Parliament's first gold and eventually platinum album. The Library of Congress added it to the National Recording Registry in 2011, declaring it had 'an enormous influence on jazz, rock and dance music.'",
+    "instrumentation_details": "Bernie Worrell's synthesizer work was central to the P-Funk sound — his Moog and ARP textures gave the cosmic concept its sonic reality. Bootsy Collins had developed his distinctive popping bass style after leaving James Brown's band, and his playing on Mothership Connection is the bridge between JBs funk and hip-hop bass.",
+    "release_circumstances": "'Give Up the Funk (Tear the Roof off the Sucker)' became Parliament's first million-selling single. The album is rated by AllMusic as 'the definitive Parliament-Funkadelic album' and was included in Rolling Stone's 500 Greatest Albums."
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2021-08-09: P-Funk (Wants To Get Funked Up) (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mothership_Connection",
+    "https://www.udiscovermusic.com/stories/parliament-mothership-connection-album/",
+    "https://www.loc.gov/static/programs/national-recording-preservation-board/documents/MothershipConnection.pdf"
+  ]
+}

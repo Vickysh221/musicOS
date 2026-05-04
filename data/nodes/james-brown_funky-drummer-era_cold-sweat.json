@@ -1,0 +1,50 @@
+{
+  "id": "james-brown_funky-drummer-era_cold-sweat",
+  "artist": "James Brown",
+  "period": {
+    "label": "Funk foundation period",
+    "year_start": 1967,
+    "year_end": 1970
+  },
+  "works": [
+    {
+      "title": "Cold Sweat",
+      "type": "track",
+      "year": 1967
+    },
+    {
+      "title": "Funky Drummer",
+      "type": "track",
+      "year": 1970
+    },
+    {
+      "title": "Get Up (I Feel Like Being a) Sex Machine",
+      "type": "track",
+      "year": 1970
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "funk / soul — rhythmic deconstruction of R&B",
+    "geographic_locus": "King Studios, Cincinnati, Ohio / Apollo Theater, Harlem",
+    "historical_role": "James Brown invented the rhythmic grammar of funk with \"Cold Sweat\" (1967) — stripping harmony to a minimum and centering the groove entirely on the drum/bass interlock — establishing the percussive vocabulary that would flow through disco, hip-hop, and every downstream genre including Miss You."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Drummer Clyde Stubblefield joined Brown in 1965 and became the engine of the funk era; Questlove later called him \"the one who defined funk music.\" Saxophonist-arranger Alfred \"Pee Wee\" Ellis co-wrote \"Cold Sweat\" and shaped the horn-driven architecture of the JBs sound. Maceo Parker's saxophone became the signature voice of Brown's live band.",
+    "cultural_venue": "The Apollo Theater in Harlem was Brown's cathedral — his 1962 live album there documented the raw funk aesthetic before it had a name. King Studios in Cincinnati was where the foundational recordings happened under direct Brown control as producer.",
+    "production_facts": "Brown produced all sessions himself at King Studios, enforcing his famous fining system for musicians who missed a note or left the groove. \"Cold Sweat\" was recorded in May 1967 and reached #1 R&B, #7 Hot 100. \"Funky Drummer\" was recorded November 20, 1969 in Cincinnati; its 20-second drum break by Stubblefield has been sampled on over 1,300 songs.",
+    "instrumentation_details": "The Funky Drummer break was improvised by Clyde Stubblefield — an unrepeated live improv that became the single most-sampled drum performance in music history, appearing on records by Public Enemy, Beastie Boys, N.W.A, George Michael, and hundreds more.",
+    "release_circumstances": "\"Cold Sweat\" was inducted into the Grammy Hall of Fame in 2016. The funk vocabulary Brown established in 1967-1970 is the shared ancestor of both the disco movement and the hip-hop sampling tradition."
+  },
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cold_Sweat",
+    "https://en.wikipedia.org/wiki/Funky_Drummer",
+    "https://en.wikipedia.org/wiki/Clyde_Stubblefield",
+    "https://www.udiscovermusic.com/stories/clyde-stubblefield-james-browns-funky-drummer/"
+  ]
+}

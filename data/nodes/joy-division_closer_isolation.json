@@ -1,0 +1,52 @@
+{
+  "id": "joy-division_closer_isolation",
+  "artist": "Joy Division",
+  "period": {
+    "label": "Closer era / 1979-1980 post-punk austerity",
+    "year_start": 1979,
+    "year_end": 1980
+  },
+  "works": [
+    {
+      "title": "Isolation",
+      "type": "track",
+      "year": 1980
+    },
+    {
+      "title": "Decades",
+      "type": "track",
+      "year": 1980
+    },
+    {
+      "title": "Closer",
+      "type": "album",
+      "year": 1980
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "post-punk / electronic minimalism / cold wave",
+    "geographic_locus": "Manchester, England — Strawberry Studios and Pennine Sound Studios",
+    "historical_role": "Joy Division represents the contrastive descendant: standing at the same 1978-1980 post-punk fork as the Miss You moment, they chose to go toward cold electronic minimalism INSTEAD of rock-to-disco translation, demonstrating that the same cultural pressures and the same toolkit (post-punk, synthesizers, dance-adjacent rhythms) could yield diametrically opposed aesthetic outcomes."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Joy Division's four members — Ian Curtis (vocals), Bernard Sumner (guitar/synth), Peter Hook (bass), and Stephen Morris (drums) — developed a working method in which Hook's melodic bass lines occupied the register conventionally held by guitar (melody) rather than bass (foundation), inverting the rock x funk formula: where funk centralizes bass rhythm, Joy Division centralized bass melody and emptied the rhythm of its body.",
+    "production_facts": "Closer was produced by Martin Hannett and recorded in early 1980, released July 18, 1980 on Factory Records — two months after Ian Curtis's suicide. Hannett's production approach — extreme spatial separation, electronic percussion replacing organic drums, reverberant emptiness — is the sonic opposite of the compression and density of disco/funk production, yet both responded to the same cultural moment of post-punk.",
+    "instrumentation_details": "On 'Isolation,' Bernard Sumner's glassy digital synthesizers are described as meant to 'lacerate more than hypnotize,' while Peter Hook's bass bears the 'hypnotic, minimalist repetition more common to reggae or dub.' The track uses more prominent synthesizers than earlier Joy Division work, edging toward the electronic direction they would fully pursue as New Order after Curtis's death.",
+    "release_circumstances": "Closer was released posthumously on July 18, 1980 — Curtis died by suicide on May 18, 1980, the night before Joy Division's first North American tour. The album is widely recognized as a seminal release of the post-punk era and is cited by Mark Fisher and others as 'the crown jewel of post-punk.'",
+    "cultural_venue": null
+  },
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2023-07-31: Isolation",
+      "红心 2023-08-01: A Means To An End"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Closer_(Joy_Division_album)",
+    "https://post-punk.com/joy-division-closer/",
+    "https://post-punk.com/when-joy-division-were-in-the-studio-recording-closer/"
+  ]
+}

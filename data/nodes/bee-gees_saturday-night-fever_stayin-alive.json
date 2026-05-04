@@ -1,0 +1,52 @@
+{
+  "id": "bee-gees_saturday-night-fever_stayin-alive",
+  "artist": "Bee Gees",
+  "period": {
+    "label": "Saturday Night Fever era / mainstream disco peak",
+    "year_start": 1977,
+    "year_end": 1977
+  },
+  "works": [
+    {
+      "title": "Stayin' Alive",
+      "type": "track",
+      "year": 1977
+    },
+    {
+      "title": "Night Fever",
+      "type": "track",
+      "year": 1977
+    },
+    {
+      "title": "Saturday Night Fever",
+      "type": "album",
+      "year": 1977
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "disco / pop — falsetto-led four-on-the-floor",
+    "geographic_locus": "Chateau d'Herouville, France / Criteria Studios, Miami",
+    "historical_role": "The Bee Gees' Saturday Night Fever soundtrack (1977) was the cultural apex of mainstream disco — their falsetto-driven four-on-the-floor anthems occupied US #1 for most of early 1978, and it was the SNF soundtrack that Miss You knocked off the top spot in August 1978, making the Bee Gees and the Stones simultaneous protagonists of the disco-rock cultural collision."
+  },
+  "narrative_slots": {
+    "member_dynamics": "The Bee Gees wrote the Saturday Night Fever songs with no idea they were making a soundtrack — they were originally recorded as a regular album, then Robert Stigwood commissioned them for the film. Barry Gibb's falsetto became the defining vocal texture of disco at its commercial peak, while brothers Robin and Maurice provided tight harmony underneath.",
+    "cultural_venue": "Saturday Night Fever (the film, 1977) crystallised the disco subculture into a mainstream global phenomenon, its Brookyn discotheque setting translating the Black/Latino/queer origins of disco into white working-class American aspiration. The film and soundtrack together sold over 40 million copies worldwide.",
+    "production_facts": "Recorded at Chateau d'Herouville (France) and Criteria Studios (Miami), co-produced with Albhy Galuten and Karl Richardson. 'Stayin' Alive' runs at approximately 103 BPM — now famous for matching CPR guidelines and used in medical training. 'Night Fever' spent eight weeks at US #1, the most for any single in 1978.",
+    "instrumentation_details": "Barry Gibb played rhythm and acoustic guitar; Maurice Gibb played bass; Blue Weaver contributed electric piano and string synthesizer. The four-on-the-floor kick drum pattern that became disco's rhythmic signature is fully deployed throughout the SNF sides.",
+    "release_circumstances": "The Saturday Night Fever soundtrack was released November 15, 1977 by RSO Records. 'Stayin' Alive' hit US #1 February 4, 1978; 'Night Fever' followed for eight weeks. The SNF soundtrack was holding the top album position when Miss You (released May 19, 1978) disrupted it — the Stones were consciously entering Bee Gees territory."
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2025-02-25: I Started A Joke (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Saturday_Night_Fever_(soundtrack)",
+    "https://en.wikipedia.org/wiki/Stayin'_Alive",
+    "https://en.wikipedia.org/wiki/Night_Fever",
+    "https://ultimateclassicrock.com/bee-gees-saturday-night-fever-soundtrack/"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "blondie_parallel-lines_heart-of-glass",
+  "artist": "Blondie",
+  "period": {
+    "label": "Parallel Lines era / punk-disco synthesis",
+    "year_start": 1978,
+    "year_end": 1979
+  },
+  "works": [
+    {
+      "title": "Heart of Glass",
+      "type": "track",
+      "year": 1978
+    },
+    {
+      "title": "Parallel Lines",
+      "type": "album",
+      "year": 1978
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "NYC punk/new wave deliberately crossing into disco",
+    "geographic_locus": "Record Plant, New York City",
+    "historical_role": "A punk-scene band recorded a track built around a Roland CR-78 drum machine -- hardware released that same year -- and fused it with a disco arrangement, enacting the same rock-to-disco translation as Miss You in the same calendar year but from the opposite starting point of punk credibility."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Debbie Harry and Chris Stein had written an embryonic version called Once I Had a Love as early as 1974-75, but the song resisted every format they tried -- ballad, reggae -- until producer Mike Chapman heard the potential and pushed for a full disco treatment that the rest of the band, with their punk identities, found uncomfortable.",
+    "production_facts": "Chris Stein and keyboardist Jimmy Destri purchased a Roland CR-78 rhythm machine from a store on 47th Street in Manhattan and brought it into the session at the Record Plant; it was only the second year the device existed on the market. Producer Mike Chapman spent two months assembling the Parallel Lines tracks with the band in June-July 1978.",
+    "cultural_venue": "The song fused what critics described as Blondie's NYC punk stance with sleek sequenced disco at a moment when the two scenes were still considered diametrically opposed, making the track a flashpoint for debates about authenticity and genre crossing that exactly mirrored the tensions around Miss You.",
+    "instrumentation_details": null,
+    "release_circumstances": "Released as the third single from Parallel Lines in January 1979, reaching number one on both the US Billboard Hot 100 and the UK Singles Chart."
+  },
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2025-05-14: Heart Of Glass"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Heart_of_Glass_(song)",
+    "https://en.wikipedia.org/wiki/Parallel_Lines"
+  ]
+}

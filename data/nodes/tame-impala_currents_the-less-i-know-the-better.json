@@ -1,0 +1,49 @@
+{
+  "id": "tame-impala_currents_the-less-i-know-the-better",
+  "artist": "Tame Impala",
+  "period": {
+    "label": "Currents era / 2013-2015 psychedelic disco pivot",
+    "year_start": 2013,
+    "year_end": 2015
+  },
+  "works": [
+    {
+      "title": "The Less I Know the Better",
+      "type": "track",
+      "year": 2015
+    },
+    {
+      "title": "Let It Happen",
+      "type": "track",
+      "year": 2015
+    },
+    {
+      "title": "Currents",
+      "type": "album",
+      "year": 2015
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "psychedelic rock / neo-psychedelia / disco-influenced indie",
+    "geographic_locus": "Perth, Australia — Kevin Parker's home studio",
+    "historical_role": "Kevin Parker's Currents executed a deliberate pivot from psychedelic guitar rock to disco-influenced four-on-the-floor production, with 'The Less I Know the Better' — explicitly originating from Parker's love of disco after listening to the Bee Gees on psychedelics — placing the rock x disco translation 37 years after 'Miss You' and demonstrating that the aesthetic imperative is cyclically renewable."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Like Prince with Purple Rain, Kevin Parker wrote, recorded, performed, and produced all of Currents himself, with no other collaborators. This total control allowed Parker to execute the psychedelic-to-disco translation without compromise. The isolation of his Perth home studio is analogous to Prince's Paisley Park self-sufficiency.",
+    "production_facts": "Parker has stated that 'The Less I Know the Better' originated from his love of disco, and specifically that listening to the Bee Gees while on psychedelics inspired the sound of Currents. This is a direct citation of the same Bee Gees / Saturday Night Fever cultural moment that surrounded 'Miss You' in 1978 — Parker consciously revisiting the same source material 37 years on.",
+    "instrumentation_details": "The track's bass line is a direct disco reference — a high-in-the-mix melodic funk bass, foregrounded in a way that Parker's earlier psychedelic guitar work never was. The guitar in 'The Less I Know the Better' is deliberately backgrounded and funk-inflected, not the dominant psych-rock texture of Innerspeaker or Lonerism, enacting the same genetic translation as 'Miss You.'",
+    "release_circumstances": "Released November 29, 2015 as the fourth and final single from Currents. Topped Triple J's Hottest 100 of the 2010s in March 2020. Surpassed one billion streams on May 3, 2021 and two billion streams on June 17, 2025. One of the most-streamed rock-adjacent songs of the streaming era.",
+    "cultural_venue": null
+  },
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/The_Less_I_Know_the_Better",
+    "https://en.wikipedia.org/wiki/Currents_(album)",
+    "https://en.wikipedia.org/wiki/Tame_Impala"
+  ]
+}

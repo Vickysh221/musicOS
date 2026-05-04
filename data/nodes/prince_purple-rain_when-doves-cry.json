@@ -1,0 +1,52 @@
+{
+  "id": "prince_purple-rain_when-doves-cry",
+  "artist": "Prince",
+  "period": {
+    "label": "Purple Rain era / 1982-1985 funk-rock synthesis",
+    "year_start": 1983,
+    "year_end": 1984
+  },
+  "works": [
+    {
+      "title": "When Doves Cry",
+      "type": "track",
+      "year": 1984
+    },
+    {
+      "title": "Let's Go Crazy",
+      "type": "track",
+      "year": 1984
+    },
+    {
+      "title": "Purple Rain",
+      "type": "album",
+      "year": 1984
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "funk-rock synthesis / Minneapolis sound",
+    "geographic_locus": "Minneapolis, MN — Paisley Park / Hollywood (film)",
+    "historical_role": "Prince internalized the rock x funk translation formula pioneered by the Stones and Bowie so completely that it dissolved into a singular multiinstrumentalist idiom; 'When Doves Cry' — deliberately stripped of its bass line — became the #1 single of 1984 and demonstrated that the rock x funk dialectic could be pushed to an extreme where the absence of funk's foundational frequency (bass) itself became the radical gesture."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Prince played all instruments on 'When Doves Cry' himself, as was his practice throughout the Purple Rain era. After completing the track with all conventional elements including a bass line, he removed it entirely — reportedly telling his engineer 'Ain't nobody gonna believe I'd do this' — creating the iconic frequency hollow that makes the track sonically unlike any other #1 hit of the era.",
+    "production_facts": "The decision to remove the bass line came after a conversation with singer Jill Jones, who said the track sounded too conventional. The final mix opens with an extended guitar solo, features a Linn LM-1 drum machine, and includes a baroque synthesizer solo recorded at half speed and an octave lower then sped up. The bass removal created a mid-frequency hollowness not present in any prior funk or rock record.",
+    "instrumentation_details": "All instruments performed by Prince alone: guitar, synthesizers, Linn LM-1 drum machine, and vocals — no live bass. The guitar solo intro and synth-baroque coda frame the track in a way that reads as rock while the groove's DNA is pure funk. Critics consistently identified Purple Rain as consolidating 'funk and R&B roots while moving boldly into pop, rock, and heavy metal'.",
+    "release_circumstances": "Released May 16, 1984 as lead single from the Purple Rain soundtrack. Reached #1 on US Billboard Hot 100 and stayed there for five weeks — the #1 song of the entire calendar year 1984. The album Purple Rain spent 24 weeks at #1.",
+    "cultural_venue": null
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2026-01-30: Paisley Park (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/When_Doves_Cry",
+    "https://en.wikipedia.org/wiki/Purple_Rain_(album)",
+    "https://www.guitarworld.com/artists/bassists/why-prince-removed-the-bassline-from-when-doves-cry",
+    "https://www.musicradar.com/news/prince-when-doves-cry-no-bass"
+  ]
+}

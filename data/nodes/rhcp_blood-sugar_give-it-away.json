@@ -1,0 +1,54 @@
+{
+  "id": "rhcp_blood-sugar_give-it-away",
+  "artist": "Red Hot Chili Peppers",
+  "period": {
+    "label": "Blood Sugar Sex Magik era / 1990-1992 alt-funk explosion",
+    "year_start": 1990,
+    "year_end": 1991
+  },
+  "works": [
+    {
+      "title": "Give It Away",
+      "type": "track",
+      "year": 1991
+    },
+    {
+      "title": "Under the Bridge",
+      "type": "track",
+      "year": 1991
+    },
+    {
+      "title": "Blood Sugar Sex Magik",
+      "type": "album",
+      "year": 1991
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "funk-rock / alternative rock / rap-rock",
+    "geographic_locus": "Los Angeles, CA — Laurel Canyon mansion (live-in recording)",
+    "historical_role": "RHCP carried the rock x funk translation lineage into the 1990s alternative explosion; Flea's Parliament/James Brown-schooled bass vocabulary fused with punk and hard rock guitar to create the defining funk-rock sound of the alt era, with Blood Sugar Sex Magik selling 14 million copies and making the genre commercially mainstream."
+  },
+  "narrative_slots": {
+    "member_dynamics": "Flea (Michael Balzary) has cited James Brown, Parliament-Funkadelic, and Bootsy Collins as primary bass influences, directly connecting RHCP to the same funk genealogy that fed into 'Miss You.' The band lived together in producer Rick Rubin's Laurel Canyon mansion during recording, creating an unusually organic and live-in-the-room album.",
+    "production_facts": "Produced by Rick Rubin, Blood Sugar Sex Magik deliberately reduced the heavy metal guitar riffs of prior RHCP albums in favor of a rawer, more funk-grounded approach. Rubin's production philosophy of stripping back to essentials let Flea's bass dominate the mix — the reverse of the Stones' approach but serving the same rock-plus-funk dialectic.",
+    "instrumentation_details": "Flea's slap and pop bass technique on 'Give It Away' is directly descended from Bootsy Collins's work with James Brown (1969-1971) and Parliament-Funkadelic — the same source material that influenced Bill Wyman's 'Miss You' bassline research. John Frusciante's guitar provides the rock envelope around the funk core.",
+    "release_circumstances": "Blood Sugar Sex Magik released September 24, 1991 on Warner Bros. Records. 'Give It Away' won the 1993 Grammy for Best Hard Rock Performance. The album peaked at #3 on the Billboard 200 and became one of the defining records of the grunge/alternative era despite its funk roots.",
+    "cultural_venue": null
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2021-12-04: Snow (Hey Oh) (同艺人不同时期)",
+      "红心 2021-12-09: Havana Affair (同艺人不同时期)",
+      "红心 2021-12-31: Californication (同艺人不同时期)",
+      "红心 2023-03-01: Walkabout (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Blood_Sugar_Sex_Magik",
+    "https://albumism.com/features/tribute-celebrating-30-years-of-red-hot-chili-peppers-blood-sugar-sex-magik"
+  ],
+  "secondary_anchor_candidate": true
+}

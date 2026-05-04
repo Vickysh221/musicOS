@@ -1,0 +1,53 @@
+{
+  "id": "talking-heads_remain-in-light_once-in-a-lifetime",
+  "artist": "Talking Heads",
+  "period": {
+    "label": "Remain in Light era / Afrofunk synthesis",
+    "year_start": 1980,
+    "year_end": 1980
+  },
+  "works": [
+    {
+      "title": "Once in a Lifetime",
+      "type": "track",
+      "year": 1980
+    },
+    {
+      "title": "Houses in Motion",
+      "type": "track",
+      "year": 1980
+    },
+    {
+      "title": "Remain in Light",
+      "type": "album",
+      "year": 1980
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "art-rock/new wave channeling Fela Kuti Afrobeat polyrhythm through a funk-adjacent grid",
+    "geographic_locus": "Compass Point Studios, Nassau, Bahamas; Sigma Sound Studios, Philadelphia",
+    "historical_role": "David Byrne and Brian Eno used Fela Kuti's Afrodisiac (1973) as a template and built Remain in Light from layered drum-loop jams rather than composed songs, arriving at the same funk-polyrhythm territory as Miss You through an intellectual, studio-as-instrument path that prioritized communal African music-making over rock-band hierarchy."
+  },
+  "narrative_slots": {
+    "production_facts": "Recording started at Compass Point Studios in July 1980. Rather than writing songs around Byrne's lyrics in advance, the band jammed on looping grooves that Eno then layered with overdubs -- a method Byrne described as sharing 'that ecstatic communal feeling' of African music even when the results did not sound overtly African.",
+    "cultural_venue": "Fela Kuti's Afrodisiac became the explicit template for the album; the band and Eno studied the communal, polyrhythmic structure of Afrobeat in which individual parts interlock rather than accompany a lead. This was a deliberate intellectual counterpoint to the straightforward disco-rock merger represented by Miss You.",
+    "member_dynamics": "The approach generated internal friction: the album was later noted to have 'silenced their harshest critics, even within the band,' implying that some members were skeptical of the departure from conventional songwriting structure.",
+    "instrumentation_details": null,
+    "release_circumstances": "Remain in Light was named the best album of 1980 by both Sounds and Melody Maker, and appeared on The New York Times' ten-best list for the year."
+  },
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2026-05-04: Crosseyed and Painless",
+      "红心 2026-05-04: Once in a Lifetime",
+      "红心 2026-05-04: Listening Wind"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Remain_in_Light",
+    "https://faroutmagazine.co.uk/the-music-that-inspired-talking-heads-album-seminal-remain-in-light/"
+  ],
+  "secondary_anchor_candidate": true
+}

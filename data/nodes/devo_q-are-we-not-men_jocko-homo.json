@@ -1,0 +1,48 @@
+{
+  "id": "devo_q-are-we-not-men_jocko-homo",
+  "artist": "Devo",
+  "period": {
+    "label": "Q: Are We Not Men? era / de-evolution manifesto",
+    "year_start": 1978,
+    "year_end": 1978
+  },
+  "works": [
+    {
+      "title": "Jocko Homo",
+      "type": "track",
+      "year": 1978
+    },
+    {
+      "title": "Gut Feeling",
+      "type": "track",
+      "year": 1978
+    },
+    {
+      "title": "Q: Are We Not Men? A: We Are Devo!",
+      "type": "album",
+      "year": 1978
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "new wave / industrial punk as explicit counter-program to rock and disco excess",
+    "geographic_locus": "Conny Plank's studio, near Cologne, Germany; Akron, Ohio origins",
+    "historical_role": "Devo's debut, released the same month Miss You was on the charts, served as the explicit ideological inversion of the disco-rock merger: where the Stones translated funk freedom into rock, Devo built their de-evolution theory on the premise that mass culture -- including disco's hedonism and rock's spectacle -- was evidence of human regression, making them the era's most articulate contrarian siblings."
+  },
+  "narrative_slots": {
+    "cultural_venue": "Mark Mothersbaugh and Gerald Casale developed their de-evolution philosophy at Kent State University, where Casale witnessed the 1970 National Guard shootings of four classmates -- giving Devo's reaction against mass-cultural pleasure (including disco) a specific political and traumatic origin rather than mere aesthetic snobbery.",
+    "production_facts": "Brian Eno was brought in to produce after David Bowie was unavailable; the collaboration was contentious. Devo resisted Eno's experimental suggestions and used only three or four of his synthesizer ideas across the album. Eno created sounds and synth parts for nearly every track but the band rejected most of them, preferring their rigidly pre-planned demo versions.",
+    "member_dynamics": "The band arrived with a fully formed multimedia art concept -- matching jumpsuits, flower-pot hats, performance theory -- and refused to let Eno reshape the sound. Rolling Stone called them fascists, missing the satirical point; the band dramatized conformity to attack it.",
+    "instrumentation_details": null,
+    "release_circumstances": "Released in August 1978 on Warner Bros., the album arrived as a 33-minute multimedia manifesto that synthesized punk aggression with cold synthesizer precision, launching American new wave as a distinct genre."
+  },
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Q._Are_We_Not_Men%3F_A%3A_We_Are_Devo%21",
+    "https://ultimateclassicrock.com/devo-q-are-we-not-men-a-we-are-devo/"
+  ]
+}
