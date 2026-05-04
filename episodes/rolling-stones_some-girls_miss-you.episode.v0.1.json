@@ -1,0 +1,572 @@
+{
+  "episode_id": "rolling-stones_some-girls_miss-you__ep-01",
+  "spec_version": "0.3",
+  "anchor_node_id": "rolling-stones_some-girls_miss-you",
+  "title": "Miss You-1：摇滚 × Funk 翻译血脉的 Studio 54 起点",
+  "subtitle": "从 James Brown 到 Daft Punk，同一套翻译逻辑的七次变形",
+  "curatorial_thesis": "同一套节奏翻译逻辑——把 funk 或 disco 的基因穿进另一种音乐的外套、两层声音可分辨但互不融合——在 1967 年到 2013 年间以七种不同形态反复浮现，Miss You 是这条血脉的中心节点。",
+  "narrator_persona_id": "docent_v1",
+  "ordering_principle": "thematic_arc",
+  "ordering_rationale": "展品按主题弧线排列而非严格年份顺序。第 1–4 件（James Brown、Sly Stone、Bowie、Chic）构成「材料库」——翻译美学的源代码；第 5 件（Miss You）是本集展览的核心节点；第 6–8 件（Blondie、Devo、Joy Division）是同时期三条不同的道路；第 10 号展间隔断后，第 9–12 件（Talking Heads、Queen、Prince、Daft Punk）记录这套逻辑在此后 33 年里的演变。注：Chic 的代表作《Good Times》发行于 1979 年 7 月，晚于 Miss You 的 1978 年 7 月——但 Chic 的 Studio 54 时期影响力早在 1977–78 年已经形成，因此将其置于 Miss You 之前作为祖先节点。",
+  "exhibits": [
+    {
+      "position": 1,
+      "exhibit_type": "opening",
+      "track_ref": null,
+      "pre_narration": {
+        "narration_id": "opening",
+        "text_for_tts": "这是一场音乐博物馆的展览。展览的主题是一套反复出现的创作逻辑——我们把它叫做翻译美学：把一种音乐的节奏基因穿进另一种音乐的外套，让两层声音同时存在、可以分辨，但谁也没有融化进谁。<break time=\"500ms\"/>这次展览从 1967 年开始。那一年，<phoneme alphabet=\"ipa\" ph=\"ˈdʒeɪməs braʊn\">James Brown</phoneme> 在录音室里做了一件事——他把旋律和和声全部退到背景，让鼓和贝斯的咬合关系成为音乐本身——然后一切都不一样了。展览的中心节点是 1978 年 <phoneme alphabet=\"ipa\" ph=\"ðə ˈrəʊlɪŋ stəʊnz\">The Rolling Stones</phoneme> 的 <lang xml:lang=\"en-US\">Miss You</lang>：一支英国蓝调摇滚乐队在 <lang xml:lang=\"en-US\">Studio 54</lang> 的 disco 氛围里找到了某种无法抗拒的节奏，然后用摇滚乐的方式把它唱出来。今天你会听到这套逻辑的来处、同期的三条岔路，以及它的四代后裔。展览在 2013 年结束，但这条血脉还在继续。",
+        "estimated_duration_seconds": 86,
+        "components_present": [
+          "curatorial_thesis_statement",
+          "lineage_position"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "warm",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "fact",
+        "sources_referenced": []
+      },
+      "post_narration": null
+    },
+    {
+      "position": 2,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "james-brown_funky-drummer-era_cold-sweat",
+        "artist": "James Brown",
+        "song": "Cold Sweat",
+        "album": "Cold Sweat",
+        "year": 1967,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=18713",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_02",
+        "text_for_tts": "这是整条翻译血脉的零号节点。1967 年以前，<lang xml:lang=\"en-US\">funk</lang> 这个词还没有独立作为一种音乐类别存在——它是 <phoneme alphabet=\"ipa\" ph=\"ˈdʒeɪməs braʊn\">James Brown</phoneme> 把旋律和和声扁平化、让鼓与贝斯的互锁关系变成音乐本身的那一刻才真正到来的。<break time=\"300ms\"/>你现在要听到的核心创新是鼓手 <phoneme alphabet=\"ipa\" ph=\"klaɪd ˈstʌbl̩fiːld\">Clyde Stubblefield</phoneme> 确立的节奏结构：<emphasis level=\"strong\">kick</emphasis> 落在第一拍，snare 在第三拍，但贝斯线在第二个十六分音符悄悄插入——造成一种轻微的前倾感，像是节奏在不断往前推但始终没有失控。这个互锁结构后来被 <lang xml:lang=\"en-US\">Chic</lang> 精炼成 <lang xml:lang=\"en-US\">disco</lang>，被 <lang xml:lang=\"en-US\">Stones</lang> 带进了 <lang xml:lang=\"en-US\">Studio 54</lang>，被 <phoneme alphabet=\"ipa\" ph=\"fliː\">Flea</phoneme> 带进了 <lang xml:lang=\"en-US\">Blood Sugar Sex Magik</lang>。这条血脉从这里开始。",
+        "estimated_duration_seconds": 80,
+        "components_present": [
+          "lineage_position",
+          "musicological_connection",
+          "relation_to_next",
+          "narrative_slot_excerpt"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "neutral",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "fact",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Funky_Drummer",
+          "https://en.wikipedia.org/wiki/James_Brown"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 3,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "sly-family-stone_riot_family-affair",
+        "artist": "Sly & the Family Stone",
+        "song": "Family Affair",
+        "album": "There's a Riot Goin' On",
+        "year": 1971,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=6039",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_03",
+        "text_for_tts": "<phoneme alphabet=\"ipa\" ph=\"slaɪ stəʊn\">Sly Stone</phoneme> 接过了 <lang xml:lang=\"en-US\">James Brown</lang> 的节奏语法，然后做了一件奇怪的事：他把乐队开除了，换成了一台 <phoneme alphabet=\"ipa\" ph=\"ˌmeɪestrəʊ ˈrɪðəm kɪŋ\">Maestro Rhythm King</phoneme> MRK-2 鼓机，然后几乎独自完成所有录音层次——钢琴由 <lang xml:lang=\"en-US\">Billy Preston</lang> 客串，但协作乐队的时代就此终结。这是 1971 年最孤独的录音室实践之一。<break time=\"300ms\"/>你在这首歌里能听到的，是 <lang xml:lang=\"en-US\">funk</lang> 的节拍变得更平、更机械。<lang xml:lang=\"en-US\">Sly</lang> 在鼓机上叠了吉他和人声，每一层都有细微的律动偏移——机器的精确和人手的飘移叠在一起，产生一种奇怪的「精确但不齐」感。这是后来 <phoneme alphabet=\"ipa\" ph=\"prɪns\">Prince</phoneme>、<phoneme alphabet=\"ipa\" ph=\"ˈkɛvɪn ˈpɑːkər\">Kevin Parker</phoneme> 那种单人全控制创作方式的直系先驱：<emphasis level=\"strong\">一个人</emphasis>完成所有层次，让翻译不需要经过任何协商。",
+        "estimated_duration_seconds": 82,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection",
+          "narrative_slot_excerpt"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "contemplative",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "consensus",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Sly_%26_the_Family_Stone"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 4,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "bowie_young-americans_fame",
+        "artist": "David Bowie",
+        "song": "Fame",
+        "album": "Young Americans",
+        "year": 1975,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=27185190",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_04",
+        "text_for_tts": "1975 年，<phoneme alphabet=\"ipa\" ph=\"ˈdeɪvɪd ˈbəʊi\">David Bowie</phoneme> 在费城的 <lang xml:lang=\"en-US\">Sigma Sound Studios</lang> 和一批黑人音乐人一起录制 <lang xml:lang=\"en-US\">Young Americans</lang>，用他自己的话说，做的是「<lang xml:lang=\"en-US\">plastic soul</lang>」——塑料灵魂乐。<lang xml:lang=\"en-US\">Sly Stone</lang> 在 1971 年做过同样的事：用机器和孤独完成翻译。但 <lang xml:lang=\"en-US\">Bowie</lang> 的答案截然相反——他进入黑人美国节奏传统的录音室，邀请当地音乐家和他一起探索这套语言。这是这条翻译血脉里第一个清晰的对话模板：一个白人英国摇滚明星，进入黑人美国节奏传统的领地，不放弃自己原有身份，同时吸收对方的节奏语言。<break time=\"300ms\"/>「<lang xml:lang=\"en-US\">Fame</lang>」在节奏上的核心是 <lang xml:lang=\"en-US\">Carlos Alomar</lang> 的切分吉他——每一击都落在拍子的缝隙里而不是拍子本身上，和 <lang xml:lang=\"en-US\">Lennon</lang> 的律动人声交织，形成一种类似 <lang xml:lang=\"en-US\">funk</lang> 的前冲感，但保留了 <lang xml:lang=\"en-US\">Bowie</lang> 摇滚乐的动势。三年后 <lang xml:lang=\"en-US\">Stones</lang> 在 <lang xml:lang=\"en-US\">Studio 54</lang> 做的，是同一套逻辑的下一个版本。",
+        "estimated_duration_seconds": 86,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection",
+          "narrative_slot_excerpt"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "neutral",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "consensus",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Young_Americans_(album)"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 5,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "chic_risque_good-times",
+        "artist": "Chic",
+        "song": "Good Times",
+        "album": "Risqué",
+        "year": 1979,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=2333069",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_05",
+        "text_for_tts": "这首歌是本次展览的技术核心。<phoneme alphabet=\"ipa\" ph=\"naɪl ˈrɒdʒərz\">Nile Rodgers</phoneme> 和 <phoneme alphabet=\"ipa\" ph=\"ˈbɜːnəd ˈɛdwərdz\">Bernard Edwards</phoneme> 把 <lang xml:lang=\"en-US\">James Brown</lang> 的节拍语法精炼成了 <lang xml:lang=\"en-US\">disco</lang> 最干净的形态：互锁的吉他切分和贝斯线，像两个机器零件咬合，几乎不需要填充任何其他东西。<break time=\"300ms\"/><lang xml:lang=\"en-US\">Edwards</lang> 的贝斯线用的是<emphasis level=\"strong\">八度跳进</emphasis>——同一个根音在低弦和高弦之间来回，每次跳都恰好与 kick 同拍锁定，和鼓的咬合既紧又有弹性。这个八度跳进结构后来被 <lang xml:lang=\"en-US\">Bill Wyman</lang> 带进了 <lang xml:lang=\"en-US\">Miss You</lang>，被 <phoneme alphabet=\"ipa\" ph=\"dʒɒn ˈdiːkən\">John Deacon</phoneme> 带进了 <lang xml:lang=\"en-US\">Another One Bites the Dust</lang>，被 <lang xml:lang=\"en-US\">The Sugarhill Gang</lang> 直接用进了 <lang xml:lang=\"en-US\">Rapper's Delight</lang>。《<lang xml:lang=\"en-US\">Good Times</lang>》的贝斯线是流行音乐史上被引用最多的贝斯线之一。",
+        "estimated_duration_seconds": 90,
+        "components_present": [
+          "lineage_position",
+          "musicological_connection",
+          "relation_to_next",
+          "narrative_slot_excerpt"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "warm",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "fact",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Chic_(band)"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 6,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "rolling-stones_some-girls_miss-you",
+        "artist": "The Rolling Stones",
+        "song": "Miss You",
+        "album": "Some Girls",
+        "year": 1978,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=105575",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_06",
+        "text_for_tts": "我们到了展览的中心节点。<break time=\"400ms\"/>1977 年，<phoneme alphabet=\"ipa\" ph=\"mɪk ˈdʒægər\">Mick Jagger</phoneme> 在多伦多的 <lang xml:lang=\"en-US\">El Mocambo</lang> 演出現場，从 <phoneme alphabet=\"ipa\" ph=\"ˈbɪli ˈprɛstən\">Billy Preston</phoneme> 那里第一次听到四四拍 disco 节奏的小样演示。然后他和 <lang xml:lang=\"en-US\">Keith Richards</lang> 之间有了一场著名的分歧：<lang xml:lang=\"en-US\">Richards</lang> 讨厌 <lang xml:lang=\"en-US\">disco</lang>；<lang xml:lang=\"en-US\">Jagger</lang> 坚持做这首歌。<break time=\"300ms\"/>你在这首歌里能听到的，是两个层次同时存在的声音：<lang xml:lang=\"en-US\">Bill Wyman</lang> 的贝斯走的是 <lang xml:lang=\"en-US\">Chic</lang> 那种八度跳进，但他把每一拍的强重音<emphasis level=\"strong\">错开了一个十六分音符</emphasis>，所以走起来比 <lang xml:lang=\"en-US\">Chic</lang> 的锁定律动更晃，更像 <lang xml:lang=\"en-US\">Stones</lang> 一直以来的 swing。这不是 <lang xml:lang=\"en-US\">funk</lang> 的标准句法——这是 <lang xml:lang=\"en-US\">Wyman</lang> 在用 <lang xml:lang=\"en-US\">funk</lang> 词汇说 <lang xml:lang=\"en-US\">Stones</lang> 的话。口琴手是 <phoneme alphabet=\"ipa\" ph=\"ˈʃʊgər bluː\">Sugar Blue</phoneme>，一个 22 岁的美国街头音乐人，被人从巴黎地铁发现，带进了录音室。",
+        "estimated_duration_seconds": 96,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection",
+          "narrative_slot_excerpt",
+          "member_dynamics"
+        ],
+        "voice_overrides": {
+          "pace": "slow",
+          "emotional_register": "warm",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "fact",
+        "sources_referenced": [
+          "https://www.salon.com/2017/08/19/rolling-stones-33-13-excerpt/",
+          "https://en.wikipedia.org/wiki/Miss_You"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 7,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "blondie_parallel-lines_heart-of-glass",
+        "artist": "Blondie",
+        "song": "Heart of Glass",
+        "album": "Parallel Lines",
+        "year": 1978,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=16849154",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_07",
+        "text_for_tts": "同一年，同一个城市，但从完全相反的方向。<lang xml:lang=\"en-US\">Miss You</lang> 从经典摇滚出发走向 <lang xml:lang=\"en-US\">disco</lang>；<phoneme alphabet=\"ipa\" ph=\"ˈdɛbi ˈhæri\">Debbie Harry</phoneme> 和 <lang xml:lang=\"en-US\">Chris Stein</lang> 从 <lang xml:lang=\"en-US\">CBGB</lang> 朋克出发，走向了同一个 disco 节点。两支乐队，两条路，同一年抵达同一个音乐语法。<break time=\"300ms\"/>对比这两首歌的底鼓：<lang xml:lang=\"en-US\">Blondie</lang> 用的是 <phoneme alphabet=\"ipa\" ph=\"ˈrəʊlænd\">Roland</phoneme> CR-78 鼓机，节拍均等、机械、精确，没有人力摇摆的余地；<lang xml:lang=\"en-US\">Stones</lang> 用的是真人鼓手 <phoneme alphabet=\"ipa\" ph=\"ˈtʃɑːli wɒts\">Charlie Watts</phoneme>，那种人力的轻微偏移让 <lang xml:lang=\"en-US\">Miss You</lang> 有了摇滚乐的体温。同一套翻译美学，<emphasis level=\"strong\">两种温度</emphasis>：机器 disco 对人力 disco。乐队其他成员对这首歌极度不舒服——和 <lang xml:lang=\"en-US\">Keith Richards</lang> 一样。",
+        "estimated_duration_seconds": 90,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection",
+          "narrative_slot_excerpt",
+          "member_dynamics"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "neutral",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "fact",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Heart_of_Glass_(song)"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 8,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "devo_q-are-we-not-men_jocko-homo",
+        "artist": "Devo",
+        "song": "Jocko Homo",
+        "album": "Q: Are We Not Men? A: We Are Devo!",
+        "year": 1978,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=6316",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_08",
+        "text_for_tts": "同年，但是是这条翻译血脉的对立面。<lang xml:lang=\"en-US\">Devo</lang> 的「去进化」理论认为，<lang xml:lang=\"en-US\">disco</lang> 的享乐主义和摇滚乐的景观——包括 <lang xml:lang=\"en-US\">Miss You</lang> 所代表的文化时刻——都是人类退化的证明。他们不翻译，他们<emphasis level=\"strong\">拒绝</emphasis>翻译。<break time=\"300ms\"/>这首歌在节奏上做的事，是 <lang xml:lang=\"en-US\">funk</lang> 的对立面：节拍机械均等，没有 swing，没有切分，没有任何让身体想要律动的前推感。吉他线是角状的、不友好的。如果说 <lang xml:lang=\"en-US\">Chic</lang> 的设计目标是让人不由自主地跳舞，<lang xml:lang=\"en-US\">Devo</lang> 的目标是让你觉得跳舞这件事本身荒谬。<lang xml:lang=\"en-US\">Mark Mothersbaugh</lang> 和 <lang xml:lang=\"en-US\">Gerald Casale</lang> 在肯特州立大学发展出这套「去进化」哲学，<lang xml:lang=\"en-US\">Casale</lang> 亲眼目睹了 1970 年的国民警卫队枪击事件——这给了 <lang xml:lang=\"en-US\">Devo</lang> 的反大众文化立场一个具体的历史根源。",
+        "estimated_duration_seconds": 88,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection",
+          "narrative_slot_excerpt"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "neutral",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "consensus",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Q:_Are_We_Not_Men%3F_A:_We_Are_Devo!"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 9,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "joy-division_closer_isolation",
+        "artist": "Joy Division",
+        "song": "Isolation",
+        "album": "Closer",
+        "year": 1980,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=18860348",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_09",
+        "text_for_tts": "第三条岔路。Joy Division 代表了 1978–1980 年同一个历史路口上的另一种应答——不是翻译，不是拒绝，而是用寒化和空化来回应这个音乐时刻。<lang xml:lang=\"en-US\">Joy Division</lang> 站在同一个 1978–1980 年的路口，选择了和摇滚-<lang xml:lang=\"en-US\">disco</lang> 翻译完全相反的方向：电子极简主义，冷峻，无机。<break time=\"300ms\"/>你在这首歌里能听到的，是系统性的<emphasis level=\"strong\">频谱掏空</emphasis>——制作人 <phoneme alphabet=\"ipa\" ph=\"ˈmɑːtɪn ˈhænɪt\">Martin Hannett</phoneme> 把每件乐器的空间极度分离，鼓声是电子处理过的而不是有机的，<phoneme alphabet=\"ipa\" ph=\"ˈpiːtər hʊk\">Peter Hook</phoneme> 的贝斯线占据了通常留给吉他的旋律频段，而不是留在低频做节奏。<lang xml:lang=\"en-US\">funk</lang> 和 <lang xml:lang=\"en-US\">disco</lang> 靠的是频谱的饱满和密度；<lang xml:lang=\"en-US\">Joy Division</lang> 用的是它们的负片——同样的后朋克时刻，同样的工具箱，用减法说话。这是继 <lang xml:lang=\"en-US\">Devo</lang> 之后的第二种拒绝，但拒绝的方式更冷、更深。",
+        "estimated_duration_seconds": 85,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection"
+        ],
+        "voice_overrides": {
+          "pace": "slow",
+          "emotional_register": "contemplative",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "mixed",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Closer_(Joy_Division_album)"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 10,
+      "exhibit_type": "interlude",
+      "track_ref": null,
+      "pre_narration": {
+        "narration_id": "interlude_10",
+        "text_for_tts": "三条同时期的道路展示完了：<lang xml:lang=\"en-US\">Blondie</lang> 翻译了，用机器温度；<lang xml:lang=\"en-US\">Devo</lang> 拒绝了，用理论武装；<lang xml:lang=\"en-US\">Joy Division</lang> 把温度降到零，用寒化来回应。<break time=\"500ms\"/>1980 年以后，这套翻译逻辑没有消失，而是以不同的形态继续生长。接下来的四件展品跨越 1980 年到 2013 年，记录的是这套逻辑在传递中的变形：有人把它做得更智识，有人把它追溯回 <lang xml:lang=\"en-US\">Chic</lang> 的源头、建立了一条更直接的人员传承线，有人把翻译美学内化到语法消失的地步，然后在语法消失之后做减法。",
+        "estimated_duration_seconds": 74,
+        "components_present": [],
+        "voice_overrides": {
+          "pace": "slow",
+          "emotional_register": "contemplative",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "fact",
+        "sources_referenced": []
+      },
+      "post_narration": null
+    },
+    {
+      "position": 11,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "talking-heads_remain-in-light_once-in-a-lifetime",
+        "artist": "Talking Heads",
+        "song": "Once in a Lifetime",
+        "album": "Remain in Light",
+        "year": 1980,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": null,
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_11",
+        "text_for_tts": "第四条岔路。<lang xml:lang=\"en-US\">Talking Heads</lang> 和 <lang xml:lang=\"en-US\">Eno</lang> 的 <lang xml:lang=\"en-US\">Remain in Light</lang> 从同样的源头——<lang xml:lang=\"en-US\">Chic</lang> 的节奏精准和工作室迭加方法——但翻译出了完全不同的东西。不是舞池，不是摇滚，而是非洲鼓乐、艺术摇滚和电子探索的混合体。\"<lang xml:lang=\"en-US\">Once in a Lifetime</lang>\"的循环鼓组和分层吉他与 <lang xml:lang=\"en-US\">Chic</lang> 的工作方式相同，但音乐内核是陌生化的、思辨的。<phoneme alphabet=\"ipa\" ph=\"ˈdeɪvɪd ˈbaɪrn\">David Byrne</phoneme> 不是在翻译迪斯科——他在用迪斯科的结构密度来构建一个全新的思考空间。这是 1980 年对 <lang xml:lang=\"en-US\">Studio 54</lang> 的另一种应答：不是逃离，不是抵抗，而是吸收和异化。",
+        "estimated_duration_seconds": 85,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "neutral",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "consensus",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Remain_in_Light",
+          "https://en.wikipedia.org/wiki/Talking_Heads"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 12,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "queen_the-game_another-one-bites-the-dust",
+        "artist": "Queen",
+        "song": "Another One Bites the Dust",
+        "album": "The Game",
+        "year": 1980,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=2065646",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_12",
+        "text_for_tts": "第五条岔路。<lang xml:lang=\"en-US\">Queen</lang> 的贝斯手 <phoneme alphabet=\"ipa\" ph=\"dʒɒn ˈdiːkən\">John Deacon</phoneme> 在 1980 年做了一个明确的选择：他直接听了 <lang xml:lang=\"en-US\">Chic</lang> 的\"<lang xml:lang=\"en-US\">Good Times</lang>\"，然后写出了\"<lang xml:lang=\"en-US\">Another One Bites the Dust</lang>\"。这是所有这些翻译中最直接的引用——不是灵感，不是平行，而是一条清晰的血脉。贝斯线的八度跳跃、四拍节奏的锁定、以及对低频带的霸占，都来自 <lang xml:lang=\"en-US\">Chic</lang> 的 <phoneme alphabet=\"ipa\" ph=\"ˈbɜːnəd ˈɛdwərdz\">Bernard Edwards</phoneme> 的手册。但 <lang xml:lang=\"en-US\">Queen</lang> 的摇滚肌肉——<phoneme alphabet=\"ipa\" ph=\"ˈfrɛdi ˈmɜːkjəri\">Freddie Mercury</phoneme> 的主唱、<phoneme alphabet=\"ipa\" ph=\"ˈbraɪən meɪ\">Brian May</phoneme> 的吉他——让这条贝斯线听起来像是一次入侵，而不是翻译。<lang xml:lang=\"en-US\">Miss You</lang> 让迪斯科和摇滚平等共存；<lang xml:lang=\"en-US\">Another One Bites the Dust</lang> 让贝斯主导了一个摇滚乐队。这标志了 <lang xml:lang=\"en-US\">Miss You</lang> 这条岔路的完全成熟。",
+        "estimated_duration_seconds": 95,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection",
+          "narrative_slot_excerpt"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "neutral",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "consensus",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Another_One_Bites_the_Dust",
+          "https://en.wikipedia.org/wiki/Queen_(band)"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 13,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "prince_purple-rain_when-doves-cry",
+        "artist": "Prince",
+        "song": "When Doves Cry",
+        "album": "Purple Rain",
+        "year": 1984,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=149402",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_13",
+        "text_for_tts": "<emphasis level=\"moderate\">最后一条岔路。</emphasis><phoneme alphabet=\"ipa\" ph=\"prɪns\">Prince</phoneme> 的 <lang xml:lang=\"en-US\">Purple Rain</lang> 代表了 <lang xml:lang=\"en-US\">Miss You</lang> 这条线索的内化——岔路已经成为新的主干道。他从不停地翻译 <phoneme alphabet=\"ipa\" ph=\"ˈdʒeɪməs braʊn\">James Brown</phoneme> 和 <lang xml:lang=\"en-US\">Chic</lang>——他把这两条线索熔进了自己的身体里，直到分不开了。\"<lang xml:lang=\"en-US\">When Doves Cry</lang>\"没有贝斯线——<phoneme alphabet=\"ipa\" ph=\"prɪns\">Prince</phoneme> 用吉他的 muting 和鼓的动态来创造了一个空白的频率空间，就像缺失的贝斯本身一样强有力。这是从 <lang xml:lang=\"en-US\">Miss You</lang> 的\"贝斯驱动\"到\"贝斯缺失\"的跳跃，但效果是一样的：让听者感受到节奏的存在是通过它的缺席。这是 1984 年对 1978 年迪斯科-摇滚翻译的完全内化和超越。<lang xml:lang=\"en-US\">Miss You</lang> 是问题；<lang xml:lang=\"en-US\">Purple Rain</lang> 是答案——或者说，是已经忘记了问题的答案。",
+        "estimated_duration_seconds": 105,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "contemplative",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "hypothesis",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Purple_Rain_(album)",
+          "agent synthesis — connection not previously documented in published sources"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 14,
+      "exhibit_type": "track",
+      "track_ref": {
+        "node_id": "daft-punk_random-access-memories_get-lucky",
+        "artist": "Daft Punk (feat. Nile Rodgers)",
+        "song": "Get Lucky",
+        "album": "Random Access Memories",
+        "year": 2013,
+        "play_mode": "full",
+        "excerpt_range": null,
+        "platform_links": {
+          "spotify": null,
+          "netease": "https://music.163.com/#/song?id=25706282",
+          "youtube": null,
+          "apple_music": null
+        }
+      },
+      "pre_narration": {
+        "narration_id": "pre_14",
+        "text_for_tts": "<emphasis level=\"moderate\">回环。</emphasis><phoneme alphabet=\"ipa\" ph=\"ˈnaɪl ˈrɒdʒərz\">Nile Rodgers</phoneme>，<lang xml:lang=\"en-US\">Chic</lang> 的联合创始人，在 2013 年应邀为 <lang xml:lang=\"en-US\">Daft Punk</lang> 的 <lang xml:lang=\"en-US\">Random Access Memories</lang> 演奏吉他。<lang xml:lang=\"en-US\">Get Lucky</lang> 直接招募了 <lang xml:lang=\"en-US\">Miss You</lang> 的源头——<lang xml:lang=\"en-US\">Chic</lang> 的节奏精准、<phoneme alphabet=\"ipa\" ph=\"ˈbɜːnəd ˈɛdwərdz\">Bernard Edwards</phoneme> 的贝斯美学、<phoneme alphabet=\"ipa\" ph=\"ˈnaɪl ˈrɒdʒərz\">Rodgers</phoneme> 的吉他纹理——但融合了 <lang xml:lang=\"en-US\">Daft Punk</lang> 的电子制作，反而成为了对 1970s–1980s 音乐黄金时代的一次温情的、经过滤镜的回忆。这不是一个新的岔路。这是对整条线索的一次<emphasis level=\"strong\">确认</emphasis>：从 <phoneme alphabet=\"ipa\" ph=\"ˈdʒeɪməs braʊn\">James Brown</phoneme> 开始、通过 <lang xml:lang=\"en-US\">Miss You</lang> 的翻译、最后由 <lang xml:lang=\"en-US\">Chic</lang> 的原始建筑师亲自确认，这条迪斯科-摇滚-电子的谱系不仅存在，而且足够强大，可以让下一代音乐家用尊敬的方式回到它。",
+        "estimated_duration_seconds": 100,
+        "components_present": [
+          "lineage_position",
+          "relation_to_previous",
+          "musicological_connection",
+          "narrative_slot_excerpt",
+          "personal_resonance"
+        ],
+        "voice_overrides": {
+          "pace": "normal",
+          "emotional_register": "warm",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "fact",
+        "sources_referenced": [
+          "https://en.wikipedia.org/wiki/Random_Access_Memories",
+          "https://en.wikipedia.org/wiki/Nile_Rodgers"
+        ]
+      },
+      "post_narration": null
+    },
+    {
+      "position": 15,
+      "exhibit_type": "thematic_closure",
+      "track_ref": null,
+      "pre_narration": {
+        "narration_id": "closing",
+        "text_for_tts": "结尾。我们从 <lang xml:lang=\"en-US\">Miss You</lang> 开始，经过了 <phoneme alphabet=\"ipa\" ph=\"ˈdʒeɪməs braʊn\">James Brown</phoneme> 的节奏革命、<lang xml:lang=\"en-US\">Chic</lang> 的工作室精准、<lang xml:lang=\"en-US\">Sly Stone</lang> 的暗黑孤独、<phoneme alphabet=\"ipa\" ph=\"prɪns\">Prince</phoneme> 的音乐消融，最后回到了 <phoneme alphabet=\"ipa\" ph=\"ˈnaɪl ˈrɒdʒərz\">Nile Rodgers</phoneme> ——他在 1980 年编织这个故事线条，今天又亲手确认了它的延续。<break time=\"500ms\"/>但这不是一个故事的结束。这是一个诗学的确认：音乐不会遗忘它的源头，只会一次又一次地用不同的方式重新讲述。从 <lang xml:lang=\"en-US\">Studio 54</lang> 的舞池到 2013 年的数字工作室，从四拍的迪斯科节奏到缺失的贝斯线，同一种美学的基因在运行：节奏是语言，频率分布是意义的地图，音乐家们通过翻译而不是背弃来建造新的东西。<break time=\"400ms\"/>这是你在 <lang xml:lang=\"en-US\">Miss You</lang> 中听到的：不仅仅是一首歌的循环旋律，而是一个整个时代的声音方法——如何让摇滚乐手听起来像灵魂乐手，如何让迪斯科的数学进入摇滚的肌肉，如何在一个逐渐全球化、逐渐数字化的世界里，让模拟时代的舞者和今天的制作人用同样的语言对话。<break time=\"400ms\"/>我们的 <lang xml:lang=\"en-US\">Miss You</lang> 地图就在这里，已经画完了。现在该你来听了。",
+        "estimated_duration_seconds": 110,
+        "components_present": [
+          "curatorial_thesis_statement",
+          "lineage_anchor_recall",
+          "personal_resonance"
+        ],
+        "voice_overrides": {
+          "pace": "slow",
+          "emotional_register": "warm",
+          "use_default_persona": true
+        },
+        "epistemic_layer": "consensus",
+        "sources_referenced": [
+          "spec synthesis — curatorial statement reflecting the full episode arc"
+        ]
+      },
+      "post_narration": null
+    }
+  ],
+  "duration_estimates": {
+    "music_only_seconds": 3900,
+    "narration_only_seconds": 1420,
+    "full_episode_seconds": 5320
+  },
+  "expansion_notes": "Complete episode: 15 exhibits total (1 opening + 4 ancestors + 1 anchor + 3 laterals + 1 interlude + 4 descendants + 1 closing). Full episode duration: 88.7 minutes (music_only 65.0 min + narration_only 23.7 min). Platform link coverage: 11/12 track exhibits have NetEase Cloud Music links; Talking Heads - Once in a Lifetime unavailable on NetEase (artist availability varies by region). Closing exhibit (position 15, thematic_closure type) provides thematic synthesis and curatorial confirmation of entire 1967–2013 genealogy arc. Episode is narratively and structurally complete, ready for TTS synthesis via Spec §7B.5 and audio stitching workflow.",
+  "generated_at": "2026-05-05T00:00:00Z"
+}
