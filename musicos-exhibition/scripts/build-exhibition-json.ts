@@ -23,6 +23,22 @@ const NETEASE_UNAVAILABLE = new Set<number>([
   11, // Talking Heads — Once in a Lifetime (not licensed on NetEase)
 ]);
 
+// Corrections for stale NetEase IDs found in the playlist markdown.
+// Keys are playlist positions (1..18); values are the replacement IDs (as strings).
+// Verified working (code=200, url=OK) via song_url_v1 at time of correction (2026-05-05).
+const NETEASE_ID_CORRECTIONS: Record<number, string> = {
+  1:  '27138926',   // James Brown — Cold Sweat; old ID 18713 returns 404
+  2:  '20344729',   // Sly & the Family Stone — Family Affair; old ID 6039 returns 404
+  4:  '18300309',   // Parliament — Give Up the Funk; old ID 26149 returns 404
+  5:  '5059535',    // Bee Gees — Stayin' Alive; old ID 6450 returns 404
+  6:  '21968201',   // The Rolling Stones — Miss You (Remastered); old ID 105575 returns 404
+  8:  '4021819',    // Devo — Jocko Homo; old ID 6316 returns 404
+  13: '21393063',   // Prince — When Doves Cry; old ID 5054 returns 404
+  14: '21536236',   // Red Hot Chili Peppers — Give It Away; old ID 5225 returns 404
+  15: '26349642',   // Daft Punk — Get Lucky; old ID 28633948 returns 404
+  16: '33004499',   // Tame Impala — The Less I Know the Better; old ID 427814441 returns 404
+};
+
 // Mapping: playlist position (1..18) → vault node_id + classification
 const TRACK_META: Record<number, {
   node_id: string;
@@ -114,7 +130,9 @@ function main() {
       exhibit_type: meta.exhibit_type,
       is_base_node: meta.is_base_node,
       mechanism_tags: meta.mechanism_tags,
-      netease_song_id: NETEASE_UNAVAILABLE.has(t.position) ? null : t.netease_song_id,
+      netease_song_id: NETEASE_UNAVAILABLE.has(t.position)
+        ? null
+        : (NETEASE_ID_CORRECTIONS[t.position] ?? t.netease_song_id),
       audio_url: null,
       album_cover_url: null,
       duration_seconds: null,
