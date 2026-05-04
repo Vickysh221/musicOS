@@ -1,0 +1,8 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Node / Vite (kept out of root; musicos-exhibition has its own)
+node_modules/
+.DS_Store
