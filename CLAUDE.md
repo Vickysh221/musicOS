@@ -7,6 +7,8 @@ anchor outward, overlaying the user's listening data, and producing annotated pl
 
 **Sourcing principles:** `docs/superpowers/plans/sonic_cartography_sourcing_principles.md` — read it before any generative task (map expansion, playlist annotation, episode narration, fact-check pass). Core rule: every `fact`-tier claim requires ≥2 independent sources, at least 1 Tier 1–2. Run the §8 self-check before every delivery.
 
+**Episode audio pipeline:** `docs/episode_audio_pipeline.md` — runbook for transcript → TTS narration → music fusion → exhibition wiring, including the YouTube-fallback for missing/truncated audio sources. Read before producing audio for any new episode.
+
 ---
 
 ## Core architectural rule: nodes are permanent singletons
