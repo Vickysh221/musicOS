@@ -133,4 +133,11 @@ describe('build-exhibition-json', () => {
     expect(devo.muted_this_episode).toBe(true);
     expect(devo.bridge_narration_zh).toBeTruthy();
   });
+
+  it('album_cover_url is backfilled from public/covers/<slug>.jpg when present', () => {
+    const tracks = data.filter((e): e is TrackExhibit => e.kind === 'track');
+    // At least 15 of 18 tracks should have a non-null cover URL pointing at /covers/.
+    const withCovers = tracks.filter((t) => typeof t.album_cover_url === 'string' && t.album_cover_url!.startsWith('/covers/'));
+    expect(withCovers.length).toBeGreaterThanOrEqual(15);
+  });
 });

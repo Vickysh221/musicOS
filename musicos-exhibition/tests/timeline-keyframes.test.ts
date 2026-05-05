@@ -1,0 +1,60 @@
+import { describe, it, expect } from 'vitest';
+import { processionLayout, seededJitter } from '../src/components/timeline/timeline-keyframes.js';
+
+describe('processionLayout', () => {
+  const total = 18;
+  const anchorIndex = 6;
+
+  it('focal card (anchor when nothing hovered) is upright and fully opaque', () => {
+    const t = processionLayout({ index: anchorIndex, total, anchorIndex, hoveredIndex: null });
+    expect(t.rotZ).toBe(0);
+    expect(t.opacity).toBe(1);
+    expect(t.scale).toBeGreaterThan(1);
+  });
+
+  it('non-focal cards have lower opacity than focal', () => {
+    const focal = processionLayout({ index: anchorIndex, total, anchorIndex, hoveredIndex: null });
+    const other = processionLayout({ index: 0, total, anchorIndex, hoveredIndex: null });
+    expect(other.opacity).toBeLessThan(focal.opacity);
+  });
+
+  it('hovering a card makes it focal and dims the rest harder', () => {
+    const hovered = processionLayout({ index: 2, total, anchorIndex, hoveredIndex: 2 });
+    const dimmed = processionLayout({ index: 5, total, anchorIndex, hoveredIndex: 2 });
+    expect(hovered.rotZ).toBe(0);
+    expect(hovered.opacity).toBe(1);
+    expect(hovered.scale).toBeGreaterThan(1);
+    expect(dimmed.opacity).toBeLessThanOrEqual(0.5);
+  });
+
+  it('x coordinate is monotonically increasing with index', () => {
+    let prev = -Infinity;
+    for (let i = 0; i < total; i++) {
+      const t = processionLayout({ index: i, total, anchorIndex, hoveredIndex: null });
+      expect(t.x).toBeGreaterThan(prev);
+      prev = t.x;
+    }
+  });
+
+  it('cards rise (y decreases) as index increases', () => {
+    const left = processionLayout({ index: 0, total, anchorIndex, hoveredIndex: null });
+    const right = processionLayout({ index: total - 1, total, anchorIndex, hoveredIndex: null });
+    expect(right.y).toBeLessThan(left.y);
+  });
+
+  it('non-focal jitter rotation is bounded and stable across calls', () => {
+    const a = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null });
+    const b = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null });
+    expect(a.rotZ).toBe(b.rotZ);
+    expect(Math.abs(a.rotZ)).toBeLessThanOrEqual(6);
+  });
+
+  it('seededJitter returns deterministic values in [-1, 1]', () => {
+    for (let i = 0; i < 50; i++) {
+      const v = seededJitter(i);
+      expect(v).toBeGreaterThanOrEqual(-1);
+      expect(v).toBeLessThanOrEqual(1);
+    }
+    expect(seededJitter(7)).toBe(seededJitter(7));
+  });
+});

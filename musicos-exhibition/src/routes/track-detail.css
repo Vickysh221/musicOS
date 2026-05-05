@@ -1,0 +1,234 @@
+/* musicos-exhibition/src/routes/track-detail.css */
+
+.detail {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f6f6f4;
+  color: #111;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.detail__back {
+  position: fixed;
+  top: 22px;
+  left: 28px;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #111;
+  text-decoration: none;
+  z-index: 50;
+}
+.detail__back:hover { text-decoration: underline; }
+
+.detail__layout {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  min-height: 100vh;
+  padding: 0 64px;
+  box-sizing: border-box;
+  align-items: center;
+  gap: 48px;
+}
+
+@media (max-width: 900px) {
+  .detail__layout {
+    grid-template-columns: 1fr;
+    padding: 80px 24px 120px;
+  }
+}
+
+/* ---------- Card stack (left) ---------- */
+
+.detail__cards {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  height: 520px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail__card {
+  position: absolute;
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.18), 0 4px 12px rgba(0, 0, 0, 0.08);
+  border: 1px solid rgba(17, 17, 17, 0.06);
+}
+
+.detail__card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.detail__card--main {
+  width: 380px;
+  height: 380px;
+  z-index: 3;
+}
+
+.detail__card--ghost-tl {
+  width: 280px;
+  height: 280px;
+  top: 20px;
+  left: 0;
+  transform: rotate(-8deg);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.detail__card--ghost-bl {
+  width: 280px;
+  height: 280px;
+  bottom: 10px;
+  left: 30px;
+  transform: rotate(6deg);
+  opacity: 0.4;
+  z-index: 2;
+}
+
+/* ---------- Play button overlay ---------- */
+
+.detail__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 64px;
+  height: 64px;
+  margin: -32px 0 0 -32px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  z-index: 10;
+  font-size: 22px;
+  line-height: 1;
+  transition: transform 160ms ease;
+}
+.detail__play:hover { transform: scale(1.05); }
+.detail__play:disabled {
+  background: #d6d6d2;
+  color: #888;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.detail__play-caption {
+  position: absolute;
+  top: calc(50% + 44px);
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #888;
+  z-index: 10;
+  white-space: nowrap;
+}
+
+/* ---------- Info panel (right) ---------- */
+
+.detail__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 520px;
+}
+
+.detail__title {
+  font-size: 64px;
+  font-weight: 500;
+  color: #111;
+  line-height: 1.05;
+  margin: 0 0 16px;
+  letter-spacing: -0.01em;
+}
+
+.detail__artist {
+  font-size: 24px;
+  font-weight: 400;
+  color: #555;
+  margin: 0;
+}
+
+.detail__meta {
+  margin-top: 12px;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #999;
+}
+
+.detail__transcript {
+  margin-top: 32px;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.detail__transcript--placeholder {
+  color: #999;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .detail__title { font-size: 40px; }
+}
+
+/* ---------- Bottom-right pill nav ---------- */
+
+.detail__nav {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+  display: inline-flex;
+  background: #fffdf8;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10), 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 6px;
+  gap: 4px;
+  z-index: 60;
+}
+
+.detail__nav-btn {
+  width: 48px;
+  height: 40px;
+  border-radius: 999px;
+  border: none;
+  background: transparent;
+  color: #111;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: inherit;
+}
+
+.detail__nav-btn:disabled {
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.detail__nav-btn--primary {
+  background: #111;
+  color: #fff;
+}
+.detail__nav-btn--primary:disabled {
+  background: #d6d6d2;
+  color: #aaa;
+}

@@ -1,0 +1,190 @@
+/* musicos-exhibition/src/components/timeline/timeline.css */
+
+:root {
+  --inkwell-bg: #f6f6f4;
+  --inkwell-fg: #111;
+  --inkwell-muted: #888;
+  --inkwell-ghost: #bdbdbd;
+  --inkwell-border: rgba(17, 17, 17, 0.85);
+}
+
+.timeline-scene {
+  width: 100vw;
+  height: 100vh;
+  background: var(--inkwell-bg);
+  position: relative;
+  overflow: hidden;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  color: var(--inkwell-fg);
+}
+
+.timeline-scene__stage {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1600px;
+  perspective-origin: 50% 55%;
+}
+
+.timeline-scene__stage-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transform: rotateX(22deg) rotateY(-14deg);
+}
+
+.track-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 150px;
+  height: 200px;
+  margin: -100px 0 0 -75px; /* center on (50%, 50%) */
+  border: 1px solid rgba(17, 17, 17, 0.08);
+  padding: 0;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
+  cursor: pointer;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+  transition: opacity 200ms ease;
+}
+
+.track-card--focal {
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.18), 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.track-card__art {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.track-card__art--placeholder {
+  background: linear-gradient(135deg, #ddd, #bbb);
+}
+
+/* ---------- Stepper ---------- */
+
+.timeline-scene__stepper-wrap {
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
+}
+
+.stepper {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  gap: 18px;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+}
+
+.stepper__label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--inkwell-fg);
+}
+
+.stepper__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--inkwell-fg);
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
+}
+
+.stepper__pills {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  text-align: left;
+  min-width: 240px;
+}
+
+.stepper__pill {
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  line-height: 14px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
+}
+
+.stepper__pill--active {
+  border-color: var(--inkwell-fg);
+  color: var(--inkwell-fg);
+  font-weight: 500;
+}
+
+.stepper__pill--ghost {
+  color: var(--inkwell-ghost);
+  opacity: 0.55;
+}
+
+/* ---------- Header (Inkwell-style) ---------- */
+
+.timeline-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 18px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--inkwell-fg);
+  z-index: 100;
+}
+
+.timeline-header__brand {
+  font-weight: 500;
+}
+
+.timeline-header__cta {
+  background: transparent;
+  color: var(--inkwell-fg);
+  border: 1px solid var(--inkwell-fg);
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.timeline-header__cta:hover {
+  background: var(--inkwell-fg);
+  color: var(--inkwell-bg);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-scene__stage-inner { transform: none; }
+}

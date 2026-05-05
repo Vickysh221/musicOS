@@ -1,10 +1,11 @@
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { parsePlaylist } from './lib/parse-playlist.js';
 import { parseEpisode } from './lib/parse-episode.js';
 import { parseConnections, type ConnectionsFile, type ConnectionPair } from './lib/parse-connections.js';
+import { fileSlug } from './lib/slug.js';
 import type { Exhibit, TrackExhibit, NonTrackExhibit, Mechanism, ExhibitType, ConnectionKind, EvidenceBasis, RedHeartTier, RedHeartSeed } from '../src/types.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
@@ -280,6 +281,12 @@ function main() {
     const rh = runRedHeartMatch(t.artist, t.song, epAlbum);
     const muted = conn.muted_positions.includes(t.position);
 
+    // Backfill album_cover_url from public/covers/<slug>.jpg if it exists on disk.
+    // Used as fallback when prevAudio (from fetch-audio.ts) hasn't populated it yet.
+    const coverSlug = fileSlug(t.position, t.artist, t.song);
+    const coverFile = path.resolve(__dirname, `../public/covers/${coverSlug}.jpg`);
+    const detectedCoverUrl = existsSync(coverFile) ? `/covers/${coverSlug}.jpg` : null;
+
     exhibits.push({
       kind: 'track',
       position: t.position, // 1..18, matches playlist
@@ -295,7 +302,7 @@ function main() {
         ? null
         : (NETEASE_ID_CORRECTIONS[t.position] ?? t.netease_song_id),
       audio_url: prevAudio.get(t.position)?.audio_url ?? null,
-      album_cover_url: prevAudio.get(t.position)?.album_cover_url ?? null,
+      album_cover_url: prevAudio.get(t.position)?.album_cover_url ?? detectedCoverUrl,
       duration_seconds: prevAudio.get(t.position)?.duration_seconds ?? null,
       unavailable: prevAudio.get(t.position)?.unavailable ?? false,
       transcript_zh,
