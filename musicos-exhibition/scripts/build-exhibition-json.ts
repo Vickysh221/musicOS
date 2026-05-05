@@ -1,11 +1,11 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
-import { execSync } from 'node:child_process';
+import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { parsePlaylist } from './lib/parse-playlist.js';
 import { parseEpisode } from './lib/parse-episode.js';
 import { parseConnections, type ConnectionsFile, type ConnectionPair } from './lib/parse-connections.js';
-import type { Exhibit, TrackExhibit, NonTrackExhibit, Mechanism, ExhibitType, ConnectionKind, EvidenceBasis } from '../src/types.js';
+import type { Exhibit, TrackExhibit, NonTrackExhibit, Mechanism, ExhibitType, ConnectionKind, EvidenceBasis, RedHeartTier, RedHeartSeed } from '../src/types.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const VAULT_ROOT = path.resolve(__dirname, '../..');
@@ -113,23 +113,29 @@ function pushTo<T>(m: Map<number, T[]>, k: number, v: T): void {
   m.set(k, list);
 }
 
-function runRedHeartMatch(artist: string, song: string, album: string): {
-  tier: 'hit' | 'adjacent' | 'blind_spot';
-  matched_seeds: { type: string; value: string }[];
-} {
-  // Build a JSON argument to pass via stdin to avoid any shell quoting issues
+interface RedHeartResult {
+  tier: RedHeartTier;
+  matched_seeds: RedHeartSeed[];
+}
+
+function runRedHeartMatch(artist: string, song: string, album: string): RedHeartResult {
   const payload = JSON.stringify({ artist, song, album });
   const pyScript = [
     'import sys, json',
     'from tools.red_heart_match import match',
-    `node = json.loads(sys.argv[1])`,
+    'node = json.loads(sys.argv[1])',
     'print(json.dumps(match(node)))',
   ].join('; ');
-  const out = execSync(`python3 -c "${pyScript.replace(/"/g, '\\"')}" ${JSON.stringify(payload)}`, {
+  const result = spawnSync('python3', ['-c', pyScript, payload], {
     cwd: VAULT_ROOT,
     encoding: 'utf8',
   });
-  return JSON.parse(out.trim());
+  if (result.status !== 0) {
+    throw new Error(
+      `red_heart_match failed for ${artist} — ${song} (status=${result.status}): ${result.stderr}`,
+    );
+  }
+  return JSON.parse(result.stdout.trim());
 }
 
 function indexConnections(conn: ConnectionsFile): {
@@ -140,7 +146,7 @@ function indexConnections(conn: ConnectionsFile): {
   const inbound  = new Map<number, ConnectionRefBuild[]>();
   const outbound = new Map<number, ConnectionRefBuild[]>();
   const lateral  = new Map<number, ConnectionRefBuild[]>();
-  const labels: Record<string, string> = (conn as any).position_labels ?? {};
+  const labels: Record<string, string> = conn.position_labels ?? {};
 
   for (const p of conn.connection_pairs) {
     const refForFrom: ConnectionRefBuild = {
@@ -282,7 +288,7 @@ function main() {
       genre: GENRE_BY_POSITION[t.position] ?? null,
       episode_focus: conn.episode_focus,
       red_heart_tier: rh.tier,
-      red_heart_matched_seeds: rh.matched_seeds as any,
+      red_heart_matched_seeds: rh.matched_seeds,
       muted_this_episode: muted,
       bridge_narration_zh: muted ? lookupBridgeFromEpisodeJson(t.position, 'zh') : null,
       bridge_narration_en: muted ? lookupBridgeFromEpisodeJson(t.position, 'en') : null,

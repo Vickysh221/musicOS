@@ -34,6 +34,7 @@ export interface ConnectionsFile {
   };
   connection_kinds_in_scope: ConnectionKind[];
   muted_positions: number[];
+  position_labels?: Record<string, string>;
   connection_pairs: ConnectionPair[];
 }
 
