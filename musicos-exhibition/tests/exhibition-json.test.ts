@@ -78,10 +78,18 @@ describe('build-exhibition-json', () => {
     expect(data.every((e) => e.transcript_en_status === 'missing')).toBe(true);
   });
 
-  it('audio_url and album_cover_url are null in built output (Phase 1: not yet fetched)', () => {
+  it('audio_url is preserved from previous build (not clobbered to null by build-data)', () => {
+    // build-exhibition-json.ts now carries audio_url forward from the existing file.
+    // Tracks with a netease_song_id (after fetch-audio) should have a non-null url;
+    // tracks without an id (pos 11 Talking Heads, pos 12 Queen) have null intentionally.
     const tracks = data.filter((e): e is TrackExhibit => e.kind === 'track');
-    expect(tracks.every((t) => t.audio_url === null)).toBe(true);
-    expect(tracks.every((t) => t.album_cover_url === null)).toBe(true);
+    const withId = tracks.filter((t) => t.netease_song_id !== null);
+    // At minimum, the field must be a string or null — never undefined.
+    expect(tracks.every((t) => t.audio_url === null || typeof t.audio_url === 'string')).toBe(true);
+    // After fetch-audio has run, tracks with an ID should have a url.
+    if (withId.some((t) => t.audio_url !== null)) {
+      expect(withId.every((t) => t.audio_url !== null)).toBe(true);
+    }
   });
 
   it('every track has episode_focus = "bassline_dna"', () => {

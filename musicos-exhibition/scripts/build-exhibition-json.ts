@@ -233,6 +233,26 @@ function main() {
     throw new Error(`Expected 18 tracks, got ${tracks.length}`);
   }
 
+  // Preserve audio fields that fetch-audio.ts writes; build-data must not clobber them.
+  type AudioState = Pick<TrackExhibit, 'audio_url' | 'album_cover_url' | 'duration_seconds' | 'unavailable'>;
+  const prevAudio = new Map<number, AudioState>();
+  try {
+    const prev = JSON.parse(readFileSync(OUT, 'utf8')) as Exhibit[];
+    for (const e of prev) {
+      if (e.kind === 'track') {
+        const t = e as TrackExhibit;
+        prevAudio.set(t.position, {
+          audio_url: t.audio_url,
+          album_cover_url: t.album_cover_url,
+          duration_seconds: t.duration_seconds,
+          unavailable: t.unavailable,
+        });
+      }
+    }
+  } catch {
+    // first run — no existing file, prevAudio stays empty
+  }
+
   const exhibits: Exhibit[] = [];
 
   // Position 0 — opening (narrations sit at 0/19/20 so tracks keep playlist positions 1..18)
@@ -274,10 +294,10 @@ function main() {
       netease_song_id: NETEASE_UNAVAILABLE.has(t.position)
         ? null
         : (NETEASE_ID_CORRECTIONS[t.position] ?? t.netease_song_id),
-      audio_url: null,
-      album_cover_url: null,
-      duration_seconds: null,
-      unavailable: false,
+      audio_url: prevAudio.get(t.position)?.audio_url ?? null,
+      album_cover_url: prevAudio.get(t.position)?.album_cover_url ?? null,
+      duration_seconds: prevAudio.get(t.position)?.duration_seconds ?? null,
+      unavailable: prevAudio.get(t.position)?.unavailable ?? false,
       transcript_zh,
       transcript_en: null,
       transcript_zh_status,
