@@ -66,6 +66,9 @@ export function parseConnections(raw: unknown): ConnectionsFile {
   if (!f.connection_pairs || !Array.isArray(f.connection_pairs)) {
     throw new Error('missing connection_pairs[]');
   }
+  if (!Array.isArray(f.connection_kinds_in_scope)) {
+    throw new Error('connection_kinds_in_scope must be an array');
+  }
   for (const pair of f.connection_pairs) {
     validatePair(pair, f.connection_kinds_in_scope);
   }

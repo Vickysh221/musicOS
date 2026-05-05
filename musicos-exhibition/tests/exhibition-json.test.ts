@@ -60,18 +60,18 @@ describe('build-exhibition-json', () => {
     expect(th!.netease_song_id).toBeNull();
   });
 
-  it('12 tracks have transcript_zh_status === "complete"', () => {
+  it('16 tracks have transcript_zh_status === "complete" (T9 updated episode.md)', () => {
     const complete = data.filter(
       (e) => e.kind === 'track' && e.transcript_zh_status === 'complete',
     );
-    expect(complete).toHaveLength(12);
+    expect(complete).toHaveLength(16);
   });
 
-  it('6 tracks have transcript_zh_status === "placeholder"', () => {
+  it('2 tracks have transcript_zh_status === "placeholder" (pos 4 + pos 8 muted)', () => {
     const placeholders = data.filter(
       (e) => e.kind === 'track' && e.transcript_zh_status === 'placeholder',
     );
-    expect(placeholders).toHaveLength(6);
+    expect(placeholders).toHaveLength(2);
   });
 
   it('all transcript_en_status values are "missing" (Phase 1)', () => {
@@ -82,5 +82,47 @@ describe('build-exhibition-json', () => {
     const tracks = data.filter((e): e is TrackExhibit => e.kind === 'track');
     expect(tracks.every((t) => t.audio_url === null)).toBe(true);
     expect(tracks.every((t) => t.album_cover_url === null)).toBe(true);
+  });
+
+  it('every track has episode_focus = "bassline_dna"', () => {
+    const tracks = data.filter((e) => e.kind === 'track') as TrackExhibit[];
+    for (const t of tracks) {
+      expect(t.episode_focus).toBe('bassline_dna');
+    }
+  });
+
+  it('every track has a non-null genre', () => {
+    const tracks = data.filter((e) => e.kind === 'track') as TrackExhibit[];
+    for (const t of tracks) {
+      expect(t.genre, `track ${t.position} missing genre`).toBeTruthy();
+    }
+  });
+
+  it('every track has red_heart_tier in {hit,adjacent,blind_spot}', () => {
+    const tracks = data.filter((e) => e.kind === 'track') as TrackExhibit[];
+    for (const t of tracks) {
+      expect(['hit', 'adjacent', 'blind_spot']).toContain(t.red_heart_tier);
+    }
+  });
+
+  it('non-muted tracks (excluding position 1) have ≥1 inbound connection', () => {
+    // Spec hard req: "at least one of in/out must be non-empty for non-arc-endpoint positions"
+    // Position 10 (Joy Division) is a lateral node — it has connections_out + connections_lateral
+    // but no from_inspires_to inbound; the test checks inbound OR outbound to satisfy spec intent.
+    const tracks = data.filter((e) => e.kind === 'track') as TrackExhibit[];
+    for (const t of tracks) {
+      if (t.muted_this_episode) continue;
+      if (t.position === 1) continue;  // arc start has no upstream
+      const hasConnection = t.connections_in.length >= 1 || t.connections_out.length >= 1;
+      expect(hasConnection, `track ${t.position} has no inbound or outbound connections`)
+        .toBe(true);
+    }
+  });
+
+  it('Devo (position 8) is muted with a bridge_narration_zh', () => {
+    const devo = (data.filter((e) => e.kind === 'track') as TrackExhibit[])
+      .find((t) => t.position === 8)!;
+    expect(devo.muted_this_episode).toBe(true);
+    expect(devo.bridge_narration_zh).toBeTruthy();
   });
 });

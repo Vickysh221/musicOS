@@ -60,4 +60,9 @@ describe('parseConnections', () => {
     bad.connection_pairs[0].narration_at_from.voice_zh = '到 Track 9 你会撞见';
     expect(() => parseConnections(bad)).toThrow(/forbidden token/);
   });
+
+  it('rejects connection_kinds_in_scope when not an array (T2 carry-forward guard)', () => {
+    const bad = { ...structuredClone(MIN_VALID), connection_kinds_in_scope: 'bassline_prototype' };
+    expect(() => parseConnections(bad)).toThrow(/connection_kinds_in_scope must be an array/);
+  });
 });

@@ -1,9 +1,11 @@
 import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { execSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { parsePlaylist } from './lib/parse-playlist.js';
 import { parseEpisode } from './lib/parse-episode.js';
-import type { Exhibit, TrackExhibit, NonTrackExhibit, Mechanism, ExhibitType } from '../src/types.js';
+import { parseConnections, type ConnectionsFile, type ConnectionPair } from './lib/parse-connections.js';
+import type { Exhibit, TrackExhibit, NonTrackExhibit, Mechanism, ExhibitType, ConnectionKind, EvidenceBasis } from '../src/types.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const VAULT_ROOT = path.resolve(__dirname, '../..');
@@ -14,6 +16,14 @@ const PLAYLIST = path.join(
 const EPISODE = path.join(
   VAULT_ROOT,
   'episodes/rolling-stones_some-girls_miss-you.episode.md',
+);
+const EPISODE_JSON = path.join(
+  VAULT_ROOT,
+  'episodes/rolling-stones_some-girls_miss-you.episode.json',
+);
+const CONNECTIONS = path.join(
+  VAULT_ROOT,
+  'playlists/rolling-stones_some-girls_miss-you.connections.json',
 );
 const OUT = path.resolve(__dirname, '../data/exhibition.json');
 
@@ -37,6 +47,27 @@ const NETEASE_ID_CORRECTIONS: Record<number, string> = {
   14: '21536236',   // Red Hot Chili Peppers — Give It Away; old ID 5225 returns 404
   15: '26349642',   // Daft Punk — Get Lucky; old ID 28633948 returns 404
   16: '33004499',   // Tame Impala — The Less I Know the Better; old ID 427814441 returns 404
+};
+
+const GENRE_BY_POSITION: Record<number, string> = {
+  1: 'Funk',
+  2: 'Funk / Soul',
+  3: 'Plastic soul',
+  4: 'P-Funk',
+  5: 'Disco',
+  6: 'Rock × Disco',
+  7: 'Punk × Disco',
+  8: 'Art punk / proto-new-wave',
+  9: 'Disco',
+  10: 'Post-punk',
+  11: 'Art rock / post-punk funk',
+  12: 'Stadium rock × disco',
+  13: 'Minneapolis funk-rock',
+  14: 'Funk-rock',
+  15: 'Nu-disco',
+  16: 'Psychedelic pop',
+  17: 'Dub-soul / instrumental groove',
+  18: 'Bedroom R&B / experimental rock',
 };
 
 // Mapping: playlist position (1..18) → vault node_id + classification
@@ -66,6 +97,83 @@ const TRACK_META: Record<number, {
   18: { node_id: 'mkgee_two-star_you-dreamed-of-me',                  exhibit_type: 'descendant', is_base_node: false, mechanism_tags: ['M1'] },
 };
 
+interface ConnectionRefBuild {
+  id: string;
+  other_position: number;
+  other_label: string;
+  kind: ConnectionKind;
+  evidence_basis: EvidenceBasis;
+  narration_zh: string;
+  narration_en: string;
+}
+
+function pushTo<T>(m: Map<number, T[]>, k: number, v: T): void {
+  const list = m.get(k) ?? [];
+  list.push(v);
+  m.set(k, list);
+}
+
+function runRedHeartMatch(artist: string, song: string, album: string): {
+  tier: 'hit' | 'adjacent' | 'blind_spot';
+  matched_seeds: { type: string; value: string }[];
+} {
+  // Build a JSON argument to pass via stdin to avoid any shell quoting issues
+  const payload = JSON.stringify({ artist, song, album });
+  const pyScript = [
+    'import sys, json',
+    'from tools.red_heart_match import match',
+    `node = json.loads(sys.argv[1])`,
+    'print(json.dumps(match(node)))',
+  ].join('; ');
+  const out = execSync(`python3 -c "${pyScript.replace(/"/g, '\\"')}" ${JSON.stringify(payload)}`, {
+    cwd: VAULT_ROOT,
+    encoding: 'utf8',
+  });
+  return JSON.parse(out.trim());
+}
+
+function indexConnections(conn: ConnectionsFile): {
+  inbound:  Map<number, ConnectionRefBuild[]>;
+  outbound: Map<number, ConnectionRefBuild[]>;
+  lateral:  Map<number, ConnectionRefBuild[]>;
+} {
+  const inbound  = new Map<number, ConnectionRefBuild[]>();
+  const outbound = new Map<number, ConnectionRefBuild[]>();
+  const lateral  = new Map<number, ConnectionRefBuild[]>();
+  const labels: Record<string, string> = (conn as any).position_labels ?? {};
+
+  for (const p of conn.connection_pairs) {
+    const refForFrom: ConnectionRefBuild = {
+      id: p.id,
+      other_position: p.to_position,
+      other_label: labels[String(p.to_position)] ?? '',
+      kind: p.kind,
+      evidence_basis: p.evidence_basis,
+      narration_zh: p.narration_at_from.voice_zh,
+      narration_en: p.narration_at_from.voice_en,
+    };
+    const refForTo: ConnectionRefBuild = {
+      id: p.id,
+      other_position: p.from_position,
+      other_label: labels[String(p.from_position)] ?? '',
+      kind: p.kind,
+      evidence_basis: p.evidence_basis,
+      narration_zh: p.narration_at_to.voice_zh,
+      narration_en: p.narration_at_to.voice_en,
+    };
+
+    if (p.direction === 'lateral_dialogue' || p.direction === 'inversion_counterpoint') {
+      pushTo(lateral, p.from_position, refForFrom);
+      pushTo(lateral, p.to_position, refForTo);
+    } else {
+      // from_inspires_to
+      pushTo(outbound, p.from_position, refForFrom);
+      pushTo(inbound,  p.to_position,   refForTo);
+    }
+  }
+  return { inbound, outbound, lateral };
+}
+
 function findEpisodeNarration(
   episodeTracks: { artist: string; song: string; narration_zh: string }[],
   artist: string,
@@ -91,6 +199,29 @@ function main() {
 
   const tracks = parsePlaylist(playlistMd);
   const ep = parseEpisode(episodeMd);
+
+  // Load and parse connections
+  const conn = parseConnections(JSON.parse(readFileSync(CONNECTIONS, 'utf8')));
+  const idx = indexConnections(conn);
+
+  // Load episode.json for bridge narrations (muted tracks) and album data
+  const episodeJson = JSON.parse(readFileSync(EPISODE_JSON, 'utf8')) as {
+    exhibits: {
+      position: number;
+      album?: string;
+      bridge_narration_zh?: string | null;
+      bridge_narration_en?: string | null;
+    }[];
+  };
+  const episodeJsonByPos = new Map(
+    episodeJson.exhibits.map((e) => [e.position, e]),
+  );
+
+  function lookupBridgeFromEpisodeJson(position: number, lang: 'zh' | 'en'): string | null {
+    const ex = episodeJsonByPos.get(position);
+    if (!ex) return null;
+    return lang === 'zh' ? (ex.bridge_narration_zh ?? null) : (ex.bridge_narration_en ?? null);
+  }
 
   if (tracks.length !== 18) {
     throw new Error(`Expected 18 tracks, got ${tracks.length}`);
@@ -119,6 +250,10 @@ function main() {
     const transcript_zh = narration ?? t.curatorial_note;
     const transcript_zh_status = narration ? 'complete' as const : 'placeholder' as const;
 
+    const epAlbum = episodeJsonByPos.get(t.position)?.album ?? '';
+    const rh = runRedHeartMatch(t.artist, t.song, epAlbum);
+    const muted = conn.muted_positions.includes(t.position);
+
     exhibits.push({
       kind: 'track',
       position: t.position, // 1..18, matches playlist
@@ -143,6 +278,17 @@ function main() {
       transcript_en_status: 'missing',
       narrator_persona_zh: null,
       narrator_persona_en: null,
+      // New fields from T10
+      genre: GENRE_BY_POSITION[t.position] ?? null,
+      episode_focus: conn.episode_focus,
+      red_heart_tier: rh.tier,
+      red_heart_matched_seeds: rh.matched_seeds as any,
+      muted_this_episode: muted,
+      bridge_narration_zh: muted ? lookupBridgeFromEpisodeJson(t.position, 'zh') : null,
+      bridge_narration_en: muted ? lookupBridgeFromEpisodeJson(t.position, 'en') : null,
+      connections_in:       idx.inbound.get(t.position)  ?? [],
+      connections_out:      idx.outbound.get(t.position) ?? [],
+      connections_lateral:  idx.lateral.get(t.position)  ?? [],
     } satisfies TrackExhibit);
   }
 
