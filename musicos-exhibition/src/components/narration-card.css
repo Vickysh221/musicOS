@@ -1,0 +1,63 @@
+.narration-card {
+  max-width: 720px;
+  margin: 24px auto;
+  padding: 20px 24px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.35);
+  color: #f4f4f4;
+  font-family: inherit;
+  transition: border-color 200ms ease, background 200ms ease;
+}
+
+.narration-card--playing {
+  border-color: rgba(255, 255, 255, 0.45);
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.narration-card__header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 10px;
+}
+
+.narration-card__play {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #f4f4f4;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+
+.narration-card__play:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.85);
+}
+
+.narration-card__play:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.narration-card__label {
+  font-size: 14px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  opacity: 0.85;
+}
+
+.narration-card__transcript {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: rgba(244, 244, 244, 0.82);
+  white-space: pre-line;
+}
