@@ -21,6 +21,8 @@ ROOT = Path(__file__).resolve().parent.parent
 EXPECTED_ROWS = 18
 HYPOTHESIS_CAP = 0.30
 AUDIO_RESOLVE_FLOOR = 0.60
+VALID_WEIGHTS = {"anchor", "pillar", "supporting", "bridge"}
+BRIDGE_RATIO_WARN = 0.10
 
 
 def fail(msg: str) -> None:
@@ -45,6 +47,30 @@ def main(slug: str) -> None:
     bases = [r for r in rows if r.get("is_base_node")]
     if len(bases) != 1:
         fail(f"expected exactly one is_base_node, got {len(bases)}")
+
+    # narrative_weight (spec v0.4 §2.4)
+    for r in rows:
+        w = r.get("narrative_weight")
+        if w not in VALID_WEIGHTS:
+            fail(
+                f"row position={r.get('position')} narrative_weight={w!r} "
+                f"not in {sorted(VALID_WEIGHTS)}"
+            )
+    anchors = [r for r in rows if r.get("narrative_weight") == "anchor"]
+    if len(anchors) != 1:
+        fail(f"expected exactly one narrative_weight='anchor', got {len(anchors)}")
+    anchor_row = anchors[0]
+    if not anchor_row.get("is_base_node"):
+        fail(
+            f"anchor (position={anchor_row.get('position')}) must also have is_base_node=true"
+        )
+    bridges = [r for r in rows if r.get("narrative_weight") == "bridge"]
+    if len(bridges) / len(rows) > BRIDGE_RATIO_WARN:
+        print(
+            f"WARNING: bridge ratio {len(bridges)}/{len(rows)} exceeds "
+            f"{BRIDGE_RATIO_WARN:.0%} advisory cap",
+            file=sys.stderr,
+        )
 
     nodes_dir = ROOT / "data" / "nodes"
     for r in rows:

@@ -1,5 +1,7 @@
 # Sonic Cartography — Project Spec v0.3
 
+> **⚠️ LEGACY — frozen. See `Foundations/sonic_cartography_spec_v0.4.md` for the active spec.** This file is preserved as a read-only reference for v0.3-era artifacts (e.g. Miss You ep 1 v0.3 transcript). Do not modify; do not source new work from it.
+
 > **Document type**: Engineering spec / agent handoff
 > **Primary reader**: Claude Code agent (CLI-based coding agent)
 > **Author intent**: Enable an agent to execute Sonic Cartography tasks autonomously, produce platform-neutral deliverables, and remain consistent across future invocations.

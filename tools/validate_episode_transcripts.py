@@ -27,10 +27,21 @@ ROOT = Path(__file__).resolve().parent.parent
 
 EXPECTED_TRACK_COUNT = 18
 
-TRACK_CHAR_MIN = 250
-TRACK_CHAR_MAX = 400
-BRIDGE_CHAR_MIN = 40
-BRIDGE_CHAR_MAX = 80
+# spec v0.4 §7B.5 — narrative_weight-conditioned char bands (ZH chars).
+WEIGHT_BANDS: dict[str, tuple[int, int]] = {
+    "anchor": (600, 900),
+    "pillar": (350, 500),
+    "supporting": (220, 340),
+    "bridge": (60, 150),
+}
+
+# Legacy v0.3 flat bands, retained as the fallback when narrative_weight is
+# missing on a track (e.g. tracklist not migrated yet). Once all episodes
+# declare narrative_weight, this fallback can be removed.
+LEGACY_TRACK_CHAR_MIN = 250
+LEGACY_TRACK_CHAR_MAX = 400
+LEGACY_BRIDGE_CHAR_MIN = 40
+LEGACY_BRIDGE_CHAR_MAX = 80
 
 FORBIDDEN_RE = re.compile(r"(Track\s+\d+|第\s*\d+\s*首|\[|\])")
 
@@ -98,6 +109,17 @@ def validate(slug: str, base_dir: Path | None = None) -> list[str]:
     data = json.loads(json_path.read_text(encoding="utf-8"))
     md_text = md_path.read_text(encoding="utf-8")
 
+    # Load tracklist to look up narrative_weight by position when the exhibit
+    # itself does not declare it (back-compat for v0.3 episode.json that has
+    # not been re-emitted under v0.4).
+    tracklist_path = base_dir / "playlists" / f"{slug}.tracklist.json"
+    weight_by_position: dict[int, str] = {}
+    if tracklist_path.exists():
+        for row in json.loads(tracklist_path.read_text(encoding="utf-8")):
+            w = row.get("narrative_weight")
+            if w:
+                weight_by_position[int(row["position"])] = w
+
     top_focus = data.get("episode_focus", "")
     muted_positions_declared: list[int] = data.get("muted_positions", [])
     exhibits: list[dict] = data.get("exhibits", [])
@@ -151,16 +173,27 @@ def validate(slug: str, base_dir: Path | None = None) -> list[str]:
 
         if kind == "track":
             muted = ex.get("muted_this_episode", False)
+            # narrative_weight is sourced from exhibit first, tracklist second.
+            weight = ex.get("narrative_weight") or weight_by_position.get(int(pos)) if pos is not None else None
 
             if not muted:
-                # b. Active track char cap
+                # b. Active track char cap (weight-conditioned, v0.4 §7B.5)
                 tz = ex.get("transcript_zh") or ""
                 n = _codepoint_len(tz)
-                if not (TRACK_CHAR_MIN <= n <= TRACK_CHAR_MAX):
-                    failures.append(
-                        f"position {pos}: transcript_zh length {n} not in "
-                        f"[{TRACK_CHAR_MIN}, {TRACK_CHAR_MAX}]"
-                    )
+                if weight in WEIGHT_BANDS and weight != "bridge":
+                    lo, hi = WEIGHT_BANDS[weight]
+                    if not (lo <= n <= hi):
+                        failures.append(
+                            f"position {pos} (weight={weight}): transcript_zh length {n} "
+                            f"not in [{lo}, {hi}]"
+                        )
+                else:
+                    if not (LEGACY_TRACK_CHAR_MIN <= n <= LEGACY_TRACK_CHAR_MAX):
+                        failures.append(
+                            f"position {pos}: transcript_zh length {n} not in "
+                            f"[{LEGACY_TRACK_CHAR_MIN}, {LEGACY_TRACK_CHAR_MAX}] "
+                            f"(legacy band; assign narrative_weight to enable v0.4 bands)"
+                        )
 
                 # c. Forbidden tokens in transcript_zh
                 if tz and FORBIDDEN_RE.search(tz):
@@ -181,7 +214,7 @@ def validate(slug: str, base_dir: Path | None = None) -> list[str]:
                             )
 
             else:
-                # b. Muted track bridge cap
+                # b. Muted/bridge track bridge cap (weight-conditioned)
                 bridge = ex.get("bridge_narration_zh")
                 if bridge is None:
                     failures.append(
@@ -189,10 +222,13 @@ def validate(slug: str, base_dir: Path | None = None) -> list[str]:
                     )
                 else:
                     n = _codepoint_len(bridge)
-                    if not (BRIDGE_CHAR_MIN <= n <= BRIDGE_CHAR_MAX):
+                    if weight == "bridge":
+                        lo, hi = WEIGHT_BANDS["bridge"]
+                    else:
+                        lo, hi = LEGACY_BRIDGE_CHAR_MIN, LEGACY_BRIDGE_CHAR_MAX
+                    if not (lo <= n <= hi):
                         failures.append(
-                            f"position {pos}: bridge_narration_zh length {n} not in "
-                            f"[{BRIDGE_CHAR_MIN}, {BRIDGE_CHAR_MAX}]"
+                            f"position {pos}: bridge_narration_zh length {n} not in [{lo}, {hi}]"
                         )
 
                     # c. Forbidden tokens in bridge

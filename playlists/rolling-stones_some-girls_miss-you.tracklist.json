@@ -10,7 +10,8 @@
     "muted_this_episode": false,
     "netease_song_id": 27138926,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Funk's bassline grammar starts here — Bootsy/Pee Wee Ellis lock to the one; the upstream root for every later groove on the arc."
+    "focus_relevance_note": "Funk's bassline grammar starts here — Bootsy/Pee Wee Ellis lock to the one; the upstream root for every later groove on the arc.",
+    "narrative_weight": "pillar"
   },
   {
     "position": 2,
@@ -23,7 +24,8 @@
     "muted_this_episode": false,
     "netease_song_id": 20344729,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Rhythm box + thumbed bass — first studio document of the funk-on-machine bassline that disco picks up."
+    "focus_relevance_note": "Rhythm box + thumbed bass — first studio document of the funk-on-machine bassline that disco picks up.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 3,
@@ -36,7 +38,8 @@
     "muted_this_episode": false,
     "netease_song_id": 27185190,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Carlos Alomar's syncopated bassline + Lennon co-write — the white-rock translation of funk bass that directly seeds Miss You."
+    "focus_relevance_note": "Carlos Alomar's syncopated bassline + Lennon co-write — the white-rock translation of funk bass that directly seeds Miss You.",
+    "narrative_weight": "pillar"
   },
   {
     "position": 4,
@@ -49,7 +52,8 @@
     "muted_this_episode": false,
     "netease_song_id": 18300309,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Bootsy Collins' envelope-filtered bass — the lateral peer that defines the maximalist branch of the same bass moment."
+    "focus_relevance_note": "Bootsy Collins' envelope-filtered bass — the lateral peer that defines the maximalist branch of the same bass moment.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 5,
@@ -62,7 +66,8 @@
     "muted_this_episode": false,
     "netease_song_id": 5059535,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Disco's most-cited four-on-the-floor bassline — the immediate cultural antecedent the Stones are answering to."
+    "focus_relevance_note": "Disco's most-cited four-on-the-floor bassline — the immediate cultural antecedent the Stones are answering to.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 6,
@@ -75,7 +80,8 @@
     "muted_this_episode": false,
     "netease_song_id": 21968201,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Anchor — Bill Wyman's walking disco bassline is the episode's pivot."
+    "focus_relevance_note": "Anchor — Bill Wyman's walking disco bassline is the episode's pivot.",
+    "narrative_weight": "anchor"
   },
   {
     "position": 7,
@@ -88,7 +94,8 @@
     "muted_this_episode": false,
     "netease_song_id": 16849154,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Same-year peer — punk-band-goes-disco bassline, lateral dialogue with Miss You."
+    "focus_relevance_note": "Same-year peer — punk-band-goes-disco bassline, lateral dialogue with Miss You.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 8,
@@ -101,7 +108,8 @@
     "muted_this_episode": true,
     "netease_song_id": 4021819,
     "evidence_basis": "consensus",
-    "focus_relevance_note": "Muted — Devo uses disco's tools to refuse disco; bassline conversation pauses, picked up by Chic next."
+    "focus_relevance_note": "Muted — Devo uses disco's tools to refuse disco; bassline conversation pauses, picked up by Chic next.",
+    "narrative_weight": "bridge"
   },
   {
     "position": 9,
@@ -114,7 +122,8 @@
     "muted_this_episode": false,
     "netease_song_id": 2333069,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Bernard Edwards' bassline — the most-sampled bass figure in pop history; downstream of Miss You's groove."
+    "focus_relevance_note": "Bernard Edwards' bassline — the most-sampled bass figure in pop history; downstream of Miss You's groove.",
+    "narrative_weight": "pillar"
   },
   {
     "position": 10,
@@ -127,7 +136,8 @@
     "muted_this_episode": false,
     "netease_song_id": 18860348,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Peter Hook's high-register lead bass — lateral inversion of disco's low-end role."
+    "focus_relevance_note": "Peter Hook's high-register lead bass — lateral inversion of disco's low-end role.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 11,
@@ -140,7 +150,8 @@
     "muted_this_episode": false,
     "netease_song_id": null,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Tina Weymouth's polyrhythmic bassline — Afrobeat translation of the funk bass impulse."
+    "focus_relevance_note": "Tina Weymouth's polyrhythmic bassline — Afrobeat translation of the funk bass impulse.",
+    "narrative_weight": "pillar"
   },
   {
     "position": 12,
@@ -153,7 +164,8 @@
     "muted_this_episode": false,
     "netease_song_id": null,
     "evidence_basis": "fact",
-    "focus_relevance_note": "John Deacon openly modeled this bassline on Good Times — explicit downstream node."
+    "focus_relevance_note": "John Deacon openly modeled this bassline on Good Times — explicit downstream node.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 13,
@@ -166,7 +178,8 @@
     "muted_this_episode": false,
     "netease_song_id": 21393063,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Bassline removed entirely — the inversion that proves the rule by absence."
+    "focus_relevance_note": "Bassline removed entirely — the inversion that proves the rule by absence.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 14,
@@ -179,7 +192,8 @@
     "muted_this_episode": false,
     "netease_song_id": 21536236,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Flea's slap bass — direct methodological descent from Bootsy/Sly."
+    "focus_relevance_note": "Flea's slap bass — direct methodological descent from Bootsy/Sly.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 15,
@@ -192,7 +206,8 @@
     "muted_this_episode": false,
     "netease_song_id": 26349642,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Nile Rodgers re-engaged — full-circle disco bass revival, explicit homage to Chic-era playing."
+    "focus_relevance_note": "Nile Rodgers re-engaged — full-circle disco bass revival, explicit homage to Chic-era playing.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 16,
@@ -205,7 +220,8 @@
     "muted_this_episode": false,
     "netease_song_id": 33004499,
     "evidence_basis": "consensus",
-    "focus_relevance_note": "Bedroom-pop disco bassline — downstream lineage shows up in indie production."
+    "focus_relevance_note": "Bedroom-pop disco bassline — downstream lineage shows up in indie production.",
+    "narrative_weight": "supporting"
   },
   {
     "position": 17,
@@ -218,7 +234,8 @@
     "muted_this_episode": false,
     "netease_song_id": 534544513,
     "evidence_basis": "fact",
-    "focus_relevance_note": "Laura Lee's melodic bass-as-lead — frequency_hollowing aesthetic applied to the bass tradition."
+    "focus_relevance_note": "Laura Lee's melodic bass-as-lead — frequency_hollowing aesthetic applied to the bass tradition.",
+    "narrative_weight": "pillar"
   },
   {
     "position": 18,
@@ -231,6 +248,7 @@
     "muted_this_episode": false,
     "netease_song_id": 2019098699,
     "evidence_basis": "consensus",
-    "focus_relevance_note": "Coda — the bassline now disguised inside guitar texture; arc terminus."
+    "focus_relevance_note": "Coda — the bassline now disguised inside guitar texture; arc terminus.",
+    "narrative_weight": "supporting"
   }
 ]

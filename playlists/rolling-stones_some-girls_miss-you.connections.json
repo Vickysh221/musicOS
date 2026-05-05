@@ -5,9 +5,18 @@
   "episode_title_zh": "Miss You · 第 1 期 · bassline DNA 谱系",
   "episode_title_en": "Miss You · Episode 1 · The Bassline DNA Lineage",
   "episode_arc": {
-    "from": { "position": 1, "label": "James Brown — Cold Sweat (1967)" },
-    "to":   { "position": 17, "label": "Khruangbin — María También (2018)" },
-    "coda": { "position": 18, "label": "Mk.gee — You Dreamed of Me (2024)" }
+    "from": {
+      "position": 1,
+      "label": "James Brown — Cold Sweat (1967)"
+    },
+    "to": {
+      "position": 17,
+      "label": "Khruangbin — María También (2018)"
+    },
+    "coda": {
+      "position": 18,
+      "label": "Mk.gee — You Dreamed of Me (2024)"
+    }
   },
   "connection_kinds_in_scope": [
     "bassline_prototype",
@@ -15,17 +24,19 @@
     "personnel_bridge_bass",
     "gear_lineage_bass"
   ],
-  "muted_positions": [8],
+  "muted_positions": [
+    8
+  ],
   "position_labels": {
-    "1":  "James Brown — Cold Sweat (1967)",
-    "2":  "Sly & the Family Stone — Family Affair (1971)",
-    "3":  "David Bowie — Fame (1975)",
-    "4":  "Parliament — Give Up the Funk (1976)",
-    "5":  "Bee Gees — Stayin' Alive (1977)",
-    "6":  "The Rolling Stones — Miss You (1978)",
-    "7":  "Blondie — Heart of Glass (1978)",
-    "8":  "Devo — Jocko Homo (1978)",
-    "9":  "Chic — Good Times (1979)",
+    "1": "James Brown — Cold Sweat (1967)",
+    "2": "Sly & the Family Stone — Family Affair (1971)",
+    "3": "David Bowie — Fame (1975)",
+    "4": "Parliament — Give Up the Funk (1976)",
+    "5": "Bee Gees — Stayin' Alive (1977)",
+    "6": "The Rolling Stones — Miss You (1978)",
+    "7": "Blondie — Heart of Glass (1978)",
+    "8": "Devo — Jocko Homo (1978)",
+    "9": "Chic — Good Times (1979)",
     "10": "Joy Division — Isolation (1980)",
     "11": "Talking Heads — Once in a Lifetime (1980)",
     "12": "Queen — Another One Bites the Dust (1980)",
@@ -41,18 +52,30 @@
       "id": "conn_001_to_002_groove_dna",
       "from_position": 1,
       "to_position": 2,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "James Brown 的 JBs 节奏组奠定了贝斯和军鼓咬死的哲学，Sly Stone 在 Riot 时期直接继承这套语法，把它内化为一人操控的单轨密度。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Sly & the Family Stone 的 Family Affair，这种锁死的底部会被一个人独吞进去。",
-        "voice_en": "Soon in Sly & the Family Stone's Family Affair, one person will internalize this locked groove entirely alone."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1971 年的下一站，这条锁死的底部会被一个人独吞进去——整支乐队的密度收进一个人的脑子。",
+          "voice_en": "A few years on, in 1971, this locked groove gets internalized by one person alone — a whole band's density compressed into one head."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 James Brown 的 Cold Sweat 已经听见这种贝斯鼓咬死的逻辑——Sly 把它收进了一个人的脑子里。",
+          "voice_en": "You just heard that drum-bass interlock in James Brown's Cold Sweat — Sly compressed it into one person's head."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 James Brown 的 Cold Sweat 已经听见这种贝斯鼓咬死的逻辑——Sly 把它收进了一个人的脑子里。",
-        "voice_en": "You just heard that drum-bass interlock in James Brown's Cold Sweat — Sly compressed it into one person's head."
+      "intrinsic_score": {
+        "value": 0.825,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.8,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.8
+        },
+        "rationale": "Origin of locked drum-bass philosophy moving from a band format to one-person internalization — strong narrative beat, concrete personnel/scene anchor."
       },
       "user_overrides": []
     },
@@ -60,18 +83,30 @@
       "id": "conn_001_to_003_groove_dna",
       "from_position": 1,
       "to_position": 3,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Bowie 在费城 Sigma Sound 录制 Young Americans 时大量使用黑人 session 乐手，吸收的正是 JBs 这条魂/放克贝斯语法，并自称'塑料灵魂'——刻意的挪用与转译。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 David Bowie 的 Fame，这条放克根脉被白人摇滚包了一层外套，Bowie 自己叫它'塑料灵魂'。",
-        "voice_en": "Ahead in David Bowie's Fame, this funk root gets wrapped in a rock coat — Bowie called it plastic soul."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1975 年那次最有名的'白人摇滚向放克借外套'的实验，这条放克根脉直接被吸进了 Sigma Sound——艺人本人管它叫'塑料灵魂'。",
+          "voice_en": "By 1975, in the most-cited white-rock-borrows-funk experiment, this funk root gets pulled straight into Sigma Sound — the artist himself called it 'plastic soul'."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 James Brown 的 Cold Sweat 听见的那个放克底部，就是 Bowie 在 Sigma Sound 吸进去的东西。",
+          "voice_en": "That funk foundation in James Brown's Cold Sweat is exactly what Bowie absorbed at Sigma Sound."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 James Brown 的 Cold Sweat 听见的那个放克底部，就是 Bowie 在 Sigma Sound 吸进去的东西。",
-        "voice_en": "That funk foundation in James Brown's Cold Sweat is exactly what Bowie absorbed at Sigma Sound."
+      "intrinsic_score": {
+        "value": 0.875,
+        "dimensions": {
+          "story_drive": 0.9,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.9,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Sigma Sound 'plastic soul' move with named studio + artist quote; strong story beat that frames the white-rock-borrows-funk arc the anchor inherits."
       },
       "user_overrides": []
     },
@@ -79,18 +114,30 @@
       "id": "conn_001_to_004_personnel_bridge_bass",
       "from_position": 1,
       "to_position": 4,
-      "direction": "from_inspires_to",
       "kind": "personnel_bridge_bass",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Bootsy Collins 在 1969–1971 年随 JBs 演出并形成了他的 slap-pop 贝斯风格；George Clinton 之后把 Bootsy 和 Maceo Parker、Fred Wesley 一并招募进 Parliament，将 JBs 的放克基因整体移植进 P-Funk 宇宙。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Parliament 的 Give Up the Funk，Bootsy Collins 就是从这里带走的贝斯课，整个 P-Funk 宇宙都建在上面。",
-        "voice_en": "Ahead in Parliament's Give Up the Funk, Bootsy Collins carries this bass lesson forward — the entire P-Funk cosmos is built on it."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1975 年那张飞船一样的 P-Funk 专辑，Bootsy Collins 就是从这里把贝斯课带走的——整个宇宙都建在那一课上。",
+          "voice_en": "By 1975, on the spaceship-shaped P-Funk record, Bootsy Collins carries this bass lesson out the door — a whole universe built on it."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 James Brown 的 Cold Sweat 认识的那个 JBs 节奏组——Bootsy 就是从那里来的。",
+          "voice_en": "That JBs rhythm section in James Brown's Cold Sweat — Bootsy Collins came straight from there."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 James Brown 的 Cold Sweat 认识的那个 JBs 节奏组——Bootsy 就是从那里来的。",
-        "voice_en": "That JBs rhythm section in James Brown's Cold Sweat — Bootsy Collins came straight from there."
+      "intrinsic_score": {
+        "value": 0.892,
+        "dimensions": {
+          "story_drive": 0.8,
+          "concrete_carrier": 0.95,
+          "evidential_strength": 0.95,
+          "focus_relevance": 0.9
+        },
+        "rationale": "Named personnel (Bootsy Collins) bridging two named bands — concrete, well-documented, focus-relevant for bass lineage."
       },
       "user_overrides": []
     },
@@ -98,18 +145,30 @@
       "id": "conn_001_to_006_groove_dna",
       "from_position": 1,
       "to_position": 6,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Billy Preston（曾与 JBs 时代人脉交叉）在多伦多 El Mocambo 向 Jagger 演示了四四拍脉冲，成为 Miss You 贝斯脉络的直接蓝本；这条'贝斯和鼓是乐曲主体'的哲学直接源自 James Brown。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 The Rolling Stones 的 Miss You，这条'贝斯和鼓是主体'的逻辑通过 Billy Preston 的 demo 直接传了进去。",
-        "voice_en": "Ahead in The Rolling Stones' Miss You, this philosophy — bass and drums as the body — passed directly through Billy Preston's demo."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这条'贝斯和鼓是主体'的逻辑后面会经过 Billy Preston 的手，进到 1978 年那间纽约的录音棚——那是这一集的落点。",
+          "voice_en": "This philosophy — bass and drums as the body — eventually moves through Billy Preston's hands into a 1978 New York session that anchors this episode."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 James Brown 的 Cold Sweat 听见的贝斯鼓哲学，Billy Preston 把它带进了 Miss You 的录音间。",
+          "voice_en": "The bass-drum philosophy you heard in James Brown's Cold Sweat — Billy Preston carried it right into the Miss You session."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 James Brown 的 Cold Sweat 听见的贝斯鼓哲学，Billy Preston 把它带进了 Miss You 的录音间。",
-        "voice_en": "The bass-drum philosophy you heard in James Brown's Cold Sweat — Billy Preston carried it right into the Miss You session."
+      "intrinsic_score": {
+        "value": 0.825,
+        "dimensions": {
+          "story_drive": 0.8,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.8,
+          "focus_relevance": 0.95
+        },
+        "rationale": "Direct route into the anchor via Billy Preston demo; high focus relevance because anchor is the episode's pivot, slightly lower concrete carrier (demo provenance is partly oral)."
       },
       "user_overrides": []
     },
@@ -117,18 +176,30 @@
       "id": "conn_001_to_009_groove_dna",
       "from_position": 1,
       "to_position": 9,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Bernard Edwards 公开承认 JBs 的节奏组是他贝斯语法的直接来源；Chic 的贝斯-节奏吉他锁死结构是 Stubblefield/Collins 时代鼓贝斯互咬逻辑在 disco 精炼版本中的延伸。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Chic 的 Good Times，Bernard Edwards 把这种锁死做得更冷、更精细——disco 版的放克基因。",
-        "voice_en": "Ahead in Chic's Good Times, Bernard Edwards refines this interlock — colder, more precise, the disco expression of the same funk gene."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1979 年那条最被引用的迪斯科贝斯，这种锁死会被做得更冷、更精细——同一套放克基因，换了一个棚。",
+          "voice_en": "Ahead in 1979, on the most-sampled disco bassline ever, this lock gets colder and more refined — same funk DNA, a different room."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 James Brown 的 Cold Sweat 听见的贝斯鼓咬死，Edwards 直接继承了这套逻辑。",
+          "voice_en": "That locked drum-bass logic in James Brown's Cold Sweat — Edwards inherited it directly."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 James Brown 的 Cold Sweat 听见的贝斯鼓咬死，Edwards 直接继承了这套逻辑。",
-        "voice_en": "That locked drum-bass logic in James Brown's Cold Sweat — Edwards inherited it directly."
+      "intrinsic_score": {
+        "value": 0.675,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Genealogical descent into disco bass refinement; story is real but the carrier here is methodological rather than personnel/gear-specific."
       },
       "user_overrides": []
     },
@@ -136,18 +207,30 @@
       "id": "conn_002_to_006_personnel_bridge_bass",
       "from_position": 2,
       "to_position": 6,
-      "direction": "from_inspires_to",
       "kind": "personnel_bridge_bass",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Billy Preston 参与了 Sly Stone 的 There's a Riot Goin' On 录音时期，之后在多伦多 El Mocambo 向 Jagger 演示了一个四四拍脉冲 demo，直接触发了 Miss You 的节奏骨架。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 The Rolling Stones 的 Miss You，Billy Preston 就是从 Sly 这边拉过来的那条线。",
-        "voice_en": "Ahead in The Rolling Stones' Miss You, Billy Preston is the human thread pulled from Sly's world into Jagger's."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "Billy Preston 就是从 Sly 这边拉过来的那条线——这一集的落点会用到他。",
+          "voice_en": "Billy Preston is the human thread pulled out of Sly's world — and this episode's anchor will lean on him."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "Billy Preston 在 Sly & the Family Stone 的 Family Affair 时期——他把那条脉冲带进了 Miss You。",
+          "voice_en": "Billy Preston was in Sly & the Family Stone's orbit in Family Affair — he brought that pulse into Miss You."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "Billy Preston 在 Sly & the Family Stone 的 Family Affair 时期——他把那条脉冲带进了 Miss You。",
-        "voice_en": "Billy Preston was in Sly & the Family Stone's orbit in Family Affair — he brought that pulse into Miss You."
+      "intrinsic_score": {
+        "value": 0.95,
+        "dimensions": {
+          "story_drive": 0.95,
+          "concrete_carrier": 0.95,
+          "evidential_strength": 0.95,
+          "focus_relevance": 0.95
+        },
+        "rationale": "Billy Preston is the literal human bridge between Sly's circle and the Miss You session — most narratively load-bearing pair into the anchor."
       },
       "user_overrides": []
     },
@@ -155,18 +238,30 @@
       "id": "conn_002_to_007_groove_dna",
       "from_position": 2,
       "to_position": 7,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Sly Stone 在 Family Affair 中使用 Maestro Rhythm King 鼓机是流行音乐中最早的鼓机主导 hit 之一；Blondie 的 Chris Stein 和 Jimmy Destri 购入 Roland CR-78 用于 Heart of Glass，沿用了这条'用机器替代有机鼓来驱动贝斯节奏'的思路。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Blondie 的 Heart of Glass，鼓机驱动贝斯脉冲这件事被 CR-78 再演了一遍。",
-        "voice_en": "Ahead in Blondie's Heart of Glass, a drum machine drives the bass pulse again — this time a Roland CR-78."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1978 年同年那条 CBGB 出来的迪斯科翻译，鼓机驱动贝斯脉冲这件事会被一台 CR-78 再演一遍。",
+          "voice_en": "Ahead the same 1978, on a disco translation that comes out of CBGB, this drum-machine-drives-bass move gets replayed — by a CR-78."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Sly & the Family Stone 的 Family Affair 已经听见用鼓机驱动节奏这件事，Blondie 七年后照做了。",
+          "voice_en": "Using a drum machine to anchor the groove — you heard it first in Sly & the Family Stone's Family Affair, seven years before Blondie."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Sly & the Family Stone 的 Family Affair 已经听见用鼓机驱动节奏这件事，Blondie 七年后照做了。",
-        "voice_en": "Using a drum machine to anchor the groove — you heard it first in Sly & the Family Stone's Family Affair, seven years before Blondie."
+      "intrinsic_score": {
+        "value": 0.758,
+        "dimensions": {
+          "story_drive": 0.7,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.8,
+          "focus_relevance": 0.7
+        },
+        "rationale": "Concrete gear carrier (CR-78) parallels the rhythm-box-drives-bass logic; mid focus-relevance because primary kinship is rhythm-machine not bass per se."
       },
       "user_overrides": []
     },
@@ -174,18 +269,30 @@
       "id": "conn_002_to_011_groove_dna",
       "from_position": 2,
       "to_position": 11,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Sly Stone 在 Riot 时期实现了'一个人在录音室把所有部分叠进去'的工作法；Brian Eno 和 Talking Heads 在 Remain in Light 的 Compass Point 会话中也使用鼓循环叠加贝斯的方式，结构上是同一种优先级：节奏底部先行，贝斯填充。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Talking Heads 的 Once in a Lifetime，Eno 把鼓循环叠贝斯的方式做成了一套宗教。",
-        "voice_en": "Ahead in Talking Heads' Once in a Lifetime, Eno turns the drum-loop-then-bass layering method into a doctrine."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1980 年那张 Eno 监制的纽约新浪潮专辑，鼓循环叠贝斯这件事会被做成一整套方法论。",
+          "voice_en": "By 1980, on an Eno-produced New York new-wave record, the drum-loop-then-bass move becomes an entire methodology."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "鼓先贝斯后，你在 Sly & the Family Stone 的 Family Affair 已经听见了——Talking Heads 在做同一件事。",
+          "voice_en": "Rhythm first, bass second — you heard that priority in Sly & the Family Stone's Family Affair; Talking Heads do the same."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "鼓先贝斯后，你在 Sly & the Family Stone 的 Family Affair 已经听见了——Talking Heads 在做同一件事。",
-        "voice_en": "Rhythm first, bass second — you heard that priority in Sly & the Family Stone's Family Affair; Talking Heads do the same."
+      "intrinsic_score": {
+        "value": 0.635,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.7,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Eno's drum-loop methodology echoes Sly's one-person density; story is real but the specific bass evidence is thin."
       },
       "user_overrides": []
     },
@@ -193,18 +300,30 @@
       "id": "conn_002_to_013_groove_dna",
       "from_position": 2,
       "to_position": 13,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Sly Stone 在 There's a Riot Goin' On 里实现了流行乐史上最早的完全单人制作范式之一——贝斯、鼓机、键盘全由一人包办；Prince 在 When Doves Cry 沿用这一范式并推至极端，把贝斯整条删掉。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Prince 的 When Doves Cry，一人包办所有乐器这件事被推到了极端——他直接把贝斯删了。",
-        "voice_en": "Ahead in Prince's When Doves Cry, the one-person total-control model reaches its extreme — he simply removes the bass."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1984 年那条最有名的'一个人包办所有乐器'的紫色血脉，这种独占式的声部统治会被推到极端——他直接把贝斯删了。",
+          "voice_en": "By 1984, on the most-cited one-person-plays-everything purple lineage, this solitary kind of authorship gets pushed to the limit — he simply deletes the bass."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Sly & the Family Stone 的 Family Affair 认识了一人包办所有声部这件事——Prince 是那条线上最彻底的人。",
+          "voice_en": "One person playing every part — you met that in Sly & the Family Stone's Family Affair; Prince takes it furthest."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Sly & the Family Stone 的 Family Affair 认识了一人包办所有声部这件事——Prince 是那条线上最彻底的人。",
-        "voice_en": "One person playing every part — you met that in Sly & the Family Stone's Family Affair; Prince takes it furthest."
+      "intrinsic_score": {
+        "value": 0.64,
+        "dimensions": {
+          "story_drive": 0.7,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.55
+        },
+        "rationale": "One-person-plays-everything thread; the inversion-by-deletion is striking but only tangentially about bass."
       },
       "user_overrides": []
     },
@@ -212,18 +331,30 @@
       "id": "conn_003_to_005_groove_dna",
       "from_position": 3,
       "to_position": 5,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Bowie 在 Sigma Sound 使用黑人 session 乐手录制'塑料灵魂'的方法，和 Bee Gees 借用灵魂乐/迪斯科贝斯语法录制 SNF 的方法在结构上一致：白人摇滚/流行艺人主动向黑人舞曲的低频骨架致敬并借用。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Bee Gees 的 Stayin' Alive，同样的挪用逻辑——白人流行包着黑人舞曲的贝斯骨架。",
-        "voice_en": "Ahead in Bee Gees' Stayin' Alive, the same translation move — pop envelope borrowing the bass skeleton of Black dance music."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1977 年那张定义舞厅的 Saturday Night Fever 时刻，同样的挪用逻辑——白人流行包着黑人舞曲的贝斯骨架。",
+          "voice_en": "Ahead in 1977, on the Saturday Night Fever moment that defined the dance floor, the same borrowing — white pop wrapped around a Black dance bass skeleton."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 David Bowie 的 Fame 已经看见白人艺人向黑人放克贝斯语法致敬的这个动作，Bee Gees 也在做。",
+          "voice_en": "That move — white artists consciously borrowing Black funk bass vocabulary — you saw it in David Bowie's Fame; Bee Gees do it too."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 David Bowie 的 Fame 已经看见白人艺人向黑人放克贝斯语法致敬的这个动作，Bee Gees 也在做。",
-        "voice_en": "That move — white artists consciously borrowing Black funk bass vocabulary — you saw it in David Bowie's Fame; Bee Gees do it too."
+      "intrinsic_score": {
+        "value": 0.635,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.6,
+          "evidential_strength": 0.7,
+          "focus_relevance": 0.6
+        },
+        "rationale": "Two white-pop borrowings of Black bass syntax; lateral kinship, mid-strength on each axis."
       },
       "user_overrides": []
     },
@@ -231,18 +362,30 @@
       "id": "conn_003_to_006_groove_dna",
       "from_position": 3,
       "to_position": 6,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Bowie 1974–75 年的'塑料灵魂'实验——白人摇滚明星在黑人音乐场域录音并主动声称翻译痕迹——是 Rolling Stones 三年后在 Some Girls 做 disco 转译时直接参照的美学范本。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 The Rolling Stones 的 Miss You，同一套翻译逻辑被 Jagger 照着 Bowie 的脚印走了一遍。",
-        "voice_en": "Ahead in The Rolling Stones' Miss You, Jagger follows the same translation logic — Bowie's footsteps, three years later."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1978 年那间纽约录音棚——这一集的落点——同一套'白人摇滚翻译黑人贝斯'的脚印会被照着再走一遍。",
+          "voice_en": "By 1978, in a New York session that lands this episode, the same white-rock-translates-Black-bass footprint gets walked again."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 David Bowie 的 Fame 看见的'塑料灵魂'模板，就是 Miss You 三年后要执行的那件事。",
+          "voice_en": "That plastic soul template in David Bowie's Fame is exactly what Miss You executes three years later."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 David Bowie 的 Fame 看见的'塑料灵魂'模板，就是 Miss You 三年后要执行的那件事。",
-        "voice_en": "That plastic soul template in David Bowie's Fame is exactly what Miss You executes three years later."
+      "intrinsic_score": {
+        "value": 0.89,
+        "dimensions": {
+          "story_drive": 0.9,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.95
+        },
+        "rationale": "Bowie's Fame is the anchor's direct US precedent — very high focus relevance and narrative drive into the pivot."
       },
       "user_overrides": []
     },
@@ -250,18 +393,30 @@
       "id": "conn_003_to_007_groove_dna",
       "from_position": 3,
       "to_position": 7,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Bowie 的塑料灵魂路线——朋克/摇滚出身的艺人主动向黑人低频舞曲致敬——与 Blondie 从 CBGB 朋克圈走向 disco 的动作是同一种文化翻译，只是出发场景不同。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Blondie 的 Heart of Glass，朋克场景做同一件翻译——这次是从 CBGB 出发。",
-        "voice_en": "Ahead in Blondie's Heart of Glass, punk does the same translation — this time launching from CBGB."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1978 年同年那条 CBGB 出来的迪斯科翻译，朋克场景会做同一件翻译——出发点不同。",
+          "voice_en": "Ahead the same 1978, on a CBGB-side disco translation, the punk scene does the same kind of translation — from a different vantage."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 David Bowie 的 Fame 看见的那个翻译动作，Blondie 从另一个场景出发，做了同样的事。",
+          "voice_en": "That translation move from David Bowie's Fame — Blondie makes the same move from a different starting point."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 David Bowie 的 Fame 看见的那个翻译动作，Blondie 从另一个场景出发，做了同样的事。",
-        "voice_en": "That translation move from David Bowie's Fame — Blondie makes the same move from a different starting point."
+      "intrinsic_score": {
+        "value": 0.513,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.45,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.5
+        },
+        "rationale": "Lateral peer pair; the punk-side translation is narratively interesting but not the strongest of Blondie's inbound lines."
       },
       "user_overrides": []
     },
@@ -269,18 +424,30 @@
       "id": "conn_003_to_013_groove_dna",
       "from_position": 3,
       "to_position": 13,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Bowie 在 Young Americans 展示了单人艺术视野主导录音室、自我决定声音方向的范式；Prince 在 When Doves Cry 里将这种全面控制推进到贝斯声部的彻底消除，两者都是艺人意志高于乐队共识的声音结果。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Prince 的 When Doves Cry，艺人全权决定声音这件事走到了最极端——贝斯直接消失。",
-        "voice_en": "Ahead in Prince's When Doves Cry, solo artistic control reaches its extreme — the bass simply disappears."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1984 年那张紫色专辑，艺人全权决定声音这件事会走到最极端——贝斯直接消失。",
+          "voice_en": "By 1984, on the purple record, sole-artistic-authority over sound goes to its extreme — the bass simply vanishes."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 David Bowie 的 Fame 见过艺人视野压过乐队的这种力量——Prince 把它用到了贝斯上。",
+          "voice_en": "You saw solo artistic vision overriding the band in David Bowie's Fame — Prince applies that same force to the bass itself."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 David Bowie 的 Fame 见过艺人视野压过乐队的这种力量——Prince 把它用到了贝斯上。",
-        "voice_en": "You saw solo artistic vision overriding the band in David Bowie's Fame — Prince applies that same force to the bass itself."
+      "intrinsic_score": {
+        "value": 0.552,
+        "dimensions": {
+          "story_drive": 0.6,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.5
+        },
+        "rationale": "Sole-artistic-authority thread; thematic but a long jump from Bowie to Prince in bass terms."
       },
       "user_overrides": []
     },
@@ -288,18 +455,30 @@
       "id": "conn_004_to_012_groove_dna",
       "from_position": 4,
       "to_position": 12,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "John Deacon 在 Chic 录音室亲耳听了 Good Times 并将其化为 Another One Bites the Dust 的 bass riff；但 Deacon 自述研究过 P-Funk 和 Chic 两条线，Parliament 的重型贝斯前置美学也在他的音色和录音电平决策中留下了印记。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Queen 的 Another One Bites the Dust，那条贝斯 riff 的重量感有一部分来自 Parliament 这边的遗产。",
-        "voice_en": "Ahead in Queen's Another One Bites the Dust, part of that bass riff's weight comes from Parliament's legacy."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1980 年那条最公开的'摇滚乐队照搬迪斯科贝斯'的英伦例子，那条 riff 的重量感有一部分来自现在这条 P-Funk 遗产。",
+          "voice_en": "By 1980, on the most public British example of a rock band copying a disco bassline, the weight of that riff partly comes from this P-Funk inheritance."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Parliament 的 Give Up the Funk 听见的那种贝斯前置重量，Deacon 在研究这条线的时候也研究了它。",
+          "voice_en": "That bass-forward weight in Parliament's Give Up the Funk — Deacon studied this lineage alongside Chic's."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Parliament 的 Give Up the Funk 听见的那种贝斯前置重量，Deacon 在研究这条线的时候也研究了它。",
-        "voice_en": "That bass-forward weight in Parliament's Give Up the Funk — Deacon studied this lineage alongside Chic's."
+      "intrinsic_score": {
+        "value": 0.55,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.5,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.6
+        },
+        "rationale": "Possible P-Funk weight in Deacon's riff is musicological but not the load-bearing line into Queen — Chic→Queen is the documented one."
       },
       "user_overrides": []
     },
@@ -307,18 +486,30 @@
       "id": "conn_004_to_014_bassline_prototype",
       "from_position": 4,
       "to_position": 14,
-      "direction": "from_inspires_to",
       "kind": "bassline_prototype",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Flea 公开列举 James Brown、Parliament-Funkadelic 和 Bootsy Collins 为其主要贝斯影响来源；他的 slap-and-pop 技术在 Give It Away 中的运用与 Bootsy 在 P-Funk 时期的 slap 语法存在直接传承关系。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Red Hot Chili Peppers 的 Give It Away，Flea 的 slap-pop 是 Bootsy 这条线直接传下来的。",
-        "voice_en": "Ahead in Red Hot Chili Peppers' Give It Away, Flea's slap-pop is Bootsy's Parliament lineage, brought forward."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1991 年那条把放克 slap 推进 alt-rock 的洛杉矶贝斯，Bootsy 这条线会直接传下去——Flea 自己承认。",
+          "voice_en": "Ahead in 1991, on a Los Angeles bass that pushed funk slap into alt-rock, this Bootsy lineage passes straight through — the player admits it."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Parliament 的 Give Up the Funk 听见的 Bootsy slap 语法——Flea 承认那是他的课本。",
+          "voice_en": "Bootsy's slap vocabulary in Parliament's Give Up the Funk — Flea has acknowledged it as his textbook."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Parliament 的 Give Up the Funk 听见的 Bootsy slap 语法——Flea 承认那是他的课本。",
-        "voice_en": "Bootsy's slap vocabulary in Parliament's Give Up the Funk — Flea has acknowledged it as his textbook."
+      "intrinsic_score": {
+        "value": 0.897,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.9,
+          "evidential_strength": 0.9,
+          "focus_relevance": 0.95
+        },
+        "rationale": "Bootsy lineage to Flea is documented + audible; very high focus relevance for bass slap."
       },
       "user_overrides": []
     },
@@ -326,18 +517,30 @@
       "id": "conn_004_to_015_groove_dna",
       "from_position": 4,
       "to_position": 15,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "P-Funk 的贝斯线在嘻哈时代被大量采样，形成了 nu-disco 和电子舞曲对'厚重低频骨架'的审美期待；Daft Punk 在 Random Access Memories 中复活的正是这条厚重贝斯基础设施。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Daft Punk 的 Get Lucky，他们要复活的那条低频基础设施就是从 P-Funk 这里采样出来的。",
-        "voice_en": "Ahead in Daft Punk's Get Lucky, the thick bass infrastructure they revive was sampled wholesale from P-Funk."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2013 年那次 nu-disco 复活，他们要复活的那条低频基础设施就是从现在这一段采样出来的。",
+          "voice_en": "By 2013, in the nu-disco revival, the low-end infrastructure they bring back gets sampled straight from this passage."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Parliament 的 Give Up the Funk 听见的低频基础——嘻哈采了它，Daft Punk 又把它活体复原了。",
+          "voice_en": "That low-frequency foundation in Parliament's Give Up the Funk — hip-hop sampled it, Daft Punk revived it in living form."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Parliament 的 Give Up the Funk 听见的低频基础——嘻哈采了它，Daft Punk 又把它活体复原了。",
-        "voice_en": "That low-frequency foundation in Parliament's Give Up the Funk — hip-hop sampled it, Daft Punk revived it in living form."
+      "intrinsic_score": {
+        "value": 0.745,
+        "dimensions": {
+          "story_drive": 0.7,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.8,
+          "focus_relevance": 0.75
+        },
+        "rationale": "P-Funk low end resampled by nu-disco revival; the loop-sample lineage is concrete and well-traced."
       },
       "user_overrides": []
     },
@@ -345,18 +548,30 @@
       "id": "conn_004_to_017_groove_dna",
       "from_position": 4,
       "to_position": 17,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Parliament 的贝斯作为和声与节奏的双重锚点、而非装饰声部的功能性定位，直接影响了 Khruangbin 的录音层级：Laura Lee 的贝斯先录，吉他最后加。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Khruangbin 的 María También，贝斯作锚点这件事被做成了录音时的优先级。",
-        "voice_en": "Ahead in Khruangbin's María También, bass-as-anchor becomes literally the first thing recorded."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2018 年那个德克萨斯三人乐队的录音里，贝斯作锚点这件事会被做成录音时的优先级。",
+          "voice_en": "By 2018, in a Texas three-piece's recording, bass-as-anchor becomes a recording-order priority."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Parliament 的 Give Up the Funk 听见的那种贝斯锚点哲学，Khruangbin 把它变成了录音顺序。",
+          "voice_en": "That bass-as-anchor philosophy in Parliament's Give Up the Funk — Khruangbin made it their recording sequence."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Parliament 的 Give Up the Funk 听见的那种贝斯锚点哲学，Khruangbin 把它变成了录音顺序。",
-        "voice_en": "That bass-as-anchor philosophy in Parliament's Give Up the Funk — Khruangbin made it their recording sequence."
+      "intrinsic_score": {
+        "value": 0.655,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Bass-as-anchor recording-order shared between two bass-priority units; high focus relevance, weaker historical evidence."
       },
       "user_overrides": []
     },
@@ -364,18 +579,30 @@
       "id": "conn_005_to_006_groove_dna",
       "from_position": 5,
       "to_position": 6,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Saturday Night Fever 占据美国榜首期间 Miss You 正在录音和发行；Bee Gees 的四四拍贝斯前置舞曲逻辑是 Stones 在 Miss You 里要近似的具体目标——Miss You 在 1978 年 8 月将 SNF 挤下榜首。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 The Rolling Stones 的 Miss You，这套四四拍贝斯前置逻辑就是 Jagger 要借的那件外套。",
-        "voice_en": "Ahead in The Rolling Stones' Miss You, this four-on-the-floor bass logic is precisely the coat Jagger wanted to borrow."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这套四四拍贝斯前置逻辑，就是 1978 年那次最公开的摇滚翻译——这一集的落点——要借的那件外套。",
+          "voice_en": "This four-on-the-floor bass-forward logic is the very jacket that 1978's most public rock translation — this episode's anchor — borrows."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Bee Gees 的 Stayin' Alive 听见的那套迪斯科贝斯逻辑，就是 Miss You 要近似、又要保持距离的那个东西。",
+          "voice_en": "That disco bass logic in Bee Gees' Stayin' Alive — Miss You approximates it, while keeping its rock distance."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Bee Gees 的 Stayin' Alive 听见的那套迪斯科贝斯逻辑，就是 Miss You 要近似、又要保持距离的那个东西。",
-        "voice_en": "That disco bass logic in Bee Gees' Stayin' Alive — Miss You approximates it, while keeping its rock distance."
+      "intrinsic_score": {
+        "value": 0.915,
+        "dimensions": {
+          "story_drive": 0.95,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.9,
+          "focus_relevance": 0.95
+        },
+        "rationale": "Stayin' Alive is the disco template Miss You explicitly borrows-and-distances from — top-tier story drive into the anchor."
       },
       "user_overrides": []
     },
@@ -383,18 +610,30 @@
       "id": "conn_005_to_009_bassline_prototype",
       "from_position": 5,
       "to_position": 9,
-      "direction": "from_inspires_to",
       "kind": "bassline_prototype",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Bee Gees 在 SNF 中把贝斯推到了人声 falsetto 正下方的第一线，作为歌曲的节奏与旋律骨架；Bernard Edwards 在 Good Times 里将这个位置保留，但做得更冷、更几何化。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Chic 的 Good Times，Edwards 接过了这种把贝斯顶到第一线的想法，但做得更冷。",
-        "voice_en": "Ahead in Chic's Good Times, Edwards takes this idea of bass as the front line and makes it colder, more geometric."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1979 年那条最被引用的迪斯科贝斯，把贝斯顶到第一线这件事会被精炼到顶点——更冷、更克制。",
+          "voice_en": "Ahead in 1979, on the most-sampled disco bassline ever, putting bass front-line gets refined to its peak — colder, more restrained."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Bee Gees 的 Stayin' Alive 已经听见贝斯被顶到歌的第一线——Edwards 在这里把它精炼了。",
+          "voice_en": "Bass pushed to the front line — you heard it first in Bee Gees' Stayin' Alive; Edwards refines it here."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Bee Gees 的 Stayin' Alive 已经听见贝斯被顶到歌的第一线——Edwards 在这里把它精炼了。",
-        "voice_en": "Bass pushed to the front line — you heard it first in Bee Gees' Stayin' Alive; Edwards refines it here."
+      "intrinsic_score": {
+        "value": 0.763,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.7,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Disco bass-front-line idea refined from Bee Gees to Chic; clear genealogical descent in bass priority."
       },
       "user_overrides": []
     },
@@ -402,18 +641,30 @@
       "id": "conn_005_to_016_bassline_prototype",
       "from_position": 5,
       "to_position": 16,
-      "direction": "from_inspires_to",
       "kind": "bassline_prototype",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Kevin Parker 明确表示 The Less I Know the Better 的起点是他喜欢迪斯科、尤其是在服用迷幻剂时听 Bee Gees 的体验——SNF 时期的 Bee Gees 是 Currents 的直接灵感声源。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Tame Impala 的 The Less I Know the Better，Kevin Parker 亲口说这首歌从听 Bee Gees 开始。",
-        "voice_en": "Ahead in Tame Impala's The Less I Know the Better, Kevin Parker said this song started with listening to Bee Gees."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2015 年那张澳洲卧室迷幻流行专辑，作者亲口说，那首歌就是从听 1977 年这首开始的。",
+          "voice_en": "By 2015, on an Australian bedroom-pop psych record, the maker says it started from listening to this 1977 cut."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Bee Gees 的 Stayin' Alive 听见的 Saturday Night Fever 时刻——Parker 37 年后把它重新点亮了。",
+          "voice_en": "That Saturday Night Fever moment in Bee Gees' Stayin' Alive — Parker reignited it thirty-seven years later."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Bee Gees 的 Stayin' Alive 听见的 Saturday Night Fever 时刻——Parker 37 年后把它重新点亮了。",
-        "voice_en": "That Saturday Night Fever moment in Bee Gees' Stayin' Alive — Parker reignited it thirty-seven years later."
+      "intrinsic_score": {
+        "value": 0.78,
+        "dimensions": {
+          "story_drive": 0.7,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Kevin Parker has named Saturday Night Fever as a starting point — concrete artist quote, but the throughline crosses 38 years."
       },
       "user_overrides": []
     },
@@ -421,18 +672,30 @@
       "id": "conn_005_to_018_groove_dna",
       "from_position": 5,
       "to_position": 18,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "sensory",
       "backed_by_edge_id": null,
       "system_sensory_note": "Bee Gees 在 SNF 把贝斯前置舞曲流行美学推向商业顶点；Mk.gee 在卧室制作语境中的贝斯驱动 R&B-funk 流行感，与这条贝斯前置舞曲 pop 脉络在听感上存在隔代呼应。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Mk.gee 的 You Dreamed of Me，这种贝斯驱动的舞曲流行感在卧室里找到了最新的形状。",
-        "voice_en": "Ahead in Mk.gee's You Dreamed of Me, this bass-driven dance-pop feeling finds its newest shape — in a bedroom."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2024 年那个新泽西卧室独立乐手，这种贝斯驱动的舞曲流行感会在卧室里找到最新的形状。",
+          "voice_en": "By 2024, with a New Jersey bedroom indie act, this bass-driven dance-pop feel finds its newest shape — recorded at home."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Bee Gees 的 Stayin' Alive 听见的那种贝斯驱动流行感，Mk.gee 在卧室里把它重新烧了一遍。",
+          "voice_en": "That bass-driven pop energy in Bee Gees' Stayin' Alive — Mk.gee rekindles it alone in a bedroom."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Bee Gees 的 Stayin' Alive 听见的那种贝斯驱动流行感，Mk.gee 在卧室里把它重新烧了一遍。",
-        "voice_en": "That bass-driven pop energy in Bee Gees' Stayin' Alive — Mk.gee rekindles it alone in a bedroom."
+      "intrinsic_score": {
+        "value": 0.505,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.45,
+          "evidential_strength": 0.45,
+          "focus_relevance": 0.55
+        },
+        "rationale": "Bass-driven dance-pop feel into Mk.gee's bedroom; thematic but evidence is sensory-only."
       },
       "user_overrides": []
     },
@@ -440,18 +703,30 @@
       "id": "conn_006_to_007_groove_dna",
       "from_position": 6,
       "to_position": 7,
-      "direction": "lateral_dialogue",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Miss You 和 Heart of Glass 都在 1978 年发行，都是摇滚/朋克背景的乐队把迪斯科贝斯逻辑翻进自己的声音；两条线平行推进，内部都有乐队成员的抵制。",
-      "narration_at_from": {
-        "voice_zh": "Blondie 的 Heart of Glass 同年在 CBGB 那边做了完全一样的翻译——两支乐队，同一个动作，同一年。",
-        "voice_en": "Blondie's Heart of Glass made the exact same translation from the CBGB side — two bands, one move, same year."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同年在 CBGB 那边，另一支乐队做了完全一样的翻译——两支乐队，同一个动作，1978。",
+          "voice_en": "The same year, on the CBGB side, another band performs the exact same translation — two bands, one move, 1978."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "The Rolling Stones 的 Miss You 在同一年也做了这件事——从摇滚出发，借迪斯科贝斯，两边内部都有人反对。",
+          "voice_en": "The Rolling Stones' Miss You did the same thing that year — rock borrowing disco bass, internal resistance on both sides."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "The Rolling Stones 的 Miss You 在同一年也做了这件事——从摇滚出发，借迪斯科贝斯，两边内部都有人反对。",
-        "voice_en": "The Rolling Stones' Miss You did the same thing that year — rock borrowing disco bass, internal resistance on both sides."
+      "intrinsic_score": {
+        "value": 0.865,
+        "dimensions": {
+          "story_drive": 0.9,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Same-year same-move lateral pair; the 1978 doubling is the most quotable beat in the episode's middle."
       },
       "user_overrides": []
     },
@@ -459,18 +734,30 @@
       "id": "conn_006_to_009_groove_dna",
       "from_position": 6,
       "to_position": 9,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Miss You 是摇滚乐队进入迪斯科贝斯领域的标志性时刻；而 Chic 的 Good Times 出现在一年后，代表同一种贝斯前置美学在黑人迪斯科场域达到精炼顶点——两者是同一场对话的两端。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Chic 的 Good Times，迪斯科贝斯在黑人场域被做到了精炼顶点——那是 Miss You 试图近似的东西。",
-        "voice_en": "Ahead in Chic's Good Times, disco bass reaches its refined peak on the Black side — that's what Miss You was approximating."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1979 年那条最被引用的迪斯科贝斯——迪斯科贝斯在黑人场域被做到了精炼顶点，那是 Miss You 试图近似的东西。",
+          "voice_en": "Ahead in 1979, on the most-sampled disco bassline ever, that bass gets refined to its peak in the Black-music sphere — that's what Miss You is approximating."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 The Rolling Stones 的 Miss You 已经听见摇滚端在借这种迪斯科贝斯——Chic 是那个原版。",
+          "voice_en": "You just heard rock borrowing disco bass in The Rolling Stones' Miss You — Chic is the original."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 The Rolling Stones 的 Miss You 已经听见摇滚端在借这种迪斯科贝斯——Chic 是那个原版。",
-        "voice_en": "You just heard rock borrowing disco bass in The Rolling Stones' Miss You — Chic is the original."
+      "intrinsic_score": {
+        "value": 0.853,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.8,
+          "evidential_strength": 0.8,
+          "focus_relevance": 0.95
+        },
+        "rationale": "Miss You's outbound to Chic — anchor → most-sampled disco bassline ever; the lineage's downstream pivot."
       },
       "user_overrides": []
     },
@@ -478,18 +765,30 @@
       "id": "conn_006_to_012_groove_dna",
       "from_position": 6,
       "to_position": 12,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Miss You 确立了'摇滚乐队采用迪斯科贝斯驱动的节奏框架'的模板；两年后 John Deacon 在 Another One Bites the Dust 里执行了同一套逻辑，规模更大、更贴近竞技场摇滚。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Queen 的 Another One Bites the Dust，同样的模板被 John Deacon 放进了体育场摇滚。",
-        "voice_en": "Ahead in Queen's Another One Bites the Dust, Deacon puts the same template inside stadium rock."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿——两年后那条最公开的'摇滚乐队照搬迪斯科贝斯'的英伦例子，会把同一个模板放进体育场摇滚。",
+          "voice_en": "Soon — two years later, the most public British example of a rock band copying a disco bassline drops the same template into stadium rock."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 The Rolling Stones 的 Miss You 听见的那个'摇滚乐队用迪斯科贝斯'的模板，Deacon 在两年后照做了。",
+          "voice_en": "The rock-band-with-disco-bass template in The Rolling Stones' Miss You — Deacon executed it two years later."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 The Rolling Stones 的 Miss You 听见的那个'摇滚乐队用迪斯科贝斯'的模板，Deacon 在两年后照做了。",
-        "voice_en": "The rock-band-with-disco-bass template in The Rolling Stones' Miss You — Deacon executed it two years later."
+      "intrinsic_score": {
+        "value": 0.7,
+        "dimensions": {
+          "story_drive": 0.7,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.7,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Miss You template echoed by Queen two years later; valid but Chic→Queen tells the same story more directly."
       },
       "user_overrides": []
     },
@@ -497,18 +796,30 @@
       "id": "conn_007_to_010_groove_dna",
       "from_position": 7,
       "to_position": 10,
-      "direction": "lateral_dialogue",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Heart of Glass 和 Joy Division 的 Closer 时期作品都属于 1978–1980 年的后朋克贝斯重新定位运动：两者都把贝斯从和声辅助位置推向节奏/旋律主体，只是 Blondie 向迪斯科靠拢，Joy Division 向冷波靠拢。",
-      "narration_at_from": {
-        "voice_zh": "Joy Division 的 Isolation 在同一个后朋克时刻做了相反的选择——贝斯往上走，但往冷的方向。",
-        "voice_en": "Joy Division's Isolation makes the opposite choice in the same post-punk moment — bass moves up, but toward cold."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1980 年那张曼彻斯特后朋克最冷的专辑，贝斯会做出相反的选择——往上走，但往冷的方向。",
+          "voice_en": "By 1980, on the coldest of Manchester's post-punk records, the bass makes the opposite choice — up the register, but toward cold."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "Blondie 的 Heart of Glass 在同年把贝斯往迪斯科方向推——同一个后朋克工具箱，两个截然不同的出口。",
+          "voice_en": "Blondie's Heart of Glass pushed bass toward disco that same year — same post-punk toolkit, a completely different exit."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "Blondie 的 Heart of Glass 在同年把贝斯往迪斯科方向推——同一个后朋克工具箱，两个截然不同的出口。",
-        "voice_en": "Blondie's Heart of Glass pushed bass toward disco that same year — same post-punk toolkit, a completely different exit."
+      "intrinsic_score": {
+        "value": 0.627,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.6,
+          "evidential_strength": 0.6,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Same-year post-punk inversion; the up-but-cold direction is narratively useful, evidence is musicological."
       },
       "user_overrides": []
     },
@@ -516,18 +827,30 @@
       "id": "conn_007_to_011_groove_dna",
       "from_position": 7,
       "to_position": 11,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Blondie 在 Heart of Glass 使用 Roland CR-78 奠定机器鼓驱动贝斯律动的纽约朋克场景实验；Talking Heads 的 Eno 合作在方法论上类似——用循环鼓型先建骨架，再叠贝斯和旋律声部。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Talking Heads 的 Once in a Lifetime，机器/循环鼓先行的这种建歌逻辑被 Eno 做成了整张专辑的方法论。",
-        "voice_en": "Ahead in Talking Heads' Once in a Lifetime, Eno turns the machine-drum-first logic into an entire album's methodology."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1980 年那张 Eno 监制的纽约新浪潮专辑，机器/循环鼓先行的建歌逻辑会被做成整张专辑的方法论。",
+          "voice_en": "By 1980, on an Eno-produced New York new-wave record, the machine-and-loop-first-then-bass build-order becomes an album-wide method."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Blondie 的 Heart of Glass 已经听见 CR-78 驱动贝斯律动——Talking Heads 在同一个纽约场景里把这件事做大了。",
+          "voice_en": "The CR-78 driving bass groove in Blondie's Heart of Glass — Talking Heads expanded that same New York logic."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Blondie 的 Heart of Glass 已经听见 CR-78 驱动贝斯律动——Talking Heads 在同一个纽约场景里把这件事做大了。",
-        "voice_en": "The CR-78 driving bass groove in Blondie's Heart of Glass — Talking Heads expanded that same New York logic."
+      "intrinsic_score": {
+        "value": 0.662,
+        "dimensions": {
+          "story_drive": 0.7,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.7,
+          "focus_relevance": 0.6
+        },
+        "rationale": "Drum-machine/loop-first lineage from Blondie into Talking Heads; relevant but methodological more than bass-specific."
       },
       "user_overrides": []
     },
@@ -535,18 +858,30 @@
       "id": "conn_009_to_012_bassline_prototype",
       "from_position": 9,
       "to_position": 12,
-      "direction": "from_inspires_to",
       "kind": "bassline_prototype",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Nile Rodgers 亲口确认 John Deacon 坐在他旁边参与了 Good Times 的录音会话；Bernard Edwards 向 NME 表示 Another One Bites the Dust 是由 Deacon 在 Chic 录音室里受到启发写出的，Deacon 的 bass riff 在音符和节奏位置上与 Good Times 有直接对应关系。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Queen 的 Another One Bites the Dust，Deacon 把 Good Times 的贝斯线搬进了摇滚——有据可查。",
-        "voice_en": "Ahead in Queen's Another One Bites the Dust, Deacon transplants Good Times' bassline into rock — documented."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿——次年那条最公开的'摇滚乐队照搬迪斯科贝斯'的英伦例子，作者本人坐在 Edwards 旁边亲耳听完了这段，回去写出了那条 riff。",
+          "voice_en": "Soon — by the following year, the most public British example of a rock band copying a disco bassline: the writer sat next to Edwards, listened, then wrote that riff."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "Good Times 那条贝斯线——Deacon 坐在 Edwards 旁边亲耳听了，然后写了 Another One Bites the Dust。",
+          "voice_en": "That bassline in Chic's Good Times — Deacon sat beside Edwards, listened, then wrote Another One Bites the Dust."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "Good Times 那条贝斯线——Deacon 坐在 Edwards 旁边亲耳听了，然后写了 Another One Bites the Dust。",
-        "voice_en": "That bassline in Chic's Good Times — Deacon sat beside Edwards, listened, then wrote Another One Bites the Dust."
+      "intrinsic_score": {
+        "value": 0.95,
+        "dimensions": {
+          "story_drive": 0.95,
+          "concrete_carrier": 0.95,
+          "evidential_strength": 0.95,
+          "focus_relevance": 0.95
+        },
+        "rationale": "Deacon at Edwards' side, then Another One Bites the Dust — the cleanest documented bassline transplant in pop."
       },
       "user_overrides": []
     },
@@ -554,18 +889,30 @@
       "id": "conn_009_to_015_personnel_bridge_bass",
       "from_position": 9,
       "to_position": 15,
-      "direction": "from_inspires_to",
       "kind": "personnel_bridge_bass",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Nile Rodgers 在 1997 年认识 Daft Punk，之后在 Random Access Memories 担任吉他手并携带'Hitmaker'Stratocaster——他在 Chic 1977–1979 年录音时用的那把琴；Nathan East 接手了贝斯位置，将 Chic 的低频精神延续进数字时代。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Daft Punk 的 Get Lucky，Nile Rodgers 本人还在——那把琴就是录 Good Times 用的那把。",
-        "voice_en": "Ahead in Daft Punk's Get Lucky, Nile Rodgers himself returns — the same Stratocaster he used on Good Times."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "Nile Rodgers 这把琴 34 年后还会再用一次——同一个吉他手，同一把 Stratocaster。",
+          "voice_en": "Thirty-four years later this same guitar comes back — same player, same Stratocaster."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Chic 的 Good Times 听见的 Nile Rodgers——34 年后他带着同一把琴出现在了 Daft Punk 的录音室。",
+          "voice_en": "Nile Rodgers in Chic's Good Times — thirty-four years later, same guitar, Daft Punk's studio."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Chic 的 Good Times 听见的 Nile Rodgers——34 年后他带着同一把琴出现在了 Daft Punk 的录音室。",
-        "voice_en": "Nile Rodgers in Chic's Good Times — thirty-four years later, same guitar, Daft Punk's studio."
+      "intrinsic_score": {
+        "value": 0.895,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.95,
+          "evidential_strength": 0.95,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Same player, same Stratocaster, 34 years apart — rare gear+personnel double bridge with strong public record."
       },
       "user_overrides": []
     },
@@ -573,18 +920,30 @@
       "id": "conn_010_to_011_groove_dna",
       "from_position": 10,
       "to_position": 11,
-      "direction": "lateral_dialogue",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Joy Division 和 Talking Heads 都在 1980 年把后朋克对贝斯的重新定位推到顶点：两者都将贝斯从和弦支撑提升为主要旋律/节奏担当，只是 Joy Division 选择了冷空间，Talking Heads 选择了 Afrobeat 多节奏层。",
-      "narration_at_from": {
-        "voice_zh": "Talking Heads 的 Once in a Lifetime 在同一年把贝斯放进了一套完全不同的多节奏层——Afrobeat 的逻辑。",
-        "voice_en": "Talking Heads' Once in a Lifetime puts bass inside a completely different polyrhythmic stack that same year — Afrobeat logic."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同一年的另一支乐队会把贝斯放进一套完全不同的多节奏层——Afrobeat 的逻辑。",
+          "voice_en": "Another band the same year places bass inside a completely different polyrhythmic stack — Afrobeat logic."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "Joy Division 的 Isolation 在同一年把贝斯推向了冷空间——同一个后朋克时刻，两条截然不同的路。",
+          "voice_en": "Joy Division's Isolation pushed bass into cold space that same year — same post-punk moment, two completely different roads."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "Joy Division 的 Isolation 在同一年把贝斯推向了冷空间——同一个后朋克时刻，两条截然不同的路。",
-        "voice_en": "Joy Division's Isolation pushed bass into cold space that same year — same post-punk moment, two completely different roads."
+      "intrinsic_score": {
+        "value": 0.538,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.5,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.55
+        },
+        "rationale": "Same-year polyrhythmic vs cold-space split; useful as a same-moment-two-paths beat but kinship is broad."
       },
       "user_overrides": []
     },
@@ -592,18 +951,30 @@
       "id": "conn_010_to_016_bassline_prototype",
       "from_position": 10,
       "to_position": 16,
-      "direction": "from_inspires_to",
       "kind": "bassline_prototype",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Peter Hook 在 Joy Division/New Order 时期把贝斯移到了通常由吉他占据的高音区，用旋律性走线作为歌曲主题；Kevin Parker 在 The Less I Know the Better 采用了类似的高音区贝斯驱动 hook，旋律贝斯在迷幻流行语境的再现。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Tame Impala 的 The Less I Know the Better，高音区旋律贝斯这件事被 Parker 用迷幻的方式重新演了一遍。",
-        "voice_en": "Ahead in Tame Impala's The Less I Know the Better, Parker reprises high-register melodic bass — through a psychedelic lens."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "高音区旋律贝斯这件事，35 年后会被一个澳洲卧室流行的独立乐手用迷幻的方式重新演一遍。",
+          "voice_en": "Thirty-five years later, an Australian bedroom-pop solo act reprises high-register melodic bass through a psychedelic lens."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Joy Division 的 Isolation 听见的 Peter Hook 高音贝斯走法——Parker 在迷幻流行里做了同样的声部选择。",
+          "voice_en": "Peter Hook's high-register bass in Joy Division's Isolation — Parker makes the same voicing choice inside psychedelic pop."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Joy Division 的 Isolation 听见的 Peter Hook 高音贝斯走法——Parker 在迷幻流行里做了同样的声部选择。",
-        "voice_en": "Peter Hook's high-register bass in Joy Division's Isolation — Parker makes the same voicing choice inside psychedelic pop."
+      "intrinsic_score": {
+        "value": 0.738,
+        "dimensions": {
+          "story_drive": 0.7,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.7,
+          "focus_relevance": 0.8
+        },
+        "rationale": "Peter Hook's high-register voicing reprised in Tame Impala; concrete voicing-choice pairing."
       },
       "user_overrides": []
     },
@@ -611,18 +982,30 @@
       "id": "conn_011_to_015_groove_dna",
       "from_position": 11,
       "to_position": 15,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Talking Heads 在 Remain in Light 中用叠轨鼓循环+贝斯建构舞曲底层的方法与 Daft Punk 在 RAM 复兴 disco 的制作优先级一致：节奏底层先建，旋律声部填充其中。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Daft Punk 的 Get Lucky，先建节奏骨架、再叠旋律这件事在数字时代复活了——方法一脉相承。",
-        "voice_en": "Ahead in Daft Punk's Get Lucky, building rhythm first and melody second is reborn digitally — the method is continuous."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2013 年那次 nu-disco 复活，先建节奏骨架、再叠旋律这件事会在数字时代复活——方法一脉相承。",
+          "voice_en": "Ahead in 2013, in the nu-disco revival, build-the-rhythm-skeleton-first-then-add-melody comes back in the digital era — same method, different decade."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "鼓循环先行、贝斯填充——你在 Talking Heads 的 Once in a Lifetime 已经听见了；Daft Punk 在 RAM 里就是这么干的。",
+          "voice_en": "Drum loop first, bass fills it — you heard that in Talking Heads' Once in a Lifetime; Daft Punk's RAM does the same."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "鼓循环先行、贝斯填充——你在 Talking Heads 的 Once in a Lifetime 已经听见了；Daft Punk 在 RAM 里就是这么干的。",
-        "voice_en": "Drum loop first, bass fills it — you heard that in Talking Heads' Once in a Lifetime; Daft Punk's RAM does the same."
+      "intrinsic_score": {
+        "value": 0.593,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.6
+        },
+        "rationale": "Build-rhythm-first method revived in Daft Punk's RAM; valid lineage, sensory-leaning evidence."
       },
       "user_overrides": []
     },
@@ -630,18 +1013,30 @@
       "id": "conn_011_to_017_groove_dna",
       "from_position": 11,
       "to_position": 17,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Talking Heads 的 Tina Weymouth 以干净、旋律性的 Fender 贝斯循环为 Remain in Light 奠定底层；Khruangbin 的 Laura Lee 以相同的留白、相同的旋律性短句在德克萨斯谷仓里建构 María También 的贝斯骨架。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Khruangbin 的 María También，Laura Lee 的贝斯和 Tina Weymouth 是同一种干净旋律短句的精神。",
-        "voice_en": "Ahead in Khruangbin's María También, Laura Lee's bass shares Tina Weymouth's spirit — clean, melodic, spacious."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2018 年那个德克萨斯三人乐队的录音里，干净的旋律短句贝斯会接同一种灵魂——同样的克制。",
+          "voice_en": "By 2018, in a Texas three-piece's recording, the clean melodic-phrase bass picks up the same spirit — the same restraint."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "Once in a Lifetime 里 Tina Weymouth 的干净旋律贝斯——Laura Lee 在 María También 里接了同一个灵魂。",
+          "voice_en": "Tina Weymouth's clean melodic bass in Talking Heads' Once in a Lifetime — Laura Lee carries that same spirit."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "Once in a Lifetime 里 Tina Weymouth 的干净旋律贝斯——Laura Lee 在 María También 里接了同一个灵魂。",
-        "voice_en": "Tina Weymouth's clean melodic bass in Talking Heads' Once in a Lifetime — Laura Lee carries that same spirit."
+      "intrinsic_score": {
+        "value": 0.743,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.7,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Tina Weymouth → Laura Lee clean-melodic-phrase bass; high focus-relevance, well-observed but musicological."
       },
       "user_overrides": []
     },
@@ -649,18 +1044,30 @@
       "id": "conn_012_to_014_groove_dna",
       "from_position": 12,
       "to_position": 14,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Another One Bites the Dust 确立了贝斯主导、鼓跟随的摇滚歌曲结构范式；RHCP 在 Give It Away 里继承了同样的'贝斯是歌的主体骨架'逻辑，并在其中叠入 slap-pop 技术。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Red Hot Chili Peppers 的 Give It Away，贝斯主导歌曲骨架这件事被 Flea 的 slap 重新烧了一遍。",
-        "voice_en": "Ahead in Red Hot Chili Peppers' Give It Away, bass-as-skeletal-lead gets Flea's slap treatment — reheated and louder."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1991 年那条把放克 slap 推进 alt-rock 的洛杉矶贝斯，贝斯主导歌曲骨架这件事会被重新烧一遍——这次是用 slap。",
+          "voice_en": "Ahead in 1991, on a Los Angeles bass that pushed funk slap into alt-rock, the bass-leads-the-skeleton stance gets re-fired — this time with slap."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Queen 的 Another One Bites the Dust 听见的那种贝斯主导框架，Flea 把它接了过去，加进了 slap。",
+          "voice_en": "That bass-forward framework in Queen's Another One Bites the Dust — Flea inherits it and adds slap."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Queen 的 Another One Bites the Dust 听见的那种贝斯主导框架，Flea 把它接了过去，加进了 slap。",
-        "voice_en": "That bass-forward framework in Queen's Another One Bites the Dust — Flea inherits it and adds slap."
+      "intrinsic_score": {
+        "value": 0.612,
+        "dimensions": {
+          "story_drive": 0.6,
+          "concrete_carrier": 0.6,
+          "evidential_strength": 0.6,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Bass-leads-skeleton stance Queen→RHCP; valid but RHCP's stronger lineage is via Bootsy."
       },
       "user_overrides": []
     },
@@ -668,18 +1075,30 @@
       "id": "conn_012_to_017_groove_dna",
       "from_position": 12,
       "to_position": 17,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "sensory",
       "backed_by_edge_id": null,
       "system_sensory_note": "Another One Bites the Dust 和 María También 都把贝斯做成歌曲的结构主轴——不是和弦垫层，而是旋律骨架；两者的录音电平决策都把贝斯顶到了混音最前端。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Khruangbin 的 María También，贝斯作结构主轴这件事跨越了 30 年——同一种优先级。",
-        "voice_en": "Ahead in Khruangbin's María También, bass as structural spine persists across thirty years — same priority."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2018 年那个德克萨斯三人乐队的录音里，贝斯作结构主轴这件事会跨越 38 年——同一种优先级。",
+          "voice_en": "By 2018, in a Texas three-piece's recording, bass-as-structural-axis crosses thirty-eight years — same priority."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "贝斯作主轴——在 Another One Bites the Dust 你已经听见了；Khruangbin 以同样的决策建了 María También。",
+          "voice_en": "Bass as structural spine in Queen's Another One Bites the Dust — Khruangbin built María También with the same mixing priority."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "贝斯作主轴——在 Another One Bites the Dust 你已经听见了；Khruangbin 以同样的决策建了 María También。",
-        "voice_en": "Bass as structural spine in Queen's Another One Bites the Dust — Khruangbin built María También with the same mixing priority."
+      "intrinsic_score": {
+        "value": 0.552,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.5,
+          "evidential_strength": 0.5,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Bass-as-axis priority from Queen to Khruangbin; thematic, weak evidence beyond audible kinship."
       },
       "user_overrides": []
     },
@@ -687,18 +1106,30 @@
       "id": "conn_013_to_014_groove_dna",
       "from_position": 13,
       "to_position": 14,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Flea 和 Prince 共享 Bootsy Collins/Parliament 作为贝斯语法来源，但两人对这套语法的处理方向相反：Prince 在 When Doves Cry 里删掉了贝斯，Flea 在 Give It Away 里把贝斯炸到最大——同一个老师，两种极端回应。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Red Hot Chili Peppers 的 Give It Away，Flea 从同一个 Bootsy 教材出发，但把贝斯做到了最响。",
-        "voice_en": "Ahead in Red Hot Chili Peppers' Give It Away, Flea starts from the same Bootsy textbook — but turns bass all the way up."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 1991 年那条把放克 slap 推进 alt-rock 的洛杉矶贝斯，Flea 会从同一个 Bootsy 教材出发，但把贝斯做到最响。",
+          "voice_en": "Ahead in 1991, on a Los Angeles bass that pushed funk slap into alt-rock, Flea works from the same Bootsy textbook — but pushes the bass to maximum loudness."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Prince 的 When Doves Cry 听见贝斯被删光——Flea 从同一个老师那里学来，走了完全相反的路。",
+          "voice_en": "Prince deleted the bass in When Doves Cry; Flea learned from the same teacher and did the opposite."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Prince 的 When Doves Cry 听见贝斯被删光——Flea 从同一个老师那里学来，走了完全相反的路。",
-        "voice_en": "Prince deleted the bass in When Doves Cry; Flea learned from the same teacher and did the opposite."
+      "intrinsic_score": {
+        "value": 0.575,
+        "dimensions": {
+          "story_drive": 0.6,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.6,
+          "focus_relevance": 0.55
+        },
+        "rationale": "Two divergent Bootsy descendants (delete-the-bass vs maximize-the-bass); narrative inversion but not bass-canonical."
       },
       "user_overrides": []
     },
@@ -706,18 +1137,30 @@
       "id": "conn_013_to_016_groove_dna",
       "from_position": 13,
       "to_position": 16,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Prince 在 Purple Rain 时期确立了一人包办所有乐器、全程掌控声音决策的录音室范式；Kevin Parker 在 Currents 里独自在 Perth 的家庭录音室实现了相同的全制作范式，包括贝斯声部的自主编程。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Tame Impala 的 The Less I Know the Better，Parker 一个人在家录所有声部——走的是 Prince 那条路。",
-        "voice_en": "Ahead in Tame Impala's The Less I Know the Better, one person records everything at home — Prince's road, walked again."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2015 年那张澳洲卧室迷幻流行专辑，作者会一个人在家录所有声部——走的是这条紫色一人制作线。",
+          "voice_en": "By 2015, on an Australian bedroom-pop psych record, the maker plays every part himself at home — walking the same one-person purple lineage."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Prince 的 When Doves Cry 听见一人包办所有乐器——Parker 在 Perth 的家庭录音室里把那件事又做了一遍。",
+          "voice_en": "One person playing every instrument in Prince's When Doves Cry — Parker does the same in a Perth home studio."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Prince 的 When Doves Cry 听见一人包办所有乐器——Parker 在 Perth 的家庭录音室里把那件事又做了一遍。",
-        "voice_en": "One person playing every instrument in Prince's When Doves Cry — Parker does the same in a Perth home studio."
+      "intrinsic_score": {
+        "value": 0.785,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.8,
+          "focus_relevance": 0.75
+        },
+        "rationale": "One-person-records-everything line Prince→Parker; documented and sonically traceable in the home-studio aesthetic."
       },
       "user_overrides": []
     },
@@ -725,18 +1168,30 @@
       "id": "conn_013_to_018_groove_dna",
       "from_position": 13,
       "to_position": 18,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "historical",
       "backed_by_edge_id": null,
       "system_sensory_note": "Prince 和 Mk.gee 都是单人全制作艺人，贝斯声部由本人演奏或编程；评论界对 Two Star & the Dream Police 的评论明确提及 Prince 是 Mk.gee 的主要参照之一——这条传承有文字记录。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Mk.gee 的 You Dreamed of Me，一人制作、自己编贝斯这件事到了 2024 年还在。",
-        "voice_en": "Ahead in Mk.gee's You Dreamed of Me, solo production with self-programmed bass is still alive in 2024."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2024 年那个新泽西卧室独立乐手，一人制作、自己编贝斯这件事到了 2024 年还在——评论界直接把他和这条紫色血脉并排放。",
+          "voice_en": "By 2024, with a New Jersey bedroom indie act, one-person production with self-programmed bass is still alive — critics line him up next to this purple lineage."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Prince 的 When Doves Cry 听见的那条单人制作线，评论界直接把 Mk.gee 和他并排放了。",
+          "voice_en": "That solo-production lineage in Prince's When Doves Cry — critics placed Mk.gee directly alongside it."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Prince 的 When Doves Cry 听见的那条单人制作线，评论界直接把 Mk.gee 和他并排放了。",
-        "voice_en": "That solo-production lineage in Prince's When Doves Cry — critics placed Mk.gee directly alongside it."
+      "intrinsic_score": {
+        "value": 0.675,
+        "dimensions": {
+          "story_drive": 0.7,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.7,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Critic-named lineage Prince→Mk.gee; the 'bedroom auteur' frame is real and current."
       },
       "user_overrides": []
     },
@@ -744,18 +1199,30 @@
       "id": "conn_014_to_018_groove_dna",
       "from_position": 14,
       "to_position": 18,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "sensory",
       "backed_by_edge_id": null,
       "system_sensory_note": "Flea 在 Give It Away 里把贝斯锁死在鼓机脉冲上的处理方式——贝斯作为节奏和旋律的双重担当——在 Mk.gee 的卧室 R&B 制作中以电子方式被延续：贝斯线编程而非演奏，但同样承担骨架功能。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Mk.gee 的 You Dreamed of Me，贝斯锁死鼓脉冲的逻辑进了卧室，用编程代替了演奏。",
-        "voice_en": "Ahead in Mk.gee's You Dreamed of Me, bass locked to the drum pulse enters the bedroom — programmed now, not played."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2024 年那个新泽西卧室独立乐手，贝斯锁死鼓脉冲的逻辑会进卧室——用编程代替演奏。",
+          "voice_en": "By 2024, with a New Jersey bedroom indie act, the bass-locked-to-drum-pulse logic moves into the bedroom — programming replaces playing."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Red Hot Chili Peppers 的 Give It Away 听见贝斯锁死鼓脉冲——Mk.gee 把这件事用编程做进了卧室。",
+          "voice_en": "Bass locked to the drum pulse in Red Hot Chili Peppers' Give It Away — Mk.gee programs that same relationship alone."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Red Hot Chili Peppers 的 Give It Away 听见贝斯锁死鼓脉冲——Mk.gee 把这件事用编程做进了卧室。",
-        "voice_en": "Bass locked to the drum pulse in Red Hot Chili Peppers' Give It Away — Mk.gee programs that same relationship alone."
+      "intrinsic_score": {
+        "value": 0.552,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.5,
+          "focus_relevance": 0.6
+        },
+        "rationale": "Bass-locks-to-drum-pulse ported into bedroom programming; thematic but largely sensory."
       },
       "user_overrides": []
     },
@@ -763,18 +1230,30 @@
       "id": "conn_015_to_016_groove_dna",
       "from_position": 15,
       "to_position": 16,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Daft Punk 在 RAM 复兴 nu-disco 厚重贝斯美学在 2013 年重新点燃了迪斯科底层贝斯的流行关注；Kevin Parker 在同期录制 Currents，Daft Punk 的 nu-disco 复兴与 Tame Impala 的迷幻-迪斯科转向在时间上高度重叠，形成相互的审美激发。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Tame Impala 的 The Less I Know the Better，这股 nu-disco 低频在 Parker 的迷幻里重新烧了。",
-        "voice_en": "Ahead in Tame Impala's The Less I Know the Better, the nu-disco bass Daft Punk ignited burns inside Kevin Parker's psychedelic."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2015 年那张澳洲卧室迷幻流行专辑，这股 nu-disco 低频会在迷幻里重新烧——同期录的那张唱片把它点亮了。",
+          "voice_en": "By 2015, on an Australian bedroom-pop psych record, this nu-disco low end re-ignites inside psychedelia — a record cut in the same window lights it up."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Daft Punk 的 Get Lucky 听见 nu-disco 低频复活——Parker 在同期录 Currents，这两件事互相点燃了。",
+          "voice_en": "Nu-disco bass revival in Daft Punk's Get Lucky — Parker was recording Currents at the same time; they sparked each other."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Daft Punk 的 Get Lucky 听见 nu-disco 低频复活——Parker 在同期录 Currents，这两件事互相点燃了。",
-        "voice_en": "Nu-disco bass revival in Daft Punk's Get Lucky — Parker was recording Currents at the same time; they sparked each other."
+      "intrinsic_score": {
+        "value": 0.627,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.6,
+          "evidential_strength": 0.6,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Same-window nu-disco low end into psychedelia; concurrence is the story, not a hand-to-hand transfer."
       },
       "user_overrides": []
     },
@@ -782,18 +1261,30 @@
       "id": "conn_015_to_017_gear_lineage_bass",
       "from_position": 15,
       "to_position": 17,
-      "direction": "from_inspires_to",
       "kind": "gear_lineage_bass",
       "evidence_basis": "sensory",
       "backed_by_edge_id": null,
       "system_sensory_note": "Daft Punk 在 RAM 坚持使用模拟信号链录制贝斯，追求温暖、有重量的低频质感；Khruangbin 在 Lincoln Manor 的录音同样以模拟温暖音色为核心审美目标，Laura Lee 的贝斯音色与 Nathan East 在 Get Lucky 的低频质感存在听感上的传承。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Khruangbin 的 María También，那种模拟温暖的贝斯质感和 Get Lucky 的低频是同一种基因。",
-        "voice_en": "Ahead in Khruangbin's María También, that warm analog bass tone shares its DNA with Get Lucky's low end."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2018 年那个德克萨斯三人乐队的录音里，模拟温暖的贝斯质感是同一种基因——德克萨斯谷仓里养出来的。",
+          "voice_en": "By 2018, in a Texas three-piece's recording, the analog-warm bass texture is the same DNA — raised inside a Texas barn studio."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Daft Punk 的 Get Lucky 听见的那种模拟温暖贝斯——Khruangbin 在德克萨斯谷仓里用同样的方式养了它。",
+          "voice_en": "That warm analog bass in Daft Punk's Get Lucky — Khruangbin nurtured the same quality in a Texas barn."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Daft Punk 的 Get Lucky 听见的那种模拟温暖贝斯——Khruangbin 在德克萨斯谷仓里用同样的方式养了它。",
-        "voice_en": "That warm analog bass in Daft Punk's Get Lucky — Khruangbin nurtured the same quality in a Texas barn."
+      "intrinsic_score": {
+        "value": 0.825,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.95
+        },
+        "rationale": "Analog-warm bass texture shared across Daft Punk/Khruangbin recording aesthetics — high focus relevance for gear lineage."
       },
       "user_overrides": []
     },
@@ -801,20 +1292,33 @@
       "id": "conn_016_to_018_groove_dna",
       "from_position": 16,
       "to_position": 18,
-      "direction": "from_inspires_to",
       "kind": "groove_dna",
       "evidence_basis": "musicological",
       "backed_by_edge_id": null,
       "system_sensory_note": "Kevin Parker 独自在 Perth 家庭录音室完成 Currents，包括贝斯声部的自主编程；Mk.gee 同样是单人卧室制作项目，贝斯由本人编程完成——两者都是'一个人在家做出完整的贝斯驱动舞曲流行'的范式延续。",
-      "narration_at_from": {
-        "voice_zh": "等会儿到 Mk.gee 的 You Dreamed of Me，卧室里一个人编贝斯这件事到了 2024 年还没停。",
-        "voice_en": "Ahead in Mk.gee's You Dreamed of Me, one person programming bass alone in a bedroom — still happening in 2024."
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "等会儿到 2024 年那个新泽西卧室独立乐手，卧室里一个人编贝斯这件事到 2024 年还没停——同一种极简的制作惯性。",
+          "voice_en": "By 2024, with a New Jersey bedroom indie act, one-person bedroom bass programming hasn't stopped — the same minimal production inertia."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Tame Impala 的 The Less I Know the Better 听见一人卧室制作贝斯——Mk.gee 在 2024 年照做了。",
+          "voice_en": "Solo bedroom bass production in Tame Impala's The Less I Know the Better — Mk.gee does the same thing in 2024."
+        }
       },
-      "narration_at_to": {
-        "voice_zh": "你刚才在 Tame Impala 的 The Less I Know the Better 听见一人卧室制作贝斯——Mk.gee 在 2024 年照做了。",
-        "voice_en": "Solo bedroom bass production in Tame Impala's The Less I Know the Better — Mk.gee does the same thing in 2024."
+      "intrinsic_score": {
+        "value": 0.59,
+        "dimensions": {
+          "story_drive": 0.6,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Bedroom one-person-bass-programming continuum into 2024; valid coda kinship, sensory-evidence."
       },
       "user_overrides": []
     }
-  ]
+  ],
+  "spec_version": "0.4"
 }

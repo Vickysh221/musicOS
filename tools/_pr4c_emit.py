@@ -1,0 +1,578 @@
+"""PR-4C: Emit Miss You ep 1 v0.4 episode.{md,json}.
+
+Holds all narration prose as Python strings so char-count tuning is local.
+Validates against weight bands before emitting to disk.
+
+The .md and .json bodies are derived from the same Python string, so
+md ↔ json drift is impossible by construction.
+"""
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parent.parent
+SLUG = "rolling-stones_some-girls_miss-you"
+MD = ROOT / "episodes" / f"{SLUG}.episode.md"
+JSON_OUT = ROOT / "episodes" / f"{SLUG}.episode.json"
+TRACKLIST = ROOT / "playlists" / f"{SLUG}.tracklist.json"
+CONNECTIONS = ROOT / "playlists" / f"{SLUG}.connections.json"
+
+WEIGHT_BANDS = {
+    "anchor": (600, 900),
+    "pillar": (350, 500),
+    "supporting": (220, 340),
+    "bridge": (60, 150),
+}
+
+# ── Narration prose ─────────────────────────────────────────────────────
+# Each string is the full transcript_zh for that position. Newline pairs
+# (\n\n) split paragraphs in the .md body. Char band per narrative_weight
+# is enforced before write. Strong-connection's other-side artist or song
+# title MUST appear inside each non-anchor non-bridge prose.
+
+OPENING = (
+    "先听低音。\n\n"
+    "今天这一集要带你穿过一条贝斯线索——从 1967 年 James Brown 在 Cincinnati 的录音棚里"
+    "把鼓和贝斯咬死的那一刻，一直到 2024 年一个人在卧室里把贝斯编进节拍机的现在。"
+    "中间有十八站，五十七年。\n\n"
+    "中心节点是 The Rolling Stones 的 Miss You，1978 年——一支英国蓝调摇滚乐队走进迪斯科的"
+    "节奏语法，借了那条贝斯线，又故意没有完全融进去。两层声音听得见，谁也没融化进谁。\n\n"
+    "今天这一集我们沿着这条贝斯线索往外走。"
+)
+
+# Position 1 — pillar, strong=conn_001_to_004 (other: Parliament — Give Up the Funk)
+T1 = (
+    "你听到的那个鼓和贝斯咬在同一根脉搏上的句子——这是这条线的零号节点。\n\n"
+    "1967 年，Cincinnati 的 King Studio。James Brown 把节奏组从伴奏拎到主舞台，"
+    "他要求 JBs 的每一个人——连贝斯手都不许单独演奏一段旋律——"
+    "都得把自己当成鼓的一部分，跟着 kick 一起呼吸。\n\n"
+    "所以这条贝斯不是在垫底，它在和军鼓抢同一格气息。kick 落哪儿，贝斯就停哪儿。"
+    "你以为那是一件乐器，其实它是一件呼吸。\n\n"
+    "等会儿到 Parliament 的 Give Up the Funk——那艘 P-Funk 飞船里坐着一个二十出头的贝斯手，"
+    "他把这一首听到把右手都改了，再把这套贝斯哲学整盘端走，做成自己的极大化版本。\n\n"
+    "但在 1967 年，贝斯还没有自己的舞台。它属于鼓，紧紧贴着，等着有人把它拎到前面去。"
+)
+
+# Position 2 — supporting, strong=conn_002_to_006 (other: Miss You) — Billy Preston bridge
+T2 = (
+    "你听见的那个慢拍贝斯——它锁的不是真人鼓，而是一台叫 Maestro Rhythm King 的机器。\n\n"
+    "1971 年，Sly Stone 把整支乐队收进自己脑子里——一人全包，鼓机做骨架，"
+    "贝斯锁住机器脉冲。这是录音史上第一次让鼓机驱动一支贝斯线的重要 hit。\n\n"
+    "等会儿到 1978 年的 The Rolling Stones — Miss You，那个把这条节奏血脉直接带进英国摇滚乐队"
+    "的人——Billy Preston——就是从 Sly 这条线走过去的。一个键盘手，从一支乐队的录音棚搬到"
+    "另一支乐队的录音棚，贝斯哲学跟着走。\n\n"
+    "鼓机会变，贝斯锁机器的逻辑不会。"
+)
+
+# Position 3 — pillar, strong=conn_003_to_006 (other: Miss You)
+T3 = (
+    "贝斯先于人声进入耳朵——这首歌的低音是被故意推到前面的。\n\n"
+    "1975 年，David Bowie 走进费城的 Sigma Sound，跟黑人节奏组一起录音。"
+    "他自己叫这个动作 plastic soul——白人艺人主动进黑人放克的低频，不是模仿，是穿外套。\n\n"
+    "John Lennon 在那间棚里弹节奏吉他，Carlos Alomar 写出那条招牌 riff，"
+    "贝斯线被推到 falsetto 的正下方，让你听不见低频的边界在哪儿。\n\n"
+    "这件事三年后，The Rolling Stones — Miss You 几乎照着同一张地图走了一遍——"
+    "白人摇滚乐队进迪斯科，借那条贝斯线，又不让自己完全融化进去。Fame 是 Miss You 的母版，"
+    "Mick Jagger 自己也承认听过。\n\n"
+    "Bowie 教会了所有人怎么穿这件外套——而且不脱下来。"
+)
+
+# Position 4 — supporting, strong=conn_004_to_014 (other: RHCP — Give It Away)
+T4 = (
+    "贝斯走到了舞台正中——这是这条线第一次。\n\n"
+    "1976 年，Parliament 的飞船降落。Bootsy Collins 把他在 JBs 跟着 James Brown 学的那套"
+    "锁死语法，做成了 P-Funk 的 slap-pop——拇指弹响第一弦，手指勾住第二弦，"
+    "整条贝斯线变成了一个会跳舞的角色。\n\n"
+    "这套手法不是悄悄消化，是公开炫耀。贝斯第一次有了自己的舞台中心。\n\n"
+    "等会儿到 Red Hot Chili Peppers — Give It Away，那把把 slap 烧到极响的贝斯——"
+    "Flea 自己说，Bootsy 是他的课本。同一条血脉，1991 年再被点燃一次。"
+)
+
+# Position 5 — supporting, strong=conn_005_to_006 (other: Miss You)
+T5 = (
+    "贝斯被顶到 falsetto 的正下方——这是迪斯科商业顶点的贝斯前置美学。\n\n"
+    "1977 年，Bee Gees 的 Saturday Night Fever。Maurice Gibb 的贝斯线"
+    "和 Karl Richardson 的鼓底紧紧锁住，四四拍上每一下都站稳。\n\n"
+    "这不是给人声垫底的低频，这是把贝斯做成跳舞的发动机。\n\n"
+    "等会儿到 1978 年的 The Rolling Stones — Miss You，你会听见一支英国摇滚乐队"
+    "近似这套贝斯前置逻辑，又故意让自己保持距离——同一条血脉，不同的衣服。"
+)
+
+# Position 6 — anchor, strong=null. Free callback prose. 600-900 chars.
+T6 = (
+    "贝斯先开口。\n\n"
+    "1978 年，The Rolling Stones 的 Some Girls。Bill Wyman 的贝斯线在你听见 Mick Jagger 之前"
+    "就已经走完了一个完整的乐句——四四拍，迪斯科的骨架，但揉了蓝调摇滚的呼吸。"
+    "这不是一支乐队在跳舞，是一支乐队在借跳舞的语法说自己的话。\n\n"
+    "你刚才在 James Brown 的 Cold Sweat 已经听见这条贝斯锁鼓的逻辑——"
+    "Billy Preston 把 Sly 那边的鼓机贝斯哲学带进了 Mick Jagger 的录音棚。"
+    "你刚才在 David Bowie 的 Fame 看见白人摇滚走进黑人放克的低频——"
+    "三年后，Stones 几乎照着那张地图走了一遍。"
+    "你刚才在 Bee Gees 的 Stayin' Alive 听见迪斯科商业顶点的贝斯前置——"
+    "Stones 借了这套，又不让自己融化进去。\n\n"
+    "Some Girls 这张专辑里争论很激烈。Keith Richards 对走迪斯科有过抵触；"
+    "Mick Jagger 在 Studio 54 反复跳了几个晚上的舞，回去就把这条贝斯线写出来了。"
+    "他想要的是那种四四拍的 propulsive——往前推的劲——但保留摇滚的脏。\n\n"
+    "所以这条贝斯线两层都听得见：迪斯科的骨架，摇滚的肌理。谁也没融化进谁。\n\n"
+    "Miss You 是这条贝斯线索最坦诚的一次翻译——上游所有人都在这首里汇成一道，"
+    "下游所有人都从这首里继续往外走。这一期的中心，就在这里。"
+)
+
+# Position 7 — supporting, strong=conn_006_to_007 (other: Miss You)
+T7 = (
+    "同一年，同一个动作，另一个出口。\n\n"
+    "1978 年，Blondie 在纽约 CBGB 的圈子里换上一台 Roland CR-78。Clem Burke 让出了部分鼓机的位置，"
+    "Nigel Harrison 的贝斯锁在那个机器脉冲上——朋克场景里的人在做同一件翻译。\n\n"
+    "你刚才在 The Rolling Stones — Miss You 已经听见摇滚乐队借迪斯科贝斯——"
+    "同一年，Blondie 从朋克这一边做了同一件事，两边乐队内部都有人反对。\n\n"
+    "1978 年，迪斯科贝斯被两条不同的路径同时翻译进白人摇滚的语法里。"
+)
+
+# Position 8 — bridge, muted, 60-150 chars
+BRIDGE_8 = (
+    "Devo 用迪斯科的工具拒绝了迪斯科——也拒绝了摇滚。"
+    "贝斯在这一站短暂沉默，下一站到 Chic 的 Good Times，迪斯科贝斯回到舞台正中。"
+)
+
+# Position 9 — pillar, strong=conn_009_to_012 (other: Queen — Another One Bites the Dust)
+T9 = (
+    "贝斯被推到了第一线——比 1977 年的 disco 顶点还要更前。\n\n"
+    "1979 年，Chic 的 Risque。Bernard Edwards 把贝斯从底部垫着的位置直接拎到歌的最前面，"
+    "和 Nile Rodgers 的吉他形成几何咬合——对位、停拍、再对位。这不是放克的热度，"
+    "是放克被精炼成晶体的冷度。\n\n"
+    "Edwards 弹的那条 Stratocaster——后面 Nile Rodgers 还会带着同一把琴回来。\n\n"
+    "等会儿到 Queen — Another One Bites the Dust，你会听到这条贝斯线被一个英国摇滚乐队"
+    "原样搬走——John Deacon 当时坐在 Edwards 旁边，亲耳听完了这段，回去就写出了那条 riff。"
+    "这是流行史上最公开、最有据可查的一次 bassline 移植。\n\n"
+    "Good Times 的低频成了之后所有人的课本。"
+)
+
+# Position 10 — supporting, strong=conn_010_to_016 (other: Tame Impala — The Less I Know the Better)
+T10 = (
+    "贝斯往上走了——它不再守着低频。\n\n"
+    "1980 年，Joy Division 的 Closer。Peter Hook 把贝斯弹到了高音区，"
+    "用 melodic bass 的方式占据了通常给吉他的旋律位置——一种冷的、空间化的、刻意疏离的低音。\n\n"
+    "等会儿到 Tame Impala — The Less I Know the Better，Kevin Parker 用迷幻流行的方式"
+    "重新演绎了 Peter Hook 的高音区贝斯——同样的声部选择，三十五年后再次浮现。\n\n"
+    "贝斯可以高，可以冷，可以离开它原本的位置。"
+)
+
+# Position 11 — pillar, strong=conn_011_to_017 (other: Khruangbin — María También)
+T11 = (
+    "鼓循环先建好，贝斯再叠上去——这是录音方法论的反转。\n\n"
+    "1980 年，Talking Heads 的 Remain in Light。Brian Eno 让乐队先录一条循环鼓，"
+    "再让 Tina Weymouth 的贝斯线干干净净地叠在循环之上——短句、留白、不抢空间。\n\n"
+    "Tina 的贝斯不饱和，不打满，每一句话都给出呼吸。"
+    "这不是放克的密度逻辑，这是把贝斯当作旋律线条来对待的另一种态度。\n\n"
+    "等会儿到 Khruangbin — María También，2018 年，Laura Lee 把这套干净旋律贝斯"
+    "做到了极致——同一种短句，同一种留白，同一种把贝斯当人声来唱的精神。"
+    "Tina 是 Laura 的直系祖先，中间隔着三十八年和一个大洋。\n\n"
+    "Eno 的方法论，到 2018 年还在结果——而且是一支美国得克萨斯三人组接住的。"
+)
+
+# Position 12 — supporting, strong=conn_009_to_012 (other: Chic — Good Times)
+T12 = (
+    "你听见的那条 riff——它不是摇滚乐队写出来的，是被搬过来的。\n\n"
+    "1980 年，Queen 的 The Game。John Deacon 之前几个月坐在 Bernard Edwards 旁边，"
+    "亲耳听完了 Chic — Good Times 那条贝斯线的录音。回去他就把同一条逻辑写进了"
+    "Another One Bites the Dust——只把音色换了一下，把场景从迪斯科舞池搬到体育场。\n\n"
+    "这是流行史上最坦诚的一次 bassline 移植——一个英国摇滚乐队公开承认自己借了"
+    "一条迪斯科贝斯。Freddie Mercury 在录音时坚持留下这个版本。"
+)
+
+# Position 13 — supporting, strong=conn_013_to_016 (other: Tame Impala — The Less I Know the Better)
+T13 = (
+    "贝斯被整条删掉了——这件事本身就是一个贝斯声明。\n\n"
+    "1984 年，Prince 的 Purple Rain。When Doves Cry 这首歌，他在最终混音里把整条贝斯轨"
+    "从 master 里拉掉——一人全包所有声部的极端示范，缺席本身就是表态。\n\n"
+    "如果可以决定贝斯出现什么样，那也可以决定它不出现。\n\n"
+    "等会儿到 Tame Impala — The Less I Know the Better，Kevin Parker 在自己卧室里录所有声部——"
+    "评论界直接把他和 Prince 并排放了。一人全包的方法论，三十多年后还在传下来。"
+)
+
+# Position 14 — supporting, strong=conn_004_to_014 (other: Parliament — Give Up the Funk)
+T14 = (
+    "贝斯被烧到了最响——拇指砸得像在打鼓。\n\n"
+    "1991 年，Red Hot Chili Peppers 的 Blood Sugar Sex Magik。Flea 把 slap-pop 推到了主流摇滚的中心，"
+    "贝斯线和 Chad Smith 的 kick 互相推搡，不再是垫底的存在。\n\n"
+    "你刚才在 Parliament 的 Give Up the Funk 已经听见 Bootsy Collins 的 slap 语法——"
+    "Flea 自己说，Bootsy 是他的课本。James Brown 那条血脉，从飞船经过 P-Funk，"
+    "再到 RHCP 的客厅，没断过。"
+)
+
+# Position 15 — supporting, strong=conn_009_to_015 (other: Chic — Good Times) — same Strat 34yr
+T15 = (
+    "同一把吉他，三十四年后回来——这条贝斯线被亲手确认了。\n\n"
+    "2013 年，Daft Punk 的 Random Access Memories。Nile Rodgers 走进录音棚，"
+    "带着的是当年录 Chic — Good Times 用的那把白色 Stratocaster——同一把琴、同一双手、"
+    "同一种几何对位的 disco 节奏。\n\n"
+    "Daft Punk 用模拟设备复刻了那种温暖低频；Pharrell 在 Rodgers 的吉他上面唱了。\n\n"
+    "这是 nu-disco 时代对 Chic 的活体复原——不靠采样，靠把当事人请回来。"
+)
+
+# Position 16 — supporting, strong=conn_013_to_016 (other: Prince — When Doves Cry)
+T16 = (
+    "卧室里一个人录所有声部——他自己把贝斯也写了。\n\n"
+    "2015 年，Tame Impala 的 Currents。Kevin Parker 在 Perth 的家里"
+    "录鼓、贝斯、键盘、人声——所有声部都是他一个人。\n\n"
+    "这首里的高音区旋律贝斯——Peter Hook 那条线在迷幻流行里复活了。\n\n"
+    "你刚才在 Prince — When Doves Cry 已经听见一人全包的极端版本——"
+    "Parker 走的是同一条路，但反着用：Prince 删了贝斯，Parker 把贝斯写满。"
+    "一人全控的两个相反方向。"
+)
+
+# Position 17 — pillar, strong=conn_015_to_017 (other: Daft Punk — Get Lucky) — gear lineage
+T17 = (
+    "贝斯先录，吉他后加——录音顺序被反过来了。\n\n"
+    "2018 年，Khruangbin 的 Con Todo el Mundo。在 Texas 谷仓改的录音棚里，"
+    "Laura Lee 的贝斯先于一切录下：鼓定脉冲，贝斯定骨架，Mark Speer 的吉他最后才加进去。\n\n"
+    "贝斯不是在伴奏一首歌——它在被录下时就已经是骨架。这件事字面上颠倒了"
+    "工业时代摇滚乐队的录音顺序。\n\n"
+    "你刚才在 Daft Punk 的 Get Lucky 听见的那种模拟温暖——Khruangbin 用同样的录音美学"
+    "养着自己的贝斯：模拟磁带、室内反射、不压缩太重。同一种器材血脉，"
+    "从 nu-disco 走到 dub-soul。\n\n"
+    "Laura Lee 弹的那条贝斯线——短句、留白、不打满——是从 Tina Weymouth 那条线接下来的，"
+    "也是从 James Brown 那条贝斯先于一切的逻辑接下来的。\n\n"
+    "这是这一期贝斯先录哲学最干净的样本。"
+)
+
+# Position 18 — supporting, strong=conn_013_to_018 (other: Prince — When Doves Cry)
+T18 = (
+    "卧室里，2024 年，贝斯被编进了节拍机。\n\n"
+    "Mk.gee 的 Two Star & the Dream Police。Michael Gordon 在 New Jersey 的房间里"
+    "一个人做完所有事——鼓、贝斯、吉他、人声——贝斯由他本人编程，锁在节拍机的脉冲上。\n\n"
+    "你刚才在 Prince — When Doves Cry 已经听见一人卧室全包的极端时刻——"
+    "评论界直接把 Mk.gee 和他并排放了。同一种自留地的工作方式，"
+    "JBs 到 Sly 到 Prince 这条单人贝斯逻辑，2024 年还在。"
+)
+
+INTERLUDE = (
+    "五十年过去了。\n\n"
+    "从 James Brown 把贝斯和鼓锁死的 King Studio，经过 disco 的舞池、"
+    "后朋克的冷空间、放克摇滚的极大化、nu-disco 的活体复原，"
+    "这条贝斯线索到达了 Khruangbin 在 Texas 谷仓里录下贝斯的那个决定。\n\n"
+    "还有最后一首。不是这条弧线的目的地，是一个尾声——证明这件事在 2024 年还没有停。"
+)
+
+CLOSING = (
+    "这就是这条贝斯线索——从 1967 年 James Brown 的 Cold Sweat，"
+    "到 2024 年 Mk.gee 的 You Dreamed of Me，五十七年，同一件事："
+    "把贝斯放在最前面，让它说话。\n\n"
+    "中间的每一首都做了自己的选择：有人把它锁进鼓机，有人把它穿进白人摇滚，"
+    "有人把它精炼成 disco 的最冷形态，有人把它移到高音区，有人把它整条删掉，"
+    "有人让它在卧室里重新编程。但每一次选择，都和 Cold Sweat 的那条句子在对话。\n\n"
+    "回到 The Rolling Stones — Miss You 那条贝斯线——四四拍迪斯科的骨架，"
+    "蓝调摇滚的呼吸，两层听得见，谁也没融化进谁。1978 年的那条贝斯，"
+    "也是这一期最强的两个红心点亮的同一首歌：Bee Gees — Stayin' Alive 是它的母版，"
+    "Chic — Good Times 是它的下游。三首歌共享一条血脉。\n\n"
+    "这条血脉还在继续。"
+)
+
+# ── Strong/archived per position (v0.4) ─────────────────────────────────
+# Each non-anchor non-bridge track exhibit gets exactly one strong link
+# (the most narratively load-bearing pair at that endpoint), plus archived
+# entries for the other endpoint pairs. anchor (pos 6) and bridge (pos 8)
+# get strong=null.
+
+R_REDUNDANT = "redundant_with_strong"
+R_LOW_FOCUS = "low_focus_relevance"
+R_NO_ANCHOR = "no_concrete_anchor"
+R_TOLD = "already_told"
+R_OFF = "off_topic_for_episode"
+
+STRONG = {
+    1:  "conn_001_to_004_personnel_bridge_bass",
+    2:  "conn_002_to_006_personnel_bridge_bass",
+    3:  "conn_003_to_006_groove_dna",
+    4:  "conn_004_to_014_bassline_prototype",
+    5:  "conn_005_to_006_groove_dna",
+    6:  None,  # anchor
+    7:  "conn_006_to_007_groove_dna",
+    8:  None,  # bridge
+    9:  "conn_009_to_012_bassline_prototype",
+    10: "conn_010_to_016_bassline_prototype",
+    11: "conn_011_to_017_groove_dna",
+    12: "conn_009_to_012_bassline_prototype",
+    13: "conn_013_to_016_groove_dna",
+    14: "conn_004_to_014_bassline_prototype",
+    15: "conn_009_to_015_personnel_bridge_bass",
+    16: "conn_013_to_016_groove_dna",
+    17: "conn_015_to_017_gear_lineage_bass",
+    18: "conn_013_to_018_groove_dna",
+}
+
+ARCHIVED = {
+    1:  [("conn_001_to_002_groove_dna", R_TOLD),
+         ("conn_001_to_003_groove_dna", R_REDUNDANT),
+         ("conn_001_to_006_groove_dna", R_REDUNDANT),
+         ("conn_001_to_009_groove_dna", R_LOW_FOCUS)],
+    2:  [("conn_001_to_002_groove_dna", R_TOLD),
+         ("conn_002_to_007_groove_dna", R_LOW_FOCUS),
+         ("conn_002_to_011_groove_dna", R_NO_ANCHOR),
+         ("conn_002_to_013_groove_dna", R_OFF)],
+    3:  [("conn_001_to_003_groove_dna", R_REDUNDANT),
+         ("conn_003_to_005_groove_dna", R_NO_ANCHOR),
+         ("conn_003_to_007_groove_dna", R_LOW_FOCUS),
+         ("conn_003_to_013_groove_dna", R_OFF)],
+    4:  [("conn_001_to_004_personnel_bridge_bass", R_TOLD),
+         ("conn_004_to_012_groove_dna", R_NO_ANCHOR),
+         ("conn_004_to_015_groove_dna", R_REDUNDANT),
+         ("conn_004_to_017_groove_dna", R_LOW_FOCUS)],
+    5:  [("conn_003_to_005_groove_dna", R_NO_ANCHOR),
+         ("conn_005_to_009_bassline_prototype", R_REDUNDANT),
+         ("conn_005_to_016_bassline_prototype", R_LOW_FOCUS),
+         ("conn_005_to_018_groove_dna", R_NO_ANCHOR)],
+    6:  [("conn_001_to_006_groove_dna", R_TOLD),
+         ("conn_002_to_006_personnel_bridge_bass", R_TOLD),
+         ("conn_003_to_006_groove_dna", R_TOLD),
+         ("conn_005_to_006_groove_dna", R_TOLD),
+         ("conn_006_to_007_groove_dna", R_TOLD),
+         ("conn_006_to_009_groove_dna", R_TOLD),
+         ("conn_006_to_012_groove_dna", R_TOLD)],
+    7:  [("conn_002_to_007_groove_dna", R_LOW_FOCUS),
+         ("conn_003_to_007_groove_dna", R_LOW_FOCUS),
+         ("conn_007_to_010_groove_dna", R_NO_ANCHOR),
+         ("conn_007_to_011_groove_dna", R_LOW_FOCUS)],
+    8:  [],
+    9:  [("conn_001_to_009_groove_dna", R_LOW_FOCUS),
+         ("conn_005_to_009_bassline_prototype", R_REDUNDANT),
+         ("conn_006_to_009_groove_dna", R_TOLD),
+         ("conn_009_to_015_personnel_bridge_bass", R_TOLD)],
+    10: [("conn_007_to_010_groove_dna", R_NO_ANCHOR),
+         ("conn_010_to_011_groove_dna", R_NO_ANCHOR)],
+    11: [("conn_002_to_011_groove_dna", R_NO_ANCHOR),
+         ("conn_007_to_011_groove_dna", R_LOW_FOCUS),
+         ("conn_010_to_011_groove_dna", R_NO_ANCHOR),
+         ("conn_011_to_015_groove_dna", R_NO_ANCHOR)],
+    12: [("conn_004_to_012_groove_dna", R_NO_ANCHOR),
+         ("conn_006_to_012_groove_dna", R_REDUNDANT),
+         ("conn_012_to_014_groove_dna", R_LOW_FOCUS),
+         ("conn_012_to_017_groove_dna", R_NO_ANCHOR)],
+    13: [("conn_002_to_013_groove_dna", R_OFF),
+         ("conn_003_to_013_groove_dna", R_OFF),
+         ("conn_013_to_014_groove_dna", R_LOW_FOCUS),
+         ("conn_013_to_018_groove_dna", R_TOLD)],
+    14: [("conn_012_to_014_groove_dna", R_LOW_FOCUS),
+         ("conn_013_to_014_groove_dna", R_LOW_FOCUS),
+         ("conn_014_to_018_groove_dna", R_NO_ANCHOR)],
+    15: [("conn_004_to_015_groove_dna", R_REDUNDANT),
+         ("conn_011_to_015_groove_dna", R_NO_ANCHOR),
+         ("conn_015_to_016_groove_dna", R_LOW_FOCUS),
+         ("conn_015_to_017_gear_lineage_bass", R_TOLD)],
+    16: [("conn_005_to_016_bassline_prototype", R_LOW_FOCUS),
+         ("conn_010_to_016_bassline_prototype", R_TOLD),
+         ("conn_015_to_016_groove_dna", R_LOW_FOCUS),
+         ("conn_016_to_018_groove_dna", R_NO_ANCHOR)],
+    17: [("conn_004_to_017_groove_dna", R_LOW_FOCUS),
+         ("conn_011_to_017_groove_dna", R_TOLD),
+         ("conn_012_to_017_groove_dna", R_NO_ANCHOR)],
+    18: [("conn_005_to_018_groove_dna", R_NO_ANCHOR),
+         ("conn_014_to_018_groove_dna", R_NO_ANCHOR),
+         ("conn_016_to_018_groove_dna", R_NO_ANCHOR)],
+}
+
+NARRATIONS = {
+    1: T1, 2: T2, 3: T3, 4: T4, 5: T5, 6: T6, 7: T7,
+    9: T9, 10: T10, 11: T11, 12: T12, 13: T13, 14: T14,
+    15: T15, 16: T16, 17: T17, 18: T18,
+}
+
+# Carry-forward static metadata from v0.3 episode.json. (Album/genre/tier
+# are stable across the v0.3→v0.4 rebuild.)
+TRACK_META = {
+    1:  {"album": "Cold Sweat",                          "genre": "Funk",                              "tier": "blind_spot"},
+    2:  {"album": "There's a Riot Goin' On",             "genre": "Funk / Soul",                       "tier": "blind_spot"},
+    3:  {"album": "Young Americans",                     "genre": "Plastic soul",                      "tier": "blind_spot"},
+    4:  {"album": "Mothership Connection",               "genre": "P-Funk",                            "tier": "blind_spot"},
+    5:  {"album": "Saturday Night Fever (OST)",          "genre": "Disco",                             "tier": "hit"},
+    6:  {"album": "Some Girls",                          "genre": "Rock × Disco",                      "tier": "hit"},
+    7:  {"album": "Parallel Lines",                      "genre": "Punk × Disco",                      "tier": "adjacent"},
+    8:  {"album": "Q: Are We Not Men? A: We Are Devo!",  "genre": "Art punk / proto-new-wave",         "tier": "adjacent"},
+    9:  {"album": "Risque",                              "genre": "Disco",                             "tier": "hit"},
+    10: {"album": "Closer",                              "genre": "Post-punk",                         "tier": "blind_spot"},
+    11: {"album": "Remain in Light",                     "genre": "Art rock / post-punk funk",         "tier": "adjacent"},
+    12: {"album": "The Game",                            "genre": "Stadium rock × disco",              "tier": "hit"},
+    13: {"album": "Purple Rain",                         "genre": "Minneapolis funk-rock",             "tier": "hit"},
+    14: {"album": "Blood Sugar Sex Magik",               "genre": "Funk-rock",                         "tier": "hit"},
+    15: {"album": "Random Access Memories",              "genre": "Nu-disco",                          "tier": "hit"},
+    16: {"album": "Currents",                            "genre": "Psychedelic pop",                   "tier": "hit"},
+    17: {"album": "Con Todo el Mundo",                   "genre": "Dub-soul / instrumental groove",    "tier": "adjacent"},
+    18: {"album": "Two Star & the Dream Police",         "genre": "Bedroom R&B / experimental rock",   "tier": "adjacent"},
+}
+
+
+def main() -> None:
+    tracklist = json.loads(TRACKLIST.read_text(encoding="utf-8"))
+    by_pos = {row["position"]: row for row in tracklist}
+
+    # Validate char bands first.
+    failures: list[str] = []
+    for pos, row in by_pos.items():
+        weight = row["narrative_weight"]
+        muted = row.get("muted_this_episode", False)
+        if muted:
+            text = ""  # bridge handled below
+        else:
+            text = NARRATIONS[pos]
+        if weight == "bridge" or muted:
+            n = len(BRIDGE_8)
+            lo, hi = WEIGHT_BANDS["bridge"]
+        else:
+            n = len(text)
+            lo, hi = WEIGHT_BANDS[weight]
+        if not (lo <= n <= hi):
+            failures.append(f"pos {pos} (weight={weight}): char count {n} not in [{lo}, {hi}]")
+    if failures:
+        for f in failures:
+            print("CHAR-BAND FAIL:", f)
+        raise SystemExit(1)
+
+    # ── Build .md ────────────────────────────────────────────────────────
+    md_lines = [
+        "# Miss You · 第 1 期 · bassline DNA 谱系 — 完整剧集文稿",
+        "",
+        "**Episode ID:** rolling-stones_some-girls_miss-you__ep-01",
+        "**Episode Number:** 1",
+        "**Episode Focus:** bassline_dna",
+        "**Spec Version:** 0.4",
+        "**Anchor Track:** The Rolling Stones — Miss You (Some Girls, 1978)",
+        "**Narrator Persona:** near_listener_v1",
+        "**Generated:** 2026-05-06",
+        "",
+        "---",
+        "",
+        "## Opening",
+        "",
+        OPENING,
+        "",
+        "---",
+        "",
+    ]
+    for pos in range(1, 19):
+        row = by_pos[pos]
+        artist = row["artist"]
+        song = row["song"]
+        year = row["year"]
+        md_lines.append(f"## Track {pos}: {artist} — {song} ({year})")
+        md_lines.append("")
+        if row.get("muted_this_episode"):
+            md_lines.append("### Bridge")
+            md_lines.append("")
+            md_lines.append(BRIDGE_8)
+        else:
+            md_lines.append("### Narration")
+            md_lines.append("")
+            md_lines.append(NARRATIONS[pos])
+        md_lines.append("")
+        md_lines.append("---")
+        md_lines.append("")
+    md_lines.append("## Interlude")
+    md_lines.append("")
+    md_lines.append(INTERLUDE)
+    md_lines.append("")
+    md_lines.append("---")
+    md_lines.append("")
+    md_lines.append("## Closing")
+    md_lines.append("")
+    md_lines.append(CLOSING)
+    md_lines.append("")
+    md_lines.append("---")
+    md_lines.append("")
+    MD.write_text("\n".join(md_lines), encoding="utf-8")
+
+    # ── Build .json ──────────────────────────────────────────────────────
+    exhibits: list[dict] = []
+    exhibits.append({
+        "position": 0,
+        "kind": "opening",
+        "transcript_zh": OPENING,
+        "transcript_en": None,
+    })
+    for pos in range(1, 19):
+        row = by_pos[pos]
+        meta = TRACK_META[pos]
+        muted = row.get("muted_this_episode", False)
+        ex: dict = {
+            "position": pos,
+            "kind": "track",
+            "artist": row["artist"],
+            "song": row["song"],
+            "album": meta["album"],
+            "year": row["year"],
+            "genre": meta["genre"],
+            "episode_focus": "bassline_dna",
+            "muted_this_episode": muted,
+            "platform_links": {
+                "netease": (
+                    f"https://music.163.com/#/song?id={row['netease_song_id']}"
+                    if row.get("netease_song_id") else None
+                ),
+                "spotify": None, "youtube": None, "apple_music": None,
+            },
+            "red_heart_tier": meta["tier"],
+            "red_heart_matched_seeds": [],
+            "narrative_weight": row["narrative_weight"],
+            "strong_connection_id": STRONG[pos],
+            "archived_weak_connections": [
+                {"connection_id": cid, "archive_reason": reason}
+                for cid, reason in ARCHIVED[pos]
+            ],
+        }
+        if muted:
+            ex["transcript_zh"] = None
+            ex["bridge_narration_zh"] = BRIDGE_8
+            ex["transcript_zh_status"] = "muted"
+        else:
+            ex["transcript_zh"] = NARRATIONS[pos]
+            ex["transcript_en"] = None
+            ex["transcript_zh_status"] = "complete"
+        exhibits.append(ex)
+    exhibits.append({
+        "position": 19, "kind": "interlude",
+        "transcript_zh": INTERLUDE, "transcript_en": None,
+    })
+    exhibits.append({
+        "position": 20, "kind": "closing",
+        "transcript_zh": CLOSING, "transcript_en": None,
+    })
+
+    out = {
+        "episode_id": "rolling-stones_some-girls_miss-you__ep-01",
+        "episode_number": 1,
+        "episode_focus": "bassline_dna",
+        "episode_arc": {
+            "from": {"position": 1, "label": "James Brown — Cold Sweat (1967)"},
+            "to":   {"position": 17, "label": "Khruangbin — María También (2018)"},
+            "coda": {"position": 18, "label": "Mk.gee — You Dreamed of Me (2024)"},
+        },
+        "spec_version": "0.4",
+        "anchor_node_id": "rolling-stones_some-girls_miss-you",
+        "title": "Miss You · 第 1 期 · bassline DNA 谱系",
+        "title_en": "Miss You · Episode 1 · The Bassline DNA Lineage",
+        "subtitle": "从 James Brown 到 Khruangbin，一条贝斯线索的五十年家谱",
+        "curatorial_thesis": (
+            "贝斯不是陪衬，而是骨架——从 1967 年 James Brown 锁死鼓和贝斯的那一刻，"
+            "到 2018 年 Khruangbin 把贝斯先录变成录音规矩，这条逻辑在不同场景里反复浮现、变形、"
+            "传承。Miss You 是这条线上最坦诚的翻译节点。"
+        ),
+        "narrator_persona_id": "near_listener_v1",
+        "muted_positions": [8],
+        "exhibits": exhibits,
+    }
+    JSON_OUT.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+
+    # Print char-band summary
+    print(f"OK: emitted {MD.name} and {JSON_OUT.name}")
+    for pos in range(1, 19):
+        row = by_pos[pos]
+        weight = row["narrative_weight"]
+        if row.get("muted_this_episode"):
+            n = len(BRIDGE_8)
+        else:
+            n = len(NARRATIONS[pos])
+        print(f"  pos {pos:2d} ({weight:>10s}): {n} chars")
+
+
+if __name__ == "__main__":
+    main()

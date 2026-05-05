@@ -18,13 +18,21 @@ const MIN_VALID = {
       id: 'conn_001_to_009_groove_dna',
       from_position: 1,
       to_position: 9,
-      direction: 'from_inspires_to',
       kind: 'bassline_prototype',
       evidence_basis: 'historical',
       backed_by_edge_id: null,
       system_sensory_note: 'JB drum/bass interlock 是 Edwards 直接继承的语法。',
-      narration_at_from: { voice_zh: '等会儿到 Chic 的 Good Times 你会再撞见这种锁死。', voice_en: 'Later you will meet this lock again in Chic Good Times.' },
-      narration_at_to:   { voice_zh: '你刚才在 James Brown 的 Cold Sweat 已经听到这种逻辑。', voice_en: 'You already heard this logic earlier in James Brown Cold Sweat.' },
+      narration_modes: {
+        foreshadow_anonymous_at_from: {
+          voice_zh: '等会儿到 1979 年那条最被引用的迪斯科贝斯，会再撞见这种锁死。',
+          voice_en: 'Later in 1979 you will meet this same locked feel in disco bass.',
+        },
+        foreshadow_named_at_from: null,
+        callback_named_at_to: {
+          voice_zh: '你刚才在 James Brown 的 Cold Sweat 已经听到这种逻辑。',
+          voice_en: 'You already heard this logic earlier in James Brown Cold Sweat.',
+        },
+      },
       user_overrides: [],
     },
   ],
@@ -51,13 +59,13 @@ describe('parseConnections', () => {
 
   it('rejects narration_at_from.voice_zh exceeding 80 chars', () => {
     const bad = structuredClone(MIN_VALID);
-    bad.connection_pairs[0].narration_at_from.voice_zh = '一'.repeat(81);
+    bad.connection_pairs[0].narration_modes.foreshadow_anonymous_at_from.voice_zh = '一'.repeat(81);
     expect(() => parseConnections(bad)).toThrow(/voice_zh.*80/);
   });
 
   it('rejects narration mentioning "Track N" or square brackets', () => {
     const bad = structuredClone(MIN_VALID);
-    bad.connection_pairs[0].narration_at_from.voice_zh = '到 Track 9 你会撞见';
+    bad.connection_pairs[0].narration_modes.foreshadow_anonymous_at_from.voice_zh = '到 Track 9 你会撞见';
     expect(() => parseConnections(bad)).toThrow(/forbidden token/);
   });
 

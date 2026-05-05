@@ -38,17 +38,19 @@ describe('processionLayout', () => {
     }
   });
 
-  it('cards rise (y decreases) as index increases', () => {
+  it('y moves monotonically with index in the direction set by riseY', () => {
     const left = processionLayout({ index: 0, total, anchorIndex, hoveredIndex: null, tuning });
     const right = processionLayout({ index: total - 1, total, anchorIndex, hoveredIndex: null, tuning });
-    expect(right.y).toBeLessThan(left.y);
+    if (tuning.riseY > 0) expect(right.y).toBeLessThan(left.y);
+    else if (tuning.riseY < 0) expect(right.y).toBeGreaterThan(left.y);
+    else expect(right.y).toBe(left.y);
   });
 
   it('non-focal jitter rotation is bounded and stable across calls', () => {
     const a = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null, tuning });
     const b = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null, tuning });
     expect(a.rotZ).toBe(b.rotZ);
-    expect(Math.abs(a.rotZ)).toBeLessThanOrEqual(6);
+    expect(Math.abs(a.rotZ)).toBeLessThanOrEqual(tuning.jitterDeg);
   });
 
   it('seededJitter returns deterministic values in [-1, 1]', () => {

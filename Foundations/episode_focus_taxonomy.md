@@ -2,11 +2,14 @@
 
 A *focus* is the thematic lens an episode applies on top of the lineage map. It controls:
 
-1. **Which connection kinds count as on-focus** during Phase 0 track curation.
+1. **Which connection kinds count as on-focus** during Phase 0 track curation (`connection_kinds_in_scope`).
 2. **Which node fields drive prompt assembly** during Phase 2 transcript writing.
-3. **The RESONANCE template phrasing per red-heart tier** in the TTS template.
+3. **OPENING / CLOSING template seeds** for the framing blocks in the episode.
+4. **Optional `intrinsic_score_weight_overrides`** for Phase 1 connection scoring.
 
-This file is the canonical registry. Add a new focus by appending a section below — every field is required.
+> **v0.4 changes**: per-tier RESONANCE template phrasing has been removed. Tier-conditioned narration was a rigid, low-signal layer that produced uniform hit/adjacent/blind_spot phrasing across episodes; it is replaced by the 6-layer logical order in spec §7B.5 + the `near_listener_v1` persona, both of which constrain voice without constraining one specific sentence per tier. Field references to `bass_dna_signature` are dropped (the node-level signature schema is deferred to v0.4.1; v0.4 sources OPENER cues via prompt elicitation per decision-log #17).
+
+This file is the canonical registry. Add a new focus by appending a section below.
 
 ---
 
@@ -14,15 +17,12 @@ This file is the canonical registry. Add a new focus by appending a section belo
 
 - **Slug:** `bassline_dna`
 - **Episode title pattern (ZH):** `贝斯线索 — <anchor song>`
-- **On-focus connection kinds:** `direct_influence`, `methodological_descent`, `genealogical_descent`, `same_era_dialogue` (only when the dialogue is a bass-side conversation)
-- **Required node fields for prompt:** `bass_dna_signature`, `production_facts`, `member_dynamics`
-- **Mute rule:** if the node has no documented bass-line significance → `muted_this_episode = true`
-- **RESONANCE template:**
-  - `hit`: 强调用户对这条贝斯线索的熟悉感,落点在身体记忆
-  - `adjacent`: 指出与已知红心的相邻关系,描述贝斯手法的家族相似
-  - `blind_spot`: 提示这是用户尚未点亮的节点,用一句话锚定它在贝斯谱系中的位置
-- **OPENING template seed:** anchor song's bass riff micro-description (16-30 ZH chars), then "今天这一集我们沿着这条贝斯线索往外走"
-- **CLOSING template seed:** loop back to anchor's bass figure, name the two strongest tier-`hit` resonances surfaced in the episode
+- **`connection_kinds_in_scope`:** `bassline_prototype`, `groove_dna`, `personnel_bridge_bass`, `gear_lineage_bass`, plus `direct_influence` / `methodological_descent` / `genealogical_descent` / `same_era_dialogue` when the dialogue is a bass-side conversation.
+- **Node fields the prompt should read** (Phase 2): `production_facts`, `member_dynamics`, `instrumentation_details`, `cultural_venue`, `release_circumstances` (in spec §8 priority order). The OPENER sound cue is sourced via prompt elicitation (transcript-author SKILL Stage 2.2 R3 §3.2 three-tier fallback), not from a node field, in v0.4.
+- **Mute rule:** if the node has no documented bass-line significance → assign `narrative_weight: bridge` and `muted_this_episode: true` in tracklist.
+- **OPENING template seed:** one concrete sonic micro-description of the anchor's first riff (16–30 ZH chars), then "今天这一集我们沿着这条贝斯线索往外走", then one arc-overview sentence (track count + year span).
+- **CLOSING template seed:** loop back to the anchor's bass figure with one fresh adjective; name the two `selected_as_strong` connections that are also `red_heart_tier: hit` (the strongest already-loved echoes the episode surfaced).
+- **`intrinsic_score_weight_overrides`:** none in v0.4 (use defaults: story_drive 0.30 / concrete_carrier 0.25 / evidential_strength 0.20 / focus_relevance 0.25).
 
 ---
 
@@ -30,6 +30,7 @@ This file is the canonical registry. Add a new focus by appending a section belo
 
 - **Slug:** `voicing`
 - Reserved. Define before first voicing-focused episode.
+- Provisional `connection_kinds_in_scope`: `voicing_lineage`, `chord_language_descent`, `harmonic_signature_share`.
 
 ---
 
@@ -37,3 +38,5 @@ This file is the canonical registry. Add a new focus by appending a section belo
 
 - **Slug:** `frequency_hollowing`
 - Reserved. Maps to user aesthetic mechanism M4 (spec §6).
+- Provisional `connection_kinds_in_scope`: `spectrum_choice`, `arrangement_subtraction`, `room_aesthetic_share`.
+- Provisional `intrinsic_score_weight_overrides`: raise `concrete_carrier` to 0.30 (sparse mixes need a concrete pointer to register).

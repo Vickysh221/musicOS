@@ -4,9 +4,9 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { parsePlaylist } from './lib/parse-playlist.js';
 import { parseEpisode } from './lib/parse-episode.js';
-import { parseConnections, type ConnectionsFile, type ConnectionPair } from './lib/parse-connections.js';
+import { parseConnections, type ConnectionsFile } from './lib/parse-connections.js';
 import { fileSlug } from './lib/slug.js';
-import type { Exhibit, TrackExhibit, NonTrackExhibit, Mechanism, ExhibitType, ConnectionKind, EvidenceBasis, RedHeartTier, RedHeartSeed } from '../src/types.js';
+import type { Exhibit, TrackExhibit, NonTrackExhibit, Mechanism, ExhibitType, ConnectionKind, EvidenceBasis, RedHeartTier, RedHeartSeed, NarrativeWeight, ArchivedConnection } from '../src/types.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
 const VAULT_ROOT = path.resolve(__dirname, '../..');
@@ -144,20 +144,29 @@ function indexConnections(conn: ConnectionsFile): {
   outbound: Map<number, ConnectionRefBuild[]>;
   lateral:  Map<number, ConnectionRefBuild[]>;
 } {
+  // v0.4: `direction` removed. All pairs are causal (from < to in
+  // lineage). Outbound at from-position uses the foreshadow voice
+  // (named when present, else anonymous). Inbound at to-position uses
+  // the callback voice. `lateral` stays for back-compat in the type
+  // but is always empty in v0.4.
   const inbound  = new Map<number, ConnectionRefBuild[]>();
   const outbound = new Map<number, ConnectionRefBuild[]>();
   const lateral  = new Map<number, ConnectionRefBuild[]>();
   const labels: Record<string, string> = conn.position_labels ?? {};
 
   for (const p of conn.connection_pairs) {
+    const fwd = p.narration_modes.foreshadow_named_at_from
+      ?? p.narration_modes.foreshadow_anonymous_at_from;
+    const back = p.narration_modes.callback_named_at_to;
+
     const refForFrom: ConnectionRefBuild = {
       id: p.id,
       other_position: p.to_position,
       other_label: labels[String(p.to_position)] ?? '',
       kind: p.kind,
       evidence_basis: p.evidence_basis,
-      narration_zh: p.narration_at_from.voice_zh,
-      narration_en: p.narration_at_from.voice_en,
+      narration_zh: fwd.voice_zh,
+      narration_en: fwd.voice_en,
     };
     const refForTo: ConnectionRefBuild = {
       id: p.id,
@@ -165,18 +174,12 @@ function indexConnections(conn: ConnectionsFile): {
       other_label: labels[String(p.from_position)] ?? '',
       kind: p.kind,
       evidence_basis: p.evidence_basis,
-      narration_zh: p.narration_at_to.voice_zh,
-      narration_en: p.narration_at_to.voice_en,
+      narration_zh: back.voice_zh,
+      narration_en: back.voice_en,
     };
 
-    if (p.direction === 'lateral_dialogue' || p.direction === 'inversion_counterpoint') {
-      pushTo(lateral, p.from_position, refForFrom);
-      pushTo(lateral, p.to_position, refForTo);
-    } else {
-      // from_inspires_to
-      pushTo(outbound, p.from_position, refForFrom);
-      pushTo(inbound,  p.to_position,   refForTo);
-    }
+    pushTo(outbound, p.from_position, refForFrom);
+    pushTo(inbound,  p.to_position,   refForTo);
   }
   return { inbound, outbound, lateral };
 }
@@ -213,18 +216,35 @@ function main() {
   const conn = parseConnections(JSON.parse(readFileSync(CONNECTIONS, 'utf8')));
   const idx = indexConnections(conn);
 
-  // Load episode.json for bridge narrations (muted tracks) and album data
+  // Load episode.json for bridge narrations (muted tracks), album data,
+  // and v0.4 fields (narrative_weight, strong_connection_id,
+  // archived_weak_connections) when present.
   const episodeJson = JSON.parse(readFileSync(EPISODE_JSON, 'utf8')) as {
     exhibits: {
       position: number;
       album?: string;
       bridge_narration_zh?: string | null;
       bridge_narration_en?: string | null;
+      narrative_weight?: NarrativeWeight | null;
+      strong_connection_id?: string | null;
+      archived_weak_connections?: ArchivedConnection[];
     }[];
   };
   const episodeJsonByPos = new Map(
     episodeJson.exhibits.map((e) => [e.position, e]),
   );
+
+  // Tracklist provides narrative_weight as the source of truth when the
+  // episode.json hasn't yet been rebuilt under v0.4 (PR-4C output).
+  const TRACKLIST = path.join(VAULT_ROOT, `playlists/${conn.playlist_slug}.tracklist.json`);
+  const tracklistRows = JSON.parse(readFileSync(TRACKLIST, 'utf8')) as {
+    position: number;
+    narrative_weight?: NarrativeWeight;
+  }[];
+  const weightByPos = new Map<number, NarrativeWeight | null>();
+  for (const row of tracklistRows) {
+    weightByPos.set(row.position, row.narrative_weight ?? null);
+  }
 
   function lookupBridgeFromEpisodeJson(position: number, lang: 'zh' | 'en'): string | null {
     const ex = episodeJsonByPos.get(position);
@@ -324,6 +344,11 @@ function main() {
       connections_in:       idx.inbound.get(t.position)  ?? [],
       connections_out:      idx.outbound.get(t.position) ?? [],
       connections_lateral:  idx.lateral.get(t.position)  ?? [],
+      narrative_weight: episodeJsonByPos.get(t.position)?.narrative_weight
+        ?? weightByPos.get(t.position)
+        ?? null,
+      strong_connection_id: episodeJsonByPos.get(t.position)?.strong_connection_id ?? null,
+      archived_weak_connections: episodeJsonByPos.get(t.position)?.archived_weak_connections ?? [],
     } satisfies TrackExhibit);
   }
 

@@ -11,12 +11,21 @@ export type ConnectionKind =
   | 'personnel_bridge_bass'
   | 'gear_lineage_bass';
 
-export type ConnectionDirection =
-  | 'from_inspires_to'
-  | 'lateral_dialogue'
-  | 'inversion_counterpoint';
-
 export type EvidenceBasis = 'musicological' | 'historical' | 'sensory';
+
+export type NarrativeWeight = 'anchor' | 'pillar' | 'supporting' | 'bridge';
+
+export type ArchiveReason =
+  | 'redundant_with_strong'
+  | 'low_focus_relevance'
+  | 'no_concrete_anchor'
+  | 'already_told'
+  | 'off_topic_for_episode';
+
+export interface ArchivedConnection {
+  connection_id: string;
+  archive_reason: ArchiveReason;
+}
 
 export interface ConnectionRef {
   id: string;
@@ -76,6 +85,9 @@ export interface TrackExhibit extends ExhibitBase {
   connections_in: ConnectionRef[];
   connections_out: ConnectionRef[];
   connections_lateral: ConnectionRef[];
+  narrative_weight: NarrativeWeight | null;
+  strong_connection_id: string | null;
+  archived_weak_connections: ArchivedConnection[];
 }
 
 export interface NonTrackExhibit extends ExhibitBase {

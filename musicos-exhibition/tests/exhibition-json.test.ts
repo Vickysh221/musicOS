@@ -60,19 +60,18 @@ describe('build-exhibition-json', () => {
     expect(th!.netease_song_id).toBeNull();
   });
 
-  it('17 tracks have transcript_zh_status === "complete"', () => {
+  it('all 18 tracks have transcript_zh_status === "complete" (v0.4: Devo bridge counts as complete narration)', () => {
     const complete = data.filter(
       (e) => e.kind === 'track' && e.transcript_zh_status === 'complete',
     );
-    expect(complete).toHaveLength(17);
+    expect(complete).toHaveLength(18);
   });
 
-  it('1 track has transcript_zh_status === "placeholder" (pos 8 Devo — muted)', () => {
+  it('0 tracks remain placeholder under v0.4 (Devo carries bridge_narration_zh instead)', () => {
     const placeholders = data.filter(
       (e) => e.kind === 'track' && e.transcript_zh_status === 'placeholder',
     );
-    expect(placeholders).toHaveLength(1);
-    expect((placeholders[0] as TrackExhibit).position).toBe(8);
+    expect(placeholders).toHaveLength(0);
   });
 
   it('all transcript_en_status values are "missing" (Phase 1)', () => {

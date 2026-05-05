@@ -56,7 +56,7 @@ class TestMissYouPasses:
 
 class TestDetectsOverlongTranscript:
     def test_detects_overlong_transcript(self, tmp_path):
-        """A 500-char transcript_zh must trigger exit 1 mentioning the position."""
+        """A 1000-char transcript_zh must trigger exit 1 mentioning the position."""
         _md, json_path = _copy_fixture(tmp_path)
         data = json.loads(json_path.read_text(encoding="utf-8"))
 
@@ -65,7 +65,7 @@ class TestDetectsOverlongTranscript:
         for ex in data["exhibits"]:
             if ex.get("kind") == "track" and not ex.get("muted_this_episode"):
                 target_pos = ex["position"]
-                ex["transcript_zh"] = "贝" * 500
+                ex["transcript_zh"] = "贝" * 1000
                 break
 
         assert target_pos is not None, "No non-muted track found in fixture"
@@ -76,8 +76,8 @@ class TestDetectsOverlongTranscript:
             f"Expected failure mentioning position {target_pos}.\nGot: {failures}"
         )
         # Also confirm the length is mentioned
-        assert any("500" in f or "length" in f for f in failures), (
-            f"Expected failure to mention length 500.\nGot: {failures}"
+        assert any("1000" in f or "length" in f for f in failures), (
+            f"Expected failure to mention length 1000.\nGot: {failures}"
         )
 
     def test_detects_overlong_transcript_exit_code(self, tmp_path):
@@ -86,12 +86,12 @@ class TestDetectsOverlongTranscript:
         data = json.loads(json_path.read_text(encoding="utf-8"))
         for ex in data["exhibits"]:
             if ex.get("kind") == "track" and not ex.get("muted_this_episode"):
-                ex["transcript_zh"] = "贝" * 500
+                ex["transcript_zh"] = "贝" * 1000
                 break
         json_path.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
 
         failures = validate(SLUG, tmp_path)
-        assert len(failures) > 0, "Expected at least one failure for 500-char transcript"
+        assert len(failures) > 0, "Expected at least one failure for 1000-char transcript"
 
 
 class TestDetectsForbiddenToken:
@@ -143,7 +143,7 @@ class TestDetectsMdJsonDrift:
         # Replace the Track 1 narration body with something different
         drift_text = "这是被篡改的文本，与 JSON 不同。"
         # Find and replace the first narration body after Track 1
-        original_line = "James Brown，1967 年的 Cold Sweat"
+        original_line = "Cincinnati 的 King Studio"
         assert original_line in md_text, "Fixture sanity check failed: expected line not in MD"
         mutated = md_text.replace(original_line, "DRIFT_CONTENT 被修改了", 1)
         md_path.write_text(mutated, encoding="utf-8")
@@ -162,7 +162,7 @@ class TestDetectsMdJsonDrift:
         md_path, _json = _copy_fixture(tmp_path)
         md_text = md_path.read_text(encoding="utf-8")
 
-        original_line = "James Brown，1967 年的 Cold Sweat"
+        original_line = "Cincinnati 的 King Studio"
         mutated = md_text.replace(original_line, "DRIFT_CONTENT 被修改了", 1)
         md_path.write_text(mutated, encoding="utf-8")
 

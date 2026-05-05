@@ -3,7 +3,7 @@
 This vault implements Sonic Cartography: a system for mapping music genealogy from a chosen
 anchor outward, overlaying the user's listening data, and producing annotated playlists.
 
-**Full spec:** `Foundations/sonic_cartography_spec_v0.3.md` — read it before starting any task.
+**Full spec:** `Foundations/sonic_cartography_spec_v0.4.md` — read it before starting any task.
 
 **Sourcing principles:** `docs/superpowers/plans/sonic_cartography_sourcing_principles.md` — read it before any generative task (map expansion, playlist annotation, episode narration, fact-check pass). Core rule: every `fact`-tier claim requires ≥2 independent sources, at least 1 Tier 1–2. Run the §8 self-check before every delivery.
 
@@ -70,7 +70,7 @@ Never embed full node objects in a map file. Maps store `node_ids` (references).
 
 ## Anchor expansion workflow
 
-1. **Load the spec.** Read `Foundations/sonic_cartography_spec_v0.3.md` fully.
+1. **Load the spec.** Read `Foundations/sonic_cartography_spec_v0.4.md` fully.
 2. **Load user tracks.** `from tools.coverage import load_tracks; tracks = load_tracks('data/user_tracks.json')`
 3. **Confirm anchor.** Propose 2–4 candidates per spec §3.5 if user hasn't specified. Never auto-select.
 4. **Expand map.** Three axes (upward/lateral/downward), depth caps 15/12/20, stopping rules §3.3.
@@ -98,6 +98,16 @@ Never embed full node objects in a map file. Maps store `node_ids` (references).
 Example: `rolling-stones_some-girls_miss-you`
 
 ---
+
+## Album cover assets
+
+封面文件位于 `musicos-exhibition/public/covers/`，命名规则 `<NN>_<artist-slug>_<track-slug>.jpg`（NN 与节目曲序对应）。
+
+**当某条曲目封面缺失时，允许联网搜索并下载补齐**：
+1. 优先源：官方厂牌页、Wikipedia/Wikimedia、MusicBrainz Cover Art Archive、Discogs、Apple Music / Spotify 公开页、艺人官网。避免来源不明的二改图、粉丝拼贴、低分辨率缩略图。
+2. 选图标准：原版专辑/单曲封面，正方形，长边 ≥ 1000px；若仅有竖版/横版海报，需注明来源后再用作降级方案。
+3. 落盘：保存为 JPG（必要时由 PNG/WebP 转码），放入 `musicos-exhibition/public/covers/`，沿用现有命名规则；同步检查 `data/exhibition.json` 中对应条目的 `cover` 字段是否指向新文件。
+4. 记录来源：在提交说明或 PR 描述中给出图片来源 URL，便于版权核查。无法找到合规来源时停下并报告，不要用占位图静默替换。
 
 ## Hard stops (spec §9.1)
 
