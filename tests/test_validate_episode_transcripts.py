@@ -36,12 +36,8 @@ def _copy_fixture(tmp_path: Path) -> tuple[Path, Path]:
     return ep_dst / md_src.name, ep_dst / json_src.name
 
 
-def _run_cli(slug: str, base_dir: Path | None = None) -> subprocess.CompletedProcess:
+def _run_cli(slug: str) -> subprocess.CompletedProcess:
     cmd = [sys.executable, str(ROOT / "tools" / "validate_episode_transcripts.py"), slug]
-    env_extra: dict = {}
-    if base_dir is not None:
-        # We can't pass base_dir via CLI easily; use in-process validate() instead.
-        pass
     return subprocess.run(cmd, capture_output=True, text=True)
 
 

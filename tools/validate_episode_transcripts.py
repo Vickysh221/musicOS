@@ -7,9 +7,8 @@ Asserts:
   b. Per-track char caps (250-400 ZH chars for active; 40-80 for muted bridges).
   c. Forbidden tokens not present in any transcript field.
   d. EN word cap: no single paragraph in transcript_en exceeds 30 words.
-  e. Focus tag: every exhibit's episode_focus matches the top-level focus
-     (narration exhibits—opening/interlude/closing—that lack the field are skipped
-      but a warning is emitted).
+  e. Focus tag: every exhibit's episode_focus matches the top-level focus.
+     Narration exhibits (opening/interlude/closing) are not required to declare episode_focus.
   f. MD ↔ JSON sync: each track section body matches the JSON transcript_zh.
   g. Position contiguity: track positions 1..18, narration positions contain 0
      plus two non-track exhibits, muted_positions matches exhibits.
@@ -26,6 +25,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
+EXPECTED_TRACK_COUNT = 18
+
 TRACK_CHAR_MIN = 250
 TRACK_CHAR_MAX = 400
 BRIDGE_CHAR_MIN = 40
@@ -37,7 +38,7 @@ FOCUS_TAXONOMY = ROOT / "Foundations" / "episode_focus_taxonomy.md"
 
 
 def _codepoint_len(s: str) -> int:
-    return len(list(s))
+    return len(s)
 
 
 def _paragraphs(text: str) -> list[str]:
@@ -57,7 +58,7 @@ def _parse_md_track_sections(md_text: str) -> dict[int, str]:
     sections: dict[int, str] = {}
     # Split md into blocks on `## Track N` headers
     # We capture everything after `### Narration` until the next `---` or `##` header.
-    track_block_re = re.compile(r"^##\s+Track\s+(\d+):", re.MULTILINE)
+    track_block_re = re.compile(r"^##\s+Track\s+(\d+)\s*[·:]", re.MULTILINE)
     narration_re = re.compile(r"###\s+Narration\s*\n(.*?)(?=\n---|\n##|\Z)", re.DOTALL)
 
     positions_found = list(track_block_re.finditer(md_text))
@@ -112,7 +113,7 @@ def validate(slug: str, base_dir: Path | None = None) -> list[str]:
     narration_exhibits = [ex for ex in exhibits if ex.get("kind") != "track"]
 
     track_positions = sorted(int(ex["position"]) for ex in track_exhibits)
-    expected_track_positions = list(range(1, 19))  # 1..18
+    expected_track_positions = list(range(1, EXPECTED_TRACK_COUNT + 1))
     if track_positions != expected_track_positions:
         failures.append(
             f"track positions mismatch: got {track_positions}, expected {expected_track_positions}"
@@ -261,7 +262,7 @@ def main(slug: str, base_dir: Path | None = None) -> None:
     track_exhibits = [ex for ex in exhibits if ex.get("kind") == "track"]
     muted_count = sum(1 for ex in track_exhibits if ex.get("muted_this_episode"))
     active_lengths = [
-        len(list(ex.get("transcript_zh") or ""))
+        len(ex.get("transcript_zh") or "")
         for ex in track_exhibits
         if not ex.get("muted_this_episode")
     ]
@@ -269,7 +270,7 @@ def main(slug: str, base_dir: Path | None = None) -> None:
     hi = max(active_lengths) if active_lengths else 0
     print(
         f"OK: {slug} transcripts green "
-        f"(18 tracks, {muted_count} muted, char range [{lo}..{hi}])"
+        f"({len(track_exhibits)} tracks, {muted_count} muted, char range [{lo}..{hi}])"
     )
 
 
