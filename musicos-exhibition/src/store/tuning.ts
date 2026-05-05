@@ -46,6 +46,7 @@ export const TUNING_DEFAULTS: TuningParams = {
 
 interface TuningStore extends TuningParams {
   set: <K extends keyof TuningParams>(key: K, value: TuningParams[K]) => void;
+  applyPreset: (preset: Partial<TuningParams>) => void;
   reset: () => void;
   togglePanel: () => void;
 }
@@ -55,6 +56,7 @@ export const useTuning = create<TuningStore>()(
     (set) => ({
       ...TUNING_DEFAULTS,
       set: (key, value) => set({ [key]: value } as Partial<TuningParams>),
+      applyPreset: (preset) => set(preset as Partial<TuningParams>),
       reset: () => set({ ...TUNING_DEFAULTS, panelOpen: true }),
       togglePanel: () => set((s) => ({ panelOpen: !s.panelOpen })),
     }),

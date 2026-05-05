@@ -29,15 +29,16 @@ const DIM_OPACITY = 0.5;
 export function processionLayout(params: {
   index: number;
   total: number;
-  anchorIndex: number;
+  focalIndex: number;
   hoveredIndex: number | null;
   tuning: TuningParams;
+  /** Index that should sit at x=0. Defaults to the middle of the procession. */
+  centerIndex?: number;
 }): CardTransform {
-  const { index, total, anchorIndex, hoveredIndex, tuning } = params;
-  const focalIndex = hoveredIndex ?? anchorIndex;
+  const { index, total, focalIndex, hoveredIndex, tuning, centerIndex } = params;
   const isFocal = index === focalIndex;
 
-  const center = (total - 1) / 2;
+  const center = centerIndex ?? (total - 1) / 2;
   const offset = index - center;
 
   const x = offset * tuning.gapX;
