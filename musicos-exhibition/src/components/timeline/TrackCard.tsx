@@ -1,52 +1,41 @@
-import { motion, useTransform, type MotionValue } from 'framer-motion';
+import { motion } from 'framer-motion';
 import type { TrackExhibit } from '../../types.js';
-import { cardTransform } from './timeline-keyframes.js';
+import type { CardTransform } from './timeline-keyframes.js';
 
 interface Props {
   track: TrackExhibit;
-  index: number;
-  total: number;
-  anchorIndex: number;
-  progress: MotionValue<number>;
+  transform: CardTransform;
   isFocal: boolean;
+  zIndex: number;
+  onMouseEnter: () => void;
+  onMouseLeave: () => void;
   onClick: () => void;
 }
 
-export function TrackCard({ track, index, total, anchorIndex, progress, isFocal, onClick }: Props) {
-  const x = useTransform(progress, (p) => cardTransform({ index, total, anchorIndex, progress: p }).x);
-  const y = useTransform(progress, (p) => cardTransform({ index, total, anchorIndex, progress: p }).y);
-  const z = useTransform(progress, (p) => cardTransform({ index, total, anchorIndex, progress: p }).z);
-  const rotX = useTransform(progress, (p) => cardTransform({ index, total, anchorIndex, progress: p }).rotX);
-  const rotZ = useTransform(progress, (p) => cardTransform({ index, total, anchorIndex, progress: p }).rotZ);
-  const opacity = useTransform(progress, (p) => cardTransform({ index, total, anchorIndex, progress: p }).opacity);
+export function TrackCard({ track, transform, isFocal, zIndex, onMouseEnter, onMouseLeave, onClick }: Props) {
+  const { x, y, z, rotZ, opacity, scale } = transform;
+  const transformString = `translate3d(${x}px, ${y}px, ${z}px) rotateZ(${rotZ}deg) scale(${scale})`;
 
   return (
     <motion.button
       type="button"
       onClick={onClick}
-      className="track-card"
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+      className={`track-card${isFocal ? ' track-card--focal' : ''}`}
       style={{
-        x,
-        y,
-        z,
-        rotateX: rotX,
-        rotateZ: rotZ,
+        transform: transformString,
         opacity,
+        zIndex,
         transformStyle: 'preserve-3d',
       }}
+      transition={{ type: 'spring', stiffness: 220, damping: 26, mass: 0.6 }}
       aria-label={`${track.position}. ${track.artist} — ${track.song}`}
     >
       {track.album_cover_url ? (
         <img src={track.album_cover_url} alt="" className="track-card__art" />
       ) : (
         <div className="track-card__art track-card__art--placeholder" />
-      )}
-      {(isFocal || track.is_base_node) && (
-        <div className="track-card__overlay">
-          <div className="track-card__year">{track.year}</div>
-          <div className="track-card__artist">{track.artist}</div>
-          <div className="track-card__song">{track.song}</div>
-        </div>
       )}
     </motion.button>
   );

@@ -1,68 +1,60 @@
 import { describe, it, expect } from 'vitest';
-import {
-  constellationTransform,
-  sequenceTransform,
-  processionTransform,
-  cardTransform,
-} from '../src/components/timeline/timeline-keyframes.js';
+import { processionLayout, seededJitter } from '../src/components/timeline/timeline-keyframes.js';
 
-describe('timeline-keyframes', () => {
-  it('CONSTELLATION: anchor (index === anchorIndex) sits at origin upright', () => {
-    const t = constellationTransform({ index: 5, total: 41, anchorIndex: 5 });
-    expect(t.x).toBe(0);
-    expect(t.y).toBe(0);
+describe('processionLayout', () => {
+  const total = 18;
+  const anchorIndex = 6;
+
+  it('focal card (anchor when nothing hovered) is upright and fully opaque', () => {
+    const t = processionLayout({ index: anchorIndex, total, anchorIndex, hoveredIndex: null });
     expect(t.rotZ).toBe(0);
     expect(t.opacity).toBe(1);
+    expect(t.scale).toBeGreaterThan(1);
   });
 
-  it('CONSTELLATION: non-anchor cards spread along an arc with hand-placed rotation', () => {
-    const left = constellationTransform({ index: 0, total: 41, anchorIndex: 5 });
-    const right = constellationTransform({ index: 10, total: 41, anchorIndex: 5 });
-    expect(left.x).toBeLessThan(0);
-    expect(right.x).toBeGreaterThan(0);
-    // arc dips downward at the edges
-    expect(left.y).toBeGreaterThan(0);
-    expect(right.y).toBeGreaterThan(0);
-    // rotation in [-15, 15] degrees
-    expect(Math.abs(left.rotZ)).toBeLessThanOrEqual(15);
-    expect(Math.abs(right.rotZ)).toBeLessThanOrEqual(15);
-    // non-anchor opacity dimmer than anchor
-    expect(left.opacity).toBeLessThan(1);
+  it('non-focal cards have lower opacity than focal', () => {
+    const focal = processionLayout({ index: anchorIndex, total, anchorIndex, hoveredIndex: null });
+    const other = processionLayout({ index: 0, total, anchorIndex, hoveredIndex: null });
+    expect(other.opacity).toBeLessThan(focal.opacity);
   });
 
-  it('SEQUENCE: cards line up horizontally with uniform small rotation', () => {
-    const a = sequenceTransform({ index: 0, total: 41 });
-    const b = sequenceTransform({ index: 1, total: 41 });
-    expect(b.x - a.x).toBeGreaterThan(0); // monotonic x
-    expect(a.y).toBe(0);
-    expect(Math.abs(a.rotZ)).toBeLessThanOrEqual(8);
+  it('hovering a card makes it focal and dims the rest harder', () => {
+    const hovered = processionLayout({ index: 2, total, anchorIndex, hoveredIndex: 2 });
+    const dimmed = processionLayout({ index: 5, total, anchorIndex, hoveredIndex: 2 });
+    expect(hovered.rotZ).toBe(0);
+    expect(hovered.opacity).toBe(1);
+    expect(hovered.scale).toBeGreaterThan(1);
+    expect(dimmed.opacity).toBeLessThanOrEqual(0.5);
   });
 
-  it('PROCESSION: same x layout as SEQUENCE but tilted via rotX and receding via z', () => {
-    const seq = sequenceTransform({ index: 10, total: 41 });
-    const proc = processionTransform({ index: 10, total: 41 });
-    expect(proc.x).toBeCloseTo(seq.x, 0);
-    expect(proc.rotX).toBeGreaterThan(15); // tilted up
-    expect(proc.z).toBeLessThan(0); // receding away from camera
+  it('x coordinate is monotonically increasing with index', () => {
+    let prev = -Infinity;
+    for (let i = 0; i < total; i++) {
+      const t = processionLayout({ index: i, total, anchorIndex, hoveredIndex: null });
+      expect(t.x).toBeGreaterThan(prev);
+      prev = t.x;
+    }
   });
 
-  it('cardTransform: at progress=0 returns CONSTELLATION exactly', () => {
-    const ct = cardTransform({ index: 0, total: 41, anchorIndex: 5, progress: 0 });
-    const expected = constellationTransform({ index: 0, total: 41, anchorIndex: 5 });
-    expect(ct).toEqual(expected);
+  it('cards rise (y decreases) as index increases', () => {
+    const left = processionLayout({ index: 0, total, anchorIndex, hoveredIndex: null });
+    const right = processionLayout({ index: total - 1, total, anchorIndex, hoveredIndex: null });
+    expect(right.y).toBeLessThan(left.y);
   });
 
-  it('cardTransform: at progress=1 returns PROCESSION exactly', () => {
-    const ct = cardTransform({ index: 0, total: 41, anchorIndex: 5, progress: 1 });
-    const expected = processionTransform({ index: 0, total: 41 });
-    expect(ct.rotX).toBeCloseTo(expected.rotX, 5);
-    expect(ct.z).toBeCloseTo(expected.z, 5);
+  it('non-focal jitter rotation is bounded and stable across calls', () => {
+    const a = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null });
+    const b = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null });
+    expect(a.rotZ).toBe(b.rotZ);
+    expect(Math.abs(a.rotZ)).toBeLessThanOrEqual(6);
   });
 
-  it('cardTransform: at progress=0.5 is in SEQUENCE band', () => {
-    const ct = cardTransform({ index: 10, total: 41, anchorIndex: 5, progress: 0.5 });
-    const seq = sequenceTransform({ index: 10, total: 41 });
-    expect(ct.x).toBeCloseTo(seq.x, 1);
-    expect(ct.y).toBeCloseTo(seq.y, 1);
+  it('seededJitter returns deterministic values in [-1, 1]', () => {
+    for (let i = 0; i < 50; i++) {
+      const v = seededJitter(i);
+      expect(v).toBeGreaterThanOrEqual(-1);
+      expect(v).toBeLessThanOrEqual(1);
+    }
+    expect(seededJitter(7)).toBe(seededJitter(7));
   });
 });

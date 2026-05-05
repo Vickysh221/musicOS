@@ -1,52 +1,65 @@
 /* musicos-exhibition/src/components/timeline/timeline.css */
 
-.timeline-scene {
-  /* Three-state scroll: 300vh of scroll drives the choreography */
-  height: 300vh;
-  position: relative;
-  background: #f6f6f4;
+:root {
+  --inkwell-bg: #f6f6f4;
+  --inkwell-fg: #111;
+  --inkwell-muted: #888;
+  --inkwell-ghost: #bdbdbd;
+  --inkwell-border: rgba(17, 17, 17, 0.85);
 }
 
-.timeline-scene__sticky {
-  position: sticky;
-  top: 0;
+.timeline-scene {
+  width: 100vw;
   height: 100vh;
-  width: 100%;
-  perspective: 1400px;
-  perspective-origin: 50% 60%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  background: var(--inkwell-bg);
+  position: relative;
   overflow: hidden;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  color: var(--inkwell-fg);
 }
 
 .timeline-scene__stage {
-  position: relative;
-  width: 100%;
-  height: 60vh;
-  transform-style: preserve-3d;
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  perspective: 1600px;
+  perspective-origin: 50% 55%;
+}
+
+.timeline-scene__stage-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  transform: rotateX(22deg) rotateY(-14deg);
 }
 
 .track-card {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 140px;
-  height: 190px;
-  margin: -95px 0 0 -70px; /* center the card on (left:50%, top:50%) */
-  border: none;
+  width: 150px;
+  height: 200px;
+  margin: -100px 0 0 -75px; /* center on (50%, 50%) */
+  border: 1px solid rgba(17, 17, 17, 0.08);
   padding: 0;
   background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12), 0 2px 6px rgba(0, 0, 0, 0.06);
   cursor: pointer;
   overflow: hidden;
   transform-style: preserve-3d;
   will-change: transform, opacity;
+  transition: opacity 200ms ease;
+}
+
+.track-card--focal {
+  box-shadow: 0 22px 44px rgba(0, 0, 0, 0.18), 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .track-card__art {
@@ -60,79 +73,118 @@
   background: linear-gradient(135deg, #ddd, #bbb);
 }
 
-.track-card__overlay {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  padding: 10px 12px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0) 60%);
-  color: #fff;
-  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
-  font-size: 11px;
-  line-height: 1.3;
-}
-.track-card__year { opacity: 0.8; }
-.track-card__artist { font-weight: 600; }
-.track-card__song { opacity: 0.85; font-style: italic; }
+/* ---------- Stepper ---------- */
 
-.timeline-scene__caption {
-  margin-top: 32px;
-  text-align: center;
-  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
-}
-.caption__sub {
-  font-size: 13px;
-  color: #888;
-  letter-spacing: 0.01em;
-  margin-bottom: 6px;
-}
-.caption__title {
-  font-size: 16px;
-  color: #111;
-  font-weight: 500;
+.timeline-scene__stepper-wrap {
+  position: absolute;
+  bottom: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 50;
 }
 
 .stepper {
   display: grid;
-  grid-template-columns: auto auto 1fr;
+  grid-template-columns: auto auto auto;
   align-items: center;
-  gap: 16px;
-  font-family: -apple-system, 'Inter', system-ui, sans-serif;
+  gap: 18px;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
 }
-.stepper__anchor { font-size: 14px; color: #111; }
+
+.stepper__label {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--inkwell-fg);
+}
+
 .stepper__count {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  border: 1px solid #111;
-  border-radius: 50%;
-  font-size: 13px;
+  min-width: 44px;
+  height: 28px;
+  padding: 0 10px;
+  border: 1px solid var(--inkwell-fg);
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  font-variant-numeric: tabular-nums;
 }
-.stepper__kinds {
+
+.stepper__pills {
   display: flex;
   flex-direction: column;
-  gap: 2px;
+  gap: 4px;
   text-align: left;
+  min-width: 240px;
 }
-.stepper__kind {
+
+.stepper__pill {
   padding: 4px 14px;
   border-radius: 999px;
   font-size: 13px;
+  line-height: 14px;
   border: 1px solid transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
 }
-.stepper__kind--active {
-  border-color: #111;
-  color: #111;
+
+.stepper__pill--active {
+  border-color: var(--inkwell-fg);
+  color: var(--inkwell-fg);
+  font-weight: 500;
 }
-.stepper__kind--ghost {
-  color: #bbb;
+
+.stepper__pill--ghost {
+  color: var(--inkwell-ghost);
+  opacity: 0.55;
+}
+
+/* ---------- Header (Inkwell-style) ---------- */
+
+.timeline-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 18px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--inkwell-fg);
+  z-index: 100;
+}
+
+.timeline-header__brand {
+  font-weight: 500;
+}
+
+.timeline-header__cta {
+  background: transparent;
+  color: var(--inkwell-fg);
+  border: 1px solid var(--inkwell-fg);
+  padding: 8px 16px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  transition: background 160ms ease, color 160ms ease;
+}
+
+.timeline-header__cta:hover {
+  background: var(--inkwell-fg);
+  color: var(--inkwell-bg);
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .timeline-scene { height: auto; }
-  .timeline-scene__sticky { position: static; height: auto; padding: 32px 0; }
+  .timeline-scene__stage-inner { transform: none; }
 }

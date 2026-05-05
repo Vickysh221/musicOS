@@ -1,8 +1,9 @@
-import { readFileSync, writeFileSync, mkdirSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import { parsePlaylist } from './lib/parse-playlist.js';
 import { parseEpisode } from './lib/parse-episode.js';
+import { fileSlug } from './lib/slug.js';
 import type { Exhibit, TrackExhibit, NonTrackExhibit, Mechanism, ExhibitType } from '../src/types.js';
 
 const __dirname = fileURLToPath(new URL('.', import.meta.url));
@@ -119,6 +120,11 @@ function main() {
     const transcript_zh = narration ?? t.curatorial_note;
     const transcript_zh_status = narration ? 'complete' as const : 'placeholder' as const;
 
+    // Backfill album_cover_url from public/covers/<slug>.jpg if it exists on disk.
+    const coverSlug = fileSlug(t.position, t.artist, t.song);
+    const coverFile = path.resolve(__dirname, `../public/covers/${coverSlug}.jpg`);
+    const album_cover_url = existsSync(coverFile) ? `/covers/${coverSlug}.jpg` : null;
+
     exhibits.push({
       kind: 'track',
       position: t.position, // 1..18, matches playlist
@@ -134,7 +140,7 @@ function main() {
         ? null
         : (NETEASE_ID_CORRECTIONS[t.position] ?? t.netease_song_id),
       audio_url: null,
-      album_cover_url: null,
+      album_cover_url,
       duration_seconds: null,
       unavailable: false,
       transcript_zh,

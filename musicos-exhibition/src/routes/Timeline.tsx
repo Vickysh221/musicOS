@@ -21,39 +21,9 @@ export function Timeline() {
 
   return (
     <>
-      <header
-        style={{
-          position: 'fixed',
-          top: 0,
-          left: 0,
-          right: 0,
-          padding: '16px 24px',
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-          fontFamily: '-apple-system, Inter, system-ui, sans-serif',
-          fontSize: 12,
-          letterSpacing: '0.08em',
-          textTransform: 'uppercase',
-          zIndex: 10,
-          mixBlendMode: 'difference',
-          color: '#fff',
-        }}
-      >
-        <div>Miss You · Sonic Cartography</div>
-        <button
-          onClick={startAuto}
-          style={{
-            background: 'transparent',
-            color: 'inherit',
-            border: '1px solid currentColor',
-            padding: '6px 14px',
-            cursor: 'pointer',
-            fontSize: 11,
-            letterSpacing: '0.08em',
-            textTransform: 'uppercase',
-          }}
-        >
+      <header className="timeline-header">
+        <div className="timeline-header__brand">Miss You · Sonic Cartography</div>
+        <button type="button" className="timeline-header__cta" onClick={startAuto}>
           ▶ Play from beginning
         </button>
       </header>
