@@ -1,0 +1,138 @@
+/* musicos-exhibition/src/components/timeline/timeline.css */
+
+.timeline-scene {
+  /* Three-state scroll: 300vh of scroll drives the choreography */
+  height: 300vh;
+  position: relative;
+  background: #f6f6f4;
+}
+
+.timeline-scene__sticky {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  perspective: 1400px;
+  perspective-origin: 50% 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.timeline-scene__stage {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.track-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 140px;
+  height: 190px;
+  margin: -95px 0 0 -70px; /* center the card on (left:50%, top:50%) */
+  border: none;
+  padding: 0;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  will-change: transform, opacity;
+}
+
+.track-card__art {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.track-card__art--placeholder {
+  background: linear-gradient(135deg, #ddd, #bbb);
+}
+
+.track-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0) 60%);
+  color: #fff;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  font-size: 11px;
+  line-height: 1.3;
+}
+.track-card__year { opacity: 0.8; }
+.track-card__artist { font-weight: 600; }
+.track-card__song { opacity: 0.85; font-style: italic; }
+
+.timeline-scene__caption {
+  margin-top: 32px;
+  text-align: center;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+}
+.caption__sub {
+  font-size: 13px;
+  color: #888;
+  letter-spacing: 0.01em;
+  margin-bottom: 6px;
+}
+.caption__title {
+  font-size: 16px;
+  color: #111;
+  font-weight: 500;
+}
+
+.stepper {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  align-items: center;
+  gap: 16px;
+  font-family: -apple-system, 'Inter', system-ui, sans-serif;
+}
+.stepper__anchor { font-size: 14px; color: #111; }
+.stepper__count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #111;
+  border-radius: 50%;
+  font-size: 13px;
+}
+.stepper__kinds {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+.stepper__kind {
+  padding: 4px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  border: 1px solid transparent;
+}
+.stepper__kind--active {
+  border-color: #111;
+  color: #111;
+}
+.stepper__kind--ghost {
+  color: #bbb;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-scene { height: auto; }
+  .timeline-scene__sticky { position: static; height: auto; padding: 32px 0; }
+}
