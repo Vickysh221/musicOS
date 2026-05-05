@@ -1,331 +1,314 @@
-# 《Miss You》音乐地图 — 完整剧集文稿
+# Miss You · 第 1 期 · bassline DNA 谱系 — 完整剧集文稿
 
-## [Miss You] Musical Genealogy — Complete Episode Transcript
-
-**Episode ID:** rolling-stones_some-girls_miss-you__ep-01  
-**Spec Version:** 0.3  
-**Anchor Track:** The Rolling Stones — "Miss You" (Some Girls, 1978)  
-**Narrator:** Docent v1 (scholarly guide persona)  
-**Total Duration:** 88.7 minutes (narration: 23.7 min + music: 65.0 min)  
+**Episode ID:** rolling-stones_some-girls_miss-you__ep-01
+**Episode Number:** 1
+**Episode Focus:** bassline_dna
+**Spec Version:** 0.3
+**Anchor Track:** The Rolling Stones — Miss You (Some Girls, 1978)
 **Generated:** 2026-05-05
 
 ---
 
-## Curatorial Thesis
+## Opening
 
-同一套节奏翻译逻辑——把 funk 或 disco 的基因穿进另一种音乐的外套、两层声音可分辨但互不融合——在 1967 年到 2013 年间以七种不同形态反复浮现，Miss You 是这条血脉的中心节点。
+这是一条贝斯线的谱系。五十年，十八首歌，一条藏在低频里的血脉——从 1967 年 James Brown 把鼓和贝斯锁死的那一刻，一直到 2024 年一个人在卧室里把贝斯编进节拍机的现在。
 
----
-
-## Exhibit 1: Opening Narration
-
-**Duration:** 86 seconds  
-**Type:** Opening Address
-
-这是一场音乐博物馆的展览。展览的主题是一套反复出现的创作逻辑——我们把它叫做翻译美学：把一种音乐的节奏基因穿进另一种音乐的外套，让两层声音同时存在、可以分辨，但谁也没有融化进谁。[pause: 500ms]
-
-这次展览从 1967 年开始。那一年，(IPA: /ˈdʒeɪməs braʊn/) James Brown 在录音室里做了一件事——他把旋律和和声全部退到背景，让鼓和贝斯的咬合关系成为音乐本身——然后一切都不一样了。展览的中心节点是 1978 年 (IPA: /ðə ˈrəʊlɪŋ stəʊnz/) The Rolling Stones 的 [English: Miss You]：一支英国蓝调摇滚乐队在 [English: Studio 54] 的 disco 氛围里找到了某种无法抗拒的节奏，然后用摇滚乐的方式把它唱出来。今天你会听到这套逻辑的来处、同期的三条岔路，以及它的四代后裔。展览在 2013 年结束，但这条血脉还在继续。
+这一期的核心节点是 The Rolling Stones 的 Miss You。1978 年，一支英国蓝调摇滚乐队在 disco 的节奏语法里找到了某种无法拒绝的东西，然后用自己的方式把它唱出来——贝斯驱动，两层声音可分辨，但谁也没有融化进谁。这条贝斯线的来处和去处，就是今天你要听的这十八首。
 
 ---
 
-## Exhibit 2: James Brown — Cold Sweat (1967)
-
-**Artist:** James Brown  
-**Album:** Cold Sweat  
-**Year:** 1967  
-**Track Duration:** ~280 seconds  
-**Narration Duration:** 80 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=18713)
+## Track 1: James Brown — Cold Sweat (1967)
 
 ### Narration
 
-这是整条翻译血脉的零号节点。1967 年以前，[English: funk] 这个词还没有独立作为一种音乐类别存在——它是 (IPA: /ˈdʒeɪməs braʊn/) James Brown 把旋律和和声扁平化、让鼓与贝斯的互锁关系变成音乐本身的那一刻才真正到来的。[pause: 300ms]
+James Brown，1967 年的 Cold Sweat——funk 的零号节点。这首歌在贝斯 DNA 谱系上的角色是：把鼓与贝斯的互锁关系从伴奏逻辑提升为音乐本身，奠定了这条线上所有人的基础语法。
 
-你现在要听到的核心创新是鼓手 (IPA: /klaɪd ˈstʌbl̩fiːld/) Clyde Stubblefield 确立的节奏结构：**kick** 落在第一拍，snare 在第三拍，但贝斯线在第二个十六分音符悄悄插入——造成一种轻微的前倾感，像是节奏在不断往前推但始终没有失控。这个互锁结构后来被 [English: Chic] 精炼成 [English: disco]，被 [English: Stones] 带进了 [English: Studio 54]，被 (IPA: /fliː/) Flea 带进了 [English: Blood Sugar Sex Magik]。这条血脉从这里开始。
+鼓手 Clyde Stubblefield 和贝斯手 Bootsy Collins 构成的 JBs 节奏组，把 kick 和贝斯线咬得密不可分——这种锁死的底部逻辑，就是这一期所有贝斯故事的起点。
+
+等会儿到 Sly & the Family Stone 的 Family Affair，这种锁死的底部会被一个人独吞进去。等会儿到 David Bowie 的 Fame，这条放克根脉被白人摇滚包了一层外套，Bowie 自己叫它塑料灵魂。等会儿到 Parliament 的 Give Up the Funk，Bootsy Collins 就是从这里带走的贝斯课，整个 P-Funk 宇宙都建在上面。等会儿到 The Rolling Stones 的 Miss You，这条贝斯和鼓是主体的逻辑通过 Billy Preston 的 demo 直接传了进去。等会儿到 Chic 的 Good Times，Bernard Edwards 把这种锁死做得更冷、更精细——这是 disco 版的放克基因。
+
+这条贝斯线你的红心歌单里认识它的一些后代——Cold Sweat 是所有那些后代的源头，这是新的起点。
+
+下一首，1971 年，Sly Stone 把整个节奏组开除，换成了一台鼓机。
 
 ---
 
-## Exhibit 3: Sly & the Family Stone — Family Affair (1971)
-
-**Artist:** Sly & the Family Stone  
-**Album:** There's a Riot Goin' On  
-**Year:** 1971  
-**Track Duration:** ~280 seconds  
-**Narration Duration:** 82 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=6039)
+## Track 2: Sly & the Family Stone — Family Affair (1971)
 
 ### Narration
 
-(IPA: /slaɪ stəʊn/) Sly Stone 接过了 [English: James Brown] 的节奏语法，然后做了一件奇怪的事：他把乐队开除了，换成了一台 (IPA: /ˌmeɪestrəʊ ˈrɪðəm kɪŋ/) Maestro Rhythm King MRK-2 鼓机，然后几乎独自完成所有录音层次——钢琴由 [English: Billy Preston] 客串，但协作乐队的时代就此终结。这是 1971 年最孤独的录音室实践之一。[pause: 300ms]
+Sly & the Family Stone，1971 年的 There's a Riot Goin' On——放克与灵魂乐。Family Affair 在贝斯 DNA 谱系上的角色是：第一首让鼓机代替真人鼓手驱动贝斯节拍的重要 hit，建立了单人全控制的贝斯创作模型。
 
-你在这首歌里能听到的，是 [English: funk] 的节拍变得更平、更机械。[English: Sly] 在鼓机上叠了吉他和人声，每一层都有细微的律动偏移——机器的精确和人手的飘移叠在一起，产生一种奇怪的「精确但不齐」感。这是后来 (IPA: /prɪns/) Prince、(IPA: /ˈkɛvɪn ˈpɑːkər/) Kevin Parker 那种单人全控制创作方式的直系先驱：**一个人**完成所有层次，让翻译不需要经过任何协商。
+你刚才在 James Brown 的 Cold Sweat 已经听见这种贝斯鼓咬死的逻辑——Sly 把它收进了一个人的脑子里，换上 Maestro Rhythm King 鼓机，贝斯锁住机器脉冲，精确但偏移。
+
+等会儿到 The Rolling Stones 的 Miss You，Billy Preston 就是从 Sly 这边拉过来的那条线——他把那条脉冲带进了 Miss You 的录音室。等会儿到 Blondie 的 Heart of Glass，鼓机驱动贝斯脉冲这件事被 Roland CR-78 再演了一遍。等会儿到 Talking Heads 的 Once in a Lifetime，Eno 把鼓循环叠贝斯的方式做成了一套宗教。等会儿到 Prince 的 When Doves Cry，一人包办所有乐器这件事被推到了极端——他直接把贝斯删了。
+
+这位艺人你或许不在红心地图——这是这次扩张为你点亮的盲区，但这条单人全控制的线索很快会通向你认识的音乐。
+
+下一首，1975 年，David Bowie 进了费城的黑人录音室，把它叫做塑料灵魂。
 
 ---
 
-## Exhibit 4: David Bowie — Fame (1975)
-
-**Artist:** David Bowie  
-**Album:** Young Americans  
-**Year:** 1975  
-**Track Duration:** ~290 seconds  
-**Narration Duration:** 86 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=27185190)
+## Track 3: David Bowie — Fame (1975)
 
 ### Narration
 
-1975 年，(IPA: /ˈdeɪvɪd ˈbəʊi/) David Bowie 在费城的 [English: Sigma Sound Studios] 和一批黑人音乐人一起录制 [English: Young Americans]，用他自己的话说，做的是「[English: plastic soul]」——塑料灵魂乐。[English: Sly Stone] 在 1971 年做过同样的事：用机器和孤独完成翻译。但 [English: Bowie] 的答案截然相反——他进入黑人美国节奏传统的录音室，邀请当地音乐家和他一起探索这套语言。这是这条翻译血脉里第一个清晰的对话模板：一个白人英国摇滚明星，进入黑人美国节奏传统的领地，不放弃自己原有身份，同时吸收对方的节奏语言。[pause: 300ms]
+David Bowie，1975 年的 Young Americans——塑料灵魂。Fame 在贝斯 DNA 谱系上的角色是：白人摇滚艺人主动进入黑人放克低频领域，命名这个翻译动作，为 Miss You 提供直接的美学模板。
 
-「[English: Fame]」在节奏上的核心是 [English: Carlos Alomar] 的切分吉他——每一击都落在拍子的缝隙里而不是拍子本身上，和 [English: Lennon] 的律动人声交织，形成一种类似 [English: funk] 的前冲感，但保留了 [English: Bowie] 摇滚乐的动势。三年后 [English: Stones] 在 [English: Studio 54] 做的，是同一套逻辑的下一个版本。
+你刚才在 James Brown 的 Cold Sweat 听见的那个放克底部，就是 Bowie 在 Sigma Sound 吸进去的东西——他和当地黑人乐手一起录音，自称塑料灵魂，把这个挪用动作做成了美学姿态。
+
+等会儿到 Bee Gees 的 Stayin' Alive，同样的挪用逻辑——白人流行包着黑人舞曲的贝斯骨架。等会儿到 The Rolling Stones 的 Miss You，同一套翻译逻辑被 Jagger 照着 Bowie 的脚印走了一遍。等会儿到 Blondie 的 Heart of Glass，朋克场景做同一件翻译——这次是从 CBGB 出发。等会儿到 Prince 的 When Doves Cry，艺人全权决定声音这件事走到了最极端——贝斯直接消失。
+
+这位艺人你或许认识——你听过 Bowie，只是不一定听过这首。这条塑料灵魂路线是你地图上的新层次。
+
+下一首，1976 年，Parliament 把 JBs 的贝斯语法搬进了宇宙飞船。
 
 ---
 
-## Exhibit 5: Chic — Good Times (1979)
-
-**Artist:** Chic  
-**Album:** Risqué  
-**Year:** 1979  
-**Track Duration:** ~260 seconds  
-**Narration Duration:** 90 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=2333069)
+## Track 4: Parliament — Give Up the Funk (1976)
 
 ### Narration
 
-这首歌是本次展览的技术核心。(IPA: /naɪl ˈrɒdʒərz/) Nile Rodgers 和 (IPA: /ˈbɜːnəd ˈɛdwərdz/) Bernard Edwards 把 [English: James Brown] 的节拍语法精炼成了 [English: disco] 最干净的形态：互锁的吉他切分和贝斯线，像两个机器零件咬合，几乎不需要填充任何其他东西。[pause: 300ms]
+Parliament，1976 年的 Mothership Connection——P-Funk。Give Up the Funk 在贝斯 DNA 谱系上的角色是：Bootsy Collins 把 JBs 的 slap-pop 贝斯语法移植进 P-Funk 宇宙，建立贝斯作为首要锚点的极大化哲学。
 
-[English: Edwards] 的贝斯线用的是**八度跳进**——同一个根音在低弦和高弦之间来回，每次跳都恰好与 kick 同拍锁定，和鼓的咬合既紧又有弹性。这个八度跳进结构后来被 [English: Bill Wyman] 带进了 [English: Miss You]，被 (IPA: /dʒɒn ˈdiːkən/) John Deacon 带进了 [English: Another One Bites the Dust]，被 [English: The Sugarhill Gang] 直接用进了 [English: Rapper's Delight]。《[English: Good Times]》的贝斯线是流行音乐史上被引用最多的贝斯线之一。
+你刚才在 James Brown 的 Cold Sweat 认识的那个 JBs 节奏组——Bootsy 就是从那里来的，他把整套语法带进了 P-Funk，贝斯从配角变成了主舞台中心。
 
----
+等会儿到 Queen 的 Another One Bites the Dust，那条贝斯 riff 的重量感有一部分来自 Parliament 这边的遗产。等会儿到 Red Hot Chili Peppers 的 Give It Away，Flea 的 slap-pop 是 Bootsy 这条线直接传下来的。等会儿到 Daft Punk 的 Get Lucky，他们要复活的那条低频基础设施就是从 P-Funk 这里采样出来的。等会儿到 Khruangbin 的 María También，贝斯作锚点这件事被做成了录音时的优先级。
 
-## Exhibit 6: The Rolling Stones — Miss You (1978)
+Give Up the Funk 成为 Parliament 第一张百万销量单曲，贝斯线是整首歌的叙事主体，而不是和声陪衬——这条"贝斯即骨架"的逻辑是后面所有人都在回应的一个命题。
 
-**Artist:** The Rolling Stones  
-**Album:** Some Girls  
-**Year:** 1978  
-**Track Duration:** ~300 seconds  
-**Narration Duration:** 96 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=105575)
+这位艺人不在你的红心地图——这是这次扩张为你点亮的盲区。
 
-### Narration (Anchor Track)
-
-我们到了展览的中心节点。[pause: 400ms]
-
-1977 年，(IPA: /mɪk ˈdʒægər/) Mick Jagger 在多伦多的 [English: El Mocambo] 演出现场，从 (IPA: /ˈbɪli ˈprɛstən/) Billy Preston 那里第一次听到四四拍 disco 节奏的小样演示。然后他和 [English: Keith Richards] 之间有了一场著名的分歧：[English: Richards] 讨厌 [English: disco]；[English: Jagger] 坚持做这首歌。[pause: 300ms]
-
-你在这首歌里能听到的，是两个层次同时存在的声音：[English: Bill Wyman] 的贝斯走的是 [English: Chic] 那种八度跳进，但他把每一拍的强重音**错开了一个十六分音符**，所以走起来比 [English: Chic] 的锁定律动更晃，更像 [English: Stones] 一直以来的 swing。这不是 [English: funk] 的标准句法——这是 [English: Wyman] 在用 [English: funk] 词汇说 [English: Stones] 的话。口琴手是 (IPA: /ˈʃʊgər bluː/) Sugar Blue，一个 22 岁的美国街头音乐人，被人从巴黎地铁发现，带进了录音室。
+下一首，1977 年，Bee Gees 把贝斯顶到 Saturday Night Fever 的最前线。
 
 ---
 
-## Exhibit 7: Blondie — Heart of Glass (1978)
-
-**Artist:** Blondie  
-**Album:** Parallel Lines  
-**Year:** 1978  
-**Track Duration:** ~280 seconds  
-**Narration Duration:** 90 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=16849154)
+## Track 5: Bee Gees — Stayin' Alive (1977)
 
 ### Narration
 
-同一年，同一个城市，但从完全相反的方向。[English: Miss You] 从经典摇滚出发走向 [English: disco]；(IPA: /ˈdɛbi ˈhæri/) Debbie Harry 和 [English: Chris Stein] 从 [English: CBGB] 朋克出发，走向了同一个 disco 节点。两支乐队，两条路，同一年抵达同一个音乐语法。[pause: 300ms]
+Bee Gees，1977 年的 Saturday Night Fever——disco。Stayin' Alive 在贝斯 DNA 谱系上的角色是：把贝斯推到 falsetto 人声正下方的第一线，作为 disco 商业顶点时期的贝斯前置美学代表——这是 Miss You 要近似、又要保持距离的那个具体目标。
 
-对比这两首歌的底鼓：[English: Blondie] 用的是 (IPA: /ˈrəʊlænd/) Roland CR-78 鼓机，节拍均等、机械、精确，没有人力摇摆的余地；[English: Stones] 用的是真人鼓手 (IPA: /ˈtʃɑːli wɒts/) Charlie Watts，那种人力的轻微偏移让 [English: Miss You] 有了摇滚乐的体温。同一套翻译美学，**两种温度**：机器 disco 对人力 disco。乐队其他成员对这首歌极度不舒服——和 [English: Keith Richards] 一样。
+你刚才在 David Bowie 的 Fame 已经看见白人艺人向黑人放克贝斯语法致敬的这个动作——Bee Gees 也在做，规模更大，商业顶点更高。
+
+等会儿到 The Rolling Stones 的 Miss You，这套四四拍贝斯前置逻辑就是 Jagger 要借的那件外套。等会儿到 Chic 的 Good Times，Edwards 接过了这种把贝斯顶到第一线的想法，但做得更冷。等会儿到 Tame Impala 的 The Less I Know the Better，Kevin Parker 亲口说这首歌从听 Bee Gees 开始。等会儿到 Mk.gee 的 You Dreamed of Me，这种贝斯驱动的舞曲流行感在卧室里找到了最新的形状。
+
+Stayin' Alive 你的红心歌单里有这首歌——这条 disco 贝斯线对你不是新的，是旧路被点亮。
+
+下一首，1978 年，The Rolling Stones 的 Miss You——这一期的核心节点。
 
 ---
 
-## Exhibit 8: Devo — Jocko Homo (1978)
-
-**Artist:** Devo  
-**Album:** Q: Are We Not Men? A: We Are Devo!  
-**Year:** 1978  
-**Track Duration:** ~270 seconds  
-**Narration Duration:** 88 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=6316)
+## Track 6: The Rolling Stones — Miss You (1978)
 
 ### Narration
 
-同年，但是是这条翻译血脉的对立面。[English: Devo] 的「去进化」理论认为，[English: disco] 的享乐主义和摇滚乐的景观——包括 [English: Miss You] 所代表的文化时刻——都是人类退化的证明。他们不翻译，他们**拒绝**翻译。[pause: 300ms]
+The Rolling Stones，1978 年的 Some Girls——摇滚与 disco 的交汇。Miss You 是这一期的锚点：摇滚乐队借用 disco 贝斯语法的典型示范，每条上游都汇进这首歌，每条下游都从这里辐射出去。
 
-这首歌在节奏上做的事，是 [English: funk] 的对立面：节拍机械均等，没有 swing，没有切分，没有任何让身体想要律动的前推感。吉他线是角状的、不友好的。如果说 [English: Chic] 的设计目标是让人不由自主地跳舞，[English: Devo] 的目标是让你觉得跳舞这件事本身荒谬。[English: Mark Mothersbaugh] 和 [English: Gerald Casale] 在肯特州立大学发展出这套「去进化」哲学，[English: Casale] 亲眼目睹了 1970 年的国民警卫队枪击事件——这给了 [English: Devo] 的反大众文化立场一个具体的历史根源。
+你刚才在 James Brown 的 Cold Sweat 听见的贝斯鼓哲学，Billy Preston 把它带进了 Miss You 的录音间。Billy Preston 在 Sly & the Family Stone 的 Family Affair 时期——他把那条脉冲带进了 Miss You。你刚才在 David Bowie 的 Fame 看见的塑料灵魂模板，就是 Miss You 三年后要执行的那件事。你刚才在 Bee Gees 的 Stayin' Alive 听见的那套迪斯科贝斯逻辑，就是 Miss You 要近似、又要保持距离的那个东西。
+
+Blondie 的 Heart of Glass 同年在 CBGB 那边做了完全一样的翻译——两支乐队，同一个动作，同一年。等会儿到 Chic 的 Good Times，迪斯科贝斯在黑人场域被做到了精炼顶点——那是 Miss You 试图近似的东西。等会儿到 Queen 的 Another One Bites the Dust，同样的模板被 John Deacon 放进了体育场摇滚。
+
+Miss You 你的红心歌单里有这首歌——这是这条贝斯线的中心，你已经认识它了。
+
+下一首，同样是 1978 年，Blondie 从 CBGB 出发，走向同一个 disco 节点。
 
 ---
 
-## Exhibit 9: Joy Division — Isolation (1980)
-
-**Artist:** Joy Division  
-**Album:** Closer  
-**Year:** 1980  
-**Track Duration:** ~300 seconds  
-**Narration Duration:** 85 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=18860348)
+## Track 7: Blondie — Heart of Glass (1978)
 
 ### Narration
 
-第三条岔路。Joy Division 代表了 1978–1980 年同一个历史路口上的另一种应答——不是翻译，不是拒绝，而是用寒化和空化来回应这个音乐时刻。[English: Joy Division] 站在同一个 1978–1980 年的路口，选择了和摇滚-[English: disco] 翻译完全相反的方向：电子极简主义，冷峻，无机。[pause: 300ms]
+Blondie，1978 年的 Parallel Lines——朋克与 disco 的平行翻译。Heart of Glass 在贝斯 DNA 谱系上的角色是：CR-78 鼓机驱动贝斯脉冲的朋克场景版本，与 Miss You 同年做了同一件翻译，内部都有成员抵制。
 
-你在这首歌里能听到的，是系统性的**频谱掏空**——制作人 (IPA: /ˈmɑːtɪn ˈhænɪt/) Martin Hannett 把每件乐器的空间极度分离，鼓声是电子处理过的而不是有机的，(IPA: /ˈpiːtər hʊk/) Peter Hook 的贝斯线占据了通常留给吉他的旋律频段，而不是留在低频做节奏。[English: funk] 和 [English: disco] 靠的是频谱的饱满和密度；[English: Joy Division] 用的是它们的负片——同样的后朋克时刻，同样的工具箱，用减法说话。这是继 [English: Devo] 之后的第二种拒绝，但拒绝的方式更冷、更深。
+你刚才在 Sly & the Family Stone 的 Family Affair 已经听见用鼓机驱动节奏这件事——Blondie 七年后照做了，换成了 Roland CR-78。你刚才在 David Bowie 的 Fame 看见的那个翻译动作，Blondie 从另一个场景出发，做了同样的事。
 
----
+The Rolling Stones 的 Miss You 在同一年也做了这件事——从摇滚出发，借迪斯科贝斯，两边内部都有人反对。Joy Division 的 Isolation 在同一个后朋克时刻做了相反的选择——贝斯往上走，但往冷的方向。等会儿到 Talking Heads 的 Once in a Lifetime，机器和循环鼓先行的这种建歌逻辑被 Eno 做成了整张专辑的方法论。
 
-## Exhibit 10: Interlude
+Heart of Glass 这位艺人你或许听过 Blondie 的其他作品——这首歌是你贝斯地图上的一个新入口。
 
-**Duration:** 74 seconds  
-**Type:** Thematic Bridge
-
-三条同时期的道路展示完了：[English: Blondie] 翻译了，用机器温度；[English: Devo] 拒绝了，用理论武装；[English: Joy Division] 把温度降到零，用寒化来回应。[pause: 500ms]
-
-1980 年以后，这套翻译逻辑没有消失，而是以不同的形态继续生长。接下来的四件展品跨越 1980 年到 2013 年，记录的是这套逻辑在传递中的变形：有人把它做得更智识，有人把它追溯回 [English: Chic] 的源头、建立了一条更直接的人员传承线，有人把翻译美学内化到语法消失的地步，然后在语法消失之后做减法。
+下一首，Devo 在 1978 年把这条贝斯线索短暂切断。
 
 ---
 
-## Exhibit 11: Talking Heads — Once in a Lifetime (1980)
+## Track 8: Devo — Jocko Homo (1978)
 
-**Artist:** Talking Heads  
-**Album:** Remain in Light  
-**Year:** 1980  
-**Track Duration:** ~310 seconds  
-**Narration Duration:** 85 seconds  
-**Platform Links:** Not available on NetEase Cloud Music (regional availability varies)
+**Bridge**: Devo 用迪斯科的节拍工具来拒绝迪斯科和摇滚的整个景观，这条贝斯线索在这里短暂沉默；Devo 的故事留给后续期次，等会儿到 Chic 的 Good Times 再续上主线。
+
+---
+
+## Track 9: Chic — Good Times (1979)
 
 ### Narration
 
-第四条岔路。[English: Talking Heads] 和 [English: Eno] 的 [English: Remain in Light] 从同样的源头——[English: Chic] 的节奏精准和工作室迭加方法——但翻译出了完全不同的东西。不是舞池，不是摇滚，而是非洲鼓乐、艺术摇滚和电子探索的混合体。"[English: Once in a Lifetime]"的循环鼓组和分层吉他与 [English: Chic] 的工作方式相同，但音乐内核是陌生化的、思辨的。(IPA: /ˈdeɪvɪd ˈbaɪrn/) David Byrne 不是在翻译迪斯科——他在用迪斯科的结构密度来构建一个全新的思考空间。这是 1980 年对 [English: Studio 54] 的另一种应答：不是逃离，不是抵抗，而是吸收和异化。
+Chic，1979 年的 Risque——后期 disco。Good Times 在贝斯 DNA 谱系上的角色是：Bernard Edwards 把贝斯从底下垫着推到了歌的第一线，这是后面所有人都要学的一课——disco 精炼版的放克基因。
+
+你刚才在 James Brown 的 Cold Sweat 听见的贝斯鼓咬死，Edwards 直接继承了这套逻辑。你刚才在 Bee Gees 的 Stayin' Alive 已经听见贝斯被顶到歌的第一线——Edwards 在这里把它精炼了，做得更冷、更几何化。你刚才在 The Rolling Stones 的 Miss You 已经听见摇滚端在借这种迪斯科贝斯——Chic 是那个原版。
+
+等会儿到 Queen 的 Another One Bites the Dust，Deacon 把 Good Times 的贝斯线搬进了摇滚——有据可查，他坐在 Edwards 旁边亲耳听了然后写出来的。等会儿到 Daft Punk 的 Get Lucky，Nile Rodgers 本人还在——那把琴就是录 Good Times 用的那把。
+
+Good Times 你的红心歌单里有这首——这条线对你不是新的，是旧路被点亮。
+
+下一首，1980 年，曼彻斯特，Joy Division 把贝斯做了一件完全不一样的事。
 
 ---
 
-## Exhibit 12: Queen — Another One Bites the Dust (1980)
-
-**Artist:** Queen  
-**Album:** The Game  
-**Year:** 1980  
-**Track Duration:** ~340 seconds  
-**Narration Duration:** 95 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=2065646)
+## Track 10: Joy Division — Isolation (1980)
 
 ### Narration
 
-第五条岔路。[English: Queen] 的贝斯手 (IPA: /dʒɒn ˈdiːkən/) John Deacon 在 1980 年做了一个明确的选择：他直接听了 [English: Chic] 的"[English: Good Times]"，然后写出了"[English: Another One Bites the Dust]"。这是所有这些翻译中最直接的引用——不是灵感，不是平行，而是一条清晰的血脉。贝斯线的八度跳跃、四拍节奏的锁定、以及对低频带的霸占，都来自 [English: Chic] 的 (IPA: /ˈbɜːnəd ˈɛdwərdz/) Bernard Edwards 的手册。但 [English: Queen] 的摇滚肌肉——(IPA: /ˈfrɛdi ˈmɜːkjəri/) Freddie Mercury 的主唱、(IPA: /ˈbraɪən meɪ/) Brian May 的吉他——让这条贝斯线听起来像是一次入侵，而不是翻译。[English: Miss You] 让迪斯科和摇滚平等共存；[English: Another One Bites the Dust] 让贝斯主导了一个摇滚乐队。这标志了 [English: Miss You] 这条岔路的完全成熟。
+Joy Division，1980 年的 Closer——后朋克。Isolation 在贝斯 DNA 谱系上的角色是：Peter Hook 把贝斯移到通常属于吉他的高音区，用冷波方式重新定义贝斯可以去的地方——这是 disco 贝斯语法的冷空间对立面。
+
+Blondie 的 Heart of Glass 在同年把贝斯往迪斯科方向推——同一个后朋克工具箱，两个截然不同的出口。Talking Heads 的 Once in a Lifetime 在同一年把贝斯放进了一套完全不同的多节奏层——Afrobeat 的逻辑，同一个后朋克时刻，两条截然不同的路。
+
+等会儿到 Tame Impala 的 The Less I Know the Better，高音区旋律贝斯这件事被 Kevin Parker 用迷幻的方式重新演了一遍——Peter Hook 的高音贝斯走法，Parker 在迷幻流行里做了同样的声部选择。
+
+这位艺人不在你的红心地图——这是这次扩张为你点亮的盲区。
+
+下一首，同样是 1980 年，Talking Heads 和 Eno 把鼓循环变成了一套宗教。
 
 ---
 
-## Exhibit 13: Prince — When Doves Cry (1984)
-
-**Artist:** Prince  
-**Album:** Purple Rain  
-**Year:** 1984  
-**Track Duration:** ~320 seconds  
-**Narration Duration:** 105 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=149402)
+## Track 11: Talking Heads — Once in a Lifetime (1980)
 
 ### Narration
 
-**最后一条岔路。** (IPA: /prɪns/) Prince 的 [English: Purple Rain] 代表了 [English: Miss You] 这条线索的内化——岔路已经成为新的主干道。他从不停地翻译 (IPA: /ˈdʒeɪməs braʊn/) James Brown 和 [English: Chic]——他把这两条线索熔进了自己的身体里，直到分不开了。"[English: When Doves Cry]"没有贝斯线——(IPA: /prɪns/) Prince 用吉他的 muting 和鼓的动态来创造了一个空白的频率空间，就像缺失的贝斯本身一样强有力。这是从 [English: Miss You] 的"贝斯驱动"到"贝斯缺失"的跳跃，但效果是一样的：让听者感受到节奏的存在是通过它的缺席。这是 1984 年对 1978 年迪斯科-摇滚翻译的完全内化和超越。[English: Miss You] 是问题；[English: Purple Rain] 是答案——或者说，是已经忘记了问题的答案。
+Talking Heads，1980 年的 Remain in Light——艺术摇滚与后朋克放克。Once in a Lifetime 在贝斯 DNA 谱系上的角色是：鼓循环先行、贝斯后叠的录音优先级方法论——Tina Weymouth 的干净旋律贝斯，Khruangbin 四十年后的直系祖先。
+
+鼓先贝斯后，你在 Sly & the Family Stone 的 Family Affair 已经听见了——Talking Heads 在做同一件事，Eno 把它变成了整张专辑的方法。你刚才在 Blondie 的 Heart of Glass 已经听见 CR-78 驱动贝斯律动——Talking Heads 在同一个纽约场景里把这件事做大了。
+
+Joy Division 的 Isolation 在同一年把贝斯推向了冷空间——同一个后朋克时刻，两条截然不同的路。等会儿到 Daft Punk 的 Get Lucky，先建节奏骨架、再叠旋律这件事在数字时代复活了——方法一脉相承。等会儿到 Khruangbin 的 María También，Laura Lee 的贝斯和 Tina Weymouth 是同一种干净旋律短句的精神。
+
+Once in a Lifetime 或许不在你的红心歌单——这条 Eno 方法论的贝斯路线是你地图上的新领土。
+
+下一首，同样是 1980 年，Queen 的 John Deacon 坐在 Chic 录音室里听了 Good Times 然后回家写了一首歌。
 
 ---
 
-## Exhibit 14: Daft Punk feat. Nile Rodgers — Get Lucky (2013)
-
-**Artist:** Daft Punk (feat. Nile Rodgers)  
-**Album:** Random Access Memories  
-**Year:** 2013  
-**Track Duration:** ~300 seconds  
-**Narration Duration:** 100 seconds  
-**Platform Links:** [NetEase Cloud Music](https://music.163.com/#/song?id=25706282)
+## Track 12: Queen — Another One Bites the Dust (1980)
 
 ### Narration
 
-**回环。** (IPA: /naɪl ˈrɒdʒərz/) Nile Rodgers，[English: Chic] 的联合创始人，在 2013 年应邀为 [English: Daft Punk] 的 [English: Random Access Memories] 演奏吉他。[English: Get Lucky] 直接招募了 [English: Miss You] 的源头——[English: Chic] 的节奏精准、(IPA: /ˈbɜːnəd ˈɛdwərdz/) Bernard Edwards 的贝斯美学、(IPA: /naɪl ˈrɒdʒərz/) Rodgers 的吉他纹理——但融合了 [English: Daft Punk] 的电子制作，反而成为了对 1970s–1980s 音乐黄金时代的一次温情的、经过滤镜的回忆。这不是一个新的岔路。这是对整条线索的一次**确认**：从 (IPA: /ˈdʒeɪməs braʊn/) James Brown 开始、通过 [English: Miss You] 的翻译、最后由 [English: Chic] 的原始建筑师亲自确认，这条迪斯科-摇滚-电子的谱系不仅存在，而且足够强大，可以让下一代音乐家用尊敬的方式回到它。
+Queen，1980 年的 The Game——体育场摇滚与 disco 贝斯。Another One Bites the Dust 在贝斯 DNA 谱系上的角色是：最有据可查的贝斯语法直接传承——John Deacon 坐在 Bernard Edwards 旁边，听了 Good Times，回家写了这条 riff。
+
+你刚才在 Parliament 的 Give Up the Funk 听见的那种贝斯前置重量，Deacon 在研究这条线的时候也研究了它。你刚才在 The Rolling Stones 的 Miss You 听见的那个摇滚乐队用迪斯科贝斯的模板，Deacon 在两年后照做了。Good Times 那条贝斯线——Deacon 坐在 Edwards 旁边亲耳听了，然后写了 Another One Bites the Dust。
+
+等会儿到 Red Hot Chili Peppers 的 Give It Away，贝斯主导歌曲骨架这件事被 Flea 的 slap 重新烧了一遍。等会儿到 Khruangbin 的 María También，贝斯作结构主轴这件事跨越了 30 年——同一种优先级。
+
+Another One Bites the Dust 你的红心歌单里有——这条直接传承的贝斯线你已经听见过了。
+
+下一首，1984 年，Prince 把这条贝斯线推到了极端——然后他把贝斯整条删了。
 
 ---
 
-## Exhibit 15: Closing Narration
+## Track 13: Prince — When Doves Cry (1984)
 
-**Duration:** 110 seconds  
-**Type:** Thematic Closure and Curatorial Synthesis
+### Narration
 
-结尾。我们从 [English: Miss You] 开始，经过了 (IPA: /ˈdʒeɪməs braʊn/) James Brown 的节奏革命、[English: Chic] 的工作室精准、[English: Sly Stone] 的暗黑孤独、(IPA: /prɪns/) Prince 的音乐消融，最后回到了 (IPA: /naɪl ˈrɒdʒərz/) Nile Rodgers ——他在 1980 年编织这个故事线条，今天又亲手确认了它的延续。[pause: 500ms]
+Prince，1984 年的 Purple Rain——Minneapolis funk-rock。When Doves Cry 在贝斯 DNA 谱系上的角色是：把贝斯完全从录音中删除——一个人全程控制所有声部的极端示范，也是贝斯缺席作为贝斯声明的最彻底版本。
 
-但这不是一个故事的结束。这是一个诗学的确认：音乐不会遗忘它的源头，只会一次又一次地用不同的方式重新讲述。从 [English: Studio 54] 的舞池到 2013 年的数字工作室，从四拍的迪斯科节奏到缺失的贝斯线，同一种美学的基因在运行：节奏是语言，频率分布是意义的地图，音乐家们通过翻译而不是背弃来建造新的东西。[pause: 400ms]
+你刚才在 Sly & the Family Stone 的 Family Affair 认识了一人包办所有声部这件事——Prince 是那条线上最彻底的人。你刚才在 David Bowie 的 Fame 见过艺人视野压过乐队的这种力量——Prince 把它用到了贝斯上，直接删掉了贝斯。
 
-这是你在 [English: Miss You] 中听到的：不仅仅是一首歌的循环旋律，而是一个整个时代的声音方法——如何让摇滚乐手听起来像灵魂乐手，如何让迪斯科的数学进入摇滚的肌肉，如何在一个逐渐全球化、逐渐数字化的世界里，让模拟时代的舞者和今天的制作人用同样的语言对话。[pause: 400ms]
+等会儿到 Red Hot Chili Peppers 的 Give It Away，Flea 从同一个 Bootsy 教材出发，但把贝斯做到了最响——同一个老师，走了完全相反的路。等会儿到 Tame Impala 的 The Less I Know the Better，Parker 一个人在家录所有声部——走的是 Prince 那条路。等会儿到 Mk.gee 的 You Dreamed of Me，一人制作、自己编贝斯这件事到了 2024 年还在——评论界直接把 Mk.gee 和 Prince 并排放了。
 
-我们的 [English: Miss You] 地图就在这里，已经画完了。现在该你来听了。
+When Doves Cry 你的红心歌单里有这首歌——这个删除贝斯的极端时刻你已经认识了。
 
----
-
-## Appendix: Episode Structure Summary
-
-**Episode Composition:**
-- Opening narration (Exhibit 1): 86s
-- Ancestor exhibits (Exhibits 2-5):
-  - James Brown — Cold Sweat: 80s
-  - Sly & the Family Stone — Family Affair: 82s
-  - David Bowie — Fame: 86s
-  - Chic — Good Times: 90s
-  - **Subtotal: 338s**
-- Anchor exhibit (Exhibit 6):
-  - The Rolling Stones — Miss You: 96s
-- Lateral exhibits (Exhibits 7-9):
-  - Blondie — Heart of Glass: 90s
-  - Devo — Jocko Homo: 88s
-  - Joy Division — Isolation: 85s
-  - **Subtotal: 263s**
-- Interlude (Exhibit 10): 74s
-- Descendant exhibits (Exhibits 11-14):
-  - Talking Heads — Once in a Lifetime: 85s
-  - Queen — Another One Bites the Dust: 95s
-  - Prince — When Doves Cry: 105s
-  - Daft Punk — Get Lucky: 100s
-  - **Subtotal: 385s**
-- Closing narration (Exhibit 15): 110s
-
-**Timing Breakdown:**
-- Total Narration: 1,352 seconds ≈ 22.5 minutes
-- Total Music (12 track exhibits): 3,900 seconds ≈ 65.0 minutes
-- **Total Episode Duration: 5,252 seconds ≈ 87.5 minutes**
+下一首，1991 年，Flea 从同一个老师那里学来，然后把贝斯做到了最大。
 
 ---
 
-## Notes for TTS Synthesis
+## Track 14: Red Hot Chili Peppers — Give It Away (1991)
 
-**Narrator Persona:**
-- **Name:** Docent v1
-- **Tone:** Scholarly yet warm, with genuine curiosity
-- **Pace Variation:** Mostly normal; slow sections at opening, interlude, and closing
-- **Emotional Register:** Ranges from warm and contemplative to neutral analytical
+### Narration
 
-**Technical Specifications:**
-- **Language:** Mandarin Chinese
-- **Phonetic Pronunciation Guides:** Included for English names and specialized musical terms using IPA notation (rendered as readable parenthetical notation)
-- **Pause Markers:** [pause: XXXms] indicates breath and reflection points
-- **Emphasis Markers:** **bolded text** indicates words to be delivered with slightly elevated volume, warmth, or emotional weight
-- **Language Codes:** [English: word] indicates that a term is intentionally kept in English in the Mandarin narration
+Red Hot Chili Peppers，1991 年的 Blood Sugar Sex Magik——放克摇滚。Give It Away 在贝斯 DNA 谱系上的角色是：Flea 的 slap-pop 贝斯把 Parliament 和 James Brown 的血脉带进了九十年代主流，贝斯最大化而非最小化——和 Prince 同一个老师，完全相反的选择。
 
-**Audio Stitching Protocol (Spec §7B.5):**
-- Pre-narration text plays first (typically 80–110 seconds per track exhibit)
-- Musical excerpt plays after narration (no background narration during music)
-- Music fades cleanly between exhibits
-- No background music or ambient sound during narration blocks
+你刚才在 Parliament 的 Give Up the Funk 听见的 Bootsy slap 语法——Flea 承认那是他的课本。你刚才在 Queen 的 Another One Bites the Dust 听见的那种贝斯主导框架，Flea 把它接了过去，加进了 slap。你刚才在 Prince 的 When Doves Cry 听见贝斯被删光——Flea 从同一个老师那里学来，走了完全相反的路。
 
-**Platform Link Coverage:**
-- 11 of 12 track exhibits have NetEase Cloud Music links
-- Talking Heads "Once in a Lifetime" unavailable on NetEase (artist availability varies by region)
-- All links verified as of 2026-05-05
+整张 Blood Sugar Sex Magik 的贝斯混在格式能承载的最大音量——Rick Rubin 和工程师的这个决定本身就是一个贝斯哲学声明：贝斯不在背景，贝斯就是前景。等会儿到 Mk.gee 的 You Dreamed of Me，贝斯锁死鼓脉冲的逻辑进了卧室，用编程代替了演奏。
 
-**Structural Notes:**
-- This episode follows a **thematic arc** rather than strict chronological order
-- Exhibits 2–5 establish the genealogical source codes (material library)
-- Exhibit 6 is the central node (anchor)
-- Exhibits 7–9 represent three distinct contemporary responses to the same moment (1978–1980)
-- Interlude (Exhibit 10) bridges the three roads with the next generation
-- Exhibits 11–14 trace the logical evolution and maturation of the translation aesthetic through four distinct genealogical paths
-- Exhibit 15 closes with thematic confirmation and synthesis
+Give It Away 你的红心歌单里有这首——这条放克摇滚贝斯线你已经认识了。
 
-**SSML Conversion Summary:**
-All SSML tags have been converted to readable notation for human review:
-- Break tags converted to [pause: XXXms]
-- Emphasis tags converted to **bolded text**
-- Phoneme tags converted to (IPA: /phoneme/)
-- Language tags converted to [English: word] notation
-- No raw SSML tags remain in the transcribed narration
+下一首，2013 年，Daft Punk 请来了 Nile Rodgers 本人，带着同一把琴。
 
-**Ready for TTS Synthesis** — this file is complete and ready for Spec §7B.5 audio processing pipeline.
+---
+
+## Track 15: Daft Punk — Get Lucky (2013)
+
+### Narration
+
+Daft Punk，2013 年的 Random Access Memories——nu-disco。Get Lucky 在贝斯 DNA 谱系上的角色是：Nile Rodgers 带着同一把录 Good Times 用的 Stratocaster 回来了，Chic 到 disco 到 Miss You 这条贝斯弧线在三十四年后被亲手确认。
+
+你刚才在 Parliament 的 Give Up the Funk 听见的低频基础——嘻哈采了它，Daft Punk 又把它活体复原了。你刚才在 Chic 的 Good Times 听见的 Nile Rodgers——34 年后他带着同一把琴出现在了 Daft Punk 的录音室。鼓循环先行、贝斯填充——你在 Talking Heads 的 Once in a Lifetime 已经听见了；Daft Punk 在 Random Access Memories 里就是这么干的。
+
+等会儿到 Tame Impala 的 The Less I Know the Better，这股 nu-disco 低频在 Parker 的迷幻里重新烧了——两件事互相点燃了。等会儿到 Khruangbin 的 María También，那种模拟温暖的贝斯质感和 Get Lucky 的低频是同一种基因。
+
+Get Lucky 你的红心歌单里有这首——这条 Chic 传承线你已经认识了它的现代形态。
+
+下一首，2015 年，Kevin Parker 一个人在 Perth 的家庭录音室里，听着 Bee Gees 出发了。
+
+---
+
+## Track 16: Tame Impala — The Less I Know the Better (2015)
+
+### Narration
+
+Tame Impala，2015 年的 Currents——迷幻流行。The Less I Know the Better 在贝斯 DNA 谱系上的角色是：Kevin Parker 把高音区旋律贝斯和 disco 贝斯前置逻辑重新点燃，一个人在家录室完成所有声部——Joy Division 和 Bee Gees 的贝斯哲学在迷幻流行里的复活。
+
+你刚才在 Bee Gees 的 Stayin' Alive 听见的 Saturday Night Fever 时刻——Parker 37 年后把它重新点亮了，他亲口说从听 Bee Gees 开始了这张专辑的方向。你刚才在 Joy Division 的 Isolation 听见的 Peter Hook 高音贝斯走法——Parker 在迷幻流行里做了同样的声部选择。你刚才在 Prince 的 When Doves Cry 听见一人包办所有乐器——Parker 在 Perth 的家庭录音室里把那件事又做了一遍。你刚才在 Daft Punk 的 Get Lucky 听见 nu-disco 低频复活——Parker 在同期录 Currents，这两件事互相点燃了。
+
+等会儿到 Mk.gee 的 You Dreamed of Me，卧室里一个人编贝斯这件事到了 2024 年还没停。
+
+The Less I Know the Better 你的红心歌单里有这首——迷幻 disco 贝斯复活的这个时刻你已经认识了。
+
+下一首，2018 年，Khruangbin 在得克萨斯一个谷仓里，贝斯先录。
+
+---
+
+## Track 17: Khruangbin — María También (2018)
+
+### Narration
+
+Khruangbin，2018 年的 Con Todo el Mundo——dub 灵魂与器乐 groove。María También 是这一期贝斯 DNA 弧线的终点：Laura Lee 的贝斯先于吉他录制，鼓定脉冲，贝斯定骨架，吉他最后加——贝斯作为首要锚点的哲学成为了字面意义上的录音顺序。
+
+你刚才在 Parliament 的 Give Up the Funk 听见的那种贝斯锚点哲学，Khruangbin 把它变成了录音顺序——贝斯先录，其他一切围绕它建造。Once in a Lifetime 里 Tina Weymouth 的干净旋律贝斯——Laura Lee 在 María También 里接了同一个灵魂。贝斯作主轴——在 Queen 的 Another One Bites the Dust 你已经听见了；Khruangbin 以同样的决策建了 María También。你刚才在 Daft Punk 的 Get Lucky 听见的那种模拟温暖贝斯——Khruangbin 在德克萨斯谷仓里用同样的方式养了它。
+
+María También 这位艺人在你的红心地图上或许有她的踪影——这条贝斯先录的哲学从 James Brown 走到了这里。
+
+下一首，最后一首，2024 年，一个人在卧室里，同一条贝斯逻辑还在。
+
+---
+
+## Interlude
+
+五十年过去了。从 James Brown 把贝斯和鼓锁死的那个录音室，经过 disco 的舞池、后朋克的冷空间、放克摇滚的极大化、nu-disco 的复活，这条贝斯线到达了 Khruangbin 在德克萨斯谷仓里录下的那个先录贝斯的决定。
+
+还有最后一首。不是这条弧线的目的地，而是一个尾声——证明这件事在 2024 年还没有停止。
+
+---
+
+## Track 18: Mk.gee — You Dreamed of Me (2024)
+
+### Narration
+
+Mk.gee，2024 年的 Two Star & the Dream Police——卧室 R&B 与实验摇滚。You Dreamed of Me 是这一期的尾声：单人卧室制作，贝斯由本人编程，锁死在鼓脉冲上——JBs 到 Sly 到 Prince 到 Tame Impala 的全部祖先，2024 年还在同一套单人贝斯逻辑上运行。
+
+你刚才在 Bee Gees 的 Stayin' Alive 听见的那种贝斯驱动流行感，Mk.gee 在卧室里把它重新烧了一遍。你刚才在 Prince 的 When Doves Cry 听见的那条单人制作线，评论界直接把 Mk.gee 和他并排放了。你刚才在 Red Hot Chili Peppers 的 Give It Away 听见贝斯锁死鼓脉冲——Mk.gee 把这件事用编程做进了卧室。你刚才在 Tame Impala 的 The Less I Know the Better 听见一人卧室制作贝斯——Mk.gee 在 2024 年照做了。
+
+Two Star & the Dream Police 在 2024 年年末榜单里名列前茅——这是这条从 JBs 到卧室制作的贝斯逻辑，在当代流行语境里最新的一次活跃证明。
+
+You Dreamed of Me 这位艺人或许不在你的红心地图——这是这次扩张为你点亮的最新入口。
+
+---
+
+## Closing
+
+这就是这条贝斯线——从 1967 年 James Brown 的 Cold Sweat 到 2024 年 Mk.gee 的 You Dreamed of Me，五十七年，同一件事：把贝斯放在最前面，让它说话。
+
+中间的每一首都做了自己的选择：有人把它锁进鼓机，有人把它搬进白人摇滚，有人把它精炼成 disco 的最冷形态，有人把它移到高音区，有人把它整条删掉，有人让它在卧室里重新编程。但每一次选择，都和 James Brown 的那个决定对话。
+
+The Rolling Stones 的 Miss You 在正中间，1978 年，是这条贝斯线最公开的一次翻译——摇滚的外套，disco 的骨架，两层声音都听得见，谁也没有融化进谁。这是这条线最坦诚的时刻，也是这一期的中心。
+
+这条血脉还在继续。
+
+---

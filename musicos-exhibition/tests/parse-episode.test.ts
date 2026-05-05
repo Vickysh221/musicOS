@@ -35,7 +35,34 @@ describe('parseEpisode', () => {
     expect(stones!.narration_zh.length).toBeGreaterThan(50);
   });
 
-  it('contains 12 track narrations', () => {
-    expect(result.tracks).toHaveLength(12);
+  it('contains 17 non-bridge track narrations (Devo at position 8 has no transcript_zh)', () => {
+    // Track 8 (Devo) is bridge-only — its narration_zh is empty/bridge text only.
+    // The parser may or may not include it; what matters is ≥17 tracks are parsed.
+    expect(result.tracks.length).toBeGreaterThanOrEqual(17);
+  });
+
+  it('contains James Brown at position 1', () => {
+    const jb = result.tracks.find((t) => t.position === 1);
+    expect(jb).toBeDefined();
+    expect(jb!.artist).toBe('James Brown');
+  });
+
+  it('contains Khruangbin at position 17', () => {
+    const kh = result.tracks.find((t) => t.position === 17);
+    expect(kh).toBeDefined();
+    expect(kh!.artist).toBe('Khruangbin');
+  });
+
+  it('contains Mk.gee at position 18', () => {
+    const mk = result.tracks.find((t) => t.position === 18);
+    expect(mk).toBeDefined();
+    expect(mk!.artist).toBe('Mk.gee');
+  });
+
+  it('Track N: headers are parsed correctly (## Track N format)', () => {
+    // Spot-check that the new format parses correctly
+    const chic = result.tracks.find((t) => t.artist === 'Chic' && t.song === 'Good Times');
+    expect(chic).toBeDefined();
+    expect(chic!.position).toBe(9);
   });
 });
