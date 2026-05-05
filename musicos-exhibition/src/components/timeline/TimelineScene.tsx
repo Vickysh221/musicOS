@@ -13,8 +13,20 @@ interface Props {
   tracks: TrackExhibit[];
 }
 
+const MOBILE_BREAKPOINT_PX = 768;
+
 export function TimelineScene({ tracks }: Props) {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [isMobile, setIsMobile] = useState(
+    () => typeof window !== 'undefined' && window.innerWidth <= MOBILE_BREAKPOINT_PX,
+  );
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const onResize = () => setIsMobile(window.innerWidth <= MOBILE_BREAKPOINT_PX);
+    window.addEventListener('resize', onResize);
+    return () => window.removeEventListener('resize', onResize);
+  }, []);
   const cardRefs = useRef<(HTMLButtonElement | null)[]>([]);
   const playingPosition = useExhibition((s) => s.playingPosition);
   const isPlaying = useExhibition((s) => s.isPlaying);
@@ -114,12 +126,15 @@ export function TimelineScene({ tracks }: Props) {
         <div
           className="timeline-scene__stage-inner"
           style={{
-            transform: `rotateX(${tuning.stageRotX}deg) rotateY(${tuning.stageRotY}deg) rotateZ(${tuning.stageRotZ}deg)`,
+            transform:
+              isMobile && phase === 'playing'
+                ? 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)'
+                : `rotateX(${tuning.stageRotX}deg) rotateY(${tuning.stageRotY}deg) rotateZ(${tuning.stageRotZ}deg)`,
             transition: `transform ${INTRO_TRANSITION_MS}ms cubic-bezier(0.22, 1, 0.36, 1)`,
           }}
         >
           {tracks.map((track, i) => {
-            const transform = processionLayout({
+            const baseTransform = processionLayout({
               index: i,
               total,
               focalIndex,
@@ -129,6 +144,20 @@ export function TimelineScene({ tracks }: Props) {
             });
             const isFocal = i === focalIndex;
             const isThisPlaying = playingPosition === track.position && isPlaying;
+            // On mobile, the playing card sits flat and centered so the user can read it head-on.
+            const transform =
+              isMobile && phase === 'playing' && i === playingIndex
+                ? {
+                    x: 0,
+                    y: 0,
+                    z: tuning.focalZBoost,
+                    rotX: 0,
+                    rotY: 0,
+                    rotZ: 0,
+                    opacity: 1,
+                    scale: tuning.focalScale,
+                  }
+                : baseTransform;
             const zIndex = isFocal ? 1000 : i + 1;
             const cardTransition =
               phase === 'intro1' || phase === 'intro3'
