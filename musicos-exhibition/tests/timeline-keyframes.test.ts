@@ -1,26 +1,28 @@
 import { describe, it, expect } from 'vitest';
 import { processionLayout, seededJitter } from '../src/components/timeline/timeline-keyframes.js';
+import { TUNING_DEFAULTS } from '../src/store/tuning.js';
 
 describe('processionLayout', () => {
   const total = 18;
   const anchorIndex = 6;
+  const tuning = TUNING_DEFAULTS;
 
   it('focal card (anchor when nothing hovered) is upright and fully opaque', () => {
-    const t = processionLayout({ index: anchorIndex, total, anchorIndex, hoveredIndex: null });
+    const t = processionLayout({ index: anchorIndex, total, anchorIndex, hoveredIndex: null, tuning });
     expect(t.rotZ).toBe(0);
     expect(t.opacity).toBe(1);
     expect(t.scale).toBeGreaterThan(1);
   });
 
   it('non-focal cards have lower opacity than focal', () => {
-    const focal = processionLayout({ index: anchorIndex, total, anchorIndex, hoveredIndex: null });
-    const other = processionLayout({ index: 0, total, anchorIndex, hoveredIndex: null });
+    const focal = processionLayout({ index: anchorIndex, total, anchorIndex, hoveredIndex: null, tuning });
+    const other = processionLayout({ index: 0, total, anchorIndex, hoveredIndex: null, tuning });
     expect(other.opacity).toBeLessThan(focal.opacity);
   });
 
   it('hovering a card makes it focal and dims the rest harder', () => {
-    const hovered = processionLayout({ index: 2, total, anchorIndex, hoveredIndex: 2 });
-    const dimmed = processionLayout({ index: 5, total, anchorIndex, hoveredIndex: 2 });
+    const hovered = processionLayout({ index: 2, total, anchorIndex, hoveredIndex: 2, tuning });
+    const dimmed = processionLayout({ index: 5, total, anchorIndex, hoveredIndex: 2, tuning });
     expect(hovered.rotZ).toBe(0);
     expect(hovered.opacity).toBe(1);
     expect(hovered.scale).toBeGreaterThan(1);
@@ -30,21 +32,21 @@ describe('processionLayout', () => {
   it('x coordinate is monotonically increasing with index', () => {
     let prev = -Infinity;
     for (let i = 0; i < total; i++) {
-      const t = processionLayout({ index: i, total, anchorIndex, hoveredIndex: null });
+      const t = processionLayout({ index: i, total, anchorIndex, hoveredIndex: null, tuning });
       expect(t.x).toBeGreaterThan(prev);
       prev = t.x;
     }
   });
 
   it('cards rise (y decreases) as index increases', () => {
-    const left = processionLayout({ index: 0, total, anchorIndex, hoveredIndex: null });
-    const right = processionLayout({ index: total - 1, total, anchorIndex, hoveredIndex: null });
+    const left = processionLayout({ index: 0, total, anchorIndex, hoveredIndex: null, tuning });
+    const right = processionLayout({ index: total - 1, total, anchorIndex, hoveredIndex: null, tuning });
     expect(right.y).toBeLessThan(left.y);
   });
 
   it('non-focal jitter rotation is bounded and stable across calls', () => {
-    const a = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null });
-    const b = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null });
+    const a = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null, tuning });
+    const b = processionLayout({ index: 3, total, anchorIndex, hoveredIndex: null, tuning });
     expect(a.rotZ).toBe(b.rotZ);
     expect(Math.abs(a.rotZ)).toBeLessThanOrEqual(6);
   });

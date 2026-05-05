@@ -13,8 +13,8 @@ interface Props {
 }
 
 export function TrackCard({ track, transform, isFocal, zIndex, onMouseEnter, onMouseLeave, onClick }: Props) {
-  const { x, y, z, rotZ, opacity, scale } = transform;
-  const transformString = `translate3d(${x}px, ${y}px, ${z}px) rotateZ(${rotZ}deg) scale(${scale})`;
+  const { x, y, z, rotX, rotY, rotZ, opacity, scale } = transform;
+  const transformString = `translate3d(${x}px, ${y}px, ${z}px) rotateX(${rotX}deg) rotateY(${rotY}deg) rotateZ(${rotZ}deg) scale(${scale})`;
 
   return (
     <motion.button
