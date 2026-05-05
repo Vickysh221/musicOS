@@ -6,7 +6,7 @@
       {
         "id": "58d9b2c2e907d094",
         "type": "tabs",
-        "dimension": 67.2945205479452,
+        "dimension": 19.801980198019802,
         "children": [
           {
             "id": "2cb89c07c8843e8c",
@@ -26,14 +26,12 @@
             "id": "b47af285212f5179",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "audio",
               "state": {
-                "file": "playlists/rolling-stones_some-girls_miss-you.playlist v0.1.md",
-                "mode": "source",
-                "source": false
+                "file": "musicos-exhibition/public/audio/10_joy-division_isolation.mp3"
               },
-              "icon": "lucide-file",
-              "title": "rolling-stones_some-girls_miss-you.playlist v0.1"
+              "icon": "lucide-file-audio",
+              "title": "10_joy-division_isolation"
             }
           }
         ],
@@ -42,16 +40,18 @@
       {
         "id": "3926783cbf3efec3",
         "type": "tabs",
-        "dimension": 32.70547945205479,
+        "dimension": 80.19801980198021,
         "children": [
           {
             "id": "55f1a14f33f38e96",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "audio",
+              "state": {
+                "file": "musicos-exhibition/public/audio/06_the-rolling-stones_miss-you.mp3"
+              },
+              "icon": "lucide-file-audio",
+              "title": "06_the-rolling-stones_miss-you"
             }
           }
         ]
@@ -101,7 +101,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 457.5
   },
   "right": {
     "id": "666ce3912cc3c954",
@@ -117,7 +117,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "playlists/rolling-stones_some-girls_miss-you.playlist v0.1.md",
+                "file": "musicos-exhibition/public/audio/06_the-rolling-stones_miss-you.mp3",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for rolling-stones_some-girls_miss-you.playlist v0.1"
+              "title": "Backlinks for 06_the-rolling-stones_miss-you"
             }
           },
           {
@@ -136,12 +136,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "playlists/rolling-stones_some-girls_miss-you.playlist v0.1.md",
+                "file": "musicos-exhibition/public/audio/06_the-rolling-stones_miss-you.mp3",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from rolling-stones_some-girls_miss-you.playlist v0.1"
+              "title": "Outgoing links from 06_the-rolling-stones_miss-you"
             }
           },
           {
@@ -179,13 +179,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "playlists/rolling-stones_some-girls_miss-you.playlist v0.1.md",
+                "file": "musicos-exhibition/public/audio/06_the-rolling-stones_miss-you.mp3",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of rolling-stones_some-girls_miss-you.playlist v0.1"
+              "title": "Outline of 06_the-rolling-stones_miss-you"
             }
           }
         ]
@@ -206,39 +206,53 @@
       "bases:Create new base": false
     }
   },
-  "active": "b47af285212f5179",
+  "active": "f9d5081c5e56adb1",
   "lastOpenFiles": [
-    "docs/superpowers/plans/sonic_cartography_sourcing_principles.md",
-    "docs/superpowers/plans/sonic_cartography_spec_v0.2.md",
-    "docs/superpowers/plans/upgrade_v0.2_to_v0.3.md",
-    "docs/superpowers/plans/factcheck_correction_v0.1_to_v0.2.md",
-    "playlists/rolling-stones_some-girls_miss-you.playlist v0.2.md",
-    "README.md",
-    "playlists/rolling-stones_some-girls_miss-you.playlist.md",
+    "musicos-exhibition/dist/covers/10_joy-division_isolation 2.jpg",
+    "musicos-exhibition/dist/audio/14_red-hot-chili-peppers_give-it-away 2.mp3",
+    "musicos-exhibition/dist/audio/05_bee-gees_stayin-alive 2.mp3",
+    "musicos-exhibition/dist/audio/08_devo_jocko-homo 2.mp3",
+    "musicos-exhibition/dist/audio/16_tame-impala_the-less-i-know-the-better 2.mp3",
+    "musicos-exhibition/dist/audio/02_sly-the-family-stone_family-affair 2.mp3",
+    "musicos-exhibition/dist/audio/01_james-brown_cold-sweat 2.mp3",
+    "musicos-exhibition/dist/covers/06_the-rolling-stones_miss-you 2.jpg",
+    "musicos-exhibition/dist/assets/index-D8ve2FKZ 2.css",
+    "musicos-exhibition/dist/covers/16_tame-impala_the-less-i-know-the-better 2.jpg",
+    "musicos-exhibition/dist/covers/17_khruangbin_mar-a-tambi-n 2.jpg",
+    "musicos-exhibition/dist/audio/18_mkgee_you-dreamed-of-me 2.mp3",
+    "musicos-exhibition/dist/audio/07_blondie_heart-of-glass 2.mp3",
+    "musicos-exhibition/dist/audio/15_daft-punk_get-lucky 2.mp3",
+    "musicos-exhibition/dist/covers/09_chic_good-times 2.jpg",
+    "musicos-exhibition/dist/covers/14_red-hot-chili-peppers_give-it-away 2.jpg",
+    "musicos-exhibition/dist/covers/13_prince_when-doves-cry 2.jpg",
+    "musicos-exhibition/dist/covers/04_parliament_give-up-the-funk-tear-the-roof-off-the-sucker 2.jpg",
+    "musicos-exhibition/node_modules/framer-motion/README.md",
+    "musicos-exhibition/node_modules/framer-motion/LICENSE.md",
+    "musicos-exhibition/node_modules/framer-motion/dom/README.md",
+    "musicos-exhibition/node_modules/framer-motion/client/README.md",
+    "musicos-exhibition/node_modules/motion-dom/LICENSE.md",
+    "musicos-exhibition/node_modules/motion-utils/LICENSE.md",
+    "docs/superpowers/plans/2026-05-05-inkwell-timeline.md",
+    "playlists/rolling-stones_some-girls_miss-you.playlist v0.3.md",
+    "episodes/rolling-stones_some-girls_miss-you.episode.v0.1.md",
+    "Foundations/user_calibration_corpus.md",
+    "docs/superpowers/plans/2026-05-05-bassline-dna-tts-implementation.md",
+    "docs/superpowers/specs/2026-05-05-bassline-dna-tts-design.md",
+    "musicos-exhibition/node_modules/source-map/README.md",
     "playlists/rolling-stones_some-girls_miss-you.playlist v0.1.md",
-    "playlists/rolling-stones_some-girls_miss-you.playlist 1.md",
-    "docs/superpowers/plans/2026-05-05-miss-you-episode-v03.md",
-    "episodes/rolling-stones_some-girls_miss-you.episode.md",
-    "episodes/rolling-stones_some-girls_miss-you.episode.json",
-    "episodes",
-    "rolling-stones_some-girls_miss-you.playlist 1.md",
-    "Untitled.md",
-    "Foundations/sonic_cartography_spec_v0.3.md",
-    "docs/superpowers/plans/2026-05-04-sonic-cartography-v02.md",
-    "Foundations/sonic_cartography_spec_v0.2.md",
-    "data/nodes/joy-division_closer_isolation.json",
-    "data/nodes/mkgee_two-star_you-dreamed-of-me.json",
-    "data/nodes/tame-impala_currents_the-less-i-know-the-better.json",
-    "data/nodes/khruangbin_con-todo-el-mundo_maria-tambien.json",
-    "data/nodes/lcd-soundsystem_sound-of-silver_all-my-friends.json",
-    "data/nodes/daft-punk_random-access-memories_get-lucky.json",
-    "data/nodes/rhcp_blood-sugar_give-it-away.json",
-    "data/nodes/prince_purple-rain_when-doves-cry.json",
-    "CLAUDE.md",
-    "Augustus Pablo.md",
-    "Foundations/网易云红心歌单_全量.md",
-    "backups/网易云红心歌单_全量.md",
-    "网易云红心歌单_全量.md",
-    "Welcome.md"
+    "musicos-exhibition/dist/covers/18_mkgee_you-dreamed-of-me.jpg",
+    "musicos-exhibition/dist/covers/17_khruangbin_mar-a-tambi-n.jpg",
+    "musicos-exhibition/dist/covers/16_tame-impala_the-less-i-know-the-better.jpg",
+    "musicos-exhibition/node_modules/postcss/README.md",
+    "musicos-exhibition/node_modules/vitest/README.md",
+    "musicos-exhibition/node_modules/vitest/LICENSE.md",
+    "musicos-exhibition/node_modules/vite/README.md",
+    "musicos-exhibition/node_modules/vite/LICENSE.md",
+    "musicos-exhibition/node_modules/nanoid/README.md",
+    "musicos-exhibition/node_modules/source-map-js/README.md",
+    "musicos-exhibition/node_modules/lightningcss/README.md",
+    "musicos-exhibition/node_modules/magic-string/README.md",
+    "musicos-exhibition/node_modules/csstype/README.md",
+    "musicos-exhibition/node_modules/picomatch/README.md"
   ]
 }
