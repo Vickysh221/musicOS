@@ -9,3 +9,10 @@ node_modules/
 
 # Git worktrees
 .worktrees/
+
+# Local secrets
+.env.local
+.env
+
+# TTS spike artifacts
+episodes/audio/spike/
