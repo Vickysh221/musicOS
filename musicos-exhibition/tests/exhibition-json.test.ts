@@ -78,9 +78,15 @@ describe('build-exhibition-json', () => {
     expect(data.every((e) => e.transcript_en_status === 'missing')).toBe(true);
   });
 
-  it('audio_url and album_cover_url are null in built output (Phase 1: not yet fetched)', () => {
+  it('audio_url is null in built output (Phase 1: not yet fetched)', () => {
     const tracks = data.filter((e): e is TrackExhibit => e.kind === 'track');
     expect(tracks.every((t) => t.audio_url === null)).toBe(true);
-    expect(tracks.every((t) => t.album_cover_url === null)).toBe(true);
+  });
+
+  it('album_cover_url is backfilled from public/covers/<slug>.jpg when present', () => {
+    const tracks = data.filter((e): e is TrackExhibit => e.kind === 'track');
+    // At least 15 of 18 tracks should have a non-null cover URL pointing at /covers/.
+    const withCovers = tracks.filter((t) => typeof t.album_cover_url === 'string' && t.album_cover_url!.startsWith('/covers/'));
+    expect(withCovers.length).toBeGreaterThanOrEqual(15);
   });
 });
