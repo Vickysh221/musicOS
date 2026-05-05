@@ -194,8 +194,10 @@ function findEpisodeNarration(
     const epSong = norm(t.song);
     // Exact match
     if (epArtist + epSong === wantArtist + wantSong) return t.narration_zh;
-    // Episode artist may include "feat. ..." suffixes — match if episode artist starts with playlist artist
+    // Episode artist may include "feat. ..." suffixes
     if (epSong === wantSong && epArtist.startsWith(wantArtist)) return t.narration_zh;
+    // Playlist song may have "(subtitle)" appended — match if playlist song starts with episode song
+    if (epArtist === wantArtist && wantSong.startsWith(epSong)) return t.narration_zh;
   }
   return null;
 }

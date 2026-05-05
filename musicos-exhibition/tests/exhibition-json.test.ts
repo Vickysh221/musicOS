@@ -60,18 +60,19 @@ describe('build-exhibition-json', () => {
     expect(th!.netease_song_id).toBeNull();
   });
 
-  it('16 tracks have transcript_zh_status === "complete" (T9 updated episode.md)', () => {
+  it('17 tracks have transcript_zh_status === "complete"', () => {
     const complete = data.filter(
       (e) => e.kind === 'track' && e.transcript_zh_status === 'complete',
     );
-    expect(complete).toHaveLength(16);
+    expect(complete).toHaveLength(17);
   });
 
-  it('2 tracks have transcript_zh_status === "placeholder" (pos 4 + pos 8 muted)', () => {
+  it('1 track has transcript_zh_status === "placeholder" (pos 8 Devo — muted)', () => {
     const placeholders = data.filter(
       (e) => e.kind === 'track' && e.transcript_zh_status === 'placeholder',
     );
-    expect(placeholders).toHaveLength(2);
+    expect(placeholders).toHaveLength(1);
+    expect((placeholders[0] as TrackExhibit).position).toBe(8);
   });
 
   it('all transcript_en_status values are "missing" (Phase 1)', () => {
