@@ -1,0 +1,11 @@
+# YouTube fetch manifest for Miss You Episode 1 — round 2 (7 tracks)
+# Format:  <video_id>|<filename_stem>
+# Run: python3 -m tools.fetch_audio_youtube tools/youtube_manifest.txt
+
+bVVwmRbBZ-I|05_bee-gees_stayin-alive
+KuRxXRuAz-I|06_the-rolling-stones_miss-you
+Er9xGRolrT4|09_chic_good-times
+Izx6DQUrsag|13_prince_when-doves-cry
+2Wx_UG_UjTY|14_red-hot-chili-peppers_give-it-away
+DvE7O3bLQgE|15_daft-punk_get-lucky
+2SUwOgmvzK4|16_tame-impala_the-less-i-know-the-better
