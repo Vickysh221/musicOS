@@ -6,7 +6,7 @@ import { TrackCard } from './TrackCard.js';
 import { Stepper } from './Stepper.js';
 import { TuningPanel } from './TuningPanel.js';
 import { processionLayout } from './timeline-keyframes.js';
-import { PRESETS, INTRO_STEP_MS, type Phase } from './presets.js';
+import { PRESETS, INTRO_STEP_MS, INTRO_TRANSITION_MS, type Phase } from './presets.js';
 import './timeline.css';
 
 interface Props {
@@ -115,7 +115,7 @@ export function TimelineScene({ tracks }: Props) {
           className="timeline-scene__stage-inner"
           style={{
             transform: `rotateX(${tuning.stageRotX}deg) rotateY(${tuning.stageRotY}deg) rotateZ(${tuning.stageRotZ}deg)`,
-            transition: 'transform 700ms cubic-bezier(0.22, 1, 0.36, 1)',
+            transition: `transform ${INTRO_TRANSITION_MS}ms cubic-bezier(0.22, 1, 0.36, 1)`,
           }}
         >
           {tracks.map((track, i) => {
@@ -130,6 +130,14 @@ export function TimelineScene({ tracks }: Props) {
             const isFocal = i === focalIndex;
             const isThisPlaying = playingPosition === track.position && isPlaying;
             const zIndex = isFocal ? 1000 : i + 1;
+            const cardTransition =
+              phase === 'intro1' || phase === 'intro3'
+                ? {
+                    type: 'tween' as const,
+                    duration: INTRO_TRANSITION_MS / 1000,
+                    ease: [0.22, 1, 0.36, 1] as [number, number, number, number],
+                  }
+                : undefined;
             return (
               <TrackCard
                 key={track.position}
@@ -141,6 +149,7 @@ export function TimelineScene({ tracks }: Props) {
                 isFocal={isFocal}
                 isPlaying={isThisPlaying}
                 zIndex={zIndex}
+                {...(cardTransition ? { transition: cardTransition } : {})}
               />
             );
           })}

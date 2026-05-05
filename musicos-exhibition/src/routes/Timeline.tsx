@@ -3,8 +3,9 @@ import { useExhibition } from '../store/exhibition.js';
 import { TimelineScene } from '../components/timeline/TimelineScene.js';
 import { GlobalPlayer } from '../components/GlobalPlayer.js';
 import { NowPlayingBar } from '../components/NowPlayingBar.js';
-import { INTRO_STEP_MS } from '../components/timeline/presets.js';
 import type { TrackExhibit, NonTrackExhibit } from '../types.js';
+
+const AUTOPLAY_DELAY_MS = 3000;
 
 export function Timeline() {
   const exhibits = useExhibition((s) => s.exhibits);
@@ -39,7 +40,7 @@ export function Timeline() {
     const t = setTimeout(() => {
       setMode('auto');
       play(first.position);
-    }, INTRO_STEP_MS + 100);
+    }, AUTOPLAY_DELAY_MS);
     return () => clearTimeout(t);
   }, [exhibits.length, opening, tracks, playingPosition, setMode, play]);
 

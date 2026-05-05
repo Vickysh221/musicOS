@@ -83,5 +83,10 @@ export const PRESETS: Record<Phase, Preset> = {
   playing: PLAYING,
 };
 
-// Stage durations (ms) before advancing to the next intro phase.
-export const INTRO_STEP_MS = 850;
+// Time held on intro1 before kicking off the transition to intro3.
+// Kept short so the first frame is barely a flash before the procession glides in.
+export const INTRO_STEP_MS = 80;
+
+// Duration of the intro1 → intro3 procession glide, used by both the stage
+// CSS transition and the per-card framer-motion tween so they stay in sync.
+export const INTRO_TRANSITION_MS = 1400;
