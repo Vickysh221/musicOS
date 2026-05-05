@@ -33,7 +33,7 @@ export function processionLayout(params: {
   hoveredIndex: number | null;
   tuning: TuningParams;
   /** Index that should sit at x=0. Defaults to the middle of the procession. */
-  centerIndex?: number;
+  centerIndex?: number | undefined;
 }): CardTransform {
   const { index, total, focalIndex, hoveredIndex, tuning, centerIndex } = params;
   const isFocal = index === focalIndex;
