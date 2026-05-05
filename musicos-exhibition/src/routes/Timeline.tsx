@@ -1,8 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useExhibition } from '../store/exhibition.js';
 import { TimelineScene } from '../components/timeline/TimelineScene.js';
 import { GlobalPlayer } from '../components/GlobalPlayer.js';
 import { NowPlayingBar } from '../components/NowPlayingBar.js';
+import { INTRO_STEP_MS } from '../components/timeline/presets.js';
 import type { TrackExhibit, NonTrackExhibit } from '../types.js';
 
 export function Timeline() {
@@ -10,6 +11,8 @@ export function Timeline() {
   const load = useExhibition((s) => s.load);
   const setMode = useExhibition((s) => s.setMode);
   const play = useExhibition((s) => s.play);
+  const playingPosition = useExhibition((s) => s.playingPosition);
+  const autoStartedRef = useRef(false);
 
   useEffect(() => {
     if (exhibits.length === 0) load();
@@ -24,6 +27,21 @@ export function Timeline() {
     const first = opening ?? tracks[0] ?? null;
     if (first) play(first.position);
   };
+
+  // Auto-trigger play from beginning once the intro animation has settled at intro3.
+  useEffect(() => {
+    if (autoStartedRef.current) return;
+    if (exhibits.length === 0) return;
+    if (playingPosition !== null) return;
+    const first = opening ?? tracks[0] ?? null;
+    if (!first) return;
+    autoStartedRef.current = true;
+    const t = setTimeout(() => {
+      setMode('auto');
+      play(first.position);
+    }, INTRO_STEP_MS + 100);
+    return () => clearTimeout(t);
+  }, [exhibits.length, opening, tracks, playingPosition, setMode, play]);
 
   return (
     <>

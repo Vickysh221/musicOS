@@ -32,7 +32,7 @@ export function TimelineScene({ tracks }: Props) {
   const tuning = useTuning();
   const applyPreset = useTuning((s) => s.applyPreset);
 
-  // Layout phase: intro1 → intro2 → intro3 on mount; flips to "playing" once playback starts.
+  // Layout phase: intro1 → intro3 on mount; flips to "playing" once playback starts.
   const [phase, setPhase] = useState<Phase>('intro1');
 
   // Sync the tuning store to the active phase preset so the panel mirrors what's on screen
@@ -43,12 +43,8 @@ export function TimelineScene({ tracks }: Props) {
 
   useEffect(() => {
     if (playingPosition !== null) return; // playing phase takes over below
-    const t1 = setTimeout(() => setPhase('intro2'), INTRO_STEP_MS);
-    const t2 = setTimeout(() => setPhase('intro3'), INTRO_STEP_MS * 2);
-    return () => {
-      clearTimeout(t1);
-      clearTimeout(t2);
-    };
+    const t = setTimeout(() => setPhase('intro3'), INTRO_STEP_MS);
+    return () => clearTimeout(t);
   }, [playingPosition]);
 
   useEffect(() => {

@@ -16,7 +16,6 @@ export const TrackCard = forwardRef<HTMLButtonElement, Props>(function TrackCard
   ref,
 ) {
   const { x, y, z, rotX, rotY, rotZ, opacity, scale } = transform;
-  const transformString = `translate3d(${x}px, ${y}px, ${z}px) rotateX(${rotX}deg) rotateY(${rotY}deg) rotateZ(${rotZ}deg) scale(${scale})`;
 
   const className =
     'track-card' +
@@ -29,11 +28,8 @@ export const TrackCard = forwardRef<HTMLButtonElement, Props>(function TrackCard
       type="button"
       tabIndex={-1}
       className={className}
-      style={{
-        transform: transformString,
-        opacity,
-        zIndex,
-      }}
+      style={{ zIndex }}
+      animate={{ x, y, z, rotateX: rotX, rotateY: rotY, rotateZ: rotZ, scale, opacity }}
       transition={{ type: 'spring', stiffness: 220, damping: 26, mass: 0.6 }}
       aria-label={`${track.position}. ${track.artist} — ${track.song}`}
     >
