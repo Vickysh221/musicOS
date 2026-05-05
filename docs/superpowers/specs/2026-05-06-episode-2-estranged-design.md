@@ -50,49 +50,61 @@
 
 ---
 
-## 4. 谱系草图（提交给 track-curator 之前的预拓展）
+## 4. 节点入选原则（critical）
 
-> 命中状态来自 `data/user_tracks.json` grep（2026-05-06）。命中=用户红心里有此具体曲；艺人在=艺人有红心曲但锚定的代表作不在；缺=艺人不在红心。
+**入选标准 = 节点对 `aria_solo_dialectic` 谱系的事实重要性**，由 spec §3.3 stopping rules + §4.3 epistemic tiering 决定。**用户红心命中状态不是过滤器**——它是叙事侧重信号，作用于：
+- Phase 0：focus 选择的灵感来源（已完成）
+- CLOSING template：点名"在你库里也命中"的接收者作收束
+- 标注 `red_heart_tier: hit / adjacent / blind_spot` 作为节点元数据，用于 transcript 的语气调节（"你早就听过的"/"你没碰过的"）
+
+参考第 1 期：James Brown — Cold Sweat、Parliament — Give Up the Funk 都不在用户红心里，仍是主干站点。本期同等处理。
+
+## 5. 谱系草图（提交给 track-curator 之前的预拓展）
+
+> 下表 `library_overlay` 列只用于 closing/语气调节，**不影响入选**。
+> `hit` = 此曲在红心；`adj` = 艺人在红心但此曲不在；`blind` = 艺人不在红心。
 
 ### 上溯（祖先 / upward, depth cap 15）
 
-| 节点 | 年份 | 用户库状态 | 角色 |
+| 节点 | 年份 | library_overlay | 在谱系中的角色 |
 |---|---|---|---|
-| 19c 意大利歌剧 aria–cabaletta 形式（Bellini / Donizetti / 早期 Verdi） | ~1830–1850 | 缺（祖源节点，作背景叙述非曲目）| 双段式"慢咏叹+快炫技"原型 |
-| Layla (Derek and the Dominos) | 1970 | **命中** | 极端切分的人声半 + 器乐半 |
-| Child in Time (Deep Purple) | 1970 | 艺人在（8首，未命中本曲）| 原型——但用户库没此曲，**降级为简述**，主用 Deep Purple **Burn** 作为同手法替身 |
-| Stairway to Heaven (Led Zeppelin) | 1971 | 艺人在（8首，未命中本曲）| 原型——同样降级，主用 **Achilles Last Stand** 作为 Page 双段式叙事的替身 |
-| Free Bird (Lynyrd Skynyrd) | 1973 | **命中** | 最极端的 aria→solo 段落式接力 |
-| Bohemian Rhapsody (Queen) | 1975 | **命中**（双 album 收录）| 歌剧段 + May solo 的并置——最直接的 Estranged 致敬源 |
-| Won't Get Fooled Again (The Who) | 1971 | **命中** | Daltrey 嘶吼 + Townshend solo 的辩证（同代对话节点）|
+| 19c 意大利歌剧 aria–cabaletta 形式（Bellini *Norma* "Casta Diva" + cabaletta "Ah! bello a me ritorna" / 早期 Verdi） | ~1830–1850 | blind | 双段式"慢咏叹+快炫技"形式的原型；这一跳标 `consensus` 而非 `fact`（"摇滚音乐家是否真的听过 cabaletta"无法直接证据化）|
+| Layla (Derek and the Dominos) | 1970 | hit | 极端切分的人声半 + 器乐半 coda |
+| Child in Time (Deep Purple) | 1970 | adj | Gillan 无词咏叹 + Blackmore 古典背景延展 solo——**aria↔solo 在 rock 里最早最纯的样本**，必须入选 |
+| Stairway to Heaven (Led Zeppelin) | 1971 | adj | Plant 抒情线 + Page 阶梯式 solo——这一手法在白人摇滚里的成型节点，必须入选 |
+| Won't Get Fooled Again (The Who) | 1971 | hit | Daltrey 嘶吼 + Townshend solo 的辩证 |
+| Free Bird (Lynyrd Skynyrd) | 1973 | hit | 最极端的 aria→solo 段落式接力 |
+| Bohemian Rhapsody (Queen) | 1975 | hit（双 album 收录）| 歌剧段 + May solo 并置——最直接的 Estranged 致敬源 |
 
 ### 同代对话（lateral, depth cap 12）
 
-| 节点 | 年份 | 用户库状态 | 角色 |
+| 节点 | 年份 | library_overlay | 在谱系中的角色 |
 |---|---|---|---|
-| November Rain (GnR) | 1991 | **命中**（原版 + 2022 Version 双重红心，Use Your Illusion I） | 同三部曲双胞胎；用户对此曲有重复信号，应作为强 lateral 站点 |
-| Fade to Black (Metallica) | 1984 | **命中** | 金属版 aria-solo 辩证；构造非常类似（轻起重落+延展 solo 收尾）|
+| November Rain (GnR) | 1991 | hit（原版 + 2022 Version 双重）| 同三部曲双胞胎，强 lateral 站点 |
+| Fade to Black (Metallica) | 1984 | hit | 金属版 aria-solo 辩证；轻起重落+延展 solo 收尾 |
+| Nothing Else Matters (Metallica) | 1991 | adj | 同年同形态金属版本 |
 
 ### 下溯（接收者 / downward, depth cap 20）
 
-| 节点 | 年份 | 用户库状态 | 角色 |
+| 节点 | 年份 | library_overlay | 在谱系中的角色 |
 |---|---|---|---|
-| 椎名林檎 — 丸ノ内サディスティック | 1999 | **命中** | 日本一侧的接收者；solo 与人声轮流叙事 |
-| 黑豹乐队 — Don't Break My Heart | 1991 | **命中** | 中国一侧；同年同形态独立发生（地理对位） |
-| Oasis — The Masterplan / Whatever | 1990s | 艺人在（11首，未命中 Champagne Supernova）| 长 instrumental coda 接抒情人声 |
-| 椎名林檎 — APPLE / MY FOOLISH HEART | 2000s | **命中** | 后期接收延展 |
+| Champagne Supernova (Oasis) | 1995 | adj | 长 instrumental coda 接抒情人声——本期下溯到 Britpop 的关键节点，必须入选 |
+| 椎名林檎 — 丸ノ内サディスティック | 1999 | hit | 日本一侧接收者；solo 与人声轮流叙事 |
+| Welcome to the Black Parade (MCR) | 2006 | blind | 21 世纪剧场摇滚里的 aria-solo 新解 |
+| 椎名林檎 — 丸ノ内サディスティック / APPLE | 2000s | hit | 后期接收延展 |
+| 黑豹乐队 — Don't Break My Heart | 1991 | hit | 中国一侧同年同形态独立发生（地理对位）|
+| Knights of Cydonia (Muse) | 2006 | blind | 21 世纪英国版 epic-rock 的双主角接续，候选 |
 
-### 待研究 (research questions for track-curator/connections-author)
+### 研究问题 (research questions for track-curator / connections-author)
 
-1. ~~November Rain 是否命中？~~ **已确认命中**（原版 + 2022 Version 双重红心）
-2. 用户红心里是否有其他可作为"Stairway 替身"的 Led Zep 长篇（Achilles 是首选，但要 track-curator 阶段核实其双主角结构强度）
-3. 黑豹《无地自容》是否也命中（《Don't Break My Heart》已确认）
-4. 唐朝乐队整艺人不在红心——确认中国一侧只走黑豹这一支
-5. 19 世纪 aria–cabaletta 用作叙述背景而非曲目时，需要具体援引一首作品（候选：Bellini *Norma* "Casta Diva" + cabaletta "Ah! bello a me ritorna"）以保证 fact 层的 ≥2 source 双重引用规则
+1. 黑豹《无地自容》、唐朝《国际歌》（如有）、声音玩具长曲是否也属同支——track-curator 阶段核
+2. Bellini *Norma* 那两站要 ≥2 来源（音乐学层面）核 cabaletta 形式定义本身，再 ≥2 来源核"摇滚长曲传承自意大利歌剧"这一文化判断
+3. Free Bird → Estranged 的直接文化链是否有具体证词（Slash/Axl 引用 Skynyrd？），影响 epistemic tier
+4. Achilles Last Stand 是否单独入选作 Page 第二个 stop（与 Stairway 并列），还是让位（避免 Led Zep 占两站）
 
 ---
 
-## 5. 站点目标与预算
+## 6. 站点目标与预算
 
 - **目标 stop 数**：~18 站（含锚点），与第 1 期等量
 - **年份跨度**：~1830 (歌剧 aria–cabaletta 背景节点) → 1970–1991 主干 → 现役接收者
@@ -102,7 +114,7 @@
 
 ---
 
-## 6. M-机制对接 (spec §6)
+## 7. M-机制对接 (spec §6)
 
 - **M1 translation_aesthetic** ✓ 主轴。本期把 M1 从"跨流派"应用到"歌内双声部"
 - **M3 member_period_attention** ✓ 强相关：Estranged 制作期的 Axl–Slash 关系（Use Your Illusion 后期已紧张），是本期 `member_dynamics` 的核心叙述点
@@ -111,16 +123,17 @@
 
 ---
 
-## 7. Out of scope
+## 8. Out of scope
 
 - ❌ 不做 portrait anthology（合集型）
 - ❌ 不把 Initials B.B. / How Soon Is Now? 收进本期——它们各自是独立 episode
 - ❌ Crazy Train / Randy Rhoads 不作为独立段落出现（虽然属于"主奏吉他英雄"线，但偏 `epic_lead_protagonist`，与本期双主角辩证的 focus 错位）；如出现仅作 1 站背景对照
 - ❌ 不写 Slash 的全部 GnR 作品综述——本期只为 aria↔solo 辩证的谱系服务
+- ❌ **不**用"红心命中"作为节点过滤器（参见 §4）——这是反原则
 
 ---
 
-## 8. 自检（spec §9.3 草拟版）
+## 9. 自检（spec §9.3 草拟版）
 
 - [ ] 锚点理由是否说清"为什么不是 November Rain"
 - [ ] 上溯里的"歌剧祖源"那一跳标了 consensus 而非 fact，且双源
@@ -132,7 +145,7 @@
 
 ---
 
-## 9. Pipeline 接续
+## 10. Pipeline 接续
 
 设计被批准 → writing-plans skill 产出实施计划 → track-curator (Phase 0) → connections-author (Phase 1) → transcript-author (Phase 2) → episode_audio_pipeline.md 走 TTS → fusion → exhibition wiring。
 
@@ -146,7 +159,7 @@
 
 ---
 
-## 10. Open decisions for user
+## 11. Open decisions for user
 
 1. **Episode 标题中文（ZH）**——候选：
    - "双主角 — Estranged"
