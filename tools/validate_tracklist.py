@@ -38,6 +38,10 @@ def main(slug: str) -> None:
     if len(rows) != EXPECTED_ROWS:
         fail(f"expected {EXPECTED_ROWS} rows, got {len(rows)}")
 
+    positions = sorted([r["position"] for r in rows])
+    if positions != list(range(1, EXPECTED_ROWS + 1)):
+        fail(f"positions are not contiguous 1–{EXPECTED_ROWS}: got {positions}")
+
     bases = [r for r in rows if r.get("is_base_node")]
     if len(bases) != 1:
         fail(f"expected exactly one is_base_node, got {len(bases)}")
@@ -49,6 +53,17 @@ def main(slug: str) -> None:
             fail(f"row position={r.get('position')} node_id={nid!r} not found in registry")
         if not r.get("muted_this_episode") and not r.get("focus_relevance_note"):
             fail(f"row position={r.get('position')} missing focus_relevance_note")
+
+    map_path = ROOT / "maps" / f"{slug}.map.json"
+    if map_path.exists():
+        map_data = json.loads(map_path.read_text())
+        map_node_ids = set(map_data.get("node_ids", []))
+        for r in rows:
+            nid = r.get("node_id")
+            if nid and nid not in map_node_ids:
+                fail(f"row position={r.get('position')} node_id={nid!r} not found in map node_ids")
+    else:
+        print(f"WARNING: map file {map_path} not found — skipping map cross-reference check", file=sys.stderr)
 
     non_muted = [r for r in rows if not r.get("muted_this_episode")]
     hyps = [r for r in non_muted if r.get("evidence_basis") == "hypothesis"]
