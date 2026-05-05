@@ -38,17 +38,17 @@ ROOT = Path(__file__).resolve().parent.parent
 STYLE_BY_POSITION: dict[int, str] = {
     0: "PASSTHROUGH",
     1: "C",   # JB anchor — bass intro should land first
-    2: "A",
+    2: "C",   # Family Affair — needs preroll for groove
     3: "C",
-    4: "A",
-    5: "A",
+    4: "C",   # Give Up the Funk — preroll for P-Funk entry
+    5: "C",   # Stayin' Alive — preroll for the famous intro
     6: "C",   # Miss You anchor, 622-char narration
     7: "A",
     8: "C_SHORT",  # muted, 30s music only
     9: "C",
-    10: "A",
+    10: "C",  # Isolation — preroll for the bassline
     11: "C",
-    12: "A",
+    12: "C",  # Another One Bites the Dust — preroll for that bassline
     13: "A",
     14: "A",
     15: "A",
