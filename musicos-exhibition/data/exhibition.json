@@ -8,7 +8,8 @@
     "transcript_zh_status": "complete",
     "transcript_en_status": "missing",
     "narrator_persona_zh": null,
-    "narrator_persona_en": null
+    "narrator_persona_en": null,
+    "fusion_audio_url": "/audio_fusion/00_opening.mp3"
   },
   {
     "kind": "track",
@@ -109,7 +110,8 @@
         "connection_id": "conn_001_to_009_groove_dna",
         "archive_reason": "low_focus_relevance"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/01_james-brown_cold-sweat.mp3"
   },
   {
     "kind": "track",
@@ -212,7 +214,8 @@
         "connection_id": "conn_002_to_013_groove_dna",
         "archive_reason": "off_topic_for_episode"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/02_sly-the-family-stone_family-affair.mp3"
   },
   {
     "kind": "track",
@@ -319,7 +322,8 @@
         "connection_id": "conn_003_to_013_groove_dna",
         "archive_reason": "off_topic_for_episode"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/03_david-bowie_fame.mp3"
   },
   {
     "kind": "track",
@@ -426,7 +430,8 @@
         "connection_id": "conn_004_to_017_groove_dna",
         "archive_reason": "low_focus_relevance"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/04_parliament_give-up-the-funk-tear-the-roof-off-the-sucker.mp3"
   },
   {
     "kind": "track",
@@ -533,7 +538,8 @@
         "connection_id": "conn_005_to_018_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/05_bee-gees_stayin-alive.mp3"
   },
   {
     "kind": "track",
@@ -679,7 +685,8 @@
         "connection_id": "conn_006_to_012_groove_dna",
         "archive_reason": "already_told"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/06_the-rolling-stones_miss-you.mp3"
   },
   {
     "kind": "track",
@@ -786,7 +793,8 @@
         "connection_id": "conn_007_to_011_groove_dna",
         "archive_reason": "low_focus_relevance"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/07_blondie_heart-of-glass.mp3"
   },
   {
     "kind": "track",
@@ -824,7 +832,8 @@
     "connections_lateral": [],
     "narrative_weight": "bridge",
     "strong_connection_id": null,
-    "archived_weak_connections": []
+    "archived_weak_connections": [],
+    "fusion_audio_url": "/audio_fusion/08_devo_jocko-homo.mp3"
   },
   {
     "kind": "track",
@@ -931,7 +940,8 @@
         "connection_id": "conn_009_to_015_personnel_bridge_bass",
         "archive_reason": "already_told"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/09_chic_good-times.mp3"
   },
   {
     "kind": "track",
@@ -1012,7 +1022,8 @@
         "connection_id": "conn_010_to_011_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/10_joy-division_isolation.mp3"
   },
   {
     "kind": "track",
@@ -1120,7 +1131,8 @@
         "connection_id": "conn_011_to_015_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/11_talking-heads_once-in-a-lifetime.mp3"
   },
   {
     "kind": "track",
@@ -1236,7 +1248,8 @@
         "connection_id": "conn_012_to_017_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/12_queen_another-one-bites-the-dust.mp3"
   },
   {
     "kind": "track",
@@ -1338,7 +1351,8 @@
         "connection_id": "conn_013_to_018_groove_dna",
         "archive_reason": "already_told"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/13_prince_when-doves-cry.mp3"
   },
   {
     "kind": "track",
@@ -1440,7 +1454,8 @@
         "connection_id": "conn_014_to_018_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/14_red-hot-chili-peppers_give-it-away.mp3"
   },
   {
     "kind": "track",
@@ -1547,7 +1562,8 @@
         "connection_id": "conn_015_to_017_gear_lineage_bass",
         "archive_reason": "already_told"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/15_daft-punk_get-lucky.mp3"
   },
   {
     "kind": "track",
@@ -1649,7 +1665,8 @@
         "connection_id": "conn_016_to_018_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/16_tame-impala_the-less-i-know-the-better.mp3"
   },
   {
     "kind": "track",
@@ -1747,7 +1764,8 @@
         "connection_id": "conn_012_to_017_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/17_khruangbin_mar-a-tambi-n.mp3"
   },
   {
     "kind": "track",
@@ -1835,7 +1853,8 @@
         "connection_id": "conn_016_to_018_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/18_mkgee_you-dreamed-of-me.mp3"
   },
   {
     "kind": "narration",
@@ -1846,7 +1865,8 @@
     "transcript_zh_status": "complete",
     "transcript_en_status": "missing",
     "narrator_persona_zh": null,
-    "narrator_persona_en": null
+    "narrator_persona_en": null,
+    "fusion_audio_url": "/audio_fusion/19_interlude.mp3"
   },
   {
     "kind": "narration",
@@ -1857,6 +1877,7 @@
     "transcript_zh_status": "complete",
     "transcript_en_status": "missing",
     "narrator_persona_zh": null,
-    "narrator_persona_en": null
+    "narrator_persona_en": null,
+    "fusion_audio_url": "/audio_fusion/20_closing.mp3"
   }
 ]

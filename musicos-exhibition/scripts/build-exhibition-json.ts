@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, mkdirSync, existsSync, readdirSync } from 'node:fs';
 import { spawnSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -276,6 +276,20 @@ function main() {
     // first run — no existing file, prevAudio stays empty
   }
 
+  // Detect fusion audio (narration+music stitched) from public/audio_fusion/<NN>_*.mp3
+  function detectFusionUrl(position: number): string | null {
+    const fusionDir = path.resolve(__dirname, '../public/audio_fusion');
+    if (!existsSync(fusionDir)) return null;
+    const prefix = `${String(position).padStart(2, '0')}_`;
+    try {
+      const entries = readdirSync(fusionDir);
+      const match = entries.find((f) => f.startsWith(prefix) && f.endsWith('.mp3'));
+      return match ? `/audio_fusion/${match}` : null;
+    } catch {
+      return null;
+    }
+  }
+
   const exhibits: Exhibit[] = [];
 
   // Position 0 — opening (narrations sit at 0/19/20 so tracks keep playlist positions 1..18)
@@ -289,6 +303,7 @@ function main() {
     transcript_en_status: 'missing',
     narrator_persona_zh: null,
     narrator_persona_en: null,
+    fusion_audio_url: detectFusionUrl(0),
   } satisfies NonTrackExhibit);
 
   // Positions 1..18 — tracks (matching playlist positions)
@@ -324,6 +339,7 @@ function main() {
         ? null
         : (NETEASE_ID_CORRECTIONS[t.position] ?? t.netease_song_id),
       audio_url: prevAudio.get(t.position)?.audio_url ?? null,
+      fusion_audio_url: detectFusionUrl(t.position),
       album_cover_url: prevAudio.get(t.position)?.album_cover_url ?? detectedCoverUrl,
       duration_seconds: prevAudio.get(t.position)?.duration_seconds ?? null,
       unavailable: prevAudio.get(t.position)?.unavailable ?? false,
@@ -363,6 +379,7 @@ function main() {
     transcript_en_status: 'missing',
     narrator_persona_zh: null,
     narrator_persona_en: null,
+    fusion_audio_url: detectFusionUrl(19),
   } satisfies NonTrackExhibit);
 
   // Position 20 — closing
@@ -376,6 +393,7 @@ function main() {
     transcript_en_status: 'missing',
     narrator_persona_zh: null,
     narrator_persona_en: null,
+    fusion_audio_url: detectFusionUrl(20),
   } satisfies NonTrackExhibit);
 
   // Fill album from data/nodes

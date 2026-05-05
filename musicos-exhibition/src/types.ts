@@ -72,6 +72,7 @@ export interface TrackExhibit extends ExhibitBase {
   mechanism_tags: Mechanism[];
   netease_song_id: string | null;
   audio_url: string | null;
+  fusion_audio_url: string | null;
   album_cover_url: string | null;
   duration_seconds: number | null;
   unavailable: boolean;
@@ -92,6 +93,7 @@ export interface TrackExhibit extends ExhibitBase {
 
 export interface NonTrackExhibit extends ExhibitBase {
   kind: 'narration';
+  fusion_audio_url: string | null;
 }
 
 export type Exhibit = TrackExhibit | NonTrackExhibit;

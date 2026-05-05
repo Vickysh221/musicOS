@@ -59,7 +59,8 @@ export function TrackDetail() {
   const transcriptStatus =
     language === 'zh' ? track.transcript_zh_status : track.transcript_en_status;
   const cover = track.album_cover_url;
-  const audioAvailable = Boolean(track.audio_url);
+  const playbackUrl = track.fusion_audio_url ?? track.audio_url;
+  const audioAvailable = Boolean(playbackUrl);
 
   return (
     <div className="detail">
@@ -98,15 +99,15 @@ export function TrackDetail() {
             <div className="detail__play-caption">源不可用 / source unavailable</div>
           )}
 
-          {track.audio_url && (
+          {playbackUrl && (
             <audio
               ref={audioRef}
-              src={track.audio_url}
+              src={playbackUrl}
               autoPlay={mode === 'auto'}
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
               onEnded={handleEnded}
-              key={track.audio_url}
+              key={playbackUrl}
               style={{ display: 'none' }}
             />
           )}
