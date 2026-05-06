@@ -5,7 +5,7 @@ import { useTuning } from '../../store/tuning.js';
 import { TrackCard } from './TrackCard.js';
 import { Stepper } from './Stepper.js';
 import { TuningPanel } from './TuningPanel.js';
-import { processionLayout } from './timeline-keyframes.js';
+import { processionLayout, arcLayout } from './timeline-keyframes.js';
 import { PRESETS, INTRO_STEP_MS, INTRO_TRANSITION_MS, type Phase } from './presets.js';
 import './timeline.css';
 
@@ -127,8 +127,8 @@ export function TimelineScene({ tracks }: Props) {
           className="timeline-scene__stage-inner"
           style={{
             transform:
-              isMobile && phase === 'playing'
-                ? 'rotateX(0deg) rotateY(0deg) rotateZ(0deg)'
+              phase === 'playing'
+                ? `translateX(-55px) rotateX(${tuning.playingRotX}deg) rotateY(0deg) rotateZ(0deg)`
                 : `rotateX(${tuning.stageRotX}deg) rotateY(${tuning.stageRotY}deg) rotateZ(${tuning.stageRotZ}deg)`,
             transition: `transform ${INTRO_TRANSITION_MS}ms cubic-bezier(0.22, 1, 0.36, 1)`,
           }}
@@ -144,9 +144,9 @@ export function TimelineScene({ tracks }: Props) {
             });
             const isFocal = i === focalIndex;
             const isThisPlaying = playingPosition === track.position && isPlaying;
-            // On mobile, the playing card sits flat and centered so the user can read it head-on.
+            // During playback: playing card is flat + centered; others orbit the circular ring.
             const transform =
-              isMobile && phase === 'playing' && i === playingIndex
+              phase === 'playing' && i === playingIndex
                 ? {
                     x: 0,
                     y: 0,
@@ -157,6 +157,15 @@ export function TimelineScene({ tracks }: Props) {
                     opacity: 1,
                     scale: tuning.focalScale,
                   }
+                : phase === 'playing' && playingIndex >= 0
+                ? arcLayout({
+                    index: i,
+                    total,
+                    playingIndex,
+                    arcSpacing: tuning.arcSpacing,
+                    arcDepth: tuning.arcDepth,
+                    arcRotStep: tuning.arcRotStep,
+                  })
                 : baseTransform;
             const zIndex = isFocal ? 1000 : i + 1;
             const cardTransition =

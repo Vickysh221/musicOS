@@ -29,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  perspective-origin: 50% 55%;
+  perspective-origin: 50% 50%;
 }
 
 .timeline-scene__stage-inner {

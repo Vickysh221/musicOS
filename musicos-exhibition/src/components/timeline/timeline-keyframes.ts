@@ -21,6 +21,38 @@ const FOCAL_OPACITY = 1;
 const DIM_OPACITY = 0.5;
 
 /**
+ * Gentle parabolic arc layout used while a track is playing.
+ * Cards sit on a shallow arc — same horizontal spacing as the original
+ * linear procession, but sides curve back in Z (bird's-eye readable).
+ * The playing card at relOffset=0 is the front apex; sides recede quadratically.
+ * All shape params come from TuningParams so they are live-adjustable.
+ */
+export function arcLayout(params: {
+  index: number;
+  total: number;
+  playingIndex: number;
+  arcSpacing: number;
+  arcDepth: number;
+  arcRotStep: number;
+}): CardTransform {
+  const { index, total, playingIndex, arcSpacing, arcDepth, arcRotStep } = params;
+  const relOffset = index - playingIndex;
+
+  const x = relOffset * arcSpacing;
+  const z = -arcDepth * relOffset * relOffset; // parabola: 0 at center, recedes on sides
+  const y = 0;
+
+  const rotY = -relOffset * arcRotStep; // slight inward turn per step
+  const rotX = 0;
+  const rotZ = 0;
+
+  const halfSpan = Math.max(1, Math.floor(total / 2));
+  const opacity = Math.max(0.15, 1 - (Math.abs(relOffset) / halfSpan) * 0.7);
+
+  return { x, y, z, rotX, rotY, rotZ, opacity, scale: 1 };
+}
+
+/**
  * Single static layout for the procession state. Cards march left-to-right,
  * rising and approaching the camera as index increases. The focal card
  * (hovered, or anchor when nothing hovered) is brightened, lifted, scaled,

@@ -59,6 +59,29 @@ function splitSections(text: string | null): string[] {
     .filter(Boolean);
 }
 
+/**
+ * Returns the start time (seconds) of each section, weighted by character
+ * count. Sections with more text take proportionally longer to narrate.
+ */
+function sectionStartTimes(sections: string[], duration: number): number[] {
+  if (sections.length === 0 || duration <= 0) return [];
+  const totalChars = sections.reduce((sum, s) => sum + s.length, 0);
+  let elapsed = 0;
+  return sections.map((s) => {
+    const t = elapsed;
+    elapsed += (s.length / totalChars) * duration;
+    return t;
+  });
+}
+
+function activeSectionIdx(startTimes: number[], currentTime: number): number {
+  let idx = 0;
+  for (let i = 0; i < startTimes.length; i++) {
+    if (currentTime >= startTimes[i]) idx = i;
+  }
+  return idx;
+}
+
 function Marquee({ text, className }: { text: string; className?: string }) {
   const viewportRef = useRef<HTMLDivElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
@@ -132,18 +155,16 @@ export function NowPlayingBar() {
     : null;
 
   const sections = useMemo(() => splitSections(transcript), [transcript]);
+  const startTimes = useMemo(() => sectionStartTimes(sections, duration), [sections, duration]);
 
   if (!exhibit) return null;
 
-  const progress = duration > 0 ? currentTime / duration : 0;
-  const sectionIdx =
-    sections.length > 0 ? Math.min(sections.length - 1, Math.floor(progress * sections.length)) : 0;
+  const sectionIdx = startTimes.length > 0 ? activeSectionIdx(startTimes, currentTime) : 0;
   const currentSection = sections[sectionIdx] ?? '';
 
   const onSeekToSection = (idx: number) => {
-    if (duration <= 0 || sections.length === 0) return;
-    const t = (idx / sections.length) * duration + 0.05;
-    seekTo(t);
+    if (duration <= 0 || startTimes.length === 0) return;
+    seekTo((startTimes[idx] ?? 0) + 0.05);
   };
 
   const isTrack = exhibit.kind === 'track';

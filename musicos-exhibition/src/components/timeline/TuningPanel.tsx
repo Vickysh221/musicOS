@@ -44,6 +44,15 @@ const GROUPS: { title: string; sliders: SliderSpec[] }[] = [
       { key: 'perspective', label: 'perspect.', min: 400, max: 4000, step: 50 },
     ],
   },
+  {
+    title: 'Arc (playing)',
+    sliders: [
+      { key: 'arcSpacing', label: 'spacing', min: 60, max: 1200, step: 1 },
+      { key: 'arcDepth', label: 'depth', min: 0, max: 150, step: 0.5 },
+      { key: 'arcRotStep', label: 'rot/step', min: 0, max: 20, step: 0.5 },
+      { key: 'playingRotX', label: 'tilt X', min: -80, max: 0, step: 1 },
+    ],
+  },
 ];
 
 export function TuningPanel() {

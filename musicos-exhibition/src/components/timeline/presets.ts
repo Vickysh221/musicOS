@@ -2,6 +2,8 @@ import type { TuningParams } from '../../store/tuning.js';
 
 type Preset = Omit<TuningParams, 'panelOpen'>;
 
+const ARC_DEFAULTS = { arcSpacing: 454, arcDepth: 122, arcRotStep: 13, playingRotX: -19 };
+
 export const INTRO_1: Preset = {
   gapX: 240,
   riseY: -1,
@@ -18,6 +20,7 @@ export const INTRO_1: Preset = {
   stageRotY: -37.5,
   stageRotZ: 10.5,
   perspective: 400,
+  ...ARC_DEFAULTS,
 };
 
 export const INTRO_2: Preset = {
@@ -36,6 +39,7 @@ export const INTRO_2: Preset = {
   stageRotY: -37.5,
   stageRotZ: 10.5,
   perspective: 400,
+  ...ARC_DEFAULTS,
 };
 
 export const INTRO_3: Preset = {
@@ -54,6 +58,7 @@ export const INTRO_3: Preset = {
   stageRotY: -46,
   stageRotZ: -4.5,
   perspective: 4000,
+  ...ARC_DEFAULTS,
 };
 
 export const PLAYING: Preset = {
@@ -63,15 +68,16 @@ export const PLAYING: Preset = {
   jitterDeg: 0,
   cardRotX: -8,
   cardRotY: 65,
-  focalScale: 1.8,
-  focalLift: 60,
-  focalZBoost: 61,
+  focalScale: 1.45,
+  focalLift: 0,
+  focalZBoost: 20,
   cardWidth: 201,
   cardHeight: 204,
   stageRotX: 0.5,
   stageRotY: -37.5,
   stageRotZ: 6.5,
   perspective: 4000,
+  ...ARC_DEFAULTS,
 };
 
 export type Phase = 'intro1' | 'intro2' | 'intro3' | 'playing';

@@ -21,6 +21,11 @@ export interface TuningParams {
   stageRotY: number;       // deg
   stageRotZ: number;       // deg
   perspective: number;     // px
+  // Arc layout (playing phase only)
+  arcSpacing: number;      // px between adjacent card centers along the arc
+  arcDepth: number;        // parabolic Z-recession coefficient (px per offset²)
+  arcRotStep: number;      // inward rotY per offset step (deg)
+  playingRotX: number;     // stage rotateX during playing — bird's-eye tilt (deg)
   // Visibility of the tuning panel
   panelOpen: boolean;
 }
@@ -41,6 +46,10 @@ export const TUNING_DEFAULTS: TuningParams = {
   stageRotY: -54,
   stageRotZ: -4.5,
   perspective: 4000,
+  arcSpacing: 454,
+  arcDepth: 122,
+  arcRotStep: 13,
+  playingRotX: -19,
   panelOpen: false,
 };
 
