@@ -18,15 +18,24 @@
     "release_circumstances": "Album October 1995. Never released as a UK single (only US/Australia). Duration and position on the album designated it as an album-track statement rather than a radio hit — the dual-protagonist structure was allowed to breathe at full length."
   },
   "user_coverage": {
-    "red_heart_tier": "blind_spot",
-    "netease_song_id": null,
-    "platform_link": null,
-    "notes": "Oasis present in user library (The Masterplan, Whatever) but Champagne Supernova not red-hearted. NetEase availability may vary by region."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2021-10-25: The Masterplan (同艺人不同时期)",
+      "红心 2022-08-04: Whatever (同艺人不同时期)",
+      "红心 2022-08-06: Up In The Sky (同艺人不同时期)",
+      "红心 2022-08-06: Cigarettes & Alcohol (同艺人不同时期)",
+      "红心 2022-08-06: Some Might Say (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Champagne_Supernova",
     "https://www.radiox.co.uk/artists/oasis/how-noel-gallagher-wrote-champagne-supernova/"
   ],
-  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+  "tags": [
+    "dual_protagonist_structure",
+    "aria_form_descent",
+    "extended_solo_as_movement"
+  ]
 }

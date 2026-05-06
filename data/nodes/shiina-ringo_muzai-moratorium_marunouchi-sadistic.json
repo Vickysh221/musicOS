@@ -18,15 +18,24 @@
     "release_circumstances": "Album February 1999. The song is one of Shiina's representative works and has been extensively covered — the chord progression's widespread adoption in J-pop is a measure of the song's structural influence."
   },
   "user_coverage": {
-    "red_heart_tier": "hit",
-    "netease_song_id": 642776,
-    "platform_link": "https://music.163.com/#/song?id=642776",
-    "notes": "In user red-heart library."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2022-10-09: APPLE (同艺人不同时期)",
+      "红心 2022-10-09: 丸ノ内サディスティック (同艺人不同时期)",
+      "红心 2022-10-25: りんごのうた (同艺人不同时期)",
+      "红心 2022-10-29: MY FOOLISH HEART ～crazy on earth～ (同艺人不同时期)",
+      "红心 2022-11-09: ジユーダム (ヒャダインのリリリリ☆リミックス) (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://ja.wikipedia.org/wiki/%E4%B8%B8%E3%83%8E%E5%86%85%E3%82%B5%E3%83%87%E3%82%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF",
     "https://en.wikipedia.org/wiki/Muzai_Moratorium"
   ],
-  "tags": ["dual_protagonist_structure", "aria_form_descent", "methodological_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "aria_form_descent",
+    "methodological_descent"
+  ]
 }

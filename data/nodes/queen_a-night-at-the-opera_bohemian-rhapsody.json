@@ -18,10 +18,15 @@
     "release_circumstances": "Single released October 1975; album November 1975. The guitar solo's explicit framing as a voice — 'I sang the verse on the guitar' (May, Guitar World interview, documented) — is the key lineage fact for aria_solo_dialectic."
   },
   "user_coverage": {
-    "red_heart_tier": "hit",
-    "netease_song_id": 1868553,
-    "platform_link": "https://music.163.com/#/song?id=1868553",
-    "notes": "In user red-heart library."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2022-06-27: I Want to Break Free (同艺人不同时期)",
+      "红心 2022-07-07: Radio Ga Ga (同艺人不同时期)",
+      "红心 2022-11-09: Somebody to Love (同艺人不同时期)",
+      "红心 2023-07-03: The Millionaire Waltz (同艺人不同时期)",
+      "红心 2024-04-27: Play the Game (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
@@ -29,5 +34,9 @@
     "https://www.guitarworld.com/features/brian-may-goes-deep-on-bohemian-rhapsody-the-gear-the-solo-and-the-magic-of-freddie-mercurys-finest-hour",
     "https://www.guitarplayer.com/players/i-said-i-would-like-to-effectively-sing-a-verse-on-the-guitar-brian-may-reveals-the-studio-secrets-of-his-legendary-bohemian-rhapsody-solo"
   ],
-  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+  "tags": [
+    "dual_protagonist_structure",
+    "aria_form_descent",
+    "extended_solo_as_movement"
+  ]
 }

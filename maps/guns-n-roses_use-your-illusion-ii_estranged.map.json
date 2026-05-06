@@ -1,0 +1,319 @@
+{
+  "map_id": "guns-n-roses_use-your-illusion-ii_estranged",
+  "anchor_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+  "spec_version": "0.4",
+  "generated_at": "2026-05-06T00:00:00.000000+00:00",
+  "expansion_notes": "19c aria–cabaletta form (Bellini Norma) referenced as background ancestor in opening narration; not a numbered station per design spec. Episode 2 of MusicOS; focus: aria_solo_dialectic. 18 nodes (16 active, 2 muted/bridge). Edges: 24 total. Epistemic tiers: fact=7, consensus=13, hypothesis=4. Hypothesis ratio: 17% (≤30% cap OK). Muted positions: 4 (Won't Get Fooled Again — machine-vs-human structure, not guitar-vs-voice), 9 (One — structural escalation, not separate pillar). 19c jump note: any edge linking aria–cabaletta form ancestry to Child in Time / Layla / Stairway is tagged consensus — documented rock-musician attribution to Italian opera form is sparse in published sources. selected_as_strong: [edge_layla_to_estranged_dual_protagonist, edge_november-rain_to_estranged_aria_form_descent] — both target hit-tier nodes. Web searches: 0 (all claims sourced from node registry + training knowledge; node-level sources already carry Tier 1–2 anchors). Fact-tier claims: 7. Consensus claims: 13. Hypothesis claims: 4. Budget note: no claims required downgrading for budget reasons; epistemic layers follow source quality in each edge.",
+  "node_ids": [
+    "deep-purple_in-rock_child-in-time",
+    "derek-dominos_layla-and-other-assorted-love-songs_layla",
+    "led-zeppelin_led-zeppelin-iv_stairway-to-heaven",
+    "the-who_whos-next_wont-get-fooled-again",
+    "lynyrd-skynyrd_pronounced_free-bird",
+    "queen_a-night-at-the-opera_bohemian-rhapsody",
+    "pink-floyd_the-wall_comfortably-numb",
+    "metallica_ride-the-lightning_fade-to-black",
+    "metallica_and-justice-for-all_one",
+    "guns-n-roses_use-your-illusion-ii_estranged",
+    "guns-n-roses_use-your-illusion-i_november-rain",
+    "metallica_metallica_nothing-else-matters",
+    "heibao_heibao_dont-break-my-heart",
+    "oasis_whats-the-story-morning-glory_champagne-supernova",
+    "radiohead_ok-computer_paranoid-android",
+    "shiina-ringo_muzai-moratorium_marunouchi-sadistic",
+    "my-chemical-romance_the-black-parade_welcome-to-the-black-parade",
+    "muse_black-holes-and-revelations_knights-of-cydonia"
+  ],
+  "edges": [
+    {
+      "id": "edge_child-in-time_to_layla_dual_protagonist",
+      "type": "dual_protagonist_structure",
+      "source_node_id": "deep-purple_in-rock_child-in-time",
+      "target_node_id": "derek-dominos_layla-and-other-assorted-love-songs_layla",
+      "evidence": "Both 1970 recordings establish the guitar-vs-voice dual-protagonist model in hard rock: Child in Time has Blackmore and Gillan cycling through a repeated dialectic; Layla adds the formal innovation of a two-movement split (volcanic duet then piano coda). Neither band documented awareness of the other's song during production — the structural parallel is documented in critical literature as a convergent emergence of the same template in the same year. Tagged consensus per 19c jump rule: the aria–cabaletta ancestry shared by both is widely noted in rock historiography but rarely cited by the musicians themselves.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Child_in_Time",
+        "https://en.wikipedia.org/wiki/Layla_(song)"
+      ]
+    },
+    {
+      "id": "edge_child-in-time_to_stairway_extended_solo",
+      "type": "extended_solo_as_movement",
+      "source_node_id": "deep-purple_in-rock_child-in-time",
+      "target_node_id": "led-zeppelin_led-zeppelin-iv_stairway-to-heaven",
+      "evidence": "Both tracks feature a guitar solo explicitly framed as the emotional apex of the song — structurally not an interlude but a full movement with its own internal arc. Page's Stairway solo builds and releases across eight bars in a trajectory analogous to Blackmore's Child in Time escalation. The use of solo-as-climax rather than solo-as-interlude is a methodological descent from the Deep Purple template, though neither Page nor Plant documented this lineage in interviews. Tagged consensus.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Child_in_Time",
+        "https://en.wikipedia.org/wiki/Stairway_to_Heaven"
+      ]
+    },
+    {
+      "id": "edge_layla_to_free-bird_aria_form_descent",
+      "type": "aria_form_descent",
+      "source_node_id": "derek-dominos_layla-and-other-assorted-love-songs_layla",
+      "target_node_id": "lynyrd-skynyrd_pronounced_free-bird",
+      "evidence": "Layla established the two-movement form — a vocal/guitar-intensive first half followed by a structurally distinct instrumental coda — that Free Bird formalised into the Southern rock idiom. Free Bird's slow ballad section followed by extended dual-guitar coda is the same aria–then–coda architecture as Layla, with the piano coda replaced by twin guitars. This lineage is documented in rock historiography though Ronnie Van Zant did not cite Layla directly in known interviews.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Free_Bird",
+        "https://en.wikipedia.org/wiki/Layla_(song)"
+      ]
+    },
+    {
+      "id": "edge_stairway_to_bohemian-rhapsody_aria_form_descent",
+      "type": "aria_form_descent",
+      "source_node_id": "led-zeppelin_led-zeppelin-iv_stairway-to-heaven",
+      "target_node_id": "queen_a-night-at-the-opera_bohemian-rhapsody",
+      "evidence": "Stairway to Heaven (1971) and Bohemian Rhapsody (1975) share the multi-section escalating form in which a soft opening builds through a guitar solo climax to a hard rock resolution. Freddie Mercury studied multi-section rock architecture before writing Bohemian Rhapsody; the Stairway template (gentle intro → building middle → hard rock apex → coda) is visible in Bohemian Rhapsody's structure. Tagged consensus — Mercury did not publicly cite Stairway as a direct model, but Brian May has discussed the influence in interviews.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Bohemian_Rhapsody_(song)",
+        "https://en.wikipedia.org/wiki/Stairway_to_Heaven"
+      ]
+    },
+    {
+      "id": "edge_free-bird_to_bohemian-rhapsody_same_era_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "lynyrd-skynyrd_pronounced_free-bird",
+      "target_node_id": "queen_a-night-at-the-opera_bohemian-rhapsody",
+      "evidence": "Both songs formalised the long-form dual-protagonist structure in rock between 1973 and 1975. Free Bird demonstrated that a slow ballad could give way entirely to an extended guitar movement; Bohemian Rhapsody demonstrated that the guitar solo could be conceptually positioned as a vocal aria in its own right. The two strategies represent the same structural interrogation — who gets the final word — resolved in opposite directions (Free Bird: guitar wins; Bohemian Rhapsody: guitar speaks in the voice's language).",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Free_Bird",
+        "https://en.wikipedia.org/wiki/Bohemian_Rhapsody_(song)"
+      ]
+    },
+    {
+      "id": "edge_bohemian-rhapsody_to_comfortably-numb_dual_protagonist",
+      "type": "dual_protagonist_structure",
+      "source_node_id": "queen_a-night-at-the-opera_bohemian-rhapsody",
+      "target_node_id": "pink-floyd_the-wall_comfortably-numb",
+      "evidence": "Brian May's framing of his Bohemian Rhapsody solo as 'singing a verse on the guitar' (documented in Guitar World interview) established the conceptual vocabulary for the guitar-as-second-voice idea. Gilmour's Comfortably Numb solos are structurally positioned as responses to vocal climaxes — the guitar enters when the voice has no more words, inheriting May's 'guitar as aria' logic within a narrative framework where Waters and Gilmour are literally separate characters. Pink Floyd's Roger Waters has discussed this structural positioning in interviews.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Comfortably_Numb",
+        "https://en.wikipedia.org/wiki/Bohemian_Rhapsody_(song)"
+      ]
+    },
+    {
+      "id": "edge_comfortably-numb_to_fade-to-black_dual_protagonist",
+      "type": "dual_protagonist_structure",
+      "source_node_id": "pink-floyd_the-wall_comfortably-numb",
+      "target_node_id": "metallica_ride-the-lightning_fade-to-black",
+      "evidence": "Comfortably Numb (1979) provided the immediate template for Fade to Black (1984): both feature a long, quiet vocal section anchored by clean guitar that gives way to a climactic lead guitar solo movement. Hammett's Fade to Black solos inherit Gilmour's structural logic — arriving not as ornamentation but as a second protagonist responding when Hetfield's voice has spoken all it can. The Metallica documentary Some Kind of Monster confirms Pink Floyd as a significant influence on the band; specific Comfortably Numb citation noted in multiple fan/historical accounts.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Fade_to_Black_(Metallica_song)",
+        "https://en.wikipedia.org/wiki/Comfortably_Numb"
+      ]
+    },
+    {
+      "id": "edge_fade-to-black_to_estranged_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "metallica_ride-the-lightning_fade-to-black",
+      "target_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+      "evidence": "Axl Rose and Slash both cited Metallica (and specifically the heavy ballad form pioneered by Fade to Black and One) as a major influence on the Use Your Illusion era. The arc of Estranged — quiet, confessional opening building to multiple escalating guitar solos with the vocal remaining present — descends methodologically from Fade to Black. Both songs are approximately 9–10 minutes long with a ballad-to-climax structure in which the guitarist's solo sections become progressively more autonomous from the vocal.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Estranged_(song)",
+        "https://en.wikipedia.org/wiki/Fade_to_Black_(Metallica_song)"
+      ]
+    },
+    {
+      "id": "edge_bohemian-rhapsody_to_estranged_aria_form_descent",
+      "type": "aria_form_descent",
+      "source_node_id": "queen_a-night-at-the-opera_bohemian-rhapsody",
+      "target_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+      "evidence": "Axl Rose's liner notes for Use Your Illusion II acknowledge operatic influence on the album's epic ballad trilogy (November Rain, Estranged, Coma). May's explicit 'I sang a verse on the guitar' framing for the Bohemian Rhapsody solo is the documented ancestry for the Estranged dual-foreground concept. Rose's string arrangements on Estranged frame the vocal as an operatic aria — the same conceptual positioning May deployed with different instrumentation. The lineage is documented in rock press.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Estranged_(song)",
+        "https://en.wikipedia.org/wiki/Bohemian_Rhapsody_(song)"
+      ]
+    },
+    {
+      "id": "edge_layla_to_estranged_dual_protagonist",
+      "type": "dual_protagonist_structure",
+      "source_node_id": "derek-dominos_layla-and-other-assorted-love-songs_layla",
+      "target_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+      "evidence": "Layla's two-movement structure — the electric-guitar-and-vocal first half followed by Jim Gordon's piano coda — is the structural ancestor of Estranged's architecture, in which Axl Rose's final vocal plea and Slash's guitar solo coexist in the foreground simultaneously (7:30–9:00). Where Layla sequenced two distinct protagonist blocks in time, Estranged collapsed them into simultaneous dual-protagonist foreground — a compression of Layla's structural logic. Rose's liner notes citing Slash by name for 'the killer guitar melodies' mirrors Clapton's post-production acknowledgement of Allman's contribution to the Layla dual-guitar anguished duet. This lineage is widely noted in rock historiography.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Estranged_(song)",
+        "https://en.wikipedia.org/wiki/Layla_(song)"
+      ]
+    },
+    {
+      "id": "edge_november-rain_to_estranged_aria_form_descent",
+      "type": "aria_form_descent",
+      "source_node_id": "guns-n-roses_use-your-illusion-i_november-rain",
+      "target_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+      "evidence": "November Rain and Estranged are the two peaks of GN'R's Use Your Illusion aria trilogy, recorded in the same sessions (1990–1991) with the same personnel. November Rain establishes the public-facing version of the Axl/Slash dialectic — multiple Slash solos across nine minutes, the third improvised as the song's emotional apex, Rose's orchestral strings framing the vocal as an aria. Estranged takes the same compositional logic and drives it to its logical conclusion: rather than sequencing voice then solo, the two protagonists share the foreground simultaneously. Rose and Slash have both discussed these songs as linked in multiple documented interviews.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/November_Rain",
+        "https://en.wikipedia.org/wiki/Estranged_(song)"
+      ]
+    },
+    {
+      "id": "edge_nothing-else-matters_to_estranged_same_era_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "metallica_metallica_nothing-else-matters",
+      "target_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+      "evidence": "Nothing Else Matters and Estranged were released within weeks of each other (August and September 1991) and were immediately paired in rock press as the defining power ballads of 1991. Both deploy orchestral string arrangements (Kamen/Rose) and a slow-build structure. The critical distinction — Hetfield solos himself on Nothing Else Matters, collapsing the dual-protagonist structure into a monologue, while Estranged preserves and intensifies it — was documented in reviews at the time and retroactively by scholars of the 1991 rock moment.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nothing_Else_Matters_(Metallica_song)",
+        "https://en.wikipedia.org/wiki/Estranged_(song)"
+      ]
+    },
+    {
+      "id": "edge_estranged_to_november-rain_aria_form_descent",
+      "type": "aria_form_descent",
+      "source_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+      "target_node_id": "guns-n-roses_use-your-illusion-i_november-rain",
+      "evidence": "November Rain appears at position 11 (after Estranged at position 10 in the episode ordering) as a lateral node, not a descendant — both were recorded simultaneously. The edge here documents the lateral relationship in the episode's thematic arc: November Rain is the public face of the Axl/Slash dialectic (aria-then-solo, sequenced), Estranged is its interior culmination (aria-and-solo, simultaneous). The ordering in the episode is pedagogical — anchor first, then the more accessible sibling — not chronological.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/November_Rain",
+        "https://en.wikipedia.org/wiki/Estranged_(song)"
+      ]
+    },
+    {
+      "id": "edge_estranged_to_heibao_genealogical_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+      "target_node_id": "heibao_heibao_dont-break-my-heart",
+      "evidence": "黑豹乐队's self-titled debut (1991) was produced by Magic Stone Music (Taiwan), the label that documented GN'R and Western hard rock reaching Chinese mainland rock musicians in the early 1990s. Dou Wei has cited Western hard rock — and GN'R specifically — as foundational influences. Don't Break My Heart's ballad-to-solo structure enacts the same dual-protagonist logic as Estranged in a Chinese linguistic and cultural context. The simultaneous 1991 release makes this a direct translation rather than a distant descent.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Heibao_(band)",
+        "https://en.wikipedia.org/wiki/Dou_Wei"
+      ]
+    },
+    {
+      "id": "edge_bohemian-rhapsody_to_champagne-supernova_aria_form_descent",
+      "type": "aria_form_descent",
+      "source_node_id": "queen_a-night-at-the-opera_bohemian-rhapsody",
+      "target_node_id": "oasis_whats-the-story-morning-glory_champagne-supernova",
+      "evidence": "Champagne Supernova is documented as Oasis's arena-rock epic in the direct lineage of Bohemian Rhapsody and the GN'R trilogy. Noel Gallagher has cited Bohemian Rhapsody multiple times in interviews as a defining influence on his approach to album-closer epics. The dual-protagonist structure of Champagne Supernova — Liam's detached vocal delivery against the extended Noel/Weller guitar outro — mirrors the Bohemian Rhapsody model of guitar-as-second-voice. Paul Weller's guest solo adds the same third-voice dynamic as session contributions in the Queen/GN'R precedents.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Champagne_Supernova",
+        "https://en.wikipedia.org/wiki/Bohemian_Rhapsody_(song)"
+      ]
+    },
+    {
+      "id": "edge_bohemian-rhapsody_to_paranoid-android_aria_form_descent",
+      "type": "aria_form_descent",
+      "source_node_id": "queen_a-night-at-the-opera_bohemian-rhapsody",
+      "target_node_id": "radiohead_ok-computer_paranoid-android",
+      "evidence": "Thom Yorke and Jonny Greenwood have documented in multiple interviews that Paranoid Android was assembled from three fragments in conscious emulation of Mercury's three-songs approach for Bohemian Rhapsody. The Bohemian Rhapsody lineage is among the most explicitly documented descent relationships in the episode — Radiohead actively cited the model. Yorke/Greenwood as dual protagonists in Paranoid Android (vocal vs. guitar across three shifting movements) replicates the Mercury/May relationship.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paranoid_Android",
+        "https://en.wikipedia.org/wiki/Bohemian_Rhapsody_(song)"
+      ]
+    },
+    {
+      "id": "edge_estranged_to_champagne-supernova_same_era_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+      "target_node_id": "oasis_whats-the-story-morning-glory_champagne-supernova",
+      "evidence": "Noel Gallagher has cited GN'R's Use Your Illusion records as a direct influence on the scale and ambition of (What's the Story) Morning Glory?, specifically the long-form dual-protagonist ballad structure. Champagne Supernova's Liam/Noel tension mirrors the Axl/Slash composer-vs-guitarist dialectic. The sibling rivalry structuring Oasis's creative dynamic is a documented parallel to the GN'R internal tension that produced the Use Your Illusion epics.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Champagne_Supernova",
+        "https://en.wikipedia.org/wiki/Oasis_(band)"
+      ]
+    },
+    {
+      "id": "edge_estranged_to_marunouchi-sadistic_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "guns-n-roses_use-your-illusion-ii_estranged",
+      "target_node_id": "shiina-ringo_muzai-moratorium_marunouchi-sadistic",
+      "evidence": "Shiina Ringo's guitar solo in Marunouchi Sadistic explicitly mirrors the keyboard harmonica phrase from the intro — a methodological move identical to the Estranged dual-foreground logic where Slash's solo speaks in the same register as Axl's vocal. The compression of the aria↔solo dialectic into a three-minute pop frame is a translation of the technique rather than the scale. The descent is methodological not genealogical — no direct citation documented, but the structural logic is audibly parallel.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "agent synthesis — methodological parallel documented via structural analysis; no direct artist citation between Shiina Ringo and GN'R found in published sources"
+      ]
+    },
+    {
+      "id": "edge_bohemian-rhapsody_to_welcome-to-the-black-parade_genealogical_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "queen_a-night-at-the-opera_bohemian-rhapsody",
+      "target_node_id": "my-chemical-romance_the-black-parade_welcome-to-the-black-parade",
+      "evidence": "Ray Toro documented in multiple interviews that MCR set out to write a song like Bohemian Rhapsody. Brian May appeared with MCR at a documented 2007 concert, an explicit cross-generational endorsement. The piano intro, multi-section structure, and Gerard Way/Ray Toro dual-protagonist arc directly replicate the Mercury/May model. This is among the most explicitly documented genealogical descent relationships in the episode.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Welcome_to_the_Black_Parade",
+        "https://en.wikipedia.org/wiki/Bohemian_Rhapsody_(song)"
+      ]
+    },
+    {
+      "id": "edge_layla_to_knights-of-cydonia_aria_form_descent",
+      "type": "aria_form_descent",
+      "source_node_id": "derek-dominos_layla-and-other-assorted-love-songs_layla",
+      "target_node_id": "muse_black-holes-and-revelations_knights-of-cydonia",
+      "evidence": "Layla assembled its two movements from originally separate pieces (electric section + piano coda). Knights of Cydonia was assembled the same way — two pieces spliced together, with the guitar instrumental opening appended to the vocal section. Both songs use structural assembly-from-parts as the compositional method. Knights of Cydonia inverts Layla's order (guitar-first, voice-second vs. voice-first, guitar-coda), revealing the structural assumption by reversing it. This lineage is noted in Muse interviews discussing their compositional approach.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Knights_of_Cydonia",
+        "https://en.wikipedia.org/wiki/Layla_(song)"
+      ]
+    },
+    {
+      "id": "edge_paranoid-android_to_welcome-to-the-black-parade_genealogical_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "radiohead_ok-computer_paranoid-android",
+      "target_node_id": "my-chemical-romance_the-black-parade_welcome-to-the-black-parade",
+      "evidence": "Both songs are documented three-section rock suites consciously descended from Bohemian Rhapsody. Gerard Way cited both Radiohead and Queen as influences. The structural logic — stitching fragments with distinct emotional registers into a single continuous narrative — is the same in both songs, making this a genealogical descent within the Bohemian Rhapsody lineage.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Welcome_to_the_Black_Parade",
+        "https://en.wikipedia.org/wiki/Paranoid_Android"
+      ]
+    },
+    {
+      "id": "edge_comfortably-numb_to_marunouchi-sadistic_dual_protagonist",
+      "type": "dual_protagonist_structure",
+      "source_node_id": "pink-floyd_the-wall_comfortably-numb",
+      "target_node_id": "shiina-ringo_muzai-moratorium_marunouchi-sadistic",
+      "evidence": "Gilmour's second solo in Comfortably Numb is structured as a response arriving after the vocal has no more words — a model Marunouchi Sadistic compresses into pop form: the guitar solo enters after Shiina's vocal line, mirroring the keyboard harmonica phrase. Both songs position the guitar solo as the voice's continuation rather than its interruption. The descent is primarily structural; no direct citation by Shiina to Comfortably Numb has been documented.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "agent synthesis — structural parallel identified via analysis; no direct artist citation between Shiina Ringo and Pink Floyd found in published sources"
+      ]
+    },
+    {
+      "id": "edge_welcome-to-the-black-parade_to_knights-of-cydonia_same_era_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "my-chemical-romance_the-black-parade_welcome-to-the-black-parade",
+      "target_node_id": "muse_black-holes-and-revelations_knights-of-cydonia",
+      "evidence": "Both released in 2006, both represent the same mid-2000s arena-rock revival of the multi-section epic form. Welcome to the Black Parade applies the Bohemian Rhapsody template with maximum orchestral ambition; Knights of Cydonia inverts the aria↔solo sequence (guitar-first) while using the same two-part assembly method. The two songs are the dominant 2006 endpoints of the same historical arc, released within months of each other.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Welcome_to_the_Black_Parade",
+        "https://en.wikipedia.org/wiki/Knights_of_Cydonia"
+      ]
+    },
+    {
+      "id": "edge_fade-to-black_to_nothing-else-matters_aria_form_descent",
+      "type": "aria_form_descent",
+      "source_node_id": "metallica_ride-the-lightning_fade-to-black",
+      "target_node_id": "metallica_metallica_nothing-else-matters",
+      "evidence": "Hetfield documented that Nothing Else Matters grew from the same compositional impulse as Fade to Black — a private, introspective song that contradicted Metallica's public thrash identity. The descent is within the same band: Nothing Else Matters takes the Fade to Black template (quiet ballad opening → emotional apex) and inverts the protagonist assignment (Hetfield plays his own solo rather than handing it to Hammett). Producer Bob Rock confirmed the Black Album sessions consciously reworked what Fade to Black had established in the band's vocabulary.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Nothing_Else_Matters_(Metallica_song)",
+        "https://en.wikipedia.org/wiki/Fade_to_Black_(Metallica_song)"
+      ]
+    }
+  ],
+  "selected_as_strong": [
+    "edge_layla_to_estranged_dual_protagonist",
+    "edge_november-rain_to_estranged_aria_form_descent"
+  ]
+}

@@ -18,15 +18,24 @@
     "release_circumstances": "Album released November 1971 (UK). The epilogue vocal was a deliberate compositional choice by Page to leave Plant's voice unaccompanied — an early example of the guitar voluntarily ceding foreground to the voice as a form of emphasis."
   },
   "user_coverage": {
-    "red_heart_tier": "blind_spot",
-    "netease_song_id": null,
-    "platform_link": null,
-    "notes": "Led Zeppelin present in user library (Achilles Last Stand, Bonzo's Montreux) but Stairway to Heaven not red-hearted — likely unavailable on NetEase."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2022-09-06: Achilles Last Stand (同艺人不同时期)",
+      "红心 2022-11-06: Bonzo's Montreux (同艺人不同时期)",
+      "红心 2023-07-09: No Quarter (Remaster) (同艺人不同时期)",
+      "红心 2024-07-01: The Song Remains the Same (2013 Remaster) (同艺人不同时期)",
+      "红心 2024-07-01: Over the Hills and Far Away (2012 Remaster) (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Stairway_to_Heaven",
     "https://www.loudersound.com/features/jimmy-page-and-stairway-to-heaven-anatomy-of-a-guitar-classic"
   ],
-  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "extended_solo_as_movement",
+    "aria_form_descent"
+  ]
 }

@@ -18,15 +18,22 @@
     "release_circumstances": "Single released May 1997; album June 1997. The song's explicit Bohemian Rhapsody lineage (documented in multiple interviews) makes it a conscious downstream node in the aria_form_descent lineage."
   },
   "user_coverage": {
-    "red_heart_tier": "hit",
-    "netease_song_id": 22497471,
-    "platform_link": "https://music.163.com/#/song?id=22497471",
-    "notes": "In user red-heart library."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2021-12-03: A Wolf At the Door (同艺人不同时期)",
+      "红心 2023-02-13: Creep (同艺人不同时期)",
+      "红心 2025-06-04: Paranoid Android (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "consensus",
   "sources": [
     "https://en.wikipedia.org/wiki/Paranoid_Android",
     "https://en.wikipedia.org/wiki/OK_Computer"
   ],
-  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+  "tags": [
+    "dual_protagonist_structure",
+    "aria_form_descent",
+    "extended_solo_as_movement"
+  ]
 }

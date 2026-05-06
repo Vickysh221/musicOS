@@ -18,15 +18,19 @@
     "release_circumstances": "Album August 1991; single April 1992. The song was the third single from the album. The orchestral arrangement by Kamen positions the vocal in an operatic context — but with no separate guitar protagonist, the aria has no soloist to answer it."
   },
   "user_coverage": {
-    "red_heart_tier": "blind_spot",
-    "netease_song_id": null,
-    "platform_link": null,
-    "notes": "Not in user red-heart library. Metallica rights issues may affect NetEase availability."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2024-12-21: Fade to Black (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Nothing_Else_Matters",
     "https://www.loudersound.com/bands-artists/metallica-story-of-nothing-else-matters-elton-john-miley-cyrus"
   ],
-  "tags": ["dual_protagonist_structure", "aria_form_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "aria_form_descent"
+  ]
 }

@@ -18,15 +18,21 @@
     "release_circumstances": "Album November 1973. The single (shorter version) failed; the album version became a deep-cut staple. Guitar World ranked the solo No. 3 in the 100 Greatest Guitar Solos of All Time (2010, 2016)."
   },
   "user_coverage": {
-    "red_heart_tier": "hit",
-    "netease_song_id": 21052194,
-    "platform_link": "https://music.163.com/#/song?id=21052194",
-    "notes": "In user red-heart library."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2021-10-25: Free Bird (同艺人不同时期)",
+      "红心 2023-09-14: Sweet Home Alabama (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Free_Bird",
     "https://www.guitarworld.com/artists/hear-allen-collins-isolated-guitar-solo-lynyrd-skynyrds-free-bird"
   ],
-  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "extended_solo_as_movement",
+    "aria_form_descent"
+  ]
 }

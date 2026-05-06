@@ -18,15 +18,24 @@
     "release_circumstances": "Album December 1979; single 1980. The two guitar solos are structurally positioned as responses to the chorus climaxes — not intercut with vocal but arriving as relief movements when the vocal protagonist has said all it can say."
   },
   "user_coverage": {
-    "red_heart_tier": "blind_spot",
-    "netease_song_id": 28238311,
-    "platform_link": "https://music.163.com/song?id=28238311",
-    "notes": "Pink Floyd not in user red-heart library. Song available on NetEase (ID sourced from music.163.com search result)."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2021-10-25: Another Brick in the Wall, Pt. 2 (同艺人不同时期)",
+      "红心 2024-05-28: Lost for Words (同艺人不同时期)",
+      "红心 2024-06-05: Fearless (同艺人不同时期)",
+      "红心 2024-06-20: Take It Back (同艺人不同时期)",
+      "红心 2026-03-10: Shine On You Crazy Diamond (Pts. 1-5) (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Comfortably_Numb",
     "https://musescore.com/news/view/david-gilmour-turns-80-the-two-comfortably-numb-solos-capture-everything-great-about-his-playing-1772801127"
   ],
-  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+  "tags": [
+    "dual_protagonist_structure",
+    "aria_form_descent",
+    "extended_solo_as_movement"
+  ]
 }

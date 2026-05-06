@@ -18,15 +18,22 @@
     "release_circumstances": "Album July 2006; single November 2006. The song's explicit structural inversion of the aria→solo sequence makes it both a descendant of the tradition and a challenge to it — the guitar refuses to wait."
   },
   "user_coverage": {
-    "red_heart_tier": "blind_spot",
-    "netease_song_id": null,
-    "platform_link": null,
-    "notes": "Muse in user library (Panic Station, Unintended) but Knights of Cydonia not red-hearted."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2023-07-01: Panic Station (同艺人不同时期)",
+      "红心 2023-07-09: Unintended (同艺人不同时期)",
+      "红心 2026-03-06: Reapers (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Knights_of_Cydonia",
     "https://www.musewiki.org/Knights_of_Cydonia_(song)"
   ],
-  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "extended_solo_as_movement",
+    "aria_form_descent"
+  ]
 }

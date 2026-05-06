@@ -18,15 +18,20 @@
     "release_circumstances": "Album released September 1988; single February 1989. Guitar World readers ranked Hammett's extended solo at #26 in their 100 Greatest Guitar Solos poll."
   },
   "user_coverage": {
-    "red_heart_tier": "blind_spot",
-    "netease_song_id": null,
-    "platform_link": null,
-    "notes": "Metallica in user library via Fade to Black but 'One' not red-hearted."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2024-12-21: Fade to Black (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/One_(Metallica_song)",
     "https://theartofrockmusic.voices.wooster.edu/wp-content/uploads/sites/180/2015/01/One-Metallica-1989-1.pdf"
   ],
-  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "extended_solo_as_movement",
+    "aria_form_descent"
+  ]
 }

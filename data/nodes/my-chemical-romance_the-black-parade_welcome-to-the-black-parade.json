@@ -18,10 +18,9 @@
     "release_circumstances": "Single released September 2006; album October 2006. UK and US No. 1. Multiple critics compared it to Bohemian Rhapsody. Brian May appeared with MCR at a 2007 performance, a documented cross-generational connection that confirms the lineage."
   },
   "user_coverage": {
-    "red_heart_tier": "blind_spot",
-    "netease_song_id": null,
-    "platform_link": null,
-    "notes": "My Chemical Romance not in user red-heart library. Likely not available on NetEase due to licensing."
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
   },
   "epistemic_layer": "fact",
   "sources": [
@@ -29,5 +28,9 @@
     "https://www.loudersound.com/bands-artists/my-chemical-romance-welcome-to-the-black-parade-story-behind-the-song",
     "https://loudwire.com/my-chemical-romance-rock-with-queen-legend-brian-may/"
   ],
-  "tags": ["dual_protagonist_structure", "aria_form_descent", "genealogical_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "aria_form_descent",
+    "genealogical_descent"
+  ]
 }

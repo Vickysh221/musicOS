@@ -1,0 +1,869 @@
+{
+  "playlist_slug": "guns-n-roses_use-your-illusion-ii_estranged",
+  "episode_number": 2,
+  "episode_focus": "aria_solo_dialectic",
+  "episode_title_zh": "双主角 — Estranged",
+  "episode_title_en": "Dual Protagonist — Estranged",
+  "episode_arc": {
+    "from": { "position": 1, "label": "Deep Purple — Child in Time (1970)" },
+    "to":   { "position": 10, "label": "Guns N' Roses — Estranged (1991)" },
+    "coda": { "position": 18, "label": "Muse — Knights of Cydonia (2006)" }
+  },
+  "connection_kinds_in_scope": [
+    "dual_protagonist_structure",
+    "aria_form_descent",
+    "extended_solo_as_movement",
+    "direct_influence",
+    "methodological_descent",
+    "genealogical_descent",
+    "same_era_dialogue"
+  ],
+  "muted_positions": [4, 9],
+  "position_labels": {
+    "1":  "Deep Purple — Child in Time (1970)",
+    "2":  "Derek and the Dominos — Layla (1970)",
+    "3":  "Led Zeppelin — Stairway to Heaven (1971)",
+    "4":  "The Who — Won't Get Fooled Again (1971) [muted]",
+    "5":  "Lynyrd Skynyrd — Free Bird (1973)",
+    "6":  "Queen — Bohemian Rhapsody (1975)",
+    "7":  "Pink Floyd — Comfortably Numb (1979)",
+    "8":  "Metallica — Fade to Black (1984)",
+    "9":  "Metallica — One (1988) [muted]",
+    "10": "Guns N' Roses — Estranged (1991)",
+    "11": "Guns N' Roses — November Rain (1991)",
+    "12": "Metallica — Nothing Else Matters (1991)",
+    "13": "黑豹乐队 — Don't Break My Heart (1991)",
+    "14": "Oasis — Champagne Supernova (1995)",
+    "15": "Radiohead — Paranoid Android (1997)",
+    "16": "椎名林檎 — 丸ノ内サディスティック (1999)",
+    "17": "My Chemical Romance — Welcome to the Black Parade (2006)",
+    "18": "Muse — Knights of Cydonia (2006)"
+  },
+  "connection_pairs": [
+    {
+      "id": "conn_001_to_002_dual_protagonist_structure",
+      "from_position": 1,
+      "to_position": 2,
+      "kind": "dual_protagonist_structure",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_child-in-time_to_layla_dual_protagonist",
+      "system_sensory_note": "Both 1970 recordings establish guitar-vs-voice dual-protagonist in rock simultaneously: Child in Time cycles through the Blackmore/Gillan dialectic repeatedly; Layla splits into two structurally distinct movements (electric duet then piano coda). Convergent emergence in the same year without documented cross-influence.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同年，大西洋对岸的佛罗里达，一段钢琴前奏正在把同样的问题——声部与吉他，谁说最后一句话——分成两个独立乐章来回答。",
+          "voice_en": "The same year, across the Atlantic, a piano intro was answering the same question — voice versus guitar — by splitting the song into two separate movements.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Child in Time 里听到那种反复循环——吉他升，人声也升——这里换了一种方式：两个主角先后住进同一首歌的两个房间。",
+          "voice_en": "That escalating cycle between guitar and voice you just heard — here the two protagonists stop trading turns and move into two separate rooms of the same song.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.78,
+        "dimensions": {
+          "story_drive": 0.80,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.85
+        },
+        "rationale": "高 focus_relevance：本集最核心的结构演变节点，两首同年作品从不同方向提出同一问题。concrete_carrier：Clapton/Allman 双吉他二重奏 vs Blackmore/Gillan 人声吉他循环，均有具体人员锚点。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_001_to_003_extended_solo_as_movement",
+      "from_position": 1,
+      "to_position": 3,
+      "kind": "extended_solo_as_movement",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_child-in-time_to_stairway_extended_solo",
+      "system_sensory_note": "Both tracks use the guitar solo not as an interlude but as a full emotional movement — Child in Time's Blackmore escalation and Stairway's Page solo build and release independently of the vocal. The solo-as-climax (not ornament) is the shared methodological move.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "一年后的英格兰，另一个吉他手用同样的逻辑写了一段独奏——它不是歌曲的间奏，是歌曲本身的顶点，弓形张开，自己负责起落。",
+          "voice_en": "A year later in England, another guitarist applied the same logic — a solo not as interlude but as the song's emotional apex, with its own rise and fall.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 Child in Time 那段独奏如何接管情绪顶点——这里，Page 用了同样的逻辑，但把它浓缩进了八小节的弓形里。",
+          "voice_en": "Child in Time showed the solo taking over the emotional apex. Here Page applies the same logic, compressed into eight bars with their own complete arc.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.65,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.70
+        },
+        "rationale": "结构类型连接清晰，但缺乏乐手之间直接引用的文献，evidential_strength 偏低。两者均有具体演奏者/乐器锚点（Blackmore/Gibson SG, Page/Gibson Les Paul），concrete_carrier 尚可。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_005_aria_form_descent",
+      "from_position": 2,
+      "to_position": 5,
+      "kind": "aria_form_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_layla_to_free-bird_aria_form_descent",
+      "system_sensory_note": "Layla's two-movement split (electric first half → piano coda) is the formal ancestor of Free Bird's ballad-then-guitar-coda structure. Both songs use assembly from originally separate pieces as the compositional method. Free Bird formalises the Southern rock idiom of the same aria-then-coda form.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "三年后，美国南部有支乐队把这种'先人声后吉他接管'的结构做成了模板——让台下观众喊了几十年的那首歌。",
+          "voice_en": "Three years later, a Southern band turned the same vocal-then-guitar-takeover structure into a template — the song crowds would shout for decades.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Layla 里听到那个形式——钢琴尾声接管了整个结尾——这里换成了双吉他，把同样的'有人接班'逻辑做成了一个新的终点。",
+          "voice_en": "The form from Layla — where a coda takes over the ending entirely — returns here with twin guitars claiming the same structural handoff.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.70,
+        "dimensions": {
+          "story_drive": 0.70,
+          "concrete_carrier": 0.70,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Aria-then-coda 形式传承清晰，Free Bird 的 Van Zant/Collins 人员对应 Layla 的 Clapton/Allman。无直接引用文献，但结构相似性有文献佐证。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_010_dual_protagonist_structure",
+      "from_position": 2,
+      "to_position": 10,
+      "kind": "dual_protagonist_structure",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_layla_to_estranged_dual_protagonist",
+      "system_sensory_note": "Layla established the dual-protagonist architecture — two voices (Clapton vocal+guitar, Allman slide guitar) sharing a song. Estranged takes that architecture to its logical conclusion: rather than sequencing two protagonists temporally, Axl's final vocal and Slash's solo share the foreground simultaneously at 7:30–9:00. The compression from temporal sequence to simultaneous presence is the structural evolution. Both songs document liner-note acknowledgement of the 'second protagonist' by the primary composer.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "二十一年后，有人把这两个声部——人声和吉他——从先后登场改成了同时在场，最后两分钟里，两个主角真正共享同一个前景。",
+          "voice_en": "Twenty-one years later, someone collapsed those two protagonists from sequential to simultaneous — in the final two minutes, both voices genuinely share the foreground at once.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Layla 里听到 Clapton 和 Allman 如何轮流接手——这首歌把那个'轮流'取消了，两人同时在场，吵架，也不肯走。",
+          "voice_en": "In Layla, Clapton and Allman took turns. This song cancels the turns — both protagonists are present at once, neither willing to yield.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.88,
+        "dimensions": {
+          "story_drive": 0.90,
+          "concrete_carrier": 0.90,
+          "evidential_strength": 0.80,
+          "focus_relevance": 0.95
+        },
+        "rationale": "本集最高分连接之一。story_drive 极高：从时序主角到同时共场是有具体故事弧度的演变。concrete_carrier：Clapton/Allman 对应 Axl/Slash，均有 liner notes 佐证。focus_relevance 最高。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_018_aria_form_descent",
+      "from_position": 2,
+      "to_position": 18,
+      "kind": "aria_form_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_layla_to_knights-of-cydonia_aria_form_descent",
+      "system_sensory_note": "Both Layla and Knights of Cydonia were assembled from originally separate pieces. Layla's electric section + Jim Gordon's piano coda were initially separate recordings. Knights of Cydonia's guitar instrumental + vocal section were two pieces the band joined. Both use structural assembly as compositional method; Knights of Cydonia inverts Layla's order (guitar-first vs. vocal-first), making the structural DNA legible by reversing it.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "三十六年后，一支英国乐队用同样的拼接方法——把两首独立的曲子缝在一起——但把顺序颠倒了：吉他先开口，人声是那个后来才进门的。",
+          "voice_en": "Thirty-six years later, a British band used the same splicing method — two separate pieces joined together — but reversed the order: guitar speaks first, voice arrives late.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Layla 里听到，两段原本分离的录音被缝在了一起。这首歌用了同样的缝合方式，只是把顺序翻转了——吉他在前，声部在后。",
+          "voice_en": "In Layla, two separate recordings were stitched together. This song uses the same method, only the order is flipped — guitar first, voice arrives later.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.72,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.80,
+          "evidential_strength": 0.70,
+          "focus_relevance": 0.65
+        },
+        "rationale": "具体载体强（两段分离录音缝合的文献均有记录），故事驱动力中上（结构颠转是可讲述的叙事）。focus_relevance 略低：属于 aria_form_descent 而非最核心的 dual_protagonist 类型。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_006_aria_form_descent",
+      "from_position": 3,
+      "to_position": 6,
+      "kind": "aria_form_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_stairway_to_bohemian-rhapsody_aria_form_descent",
+      "system_sensory_note": "Stairway's multi-section escalating form (gentle intro → building middle → guitar solo climax → vocal coda decision) was a visible template for the rock epic form Mercury studied before Bohemian Rhapsody. Brian May has discussed Stairway-era rock architecture as influential. Both songs use solo-as-climax within a multi-section progressive structure.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "四年后，伦敦有个歌手把多段落史诗结构推进了一步——他把吉他独奏定义成了另一个人声，给它写了一段'唱词'。",
+          "voice_en": "Four years later in London, a singer pushed the multi-section epic further — he defined the guitar solo as a second vocal, and wrote it a verse to sing.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Stairway to Heaven 里听到独奏如何占据了情感顶点——这里，那个顶点被重新命名了：吉他不是'间奏'，是在唱一段歌词。",
+          "voice_en": "Stairway showed the solo claiming the emotional apex. Here that apex is renamed: the guitar isn't an interlude — it's singing a verse.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.68,
+        "dimensions": {
+          "story_drive": 0.70,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Brian May 的'唱词'概念是可传递的叙事锚点。文献佐证中等（May 访谈有记录，Page 引用 Bohemian Rhapsody 的文献较少）。结构类型相关性好。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_005_to_008_aria_form_descent",
+      "from_position": 5,
+      "to_position": 8,
+      "kind": "aria_form_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Free Bird's ballad-opening-to-extended-guitar-coda form is the direct formal ancestor of Fade to Black's structure: both open with a slow, confessional section then give way to an extended guitar movement. Hammett has cited Southern rock influences; the formal match is audible even without explicit citation. backed_by_edge_id null: no direct map edge between these nodes.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "十一年后，旧金山有支金属乐队把这种'慢开场、吉他接管结尾'的结构搬进了重金属——第一次证明节奏金属可以承载一首慢板的重量。",
+          "voice_en": "Eleven years later, a San Francisco metal band carried the same slow-opening, guitar-takeover structure into heavy metal — proving thrash could hold a ballad's weight.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "Free Bird 让吉他接管了结尾。这里，Hammett 做了同样的事，但前奏只有 Hetfield 一个人扫弦——没有钢琴，只有孤独。",
+          "voice_en": "Free Bird showed guitar claiming the entire ending. Here Hammett does the same — but the opening is one man alone with an acoustic guitar, no piano, no crowd.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.64,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.70
+        },
+        "rationale": "形式传承清晰（慢开场→吉他接管），但缺乏直接引用文献（backed_by_edge_id null）。concrete_carrier 有乐手和形式锚点。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_007_dual_protagonist_structure",
+      "from_position": 6,
+      "to_position": 7,
+      "kind": "dual_protagonist_structure",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_bohemian-rhapsody_to_comfortably-numb_dual_protagonist",
+      "system_sensory_note": "May's framing of his Bohemian Rhapsody solo as 'singing a verse on the guitar' (Guitar World, documented) established the conceptual vocabulary for the guitar-as-second-voice idea. Gilmour's Comfortably Numb solos arrive precisely when Waters' voice has no more words — inheriting May's logic. In Comfortably Numb, Waters and Gilmour are literally separate characters (Doctor and Pink), making the dual-protagonist structure narratively explicit.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "四年后，另一支英国乐队把这个'吉他在唱词'的逻辑装进了更黑的框架——两个声部是真正分离的角色，在同一首歌里说话。",
+          "voice_en": "Four years later, another British band put the same logic into a darker frame — two genuinely separate characters speaking inside the same song, not facets of one.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 May 用吉他唱词。这里，Gilmour 等人声说完才开口——吉他不是答案，是语言无法承载的那个问题。",
+          "voice_en": "May sang a verse on guitar. Here Gilmour waits until the voice is done — the guitar isn't an answer, it's the question words can no longer hold.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.82,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.85
+        },
+        "rationale": "story_drive 极高：从'吉他唱词'到'吉他是无法言说的问题'是有戏剧性的概念演变。concrete_carrier：May 的 Guitar World 访谈 + Gilmour 的 Hiwatt 音箱 + Waters/Gilmour 双角色叙事均可具体指向。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_010_aria_form_descent",
+      "from_position": 6,
+      "to_position": 10,
+      "kind": "aria_form_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_bohemian-rhapsody_to_estranged_aria_form_descent",
+      "system_sensory_note": "Axl Rose's liner notes for Use Your Illusion II acknowledge operatic influence. Brian May's explicit 'I sang a verse on the guitar' framing is the documented ancestry for the Estranged dual-foreground concept. Rose's string arrangements frame the vocal as an operatic aria; Slash inherits May's guitarist-as-second-voice role. The descent is documented in rock press and traceable through liner notes.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "十六年后，洛杉矶有首史诗把'吉他当第二人声'推到了极端——两个主角不再轮流，同时开口，谁也不肯后退。",
+          "voice_en": "Sixteen years later, a Los Angeles epic took guitar-as-second-voice to its extreme — both protagonists speaking simultaneously for two full minutes, neither yielding.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "Bohemian Rhapsody 把吉他定义成另一个声部。Rose 在 liner notes 感谢吉他手，然后他们把两个声部塞进了同一个瞬间。",
+          "voice_en": "Bohemian Rhapsody defined guitar as a second voice. Here the composer thanked the guitarist in liner notes — then they put both voices into the same moment.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.87,
+        "dimensions": {
+          "story_drive": 0.90,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.90
+        },
+        "rationale": "最强连接之一。story_drive 高：'吉他当第二人声'到'两者同时共场'是清晰演变故事。concrete_carrier：liner notes 具体引用 + Rose 弦乐编曲 + May 的 Guitar World 访谈均可指向。evidential_strength 高：两份独立文献佐证。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_015_aria_form_descent",
+      "from_position": 6,
+      "to_position": 15,
+      "kind": "aria_form_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_bohemian-rhapsody_to_paranoid-android_aria_form_descent",
+      "system_sensory_note": "Yorke and Greenwood documented in multiple interviews that Paranoid Android was assembled from three fragments in conscious emulation of Mercury's three-songs approach. This is among the most explicitly documented descent relationships in the episode. The Yorke/Greenwood dual-protagonist replicates the Mercury/May model with different instrumentation and emotional register.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "二十二年后，一支牛津乐队公开说他们想把三首不同的曲子缝进一首歌——Mercury 的方法，用不同的情绪重做了一遍。",
+          "voice_en": "Twenty-two years later, an Oxford band publicly said they wanted to stitch three separate songs into one — Mercury's method, redone with a different emotional register.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 Bohemian Rhapsody 如何把三首歌缝成一首。这支乐队在采访说想做同样的事——他们做到了，把 Mercury 的戏剧换成了焦虑。",
+          "voice_en": "You just heard Bohemian Rhapsody stitch three songs into one. This band said they wanted the same — and they did it, replacing Mercury's theatricality with anxiety.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.84,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.80,
+          "evidential_strength": 0.90,
+          "focus_relevance": 0.80
+        },
+        "rationale": "evidential_strength 本集最高之一：艺人有明确的公开访谈引用 Bohemian Rhapsody 方法论。story_drive 高：'三段拼接'是可讲述的具体行动。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_017_genealogical_descent",
+      "from_position": 6,
+      "to_position": 17,
+      "kind": "genealogical_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_bohemian-rhapsody_to_welcome-to-the-black-parade_genealogical_descent",
+      "system_sensory_note": "Ray Toro documented that MCR set out to write a song like Bohemian Rhapsody. Brian May appeared with MCR at a documented 2007 concert, a cross-generational endorsement. The piano intro, multi-section structure, and Way/Toro dual-protagonist arc directly replicate the Mercury/May model. This is the most explicitly documented genealogical descent in the episode.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "三十一年后，一支新泽西乐队公开宣布要写一首像这样的歌——他们做到了，连录音场地都刻意还原了'一群人关在一起'的那种压迫感。",
+          "voice_en": "Thirty-one years later, a New Jersey band publicly declared their intention to write a song like this one — and they did, even replicating the sealed-in-together recording environment.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 May 和 Mercury 如何分享前景。这支乐队的吉他手说想写那样一首歌——May 本人上台，证明了这条传承线。",
+          "voice_en": "May and Mercury shared the foreground. This band said they wanted that — and May appeared onstage with them to confirm the lineage.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.86,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.90,
+          "evidential_strength": 0.90,
+          "focus_relevance": 0.82
+        },
+        "rationale": "concrete_carrier 极强：Brian May 上台演出的具体事件锚定了传承关系，不是类比而是文献记录的行为。evidential_strength 高：多个独立访谈 + 演出记录。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_007_to_008_dual_protagonist_structure",
+      "from_position": 7,
+      "to_position": 8,
+      "kind": "dual_protagonist_structure",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_comfortably-numb_to_fade-to-black_dual_protagonist",
+      "system_sensory_note": "Comfortably Numb (1979) provided the template for Fade to Black (1984): both feature a quiet vocal section giving way to a climactic lead guitar solo movement. Hammett's solos inherit Gilmour's structural logic — arriving as a second protagonist after Hetfield's voice has said all it can. Pink Floyd documented as significant Metallica influence.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "五年后，旧金山有支乐队从这个结构里拿走了管弦乐，换上了失真，但保留了最核心的那件事：人声停下来的时候，吉他才真正开始说话。",
+          "voice_en": "Five years later, a band from San Francisco stripped out the orchestra, added distortion, but kept the essential thing: when the voice stops, the guitar finally begins to speak.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 Gilmour 等人声说完后才进来。这里 Hammett 用同样的节奏进入——前景更暗，没有管弦乐，只有吉他的回响。",
+          "voice_en": "You just heard Gilmour enter after the voice was done. Here Hammett uses the same timing — but the foreground is darker, no orchestra, only a guitar's reverb.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.76,
+        "dimensions": {
+          "story_drive": 0.80,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.70,
+          "focus_relevance": 0.80
+        },
+        "rationale": "story_drive 高：从'管弦乐框架下的吉他第二声部'到'失真环境下的同一逻辑'是清晰的叙事演变。concrete_carrier：Gilmour/Hiwatt vs Hammett/ESP，结构进入点均可描述。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_007_to_016_dual_protagonist_structure",
+      "from_position": 7,
+      "to_position": 16,
+      "kind": "dual_protagonist_structure",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_comfortably-numb_to_marunouchi-sadistic_dual_protagonist",
+      "system_sensory_note": "Gilmour's second Comfortably Numb solo arrives as the voice's continuation after it has no more words. Marunouchi Sadistic compresses the same logic into pop form: the guitar solo mirrors the keyboard harmonica phrase, entering as the voice's continuation. Both position the solo as emotional successor to the vocal. No direct citation documented; structural parallel identified via analysis.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "二十年后，东京，一个女歌手把同样的'吉他接替声部'压进了三分钟流行歌里——独奏重复了序奏里键盘口琴的旋律，吉他说：我明白你在讲什么。",
+          "voice_en": "Twenty years later in Tokyo, a singer compressed the same logic into three minutes — the solo repeating the intro phrase, guitar saying silently: I understand.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 Comfortably Numb 里吉他如何在人声沉默后继续——这首歌把同样的结构压缩进了不到三分钟：独奏复述了序奏旋律，两个主角认出了彼此。",
+          "voice_en": "Comfortably Numb showed guitar continuing after voice fell silent. This song compresses that into under three minutes — solo quotes the intro, two protagonists recognizing each other.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.66,
+        "dimensions": {
+          "story_drive": 0.70,
+          "concrete_carrier": 0.70,
+          "evidential_strength": 0.45,
+          "focus_relevance": 0.75
+        },
+        "rationale": "evidential_strength 低（backed_by_edge_id 为 hypothesis 级别，无直接引用）。concrete_carrier 中（键盘口琴旋律镜像是具体可辨识的声音事件）。focus_relevance 高：正是 dual_protagonist 压缩形式的体现。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_008_to_010_methodological_descent",
+      "from_position": 8,
+      "to_position": 10,
+      "kind": "methodological_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_fade-to-black_to_estranged_methodological_descent",
+      "system_sensory_note": "Axl Rose and Slash both cited Metallica's heavy ballad form as a major influence on the Use Your Illusion era. Estranged's arc — quiet confessional opening building to escalating guitar solos with vocal remaining present — descends methodologically from Fade to Black. Both songs are approximately 9–10 minutes with ballad-to-climax structure where the guitarist's solos become progressively more autonomous.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "七年后，洛杉矶，一首更长的歌把这种'慢板开场、吉他越来越自主'的方法推向了新的极端——到最后两分钟，吉他手和主唱真正平起平坐了。",
+          "voice_en": "Seven years later in Los Angeles, a longer song pushed the same method further — in the final two minutes, both guitarist and singer genuinely share equal ground.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Fade to Black 听到 Hammett 一步步扩展空间。Rose 和 Slash 从那个方法出发，推到了两人同时在场、谁也不退的那一刻。",
+          "voice_en": "Fade to Black showed Hammett expanding his space step by step. Rose and Slash took that to its endpoint — both protagonists present at once, neither stepping back.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.81,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.80,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.85
+        },
+        "rationale": "方法论传承有具体文献（Rose/Slash 引用 Metallica 影响），story_drive 强（吉他越来越自主 → 两者平起平坐），focus_relevance 高。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_008_to_012_aria_form_descent",
+      "from_position": 8,
+      "to_position": 12,
+      "kind": "aria_form_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_fade-to-black_to_nothing-else-matters_aria_form_descent",
+      "system_sensory_note": "Hetfield documented Nothing Else Matters grew from the same compositional impulse as Fade to Black — a private song contradicting Metallica's thrash identity. The descent is within the same band: Nothing Else Matters inverts the protagonist assignment (Hetfield solos himself rather than handing to Hammett). Producer Bob Rock confirmed the Black Album consciously reworked what Fade to Black established.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "七年后，同一支乐队的主唱写了一首私人的歌，决定自己弹独奏——吉他手没有出现，两个主角变成了一个人，对话变成了独白。",
+          "voice_en": "Seven years later, the same band's vocalist wrote a private song and decided to play the solo himself — the guitarist absent, two protagonists collapsed into one, dialogue becoming monologue.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 Fade to Black 里两个主角分工。这首歌取消了分工：Hetfield 既是人声又是吉他，双主角第一次压缩成一个人的独白。",
+          "voice_en": "Fade to Black gave two protagonists separate roles. This song cancels that: Hetfield is both voice and guitar, the dual-protagonist structure collapsed into one person's solo.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.79,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.80,
+          "evidential_strength": 0.80,
+          "focus_relevance": 0.78
+        },
+        "rationale": "story_drive 极高：'双主角结构被主动解散'是本集最戏剧性的倒置叙事。concrete_carrier：Hetfield 自己弹独奏的事实有文献记录。evidential_strength 高：同乐队内部可追溯。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_010_to_011_aria_form_descent",
+      "from_position": 10,
+      "to_position": 11,
+      "kind": "aria_form_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_november-rain_to_estranged_aria_form_descent",
+      "system_sensory_note": "November Rain and Estranged are the twin peaks of GN'R's Use Your Illusion aria trilogy, recorded simultaneously (1990–1991) with the same personnel. November Rain is the public face of the Axl/Slash dialectic (sequenced: aria then solo); Estranged is its interior culmination (simultaneous dual foreground). The episode positions Estranged first and November Rain second as pedagogical ordering.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同一批录音里，同样两个人记录了这种辩证关系的另一种形式——人声和吉他不再同时在场，而是先后发言，更公开，更容易进入。",
+          "voice_en": "On the other album from the same sessions, the same two people recorded this dialectic differently — voice and guitar taking turns, more public, more accessible.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到两个主角如何同时占据前景——这首歌是它的公开版本：Slash 的三次独奏是叙事的三个台阶，最后那段是即兴，也是最高点。",
+          "voice_en": "You just heard both protagonists sharing the foreground at once. This is the public version — Slash's three solos as three narrative steps, the last improvised, the apex.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.83,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.90,
+          "focus_relevance": 0.85
+        },
+        "rationale": "同一录音棚、同一乐队、同一制作人——是本集 evidential_strength 最高的连接之一。concrete_carrier 极强：Slash 三次独奏，第三段即兴，均有文献记录。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_010_to_013_genealogical_descent",
+      "from_position": 10,
+      "to_position": 13,
+      "kind": "genealogical_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_estranged_to_heibao_genealogical_descent",
+      "system_sensory_note": "黑豹乐队's 1991 debut was produced by Magic Stone Music (Taiwan), the label that documented GN'R and Western hard rock reaching Chinese mainland rock. Dou Wei has cited GN'R as foundational. Don't Break My Heart's ballad-to-solo structure enacts the dual-protagonist logic in Chinese cultural context. Simultaneous 1991 release makes this a direct translation.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同年，太平洋另一端，一张在台湾录制的专辑把这个'人声和吉他平起平坐'的结构带进了中文摇滚——用的是同样的框架，说的是另一种语言。",
+          "voice_en": "The same year, across the Pacific, an album recorded in Taiwan carried the same structure into Chinese rock — the same framework, a different language.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到这首歌在 1991 年洛杉矶确立了双主角结构——同年，这个结构在北京的摇滚乐队里出现了，换了语言，换了城市，但形式原封不动。",
+          "voice_en": "You just heard this structure established in 1991 Los Angeles. That same year, it appeared in Beijing rock — different language, different city, the form intact.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.74,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.70,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.78
+        },
+        "rationale": "跨文化传播有具体文献（Magic Stone Music, Dou Wei 引用）。story_drive 高：同年、不同语言、结构原封不动的平行发生是可讲述的故事。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_010_to_014_same_era_dialogue",
+      "from_position": 10,
+      "to_position": 14,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_estranged_to_champagne-supernova_same_era_dialogue",
+      "system_sensory_note": "Noel Gallagher cited GN'R's Use Your Illusion records as direct influence on Morning Glory's scale and ambition. Champagne Supernova's Liam/Noel tension mirrors the Axl/Slash composer-vs-guitarist dialectic. The sibling rivalry structuring Oasis is a documented parallel to the GN'R internal tension that produced the Use Your Illusion epics.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "四年后，英格兰有两兄弟把同样的'词曲作者与吉他手'的张力搬进了另一种语境——他们连彼此的厌恶都公开记录了，但做出了同样的结构。",
+          "voice_en": "Four years later in England, two brothers carried the same songwriter-versus-guitarist tension into a different context — mutual antagonism publicly documented, same structure produced.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 Axl 和 Slash 的张力是怎样驱动一首歌的——这首歌里，两兄弟有同样的张力：一个写词，一个弹吉他，他们不喜欢彼此，但结构成立了。",
+          "voice_en": "Axl and Slash's tension drove a song. Here two brothers carry the same tension — one writes, one plays guitar, mutual dislike intact, the structure still holding.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.71,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.70,
+          "evidential_strength": 0.70,
+          "focus_relevance": 0.70
+        },
+        "rationale": "Noel Gallagher 引用文献增强了 evidential_strength。人际动态的具体对应（Axl/Slash vs Liam/Noel）提供了叙事载体。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_012_to_010_same_era_dialogue",
+      "from_position": 12,
+      "to_position": 10,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_nothing-else-matters_to_estranged_same_era_dialogue",
+      "system_sensory_note": "Nothing Else Matters and Estranged released within weeks of each other (August/September 1991), immediately paired in rock press as defining power ballads of 1991. Both use orchestral strings and slow-build structure. The critical distinction — Hetfield solos himself (monologue) vs. Axl+Slash (dialogue) — was documented in reviews and retrospective scholarship.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "几周后，另一支乐队发行了几乎同样规模的作品——但做出了相反的选择：那首歌里只有一个主角在说话，对话变成了独白。",
+          "voice_en": "Weeks later, another band released a work of nearly the same scale — but made the opposite choice: only one protagonist speaks, dialogue collapsed into monologue.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到两个主角如何在 Nothing Else Matters 里合并成一个——这首歌是同一个月的另一种选择：两个主角留下来了，谁也没有吞掉谁。",
+          "voice_en": "You just heard two protagonists merge into one in that song. This song, from the same month, makes the opposite choice — both protagonists remain, neither absorbing the other.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.77,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.78
+        },
+        "rationale": "story_drive 极高：'独白 vs 对话'是本集最清晰的主题对立——结构反转有戏剧性。concrete_carrier：Kamen 弦乐 vs Rose 弦乐，Hetfield solo vs Slash solo，均可具体指向。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_011_to_014_aria_form_descent",
+      "from_position": 11,
+      "to_position": 14,
+      "kind": "aria_form_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "November Rain (1991) and Champagne Supernova (1995) share the aria form: orchestral-framed vocal aria followed by extended guitar outro. Noel Gallagher cited GN'R Use Your Illusion as influence on Morning Glory's epic ballad ambition. backed_by_edge_id null: no direct map edge between these two nodes.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "四年后，英国 Britpop 的顶点借用了同样的'弦乐框架中的人声咏叹调 + 吉他尾声'结构，只是把规模缩减了，把口音换了。",
+          "voice_en": "Four years later, Britpop's apex borrowed the same strings-framed vocal aria plus guitar outro — same form, reduced scale, different accent.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在那首歌里听到弦乐如何把人声框成咏叹调——这里 Liam 的人声是那个咏叹调，Noel 的吉他尾奏是它的回应，两人之间的距离和兄弟之间的一样大。",
+          "voice_en": "Strings framed the voice as an aria. Here Liam is the aria, Noel's guitar outro the answer — the gap between them as wide as between brothers.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.67,
+        "dimensions": {
+          "story_drive": 0.70,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.72
+        },
+        "rationale": "backed_by_edge_id null 拉低了 evidential_strength。Liam/Noel 人员对应 Axl/Slash 提供了叙事载体（concrete_carrier 中等）。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_013_to_014_same_era_dialogue",
+      "from_position": 13,
+      "to_position": 14,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "黑豹乐队's Don't Break My Heart (1991) and Champagne Supernova (1995) represent the same dual-protagonist tradition landing in different cultural contexts within four years. Both translate the Western arena-rock dual-protagonist formula into local idioms while preserving the formal structure. backed_by_edge_id null.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "四年后在英国，同样的形式在另一种文化里落地——两兄弟，一个写词，一个弹吉他，争执是公开的，但结构和这里是一模一样的。",
+          "voice_en": "Four years later in England, the same form landed in another culture — two brothers, one writes lyrics, one plays guitar, their tension public, the structure identical.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到这个结构在北京的翻译——这首歌是同一种翻译在曼彻斯特的版本：双主角，不同口音，同样的形式。",
+          "voice_en": "You just heard this structure translated to Beijing. This song is the same translation in Manchester — dual protagonist, different accent, identical form.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.58,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.65
+        },
+        "rationale": "backed_by_edge_id null，跨文化对话的证据基础较弱。focus_relevance 中等：确实是双主角结构在不同文化的同期对话，但叙事载体不够具体。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_014_to_015_same_era_dialogue",
+      "from_position": 14,
+      "to_position": 15,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Champagne Supernova (1995) and Paranoid Android (1997) are the two dominant 1990s British rock songs extending the multi-section dual-protagonist tradition. Both are 6–7 minute album epics featuring a vocal protagonist and guitar protagonist in structurally defined counterpoint. backed_by_edge_id null.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "两年后，另一支英国乐队把同样的多段落史诗接了过去，把摇滚明星的姿态换成了焦虑——吉他手和主唱依然是两个主角，只是不再面向同一个方向。",
+          "voice_en": "Two years later, another British band took the same epic form and replaced rock-star posture with anxiety — guitarist and vocalist still two protagonists, no longer aligned.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在那首 Britpop 史诗里听到两个主角。这首歌继承了同样形式，把大合唱换成了对崩溃的精密描述，吉他是另一种焦虑。",
+          "voice_en": "Two protagonists in a Britpop epic. This song inherits the same form, replacing the anthemic with descriptions of collapse — the guitar a different kind of anxiety.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.60,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.58,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.65
+        },
+        "rationale": "backed_by_edge_id null，证据较弱。但两者都是 1990s 英国摇滚双主角史诗的代表，对话关系成立。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_015_to_017_genealogical_descent",
+      "from_position": 15,
+      "to_position": 17,
+      "kind": "genealogical_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_paranoid-android_to_welcome-to-the-black-parade_genealogical_descent",
+      "system_sensory_note": "Both songs are documented three-section rock suites descended from Bohemian Rhapsody. Gerard Way cited Radiohead as influences. The structural logic — stitching fragments with distinct emotional registers into a continuous narrative — is the same in both songs.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "九年后，另一支美国乐队把同样的'三段缝合'结构接了过去，公开声明继承了这条线，还请来了最初那条线的源头之一亲自出席。",
+          "voice_en": "Nine years later, an American band took the same three-section stitching method, publicly claimed the lineage, and invited one of its original sources to appear in person.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到那支牛津乐队如何把三段缝成一首——这支乐队用同样的方法，但在末尾加上了管弦乐，还请来了传承链上的一个前辈走上台来站台。",
+          "voice_en": "You just heard three sections stitched into one. This band used the same method, added an orchestra, and invited a predecessor from the lineage to stand witness.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.76,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.80,
+          "evidential_strength": 0.80,
+          "focus_relevance": 0.72
+        },
+        "rationale": "concrete_carrier 高：Brian May 上台演出是具体的历史事件。evidential_strength 良好：Way 引用 Radiohead + MCR 引用 Queen 均有文献。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_016_to_017_methodological_descent",
+      "from_position": 16,
+      "to_position": 17,
+      "kind": "methodological_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Marunouchi Sadistic (1999) compressed the aria↔solo dialectic into compact pop form; Welcome to the Black Parade (2006) re-expanded the same dialectic back into orchestral rock scale. Both position the guitar solo as a continuation of the vocal's emotional statement. The methodological descent is from compression to re-expansion of the same structural logic. No direct citation; backed_by_edge_id null.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "七年后，美国，同样的结构被重新放大回了管弦乐的规模——吉他手和主唱有整整五分钟的史诗，不是三分钟的流行歌。",
+          "voice_en": "Seven years later in America, the same structure re-expanded to orchestral scale — guitarist and singer given a full five-minute epic, not three minutes of pop.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到吉他独奏如何在三分钟的歌里复述了序奏旋律——这首歌把同样的逻辑扩大了：管弦乐是框架，吉他是比语言走得更远的声部。",
+          "voice_en": "A guitar solo echoed the intro inside three minutes. This song expands the same logic — orchestra as frame, guitar as the voice that travels further than language.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.57,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.45,
+          "focus_relevance": 0.65
+        },
+        "rationale": "backed_by_edge_id null，evidential_strength 最低。但'压缩到三分钟再膨胀回五分钟'是有叙事价值的故事弧。"
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_017_to_018_same_era_dialogue",
+      "from_position": 17,
+      "to_position": 18,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_welcome-to-the-black-parade_to_knights-of-cydonia_same_era_dialogue",
+      "system_sensory_note": "Both released 2006, both represent the dominant 2006 statements of the multi-section epic form. Welcome to the Black Parade applies the Bohemian Rhapsody template with maximum orchestral ambition; Knights of Cydonia inverts the sequence (guitar-first, 2:03 instrumental, then vocal) while using the same two-part assembly method. They are the structural conversation that closes the episode.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同年，另一支英国乐队用了同样的拼接方法——但把顺序翻转了，让吉他在前面走两分钟，人声是那个迟到的主角。",
+          "voice_en": "The same year, another British band used the same assembly method — but reversed the order, letting the guitar walk alone for two minutes while the voice arrives late.",
+          "produced_by": "phase1_default"
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到人声先开场。这首歌把顺序翻了过来：吉他走两分钟，人声才进来——双主角的假设，因为倒转，变得可见了。",
+          "voice_en": "In that song the voice led. This song flips the order — guitar walks alone for two minutes, voice arrives later, making the dual-protagonist assumption visible.",
+          "produced_by": "phase1_default"
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.72,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.70,
+          "evidential_strength": 0.70,
+          "focus_relevance": 0.75
+        },
+        "rationale": "同年、两种对立处理方式的结构对话。story_drive 高：一个'复原传统'、一个'颠转传统'的收尾对话是集结叙事的良好终点。"
+      },
+      "user_overrides": []
+    }
+  ]
+}

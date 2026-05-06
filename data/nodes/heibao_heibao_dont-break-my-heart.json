@@ -18,15 +18,20 @@
     "release_circumstances": "Released 1991. The song is one of the album's most iconic tracks and remains a touchstone of Chinese rock history. Dou Wei left the band in 1992 to pursue experimental solo work, making this album the sole document of his dual-protagonist rock phase."
   },
   "user_coverage": {
-    "red_heart_tier": "hit",
-    "netease_song_id": 357245,
-    "platform_link": "https://music.163.com/#/song?id=357245",
-    "notes": "In user red-heart library."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2023-09-18: Don't Break My Heart (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Heibao_(album)",
     "https://en.wikipedia.org/wiki/Black_Panther_(band)"
   ],
-  "tags": ["dual_protagonist_structure", "aria_form_descent", "methodological_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "aria_form_descent",
+    "methodological_descent"
+  ]
 }

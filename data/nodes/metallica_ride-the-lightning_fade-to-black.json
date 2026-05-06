@@ -18,15 +18,20 @@
     "release_circumstances": "Album July 1984. 'Fade to Black' established that thrashmetal could sustain a slow ballad form — opening the door for the power ballad structures Metallica would elaborate on 'One' (1988) and 'Nothing Else Matters' (1991)."
   },
   "user_coverage": {
-    "red_heart_tier": "hit",
-    "netease_song_id": 21162443,
-    "platform_link": "https://music.163.com/#/song?id=21162443",
-    "notes": "In user red-heart library."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2024-12-21: Fade to Black (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Fade_to_Black_(Metallica_song)",
     "https://www.loudersound.com/features/metallica-the-story-of-fade-to-black-1984"
   ],
-  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "extended_solo_as_movement",
+    "aria_form_descent"
+  ]
 }

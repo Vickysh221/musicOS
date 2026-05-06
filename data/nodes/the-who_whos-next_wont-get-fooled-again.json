@@ -18,15 +18,23 @@
     "release_circumstances": "Single released June 1971; album August 1971. Daltrey's final scream has been called 'the greatest scream of a career filled with screams' (Dave Marsh). The song ends, uniquely, with the protagonist making peace with the cycle of replacement — a structural irony that makes the scream ambiguous."
   },
   "user_coverage": {
-    "red_heart_tier": "hit",
-    "netease_song_id": 21973248,
-    "platform_link": "https://music.163.com/#/song?id=21973248",
-    "notes": "In user red-heart library."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2021-10-25: Who Are You (同艺人不同时期)",
+      "红心 2021-12-03: Behind Blue Eyes (同艺人不同时期)",
+      "红心 2021-12-04: Boris the Spider (同艺人不同时期)",
+      "红心 2021-12-04: A Quick One While He's Away (同艺人不同时期)",
+      "红心 2022-01-30: Eminence Front (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Won%27t_Get_Fooled_Again",
     "https://www.udiscovermusic.com/stories/the-who-wont-get-fooled-again-song/"
   ],
-  "tags": ["dual_protagonist_structure", "extended_solo_as_movement"]
+  "tags": [
+    "dual_protagonist_structure",
+    "extended_solo_as_movement"
+  ]
 }

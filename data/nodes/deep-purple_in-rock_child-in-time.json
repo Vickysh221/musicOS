@@ -18,15 +18,24 @@
     "release_circumstances": "Album released June 1970 (UK). The song's Cold War-themed lyrics ('Sweet child in time, you'll see the line') contextualise the urgency of Gillan's screams."
   },
   "user_coverage": {
-    "red_heart_tier": "blind_spot",
-    "netease_song_id": null,
-    "platform_link": null,
-    "notes": "Deep Purple present in user library (Soldier of Fortune, Knocking at Your Back Door) but Child in Time not red-hearted."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2021-10-20: Soldier Of Fortune (同艺人不同时期)",
+      "红心 2022-09-24: Knocking At Your Back Door (同艺人不同时期)",
+      "红心 2022-09-24: Walk On (同艺人不同时期)",
+      "红心 2022-11-30: Burn (同艺人不同时期)",
+      "红心 2023-08-25: April (2000 Remaster) (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Child_in_Time",
     "https://en.wikipedia.org/wiki/Deep_Purple_in_Rock"
   ],
-  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+  "tags": [
+    "dual_protagonist_structure",
+    "extended_solo_as_movement",
+    "aria_form_descent"
+  ]
 }

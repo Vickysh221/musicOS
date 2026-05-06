@@ -18,15 +18,21 @@
     "release_circumstances": "Album released November 1970. The single became one of rock's most celebrated songs but was initially a commercial failure, charting only after Clapton's identity as Derek was publicly revealed."
   },
   "user_coverage": {
-    "red_heart_tier": "hit",
-    "netease_song_id": 17228794,
-    "platform_link": "https://music.163.com/#/song?id=17228794",
-    "notes": "Remastered 40th Anniversary version in user library."
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2023-09-18: Layla (remastered - 40th Anniversary version - 2010) (同艺人不同时期)",
+      "红心 2024-05-14: Layla (同艺人不同时期)"
+    ],
+    "confidence": "medium"
   },
   "epistemic_layer": "fact",
   "sources": [
     "https://en.wikipedia.org/wiki/Layla",
     "https://www.soundonsound.com/techniques/classic-tracks-derek-dominos-layla"
   ],
-  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+  "tags": [
+    "dual_protagonist_structure",
+    "aria_form_descent",
+    "extended_solo_as_movement"
+  ]
 }
