@@ -9,7 +9,7 @@
     "transcript_en_status": "missing",
     "narrator_persona_zh": null,
     "narrator_persona_en": null,
-    "fusion_audio_url": null
+    "fusion_audio_url": "/audio_fusion/ep1/00_opening.mp3"
   },
   {
     "kind": "track",
@@ -25,8 +25,7 @@
       "M2"
     ],
     "netease_song_id": "27138926",
-    "audio_url": "/audio/01_james-brown_cold-sweat.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/01_james-brown_cold-sweat.mp3",
     "album_cover_url": "/covers/01_james-brown_cold-sweat.jpg",
     "duration_seconds": 172,
     "unavailable": false,
@@ -111,7 +110,8 @@
         "connection_id": "conn_001_to_009_groove_dna",
         "archive_reason": "low_focus_relevance"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/01_james-brown_cold-sweat.mp3"
   },
   {
     "kind": "track",
@@ -128,8 +128,7 @@
       "M3"
     ],
     "netease_song_id": "20344729",
-    "audio_url": "/audio/02_sly-the-family-stone_family-affair.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/02_sly-the-family-stone_family-affair.mp3",
     "album_cover_url": "/covers/02_sly-the-family-stone_family-affair.jpg",
     "duration_seconds": 189,
     "unavailable": false,
@@ -215,7 +214,8 @@
         "connection_id": "conn_002_to_013_groove_dna",
         "archive_reason": "off_topic_for_episode"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/02_sly-the-family-stone_family-affair.mp3"
   },
   {
     "kind": "track",
@@ -231,8 +231,7 @@
       "M1"
     ],
     "netease_song_id": "27185190",
-    "audio_url": "/audio/03_david-bowie_fame.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/03_david-bowie_fame.mp3",
     "album_cover_url": "/covers/03_david-bowie_fame.jpg",
     "duration_seconds": 257,
     "unavailable": false,
@@ -323,7 +322,8 @@
         "connection_id": "conn_003_to_013_groove_dna",
         "archive_reason": "off_topic_for_episode"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/03_david-bowie_fame.mp3"
   },
   {
     "kind": "track",
@@ -339,8 +339,7 @@
       "M2"
     ],
     "netease_song_id": "18300309",
-    "audio_url": "/audio/04_parliament_give-up-the-funk-tear-the-roof-off-the-sucker.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/04_parliament_give-up-the-funk-tear-the-roof-off-the-sucker.mp3",
     "album_cover_url": "/covers/04_parliament_give-up-the-funk-tear-the-roof-off-the-sucker.jpg",
     "duration_seconds": 346,
     "unavailable": false,
@@ -431,7 +430,8 @@
         "connection_id": "conn_004_to_017_groove_dna",
         "archive_reason": "low_focus_relevance"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/04_parliament_give-up-the-funk-tear-the-roof-off-the-sucker.mp3"
   },
   {
     "kind": "track",
@@ -447,8 +447,7 @@
       "M2"
     ],
     "netease_song_id": "5059535",
-    "audio_url": "/audio/05_bee-gees_stayin-alive.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/05_bee-gees_stayin-alive.mp3",
     "album_cover_url": "/covers/05_bee-gees_stayin-alive.jpg",
     "duration_seconds": 284,
     "unavailable": false,
@@ -539,7 +538,8 @@
         "connection_id": "conn_005_to_018_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/05_bee-gees_stayin-alive.mp3"
   },
   {
     "kind": "track",
@@ -556,8 +556,7 @@
       "M3"
     ],
     "netease_song_id": "21968201",
-    "audio_url": "/audio/06_the-rolling-stones_miss-you.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/06_the-rolling-stones_miss-you.mp3",
     "album_cover_url": "/covers/06_the-rolling-stones_miss-you.jpg",
     "duration_seconds": 287,
     "unavailable": false,
@@ -686,7 +685,8 @@
         "connection_id": "conn_006_to_012_groove_dna",
         "archive_reason": "already_told"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/06_the-rolling-stones_miss-you.mp3"
   },
   {
     "kind": "track",
@@ -702,8 +702,7 @@
       "M1"
     ],
     "netease_song_id": "16849154",
-    "audio_url": "/audio/07_blondie_heart-of-glass.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/07_blondie_heart-of-glass.mp3",
     "album_cover_url": "/covers/07_blondie_heart-of-glass.jpg",
     "duration_seconds": 350,
     "unavailable": false,
@@ -794,7 +793,8 @@
         "connection_id": "conn_007_to_011_groove_dna",
         "archive_reason": "low_focus_relevance"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/07_blondie_heart-of-glass.mp3"
   },
   {
     "kind": "track",
@@ -810,8 +810,7 @@
       "M1"
     ],
     "netease_song_id": "4021819",
-    "audio_url": "/audio/08_devo_jocko-homo.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/08_devo_jocko-homo.mp3",
     "album_cover_url": "/covers/08_devo_jocko-homo.jpg",
     "duration_seconds": 217,
     "unavailable": false,
@@ -833,7 +832,8 @@
     "connections_lateral": [],
     "narrative_weight": "bridge",
     "strong_connection_id": null,
-    "archived_weak_connections": []
+    "archived_weak_connections": [],
+    "fusion_audio_url": "/audio_fusion/ep1/08_devo_jocko-homo.mp3"
   },
   {
     "kind": "track",
@@ -849,8 +849,7 @@
       "M1"
     ],
     "netease_song_id": "2333069",
-    "audio_url": "/audio/09_chic_good-times.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/09_chic_good-times.mp3",
     "album_cover_url": "/covers/09_chic_good-times.jpg",
     "duration_seconds": 495,
     "unavailable": false,
@@ -941,7 +940,8 @@
         "connection_id": "conn_009_to_015_personnel_bridge_bass",
         "archive_reason": "already_told"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/09_chic_good-times.mp3"
   },
   {
     "kind": "track",
@@ -957,8 +957,7 @@
       "M4"
     ],
     "netease_song_id": "18860348",
-    "audio_url": "/audio/10_joy-division_isolation.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/10_joy-division_isolation.mp3",
     "album_cover_url": "/covers/10_joy-division_isolation.jpg",
     "duration_seconds": 173,
     "unavailable": false,
@@ -1023,7 +1022,8 @@
         "connection_id": "conn_010_to_011_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/10_joy-division_isolation.mp3"
   },
   {
     "kind": "track",
@@ -1041,7 +1041,6 @@
     ],
     "netease_song_id": null,
     "audio_url": null,
-    "fusion_audio_url": null,
     "album_cover_url": "/covers/11_talking-heads_once-in-a-lifetime.jpg",
     "duration_seconds": null,
     "unavailable": true,
@@ -1132,7 +1131,8 @@
         "connection_id": "conn_011_to_015_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/11_talking-heads_once-in-a-lifetime.mp3"
   },
   {
     "kind": "track",
@@ -1150,7 +1150,6 @@
     ],
     "netease_song_id": null,
     "audio_url": null,
-    "fusion_audio_url": null,
     "album_cover_url": "/covers/12_queen_another-one-bites-the-dust.jpg",
     "duration_seconds": null,
     "unavailable": true,
@@ -1249,7 +1248,8 @@
         "connection_id": "conn_012_to_017_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/12_queen_another-one-bites-the-dust.mp3"
   },
   {
     "kind": "track",
@@ -1265,8 +1265,7 @@
       "M4"
     ],
     "netease_song_id": "21393063",
-    "audio_url": "/audio/13_prince_when-doves-cry.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/13_prince_when-doves-cry.mp3",
     "album_cover_url": "/covers/13_prince_when-doves-cry.jpg",
     "duration_seconds": 354,
     "unavailable": false,
@@ -1352,7 +1351,8 @@
         "connection_id": "conn_013_to_018_groove_dna",
         "archive_reason": "already_told"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/13_prince_when-doves-cry.mp3"
   },
   {
     "kind": "track",
@@ -1368,8 +1368,7 @@
       "M1"
     ],
     "netease_song_id": "21536236",
-    "audio_url": "/audio/14_red-hot-chili-peppers_give-it-away.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/14_red-hot-chili-peppers_give-it-away.mp3",
     "album_cover_url": "/covers/14_red-hot-chili-peppers_give-it-away.jpg",
     "duration_seconds": 283,
     "unavailable": false,
@@ -1455,7 +1454,8 @@
         "connection_id": "conn_014_to_018_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/14_red-hot-chili-peppers_give-it-away.mp3"
   },
   {
     "kind": "track",
@@ -1471,8 +1471,7 @@
       "M1"
     ],
     "netease_song_id": "26349642",
-    "audio_url": "/audio/15_daft-punk_get-lucky.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/15_daft-punk_get-lucky.mp3",
     "album_cover_url": "/covers/15_daft-punk_get-lucky.jpg",
     "duration_seconds": 370,
     "unavailable": false,
@@ -1563,7 +1562,8 @@
         "connection_id": "conn_015_to_017_gear_lineage_bass",
         "archive_reason": "already_told"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/15_daft-punk_get-lucky.mp3"
   },
   {
     "kind": "track",
@@ -1579,8 +1579,7 @@
       "M1"
     ],
     "netease_song_id": "33004499",
-    "audio_url": "/audio/16_tame-impala_the-less-i-know-the-better.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/16_tame-impala_the-less-i-know-the-better.mp3",
     "album_cover_url": "/covers/16_tame-impala_the-less-i-know-the-better.jpg",
     "duration_seconds": 219,
     "unavailable": false,
@@ -1666,7 +1665,8 @@
         "connection_id": "conn_016_to_018_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/16_tame-impala_the-less-i-know-the-better.mp3"
   },
   {
     "kind": "track",
@@ -1683,8 +1683,7 @@
       "M4"
     ],
     "netease_song_id": "534544513",
-    "audio_url": "/audio/17_khruangbin_mar-a-tambi-n.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/17_khruangbin_mar-a-tambi-n.mp3",
     "album_cover_url": "/covers/17_khruangbin_mar-a-tambi-n.jpg",
     "duration_seconds": 191,
     "unavailable": false,
@@ -1765,7 +1764,8 @@
         "connection_id": "conn_012_to_017_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/17_khruangbin_mar-a-tambi-n.mp3"
   },
   {
     "kind": "track",
@@ -1781,8 +1781,7 @@
       "M1"
     ],
     "netease_song_id": "2019098699",
-    "audio_url": "/audio/18_mkgee_you-dreamed-of-me.mp3",
-    "fusion_audio_url": null,
+    "audio_url": "/audio/ep1/18_mkgee_you-dreamed-of-me.mp3",
     "album_cover_url": "/covers/18_mkgee_you-dreamed-of-me.jpg",
     "duration_seconds": 146,
     "unavailable": false,
@@ -1854,7 +1853,8 @@
         "connection_id": "conn_016_to_018_groove_dna",
         "archive_reason": "no_concrete_anchor"
       }
-    ]
+    ],
+    "fusion_audio_url": "/audio_fusion/ep1/18_mkgee_you-dreamed-of-me.mp3"
   },
   {
     "kind": "narration",
@@ -1866,7 +1866,7 @@
     "transcript_en_status": "missing",
     "narrator_persona_zh": null,
     "narrator_persona_en": null,
-    "fusion_audio_url": null
+    "fusion_audio_url": "/audio_fusion/ep1/19_interlude.mp3"
   },
   {
     "kind": "narration",
@@ -1878,6 +1878,6 @@
     "transcript_en_status": "missing",
     "narrator_persona_zh": null,
     "narrator_persona_en": null,
-    "fusion_audio_url": null
+    "fusion_audio_url": "/audio_fusion/ep1/20_closing.mp3"
   }
 ]
