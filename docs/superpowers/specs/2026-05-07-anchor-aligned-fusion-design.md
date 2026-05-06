@@ -195,7 +195,7 @@ constraint: voice and music coexist throughout, only the foreground shifts.
 
   | Pos | Track | Transcript stamp | `anchor_timestamp_seconds` |
   |---|---|---|---|
-  | 1 | Child in Time | (no precise stamp; pillar — pick Blackmore solo apex) | TBD by editor |
+  | 1 | Child in Time | Blackmore solo apex (no transcript stamp) | ~240 (4:00, tunable) |
   | 2 | Layla | piano coda entry ~3:10 | ~192 |
   | 3 | Stairway | 5:34 | 336 |
   | 5 | Free Bird | 5:08 | 310 |
