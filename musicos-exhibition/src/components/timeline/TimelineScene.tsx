@@ -128,7 +128,7 @@ export function TimelineScene({ tracks }: Props) {
           style={{
             transform:
               phase === 'playing'
-                ? `translateX(-55px) rotateX(${tuning.playingRotX}deg) rotateY(0deg) rotateZ(0deg)`
+                ? `translate(${tuning.playingOffsetX}px, ${tuning.playingOffsetY}px) rotateX(${tuning.playingRotX}deg) rotateY(0deg) rotateZ(0deg)`
                 : `rotateX(${tuning.stageRotX}deg) rotateY(${tuning.stageRotY}deg) rotateZ(${tuning.stageRotZ}deg)`,
             transition: `transform ${INTRO_TRANSITION_MS}ms cubic-bezier(0.22, 1, 0.36, 1)`,
           }}

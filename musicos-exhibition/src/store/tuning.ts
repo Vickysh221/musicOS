@@ -26,6 +26,8 @@ export interface TuningParams {
   arcDepth: number;        // parabolic Z-recession coefficient (px per offset²)
   arcRotStep: number;      // inward rotY per offset step (deg)
   playingRotX: number;     // stage rotateX during playing — bird's-eye tilt (deg)
+  playingOffsetX: number;  // screen-space X shift of the arc center (px)
+  playingOffsetY: number;  // screen-space Y shift of the arc center (px)
   // Visibility of the tuning panel
   panelOpen: boolean;
 }
@@ -46,10 +48,12 @@ export const TUNING_DEFAULTS: TuningParams = {
   stageRotY: -54,
   stageRotZ: -4.5,
   perspective: 4000,
-  arcSpacing: 454,
-  arcDepth: 122,
-  arcRotStep: 13,
-  playingRotX: -19,
+  arcSpacing: 440,
+  arcDepth: 150,
+  arcRotStep: 20,
+  playingRotX: 14,
+  playingOffsetX: -55,
+  playingOffsetY: -169,
   panelOpen: false,
 };
 

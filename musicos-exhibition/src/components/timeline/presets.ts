@@ -2,7 +2,7 @@ import type { TuningParams } from '../../store/tuning.js';
 
 type Preset = Omit<TuningParams, 'panelOpen'>;
 
-const ARC_DEFAULTS = { arcSpacing: 454, arcDepth: 122, arcRotStep: 13, playingRotX: -19 };
+const ARC_DEFAULTS = { arcSpacing: 440, arcDepth: 150, arcRotStep: 20, playingRotX: 14, playingOffsetX: -55, playingOffsetY: -169 };
 
 export const INTRO_1: Preset = {
   gapX: 240,
