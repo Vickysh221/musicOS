@@ -1,0 +1,15 @@
+/* Global layout shell */
+
+.app-content {
+  margin-left: 52px; /* collapsed sidebar width */
+  min-height: 100vh;
+  box-sizing: border-box;
+  transition: margin-left 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 640px) {
+  .app-content {
+    margin-left: 0;
+    margin-bottom: 48px; /* bottom sidebar strip */
+  }
+}

@@ -1,0 +1,179 @@
+/* sidebar.css */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 52px;
+  background: #111;
+  color: #f6f6f4;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: width 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+}
+
+.sidebar--open {
+  width: 220px;
+}
+
+/* Toggle button */
+.sidebar__toggle {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 52px;
+  width: 52px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  transition: color 0.15s;
+  margin-top: 8px;
+}
+.sidebar__toggle:hover { color: #f6f6f4; }
+
+.sidebar__toggle-icon {
+  font-size: 18px;
+  line-height: 1;
+  display: block;
+  transition: transform 0.2s;
+}
+
+/* Nav */
+.sidebar__nav {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 8px 0;
+  gap: 2px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Episode item */
+.sidebar__item {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 10px 0;
+  text-decoration: none;
+  color: #888;
+  border-left: 2px solid transparent;
+  transition: color 0.15s, border-color 0.15s, background 0.15s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.sidebar__item:hover {
+  color: #f6f6f4;
+  background: rgba(255,255,255,0.05);
+}
+.sidebar__item--active {
+  color: #f6f6f4;
+  border-left-color: #f6f6f4;
+}
+
+/* Episode number pill — always visible */
+.sidebar__num {
+  flex-shrink: 0;
+  width: 52px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Info block — slides in with sidebar */
+.sidebar__info {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding-right: 16px;
+  opacity: 0;
+  transform: translateX(-8px);
+  transition: opacity 0.2s 0.05s, transform 0.2s 0.05s;
+  pointer-events: none;
+}
+.sidebar--open .sidebar__info {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.sidebar__title-zh {
+  font-size: 13px;
+  font-weight: 600;
+  color: inherit;
+}
+.sidebar__title-en {
+  font-size: 11px;
+  color: #aaa;
+}
+.sidebar__title-en,
+.sidebar__anchor {
+  transition: color 0.15s;
+}
+.sidebar__item--active .sidebar__title-en { color: #ccc; }
+
+.sidebar__anchor {
+  font-size: 10px;
+  color: #666;
+  margin-top: 2px;
+}
+.sidebar__item--active .sidebar__anchor { color: #888; }
+
+/* Mobile: sidebar becomes a thin strip at the bottom instead */
+@media (max-width: 640px) {
+  .sidebar {
+    top: auto;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 48px;
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    transition: height 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .sidebar--open {
+    width: 100vw;
+    height: 120px;
+  }
+  .sidebar__toggle {
+    width: 48px;
+    height: 48px;
+    margin-top: 0;
+    flex-shrink: 0;
+  }
+  .sidebar__nav {
+    flex-direction: row;
+    align-items: center;
+    padding: 0 8px;
+    gap: 4px;
+    overflow-y: hidden;
+  }
+  .sidebar__item {
+    flex-direction: column;
+    border-left: none;
+    border-bottom: 2px solid transparent;
+    padding: 8px 12px;
+    gap: 2px;
+    min-width: 80px;
+  }
+  .sidebar__item--active { border-bottom-color: #f6f6f4; }
+  .sidebar__num { width: auto; }
+  .sidebar__info {
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: opacity 0.2s, transform 0.2s;
+  }
+  .sidebar--open .sidebar__info {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

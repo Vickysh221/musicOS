@@ -13,7 +13,7 @@
 .detail__back {
   position: fixed;
   top: 22px;
-  left: 28px;
+  left: 68px; /* 52px sidebar + 16px gap */
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;

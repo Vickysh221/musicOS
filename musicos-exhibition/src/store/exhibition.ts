@@ -2,7 +2,6 @@ import { create } from 'zustand';
 import type { Exhibit } from '../types.js';
 import { loadExhibition } from '../lib/load-exhibition.js';
 
-// All exhibits with audio participate in linear playback (opening → tracks → interlude → closing).
 function playableExhibits(exhibits: Exhibit[]): Exhibit[] {
   return exhibits
     .filter((e) => Boolean(e.fusion_audio_url) || (e.kind === 'track' && Boolean(e.audio_url)))
@@ -12,16 +11,15 @@ function playableExhibits(exhibits: Exhibit[]): Exhibit[] {
 
 interface ExhibitionStore {
   exhibits: Exhibit[];
+  episodeId: string | null;
   language: 'zh' | 'en';
   mode: 'auto' | 'manual';
-  // Playback state (lives on the timeline; audio element is rendered by GlobalPlayer)
   playingPosition: number | null;
   isPlaying: boolean;
   currentTime: number;
   duration: number;
-  // Imperative seek requests handed off to GlobalPlayer; consumed via a monotonic id
   seekRequest: { time: number; id: number } | null;
-  load: () => Promise<void>;
+  load: (episodeId: string) => Promise<void>;
   setLanguage: (lang: 'zh' | 'en') => void;
   setMode: (mode: 'auto' | 'manual') => void;
   play: (position: number) => void;
@@ -37,6 +35,7 @@ interface ExhibitionStore {
 
 export const useExhibition = create<ExhibitionStore>((set, get) => ({
   exhibits: [],
+  episodeId: null,
   language: 'zh',
   mode: 'manual',
   playingPosition: null,
@@ -44,9 +43,13 @@ export const useExhibition = create<ExhibitionStore>((set, get) => ({
   currentTime: 0,
   duration: 0,
   seekRequest: null,
-  load: async () => {
-    const exhibits = await loadExhibition();
-    set({ exhibits });
+  load: async (episodeId: string) => {
+    const current = get().episodeId;
+    if (current === episodeId && get().exhibits.length > 0) return;
+    // Reset playback when switching episodes
+    set({ exhibits: [], episodeId, playingPosition: null, isPlaying: false, currentTime: 0, duration: 0 });
+    const exhibits = await loadExhibition(episodeId);
+    set({ exhibits, episodeId });
   },
   setLanguage: (language) => set({ language }),
   setMode: (mode) => set({ mode }),
@@ -93,7 +96,6 @@ export const useExhibition = create<ExhibitionStore>((set, get) => ({
     if (pv) {
       set({ playingPosition: pv.position, isPlaying: true, currentTime: 0, duration: 0 });
     } else {
-      // Already at first item — restart it
       set({ currentTime: 0, seekRequest: { time: 0, id: Date.now() } });
     }
   },

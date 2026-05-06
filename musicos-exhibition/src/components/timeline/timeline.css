@@ -183,7 +183,7 @@
 .timeline-header {
   position: fixed;
   top: 0;
-  left: 0;
+  left: 52px; /* collapsed sidebar width */
   right: 0;
   padding: 18px 28px;
   display: flex;
