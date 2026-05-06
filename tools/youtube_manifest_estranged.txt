@@ -1,0 +1,25 @@
+# YouTube fetch manifest for Estranged Episode 2 — aria↔solo dialectic
+# Format:  <video_id>|<filename_stem>
+# Run: python3 -m tools.fetch_audio_youtube tools/youtube_manifest_estranged.txt
+#
+# Sources: official artist/label channels preferred (VEVO, Warner Vault,
+# Blackened Recordings, Universal Music, etc.)
+
+4wAPTsjhrjM|01_deep-purple_child-in-time
+Th3ycKQV_4k|02_derek-and-the-dominos_layla
+QkF3oxziUI4|03_led-zeppelin_stairway-to-heaven
+_NzLs-xSss0|04_the-who_wont-get-fooled-again
+0LwcvjNJTuM|05_lynyrd-skynyrd_free-bird
+fJ9rUzIMcZQ|06_queen_bohemian-rhapsody
+7kWl-ZGMwkQ|07_pink-floyd_comfortably-numb
+9HZ_tx8aWuA|08_metallica_fade-to-black
+WM8bTdBs-cw|09_metallica_one
+dpmAY059TTY|10_guns-n-roses_estranged
+8SbUC-UaAxE|11_guns-n-roses_november-rain
+tAGnKpE4NCI|12_metallica_nothing-else-matters
+WLUbs0rCQlI|13_heibao_dont-break-my-heart
+tI-5uv4wryI|14_oasis_champagne-supernova
+fHiGbolFFGw|15_radiohead_paranoid-android
+4tlUwgtgdZA|16_shiina-ringo_marunouchi-sadistic
+RRKJiM9Njr8|17_my-chemical-romance_welcome-to-the-black-parade
+Q3Yc3HhSl1Q|18_muse_knights-of-cydonia

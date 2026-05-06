@@ -35,28 +35,55 @@ from tools.stitch_track import (
 ROOT = Path(__file__).resolve().parent.parent
 
 # Style assignment: position → 'A' | 'C' | 'C_SHORT' | 'PASSTHROUGH'
+
+# Episode 1 — Miss You · Bassline DNA (calibrated 2026-05-06)
+# STYLE_BY_POSITION_EP1: dict[int, str] = {
+#     0: "PASSTHROUGH",
+#     1: "C",   # JB anchor — bass intro should land first
+#     2: "C",   # Family Affair — needs preroll for groove
+#     3: "C",
+#     4: "C",   # Give Up the Funk — preroll for P-Funk entry
+#     5: "C",   # Stayin' Alive — preroll for the famous intro
+#     6: "C",   # Miss You anchor, 622-char narration
+#     7: "A",
+#     8: "C_SHORT",  # muted, 30s music only
+#     9: "C",
+#     10: "C",  # Isolation — preroll for the bassline
+#     11: "C",
+#     12: "C",  # Another One Bites the Dust — preroll for that bassline
+#     13: "A",
+#     14: "A",
+#     15: "A",
+#     16: "A",
+#     17: "C",
+#     18: "A",
+#     19: "PASSTHROUGH",
+#     20: "PASSTHROUGH",
+# }
+
+# Episode 2 — Estranged · aria↔solo dialectic (2026-05-06)
+# All narrations >350ch → C; muted tracks → C_SHORT; opening/closing → PASSTHROUGH
 STYLE_BY_POSITION: dict[int, str] = {
-    0: "PASSTHROUGH",
-    1: "C",   # JB anchor — bass intro should land first
-    2: "C",   # Family Affair — needs preroll for groove
-    3: "C",
-    4: "C",   # Give Up the Funk — preroll for P-Funk entry
-    5: "C",   # Stayin' Alive — preroll for the famous intro
-    6: "C",   # Miss You anchor, 622-char narration
-    7: "A",
-    8: "C_SHORT",  # muted, 30s music only
-    9: "C",
-    10: "C",  # Isolation — preroll for the bassline
-    11: "C",
-    12: "C",  # Another One Bites the Dust — preroll for that bassline
-    13: "A",
-    14: "A",
-    15: "A",
-    16: "A",
-    17: "C",
-    18: "A",
-    19: "PASSTHROUGH",
-    20: "PASSTHROUGH",
+    0:  "PASSTHROUGH",   # opening
+    1:  "C",   # Child in Time — 576ch
+    2:  "C",   # Layla — 559ch
+    3:  "C",   # Stairway to Heaven — 491ch
+    4:  "C_SHORT",       # The Who — muted bridge 131ch
+    5:  "C",   # Free Bird — 565ch
+    6:  "C",   # Bohemian Rhapsody — 606ch
+    7:  "C",   # Comfortably Numb — 546ch
+    8:  "C",   # Fade to Black — 516ch
+    9:  "C_SHORT",       # Metallica One — muted bridge 144ch
+    10: "C",   # Estranged — ANCHOR 1092ch
+    11: "C",   # November Rain — 639ch
+    12: "C",   # Nothing Else Matters — 532ch
+    13: "C",   # Don't Break My Heart — 426ch
+    14: "C",   # Champagne Supernova — 611ch
+    15: "C",   # Paranoid Android — 575ch
+    16: "C",   # 丸ノ内サディスティック — 482ch
+    17: "C",   # Welcome to the Black Parade — 621ch
+    18: "C",   # Knights of Cydonia — 623ch
+    19: "PASSTHROUGH",   # closing
 }
 
 
