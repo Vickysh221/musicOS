@@ -145,6 +145,8 @@ export function NowPlayingBar() {
   const prev = useExhibition((s) => s.prev);
 
   const [expanded, setExpanded] = useState(false);
+  const listRef = useRef<HTMLUListElement | null>(null);
+  const activeItemRef = useRef<HTMLLIElement | null>(null);
 
   const exhibit = exhibits.find((e) => e.position === playingPosition) ?? null;
 
@@ -157,9 +159,20 @@ export function NowPlayingBar() {
   const sections = useMemo(() => splitSections(transcript), [transcript]);
   const startTimes = useMemo(() => sectionStartTimes(sections, duration), [sections, duration]);
 
+  const sectionIdx = startTimes.length > 0 ? activeSectionIdx(startTimes, currentTime) : 0;
+
+  // Scroll the active item into view with ~40px of peek context above it.
+  useEffect(() => {
+    const list = listRef.current;
+    const item = activeItemRef.current;
+    if (!list || !item) return;
+    const PEEK = 40; // px of context to show above the active item
+    const targetScrollTop = item.offsetTop - PEEK;
+    list.scrollTo({ top: targetScrollTop, behavior: 'smooth' });
+  }, [sectionIdx]);
+
   if (!exhibit) return null;
 
-  const sectionIdx = startTimes.length > 0 ? activeSectionIdx(startTimes, currentTime) : 0;
   const currentSection = sections[sectionIdx] ?? '';
 
   const onSeekToSection = (idx: number) => {
@@ -176,9 +189,9 @@ export function NowPlayingBar() {
   return (
     <div className={`npb${expanded ? ' npb--expanded' : ''}`}>
       {expanded && sections.length > 0 && (
-        <ul className="npb__list" aria-label="Transcript sections">
+        <ul ref={listRef} className="npb__list" aria-label="Transcript sections">
           {sections.map((sec, i) => (
-            <li key={i}>
+            <li key={i} ref={i === sectionIdx ? activeItemRef : null}>
               <button
                 type="button"
                 className={`npb__list-item${i === sectionIdx ? ' npb__list-item--active' : ''}`}
