@@ -1,0 +1,33 @@
+{
+  "id": "guns-n-roses_use-your-illusion-ii_estranged",
+  "artist": "Guns N' Roses",
+  "song": "Estranged",
+  "album": "Use Your Illusion II",
+  "year": 1991,
+  "record_label": "Geffen",
+  "position_in_era": {
+    "genre": "Hard rock / arena rock",
+    "historical_role": "Anchor — the song where Axl Rose's vocal plea and Slash's guitar solo most explicitly share the foreground simultaneously rather than alternately. The 7:30–9:00 section is the clearest documented instance of the aria↔solo dialectic in 1990s rock: Rose's final vocal lines and Slash's solo are layered together, not sequenced, creating a genuine dual-protagonist climax. Rose's liner notes thank Slash specifically for 'the killer guitar melodies' that realized his vision.",
+    "axis": "anchor"
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by Mike Clink and the band. Recorded during the Use Your Illusion sessions at A&M Studios, Record Plant, and Conway Studios, Los Angeles (1990–1991). Duration: 9:23 — Guns N' Roses' second-longest track after 'Coma.' Axl Rose wrote the song during the Chicago rehearsal period while processing the dissolution of his marriage to Erin Everly. Slash recorded his guitar parts using a Les Paul Gold Top with the rhythm pickup and tone turned all the way down. Multiple distinguished guitar and piano solos across the full length.",
+    "member_dynamics": "Axl Rose (vocals, piano) and Slash (lead guitar) are the two protagonists. Rose's explicit liner-note credit to Slash for 'the killer guitar melodies' marks this as a song where the composer-vocalist acknowledged the guitarist's equal authorial stake. The dual foreground at 7:30–9:00 is not incidental — it is the song's emotional culmination.",
+    "instrumentation_details": "Slash: Les Paul Gold Top (rhythm pickup, full tone roll-off for a warmer, more sustained tone). Rose: piano sections (he plays piano on the track). Duff McKagan: bass. Matt Sorum: drums. Dizzy Reed: additional keyboards. The string arrangement by Rose creates an orchestral context that frames both vocal and guitar as operatic voices.",
+    "cultural_venue": "Use Your Illusion II track 10. The 1994 music video directed by Andy Morahan is notable for Slash's dolphin cameo (Rose jumps into the ocean, implying release from the estrangement). The song closed the trio of epic ballads that defined the album alongside November Rain and Estranged.",
+    "release_circumstances": "Album September 1991; single released January 1994 (delayed by the Illusion tour). Rose described the song as 'being catapulted out into the universe and having no choice about it' — the vocal aria of powerlessness answered by Slash's solo as an act of expression that words cannot accommodate."
+  },
+  "user_coverage": {
+    "red_heart_tier": "hit",
+    "netease_song_id": 18095077,
+    "platform_link": "https://music.163.com/#/song?id=18095077",
+    "notes": "In user red-heart library."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Estranged_(song)",
+    "https://ultimateclassicrock.com/guns-n-roses-estranged/"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"],
+  "is_base_node": true
+}

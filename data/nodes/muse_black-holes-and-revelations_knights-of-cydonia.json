@@ -1,0 +1,32 @@
+{
+  "id": "muse_black-holes-and-revelations_knights-of-cydonia",
+  "artist": "Muse",
+  "song": "Knights of Cydonia",
+  "album": "Black Holes and Revelations",
+  "year": 2006,
+  "record_label": "Helium 3 / Warner Bros.",
+  "position_in_era": {
+    "genre": "Alternative rock / progressive rock / space rock",
+    "historical_role": "An inversion of the standard aria↔solo dialectic: the song opens with 2:03 of pure guitar instrumental (solo as protagonist, no voice) before Matt Bellamy's vocal enters for the 'aria' section. This reversal — guitar-first, voice-second — mirrors the structural logic of the Knights of Cydonia narrative (non-verbal action before verbal statement) and creates a different emotional shape than the standard vocal-then-solo form.",
+    "axis": "downstream"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at Chateau Miraval, France (2005–2006). Produced by Rich Costey and Muse. Duration: 6:07. The guitar intro draws from a five-tone musical phrase from the film Close Encounters of the Third Kind. The guitar sound was influenced by the 1962 hit 'Telstar' by the Tornados (Matt Bellamy's father, George Bellamy, was the Tornados' rhythm guitarist). The second half of the song was originally a separate piece that Muse decided to append.",
+    "member_dynamics": "Matt Bellamy (vocal, guitar) as both protagonists — voice and guitar are the same person, but structurally separated into an extended opening instrumental and a subsequent vocal section. The solo protagonist (Bellamy's guitar) cedes the foreground to the aria protagonist (Bellamy's voice) at 2:03. This is a meta-commentary on the dual-protagonist form: one person playing both roles.",
+    "instrumentation_details": "Bellamy: guitar (Marshall JMP-1 preamp), vocal (B3–E5). Christopher Wolstenholme: bass with prominent galloping figure. Dominic Howard: drums with horse-gallop rhythm pattern. Synthesised and live trumpet parts. The intro uses a sustained guitar drone with melodic lines over it — closer to a guitar 'aria' than a typical solo.",
+    "cultural_venue": "Black Holes and Revelations closes with 'Knights of Cydonia' — the album ending on its most epic, politically charged track. The song became a live concert standard for closing-set anthems.",
+    "release_circumstances": "Album July 2006; single November 2006. The song's explicit structural inversion of the aria→solo sequence makes it both a descendant of the tradition and a challenge to it — the guitar refuses to wait."
+  },
+  "user_coverage": {
+    "red_heart_tier": "blind_spot",
+    "netease_song_id": null,
+    "platform_link": null,
+    "notes": "Muse in user library (Panic Station, Unintended) but Knights of Cydonia not red-hearted."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Knights_of_Cydonia",
+    "https://www.musewiki.org/Knights_of_Cydonia_(song)"
+  ],
+  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+}

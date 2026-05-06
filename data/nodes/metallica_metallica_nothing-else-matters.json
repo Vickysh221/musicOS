@@ -1,0 +1,32 @@
+{
+  "id": "metallica_metallica_nothing-else-matters",
+  "artist": "Metallica",
+  "song": "Nothing Else Matters",
+  "album": "Metallica (The Black Album)",
+  "year": 1991,
+  "record_label": "Elektra",
+  "position_in_era": {
+    "genre": "Heavy metal / power ballad",
+    "historical_role": "A structural inversion of the Hetfield/Hammett dual-protagonist formula: Hetfield wrote the song privately for himself, and plays the guitar solo himself — Hammett does not appear on the studio recording. The dialectic collapses into a monologue: the same person who sings also solos. This inversion reveals the structural assumption of all the other dual-protagonist songs: that the voice and the guitar solo ARE different characters, played by different people.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at One on One Studios and Eldorado Studios, Los Angeles (1990–1991). Producer: Bob Rock, who suggested adding an orchestral component. Michael Kamen orchestrated the string arrangement. Hetfield played the guitar solo himself — one of the few Metallica songs where he solos. Hammett is absent from the studio recording entirely. Duration: 6:29.",
+    "member_dynamics": "Hetfield as sole protagonist: he wrote the song privately while on tour ('bumming out about being away from home'), did not initially intend to release it, and only shared it with the band during pre-production. The decision to have Hetfield play the solo himself (rather than handing it to Hammett) was Hetfield's own. The solo is understated — not a showpiece — which may reflect that it was not meant to be a rival protagonist but an extension of the vocal's own voice.",
+    "instrumentation_details": "Hetfield: acoustic guitar, electric guitar, lead guitar solo. Hammett: absent (studio recording). Ulrich: drums. Newsted: bass. Michael Kamen: orchestral arrangement. Bob Rock: producer (also contributed piano on Black Album).",
+    "cultural_venue": "The Black Album, Metallica's mainstream breakthrough. 'Nothing Else Matters' became one of the most-covered Metallica songs and is frequently paired with Guns N' Roses' 'November Rain' as a defining 1991 power ballad — two songs from the same year whose structural DNA is related but divergent.",
+    "release_circumstances": "Album August 1991; single April 1992. The song was the third single from the album. The orchestral arrangement by Kamen positions the vocal in an operatic context — but with no separate guitar protagonist, the aria has no soloist to answer it."
+  },
+  "user_coverage": {
+    "red_heart_tier": "blind_spot",
+    "netease_song_id": null,
+    "platform_link": null,
+    "notes": "Not in user red-heart library. Metallica rights issues may affect NetEase availability."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Nothing_Else_Matters",
+    "https://www.loudersound.com/bands-artists/metallica-story-of-nothing-else-matters-elton-john-miley-cyrus"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent"]
+}

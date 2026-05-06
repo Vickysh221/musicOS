@@ -1,0 +1,32 @@
+{
+  "id": "metallica_and-justice-for-all_one",
+  "artist": "Metallica",
+  "song": "One",
+  "album": "...And Justice for All",
+  "year": 1988,
+  "record_label": "Elektra",
+  "position_in_era": {
+    "genre": "Thrash metal / progressive metal",
+    "historical_role": "Expanded the Fade to Black template: longer, more formally structured quiet-vocal/loud-solo dialectic across 7:26, culminating in a dual guitar section where Hammett and Hetfield trade leads simultaneously. The song's machine-gun outro — where all vocal activity ends and the guitar+drums take over entirely — is the most extreme version of the solo-as-separate-protagonist dynamic in metal.",
+    "axis": "upward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at One on One Studios, Los Angeles (1988). Producer: Flemming Rasmussen. Hetfield plays clean-toned opening riff and all rhythm/acoustic guitar; Hammett plays lead guitar throughout including a technically complex tapping solo and a final section where both Hammett and Hetfield trade dual guitar leads. The song's architecture has been formally analyzed by music academics (Wooster College course 'The Art of Rock Music').",
+    "member_dynamics": "Hetfield (vocal, rhythm guitar) and Hammett (lead guitar) — same pairing as Fade to Black but with a key escalation: the final third of the song drops all vocal completely. Hetfield becomes a rhythm guitarist to support Hammett's guitar section; the voice exits the field entirely, leaving guitar as the sole foreground protagonist for the climax.",
+    "instrumentation_details": "Hetfield: ESP guitar (clean and distorted), acoustic guitar. Hammett: ESP guitar, tapping technique in extended solo. Lars Ulrich: drums with double bass drum machine-gun pattern synced to the machine-gun guitar riff. Cliff Burton's replacement Jason Newsted: bass (mixed very low due to a documented production decision — Hetfield reportedly mixed Newsted's bass down).",
+    "cultural_venue": "Inspired by the 1971 film Dalton Trumbo adaptation of his novel 'Johnny Got His Gun.' The promotional music video (first Metallica video) showed scenes from the film intercut with the band. The song won a Grammy for Best Metal Performance.",
+    "release_circumstances": "Album released September 1988; single February 1989. Guitar World readers ranked Hammett's extended solo at #26 in their 100 Greatest Guitar Solos poll."
+  },
+  "user_coverage": {
+    "red_heart_tier": "blind_spot",
+    "netease_song_id": null,
+    "platform_link": null,
+    "notes": "Metallica in user library via Fade to Black but 'One' not red-hearted."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/One_(Metallica_song)",
+    "https://theartofrockmusic.voices.wooster.edu/wp-content/uploads/sites/180/2015/01/One-Metallica-1989-1.pdf"
+  ],
+  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+}

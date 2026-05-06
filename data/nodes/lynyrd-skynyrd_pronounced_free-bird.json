@@ -1,0 +1,32 @@
+{
+  "id": "lynyrd-skynyrd_pronounced_free-bird",
+  "artist": "Lynyrd Skynyrd",
+  "song": "Free Bird",
+  "album": "(Pronounced 'Leh-'nérd 'Skin-'nérd)",
+  "year": 1973,
+  "record_label": "MCA",
+  "position_in_era": {
+    "genre": "Southern rock",
+    "historical_role": "Structurally a prototype dual-movement song: a slow Ronnie Van Zant ballad (vocal as protagonist) followed by a completely distinct, extended guitar dual solo coda (Allen Collins and Gary Rossington as protagonists). The two halves are so distinct they functioned as separate entities in concert, the coda often lasting 14+ minutes.",
+    "axis": "upward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded April 3, 1973 at Studio One in Doraville, Georgia. Studio version: 9:08. Allen Collins played all lead guitar lines on the studio recording; Gary Rossington contributed rhythm and slide fills. Billy Powell composed and performed the piano introduction, which was essential to the final arrangement — a case of a third voice providing the bridge between the ballad and the solo section.",
+    "member_dynamics": "Ronnie Van Zant (vocal) is the protagonist of the ballad section; Collins and Rossington trade leads in the coda as dual protagonists. In live performance the balance tipped dramatically toward the guitar duo — Van Zant would leave the stage and let the guitars finish. Originally, the extended coda was added to give Van Zant a vocal rest between sets.",
+    "instrumentation_details": "Collins: Gibson Explorer. Rossington: Gibson Les Paul ('Bernice') for rhythm; Gibson SG for slide fills. Powell: piano intro. Artimus Pyle: drums. Leon Wilkeson: bass.",
+    "cultural_venue": "Became Skynyrd's signature set-closer. The audience demand for the song ('Play Free Bird!') became a rock concert meme — suggesting the song's dual structure had lodged itself culturally as THE template for a song that earned a long guitar coda.",
+    "release_circumstances": "Album November 1973. The single (shorter version) failed; the album version became a deep-cut staple. Guitar World ranked the solo No. 3 in the 100 Greatest Guitar Solos of All Time (2010, 2016)."
+  },
+  "user_coverage": {
+    "red_heart_tier": "hit",
+    "netease_song_id": 21052194,
+    "platform_link": "https://music.163.com/#/song?id=21052194",
+    "notes": "In user red-heart library."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Free_Bird",
+    "https://www.guitarworld.com/artists/hear-allen-collins-isolated-guitar-solo-lynyrd-skynyrds-free-bird"
+  ],
+  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+}

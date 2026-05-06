@@ -1,0 +1,32 @@
+{
+  "id": "heibao_heibao_dont-break-my-heart",
+  "artist": "黑豹乐队",
+  "song": "Don't Break My Heart",
+  "album": "黑豹 (Heibao)",
+  "year": 1991,
+  "record_label": "Magic Stone Music (魔岩文化)",
+  "position_in_era": {
+    "genre": "Chinese rock / hard rock",
+    "historical_role": "The first generation of Chinese rock musicians translating the Western dual-protagonist structure into a Chinese context. Dou Wei's vocal and the lead guitar work embody the same aria↔solo dialectic documented in the Western lineage, but mediated through Chinese musical sensibility and lyrical language. The debut album sold 1.5 million copies — the most commercially successful Chinese rock album at time of release.",
+    "axis": "downstream"
+  },
+  "narrative_slots": {
+    "production_facts": "From 黑豹乐队's self-titled debut album (1991), produced by Magic Stone Music (Taiwan-based label that launched mainland Chinese rock). Dou Wei (later known for avant-garde solo work) composed and sang the song during his tenure as the band's frontman before departing in 1992.",
+    "member_dynamics": "Dou Wei (vocal, composer) as the primary protagonist, with the lead guitarist carrying the solo sections. The song follows the established ballad-to-solo arc of Western hard rock, transposed into a Chinese lyrical context. Dou Wei's voice has an unusual range and quality that gives the vocal sections an operatic urgency.",
+    "instrumentation_details": "Electric guitar lead, bass, drums, vocals. Standard hard rock instrumentation deployed in service of the dual-protagonist structure the band absorbed from Western rock influence.",
+    "cultural_venue": "Beijing rock scene, early 1990s. The album was recorded in Taiwan under Magic Stone Music, which also signed Cui Jian and the Breathing Band. The album's release marked the peak of first-generation Chinese rock's commercial viability.",
+    "release_circumstances": "Released 1991. The song is one of the album's most iconic tracks and remains a touchstone of Chinese rock history. Dou Wei left the band in 1992 to pursue experimental solo work, making this album the sole document of his dual-protagonist rock phase."
+  },
+  "user_coverage": {
+    "red_heart_tier": "hit",
+    "netease_song_id": 357245,
+    "platform_link": "https://music.163.com/#/song?id=357245",
+    "notes": "In user red-heart library."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Heibao_(album)",
+    "https://en.wikipedia.org/wiki/Black_Panther_(band)"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent", "methodological_descent"]
+}

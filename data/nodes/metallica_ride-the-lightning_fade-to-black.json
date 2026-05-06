@@ -1,0 +1,32 @@
+{
+  "id": "metallica_ride-the-lightning_fade-to-black",
+  "artist": "Metallica",
+  "song": "Fade to Black",
+  "album": "Ride the Lightning",
+  "year": 1984,
+  "record_label": "Elektra / Music for Nations",
+  "position_in_era": {
+    "genre": "Thrash metal / heavy metal ballad",
+    "historical_role": "Metallica's first ballad and the template for the metal dual-protagonist form: Hetfield's confessional vocal sections alternate with Hammett's escalating guitar solos across 6:55. The song proved that metal could sustain the quiet-vocal/loud-solo dialectic without abandoning heaviness.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at Sweet Silence Studios, Copenhagen, Denmark (1984). James Hetfield plays acoustic guitar introduction and rhythm guitar throughout; Kirk Hammett plays all lead guitar. Hammett's first solo mirrors Hetfield's rhythm part (arpeggiated ninth chord figure) — the guitar begins by echoing the vocal's harmonic territory before diverging. Four distinct guitar solo passages across the song. Hammett used a wah-wah pedal on the third solo.",
+    "member_dynamics": "Hetfield (vocal, rhythm guitar) and Hammett (lead guitar) are the dual protagonists. Hetfield reported difficulty singing the high chorus, which was resolved by adding harmony above his natural range. Hammett's solos grow progressively more intense — the fourth solo, Guitar World readers' poll #24 greatest of all time, is the song's emotional climax.",
+    "instrumentation_details": "Hetfield: ESP guitar, Marshall amplifier for rhythm. Hammett: ESP guitar, wah-wah pedal for third solo. Cliff Burton: bass (distinct melodic role in the mid-section). Lars Ulrich: drums. Producer: Flemming Rasmussen.",
+    "cultural_venue": "The song was inspired by band equipment being stolen in January 1984. Metallica received extensive fan mail from listeners who said the song had prevented suicide — a reception that made the dialectic of despair (vocal) and transcendence (solo) a documented listener experience.",
+    "release_circumstances": "Album July 1984. 'Fade to Black' established that thrashmetal could sustain a slow ballad form — opening the door for the power ballad structures Metallica would elaborate on 'One' (1988) and 'Nothing Else Matters' (1991)."
+  },
+  "user_coverage": {
+    "red_heart_tier": "hit",
+    "netease_song_id": 21162443,
+    "platform_link": "https://music.163.com/#/song?id=21162443",
+    "notes": "In user red-heart library."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fade_to_Black_(Metallica_song)",
+    "https://www.loudersound.com/features/metallica-the-story-of-fade-to-black-1984"
+  ],
+  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+}

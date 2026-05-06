@@ -1,0 +1,32 @@
+{
+  "id": "led-zeppelin_led-zeppelin-iv_stairway-to-heaven",
+  "artist": "Led Zeppelin",
+  "song": "Stairway to Heaven",
+  "album": "Led Zeppelin IV",
+  "year": 1971,
+  "record_label": "Atlantic",
+  "position_in_era": {
+    "genre": "Hard rock / folk rock",
+    "historical_role": "Codified the multi-section epic form for arena rock: acoustic folk intro → electric mid-section → climactic Jimmy Page guitar solo → Robert Plant vocal finale. Guitar and voice trade the foreground sequentially, arriving at a closing 'epilogue' where Plant's voice is left alone — Page chose to omit his planned guitar ending because Plant's unaccompanied vocal had more impact.",
+    "axis": "upward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded December 1970 at Island Studios, London (basic tracks) and Headley Grange using the Rolling Stones Mobile Studio. Jimmy Page used his Telecaster for the guitar solo. According to Page, he considered ending the song with a guitar part but decided Plant's vocal alone was stronger — the solo's absence from the ending is itself a structural decision about foreground priority.",
+    "member_dynamics": "Page (guitar) and Plant (voice) are the two protagonists. The song's arc is a relay race: Plant carries the opening; Page takes the long solo (5:34–6:44); Plant returns alone for the epilogue. John Paul Jones's electric bass and John Bonham's drums create the plateau on which the handoff occurs.",
+    "instrumentation_details": "Acoustic six-string guitar (Page, intro). Three-neck guitar for live performances. Telecaster for the solo. Page sourced the recorder melody from session overdubs. The solo was ranked No. 1 in Guitar World's 100 Greatest Guitar Solos.",
+    "cultural_venue": "Never released as a single. Became FM radio's most requested song through the 1970s and 1980s — the ur-text of the album-rock epic form.",
+    "release_circumstances": "Album released November 1971 (UK). The epilogue vocal was a deliberate compositional choice by Page to leave Plant's voice unaccompanied — an early example of the guitar voluntarily ceding foreground to the voice as a form of emphasis."
+  },
+  "user_coverage": {
+    "red_heart_tier": "blind_spot",
+    "netease_song_id": null,
+    "platform_link": null,
+    "notes": "Led Zeppelin present in user library (Achilles Last Stand, Bonzo's Montreux) but Stairway to Heaven not red-hearted — likely unavailable on NetEase."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Stairway_to_Heaven",
+    "https://www.loudersound.com/features/jimmy-page-and-stairway-to-heaven-anatomy-of-a-guitar-classic"
+  ],
+  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+}

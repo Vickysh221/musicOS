@@ -1,0 +1,33 @@
+{
+  "id": "queen_a-night-at-the-opera_bohemian-rhapsody",
+  "artist": "Queen",
+  "song": "Bohemian Rhapsody",
+  "album": "A Night at the Opera",
+  "year": 1975,
+  "record_label": "EMI",
+  "position_in_era": {
+    "genre": "Art rock / glam rock",
+    "historical_role": "The song that canonized the suite-structure for mainstream rock: ballad → guitar solo → pseudo-operatic section → hard rock → outro. Brian May's guitar solo (2:37–3:05) explicitly functions as a voice ('I regard the guitar in that situation as a voice') and serves as the hinge between the intimate ballad and the operatic multi-character section. Mercury as aria-voice; May as guitar-protagonist.",
+    "axis": "upward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded August 24–September 1975 across five studios (Rockfield, Wessex, Sarm East, Olympic, Scorpio). Approximately 180 vocal overdubs for the operatic section, layered until the tape became translucent. May's 9-bar guitar solo bridges the ballad to the opera section; he described wanting to 'sing a verse on the guitar' — the solo is explicitly conceived as a melodic voice.",
+    "member_dynamics": "Freddie Mercury composed the complete piece, describing it as 'basically three songs I wanted to put out.' Brian May's guitar solo was May's autonomous compositional contribution — Mercury specified where it went, May wrote what it played. The operatic section uses May, Mercury, and Roger Taylor's vocals layered 180 times, making the 'other' voice a choir of selves rather than one guitar.",
+    "instrumentation_details": "May: Red Special guitar (custom-built by May and his father) through Vox AC30 amplifiers, using a sixpence coin as a pick. Mercury: Steinway grand piano for the ballad section. The hard rock section uses May's layered guitar army — he tracked multiple rhythm and lead parts to create an orchestral wall.",
+    "cultural_venue": "The song was declared too long for radio (5:55) by EMI; DJ Kenny Everett played it anyway and demand made it the Christmas No. 1 in the UK for nine weeks. The song demonstrated that a six-minute multi-section piece could be a mainstream hit.",
+    "release_circumstances": "Single released October 1975; album November 1975. The guitar solo's explicit framing as a voice — 'I sang the verse on the guitar' (May, Guitar World interview, documented) — is the key lineage fact for aria_solo_dialectic."
+  },
+  "user_coverage": {
+    "red_heart_tier": "hit",
+    "netease_song_id": 1868553,
+    "platform_link": "https://music.163.com/#/song?id=1868553",
+    "notes": "In user red-heart library."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Bohemian_Rhapsody",
+    "https://www.guitarworld.com/features/brian-may-goes-deep-on-bohemian-rhapsody-the-gear-the-solo-and-the-magic-of-freddie-mercurys-finest-hour",
+    "https://www.guitarplayer.com/players/i-said-i-would-like-to-effectively-sing-a-verse-on-the-guitar-brian-may-reveals-the-studio-secrets-of-his-legendary-bohemian-rhapsody-solo"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+}

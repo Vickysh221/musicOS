@@ -1,0 +1,32 @@
+{
+  "id": "guns-n-roses_use-your-illusion-i_november-rain",
+  "artist": "Guns N' Roses",
+  "song": "November Rain",
+  "album": "Use Your Illusion I",
+  "year": 1991,
+  "record_label": "Geffen",
+  "position_in_era": {
+    "genre": "Hard rock / power ballad",
+    "historical_role": "The sister track to Estranged and the clearest public-facing statement of the Axl/Slash dual-protagonist dialectic. Multiple Slash guitar solos across nine minutes, each emerging as a response to a vocal section — the third solo, improvised during recording, is the song's emotional apex. NPR: 'one of the ultimate hard-rock power ballads.' The longest song to enter the top ten of the Billboard Hot 100 at the time.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at A&M Studios, Record Plant, and Conway Studios, Los Angeles (1990–1991). Orchestral string arrangement by Axl Rose. Duration: 8:57. Slash reported that his guitar solo on the album version 'developed directly from an improvisation' — a spontaneous statement that became the song's best-known solo passage. Three distinct guitar solos across the song.",
+    "member_dynamics": "Axl Rose (vocal, piano, string arrangement) and Slash (multiple lead guitar solos) as dual protagonists. Rose's orchestral arrangement frames the vocal as an aria — the strings supporting the voice. Slash's solos punctuate and respond to the vocal sections but also extend beyond them, claiming their own time. The complementary layering is documented: 'Rose's emotional vocal delivery frames the narrative while Slash's guitar passages expand the emotional landscape between and following vocal sections.'",
+    "instrumentation_details": "Slash: Les Paul through Marshall amp; the famous outdoor church performance in the video used a different (studio) take. Rose: piano, string synthesizer. Duff McKagan: bass. Matt Sorum: drums. Dizzy Reed: keyboards. Michael Kamen: orchestral arrangement.",
+    "cultural_venue": "Use Your Illusion I track 4. The music video (directed by Andy Morahan, 1992) became one of the most expensive ever made. The song's piano-to-orchestra structure explicitly positions it as a rock answer to operatic form.",
+    "release_circumstances": "Album September 1991; single June 1992 (US). Debuted at #3 on the Billboard Hot 100. At time of release, the longest charting top-ten hit in Hot 100 history."
+  },
+  "user_coverage": {
+    "red_heart_tier": "hit",
+    "netease_song_id": 18094919,
+    "platform_link": "https://music.163.com/#/song?id=18094919",
+    "notes": "In user red-heart library."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/November_Rain",
+    "https://ultimateclassicrock.com/guns-n-roses-use-your-illusion-songs/"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+}

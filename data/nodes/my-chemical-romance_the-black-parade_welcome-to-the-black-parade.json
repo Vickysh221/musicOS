@@ -1,0 +1,33 @@
+{
+  "id": "my-chemical-romance_the-black-parade_welcome-to-the-black-parade",
+  "artist": "My Chemical Romance",
+  "song": "Welcome to the Black Parade",
+  "album": "The Black Parade",
+  "year": 2006,
+  "record_label": "Reprise / Warner Bros.",
+  "position_in_era": {
+    "genre": "Emo / alternative rock / art rock",
+    "historical_role": "The most explicit downstream descendant of Bohemian Rhapsody in 2000s rock: Ray Toro and the band consciously modeled the song's ambitious multi-section scope on Bohemian Rhapsody's structure. Gerard Way's vocal (from falsetto to full voice) and Ray Toro's guitar work are the dual protagonists. Multiple critics described it as 'the emo Bohemian Rhapsody.' Confirms that the Bohemian Rhapsody→GnR lineage had become a transmissible template two generations later.",
+    "axis": "downstream"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at the Paramour Mansion, Silver Lake, Los Angeles, and Capitol Studios, Hollywood (2005–2006). Producer: Rob Cavallo. Duration: 5:11. Opens with an 11-note piano introduction. The song began as a working fragment in 2001 ('The Five of Us Are Dying') and was reworked over five years. The tempo shifts from 75 bpm (intro) to 194 bpm (main sections). The orchestral components were recorded at Capitol Studios.",
+    "member_dynamics": "Gerard Way (vocal) and Ray Toro (lead guitar) as primary protagonists. Way's vocal spans G4 to D6, requiring full-range performance. Toro's guitar work bridges the pop-punk energy sections with melodic lead lines. The band explicitly set out to write a 'genre-crossing masterpiece like Bohemian Rhapsody' (Toro, Seymour Duncan interview, 2007).",
+    "instrumentation_details": "Way: lead vocals. Toro: lead guitar, rhythm guitar. Frank Iero: rhythm guitar. Mikey Way: bass. Bob Bryar: drums. Orchestra: Capitol Studios session musicians. Horns section: one section uses brass as a third protagonist voice. Cavallo: producer.",
+    "cultural_venue": "The Black Parade album was recorded at the Paramour Mansion with the band living communally — a deliberate 'total art' environment echoing the sustained studio sessions of Bohemian Rhapsody's recording. The album is explicitly framed as a concept record.",
+    "release_circumstances": "Single released September 2006; album October 2006. UK and US No. 1. Multiple critics compared it to Bohemian Rhapsody. Brian May appeared with MCR at a 2007 performance, a documented cross-generational connection that confirms the lineage."
+  },
+  "user_coverage": {
+    "red_heart_tier": "blind_spot",
+    "netease_song_id": null,
+    "platform_link": null,
+    "notes": "My Chemical Romance not in user red-heart library. Likely not available on NetEase due to licensing."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Welcome_to_the_Black_Parade",
+    "https://www.loudersound.com/bands-artists/my-chemical-romance-welcome-to-the-black-parade-story-behind-the-song",
+    "https://loudwire.com/my-chemical-romance-rock-with-queen-legend-brian-may/"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent", "genealogical_descent"]
+}

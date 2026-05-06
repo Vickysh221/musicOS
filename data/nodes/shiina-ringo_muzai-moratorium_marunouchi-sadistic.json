@@ -1,0 +1,32 @@
+{
+  "id": "shiina-ringo_muzai-moratorium_marunouchi-sadistic",
+  "artist": "椎名林檎",
+  "song": "丸ノ内サディスティック",
+  "album": "無罪モラトリアム (Muzai Moratorium)",
+  "year": 1999,
+  "record_label": "東芝EMI (Toshiba EMI)",
+  "position_in_era": {
+    "genre": "J-pop / alternative / art pop",
+    "historical_role": "Shiina Ringo's translation of the aria↔solo dialectic into Japanese pop form: her vocal (dense, syllabically overloaded, using breath as texture) and the electric guitar solo inhabit the song as dual voices within a compact pop frame rather than an extended epic. The song uses the 'Just the Two of Us' chord progression but infuses it with the theatrical tension of a dual-protagonist structure. The lead guitar solo section is brief but structurally present.",
+    "axis": "downstream"
+  },
+  "narrative_slots": {
+    "production_facts": "From debut album 無罪モラトリアム, released February 24, 1999. Arrangement by Kameda Seiji (also bassist on the track). Seiji Kameda's bass solo was added at Shiina's request at the recording session and captured in one or two takes. The guitar solo, based on an E major scale (half-step down tuning), mirrors the keyboard harmonica melody from the intro — a solo restatement of an earlier voice.",
+    "member_dynamics": "Shiina Ringo (vocal, piano/keyboard harmonica) as the aria protagonist; lead guitarist as the solo protagonist. Kameda Seiji (bass) adds a bass solo at Shiina's direction — a third voice inserted into the dialectic. The song's lyrical references to guitarist Kenichi Asai of Blankey Jet City position the guitarist as both a character in the narrative and a sonic presence.",
+    "instrumentation_details": "Electric guitar (E major scale, half-step down tuning). Keyboard harmonica (intro; mirrored by guitar solo). Seiji Kameda: bass (prominent bass solo). Drums. Shiina: vocal, keyboard harmonica. Producer: Kameda Seiji. The guitar intro solo uses the keyboard harmonica's phrase as its source material.",
+    "cultural_venue": "Tokyo Marunouchi district — the financial/business district whose 'sadistic' image (office ladies, corporate sadomasochism) Shiina invokes in the title. The chord progression ('丸サ進行') became so associated with this song in Japan that it was renamed after it.",
+    "release_circumstances": "Album February 1999. The song is one of Shiina's representative works and has been extensively covered — the chord progression's widespread adoption in J-pop is a measure of the song's structural influence."
+  },
+  "user_coverage": {
+    "red_heart_tier": "hit",
+    "netease_song_id": 642776,
+    "platform_link": "https://music.163.com/#/song?id=642776",
+    "notes": "In user red-heart library."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://ja.wikipedia.org/wiki/%E4%B8%B8%E3%83%8E%E5%86%85%E3%82%B5%E3%83%87%E3%82%A3%E3%82%B9%E3%83%86%E3%82%A3%E3%83%83%E3%82%AF",
+    "https://en.wikipedia.org/wiki/Muzai_Moratorium"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent", "methodological_descent"]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "deep-purple_in-rock_child-in-time",
+  "artist": "Deep Purple",
+  "song": "Child in Time",
+  "album": "Deep Purple in Rock",
+  "year": 1970,
+  "record_label": "Harvest / EMI",
+  "position_in_era": {
+    "genre": "Hard rock / proto-metal",
+    "historical_role": "Early template for the aria↔solo dialectic: Ritchie Blackmore's escalating guitar solo and Ian Gillan's banshee falsetto scream cycle through the song in counterpoint, each amplifying the other's intensity.",
+    "axis": "upward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 4 December 1969 at IBC Studios, London. Jon Lord's organ riff, acknowledged by Ian Gillan as based on It's a Beautiful Day's 1969 song 'Bombay Calling', anchors the composition. Blackmore's guitar and Gillan's voice engage in call-and-response cycles across 10+ minutes.",
+    "member_dynamics": "Blackmore and Gillan as competing protagonists: Blackmore's slow-building solo escalates to frenzied runs before abruptly stopping; Gillan's falsetto screams answer and match the guitar's intensity. Neither occupies the foreground alone for long.",
+    "instrumentation_details": "Ritchie Blackmore – lead guitar (Gibson SG); Jon Lord – Hammond organ; Ian Gillan – vocals; Roger Glover – bass; Ian Paice – drums. Lord's organ is the structural spine; Blackmore and Gillan are the dual foreground voices.",
+    "cultural_venue": "In Rock marked Deep Purple Mk II's breakthrough. 'Child in Time' became the centrepiece of their live set, often stretching beyond 15 minutes with extended Blackmore–Gillan duels.",
+    "release_circumstances": "Album released June 1970 (UK). The song's Cold War-themed lyrics ('Sweet child in time, you'll see the line') contextualise the urgency of Gillan's screams."
+  },
+  "user_coverage": {
+    "red_heart_tier": "blind_spot",
+    "netease_song_id": null,
+    "platform_link": null,
+    "notes": "Deep Purple present in user library (Soldier of Fortune, Knocking at Your Back Door) but Child in Time not red-hearted."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Child_in_Time",
+    "https://en.wikipedia.org/wiki/Deep_Purple_in_Rock"
+  ],
+  "tags": ["dual_protagonist_structure", "extended_solo_as_movement", "aria_form_descent"]
+}

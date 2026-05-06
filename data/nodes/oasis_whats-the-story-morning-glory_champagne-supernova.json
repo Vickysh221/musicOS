@@ -1,0 +1,32 @@
+{
+  "id": "oasis_whats-the-story-morning-glory_champagne-supernova",
+  "artist": "Oasis",
+  "song": "Champagne Supernova",
+  "album": "(What's the Story) Morning Glory?",
+  "year": 1995,
+  "record_label": "Creation / Epic",
+  "position_in_era": {
+    "genre": "Britpop / rock",
+    "historical_role": "The most direct Britpop heir to the arena-rock dual-protagonist structure: Liam Gallagher's detached, nasal vocal delivers the verses, then the song opens into a sustained guitar outro where Noel Gallagher and guest Paul Weller extend the solo across what became 5+ additional minutes in live performance. The Noel/Liam sibling tension — two voices with the same blood but different aesthetics — mirrors the Axl/Slash dialectic of composer-vocalist versus virtuoso guitarist.",
+    "axis": "downstream"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at Rockfield Studios, Wales, and RAK Studios, London (1994–1995). Producer: Owen Morris. Duration: 7:27 (album version). Paul Weller appears as guest on lead guitar, backing vocals, and whistle. Owen Morris added a Mellotron to the arrangement. The song serves as the closing track on Morning Glory, giving it the structural position of a coda or valediction.",
+    "member_dynamics": "Liam Gallagher (vocal) as the aria protagonist — expressionless, delivered as though reciting received wisdom. Noel Gallagher (guitar) as the solo protagonist — the closing guitar section is Noel's compositional signature. Paul Weller's guest guitar adds a third voice. In live performance, the song's outro becomes a platform for extended Noel improvisation.",
+    "instrumentation_details": "Liam: lead vocals. Noel: lead and acoustic guitars. Paul Weller: lead guitar, whistle. Paul 'Bonehead' Arthurs: rhythm guitar. Paul McGuigan: bass. Alan White: drums. Owen Morris: Mellotron overdub.",
+    "cultural_venue": "(What's the Story) Morning Glory? was the second-best-selling album in UK chart history at time of release. 'Champagne Supernova' as the album closer positioned it as the definitive statement of Britpop's relationship to rock epic forms — a form inherited from Bohemian Rhapsody through GnR.",
+    "release_circumstances": "Album October 1995. Never released as a UK single (only US/Australia). Duration and position on the album designated it as an album-track statement rather than a radio hit — the dual-protagonist structure was allowed to breathe at full length."
+  },
+  "user_coverage": {
+    "red_heart_tier": "blind_spot",
+    "netease_song_id": null,
+    "platform_link": null,
+    "notes": "Oasis present in user library (The Masterplan, Whatever) but Champagne Supernova not red-hearted. NetEase availability may vary by region."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Champagne_Supernova",
+    "https://www.radiox.co.uk/artists/oasis/how-noel-gallagher-wrote-champagne-supernova/"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+}

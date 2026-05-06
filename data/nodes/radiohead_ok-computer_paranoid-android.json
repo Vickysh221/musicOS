@@ -1,0 +1,32 @@
+{
+  "id": "radiohead_ok-computer_paranoid-android",
+  "artist": "Radiohead",
+  "song": "Paranoid Android",
+  "album": "OK Computer",
+  "year": 1997,
+  "record_label": "Parlophone / Capitol",
+  "position_in_era": {
+    "genre": "Alternative rock / art rock",
+    "historical_role": "A conscious attempt to write a Queen-style suite-form song: Radiohead explicitly cited Bohemian Rhapsody as the model for stitching multiple separate songs into one. Three movements (6:23 total): a 7/8 acoustic/electric guitar section; a manic hard-rock middle with Jonny Greenwood's buzzing lead guitar; a quiet closing section. Thom Yorke's voice and Greenwood's guitar are the dual protagonists across the shifting sections.",
+    "axis": "downstream"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at St Catherine's Court, Bath (1996–1997). Produced by Nigel Godrich and Radiohead. Duration: 6:23. Composed from three separate fragments Thom Yorke had been developing. Jonny Greenwood's guitar work in the hard-rock second section includes a rapid descending run that is one of the song's most distinctive passages. Yorke has cited the process as analogous to what Mercury did on Bohemian Rhapsody.",
+    "member_dynamics": "Thom Yorke (vocal, acoustic guitar) and Jonny Greenwood (lead guitar, orchestral programming) as the primary dual protagonists. The song's three movements give each a different context: the opening is guitar-as-foundation with vocal above; the middle is guitar-as-aggressor with vocal in response; the closing is vocal alone with guitar providing texture.",
+    "instrumentation_details": "Yorke: vocal, acoustic guitar. Greenwood: lead electric guitar, ondes Martenot (on later album tracks). Colin Greenwood: bass. Ed O'Brien: guitar. Phil Selway: drums. The second section's guitar riff uses a tone and attack that creates a buzzing, non-melodic character — the guitar as disruptive protagonist rather than melodic voice.",
+    "cultural_venue": "OK Computer, released May 1997, defined the late 1990s art-rock trajectory. 'Paranoid Android' as the lead single announced that the album would not follow standard rock-song architecture. The song was named #2 in numerous end-of-decade polls.",
+    "release_circumstances": "Single released May 1997; album June 1997. The song's explicit Bohemian Rhapsody lineage (documented in multiple interviews) makes it a conscious downstream node in the aria_form_descent lineage."
+  },
+  "user_coverage": {
+    "red_heart_tier": "hit",
+    "netease_song_id": 22497471,
+    "platform_link": "https://music.163.com/#/song?id=22497471",
+    "notes": "In user red-heart library."
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Paranoid_Android",
+    "https://en.wikipedia.org/wiki/OK_Computer"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+}

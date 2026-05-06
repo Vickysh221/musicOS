@@ -1,0 +1,32 @@
+{
+  "id": "pink-floyd_the-wall_comfortably-numb",
+  "artist": "Pink Floyd",
+  "song": "Comfortably Numb",
+  "album": "The Wall",
+  "year": 1979,
+  "record_label": "Harvest / Columbia",
+  "position_in_era": {
+    "genre": "Progressive rock / art rock",
+    "historical_role": "The clearest example in classic rock of two named co-authors inhabiting separate vocal registers within the same song: Roger Waters sings the verses (the Doctor, distant and clinical); David Gilmour sings the choruses (the inner Pink, exposed). Gilmour's two guitar solos are a third protagonist — not intercut with vocal but arriving as their own extended movement. Three voices, all distinct, all load-bearing.",
+    "axis": "upward"
+  },
+  "narrative_slots": {
+    "production_facts": "Waters and Gilmour argued over the arrangement during recording: Waters wanted an orchestral backing; Gilmour wanted a stripped-down rock arrangement. They compromised by recording both versions and combining elements. The song uses a different key for Waters' verses (B minor) and Gilmour's choruses (G major), the harmonic shift underlining the identity split. The second guitar solo is widely cited as one of the greatest in rock history.",
+    "member_dynamics": "Waters (verse vocal) and Gilmour (chorus vocal + guitar solos) are literally different characters in the song's narrative — the Doctor and Pink's dissociated inner self. Gilmour: 'Comfortably Numb was the last time Roger and I worked together really constructively.' The song documents both musical collaboration and its own dissolution.",
+    "instrumentation_details": "Gilmour: Black Stratocaster through Hiwatt Custom 100 and WEM Bin speakers. Two distinct guitar solos: the first (shorter, melodic) enters after the first chorus; the second (extended, climactic) closes the song. Both were recorded with take-by-take improvisation, with Gilmour picking the best pass.",
+    "cultural_venue": "The Wall concept album, recorded 1978–1979. The song's live staging (Gilmour performing on top of the wall while Waters performs below) literalised the dual-protagonist structure spatially.",
+    "release_circumstances": "Album December 1979; single 1980. The two guitar solos are structurally positioned as responses to the chorus climaxes — not intercut with vocal but arriving as relief movements when the vocal protagonist has said all it can say."
+  },
+  "user_coverage": {
+    "red_heart_tier": "blind_spot",
+    "netease_song_id": 28238311,
+    "platform_link": "https://music.163.com/song?id=28238311",
+    "notes": "Pink Floyd not in user red-heart library. Song available on NetEase (ID sourced from music.163.com search result)."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Comfortably_Numb",
+    "https://musescore.com/news/view/david-gilmour-turns-80-the-two-comfortably-numb-solos-capture-everything-great-about-his-playing-1772801127"
+  ],
+  "tags": ["dual_protagonist_structure", "aria_form_descent", "extended_solo_as_movement"]
+}

@@ -1,0 +1,32 @@
+{
+  "id": "the-who_whos-next_wont-get-fooled-again",
+  "artist": "The Who",
+  "song": "Won't Get Fooled Again",
+  "album": "Who's Next",
+  "year": 1971,
+  "record_label": "Track / Decca",
+  "position_in_era": {
+    "genre": "Hard rock / proto-punk",
+    "historical_role": "Eight-and-a-half minute epic structured around a synthesizer drone that functions as an absent 'other voice' — the synth plays the entire song against the band, and Roger Daltrey's final screamed 'YEAH!' is the vocal answering the synth's release. A bridge node: protagonist duality exists but it is machine-vs-human rather than guitar-vs-voice.",
+    "axis": "upward"
+  },
+  "narrative_slots": {
+    "production_facts": "The synth part was played on Pete Townshend's Lowrey organ connected to an EMS VCS 3 filter. The original demo's synth track was used on the final recording, with the band performing live to it via click track in headphones. Recorded at Stargroves, Newbury, using the Rolling Stones Mobile Studio (April 1971), replacing an inferior take cut in New York (March 1971). Album version: 8:32.",
+    "member_dynamics": "Townshend (guitar, synth, composer) versus Daltrey (voice) is the surface tension — but the song's real duality is the synth drone (the system, the old boss) versus Daltrey's scream (the human refusal). Keith Moon's drumming is described as perfectly synchronized to the synth via click track — Moon as the rhythmic translator between the two.",
+    "instrumentation_details": "Townshend: 1959 Gretsch hollow-body guitar through Fender Bandmaster. The synth is a Lowrey organ modulated by EMS VCS 3 — creating a 'keening, swelling' texture unlike any previous rock keyboard sound. John Entwistle: bass guitar.",
+    "cultural_venue": "The full 8:32 version is the album centrepiece; the 3:35 single edit is a different experience. The full version became a live showstopper and a touchstone for every band attempting the 'big political epic' format.",
+    "release_circumstances": "Single released June 1971; album August 1971. Daltrey's final scream has been called 'the greatest scream of a career filled with screams' (Dave Marsh). The song ends, uniquely, with the protagonist making peace with the cycle of replacement — a structural irony that makes the scream ambiguous."
+  },
+  "user_coverage": {
+    "red_heart_tier": "hit",
+    "netease_song_id": 21973248,
+    "platform_link": "https://music.163.com/#/song?id=21973248",
+    "notes": "In user red-heart library."
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Won%27t_Get_Fooled_Again",
+    "https://www.udiscovermusic.com/stories/the-who-wont-get-fooled-again-song/"
+  ],
+  "tags": ["dual_protagonist_structure", "extended_solo_as_movement"]
+}
