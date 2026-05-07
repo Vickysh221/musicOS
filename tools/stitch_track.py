@@ -46,6 +46,46 @@ A_RAMP_AFTER = 1.0       # ramp 0.30 → 1.0 over 1s after narration
 C_PREROLL = 8.0          # music plays full for 8s before ducking
 C_DUCK_RAMP = 1.0        # 1s to duck down (and 1s to ramp back up)
 C_DUCK_LEVEL = 0.10      # music volume under narration
+C_LEAD_IN = 2.0          # seconds before anchor that ramp-up to 100% completes
+
+
+class OutOfBounds(Exception):
+    """Raised when the song cannot fit the requested aligned clip."""
+
+
+def compute_aligned_music_start(
+    anchor_seconds: float,
+    n_dur: float,
+    music_total: float,
+    post_roll: float,
+    fadeout: float,
+    preroll: float = C_PREROLL,
+    duck_ramp: float = C_DUCK_RAMP,
+    lead_in: float = C_LEAD_IN,
+) -> float:
+    """Reverse-compute the in-song second at which a Style C_ALIGNED clip
+    should begin so that the post-narration ramp-up to 100% completes
+    `lead_in` seconds before `anchor_seconds`.
+
+    Raises OutOfBounds if the song lacks pre-anchor runway or post-anchor
+    duration to cover the full clip.
+    """
+    ramp_up_end_in_song = anchor_seconds - lead_in
+    music_start = ramp_up_end_in_song - (preroll + duck_ramp + n_dur + duck_ramp)
+    if music_start < 0:
+        raise OutOfBounds(
+            f"music_start={music_start:.2f}s < 0; "
+            f"anchor {anchor_seconds:.1f}s too early for "
+            f"narration {n_dur:.1f}s + preroll/duck "
+            f"{preroll + 2 * duck_ramp:.1f}s + lead_in {lead_in:.1f}s"
+        )
+    music_clip = preroll + duck_ramp + n_dur + duck_ramp + post_roll + fadeout
+    if music_start + music_clip > music_total:
+        raise OutOfBounds(
+            f"music_clip end={music_start + music_clip:.1f}s exceeds "
+            f"music_total={music_total:.1f}s"
+        )
+    return music_start
 
 
 def probe_duration(path: Path) -> float:
