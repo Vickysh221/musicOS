@@ -185,21 +185,27 @@ def main() -> None:
 
         prefix = f"{pos:02d}_"
 
-        # Stable output stem from music filename (or fallback).
         music_match = find_match(args.music_dir, prefix)
-        out_stem = music_match.stem if music_match else f"{pos:02d}_track"
-        out_path = args.output_dir / f"{out_stem}.mp3"
-        if out_path.exists() and not args.force:
-            print(f"  skip {out_stem}: already exists")
-            continue
 
         if style == "PASSTHROUGH":
+            # No music: use the narration filename as-is (e.g. `00_opening.mp3`).
             narration = find_match(args.narration_dir, prefix)
             if not narration:
                 print(f"  skip {pos}: no narration mp3 matching {prefix}*")
                 continue
+            out_path = args.output_dir / narration.name
+            if out_path.exists() and not args.force:
+                print(f"  skip {narration.stem}: already exists")
+                continue
             shutil.copy2(narration, out_path)
-            print(f"  copy  {out_stem}: passthrough (no music)")
+            print(f"  copy  {narration.stem}: passthrough (no music)")
+            continue
+
+        # Music-bearing styles: stem follows the music filename for downstream wiring.
+        out_stem = music_match.stem if music_match else f"{pos:02d}_track"
+        out_path = args.output_dir / f"{out_stem}.mp3"
+        if out_path.exists() and not args.force:
+            print(f"  skip {out_stem}: already exists")
             continue
 
         if not music_match:
