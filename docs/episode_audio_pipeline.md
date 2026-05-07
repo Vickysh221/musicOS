@@ -34,14 +34,18 @@ Inputs: `episodes/<slug>.episode.json` with `transcript_zh` (and
 python3 -m tools.batch_synthesize_episode \
   --episode episodes/<slug>.episode.json \
   --voice 'Chinese (Mandarin)_Gentleman' \
-  --output-dir episodes/audio/narration
+  --output-dir episodes/audio/narration \
+  --music-dir musicos-exhibition/public/audio/ep<N>
 ```
 
+`--music-dir` must point at the per-episode subdir (`ep1`, `ep2`, …) so narration stems resolve to the right `NN_<artist>_<track>` slug — different episodes share `NN_` prefixes.
+
 Output naming:
-- track exhibits → match the music filename stem in `musicos-exhibition/public/audio/`
+- track exhibits → match the music filename stem in `--music-dir`
   (e.g. `06_the-rolling-stones_miss-you.mp3`).
 - opening / interlude / closing → `NN_<kind>.mp3`.
 - muted tracks → use `bridge_narration_zh` instead of `transcript_zh`, same stem.
+- pillar tracks with `transcript_zh_a` + `transcript_zh_b` → emit `NN_<stem>_a.mp3` and `NN_<stem>_b.mp3` (Style B fusion).
 
 Idempotent — skips outputs that already exist. Pass `--force` to re-synth.
 Each run appends to `episodes/audio/narration/synthesis_log.jsonl` with
@@ -102,7 +106,13 @@ Per-position style choice is editorial. The approved styles:
 | `A` (sequential) | shorter narration (~≤ 350 ZH chars); narration plays clean → music fades in at 30% over last 4s → ramps to 100% → 100s music → 5.5s fadeout | `excerpt + 5.5s` ≈ 105.5s |
 | `C` (preroll + ducked bed) | longer narration or anchor tracks where the intro IS the point; 8s music intro → duck to 10% over 1s → narration on bed → ramp back → 60s post-roll → 5.5s fadeout | `8 + 1 + ndur + 1 + 60 + 5.5` ≈ 75s + ndur |
 | `C_SHORT` | muted tracks with only ~30s of music; same shape, dynamic post-roll | ≥ 30s |
+| `C_ALIGNED` | tracks with `anchor_timestamp_seconds`; reverse-computes `atrim` start so the post-narration ramp-to-100% lands at `anchor − 2s`. Same envelope as C otherwise. | song must extend to `anchor + post_roll + fadeout` and have `≥ anchor − preroll − duck − n_dur − duck − lead_in` of pre-anchor runway |
+| `B` | pillar tracks (Mode 3, 说—唱—说). Requires `transcript_zh_a` + `_b` and `anchor_timestamp_seconds`. Plays narration_a on bed → 30s clean anchor segment → narration_b on bed → 20s tail → fadeout. | song must extend to `anchor − 2s + 30s + duck + n_dur_b + duck + 20s + 5.5s` and have `≥ (anchor − 2s) − (intro_pad + duck + n_dur_a + duck)` of pre-anchor runway |
 | `PASSTHROUGH` | opening / interlude / closing — copies narration mp3 as-is, no music | n/a |
+
+**Anchor authoring:** `anchor_timestamp_seconds` is the in-song second the listener should hear at 100% volume. If the transcript reads "5:34 那一下", the anchor is typically `T_transcript + 2s` so the 1s ramp-up completes 2 seconds before the named hit, giving a brief lead-in at full volume before the hit lands. Pillars (Style B) need split narration: set `transcript_zh: null` and split the original prose into `transcript_zh_a` (setup before the anchor) and `transcript_zh_b` (callback after).
+
+**Failure modes:** both `C_ALIGNED` and `B` raise `OutOfBounds` rather than silently truncating. `music_start < 0` means the song doesn't have enough pre-anchor runway for the chosen narration length — either trim the narration (for B, split closer to the start) or move the anchor later. `music_clip exceeds music_total` means the source mp3 is too short — refetch via Step 3 or pick an earlier anchor (e.g. Episode 2's Fade to Black moved from 6:55 → 5:50 because the named moment was at the song's tail).
 
 Edit `STYLE_BY_POSITION` in `tools/batch_fusion.py` for the new episode, then:
 
