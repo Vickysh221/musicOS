@@ -1,0 +1,245 @@
+{
+  "map_id": "black-sabbath_black-sabbath_black-sabbath",
+  "anchor_node_id": "black-sabbath_black-sabbath_black-sabbath",
+  "spec_version": "0.2",
+  "generated_at": "2026-05-08T00:00:00Z",
+  "expansion_notes": "Episode 3 — riff_inversion focus. Three axes: upward (Cream, Hendrix), anchor + immediate heirs (War Pigs, Iron Man, Paranoid, Master of Puppets), lateral mutations (Smoke on the Water, Immigrant Song, Walk This Way, Back In Black, Crazy Train, Killing in the Name, Enter Sandman), downward inversions (Sweet Child O' Mine, Come As You Are, Black Hole Sun, Seven Nation Army). Methodological descent sub-lineage: Walk This Way → Killing in the Name.",
+  "node_ids": [
+    "cream_disraeli-gears_sunshine-of-your-love",
+    "jimi-hendrix-experience_are-you-experienced_purple-haze",
+    "black-sabbath_black-sabbath_black-sabbath",
+    "black-sabbath_black-sabbath_war-pigs",
+    "black-sabbath_paranoid_iron-man",
+    "black-sabbath_paranoid_paranoid",
+    "metallica_master-of-puppets_master-of-puppets",
+    "deep-purple_machine-head_smoke-on-the-water",
+    "led-zeppelin_led-zeppelin-iii_immigrant-song",
+    "aerosmith_toys-in-the-attic_walk-this-way",
+    "ac-dc_back-in-black_back-in-black",
+    "ozzy-osbourne_blizzard-of-ozz_crazy-train",
+    "rage-against-the-machine_rage-against-the-machine_killing-in-the-name",
+    "metallica_metallica_enter-sandman",
+    "guns-n-roses_appetite-for-destruction_sweet-child-o-mine",
+    "nirvana_nevermind_come-as-you-are",
+    "soundgarden_superunknown_black-hole-sun",
+    "the-white-stripes_elephant_seven-nation-army"
+  ],
+  "edges": [
+    {
+      "id": "edge_cream_to_anchor_direct",
+      "type": "direct_influence",
+      "source_node_id": "cream_disraeli-gears_sunshine-of-your-love",
+      "target_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "evidence": "Jack Bruce's descending tritone-adjacent bass riff in D, doubled by Clapton's guitar in unison, established the 'riff-first' compositional contract that Iommi and Butler radicalised. Butler has cited Cream's heavy-blues riff approach as a direct formative influence. The unison guitar-bass attack and the low-register weight are the grammatical precursors to the Black Sabbath sound.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sunshine_of_Your_Love",
+        "https://en.wikipedia.org/wiki/Black_Sabbath_(band)#Formation"
+      ]
+    },
+    {
+      "id": "edge_hendrix_to_anchor_direct",
+      "type": "direct_influence",
+      "source_node_id": "jimi-hendrix-experience_are-you-experienced_purple-haze",
+      "target_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "evidence": "Hendrix's opening E–B-flat tritone (the diabolus in musica) in Purple Haze is the direct harmonic model for Iommi's B–F tritone in Black Sabbath. Iommi has cited Hendrix as a primary influence; the tritone as a structural opening motif is the direct transmission. Tony Iommi stated in multiple interviews that Hendrix was the guitarist who first showed him that the guitar could be a weapon of emotional impact rather than a virtuosic instrument.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Purple_Haze",
+        "https://en.wikipedia.org/wiki/Tony_Iommi"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_iron_man_direct",
+      "type": "direct_influence",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "black-sabbath_paranoid_iron-man",
+      "evidence": "Iron Man (recorded six months later, same lineup, same studio approach) extends the riff-first contract: Iommi's ring-modulated detuned power chords at 75 bpm apply the same weight-first principle from the anchor, adding the innovation that sonic texture (not just pitch content) can carry narrative meaning. The riff's timbre tells the story of a robotic man — a direct development of the anchor's aesthetic logic.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Iron_Man_(song)",
+        "https://en.wikipedia.org/wiki/Paranoid_(album)"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_paranoid_direct",
+      "type": "direct_influence",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "black-sabbath_paranoid_paranoid",
+      "evidence": "Paranoid applies the riff-first contract at double speed (164 bpm) with no guitar solo and no bridge — the riff IS the entire musical argument. Written as filler in 25 minutes, it proves the weight-first principle survives compression. The song's UK #4 chart position demonstrated that the anchor's compositional logic could be commercially dominant.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Paranoid_(song)",
+        "https://en.wikipedia.org/wiki/Paranoid_(album)"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_war_pigs_direct",
+      "type": "direct_influence",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "black-sabbath_black-sabbath_war-pigs",
+      "evidence": "War Pigs (same album, same recording session) is the riff-first contract's first structural expansion: the opening guitar-bass unison at half-tempo followed by a sudden acceleration proves the anchor's weight-first logic can sustain long-form composition (7:54). The tempo-as-drama architecture is a direct heir of the anchor's riff-governs-all principle.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/War_Pigs",
+        "https://en.wikipedia.org/wiki/Paranoid_(album)"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_master_direct",
+      "type": "direct_influence",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "metallica_master-of-puppets_master-of-puppets",
+      "evidence": "Metallica's James Hetfield and Lars Ulrich have documented Black Sabbath as the foundational influence on Master of Puppets. The E–D–C riff at 212 bpm with palm muting converts Sabbath's slow weight into kinetic weight — the same riff-governs-all principle scaled to thrash metal. The clean interlude at 4:18–5:30 that makes the riff's return a physical impact replicates the anchor's dramatic logic of weight withheld then delivered.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Master_of_Puppets_(song)",
+        "https://en.wikipedia.org/wiki/Metallica#Influences"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_smoke_hybridization",
+      "type": "hybridization",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "deep-purple_machine-head_smoke-on-the-water",
+      "evidence": "Smoke on the Water takes the riff-first compositional contract from Sabbath's aesthetic field and hybridises it with Blackmore's neoclassical harmonic vocabulary. Perfect fourths and a minor third replace the tritone; the riff precedes the vocal and governs the song's identity. The most recognisable mutation — every beginning guitarist learns it — is also the clearest demonstration of the anchor's grammar in a different harmonic language.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Smoke_on_the_Water",
+        "https://en.wikipedia.org/wiki/Ritchie_Blackmore#Guitar_style"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_immigrant_same_era",
+      "type": "same_era_dialogue",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "led-zeppelin_led-zeppelin-iii_immigrant-song",
+      "evidence": "Both tracks were released in 1970 and represent the two simultaneous poles of the riff-first aesthetic at its emergence. Sabbath's funeral tempo (120 bpm) delivers gravitational dread; Zeppelin's galloping 158 bpm delivers kinetic momentum. Page and Plant have cited Sabbath's heaviness as a parallel development — neither band influenced the other in time, but each documents one end of the spectrum that riff-first composition could inhabit.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Immigrant_Song",
+        "https://en.wikipedia.org/wiki/Led_Zeppelin_III"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_walk_hybridization",
+      "type": "hybridization",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "aerosmith_toys-in-the-attic_walk-this-way",
+      "evidence": "Walk This Way hybridises the Sabbath riff-first contract with James Brown's rhythmic vocabulary. Perry's staccato syncopated riff delivers weight through rhythmic anticipation rather than low-register sustain. The riff still governs the song and precedes the vocal — the Sabbath grammar survives the funk mutation. The 1986 Run-DMC collaboration that sampled this riff opened the sub-lineage into hip-hop, making Walk This Way the pivot node between the anchor's lineage and Killing in the Name.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Walk_This_Way",
+        "https://en.wikipedia.org/wiki/Walk_This_Way_(Run-DMC_song)"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_back_in_black_hybridization",
+      "type": "hybridization",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "ac-dc_back-in-black_back-in-black",
+      "evidence": "Back In Black hybridises the riff-first contract with Chuck Berry's boogie-rock shuffle. Young's E–D–A major-key riff at 96 bpm delivers weight through rhythmic inevitability rather than harmonic dread — the exact inverted colour choice from the anchor. At an estimated 50 million copies, it is the most commercially successful mutation of the riff-first principle, demonstrating that the anchor's grammar could dominate without minor-key supernatural fear.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Back_in_Black_(song)",
+        "https://en.wikipedia.org/wiki/Back_in_Black"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_crazy_train_hybridization",
+      "type": "hybridization",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "ozzy-osbourne_blizzard-of-ozz_crazy-train",
+      "evidence": "Crazy Train hybridises the Sabbath riff-first weight-first contract with 18th-century European classical vocabulary. Rhoads' A–F#–D riff uses diminished and chromatic movement from Bach-era counterpoint rather than tritone dissonance or blues. The riff governs the song — Rhoads conceived it as a compositional theme — and Osbourne is the direct personnel bridge from the anchor's band. Rhoads' documented classical training (at his mother's Musonia School) is the mechanism of hybridisation.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Crazy_Train",
+        "https://en.wikipedia.org/wiki/Randy_Rhoads"
+      ]
+    },
+    {
+      "id": "edge_walk_to_killing_methodological",
+      "type": "methodological_descent",
+      "source_node_id": "aerosmith_toys-in-the-attic_walk-this-way",
+      "target_node_id": "rage-against-the-machine_rage-against-the-machine_killing-in-the-name",
+      "evidence": "Tom Morello has cited Aerosmith's funk-groove approach and the 1986 Run-DMC x Aerosmith Walk This Way collaboration as a direct model for integrating hip-hop rhythm and rock riff. Killing in the Name's two-note whammy-bar riff descends methodologically from Walk This Way's syncopated staccato technique, combined with hip-hop drum programming. The groove-as-weapon political logic is Walk This Way's funk-groove mutation taken to its ideological extreme.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Killing_in_the_Name",
+        "https://en.wikipedia.org/wiki/Tom_Morello#Influences"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_killing_hybridization",
+      "type": "hybridization",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "rage-against-the-machine_rage-against-the-machine_killing-in-the-name",
+      "evidence": "Killing in the Name is the terminal node of the Sabbath riff-first lineage's funk-groove sub-branch. Morello's riff still governs the song — the lyric's repeated expletive climax functions as a riff in itself — but the harmonic language is hip-hop rather than metal. The weight is delivered through the riff's political charge and rhythmic aggression rather than low-register sustain.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Killing_in_the_Name",
+        "https://en.wikipedia.org/wiki/Rage_Against_the_Machine_(album)"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_enter_sandman_hybridization",
+      "type": "hybridization",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "metallica_metallica_enter-sandman",
+      "evidence": "Enter Sandman is Metallica's conscious commercial simplification of the Sabbath weight-first contract: slow, repetitive, immediately accessible, maximum riff identity. Hammett's E–F#–E–G power-chord sequence at 123 bpm is the most distilled form of the riff-governs-all principle, stripped of tritone dissonance. The Black Album's 16+ million US sales represent the commercial apex of the Sabbath lineage.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Enter_Sandman",
+        "https://en.wikipedia.org/wiki/Metallica_(album)"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_sweet_child_inversion",
+      "type": "inversion",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "guns-n-roses_appetite-for-destruction_sweet-child-o-mine",
+      "evidence": "Sweet Child O' Mine inverts the weight-first contract: Slash's arpeggiated D–C#–A–G single-note figure governs the song (the opening arpeggio is more famous than the chorus) but the aesthetic goal is tenderness rather than dread. Slash described writing it as a 'circus melody' — the deliberate lightness is the inversion's defining act. The riff-first structure is identical; the emotional destination is its opposite.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sweet_Child_O%27_Mine",
+        "https://en.wikipedia.org/wiki/Slash_(musician)#Guitar_style"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_come_as_you_are_inversion",
+      "type": "inversion",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "nirvana_nevermind_come-as-you-are",
+      "evidence": "Come As You Are uses the same interval vocabulary as Enter Sandman but played through a Boss CE-2 chorus pedal, converting metal weight into underwater drift. Released the same month as the Black Album, it is grunge's direct answer to metal's commercial zenith. Cobain's documented intention to 'feminise' the hard rock template is the inversion mechanism: same riff-first structure, weight aesthetic explicitly rejected.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Come_as_You_Are_(Nirvana_song)",
+        "https://en.wikipedia.org/wiki/Nevermind"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_black_hole_sun_inversion",
+      "type": "inversion",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "soundgarden_superunknown_black-hole-sun",
+      "evidence": "Black Hole Sun uses Sabbath's own detuning (drop D) and Sabbath's funeral tempo (73 bpm), but the harmonic inversion is total: major-key lush harmony delivers surreal beauty instead of dread through the same sonic weight. Thayil's G–E–Eb–Bb–Ab progression refuses the minor-key darkness at equal heaviness — the inversion mechanism is purely tonal: same weight, opposite emotional destination.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Black_Hole_Sun",
+        "https://en.wikipedia.org/wiki/Superunknown"
+      ]
+    },
+    {
+      "id": "edge_anchor_to_seven_nation_army_inversion",
+      "type": "inversion",
+      "source_node_id": "black-sabbath_black-sabbath_black-sabbath",
+      "target_node_id": "the-white-stripes_elephant_seven-nation-army",
+      "evidence": "Seven Nation Army's five-note descending motif (guitar through octave pedal, simulating bass) echoes the anchor's own minimalism: both songs use a descending low-register motif as sole compositional argument. Where Sabbath uses two instruments to create maximum weight, White uses one instrument pretending to be two to create the same riff-first impact from minimum forces. The loopback is structural: the closing inversion and the anchor share minimalist single-riff logic, but Seven Nation Army rejects all supernatural weight.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Seven_Nation_Army",
+        "https://en.wikipedia.org/wiki/Elephant_(The_White_Stripes_album)"
+      ]
+    }
+  ]
+}

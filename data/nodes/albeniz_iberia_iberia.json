@@ -1,0 +1,53 @@
+{
+  "id": "albeniz_iberia_iberia",
+  "artist": "Isaac Albéniz",
+  "period": {
+    "label": "Iberia / Spanish nationalist piano (1905–1909)",
+    "year_start": 1905,
+    "year_end": 1909
+  },
+  "works": [
+    {
+      "title": "Iberia",
+      "type": "album",
+      "year": 1909
+    },
+    {
+      "title": "Iberia (suite for piano, 12 pieces in 4 books)",
+      "type": "track",
+      "year": 1909
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "Spanish nationalist piano / late-Romantic harmony × cante jondo and Andalusian folk material",
+    "geographic_locus": "Catalonia (b. Camprodón 1860) → Madrid → Paris (composed Iberia)",
+    "historical_role": "Founding figure of Spanish musical nationalism. *Iberia* (1905–09), a 12-piece programmatic suite, paints Spanish regional portraits using cante-jondo melisma, flamenco rhythmic cells and Andalusian folk material processed through late-Romantic / proto-Impressionist harmonic vocabulary. Together with Falla, Granados and Turina, Albéniz constitutes the precedent layer that flamenco-piano historiography (cf. Trancoso's thesis hosted by the Lebrija municipal archive) names as the classical antecedent of the flamenco-piano tradition Dorantes belongs to. Dorantes himself, in his RomArchive portrait, describes 'reaching into the late romanticist harmony of Falla, Granados, and Albéniz' for harmonic and compositional vocabulary."
+  },
+  "narrative_slots": {
+    "production_facts": "Iberia composed 1905–1909, published in 4 books. Premiered piecemeal in Paris by Blanche Selva. Considered Albéniz's masterwork and one of the most technically demanding solo-piano works of the early 20th century.",
+    "member_dynamics": "Albéniz introduced Falla and Joaquín Turina to Parisian musical circles, directly shaping their aesthetic. The mentorship triangle Albéniz → Falla / Turina (and adjacent: Granados) formed the core of Spanish musical nationalism c. 1900–1925.",
+    "cultural_venue": "Paris (composition + premiere) and Madrid; the Iberia material itself maps onto Andalusian / Castilian / Catalan locales — the suite is itself a cartography of Spain.",
+    "instrumentation_details": "Solo piano. The harmonic language fuses post-Wagnerian chromaticism, Debussian whole-tone and modal colours, with cante-jondo melismatic figuration and zapateado rhythmic figures.",
+    "release_circumstances": "Posthumous editions and continued recording history; *Iberia* canonical in 20th-century piano repertoire and explicitly cited in flamenco-piano genealogies (Trancoso 2011 thesis 'El piano flamenco: génesis, recorrido diacrónico y análisis musicológico')."
+  },
+  "tags": [
+    "upward_root",
+    "spanish_classical_root",
+    "cante_jondo_through_classical",
+    "methodological_antecedent"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Isaac_Alb%C3%A9niz  [T2]",
+    "https://www.romarchive.eu/en/flamenco/david-pena-dorantes-me-and-my-vision/  [T1 — RomArchive Dorantes portrait, names Falla/Granados/Albéniz as harmonic source]",
+    "https://www.lebrija.es/export/sites/lebrija/.galleries/documentos-generales/Dorantes_Tesis-jaime-trancoso_p475-507_p01-31_MODIFICADO.pdf_1096958278.pdf  [T1-2 — Trancoso doctoral thesis hosted by Lebrija municipal archive: 'El piano flamenco' situates Albéniz/Falla as precedents of the flamenco-piano tradition]",
+    "https://chanodominguez.com/proyectos  [T1 — Chano Domínguez's quartet project explicitly explores Falla/Albéniz/Granados/Mompou]",
+    "https://dialnet.unirioja.es/descarga/articulo/7970788.pdf  [T1-2 academic — 'El piano flamenco: contextualización, estética y evolución']"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

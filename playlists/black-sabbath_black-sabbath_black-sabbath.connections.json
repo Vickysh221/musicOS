@@ -1,0 +1,759 @@
+{
+  "playlist_slug": "black-sabbath_black-sabbath_black-sabbath",
+  "episode_number": 3,
+  "episode_focus": "riff_inversion",
+  "episode_title_zh": "三全音之后 — Black Sabbath",
+  "episode_title_en": "After the Tritone — Black Sabbath",
+  "episode_arc": {
+    "from": { "position": 1, "label": "Cream — Sunshine of Your Love (1967)" },
+    "to":   { "position": 7, "label": "Metallica — Master of Puppets (1986)" },
+    "coda": { "position": 18, "label": "The White Stripes — Seven Nation Army (2003)" }
+  },
+  "connection_kinds_in_scope": [
+    "riff_aesthetic_inheritance",
+    "riff_aesthetic_mutation",
+    "riff_aesthetic_inversion",
+    "direct_influence",
+    "methodological_descent",
+    "genealogical_descent",
+    "same_era_dialogue",
+    "hybridization",
+    "inversion"
+  ],
+  "muted_positions": [],
+  "position_labels": {
+    "1": "Cream — Sunshine of Your Love (1967)",
+    "2": "Jimi Hendrix Experience — Purple Haze (1967)",
+    "3": "Black Sabbath — Black Sabbath (1970)",
+    "4": "Black Sabbath — War Pigs (1970)",
+    "5": "Black Sabbath — Iron Man (1970)",
+    "6": "Black Sabbath — Paranoid (1970)",
+    "7": "Metallica — Master of Puppets (1986)",
+    "8": "Deep Purple — Smoke on the Water (1972)",
+    "9": "Led Zeppelin — Immigrant Song (1970)",
+    "10": "Aerosmith — Walk This Way (1975)",
+    "11": "AC/DC — Back In Black (1980)",
+    "12": "Ozzy Osbourne — Crazy Train (1980)",
+    "13": "Rage Against the Machine — Killing in the Name (1992)",
+    "14": "Metallica — Enter Sandman (1991)",
+    "15": "Guns N' Roses — Sweet Child O' Mine (1987)",
+    "16": "Nirvana — Come As You Are (1991)",
+    "17": "Soundgarden — Black Hole Sun (1994)",
+    "18": "The White Stripes — Seven Nation Army (2003)"
+  },
+  "connection_pairs": [
+    {
+      "id": "conn_001_to_002_same_era_dialogue",
+      "from_position": 1,
+      "to_position": 2,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Both Sunshine of Your Love and Purple Haze were released in 1967 and independently established the riff-first compositional contract at the same cultural moment. Jack Bruce's descending bass riff and Hendrix's opening tritone motif are parallel solutions to the same problem: how to make the instrumental hook — not the melody, not the chord sequence — govern the song's identity. Jimi Hendrix reportedly told Clapton he loved Sunshine of Your Love after hearing it live at the Saville Theatre in late 1967, documenting the cross-pollination.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种'先给一个 riff，再说别的'的写法，1967 年几乎同时从两个方向涌出来，接下来你会听到另一个版本。",
+          "voice_en": "This 'riff first, everything else second' logic emerged from two directions simultaneously in 1967 — you'll hear the other version next."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Cream 那里听到的'低音先行'，Hendrix 这里换了一个词：降半音的三全音，同年，同样是先给 riff。",
+          "voice_en": "The low-register-first logic you just heard from Cream reappears here with a different word: the detuned tritone — same year, same riff-first instinct."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.68,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.70,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Strong focus relevance — both tracks are the dual founding document of the riff-first contract. Concrete carrier is the near-simultaneous 1967 Saville Theatre cross-pollination moment. Story drive is moderate as this is scene-setting rather than a pivot."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_001_to_003_riff_aesthetic_inheritance",
+      "from_position": 1,
+      "to_position": 3,
+      "kind": "riff_aesthetic_inheritance",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_cream_to_anchor_direct",
+      "system_sensory_note": "Jack Bruce's descending tritone-adjacent bass riff in D, doubled by Clapton's guitar in unison, established the compositional grammar that Iommi and Butler radicalised. The specific mechanics are identical: unison guitar-bass attack, low-register weight, riff before vocal, riff as song identity. Geezer Butler has cited Cream directly as a formative influence on Black Sabbath's approach.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这个先行 riff、贝斯吉他齐奏的语法，三年后会被人用来做一件更重、更暗的事。",
+          "voice_en": "This lead-riff, bass-and-guitar-unison grammar will be taken three years later to do something heavier and darker."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 1967 年那首歌里听到的贝斯吉他齐奏——Iommi 和 Butler 把它降了调，放慢了，换了一个三全音，就成了这首的核心。",
+          "voice_en": "The bass-guitar unison you heard in that 1967 track — Iommi and Butler detuned it, slowed it, swapped in a tritone, and made it the core of this one."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.82,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.80,
+          "focus_relevance": 0.78
+        },
+        "rationale": "Highest story drive in the precursor section — this is the direct handoff moment, the specific technique (unison bass-guitar riff) that becomes the anchor's founding gesture. Evidential strength is high: Butler's documented citation of Cream as influence."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_003_riff_aesthetic_inheritance",
+      "from_position": 2,
+      "to_position": 3,
+      "kind": "riff_aesthetic_inheritance",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_hendrix_to_anchor_direct",
+      "system_sensory_note": "Hendrix's E–B-flat tritone in Purple Haze is the direct harmonic model for Iommi's B–F tritone in Black Sabbath. Both use the diminished fifth as a structural opening gesture before any vocal or chord. Iommi has cited Hendrix in multiple interviews as the guitarist who first demonstrated that a guitar could deliver emotional impact through a single interval choice. The transmission is specific: the tritone as the song's foundational move, not as colour but as the whole argument.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这个用一个减五度开场的动作，三年后会被人慢下来、加重，变成整首歌的重量来源。",
+          "voice_en": "This opening-with-a-diminished-fifth move will be slowed down and weighted three years later into an entire song's centre of gravity."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的那个减五度开场——Hendrix 用它冲，Iommi 在这里把它压到地板上，一个三全音，整首歌的重量就在这儿了。",
+          "voice_en": "That diminished-fifth opener you heard — Hendrix used it to surge forward; Iommi pressed it into the floor here, one tritone, the whole song's weight."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.88,
+        "dimensions": {
+          "story_drive": 0.90,
+          "concrete_carrier": 0.90,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.85
+        },
+        "rationale": "The single strongest inheritance pair: the tritone-to-tritone transmission is the episode's thesis in miniature. Both concrete carrier (the specific E–Bb vs B–F interval) and story drive are maximum. Iommi's documented citations provide high evidential strength."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_009_same_era_dialogue",
+      "from_position": 2,
+      "to_position": 9,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Hendrix's kinetic riff energy — the way Purple Haze uses the opening motif as a launchpad rather than an anchor — is the sonic ancestor of Led Zeppelin's galloping approach in Immigrant Song. Both treat the riff as a vehicle for propulsion rather than stasis. Page has cited Hendrix as formative; the 1967–1970 arc from Hendrix's electric kinesis to Zeppelin's Nordic charge is the northern (kinetic) pole of the riff-first aesthetic that Sabbath's southern (gravitational) pole defines by contrast.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种把 riff 当发射台而不是锚点的能量，1970 年会在另一支英国乐队手里变成更快、更往前冲的东西。",
+          "voice_en": "This energy of using the riff as a launchpad rather than an anchor will become something faster and more forward-driving in 1970 from another British band."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Hendrix 那里听到的那种冲劲——同年，这首歌把它变成了北欧神话的马蹄节奏，同样是 riff 先行，但方向完全反过来了。",
+          "voice_en": "The forward-surge you heard from Hendrix — this song turns it into a Norse-mythology gallop in the same year, same riff-first instinct, opposite direction."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.60,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.68
+        },
+        "rationale": "Good focus relevance — this pair maps the kinetic pole of the riff-first spectrum, which the episode needs to distinguish from Sabbath's gravitational pole. Moderate evidential strength as the Hendrix–Zeppelin connection is consensus rather than documented direct citation."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_004_direct_influence",
+      "from_position": 3,
+      "to_position": 4,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_anchor_to_war_pigs_direct",
+      "system_sensory_note": "War Pigs was recorded in the same Regent Sound sessions as the anchor, same lineup, same month. The opening guitar-bass unison at half-tempo followed by a sudden acceleration is the weight-first contract's first structural expansion: tempo becomes dramatic architecture. The 7:54 duration proves the riff-first aesthetic can sustain long-form composition — the riff governs even as the song shifts through multiple tempos. This is the first instance in the lineage where the riff's structural authority is tested at length.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这个'riff 统治全曲'的逻辑，同一张专辑里马上要被拉长到将近八分钟——看它能不能扛住。",
+          "voice_en": "This 'riff governs everything' logic is about to be stretched to nearly eight minutes on the same album — testing whether it holds."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到那首歌里 riff 是所有事情的中心；这首同一张专辑，同一批人，把这个逻辑拉到了将近八分钟，还加了一个速度变化。",
+          "voice_en": "The riff-as-center logic you just heard is stretched to nearly eight minutes here, same album, same band, with a tempo shift added."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.75,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.80,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.62
+        },
+        "rationale": "Strong evidential strength — same recording session, documented. Strong concrete carrier: the half-tempo opening and sudden acceleration are audible and measurable. Story drive is good as this pair demonstrates the anchor's logic is stress-tested immediately on the same album."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_005_direct_influence",
+      "from_position": 3,
+      "to_position": 5,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_anchor_to_iron_man_direct",
+      "system_sensory_note": "Iron Man (Paranoid album, six months after the anchor) extends the riff-first contract with a new innovation: the ring-modulated detuned power chords make sonic texture itself carry narrative meaning. The robot's voice is in the guitar's timbre, not in a lyric or melody. This is the first time in the lineage where the riff's sound quality — not just its pitch content — is the compositional argument. The riff is so dominant that Osbourne's vocal fits into its gaps rather than leading.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这首歌建立的'riff 音色即故事'的逻辑，半年后会被推到更远——直到吉他的音色本身就在讲一个机器人的故事。",
+          "voice_en": "The 'riff tone tells the story' logic will be pushed further six months later — until the guitar's timbre alone narrates a robot's existence."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在那首歌里听到 riff 统治一切；这首更进一步——环形调制器把吉他音色变成了一个机器人的声音，riff 不只是主角，它就是故事本身。",
+          "voice_en": "In that previous track the riff dominated everything; here it goes further — the ring modulator makes the guitar timbre itself a robot voice, the riff is the story."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.80,
+        "dimensions": {
+          "story_drive": 0.80,
+          "concrete_carrier": 0.88,
+          "evidential_strength": 0.82,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Strong concrete carrier: the ring modulator as timbre-as-narrative is a specific, documentable technique innovation. This pair introduces the tonal-colour dimension of riff identity that will become crucial later in the episode (Crazy Train, Come As You Are)."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_006_direct_influence",
+      "from_position": 3,
+      "to_position": 6,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_anchor_to_paranoid_direct",
+      "system_sensory_note": "Paranoid (same Paranoid album) applies the riff-first contract at double speed (164 bpm) with maximum compression: no guitar solo, no bridge, the riff IS the entire musical argument. Written as filler in 25 minutes, it proves that the weight-first principle is robust even when stripped of all atmospheric elaboration. The UK #4 chart position demonstrated the anchor's compositional logic could be commercially dominant.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同张专辑还有一首，把这个逻辑压缩到两分多钟，快一倍，没有吉他独奏，什么装饰都没有，只有 riff 本身。",
+          "voice_en": "On the same album there's another track that compresses this logic to two-and-a-half minutes, double speed, no guitar solo, nothing but the riff."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在那首慢的、蔓延的重量里；这首是同张专辑的另一个极点——25 分钟写完，快一倍，但 riff 统治一切的逻辑原封不动。",
+          "voice_en": "You were just in the slow spreading weight; this is the same album's other extreme — written in 25 minutes, double speed, but the riff-governs-all logic unchanged."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.77,
+        "dimensions": {
+          "story_drive": 0.78,
+          "concrete_carrier": 0.82,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.68
+        },
+        "rationale": "High evidential strength — same album, documented production circumstances. Concrete carrier is the 164 bpm compression: a measurable parameter. Story drive is the 'stress test at maximum speed' arc beat, showing the anchor's principle is scale-invariant."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_007_direct_influence",
+      "from_position": 3,
+      "to_position": 7,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_anchor_to_master_direct",
+      "system_sensory_note": "Master of Puppets is the anchor's gravitational lineage at maximum scale: 16 years on, the E–D–C riff at 212 bpm with palm muting converts Sabbath's slow weight into kinetic weight — but the riff-governs-all principle is identical. The clean interlude (4:18–5:30) that makes the riff's return a physical impact is a direct structural development of the anchor's weight-withhold-then-deliver logic. Hetfield and Ulrich have documented Black Sabbath as foundational.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这套'riff 即全部'的语法，16 年后会被一支金属乐队放大到极致——212 bpm，八分钟，riff 的回归变成了物理冲击。",
+          "voice_en": "This 'riff is everything' grammar will be amplified to its extreme by a metal band 16 years later — 212 bpm, eight minutes, the riff's return made a physical impact."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在那个三全音里听到了'riff 即全部'；这里是 1986 年的版本——更快、更大，中间那段清音是为了让 riff 回来时变成冲击。",
+          "voice_en": "You heard 'riff is everything' in that tritone; this is the 1986 version — faster, larger, the clean break making the riff's return a physical blow."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.86,
+        "dimensions": {
+          "story_drive": 0.88,
+          "concrete_carrier": 0.88,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.82
+        },
+        "rationale": "The highest-scoring heir pair: this is the endpoint of the upward genealogical line, 16 years of amplification arriving at the aesthetic's commercial and artistic peak. Concrete carrier is the clean interlude structure — a documentable, timestamp-able mechanism. Documented band citations ensure high evidential strength."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_008_hybridization",
+      "from_position": 3,
+      "to_position": 8,
+      "kind": "hybridization",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_anchor_to_smoke_hybridization",
+      "system_sensory_note": "Smoke on the Water (1972) takes the Sabbath riff-first contract and hybridises it with Blackmore's neoclassical harmonic vocabulary: perfect fourths and a minor third replace the tritone. The riff-before-vocal structure and the riff-as-song-identity principle are intact; the harmonic language has mutated from diabolus to academic. Every beginner guitarist learns this riff first — it is the most culturally transmitted mutation of the anchor's grammar.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这套先给 riff 再说其他的语法，两年后会被一个新古典主义的吉他手接过去——换掉三全音，但保留了一切其他的东西。",
+          "voice_en": "This 'riff first, everything else follows' grammar will be taken up two years later by a neoclassical guitarist — the tritone replaced, everything else kept."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在那首歌里听到的是三全音和诅咒；这里，Blackmore 把三全音换成了四度和小三度，重量还在，但变成了学院派的重量。",
+          "voice_en": "You heard a tritone and a curse in that last track; here Blackmore swaps the tritone for fourths and a minor third — the weight remains, turned academic."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.78,
+        "dimensions": {
+          "story_drive": 0.78,
+          "concrete_carrier": 0.82,
+          "evidential_strength": 0.78,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Strong concrete carrier: the interval-swap from tritone to fourths-plus-minor-third is measurable, and the cultural fact that every beginner learns this riff first is a vivid carrier for the hybridization story. Good story drive as this is the first lateral mutation of the anchor's grammar."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_004_to_011_riff_aesthetic_mutation",
+      "from_position": 4,
+      "to_position": 11,
+      "kind": "riff_aesthetic_mutation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "War Pigs and Back In Black both use tempo-as-drama as a compositional mechanism: War Pigs opens at half-tempo then accelerates; Back In Black opens with a suspended four-bar toll before Young's riff arrives. Both songs deploy the riff's entrance as an architectural event rather than an immediate statement. Young's major-key boogie shuffle and War Pigs' doom-metal grammar are opposing in tone but identical in structural intent: the riff's arrival is the song's defining moment.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种把 riff 的进入变成一个建筑事件的方法，五年后会出现在一支完全不同风格的乐队里，但逻辑是一样的。",
+          "voice_en": "This method of making the riff's arrival an architectural event will reappear five years later in a completely different genre — same logic, different colour."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在那首 Sabbath 的歌里听到了'让 riff 等一等，等进来变成一次冲击'；这首用大调的 boogie 做了同样的事。",
+          "voice_en": "You heard 'delay the riff so its arrival becomes an impact' in that Sabbath track; this one does the same thing in major-key boogie."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.65,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.68,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Good focus relevance — both tracks demonstrate the riff-as-architectural-event principle across opposite tonal registers. Evidential strength is moderate (musicological analysis rather than documented influence). Concrete carrier is the audible 'riff entrance delayed' mechanism in both opening sequences."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_005_to_012_riff_aesthetic_mutation",
+      "from_position": 5,
+      "to_position": 12,
+      "kind": "riff_aesthetic_mutation",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Iron Man and Crazy Train share the specific innovation that sonic timbre is a primary compositional argument — not just colour. Iron Man's ring-modulated detuned power chords make the guitar sound like a robot; Rhoads' diminished/chromatic riff makes the guitar sound like a harpsichord or violin section. Both musicians used unconventional timbre as the riff's main communicative layer. The Osbourne personnel bridge makes the transmission direct: Osbourne sang Iron Man, and Rhoads was composing Crazy Train directly for Osbourne.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这个'吉他音色在讲故事'的发现，十年后会在同一个主唱的下一支乐队里被推到另一个方向——从机器人变成了 Bach。",
+          "voice_en": "This discovery that guitar timbre can tell the story will be taken ten years later, by the same vocalist's next band, in a completely different direction — robot becomes Bach."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的环形调制器把吉他变成机器人的声音；这里，同一个主唱，吉他手把音色变成了新古典主义的弦乐组——riff 先行，但语言换成了欧洲古典乐。",
+          "voice_en": "You heard a ring modulator turn a guitar into a robot voice; here, same vocalist, the guitarist turns timbre into neoclassical strings — riff first, language switched to European classical."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.78,
+        "dimensions": {
+          "story_drive": 0.80,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Strong concrete carrier: the Osbourne personnel bridge is a documented fact, and the timbre-as-story mechanism in both tracks is a precise, audible parallel. Story drive benefits from the narrative irony: the same vocalist carries the timbre-first principle from one musical world (doom metal) to its opposite (neoclassical)."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_014_riff_aesthetic_mutation",
+      "from_position": 6,
+      "to_position": 14,
+      "kind": "riff_aesthetic_mutation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Paranoid (1970) and Enter Sandman (1991) are the two commercial-peak variants of the riff-first contract at opposite temporal extremes of the episode's arc. Both prove that the riff-governs-all principle can be maximally compressed and maximally accessible: Paranoid at 164 bpm achieves UK #4 in 1970; Enter Sandman at 123 bpm achieves 16+ million US sales in 1991. Both dispensed with complexity — no guitar solo in Paranoid, minimal harmonic motion in Enter Sandman — and the riff's clarity is what drives the commercial penetration.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种'把 riff 的复杂度去掉，让它的清晰度统治一切'的策略，21 年后会被另一支金属乐队用来创造他们最畅销的专辑。",
+          "voice_en": "This strategy of stripping riff complexity so its clarity dominates will be used 21 years later by another metal band to create their best-selling album."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的是 1970 年那首用清晰代替复杂的 riff；这里是 1991 年的版本——更慢，更压迫，用同样的逻辑：去掉一切，只留 riff。",
+          "voice_en": "You heard the 1970 version of 'replace complexity with clarity in the riff'; here is the 1991 version — slower, more suffocating, same logic: strip everything, keep only the riff."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.72,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.72,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.80
+        },
+        "rationale": "Strong focus relevance — this pair maps the 'commercial clarity peak' axis of the riff-first principle at two chronological extremes. Evidential strength is moderate (structural analogy). Concrete carrier is the measurable result: chart positions and sales figures are documented."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_007_to_014_methodological_descent",
+      "from_position": 7,
+      "to_position": 14,
+      "kind": "methodological_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Enter Sandman represents Metallica's own methodological evolution from Master of Puppets: from eight-minute structural complexity to accessible four-minute riff-simplification. The band has documented this shift as deliberate — Hetfield and Ulrich consciously stripped the arrangement and slowed the tempo to achieve maximum mass-market reach. The clean production (Bob Rock replacing the Flemming Rasmussen sound) and the commercial result (the Black Album's dominance) is Metallica applying their own inheritance of Sabbath's principle in the opposite direction from thrash.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同一支乐队，五年后会做一次方向反转——把这首的复杂度拆解掉，只保留重量，换来一张卖了一千六百万张的专辑。",
+          "voice_en": "The same band will reverse direction five years later — disassemble this track's complexity, keep only the weight, and exchange it for an album that sold sixteen million copies."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到同一支乐队最复杂的作品；这首是同一批人选择放弃复杂度换取重量的清晰度——Bob Rock 负责把复杂拆掉，riff 的逻辑还在。",
+          "voice_en": "You heard that band's most complex work; this is the same people choosing to trade complexity for weighted clarity — Bob Rock stripped the complexity, the riff logic remained."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.80,
+        "dimensions": {
+          "story_drive": 0.82,
+          "concrete_carrier": 0.82,
+          "evidential_strength": 0.80,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Strong story drive: the self-simplification arc of the same band is a powerful narrative turn — the heir overextending then pulling back. Concrete carrier is the documented Bob Rock production shift and the tempo change from 212 to 123 bpm. High evidential strength: band-documented decision."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_008_to_011_same_era_dialogue",
+      "from_position": 8,
+      "to_position": 11,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Smoke on the Water (1972) and Back In Black (1980) are the two most commercially transmitted mutations of the riff-first contract from the 1970s mutation layer. Both achieve enormous reach precisely because they mutated Sabbath's harmonic darkness out of the riff: Blackmore with neoclassical intervals, Young with major-key boogie. Together they document that the riff-first grammar is maximally transmissible once the supernatural weight is removed from the harmonic content.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这个把三全音换成更容易接受的音程的策略，八年后另一支澳大利亚乐队会更彻底地执行——换成大调 boogie，世界最畅销的摇滚专辑之一就出来了。",
+          "voice_en": "Replacing the tritone with accessible intervals, executed thoroughly eight years later by an Australian band — swap to major-key boogie, one of rock's best-selling albums emerges."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在那首歌里听到的是把 Sabbath 的恶魔音程换成了新古典主义；这首把它换成了大调 boogie 节奏——同一个去毒化策略，五千万张唱片。",
+          "voice_en": "You heard Sabbath's diabolical interval swapped for neoclassical vocabulary; this track swaps it for major-key boogie — same detoxification strategy, fifty million albums."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.68,
+        "dimensions": {
+          "story_drive": 0.68,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.52,
+          "focus_relevance": 0.78
+        },
+        "rationale": "Strong focus relevance — this pair articulates the 'harmonic detoxification' pattern in the mutation layer, showing how the anchor's tritone was systematically replaced to achieve commercial transmission. Evidential strength is moderate (structural analysis rather than documented influence)."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_009_to_010_riff_aesthetic_mutation",
+      "from_position": 9,
+      "to_position": 10,
+      "kind": "riff_aesthetic_mutation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Immigrant Song and Walk This Way both operate in the kinetic pole of the riff-first spectrum — both use the riff as propulsion rather than stasis — but Walk This Way replaces Zeppelin's mythological drive with James Brown's funk syncopation. Where Immigrant Song's riff repeats in a straight 4/4 drive, Walk This Way uses staccato rhythmic anticipation to generate its momentum. Both tracks demonstrate that kinetic riff energy can be achieved through different rhythmic vocabularies: Norse gallop vs. funk staccato.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种用 riff 产生前冲感的方法，五年后另一支美国乐队会用 James Brown 的切分节奏来做——不再是北欧神话，而是放克。",
+          "voice_en": "This method of using the riff to generate forward propulsion will be replicated five years later by an American band using James Brown's syncopation — Norse mythology traded for funk."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 1970 年那首快节奏 riff 里听到的前冲感——这首用切分节奏换掉了北欧的驱动力，同样的动能，James Brown 的语法。",
+          "voice_en": "You heard that 1970 forward-driving riff's propulsion; this track replaces the Nordic drive with syncopation — same kinetic energy, James Brown's grammar."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.62,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.48,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Good focus relevance — this pair documents the kinetic-pole mutation axis, contrasting Norse propulsion with funk syncopation. Evidential strength is lower (musicological comparison, no documented direct citation from Perry citing Page). Concrete carrier is the audible rhythmic mechanism shift."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_009_to_014_riff_aesthetic_mutation",
+      "from_position": 9,
+      "to_position": 14,
+      "kind": "riff_aesthetic_mutation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Immigrant Song (1970) and Enter Sandman (1991) are the kinetic and gravitational poles respectively of the riff-first mutation landscape over two decades. Immigrant Song uses propulsive kinesis; Enter Sandman uses slow suffocating weight. Both achieve maximum riff clarity through simplification — Immigrant Song is three chords, Enter Sandman is a power-chord loop — and both become among the most culturally embedded hard rock riffs of their era. The 1991 'Black Album moment' is in some sense the gravitational counter-version of 1970's kinetic emergence.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这条快速推进的 riff，21 年后的金属世界会给出一个重量版的回答——同样的清晰度，同样的重复性，但方向从冲锋变成了下沉。",
+          "voice_en": "This fast-propulsion riff will receive a gravitational answer 21 years later from the metal world — same clarity, same repetition, direction inverted from charge to descent."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到了 1970 年最清晰的冲锋 riff 之一；这首是 1991 年金属世界对那种能量的反向回答：同样简单，同样清晰，但速度和方向都反过来了。",
+          "voice_en": "You heard one of 1970's clearest charge riffs; this is metal's 1991 counter-answer to that energy: equally simple, equally clear, but tempo and direction reversed."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.62,
+        "dimensions": {
+          "story_drive": 0.62,
+          "concrete_carrier": 0.58,
+          "evidential_strength": 0.48,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Moderate scores across — this pair draws a useful structural contrast (kinetic vs. gravitational pole) over two decades, but the connection is musicological rather than documented. Useful for the episode's macro-arc but not a stand-alone narrative highlight."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_010_to_013_methodological_descent",
+      "from_position": 10,
+      "to_position": 13,
+      "kind": "methodological_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_walk_to_killing_methodological",
+      "system_sensory_note": "The Walk This Way → Killing in the Name transmission is the episode's documented methodological sub-lineage. Morello has cited the 1986 Run-DMC x Aerosmith Walk This Way collaboration as the specific model for combining rock riff with hip-hop rhythm. Walk This Way's staccato syncopated approach is the direct ancestor of Killing in the Name's two-note whammy-bar groove. The progression from funk-groove rock riff (1975) through hip-hop appropriation (1986) to political riff-weapon (1992) is the episode's alternative mutation axis.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这个切分节奏的 riff，通过一次 1986 年的合作录音，直接进入了一支 1990 年代政治金属乐队的武器库，最后变成了一句政治 F-bomb 的伴奏。",
+          "voice_en": "This syncopated riff, through one 1986 collaboration recording, entered a 1990s political metal band's arsenal — becoming the backing for a political F-bomb in 1992."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "那个切分 riff，经过 1986 年嘻哈与摇滚的对撞，在这里变成了政治武器——两个音符，一个 whammy 踏板，一首改变了什么的歌。",
+          "voice_en": "That syncopated riff, through the 1986 hip-hop-meets-rock collision, becomes Tom Morello's political weapon here — two notes, a whammy pedal, a song that changed something."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.85,
+        "dimensions": {
+          "story_drive": 0.88,
+          "concrete_carrier": 0.88,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.78
+        },
+        "rationale": "Highest-scoring pair in the mutation layer: documented cross-genre transmission with a clear three-step chain (Aerosmith groove → Run-DMC collaboration → Morello methodology). Concrete carrier is the 1986 Run-DMC x Aerosmith session, a historical event. Story drive peaks because the riff-as-political-weapon endpoint is the episode's most politically loaded node."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_011_to_015_riff_aesthetic_inversion",
+      "from_position": 11,
+      "to_position": 15,
+      "kind": "riff_aesthetic_inversion",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Back In Black and Sweet Child O' Mine are the two peaks of commercially dominant riff-first guitar music in 1980 and 1987 respectively, but they represent opposite aesthetic destinations. Back In Black uses major-key boogie to deliver confident resilience; Sweet Child O' Mine uses an arpeggiated single-note figure to deliver lyrical tenderness. Young's riff and Slash's arpeggio are both the most recognisable openings of their respective records, but the emotional contract has been fully inverted: force vs. vulnerability.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种'riff 带着自信进来'的方式，七年后会被一个洛杉矶吉他手翻转——同样是先给 riff，但这次送来的不是自信，而是温柔。",
+          "voice_en": "This 'riff arriving with confidence' approach will be inverted seven years later by an LA guitarist — same riff-first entry, but this time delivering tenderness instead of force."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到大调 boogie riff 的自信；这首换了方向——同样著名的开头，送来的是那位吉他手说的'马戏团旋律'，温柔的。",
+          "voice_en": "You heard major-key boogie riff delivering unstoppable confidence; this switches direction — equally famous opening, but Slash said he was writing a 'circus melody,' something tender."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.72,
+        "dimensions": {
+          "story_drive": 0.75,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.62,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Good story drive — this pair pivots the episode from the mutation layer into the inversion layer; it is the first time we see the riff-first principle used to deliver emotional tenderness. Concrete carrier is Slash's documented 'circus melody' quote. Moderate evidential strength as there is no documented direct citation from Slash of AC/DC."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_012_to_015_riff_aesthetic_mutation",
+      "from_position": 12,
+      "to_position": 15,
+      "kind": "riff_aesthetic_mutation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Crazy Train and Sweet Child O' Mine share the specific technique of using a single-note melodic figure as the riff rather than a power chord or interval cluster. Rhoads' diminished/chromatic single-note lines and Slash's arpeggiated single-note figure are both departures from the power-chord school of riffing. Both guitarists trained in classical or academic traditions (Rhoads classically, Slash self-trained through jazz and blues) and both arrived at a melodic approach to the riff. The mutation is technique-focused: from power chord to single-note line.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种用单音旋律线代替强力和弦来作为 riff 的方法，七年后还会出现在一首洛杉矶吉他手的作品里，但换了一个情绪：从新古典的黑暗变成了温柔。",
+          "voice_en": "This single-note melodic riff approach reappears seven years later from an LA guitarist — same technique, emotion switched from neoclassical darkness to tenderness."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Rhoads 的手里听到了单音旋律线作为 riff 的技术——Slash 在这里做了同样的事，同样是单音，同样是 riff 先行，但换了一个情绪。",
+          "voice_en": "You heard Rhoads deploy a single-note melodic line as the riff; Slash does the same here — same single-note approach, same riff-first logic, different emotion entirely."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.68,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.72,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Good focus relevance and concrete carrier: the single-note-as-riff technique is a specific, audible parameter that distinguishes this pair from the power-chord mutations. Evidential strength is moderate (technique analogy without documented citation). Story drive is moderate — this pair enriches the mutation-to-inversion transition."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_013_to_016_same_era_dialogue",
+      "from_position": 13,
+      "to_position": 16,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Killing in the Name (1992) and Come As You Are (1991) were released within six months of each other and represent the two dominant riff-inversion strategies of the early 1990s alternative moment. RATM uses the riff as political weapon: maximum volume, maximum confrontation. Nirvana uses the riff as emotional inversion: the chorus pedal that makes the guitar sound like it is underwater is the deliberate antithesis of metal weight. Both bands were responding to the same commercial-metal landscape (Enter Sandman, the Black Album) but from opposite angles.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同一个时代，另一首歌会走完全相反的路——不是把 riff 变成武器，而是把金属的重量泡进水里，淹掉它。",
+          "voice_en": "In the same era, another track takes the exact opposite path — not weaponizing the riff, but submerging metal's weight in water, dissolving it."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的是把 riff 变成政治武器；这首是同年代的另一种答案——用一个合唱踏板把金属的重量泡软，riff 还在，但力气不见了。",
+          "voice_en": "You just heard the riff weaponized for confrontation; this is the same era's other answer — a chorus pedal submerges metal's weight, the riff remains, the force is dissolved."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.70,
+        "dimensions": {
+          "story_drive": 0.72,
+          "concrete_carrier": 0.68,
+          "evidential_strength": 0.58,
+          "focus_relevance": 0.78
+        },
+        "rationale": "Good focus relevance — this pair documents the dialectic between the two dominant 1991-92 inversion strategies: amplification vs. dissolution. Story drive benefits from the same-era simultaneity. Evidential strength is moderate (structural contrast rather than documented dialogue)."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_014_to_016_inversion",
+      "from_position": 14,
+      "to_position": 16,
+      "kind": "inversion",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_anchor_to_come_as_you_are_inversion",
+      "system_sensory_note": "Come As You Are was released in September 1991, the same month as the Black Album (Enter Sandman). This simultaneous release is documented fact: two contrasting visions of riff-first music arrived at exactly the same cultural moment. Enter Sandman is the commercial peak of heavy riff-first music; Come As You Are is grunge's direct answer. Cobain's documented use of a Boss CE-2 chorus pedal was a deliberate sonic choice to create the opposite of metal weight — the chorus effect makes the guitar sound like it is submerged, specifically inverting the aggression of contemporaneous metal.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这张专辑发行的同一个月，另一首歌用同样的 riff 先行原则做了一件刚好相反的事——同月上架，回答了这首带来的重量问题。",
+          "voice_en": "The same month this album was released, another track used the same riff-first principle to do exactly the opposite — released simultaneously, answering the weight this one posed."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到商业金属 1991 年的重量顶点；这首同月发行——CE-2 合唱踏板把同样的 riff 泡进水里，重量刚好反了过来。",
+          "voice_en": "You heard commercial metal's 1991 weight peak; this one was released the same month — a CE-2 chorus pedal submerges the same riff in water, weight exactly inverted."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.87,
+        "dimensions": {
+          "story_drive": 0.90,
+          "concrete_carrier": 0.90,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.82
+        },
+        "rationale": "Highest-scoring inversion pair: the same-month simultaneous release is a documented historical fact that makes this the episode's sharpest dialectical moment. Concrete carrier is both the CE-2 chorus pedal (documented gear) and the release-date simultaneity (documented). Story drive peaks because this is the turning point from mutation to inversion layer."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_015_to_018_riff_aesthetic_inversion",
+      "from_position": 15,
+      "to_position": 18,
+      "kind": "riff_aesthetic_inversion",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Sweet Child O' Mine (1987) and Seven Nation Army (2003) are both arpeggiated/melodic single-note inversions of the power-chord riff aesthetic, using the riff-first principle but delivering emotional tenderness (Sweet Child) and minimal proto-anthem (Seven Nation Army) rather than weight. Both guitar figures are more famous than their respective songs' choruses. Both guitarists reduced the riff to its most minimal single-note line: Slash's descending arpeggio and White's five-note descending motif share the same reductive logic — maximum emotional impact from minimum physical forces.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种用最少的音符做出最大辨识度的单音 riff，16 年后会在一个极简双人组里被推到另一个极端——更少的音符，更大的体育场。",
+          "voice_en": "This approach of maximum recognizability from minimum notes will be pushed further 16 years later by a minimalist duo — fewer notes, larger stadiums."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的那个 Slash 的下行分解和弦——五个音符，同样的下行走势，这首把它压缩到最极简，吉他通过八度效果器假装是贝斯。",
+          "voice_en": "That descending arpeggio from Slash — five notes, same descending motion, this track compresses it to its most minimal form, guitar pretending to be bass through an octave pedal."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.72,
+        "dimensions": {
+          "story_drive": 0.72,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.78
+        },
+        "rationale": "Good focus relevance — the pair traces the reductive single-note inversion arc from LA hard rock (1987) to minimalist garage rock (2003). Concrete carrier is the shared descending single-note figure and the octave pedal technique (documented). Evidential strength is moderate (structural kinship without documented direct citation)."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_016_to_017_riff_aesthetic_inversion",
+      "from_position": 16,
+      "to_position": 17,
+      "kind": "riff_aesthetic_inversion",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_anchor_to_black_hole_sun_inversion",
+      "system_sensory_note": "Come As You Are (1991) and Black Hole Sun (1994) both deploy the grunge/post-grunge inversion of the metal weight aesthetic, but Black Hole Sun inverts the inversion: where Come As You Are rejects weight through dissolution (chorus pedal, underwater drift), Black Hole Sun retains Sabbath's detuning and funeral tempo but inverts the harmonic language from minor-key dread to major-key lush surrealism. Cornell uses drop D tuning and 73 bpm — the same sonic mechanics as Sabbath — but the G–E–Eb–Bb–Ab progression refuses minor-mode darkness. Equal weight, opposite emotional destination.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "你刚才听到了把金属重量泡软的方法；下一首用的完全是另一种方法——保留了 drop D 调音和葬礼节奏，但把和声换成了大调的超现实美感。",
+          "voice_en": "You heard one method of dissolving metal weight; the next track uses a completely different method — keeping the drop-D tuning and funeral tempo but switching harmony to major-key surrealism."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的是格朗基把金属泡进水里；这首不一样——保留了 Sabbath 的 drop D 和 73 bpm，但换成了大调的梦境和声，同样重，刚好相反的情绪。",
+          "voice_en": "You just heard grunge dissolving metal in water; this track keeps Sabbath's drop D and 73 bpm but switches to major-key dreamscape harmony — equally heavy, exactly opposite in feeling."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.82,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.88,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.80
+        },
+        "rationale": "Strong concrete carrier: the documentable convergence of drop-D tuning, 73 bpm, and harmonic mode-switch from minor to major is a precise, measurable analytic claim. Story drive is high: this pair demonstrates the 'inversion of the inversion' — the episode's most conceptually surprising move. Focus relevance is high as this pair most directly embodies the episode's riff_inversion focus."
+      },
+      "user_overrides": []
+    }
+  ]
+}

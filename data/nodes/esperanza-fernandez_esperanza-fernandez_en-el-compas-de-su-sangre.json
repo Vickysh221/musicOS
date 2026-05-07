@@ -1,0 +1,55 @@
+{
+  "id": "esperanza-fernandez_esperanza-fernandez_en-el-compas-de-su-sangre",
+  "artist": "Esperanza Fernández",
+  "period": {
+    "label": "Debut album / Triana cante × Dorantes piano (2001)",
+    "year_start": 2001,
+    "year_end": 2001
+  },
+  "works": [
+    {
+      "title": "En el compás de su sangre",
+      "type": "track",
+      "year": 2001
+    },
+    {
+      "title": "Esperanza Fernández",
+      "type": "album",
+      "year": 2001
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "cante jondo (soleá, seguiriya, tangos) × Triana-Sevilla flamenco lineage with classical/jazz cross-pollination",
+    "geographic_locus": "Triana, Seville (with family roots in Lebrija through her mother Pepa Vargas)",
+    "historical_role": "Deep-cante female voice from the Triana-Sevilla axis closest to Dorantes' own family circuit. Daughter of cantaor Curro Fernández and Lebrija-born cantaora Pepa Vargas; her debut album *Esperanza Fernández* (2001, BMG) features Dorantes accompanying her on the canonical soleá *En el compás de su sangre* (lyrics by José de la Tomasa) and on the Romani anthem *Gelem, Gelem*. Dorantes' father and her mother are second cousins — the collaboration is family. She debuted at sixteen with Mario Maya's *Amargo*, then shared stages with Paco de Lucía, Camarón, Enrique Morente and Rafael Riqueni; received the Giraldillo del Cante at the XV Bienal de Flamenco de Sevilla (2008)."
+  },
+  "narrative_slots": {
+    "production_facts": "Self-titled debut released 17 September 2001 on BMG Music Spain (10 tracks, ~45 min). Dorantes appears on piano on at least *En el compás de su sangre* and *Gelem, Gelem*; also features Garrotín with lyrics by José Saramago. Latin Grammy nomination on debut.",
+    "member_dynamics": "Daughter of Curro Fernández (cantaor) and Pepa Vargas (Lebrija cantaora). Family-tied to Dorantes via her mother (Pepa Vargas) and Dorantes' father being second cousins — same Lebrija-Triana flamenco circuit. Sustained collaborations with Dorantes across decades (the *Recuerdos* project and her broader concert work).",
+    "cultural_venue": "Triana, Seville — historic Romani flamenco neighbourhood — with the Lebrija family root one generation back. Sits inside the same Sevillian-Romani dynastic web as the Peña-Perrate-Pinini-Bacán family of the Dorantes/Lebrijano line.",
+    "instrumentation_details": "Cante (deep soleá / seguiriya register) over flamenco guitar, with Dorantes' piano replacing the guitar on the central tracks. Versatile voice equally at home in flamenco duo, jazz, chamber and symphonic-orchestra contexts.",
+    "release_circumstances": "*En el compás de su sangre* canonical soleá; the album positioned Esperanza as one of the foremost female cante voices of the 2000s, bridging deep cante and the broader Sevillian art-music circuit."
+  },
+  "tags": [
+    "lateral_dialogue",
+    "female_cante_lineage",
+    "deep_cante",
+    "family_circuit",
+    "translation_aesthetic"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://www.romarchive.eu/en/flamenco/  [T1 — Roma cultural archive, family-circuit framing]",
+    "https://es.wikipedia.org/wiki/Esperanza_Fern%C3%A1ndez_Vargas  [T2]",
+    "https://esperanzafernandez.com/  [T1 — official artist site]",
+    "https://www.deflamenco.com/revista/cante/esperanza-fernandez1-3.html  [T2 specialized press — describes Dorantes piano on En el compás de su sangre]",
+    "https://www.discogs.com/release/10053092-Esperanza-Fern%C3%A1ndez-Esperanza-Fern%C3%A1ndez  [T2 — release/personnel verification]",
+    "https://elartedevivirelflamenco.com/cantaores195.html  [T2 specialized]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}
