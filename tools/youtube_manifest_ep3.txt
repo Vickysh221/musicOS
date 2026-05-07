@@ -1,0 +1,57 @@
+# YouTube fetch manifest for ep3 — 18 tracks (riff_inversion / heavy rock genealogy)
+# Format:  <video_id>|<filename_stem>
+# Run: python3 tools/fetch_ep3.py
+
+# 01 Cream - Sunshine of Your Love (Official Audio, Universal)
+f3y8jf01UY8|01_cream_sunshine-of-your-love
+
+# 02 Jimi Hendrix Experience - Purple Haze (Official Audio)
+WGoDaYjdfSg|02_jimi-hendrix-experience_purple-haze
+
+# 03 Black Sabbath - Black Sabbath (Official Video, single track)
+0lVdMbUx1_k|03_black-sabbath_black-sabbath
+
+# 04 Black Sabbath - War Pigs (Audio, Rhino/Warner)
+bc5Nk1DXyEY|04_black-sabbath_war-pigs
+
+# 05 Black Sabbath - Iron Man (Official Audio, Rhino/Warner Ultimate Collection)
+F01UTYg79KY|05_black-sabbath_iron-man
+
+# 06 Black Sabbath - Paranoid (Official Audio)
+BOTIIw76qiE|06_black-sabbath_paranoid
+
+# 07 Metallica - Master of Puppets (Official Lyric Video / Studio)
+Z3LRHlUDClk|07_metallica_master-of-puppets
+
+# 08 Deep Purple - Smoke on the Water (Official Music Video — audio ID zUwEIt9ez7M was unavailable)
+Q2FzZSBD5LE|08_deep-purple_smoke-on-the-water
+
+# 09 Led Zeppelin - Immigrant Song (Official Audio)
+P3Y8OWkiUts|09_led-zeppelin_immigrant-song
+
+# 10 Aerosmith - Walk This Way (Official Audio)
+4c8O2n1Gfto|10_aerosmith_walk-this-way
+
+# 11 AC/DC - Back In Black (Official Audio, Columbia)
+9vWNauaZAgg|11_ac-dc_back-in-black
+
+# 12 Ozzy Osbourne - Crazy Train (Official Audio)
+1A1FXPU6veI|12_ozzy-osbourne_crazy-train
+
+# 13 Rage Against the Machine - Killing in the Name (Official Audio, SBME)
+JYJ6QJqy92s|13_rage-against-the-machine_killing-in-the-name
+
+# 14 Metallica - Enter Sandman (Official Audio, Blackened Recordings)
+CHIWNDAwTqQ|14_metallica_enter-sandman
+
+# 15 Guns N' Roses - Sweet Child O' Mine (Official Audio, Universal)
+oMfMUfgjiLg|15_guns-n-roses_sweet-child-o-mine
+
+# 16 Nirvana - Come As You Are (Official Audio, Universal/Geffen)
+W2QeQ9ZufAk|16_nirvana_come-as-you-are
+
+# 17 Soundgarden - Black Hole Sun (Official Audio, Universal)
+QehmJURKlJs|17_soundgarden_black-hole-sun
+
+# 18 The White Stripes - Seven Nation Army (Official Audio)
+CBEJo18auXE|18_the-white-stripes_seven-nation-army
