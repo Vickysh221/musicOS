@@ -1,0 +1,36 @@
+{
+  "id": "jimi-hendrix-experience_are-you-experienced_purple-haze",
+  "artist": "Jimi Hendrix Experience",
+  "song": "Purple Haze",
+  "album": "Are You Experienced",
+  "year": 1967,
+  "record_label": "Track / Reprise",
+  "position_in_era": {
+    "genre": "Psychedelic rock / blues rock",
+    "historical_role": "Pre-anchor tritone riff: the opening E–G# tritone (the 'devil's interval' — diabolus in musica — also the core interval of Black Sabbath's self-titled track) delivered as a guitar-first motif before any vocal. Hendrix's use of the tritone and distortion as compositional tools, not decoration, is the direct harmonic precursor to Tony Iommi's approach.",
+    "axis": "upward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded January 1967 at De Lane Lea Studios, London. Hendrix played a right-handed Fender Stratocaster strung and played left-handed, run through a Marshall stack with Univibe and Octavia effects on the solo. The tritone opening riff — E to B-flat — was described by Hendrix as inspired by a dream about 'walking under a purple haze.' Produced by Chas Chandler.",
+    "member_dynamics": "Hendrix dominates all compositional decisions; Noel Redding (bass) and Mitch Mitchell (drums) serve the riff rather than contest it. Mitchell's jazz-inflected drumming is the only voice that approaches dialogue with Hendrix's guitar rather than pure support.",
+    "instrumentation_details": "Hendrix: Fender Stratocaster (left-handed, reversed strings); Marshall 100W stack; Univibe for solo section; Octavia octave-doubler for the solo's upper register. The E–G# tritone interval is the song's harmonic spine.",
+    "cultural_venue": "Released March 1967 as UK single, reached #3. Became the defining document of Hendrix's riff vocabulary. The tritone — historically banned in medieval music as diabolic — reappears three years later as the opening interval of Black Sabbath's self-titled song, consciously chosen by Iommi and Butler for its unsettling quality.",
+    "release_circumstances": "UK single February 1967; US release on Are You Experienced, August 1967. Hendrix performed the song on Top of the Pops wearing his Army jacket — the image of riff-as-weapon in visual form."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Purple_Haze",
+    "https://en.wikipedia.org/wiki/Are_You_Experienced"
+  ],
+  "tags": [
+    "tritone_riff",
+    "riff_first_composition",
+    "heir_precursor",
+    "devil_interval"
+  ]
+}

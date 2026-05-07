@@ -1,0 +1,37 @@
+{
+  "id": "black-sabbath_black-sabbath_black-sabbath",
+  "artist": "Black Sabbath",
+  "song": "Black Sabbath",
+  "album": "Black Sabbath",
+  "year": 1970,
+  "record_label": "Vertigo / Warner Bros.",
+  "position_in_era": {
+    "genre": "Heavy metal / doom metal",
+    "historical_role": "The anchor and zero-point of heavy metal's riff-inversion genealogy. Tony Iommi's tritone riff (B–F, the diabolus in musica) played at funeral tempo over Geezer Butler's unison bass creates a sound of unprecedented weight and dread. The song inverts the blues-rock template: instead of energy and release, the riff delivers stasis and dread. Every subsequent node in this episode is a response — inheritance, mutation, or rejection — of this sonic contract.",
+    "axis": "anchor"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded November 1969 at Regent Sound Studios, London, produced by Rodger Bain. Tony Iommi had lost the tips of his middle and ring fingers in an industrial accident and re-tuned his guitar down (to C# standard) to reduce string tension — this detuning is the accidental origin of heavy metal's characteristic low-register weight. Geezer Butler plays the tritone riff in unison with Iommi. The song was recorded live in the studio in two takes.",
+    "member_dynamics": "Iommi (guitar) and Butler (bass, lyricist) are the compositional core. Butler wrote the lyrics after waking from a nightmare about a black-robed figure at the foot of his bed — the text and the riff share the same affective territory. Bill Ward's drums enter late (after the rain sound effect) and lock to the riff's pulse rather than driving it. Ozzy Osbourne's vocal is a third voice layered over the riff, not competing with it.",
+    "instrumentation_details": "Iommi: Gibson SG (C# tuning) through a Laney amplifier; Butler: Fender Precision Bass (C# tuning); Ward: Ludwig drums; Osbourne: vocal. The detuned tritone riff at 120 bpm descends from B to F — a diminished fifth, historically the 'devil's interval.' The riff is repeated 25 times across the song's structure.",
+    "cultural_venue": "Released February 13, 1970 (Friday the 13th — deliberate). The opening rain sound and bell toll are from a 1960s horror film sound library. The song reached #4 UK Albums Chart. Critics initially dismissed it; its long-term influence on metal, doom, sludge, grunge, and alternative rock is now considered foundational.",
+    "release_circumstances": "Recorded in a single day for under £500. The album was released the same week as The Beatles' Let It Be — two opposing poles of what 1970 rock could be. Black Sabbath's sound was considered unlistenable by major labels; Vertigo signed them as a risk act."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Black_Sabbath_(song)",
+    "https://en.wikipedia.org/wiki/Black_Sabbath_(album)"
+  ],
+  "tags": [
+    "tritone_riff",
+    "riff_first_composition",
+    "weight_first_aesthetic",
+    "doom_proto",
+    "anchor_node"
+  ]
+}

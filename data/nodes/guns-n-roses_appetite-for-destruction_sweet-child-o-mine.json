@@ -1,0 +1,36 @@
+{
+  "id": "guns-n-roses_appetite-for-destruction_sweet-child-o-mine",
+  "artist": "Guns N' Roses",
+  "song": "Sweet Child O' Mine",
+  "album": "Appetite for Destruction",
+  "year": 1987,
+  "record_label": "Geffen",
+  "position_in_era": {
+    "genre": "Hard rock / glam metal",
+    "historical_role": "First inversion of the weight-first contract: Slash's arpeggiated D–C#–A–G pattern at 122 bpm uses single-note melodic figuration rather than power chords, and prioritises lyrical prettiness over weight. The riff still governs the song's identity — the opening arpeggio is more famous than the song's chorus — but the aesthetic goal has inverted: instead of delivering dread or force, the riff delivers tenderness and nostalgia. Weight as explicit aesthetic choice is absent.",
+    "axis": "downward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 1987 at Rumbo Studios, Los Angeles, produced by Mike Clink. Slash reportedly wrote the intro arpeggio as a 'circus melody' exercise, not intending it as a song. Axl Rose heard it and wrote the lyric about his girlfriend Erin Everly. The song was deliberately un-heavy — Slash's Les Paul through a Marshall is set for a clean-ish tone, not the saturated distortion of AC/DC or Sabbath.",
+    "member_dynamics": "Slash (riff, melody) and Rose (vocal, lyric) share the spotlight more equally here than on heavier GN'R tracks. Slash's guitar carries the emotional weight usually carried by a vocal melody — the arpeggiated intro performs the emotional function of a verse vocal. Duff McKagan's bass is melodic rather than riff-following.",
+    "instrumentation_details": "Slash: Gibson Les Paul (main) through a Marshall stack with modified tone; McKagan: Fender Precision Bass; Adler: Ludwig drums. The intro arpeggio spans the full fretboard range (D–A–D across four strings) — a maximally vocal range for a guitar figure rather than a riff's low-register power.",
+    "cultural_venue": "Reached #1 US, #6 UK. The biggest hard rock single of 1988. The song's commercial success while using melodic inversion of the weight-first principle demonstrates that the riff-first contract can survive aesthetic reversal — the riff can be a love song. The music video's MTV dominance brought GN'R from club act to arena band.",
+    "release_circumstances": "Appetite for Destruction released July 1987; Sweet Child O' Mine released as single August 1988. The album took over a year to reach its commercial peak — the inversion of metal's weight aesthetic did not immediately register as such. In retrospect it is the clearest marker of the shift from weight to melody in the late 1980s rock mainstream."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sweet_Child_O%27_Mine",
+    "https://en.wikipedia.org/wiki/Appetite_for_Destruction"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "melodic_inversion",
+    "inversion",
+    "weight_inverted"
+  ]
+}

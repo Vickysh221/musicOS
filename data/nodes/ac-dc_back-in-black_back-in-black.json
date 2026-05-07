@@ -1,0 +1,39 @@
+{
+  "id": "ac-dc_back-in-black_back-in-black",
+  "artist": "AC/DC",
+  "song": "Back In Black",
+  "album": "Back in Black",
+  "year": 1980,
+  "record_label": "Atlantic",
+  "position_in_era": {
+    "genre": "Hard rock / heavy metal",
+    "historical_role": "Mutation of the riff-first contract into a boogie-rock grammar: Angus Young's E–D–A–E riff at 96 bpm uses major-key intervals and a shuffle groove derived from Chuck Berry rather than Sabbath's minor/tritone harmonic world. The riff delivers weight through rhythmic inevitability and dynamic anticipation rather than harmonic darkness. The most commercially successful rock album of all time (estimated 50 million copies) built entirely on riff-first composition.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded April–May 1980 at Compass Point Studios, Nassau, Bahamas, produced by Robert John 'Mutt' Lange. The first album with Brian Johnson replacing Bon Scott (who died February 1980). Young's riff in E major uses the interval E–D (minor seventh) as its opening gesture — unusual for a hard rock riff, which creates a sense of tension-release on the first two notes. Malcolm Young's rhythm guitar and Cliff Williams's bass lock to the riff identically.",
+    "member_dynamics": "Angus Young (lead guitar, riff) and Malcolm Young (rhythm guitar, band identity) are the compositional core. Brian Johnson's vocal is deliberately non-melodic at points — the rasp and shout prioritise rhythmic fit with the riff over melodic independence. Johnson has stated he tried to maintain Bon Scott's rhythmic-vocal approach.",
+    "instrumentation_details": "Angus Young: Gibson SG through a Marshall JMP; Malcolm Young: Gretsch Jet Firebird rhythm guitar; Cliff Williams: bass doubling the rhythm guitar's root notes; Phil Rudd: drums. The production is uniquely dry and direct — Lange removed all reverb from the drums, giving the riff an immediate physical impact.",
+    "cultural_venue": "Reached #1 US and UK. The album's total sales (estimated 25–50 million) make it the best-selling hard rock album and second best-selling album of all time. The riff is cited in Guitar World's greatest riffs polls consistently in the top 5. The boogie-major mutation proved the riff-first principle could dominate commercially without harmonic darkness.",
+    "release_circumstances": "Released July 1980, six months after Bon Scott's death. The album was originally intended as a tribute to Scott. The commercial impact immediately after a tragedy reframed the riff-first aesthetic as a vehicle for resilience rather than dread."
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心: Back In Black (id=3879508)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Back_in_Black_(song)",
+    "https://en.wikipedia.org/wiki/Back_in_Black"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "boogie_mutation",
+    "major_key_riff",
+    "mutation",
+    "user_red_heart"
+  ]
+}

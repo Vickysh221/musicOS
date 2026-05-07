@@ -1,0 +1,37 @@
+{
+  "id": "soundgarden_superunknown_black-hole-sun",
+  "artist": "Soundgarden",
+  "song": "Black Hole Sun",
+  "album": "Superunknown",
+  "year": 1994,
+  "record_label": "A&M",
+  "position_in_era": {
+    "genre": "Grunge / alternative metal",
+    "historical_role": "Inversion via harmonic register: Cornell's G–E–Eb–Bb–Ab–C chord progression is built on major-key lush harmony delivered against the weight-first expectation — a sunny, psychedelic melodic riff that uses the same Sabbath-descended slow tempo and heavy distortion but refuses the minor-key darkness. The aesthetic inversion is tonal: Sabbath uses detuning to generate dread; Soundgarden uses detuning (dropped D) to generate surreal beauty. Kim Thayil's guitar is as heavy as Iommi's but the emotional destination is lysergic sunshine, not doom.",
+    "axis": "downward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 1993–1994 at London Bridge Studio and Bad Animals Studio, Seattle, produced by Michael Beinhorn. Chris Cornell wrote the song in 15 minutes. Kim Thayil's guitar riff uses a G–E–Eb–Bb–Ab progression in drop D tuning — the detuning is Sabbath-inherited but the chord quality is major/dominant rather than minor/tritone. The slow tempo (73 bpm) matches Sabbath's funeral pace but the sonic atmosphere is dreamlike rather than threatening.",
+    "member_dynamics": "Cornell (vocal, riff conception) and Thayil (guitar execution) are the compositional pair. Matt Cameron's drums adapt Sabbath's slow lockstep to a swing feel. Cornell's vocal melody soars above the heavy guitar in a falsetto range — the voice deliberately escapes the weight rather than fighting within it.",
+    "instrumentation_details": "Thayil: Gibson SG through a Marshall (like Iommi) in drop D; Cornell: vocal (falsetto range); Cameron: drums; Ben Shepherd: bass. The riff's major-key quality over heavy distortion was unusual in 1994 — the combination of sonic weight and harmonic openness is the inversion's mechanism.",
+    "cultural_venue": "Reached #1 US Modern Rock, #2 US Mainstream Rock. Grammys: Best Hard Rock Performance 1995. The music video (directed by Howard Greenhalgh) created a dreamlike image world that visualised the tonal inversion: bright, melting, surreal rather than dark and threatening. One of the most-played songs of 1994.",
+    "release_circumstances": "Superunknown released March 1994. The album debuted at #1 US — the first grunge album (after Nevermind) to demonstrate the commercial viability of heavy-but-inverted aesthetics. Cornell's death (2017) has since given the song a posthumous weight it did not originally carry."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Black_Hole_Sun",
+    "https://en.wikipedia.org/wiki/Superunknown"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "harmonic_inversion",
+    "grunge_inversion",
+    "inversion",
+    "major_key_dread"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "id": "metallica_master-of-puppets_master-of-puppets",
+  "artist": "Metallica",
+  "song": "Master of Puppets",
+  "album": "Master of Puppets",
+  "year": 1986,
+  "record_label": "Elektra / Music for Nations",
+  "position_in_era": {
+    "genre": "Thrash metal / heavy metal",
+    "historical_role": "The ultimate heir to the Sabbath weight-first contract, scaled to eight minutes: the opening double-tracked E–D–C riff at 212 bpm is the fastest, most precise execution of the riff-governs-the-song principle to date. Where Sabbath used slow weight, Metallica use kinetic weight — but the structural principle (riff is the song's identity, not its frame) is identical. The clean-guitar interlude (4:18–5:30) is the only deviation from riff-world, and it makes the return to the main riff feel like a physical impact.",
+    "axis": "downward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded October–December 1985 at Sweet Silence Studios, Copenhagen, produced by Flemming Rasmussen. Hetfield and Hammett double-tracked all guitar parts. The main riff is in E minor, played at 212 bpm with palm muting — the palm-muted string attack is the sonic mechanism by which speed generates weight rather than lightness. Burton's bass follows the guitar riff with added counter-melodic fills.",
+    "member_dynamics": "Hetfield (rhythm guitar, vocal, riff composition) is the primary architect; Hammett (lead guitar) writes the solo sections. Cliff Burton (bass) — killed in a tour bus accident six months after the album's release — plays an independent melodic line over the riff during the clean interlude, the most compositionally free bass passage in Metallica's catalogue. Ward's drumming adapts Ulrich's double-bass pattern to the precise grid of the riff.",
+    "instrumentation_details": "Hetfield: ESP guitars (double-tracked) through Mesa/Boogie Mark II; Hammett: ESP guitars, Kirk Hammett Wah; Burton: Aria bass with distinctive distortion; Ulrich: Tama Superstar kit. The riff is played at 212 bpm on the main theme; the clean section drops to 100 bpm, creating a 2:1 tempo ratio between the two worlds.",
+    "cultural_venue": "Reached #29 UK Albums. First Metallica album to go platinum in the US. Frequently cited in polls as one of the greatest metal albums. The song became the centrepiece of their live set and is considered the definitive statement of thrash metal's compositional principle.",
+    "release_circumstances": "Released March 1986. The album was written partly in response to Ride the Lightning's commercial success — the band chose to escalate rather than consolidate. Cliff Burton's death in September 1986 made this album the monument to their classic line-up."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Master_of_Puppets_(song)",
+    "https://en.wikipedia.org/wiki/Master_of_Puppets"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "weight_first_aesthetic",
+    "kinetic_weight",
+    "heir",
+    "thrash_metal"
+  ]
+}

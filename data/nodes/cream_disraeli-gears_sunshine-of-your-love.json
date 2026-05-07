@@ -1,0 +1,35 @@
+{
+  "id": "cream_disraeli-gears_sunshine-of-your-love",
+  "artist": "Cream",
+  "song": "Sunshine of Your Love",
+  "album": "Disraeli Gears",
+  "year": 1967,
+  "record_label": "Reaction / Atco",
+  "position_in_era": {
+    "genre": "Psychedelic blues rock / proto-hard rock",
+    "historical_role": "Pre-anchor riff blueprint: Jack Bruce's descending tritone-adjacent bass riff in D, doubled by Eric Clapton's guitar, established the 'riff-first' compositional contract in which the instrumental hook, not a chord sequence or melodic line, governs the song's identity. Pete Brown and Jack Bruce wrote the riff after a late-night session; Clapton arrived and locked in immediately — the riff came before the song.",
+    "axis": "upward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded August 1967 at Atlantic Studios, New York, produced by Felix Pappalardi and Tom Dowd. The bass riff was written by Jack Bruce; Clapton doubled it on guitar in the intro and verse, creating the signature unison attack. Ginger Baker's shuffle drum pattern locks to the riff rather than the vocal — the percussion serves the riff.",
+    "member_dynamics": "Bruce (bass, lead vocal) and Clapton (guitar) co-own the riff equally — neither is subservient. Clapton's improvised solo in the middle section is the song's departure from and return to the riff-world. Baker's drums are structural glue rather than a competing voice.",
+    "instrumentation_details": "Clapton: Gibson SG 'The Fool' through a Marshall stack; Bruce: Fender Bass VI; Baker: Ludwig drums. The riff is played at the octave on both instruments, giving it unusual low-register weight for a 1967 pop single.",
+    "cultural_venue": "Reached #36 US (1968 re-release) and #25 UK. Clapton has cited it as the song where Cream found their identity: riff-centred, heavy, improvisatory. Jimi Hendrix reportedly told them he loved the song after hearing it live at the Saville Theatre.",
+    "release_circumstances": "Single released November 1967 (US), January 1968 (UK). The song pre-dates Black Sabbath's self-titled track by three years and establishes the descending-riff grammar that Geezer Butler and Tony Iommi would radicalise."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sunshine_of_Your_Love",
+    "https://en.wikipedia.org/wiki/Disraeli_Gears"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "proto_heavy_metal",
+    "heir_precursor"
+  ]
+}

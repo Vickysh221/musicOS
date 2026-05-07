@@ -1,0 +1,36 @@
+{
+  "id": "black-sabbath_black-sabbath_war-pigs",
+  "artist": "Black Sabbath",
+  "song": "War Pigs",
+  "album": "Paranoid",
+  "year": 1970,
+  "record_label": "Vertigo / Warner Bros.",
+  "position_in_era": {
+    "genre": "Heavy metal",
+    "historical_role": "Immediate heir to the Black Sabbath self-titled template: the opening guitar-bass unison riff at half-tempo, followed by a sudden speed-up, is the first documented use of tempo as dramatic architecture in heavy metal. Demonstrates that the weight-first aesthetic can encompass multiple tempos without losing its gravitational centre.",
+    "axis": "downward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded June 1970 at Regent Sound Studios and Island Studios, London, produced by Rodger Bain. The song was originally titled 'Walpurgis' — Vertigo requested a title change. Iommi's opening riff is in the same C# tuning as the self-titled track. The song is 7:54 — Sabbath's first long-form riff composition.",
+    "member_dynamics": "Iommi drives the arrangement; Butler's anti-war lyric (Generals gathered in their masses / just like witches at black masses) sets the political dimension that Sabbath songs would carry from this point. Ward's drumming is notably more dynamic here than on the self-titled — the tempo shift in the middle section is his contribution.",
+    "instrumentation_details": "Iommi: Gibson SG (C# tuning); Butler: Fender Precision Bass; Ward: Ludwig drums; Osbourne: lead vocal. The riff structure alternates between a slow E-form power chord descent and a faster mid-section in a different key — two riff-worlds cohabiting one song.",
+    "cultural_venue": "Released as the opening track of the Paranoid album (September 1970). Originally planned as the album's title track. The song's anti-Vietnam War politics made it a campus anthem in the US despite minimal radio play. Widely cited alongside the self-titled as the two founding documents of doom metal.",
+    "release_circumstances": "The Paranoid album was recorded in two days. 'War Pigs' and the self-titled 'Black Sabbath' together account for the two gravitational poles of heavy metal: supernatural dread (self-titled) and political fury (War Pigs)."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/War_Pigs",
+    "https://en.wikipedia.org/wiki/Paranoid_(album)"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "weight_first_aesthetic",
+    "tempo_as_drama",
+    "heir"
+  ]
+}

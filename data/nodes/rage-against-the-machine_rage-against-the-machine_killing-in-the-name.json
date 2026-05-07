@@ -1,0 +1,37 @@
+{
+  "id": "rage-against-the-machine_rage-against-the-machine_killing-in-the-name",
+  "artist": "Rage Against the Machine",
+  "song": "Killing in the Name",
+  "album": "Rage Against the Machine",
+  "year": 1992,
+  "record_label": "Epic",
+  "position_in_era": {
+    "genre": "Rap metal / funk metal",
+    "historical_role": "Terminal node of the funk-groove mutation sub-lineage: Tom Morello's riff descends from Walk This Way's syncopated staccato approach, combined with hip-hop rhythms and political call-and-response (both inherited from James Brown via Aerosmith). The methodological_descent from Walk This Way is documented in the shared funk-rhythm DNA: both riffs prioritise off-beat attack and rhythmic anticipation over harmonic darkness. The first riff-first song where the riff is itself a political weapon rather than an aesthetic.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 1991–1992 at Grand Master Recorders, Los Angeles, produced by Garth Richardson and RATM. Morello's E–D–E riff is played with feedback and whammy bar divebombs added as textural mutations — the riff's core pitch content is simple (two notes) but its sonic vocabulary expands into noise. Zack de la Rocha's rap vocal over the riff follows the syncopated pattern established by Walk This Way's verse delivery.",
+    "member_dynamics": "Morello (guitar, riff) and de la Rocha (vocal, lyric) are the compositional pair. Morello has consistently described his guitar approach as 'making the guitar sound like a DJ' — the scratch and noise effects on the riff are a direct methodological translation from hip-hop. Tim Commerford's bass locks to the riff's percussive attack.",
+    "instrumentation_details": "Morello: Fender Stratocaster with DiMarzio pickups through a Marshall JCM 800; Floyd Rose bridge for divebombs; Whammy pedal; Digitech Whammy. The riff is in E, using open-string drop-D style power chords at 97 bpm. The f-word ending ('Fuck you, I won't do what you tell me') is repeated 16 times — lyric as riff.",
+    "cultural_venue": "UK #25 single (1992); later re-released to #1 UK in 2009 after a social media campaign to prevent a pop song reaching UK Christmas #1. Considered a founding document of rap-metal and politically engaged rock. The song's climactic repeated phrase is one of the most documented examples of vocal-as-riff in rock history.",
+    "release_circumstances": "Self-titled debut released November 1992. The album sold 16 million copies and remains the definitive rap-metal document. The funk-groove mutation pathway (James Brown → Aerosmith → RATM) is the episode's alternative axis — riff-first music that substitutes political energy for supernatural dread."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Killing_in_the_Name",
+    "https://en.wikipedia.org/wiki/Rage_Against_the_Machine_(album)"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "funk_groove_mutation",
+    "rap_metal",
+    "mutation",
+    "methodological_descent"
+  ]
+}

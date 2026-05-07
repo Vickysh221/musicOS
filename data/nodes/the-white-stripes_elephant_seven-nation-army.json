@@ -1,0 +1,37 @@
+{
+  "id": "the-white-stripes_elephant_seven-nation-army",
+  "artist": "The White Stripes",
+  "song": "Seven Nation Army",
+  "album": "Elephant",
+  "year": 2003,
+  "record_label": "XL / Third Man",
+  "position_in_era": {
+    "genre": "Garage rock / blues rock revival",
+    "historical_role": "Closing inversion: Jack White's five-note descending riff (E–E–G–E–D–C–B) is played on guitar run through an octave pedal to simulate bass — a single-instrument, single-note minimal motif that paradoxically echoes the self-titled Black Sabbath's own minimalism (both use a descending tritone-adjacent figure, both use low register). The inversion is explicit: where Sabbath uses maximum weight (two instruments doubling the riff), White uses minimum forces (one instrument pretending to be two). The loop-back to the anchor's minimal motif while rejecting its weight-aesthetic is the episode's closing argument.",
+    "axis": "downward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 2002 at Toe Rag Studios, London (all analogue equipment, 1960s-era), produced by Jack White. The riff is played on a semi-hollow Airline guitar through a DigiTech Whammy pedal set to one octave down — the bass sound is an effect, not a bassist. Meg White plays drums. The two-person band structure is itself an inversion of the full-band weight of the metal lineage — maximum impact from minimum personnel.",
+    "member_dynamics": "Jack White (guitar, vocal, riff) and Meg White (drums) are the entire band — two people, one guitar, one drum kit. The absence of bass is the structural statement: the weight-first aesthetic can be articulated as negative space, through what is absent rather than what is present.",
+    "instrumentation_details": "White: Airline guitar (semi-hollow) through DigiTech Whammy (octave down); White: vocal; Meg White: Ludwig drums. The riff in E uses a descending natural minor scale fragment. The Whammy pedal creates the 'bass' — the octave effect is a simulation of depth rather than real low-end mass.",
+    "cultural_venue": "Reached #1 UK, #76 US singles (but #1 UK Albums for Elephant). The riff became a sports-stadium chant anthem worldwide — the most counter-intuitive commercial result in the riff genealogy. A minimal, bass-less, two-person indie riff achieved the cultural saturation of multi-million-dollar metal productions. Adopted by sports teams, political campaigns, and crowd chants globally.",
+    "release_circumstances": "Elephant released April 2003. White had stated he was deliberately working with constraints (analogue-only recording, two-piece band, no bass) as a reaction against the commercial metal and alternative rock of the 1990s. The song's global reach despite its aesthetic asceticism is the final data point in the episode: the riff-first principle survives and thrives even when stripped to one person and one motif."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Seven_Nation_Army",
+    "https://en.wikipedia.org/wiki/Elephant_(The_White_Stripes_album)"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "minimal_inversion",
+    "inversion",
+    "loop_back_to_anchor",
+    "closing_node"
+  ]
+}

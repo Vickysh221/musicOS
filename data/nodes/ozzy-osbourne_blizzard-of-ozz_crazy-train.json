@@ -1,0 +1,36 @@
+{
+  "id": "ozzy-osbourne_blizzard-of-ozz_crazy-train",
+  "artist": "Ozzy Osbourne",
+  "song": "Crazy Train",
+  "album": "Blizzard of Ozz",
+  "year": 1980,
+  "record_label": "Jet / CBS",
+  "position_in_era": {
+    "genre": "Heavy metal / neoclassical metal",
+    "historical_role": "Mutation via neoclassical vocabulary: Randy Rhoads' opening A–F#–D riff uses classical diminished and chromatic movement rather than Sabbath's tritone or AC/DC's blues shuffle. The riff is still structurally dominant — Rhoads conceived of it as a compositional theme, not a guitar intro — but the harmonic language is 18th-century European classical filtered through metal distortion. Rhoads' training at UCLA and his stated intention to apply Bach counterpoint to rock guitar is documented in multiple interviews.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 1980 at Tracks Studios, London, produced by Max Norman and Randy Rhoads. Rhoads' intro riff was composed on acoustic guitar before electric arrangement. The riff uses alternate picking at 138 bpm — the precision of execution (tight, staccato, classically inflected) is the mutation's distinguishing mark. The song structure is standard verse-chorus, but the riff governs every section's identity.",
+    "member_dynamics": "Rhoads (riff composer, lead guitar) is the primary architect; Osbourne (vocal) is the front-of-stage element. Rhoads deliberately put the guitar's classical vocabulary in service of Osbourne's rock spectacle — a conscious translation. Bob Daisley (bass) and Lee Kerslake (drums) lock to the riff, which Rhoads had specified precisely.",
+    "instrumentation_details": "Rhoads: Flying V (main) and Les Paul through a Marshall stack with no effects other than the amp's natural distortion; Daisley: Precision Bass; Kerslake: drums. Rhoads insisted on precise, clean pick attack — the neoclassical mutation requires articulation rather than sustain.",
+    "cultural_venue": "Blizzard of Ozz reached #7 UK, #21 US. Crazy Train became Osbourne's signature song after Rhoads' death in a plane crash (March 1982). Rhoads is posthumously considered the architect of neoclassical metal — his use of diminished scales and Bach-style runs in a riff-first framework influenced Yngwie Malmsteen, George Lynch, and the entire 1980s shred school.",
+    "release_circumstances": "Released September 1980. This was Osbourne's first post-Sabbath album — a document of both escape from and inheritance of the Sabbath riff-first contract. Rhoads' neoclassical approach is the most successful mutation because it retains the 'riff governs' principle while completely replacing the harmonic vocabulary."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Crazy_Train",
+    "https://en.wikipedia.org/wiki/Blizzard_of_Ozz"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "neoclassical_mutation",
+    "mutation",
+    "randy_rhoads"
+  ]
+}

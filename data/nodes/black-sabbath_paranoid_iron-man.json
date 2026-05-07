@@ -1,0 +1,36 @@
+{
+  "id": "black-sabbath_paranoid_iron-man",
+  "artist": "Black Sabbath",
+  "song": "Iron Man",
+  "album": "Paranoid",
+  "year": 1970,
+  "record_label": "Vertigo / Warner Bros.",
+  "position_in_era": {
+    "genre": "Heavy metal",
+    "historical_role": "Heir to the self-titled template: the riff is built on a detuned, slow-moving power chord sequence whose pace and weight directly inherit the self-titled's tempo-as-gravity approach. Iommi's guitar runs through a ring modulator, giving it the metallic 'iron' timbre that names the song. The first Black Sabbath song in which the riff's sonic texture (robot-voice quality) is the narrative itself.",
+    "axis": "downward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded June 1970, Regent Sound / Island Studios, London. Iommi fed his guitar through a ring modulator to achieve the robotic tonality — the riff's texture tells the story of a man turned to iron. Tempo is deliberately ponderous: approx. 75 bpm, slower than almost any preceding rock song. Produced by Rodger Bain.",
+    "member_dynamics": "The riff is so dominant that Osbourne's vocal fits into its gaps rather than leading the song. Butler's bass follows Iommi's guitar line rather than establishing an independent counter-melody. Ward's drumming is minimal and lockstep — the riff is the only protagonist.",
+    "instrumentation_details": "Iommi: Gibson SG through a ring modulator and Laney amplifier; Butler: Fender Precision Bass (C# tuning); Ward: Ludwig kit; Osbourne: vocal. The ring modulator was borrowed from a session musician — Iommi has cited its use as accidental and unrepeatable in exactly that form.",
+    "cultural_venue": "Released on the Paranoid album September 1970. The song became one of Sabbath's most recognised live pieces and a touchstone for detuned, slow-riff composition. Ranked by Rolling Stone as one of the greatest guitar riffs in rock history.",
+    "release_circumstances": "Paranoid album recorded and mixed in two days at Island Studios. Iron Man's three-minute riff-loop structure proved that minimal repetition and maximum weight could be commercially viable — it reached the UK top 40 as a single in 1971."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Iron_Man_(song)",
+    "https://en.wikipedia.org/wiki/Paranoid_(album)"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "weight_first_aesthetic",
+    "texture_as_narrative",
+    "heir"
+  ]
+}

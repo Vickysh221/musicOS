@@ -1,0 +1,39 @@
+{
+  "id": "black-sabbath_paranoid_paranoid",
+  "artist": "Black Sabbath",
+  "song": "Paranoid",
+  "album": "Paranoid",
+  "year": 1970,
+  "record_label": "Vertigo / Warner Bros.",
+  "position_in_era": {
+    "genre": "Heavy metal",
+    "historical_role": "The speed-variant heir: where Iron Man and the self-titled operate at funeral tempo, Paranoid proves the riff-first contract survives at double speed. The two-minute format demonstrates that the weight-first aesthetic is not tempo-dependent but structure-dependent — the riff governs even when the pace is punk-fast. First heavy metal song to chart in the UK top 5.",
+    "axis": "downward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded June 1970 at Regent Sound Studios. Written in approximately 25 minutes as a filler track when Rodger Bain needed two more minutes to complete the album. Iommi's riff in E minor descends at a pace double that of Iron Man. The song has no guitar solo — the riff IS the entire musical argument.",
+    "member_dynamics": "Ward reportedly composed the drum pattern in one pass. Butler's bass runs below Iommi's riff as pure support. Osbourne's vocal was written and recorded in a single session. The extreme speed of composition is reflected in the song's directness: there is no development, only riff statement and restatement.",
+    "instrumentation_details": "Iommi: Gibson SG; Butler: Fender Precision Bass; Ward: Ludwig drums; Osbourne: vocal. The song is in E minor, played at approximately 164 bpm — the fastest Sabbath recording to this point. No guitar solo or bridge.",
+    "cultural_venue": "UK #4 single, September 1970. The album Paranoid went to #1 UK Albums. The title track proved that heavy, riff-first music could be commercially dominant. The user (Vicky) holds a red heart for this track (id=16837172), making it the only anchor-era song in the red-heart collection.",
+    "release_circumstances": "The album title was changed from War Pigs to Paranoid after the single's success. The song's brevity and commercial success paradoxically helped establish that heavy metal was not exclusively album-format — the riff could work as a single."
+  },
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心: Paranoid (id=16837172)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Paranoid_(song)",
+    "https://en.wikipedia.org/wiki/Paranoid_(album)"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "weight_first_aesthetic",
+    "speed_variant",
+    "heir",
+    "user_red_heart"
+  ]
+}

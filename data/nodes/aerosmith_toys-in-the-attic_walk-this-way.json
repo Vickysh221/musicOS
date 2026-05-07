@@ -1,0 +1,39 @@
+{
+  "id": "aerosmith_toys-in-the-attic_walk-this-way",
+  "artist": "Aerosmith",
+  "song": "Walk This Way",
+  "album": "Toys in the Attic",
+  "year": 1975,
+  "record_label": "Columbia",
+  "position_in_era": {
+    "genre": "Hard rock / blues rock",
+    "historical_role": "Mutation of the riff-first contract into a funk-groove sub-lineage: Joe Perry's staccato riff is derived from James Brown's rhythmic vocabulary rather than blues-based pentatonic descent. The riff's syncopation and call-and-response with the vocal established a funk-rock hybrid that directly spawned Run-DMC's 1986 collaboration — the first documented pathway from heavy metal riff culture into hip-hop. Leads the funk-groove sub-lineage that terminates in Killing in the Name.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded early 1975 at Record Plant, New York, produced by Jack Douglas. Perry's riff was inspired by a drum pattern he heard from the Muscle Shoals rhythm section — the riff is syncopated around the 'one' beat rather than landing on it, a James Brown principle applied to guitar. Tyler wrote the double-entendre lyric separately. The song was recorded at a medium tempo (122 bpm) that sits between rock and funk.",
+    "member_dynamics": "Perry (riff composer) and Tyler (vocal) are the primary pair. Tyler's vocal delivery mimics the riff's staccato rhythm — voice and riff share the same articulation pattern, an unusual alignment that makes the song feel like one unified percussive object rather than guitar plus vocal.",
+    "instrumentation_details": "Perry: Gibson Les Paul; Tom Hamilton: bass following the riff with added syncopation; Brad Whitford: rhythm guitar; Joey Kramer: drums with a James Brown-influenced shuffle. The riff's staccato eighth-note pattern is distinct from Black Sabbath's legato power-chord sustain — speed and articulation carry the weight rather than register and sustain.",
+    "cultural_venue": "Original single reached #10 US (1977 re-release). The 1986 Run-DMC collaboration ('Walk This Way' featuring Tyler and Perry) reached #4 US and is considered the song that broke hip-hop into mainstream radio. The riff's funk DNA made the hip-hop translation natural rather than forced.",
+    "release_circumstances": "Toys in the Attic reached #11 US. The song was not initially a hit; its cultural significance grew through live performance and the eventual Run-DMC collaboration, which retroactively revealed the funk-groove pathway in the riff's DNA."
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心: Walk This Way (id=20506662)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Walk_This_Way",
+    "https://en.wikipedia.org/wiki/Toys_in_the_Attic"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "funk_groove_mutation",
+    "mutation",
+    "methodological_descent_to_hip_hop",
+    "user_red_heart"
+  ]
+}

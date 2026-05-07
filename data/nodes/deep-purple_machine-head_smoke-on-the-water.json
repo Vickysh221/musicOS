@@ -1,0 +1,38 @@
+{
+  "id": "deep-purple_machine-head_smoke-on-the-water",
+  "artist": "Deep Purple",
+  "song": "Smoke on the Water",
+  "album": "Machine Head",
+  "year": 1972,
+  "record_label": "Purple / Warner Bros.",
+  "position_in_era": {
+    "genre": "Hard rock / heavy metal",
+    "historical_role": "Mutation of the Sabbath riff-first contract into a neoclassical harmonic vocabulary: Ritchie Blackmore's four-note riff (G–Bb–C, G–Bb–Db–C) uses perfect fourths and a minor third rather than a tritone, generating weight through interval stacking rather than satanic dissonance. The riff is now the most recognisable in rock history — proof that the riff-first principle could produce pop accessibility as well as dread.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded December 1971 at the Montreux Casino and Grand Hotel, Montreux, Switzerland, after the casino burned down during a Frank Zappa concert (the fire becomes the song's lyric). Produced by Deep Purple. Blackmore played the riff on guitar; Roger Glover doubles it on bass. The riff uses two strings only, played without distortion — the simplicity is deliberate, contrasting with Purple's usual keyboard-heavy sound.",
+    "member_dynamics": "Blackmore conceived the riff; Ian Gillan wrote the lyrics documenting the Montreux fire in real time. Jon Lord's organ is absent from the verse riff, giving Blackmore's guitar and Glover's bass the weight-carrying role that Iommi and Butler share in Sabbath. The riff creates the song; the organ and vocal are secondary.",
+    "instrumentation_details": "Blackmore: Fender Stratocaster (unusual for him — chosen for the riff's clean attack); Glover: bass doubling the riff; Lord: Hammond organ (chorus only); Gillan: vocal; Paice: drums. The riff in G minor uses the interval sequence P4–m3 rather than Sabbath's tritone.",
+    "cultural_venue": "Released as a single (US, 1973); reached #4 US. The riff became the first thing most guitarists learn to play — its cultural penetration has made it both the most famous mutation of the Sabbath riff principle and a marker of beginner guitar culture. The song's narrative (fire, emergency, outdoor recording) became a rock mythology document.",
+    "release_circumstances": "Machine Head was recorded in a Rolling Stones Mobile Studio parked outside the Grand Hotel. The album reached #1 UK. The song was not initially released as a UK single — its chart success came from US radio airplay two years after the album."
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心: Smoke on the Water (Live) (id=4019242)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Smoke_on_the_Water",
+    "https://en.wikipedia.org/wiki/Machine_Head_(album)"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "neoclassical_mutation",
+    "mutation",
+    "user_red_heart"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "metallica_metallica_enter-sandman",
+  "artist": "Metallica",
+  "song": "Enter Sandman",
+  "album": "Metallica",
+  "year": 1991,
+  "record_label": "Elektra",
+  "position_in_era": {
+    "genre": "Heavy metal",
+    "historical_role": "Mutation via commercial simplification: Hammett's E–F#–E–G–F# riff is the most accessible distillation of the Sabbath weight-first contract — slow, repetitive, immediately memorable — but stripped of Sabbath's tritone dissonance and replaced with a power-chord sequence any beginner can play. The mutation is one of simplification and universalisation: the riff governs the song, but the riff has become a vehicle for mass consumption rather than dread.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded May–June 1991 at One on One Recording, Hollywood, produced by Bob Rock and Metallica. Hammett's riff was the first written for the Black Album sessions — the band's conscious decision to write shorter, radio-friendly songs. The riff at 123 bpm in E minor uses a slow-march rhythm that directly echoes Sabbath's pacing. Bob Rock's production emphasises the low-midrange frequencies of the guitar, giving it the 'wall of sound' quality associated with Sabbath.",
+    "member_dynamics": "Hammett (riff) and Hetfield (rhythm guitar, vocal) are the key pair. Hetfield agreed to simplify the arrangements after Rock pushed back on the complexity of the Justice-era material. The Black Album is a collective decision to trade compositional complexity for riff impact — Enter Sandman is the opening statement of that trade.",
+    "instrumentation_details": "Hammett: ESP through a Marshall; Hetfield: ESP rhythm guitar; Newsted: bass (largely buried in the mix — a production choice that caused documented internal tension); Ulrich: Ludwig Octaplus kit. The riff uses downpicking throughout the verse — the physical picking technique generates the riff's weight rather than the harmonic content.",
+    "cultural_venue": "Reached #16 US single. The Black Album sold 16+ million copies in the US alone — the best-selling metal album in history. Enter Sandman's riff became the most recognised post-Sabbath riff, proof that the weight-first contract, simplified and commercially produced, could dominate mainstream rock.",
+    "release_circumstances": "Released August 1991. The album — recorded simultaneously with Nirvana's Nevermind — represents the commercial zenith of heavy metal just as grunge was about to end that era. Enter Sandman and Come As You Are (Track 16) are two inversions of the same moment: metal at its commercial peak, grunge beginning its inversion of that peak."
+  },
+  "user_coverage": {
+    "status": "unvisited",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Enter_Sandman",
+    "https://en.wikipedia.org/wiki/Metallica_(album)"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "commercial_mutation",
+    "mutation",
+    "weight_first_aesthetic"
+  ]
+}

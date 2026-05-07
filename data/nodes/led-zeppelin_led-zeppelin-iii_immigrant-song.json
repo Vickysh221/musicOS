@@ -1,0 +1,39 @@
+{
+  "id": "led-zeppelin_led-zeppelin-iii_immigrant-song",
+  "artist": "Led Zeppelin",
+  "song": "Immigrant Song",
+  "album": "Led Zeppelin III",
+  "year": 1970,
+  "record_label": "Atlantic",
+  "position_in_era": {
+    "genre": "Hard rock / heavy metal",
+    "historical_role": "Same-era mutation: Jimmy Page's A–E–A riff at 158 bpm is the speed-and-momentum variant of the weight-first contract, simultaneous with Black Sabbath's self-titled album. Where Sabbath uses low-tempo dread, Zeppelin uses kinetic momentum — the riff propels rather than pins. The Norse-mythology lyric and Plant's banshee wail are the first documented pairing of riff-as-weapon with mythological narrative in rock.",
+    "axis": "lateral"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded June 1970 at Headley Grange, Hampshire, using the Rolling Stones Mobile Studio. Page's riff is in A, played at a gallop tempo with a shuffle rhythm feel. John Paul Jones's bass doubles the guitar riff in the verse; Bonham's drums are a force-of-nature addition. Produced by Jimmy Page.",
+    "member_dynamics": "Page (riff, arrangement) and Plant (vocal, lyric) are the compositional pair. Bonham's entrance after the intro riff is a documented shock-effect — his drums make the riff feel heavier on second hearing. Jones's bass doubles the riff, a Sabbath-style unison that gives the attack more mass.",
+    "instrumentation_details": "Page: Gibson EDS-1275 double-neck (live); studio: Les Paul through a Marshall stack; Jones: bass doubling the guitar riff; Bonham: Ludwig drums (the explosive entry is a single crash then lock-in); Plant: vocal. The riff is in A major/mixolydian, not minor — a major-key riff delivering menace through speed rather than harmonic darkness.",
+    "cultural_venue": "Released as a US single November 1970 (Zeppelin famously refused to release UK singles). Reached #16 US. The song was written after a Iceland concert — Plant's lyric is a report from the road, turned into mythology. The song's two-minute duration makes it the punk-brevity variant of the riff-first principle.",
+    "release_circumstances": "Led Zeppelin III released October 1970 — same year as Black Sabbath's debut. The simultaneous emergence of Sabbath's slow-dread and Zeppelin's kinetic-momentum variants of the riff-first contract established the two poles of hard rock for the next decade."
+  },
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心: Immigrant Song (Remaster) (id=20065049)"
+    ],
+    "confidence": "medium"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Immigrant_Song",
+    "https://en.wikipedia.org/wiki/Led_Zeppelin_III"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "kinetic_mutation",
+    "same_era_dialogue",
+    "mutation",
+    "user_red_heart"
+  ]
+}

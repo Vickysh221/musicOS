@@ -1,0 +1,39 @@
+{
+  "id": "nirvana_nevermind_come-as-you-are",
+  "artist": "Nirvana",
+  "song": "Come As You Are",
+  "album": "Nevermind",
+  "year": 1991,
+  "record_label": "DGC / Sub Pop",
+  "position_in_era": {
+    "genre": "Grunge / alternative rock",
+    "historical_role": "Inversion via texture and emotional register: the opening guitar riff (E–F#–E–G–F# with chorus effect) uses the same interval vocabulary as Enter Sandman but played with chorus and a pop-radio affect rather than Marshall distortion. The riff-first contract is retained (the riff begins before the vocal, governs the song's identity) but the weight aesthetic is explicitly rejected — the chorus pedal transforms metal weight into underwater drift. Released simultaneously with the Black Album, it is grunge's answer to metal's commercial zenith.",
+    "axis": "downward"
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded May–June 1991 at Sound City Studios, Van Nuys, and Triclops Studios, produced by Butch Vig. Cobain's guitar riff was played through a Boss CE-2 chorus pedal — a deliberate choice to soften and 'feminise' (Cobain's word) the hard rock riff template. The riff at 120 bpm is almost identical in tempo to Enter Sandman (123 bpm). The bass part (Krist Novoselic) follows the riff but adds a sliding, non-aggressive weight.",
+    "member_dynamics": "Cobain (riff, vocal, lyric) is the architect; his explicit intention to invert metal's testosterone aesthetic is documented in multiple interviews. Novoselic (bass) and Grohl (drums) provide the grunge-era rhythm section — Grohl's drumming is heavy but the overall sonic frame is soft-focus compared to metal.",
+    "instrumentation_details": "Cobain: Fender Jaguar and Mustang through a Boss CE-2 chorus pedal into a small amp (not a Marshall stack); Novoselic: Fender Precision; Grohl: Ludwig drums. The chorus effect on the riff is the sonic mechanism of inversion — it is technically a metal-style riff (root, fifth, upper scale tone) but the effect removes all attack and sustain.",
+    "cultural_venue": "Reached #32 US, #9 UK. Nevermind reached #1 US and displaced Michael Jackson's album — the moment usually cited as grunge's commercial takeover. The song's explicit inversion of metal weight aesthetic (Cobain wore floral dresses in the video, a deliberate anti-metal statement) made it a cultural document of aesthetic rebellion.",
+    "release_circumstances": "Nevermind released September 24, 1991 — same month as Metallica's Black Album. The simultaneous release of the two albums (both riff-first, opposite aesthetic contracts) is the clearest single moment in the riff genealogy where inheritance and inversion coexist in real time."
+  },
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心: Come As You Are (id=4208538)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Come_as_You_Are_(Nirvana_song)",
+    "https://en.wikipedia.org/wiki/Nevermind"
+  ],
+  "tags": [
+    "riff_first_composition",
+    "texture_inversion",
+    "grunge_inversion",
+    "inversion",
+    "user_red_heart"
+  ]
+}
