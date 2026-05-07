@@ -25,6 +25,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 
+# Default for legacy episodes; overridden per-slug by the tracklist row count
+# when a tracklist is present (see validate()).
 EXPECTED_TRACK_COUNT = 18
 
 # spec v0.4 §7B.5 — narrative_weight-conditioned char bands (ZH chars).
@@ -114,8 +116,11 @@ def validate(slug: str, base_dir: Path | None = None) -> list[str]:
     # not been re-emitted under v0.4).
     tracklist_path = base_dir / "playlists" / f"{slug}.tracklist.json"
     weight_by_position: dict[int, str] = {}
+    expected_track_count = EXPECTED_TRACK_COUNT
     if tracklist_path.exists():
-        for row in json.loads(tracklist_path.read_text(encoding="utf-8")):
+        rows = json.loads(tracklist_path.read_text(encoding="utf-8"))
+        expected_track_count = len(rows)
+        for row in rows:
             w = row.get("narrative_weight")
             if w:
                 weight_by_position[int(row["position"])] = w
@@ -135,7 +140,7 @@ def validate(slug: str, base_dir: Path | None = None) -> list[str]:
     narration_exhibits = [ex for ex in exhibits if ex.get("kind") != "track"]
 
     track_positions = sorted(int(ex["position"]) for ex in track_exhibits)
-    expected_track_positions = list(range(1, EXPECTED_TRACK_COUNT + 1))
+    expected_track_positions = list(range(1, expected_track_count + 1))
     if track_positions != expected_track_positions:
         failures.append(
             f"track positions mismatch: got {track_positions}, expected {expected_track_positions}"
@@ -144,11 +149,17 @@ def validate(slug: str, base_dir: Path | None = None) -> list[str]:
     narration_positions = [ex["position"] for ex in narration_exhibits]
     if 0 not in narration_positions:
         failures.append("narration exhibits missing position 0 (opening)")
-    if len(narration_exhibits) != 3:
+    # Spec §7B.11: opening + closing required, 0–2 interludes optional.
+    if not (2 <= len(narration_exhibits) <= 4):
         failures.append(
-            f"expected 3 narration exhibits (opening + interlude + closing), "
-            f"got {len(narration_exhibits)}"
+            f"expected 2-4 narration exhibits (opening + closing required, "
+            f"0-2 interludes optional), got {len(narration_exhibits)}"
         )
+    kinds_present = {ex.get("kind") for ex in narration_exhibits}
+    if "opening" not in kinds_present:
+        failures.append("narration exhibits missing kind=opening")
+    if "closing" not in kinds_present:
+        failures.append("narration exhibits missing kind=closing")
 
     muted_actual = {int(ex["position"]) for ex in track_exhibits if ex.get("muted_this_episode")}
     muted_declared = set(muted_positions_declared)

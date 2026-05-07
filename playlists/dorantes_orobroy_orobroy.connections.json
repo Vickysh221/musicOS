@@ -5,8 +5,8 @@
   "episode_title_zh": "自译 — Orobroy 的两次着装",
   "episode_title_en": "Self-Translation — Two Readings of Orobroy",
   "episode_arc": {
-    "from": { "position": 1, "label": "Dorantes — Orobroy (2010 Nueva versión)" },
-    "to":   { "position": 13, "label": "Dorantes — Orobroy (1998 original)" },
+    "from": { "position": 1, "label": "Dorantes — Orobroy (2010)" },
+    "to":   { "position": 13, "label": "Dorantes — Orobroy (1998)" },
     "coda": { "position": 20, "label": "Dorantes & Lebrijano — Agua, Aire y Fuego (2010)" }
   },
   "connection_kinds_in_scope": [
@@ -20,7 +20,7 @@
   ],
   "muted_positions": [],
   "position_labels": {
-    "1": "Dorantes — Orobroy (2010 Nueva versión)",
+    "1": "Dorantes — Orobroy (2010)",
     "2": "El Lebrijano — Me Vienen Siguiendo (1976)",
     "3": "Camarón de la Isla — La Leyenda del Tiempo (1979)",
     "4": "Paco de Lucía — Entre Dos Aguas (1973)",
@@ -32,7 +32,7 @@
     "10": "Bebo Valdés & Diego El Cigala — Lágrimas Negras (2003)",
     "11": "Michel Camilo & Tomatito — Spain (2000)",
     "12": "Esperanza Fernández — Al Compas del Baile (2001)",
-    "13": "Dorantes — Orobroy (1998 original)",
+    "13": "Dorantes — Orobroy (1998)",
     "14": "Buika — Mi Niña Lola (2006)",
     "15": "Carmen Linares — Zorongo Gitano (1996)",
     "16": "María José Llergo — Niña de las Dunas (2023)",
