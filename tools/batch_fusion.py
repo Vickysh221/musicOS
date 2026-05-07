@@ -27,9 +27,9 @@ import subprocess
 from pathlib import Path
 
 from tools.stitch_track import (
-    stitch_a, stitch_c, probe_duration,
+    stitch_a, stitch_c, stitch_c_aligned, stitch_b, probe_duration,
     FADEOUT, A_OVERLAP, A_BED_LEVEL, A_RAMP_AFTER,
-    C_DUCK_LEVEL,
+    C_DUCK_LEVEL, OutOfBounds,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -85,6 +85,14 @@ STYLE_BY_POSITION: dict[int, str] = {
     18: "C",   # Knights of Cydonia — 623ch
     19: "PASSTHROUGH",   # closing
 }
+
+
+def resolve_style(exhibit: dict, fallback: dict[int, str]) -> str | None:
+    """Pick fusion style: exhibit['fusion_style'] wins; else fallback dict."""
+    style = exhibit.get("fusion_style")
+    if style:
+        return style
+    return fallback.get(exhibit["position"])
 
 
 def stitch_c_short(narration: Path, music: Path, output: Path) -> None:
@@ -144,8 +152,12 @@ def stitch_c_short(narration: Path, music: Path, output: Path) -> None:
     ], check=True)
 
 
-def find_match(directory: Path, prefix: str) -> Path | None:
-    for f in directory.glob(f"{prefix}*.mp3"):
+def find_match(directory: Path, prefix: str, suffix: str = "") -> Path | None:
+    pattern = f"{prefix}*{suffix}.mp3" if suffix else f"{prefix}*.mp3"
+    for f in directory.glob(pattern):
+        # When suffix is empty, exclude split-narration files (`_a` / `_b`).
+        if not suffix and (f.stem.endswith("_a") or f.stem.endswith("_b")):
+            continue
         return f
     return None
 
@@ -166,30 +178,42 @@ def main() -> None:
 
     for ex in ep["exhibits"]:
         pos = ex["position"]
-        style = STYLE_BY_POSITION.get(pos)
+        style = resolve_style(ex, STYLE_BY_POSITION)
         if style is None:
             print(f"  skip {pos}: no style assigned")
             continue
 
         prefix = f"{pos:02d}_"
-        narration = find_match(args.narration_dir, prefix)
-        if not narration:
-            print(f"  skip {pos}: no narration mp3 matching {prefix}*")
-            continue
-        out_path = args.output_dir / narration.name
+
+        # Stable output stem from music filename (or fallback).
+        music_match = find_match(args.music_dir, prefix)
+        out_stem = music_match.stem if music_match else f"{pos:02d}_track"
+        out_path = args.output_dir / f"{out_stem}.mp3"
         if out_path.exists() and not args.force:
-            print(f"  skip {narration.stem}: already exists")
+            print(f"  skip {out_stem}: already exists")
             continue
 
         if style == "PASSTHROUGH":
+            narration = find_match(args.narration_dir, prefix)
+            if not narration:
+                print(f"  skip {pos}: no narration mp3 matching {prefix}*")
+                continue
             shutil.copy2(narration, out_path)
-            print(f"  copy  {narration.stem}: passthrough (no music)")
+            print(f"  copy  {out_stem}: passthrough (no music)")
             continue
 
-        music = find_match(args.music_dir, prefix)
-        if not music:
+        if not music_match:
             print(f"  skip {pos}: no music mp3 matching {prefix}*")
             continue
+        music = music_match
+
+        if style == "B":
+            narration = None
+        else:
+            narration = find_match(args.narration_dir, prefix)
+            if not narration:
+                print(f"  skip {pos}: no narration mp3 matching {prefix}*")
+                continue
 
         try:
             if style == "A":
@@ -198,15 +222,37 @@ def main() -> None:
             elif style == "C":
                 stitch_c(narration, music, out_path, args.postroll_seconds_c)
                 tag = f"C postroll={args.postroll_seconds_c}s"
+            elif style == "C_ALIGNED":
+                anchor = ex.get("anchor_timestamp_seconds")
+                if anchor is None:
+                    stitch_c(narration, music, out_path, args.postroll_seconds_c)
+                    tag = f"C (no-anchor fallback) postroll={args.postroll_seconds_c}s"
+                else:
+                    stitch_c_aligned(narration, music, out_path,
+                                     excerpt=args.postroll_seconds_c,
+                                     anchor_seconds=float(anchor))
+                    tag = f"C_ALIGNED anchor={anchor}s postroll={args.postroll_seconds_c}s"
+            elif style == "B":
+                anchor = ex.get("anchor_timestamp_seconds")
+                if anchor is None:
+                    print(f"  FAIL  pos {pos}: style B requires anchor_timestamp_seconds")
+                    continue
+                nar_a = find_match(args.narration_dir, prefix, suffix="_a")
+                nar_b = find_match(args.narration_dir, prefix, suffix="_b")
+                if not nar_a or not nar_b:
+                    print(f"  FAIL  pos {pos}: style B needs {prefix}*_a.mp3 and {prefix}*_b.mp3")
+                    continue
+                stitch_b(nar_a, nar_b, music, out_path, anchor_seconds=float(anchor))
+                tag = f"B anchor={anchor}s"
             elif style == "C_SHORT":
                 stitch_c_short(narration, music, out_path)
                 tag = "C-short (30s music)"
             else:
                 print(f"  unknown style {style} for pos {pos}")
                 continue
-            print(f"  fuse  {narration.stem}: {tag}")
-        except SystemExit as e:
-            print(f"  FAIL  {narration.stem}: {e}")
+            print(f"  fuse  {out_stem}: {tag}")
+        except (SystemExit, OutOfBounds) as e:
+            print(f"  FAIL  {out_stem}: {e}")
 
 
 if __name__ == "__main__":
