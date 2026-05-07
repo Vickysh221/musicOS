@@ -36,6 +36,7 @@ from __future__ import annotations
 
 import argparse
 import subprocess
+from dataclasses import dataclass
 from pathlib import Path
 
 FADEOUT = 5.5
@@ -47,6 +48,14 @@ C_PREROLL = 8.0          # music plays full for 8s before ducking
 C_DUCK_RAMP = 1.0        # 1s to duck down (and 1s to ramp back up)
 C_DUCK_LEVEL = 0.10      # music volume under narration
 C_LEAD_IN = 2.0          # seconds before anchor that ramp-up to 100% completes
+
+B_LEAD_IN = 2.0          # ramp-up to 100% completes this many sec before anchor
+B_BED_LEVEL = 0.30       # bed volume under narration_a / narration_b
+B_INTRO_PAD = 4.0        # 100% music before narration_a starts
+B_DUCK_RAMP = 1.0        # ramp-down / ramp-up duration
+B_ANCHOR_CLEAN = 30.0    # clean anchor segment at 100%
+B_TAIL = 20.0            # post-narration_b 100% tail
+B_FADEOUT = 5.5
 
 
 class OutOfBounds(Exception):
@@ -86,6 +95,77 @@ def compute_aligned_music_start(
             f"music_total={music_total:.1f}s"
         )
     return music_start
+
+
+@dataclass(frozen=True)
+class BTimings:
+    music_start_in_song: float
+    first_rampup_end: float
+    anchor_clean_start: float
+    anchor_clean_end: float
+    duck_b_end: float
+    narration_b_end: float
+    second_rampup_end: float
+    tail_end: float
+    fadeout_start: float
+    total_output: float
+    music_clip: float
+
+
+def compute_b_timings(
+    anchor_seconds: float,
+    n_dur_a: float,
+    n_dur_b: float,
+    music_total: float,
+    intro_pad: float = B_INTRO_PAD,
+    duck_ramp: float = B_DUCK_RAMP,
+    anchor_clean: float = B_ANCHOR_CLEAN,
+    tail: float = B_TAIL,
+    fadeout: float = B_FADEOUT,
+    lead_in: float = B_LEAD_IN,
+) -> BTimings:
+    """Reverse-compute Style B timings; return all checkpoints in
+    fusion-output time plus the music_start offset into the source song.
+
+    Raises OutOfBounds when source song cannot fit the required clip.
+    """
+    first_rampup_end = intro_pad + duck_ramp + n_dur_a + duck_ramp
+    anchor_clean_start = first_rampup_end
+    anchor_clean_end = anchor_clean_start + anchor_clean
+    duck_b_end = anchor_clean_end + duck_ramp
+    narration_b_end = duck_b_end + n_dur_b
+    second_rampup_end = narration_b_end + duck_ramp
+    tail_end = second_rampup_end + tail
+    fadeout_start = tail_end
+    total_output = tail_end + fadeout
+
+    music_start_in_song = (anchor_seconds - lead_in) - first_rampup_end
+    if music_start_in_song < 0:
+        raise OutOfBounds(
+            f"music_start={music_start_in_song:.2f}s < 0; anchor "
+            f"{anchor_seconds:.1f}s too early for narration_a "
+            f"{n_dur_a:.1f}s + intro_pad {intro_pad}s + ramps {2 * duck_ramp}s "
+            f"+ lead_in {lead_in}s"
+        )
+    music_clip = total_output
+    if music_start_in_song + music_clip > music_total:
+        raise OutOfBounds(
+            f"music_clip end={music_start_in_song + music_clip:.1f}s "
+            f"exceeds music_total={music_total:.1f}s"
+        )
+    return BTimings(
+        music_start_in_song=music_start_in_song,
+        first_rampup_end=first_rampup_end,
+        anchor_clean_start=anchor_clean_start,
+        anchor_clean_end=anchor_clean_end,
+        duck_b_end=duck_b_end,
+        narration_b_end=narration_b_end,
+        second_rampup_end=second_rampup_end,
+        tail_end=tail_end,
+        fadeout_start=fadeout_start,
+        total_output=total_output,
+        music_clip=music_clip,
+    )
 
 
 def probe_duration(path: Path) -> float:
