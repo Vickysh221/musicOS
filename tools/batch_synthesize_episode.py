@@ -50,12 +50,25 @@ def output_stem(exhibit: dict) -> str:
     return f"{pos:02d}_{kind}"
 
 
-def text_for(exhibit: dict) -> tuple[str, str] | None:
+def text_for(exhibit: dict) -> list[tuple[str, str, str]]:
+    """Return list of (text, source_field, suffix) for this exhibit.
+
+    suffix is '' for the single-mp3 case, or '_a' / '_b' for split pillars.
+    """
     if exhibit.get("muted_this_episode"):
         text = exhibit.get("bridge_narration_zh")
-        return (text, "bridge_narration_zh") if text else None
+        return [(text, "bridge_narration_zh", "")] if text else []
+
+    parts: list[tuple[str, str, str]] = []
+    text_a = exhibit.get("transcript_zh_a")
+    text_b = exhibit.get("transcript_zh_b")
+    if text_a and text_b:
+        parts.append((text_a, "transcript_zh_a", "_a"))
+        parts.append((text_b, "transcript_zh_b", "_b"))
+        return parts
+
     text = exhibit.get("transcript_zh")
-    return (text, "transcript_zh") if text else None
+    return [(text, "transcript_zh", "")] if text else []
 
 
 def main() -> None:
@@ -86,43 +99,49 @@ def main() -> None:
     for ex in ep["exhibits"]:
         pos = ex["position"]
         kind = ex["kind"]
-        text_pair = text_for(ex)
-        if not text_pair:
+        parts = text_for(ex)
+        if not parts:
             print(f"  skip {pos:02d} {kind}: no narration text")
             continue
-        text, source_field = text_pair
         stem = output_stem(ex)
-        out_path = args.output_dir / f"{stem}.mp3"
 
-        if out_path.exists() and not args.force:
-            print(f"  skip {stem}: already exists")
-            total_skipped += 1
-            continue
+        for text, source_field, suffix in parts:
+            out_path = args.output_dir / f"{stem}{suffix}.mp3"
 
-        print(f"  synth {stem}: {len(text)} chars from {source_field}")
-        audio, meta = synthesize(text, args.voice, api_key, group_id or "", model=args.model)
-        out_path.write_bytes(audio)
+            if out_path.exists() and not args.force:
+                print(f"  skip {stem}{suffix}: already exists")
+                total_skipped += 1
+                continue
 
-        usage = (meta.get("extra_info") or {}).get("usage_characters", len(text))
-        total_runs += 1
-        total_chars += len(text)
-        total_usage_chars += usage
+            print(f"  synth {stem}{suffix}: {len(text)} chars from {source_field}")
+            audio, meta = synthesize(
+                text, args.voice, api_key, group_id or "", model=args.model
+            )
+            out_path.write_bytes(audio)
 
-        with log_path.open("a", encoding="utf-8") as f:
-            f.write(json.dumps({
-                "timestamp": datetime.now(timezone.utc).isoformat(),
-                "episode": str(args.episode),
-                "position": pos,
-                "kind": kind,
-                "source_field": source_field,
-                "voice_id": args.voice,
-                "model": args.model,
-                "input_chars": len(text),
-                "usage_characters": usage,
-                "output_bytes": len(audio),
-                "latency_ms": meta["latency_ms"],
-                "output_path": str(out_path.resolve().relative_to(ROOT)),
-            }, ensure_ascii=False) + "\n")
+            usage = (meta.get("extra_info") or {}).get(
+                "usage_characters", len(text)
+            )
+            total_runs += 1
+            total_chars += len(text)
+            total_usage_chars += usage
+
+            with log_path.open("a", encoding="utf-8") as f:
+                f.write(json.dumps({
+                    "timestamp": datetime.now(timezone.utc).isoformat(),
+                    "episode": str(args.episode),
+                    "position": pos,
+                    "kind": kind,
+                    "source_field": source_field,
+                    "suffix": suffix,
+                    "voice_id": args.voice,
+                    "model": args.model,
+                    "input_chars": len(text),
+                    "usage_characters": usage,
+                    "output_bytes": len(audio),
+                    "latency_ms": meta["latency_ms"],
+                    "output_path": str(out_path.resolve().relative_to(ROOT)),
+                }, ensure_ascii=False) + "\n")
 
     print(f"\nDone: {total_runs} synthesized, {total_skipped} skipped")
     print(f"  input chars: {total_chars}")
