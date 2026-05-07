@@ -27,4 +27,13 @@ export const EPISODES: EpisodeMeta[] = [
     focus: 'aria_solo_dialectic',
     year: '1970–2006',
   },
+  {
+    id: 'ep3',
+    number: 3,
+    titleZh: '三全音之后',
+    titleEn: 'After the Tritone',
+    anchor: 'Black Sabbath',
+    focus: 'riff_inversion',
+    year: '1967–2003',
+  },
 ];

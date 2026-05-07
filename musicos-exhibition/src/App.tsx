@@ -5,9 +5,13 @@ import { Sidebar } from './components/Sidebar.js';
 import './app.css';
 
 function useCurrentEpisodeId(): string {
+  const [isEp3] = useRoute('/ep3/:rest*');
+  const [isEp3Exact] = useRoute('/ep3');
   const [isEp2] = useRoute('/ep2/:rest*');
   const [isEp2Exact] = useRoute('/ep2');
-  return isEp2 || isEp2Exact ? 'ep2' : 'ep1';
+  if (isEp3 || isEp3Exact) return 'ep3';
+  if (isEp2 || isEp2Exact) return 'ep2';
+  return 'ep1';
 }
 
 export function App() {
@@ -32,6 +36,12 @@ export function App() {
           </Route>
           <Route path="/ep2/track/:position">
             {(params) => <TrackDetail episodeId="ep2" position={Number(params.position)} />}
+          </Route>
+          <Route path="/ep3">
+            <Timeline episodeId="ep3" />
+          </Route>
+          <Route path="/ep3/track/:position">
+            {(params) => <TrackDetail episodeId="ep3" position={Number(params.position)} />}
           </Route>
           <Route>
             <div style={{ padding: 24 }}>404 — not found</div>
