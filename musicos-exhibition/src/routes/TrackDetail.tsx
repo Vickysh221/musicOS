@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'wouter';
 import { useExhibition } from '../store/exhibition.js';
+import { assetUrl } from '../lib/asset-url.js';
 import type { TrackExhibit } from '../types.js';
 import './track-detail.css';
 
@@ -50,8 +51,9 @@ export function TrackDetail({ episodeId, position }: TrackDetailProps) {
 
   const transcript    = language === 'zh' ? track.transcript_zh : track.transcript_en;
   const transcriptStatus = language === 'zh' ? track.transcript_zh_status : track.transcript_en_status;
-  const cover         = track.album_cover_url;
-  const playbackUrl   = track.fusion_audio_url ?? track.audio_url;
+  const cover         = track.album_cover_url ? assetUrl(track.album_cover_url) : null;
+  const rawPlaybackUrl = track.fusion_audio_url ?? track.audio_url;
+  const playbackUrl   = rawPlaybackUrl ? assetUrl(rawPlaybackUrl) : null;
   const audioAvailable = Boolean(playbackUrl);
 
   return (

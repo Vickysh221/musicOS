@@ -11,7 +11,7 @@
     "build": "npm run sync-data && vite build",
     "preview": "vite preview --port 4173",
     "test": "vitest run",
-    "sync-data": "mkdir -p public/data && cp data/exhibition.json public/data/exhibition.json 2>/dev/null || true",
+    "sync-data": "mkdir -p public/data && cp data/exhibition*.json public/data/ 2>/dev/null || true",
     "build-data": "tsx scripts/build-exhibition-json.ts && npm run sync-data",
     "fetch-audio": "tsx scripts/fetch-audio.ts && npm run sync-data",
     "spike": "tsx scripts/spike-ncm.ts"

@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { assetUrl } from '../lib/asset-url.js';
 import type { NonTrackExhibit } from '../types.js';
 import './narration-card.css';
 
@@ -31,7 +32,7 @@ export function NarrationCard({ exhibit, label }: Props) {
     }
   };
 
-  const url = exhibit.fusion_audio_url;
+  const url = exhibit.fusion_audio_url ? assetUrl(exhibit.fusion_audio_url) : null;
   const transcript = exhibit.transcript_zh ?? '';
 
   return (

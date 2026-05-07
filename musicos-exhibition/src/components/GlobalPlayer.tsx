@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useExhibition } from '../store/exhibition.js';
+import { assetUrl } from '../lib/asset-url.js';
 
 export function GlobalPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -14,10 +15,11 @@ export function GlobalPlayer() {
   const next = useExhibition((s) => s.next);
 
   const exhibit = exhibits.find((e) => e.position === playingPosition) ?? null;
-  const src =
+  const rawSrc =
     exhibit?.fusion_audio_url ??
     (exhibit && exhibit.kind === 'track' ? exhibit.audio_url : null) ??
     null;
+  const src = rawSrc ? assetUrl(rawSrc) : null;
 
   // React to play/pause toggles.
   useEffect(() => {

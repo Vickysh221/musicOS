@@ -1,5 +1,6 @@
 import { motion, type Transition } from 'framer-motion';
 import { forwardRef } from 'react';
+import { assetUrl } from '../../lib/asset-url.js';
 import type { TrackExhibit } from '../../types.js';
 import type { CardTransform } from './timeline-keyframes.js';
 
@@ -37,7 +38,7 @@ export const TrackCard = forwardRef<HTMLButtonElement, Props>(function TrackCard
       aria-label={`${track.position}. ${track.artist} — ${track.song}`}
     >
       {track.album_cover_url ? (
-        <img src={track.album_cover_url} alt="" className="track-card__art" />
+        <img src={assetUrl(track.album_cover_url)} alt="" className="track-card__art" />
       ) : (
         <div className="track-card__art track-card__art--placeholder" />
       )}

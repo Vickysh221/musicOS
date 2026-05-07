@@ -14,5 +14,5 @@ node_modules/
 .env.local
 .env
 
-# TTS spike artifacts
-episodes/audio/spike/
+# TTS spike artifacts & build sources (narration + fusion source files not needed in git)
+episodes/audio/
