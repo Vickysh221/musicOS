@@ -36,4 +36,13 @@ export const EPISODES: EpisodeMeta[] = [
     focus: 'riff_inversion',
     year: '1967–2003',
   },
+  {
+    id: 'ep4',
+    number: 4,
+    titleZh: '自译 — Orobroy 的两次着装',
+    titleEn: 'Self-Translation — Two Readings of Orobroy',
+    anchor: 'Dorantes',
+    focus: 'translation_aesthetic',
+    year: '1909–2024',
+  },
 ];

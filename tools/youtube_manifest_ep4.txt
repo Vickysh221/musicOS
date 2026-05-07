@@ -1,0 +1,75 @@
+# YouTube fetch manifest for ep4 — 20 tracks (translation_aesthetic / Dorantes Orobroy)
+# Format: <video_id>|<filename_stem>
+# Run: python3 -m tools.fetch_audio_youtube tools/youtube_manifest_ep4.txt
+# (writes to musicos-exhibition/public/audio/ — the runner is then expected
+#  to move into musicos-exhibition/public/audio/ep4/.)
+#
+# Sources favored: official-channel "Topic" auto-uploads (provided to YouTube
+# by record labels), then label channels (Nuevos Medios, World Circuit,
+# Calle54, Buika Oficial, ROSALÍA, C. Tangana, Dorantes oficcial), then
+# fan re-uploads only when no official source exists.
+
+# 01 Dorantes — Orobroy (2010 Nueva versión, El tiempo por testigo... A Sevilla)
+# Source: Dorantes oficcial channel (artist's own channel), uploaded 2023-08-03
+crEsreT3xAk|01_dorantes_orobroy-nueva-version
+
+# 02 El Lebrijano — Me Vienen Siguiendo (Siguiriya), Persecución 1976
+# Source: fan upload — no official Topic upload found; widely used reference
+yxXTv_3DoP8|02_el-lebrijano_me-vienen-siguiendo
+
+# 03 Camarón de la Isla — La Leyenda del Tiempo (1979) — Universal remaster
+0usfxEYijXY|03_camaron-de-la-isla_la-leyenda-del-tiempo
+
+# 04 Paco de Lucía — Entre Dos Aguas (Remastered 2014 — Topic auto-upload)
+0vq3qZwaXrw|04_paco-de-lucia_entre-dos-aguas
+
+# 05 Pata Negra — Blues de la Frontera (1987) — Nuevos Medios official audio
+wcqOWWG3x6Y|05_pata-negra_blues-de-la-frontera
+
+# 06 Chano Domínguez — El Puerto (Piano Ibérico, 2010 — Topic auto-upload)
+8osuZcYKLD0|06_chano-dominguez_el-puerto
+
+# 07 Albéniz — Iberia I. Evocación, Alicia de Larrocha 1987 (Topic)
+Qzvxff2Umrw|07_albeniz_iberia-evocacion
+
+# 08 Keith Jarrett — Köln Concert Pt I (1975) — official Keith Jarrett channel
+Pd_Kti6jvy8|08_keith-jarrett_koln-concert-pt-i
+
+# 09 Buena Vista Social Club — Chan Chan (Official Audio, World Circuit)
+o5cELP06Mik|09_buena-vista-social-club_chan-chan
+
+# 10 Bebo Valdés & Diego El Cigala — Lágrimas Negras — Calle54 official
+Bnc7Bz57CME|10_bebo-valdes-diego-el-cigala_lagrimas-negras
+
+# 11 Michel Camilo & Tomatito — Spain (live audio)
+LOBsQbg3t2U|11_michel-camilo-tomatito_spain
+
+# 12 Esperanza Fernández — Al Compás del Baile (Esperanza Fernández, 2001)
+AA19Wt59KCg|12_esperanza-fernandez_al-compas-del-baile
+
+# 13 Dorantes — Orobroy (1998 ORIGINAL solo piano)
+# Source: Dorantes oficcial channel — auto-tagged album "Orobroy"
+# YOUTUBE FALLBACK: NetEase ID null in tracklist; pos 13 sourced exclusively
+# from YouTube. Uploader confirmed = Dorantes oficcial (artist channel).
+8_XEHoI0EJs|13_dorantes_orobroy-1998
+
+# 14 Buika — Mi Niña Lola (Videoclip oficial — Buika Oficial)
+Gu9Qm4Uvibc|14_buika_mi-nina-lola
+
+# 15 Carmen Linares — Zorongo Gitano (Flamenco Vivo, 1995/96 — Topic)
+xwyxr1P8DJ8|15_carmen-linares_zorongo-gitano
+
+# 16 María José Llergo — Niña de las Dunas (Sanación)
+lKWvTkeG7NI|16_maria-jose-llergo_nina-de-las-dunas
+
+# 17 Rosalía — Malamente (Cap.1: Augurio — official ROSALÍA channel)
+Rht7rBHuXW8|17_rosalia_malamente
+
+# 18 C. Tangana, Niño de Elche, La Hungara — Tú Me Dejaste De Querer (official)
+ltmO9XQVdSg|18_c-tangana_tu-me-dejaste-de-querer
+
+# 19 David Lagos — Romance de la monja (que no quiso serlo) — Topic, Hodierno
+-PLvFYhXqtM|19_david-lagos_romance-de-la-monja
+
+# 20 Dorantes & Lebrijano — Agua, Aire y Fuego (track features Nolasco; Nolasco's official audio)
+w_WjhaCT_o4|20_dorantes-lebrijano_agua-aire-y-fuego
