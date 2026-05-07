@@ -1,8 +1,8 @@
-# Episode 03 Design — Dorantes / Orobroy
+# Episode 04 Design — Dorantes / Orobroy
 
 **Date:** 2026-05-07
-**Status:** Approved (brainstorm phase) — pending spec self-review and user sign-off before track-curator
-**Prior episodes:** Miss You (Rolling Stones), Estranged (Guns N' Roses)
+**Status:** Approved — entering anchor expansion (spec §3 workflow)
+**Prior episodes:** ep1 Miss You (Rolling Stones), ep2 Estranged (Guns N' Roses), ep3 Black Sabbath / riff genealogy (in flight per `2026-05-08-ep3-riff-genealogy-design.md`)
 
 ---
 
