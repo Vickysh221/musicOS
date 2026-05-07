@@ -1,0 +1,883 @@
+{
+  "playlist_slug": "dorantes_orobroy_orobroy",
+  "episode_number": 4,
+  "episode_focus": "translation_aesthetic",
+  "episode_title_zh": "自译 — Orobroy 的两次着装",
+  "episode_title_en": "Self-Translation — Two Readings of Orobroy",
+  "episode_arc": {
+    "from": { "position": 1, "label": "Dorantes — Orobroy (2010 Nueva versión)" },
+    "to":   { "position": 13, "label": "Dorantes — Orobroy (1998 original)" },
+    "coda": { "position": 20, "label": "Dorantes & Lebrijano — Agua, Aire y Fuego (2010)" }
+  },
+  "connection_kinds_in_scope": [
+    "translation",
+    "hybridization",
+    "direct_influence",
+    "methodological_descent",
+    "genealogical_descent",
+    "same_era_dialogue",
+    "inversion"
+  ],
+  "muted_positions": [],
+  "position_labels": {
+    "1": "Dorantes — Orobroy (2010 Nueva versión)",
+    "2": "El Lebrijano — Me Vienen Siguiendo (1976)",
+    "3": "Camarón de la Isla — La Leyenda del Tiempo (1979)",
+    "4": "Paco de Lucía — Entre Dos Aguas (1973)",
+    "5": "Pata Negra — Blues de la Frontera (1987)",
+    "6": "Chano Domínguez — El Puerto (2005)",
+    "7": "Isaac Albéniz — Iberia: I. Evocación (1909)",
+    "8": "Keith Jarrett — Köln Concert Pt. I (1975)",
+    "9": "Buena Vista Social Club — Chan Chan (1997)",
+    "10": "Bebo Valdés & Diego El Cigala — Lágrimas Negras (2003)",
+    "11": "Michel Camilo & Tomatito — Spain (2000)",
+    "12": "Esperanza Fernández — Al Compas del Baile (2001)",
+    "13": "Dorantes — Orobroy (1998 original)",
+    "14": "Buika — Mi Niña Lola (2006)",
+    "15": "Carmen Linares — Zorongo Gitano (1996)",
+    "16": "María José Llergo — Niña de las Dunas (2023)",
+    "17": "Rosalía — Malamente (2018)",
+    "18": "C. Tangana — Tú Me Dejaste de Querer (2021)",
+    "19": "David Lagos — Romance de la monja (2024)",
+    "20": "Dorantes & Lebrijano — Agua, Aire y Fuego (2010)"
+  },
+  "connection_pairs": [
+    {
+      "id": "conn_001_to_013_translation",
+      "from_position": 1,
+      "to_position": 13,
+      "kind": "translation",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_dorantes_1998_to_2010",
+      "system_sensory_note": "Self-translation pivot — the structural anchor of the episode. The 2010 Nueva versión adds a 28-voice Polígono Sur children's choir, string pad and a re-orchestrated bridge over the same chord skeleton; the 1998 original is naked solo piano with wordless cante melisma. Same composer translating his own piece across 12 years — the inner mirror of every cross-tradition translation edge in the map. Per-focus score override applied: value = 0.30·story_drive + 0.30·concrete_carrier + 0.20·evidential_strength + 0.20·focus_relevance (translation_aesthetic raises concrete_carrier to 0.30).",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "你现在听到的这件外套，12 年后会被脱掉，回到只剩一架钢琴和一段无字 cante 的样子。这一集会走过去看。",
+          "voice_en": "The coat you're hearing now will be taken off twelve years from this — back to one piano and a wordless cante. We'll walk there."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的那个加了童声合唱和弦乐的版本，是 12 年后的自己写给现在这一刻的。同一支旋律，脱了外套坐在这里。",
+          "voice_en": "The version with children's choir and strings you just heard — that's the same melody twelve years later, the coat off, sitting here naked."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.91,
+        "dimensions": {
+          "story_drive": 0.95,
+          "concrete_carrier": 0.92,
+          "evidential_strength": 0.88,
+          "focus_relevance": 0.90
+        },
+        "rationale": "Highest-scored pair in the episode. Story drive maxes because this is the structural pivot — the dual-version anchor. Concrete carrier maxes via the documented children's-choir / solo-piano contrast on a single song. Translation_aesthetic per-focus weighting applied."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_003_same_era_dialogue",
+      "from_position": 2,
+      "to_position": 3,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Both nodes belong to the late-1970s cante-modernization conversation. Lebrijano's 1976 Persecución used cante hondo to carry concept-album narrative material; Camarón's 1979 Leyenda welcomed non-traditional instruments around the same voice. No documented direct citation between them; both are tracked-as-peers within the same Sevillian cante reformist generation. Criterion B kinship.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "三年后还有一个比这更激烈的事件——电吉他、鼓组、长笛全部走进 cante hondo 的身体里，那才是这条翻译线的开关。",
+          "voice_en": "Three years later a more violent event arrives — electric guitar, drum kit, flute walk into cante hondo's body. That's the switch this whole line turns on."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 1976 年听到的那条想用 cante 讲故事的尝试，三年后被 Camarón 推到了底——同一代人，下一档力度。",
+          "voice_en": "The 1976 attempt to make cante carry narrative you just heard — Camarón pushed it to the wall three years later. Same generation, next gear."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.62,
+        "dimensions": {
+          "story_drive": 0.62,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.58,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Focus-aligned (both are translation-events on cante hondo's body) but evidential strength is moderate — peers without direct citation. Concrete carrier is the audible cante-as-narrative-vehicle move, present in both."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_013_direct_influence",
+      "from_position": 2,
+      "to_position": 13,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_lebrijano_to_dorantes",
+      "system_sensory_note": "Lebrijano is Dorantes' uncle — same Peña-Perrate-Pinini-Bacán Romani dynasty of Lebrija. Persecución (1976) carries cante hondo into long-form poetic-narrative material; Dorantes' methodological move to put solo piano at the centre of cante phrasing descends directly from this family-side precedent. Documented across RomArchive (T1) and the Spain Is Culture portrait of Lebrijano.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这把 cante 嗓子 22 年后会变成钢琴右手的旋律线，由这位歌者的侄子来弹。落点就在第 13 站。",
+          "voice_en": "This cante voice will become a piano right hand twenty-two years from this, played by the singer's nephew. The landing is the 13th stop."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的那条 1976 年的家族 cante 嗓子，22 年后被他侄子用钢琴右手接住——同一支旋律的两代发声。",
+          "voice_en": "The 1976 family cante voice you heard — twenty-two years later his nephew catches it on a piano's right hand. The same melody across two generations."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.85,
+        "dimensions": {
+          "story_drive": 0.88,
+          "concrete_carrier": 0.82,
+          "evidential_strength": 0.92,
+          "focus_relevance": 0.80
+        },
+        "rationale": "Family-blood lineage with documented genealogy raises evidential strength to near-max. Story drive is high because this is the upward family root the episode rests on. Concrete carrier: the audible cante phrasing in Dorantes' right-hand melisma."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_020_genealogical_descent",
+      "from_position": 2,
+      "to_position": 20,
+      "kind": "genealogical_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_lebrijano_persecucion_to_agua-aire-fuego",
+      "system_sensory_note": "Same family voice across 34 years. Persecución (1976) is Lebrijano's predecessor concept-album; Agua, Aire y Fuego (2010) is the late-career duet with his nephew Dorantes on the same record where Dorantes re-translates his own Orobroy. Methodological descent is biological — same dynasty, two generations sharing one recording.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这把 1976 年的嗓子 34 年后还会再开一次口，这次是和侄子坐在同一张专辑里——这一集会绕回去听。",
+          "voice_en": "This 1976 voice opens its mouth again thirty-four years later, this time on one record with his nephew. We'll loop back to it."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你在第二站听到的那把家族 cante 嗓子，34 年后回到这里——和侄子的钢琴坐进同一首歌。这一集就在这里收。",
+          "voice_en": "The family cante voice from the second stop returns thirty-four years later — sharing one song with his nephew's piano. This is where the episode closes."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.84,
+        "dimensions": {
+          "story_drive": 0.92,
+          "concrete_carrier": 0.78,
+          "evidential_strength": 0.90,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Closure-pair story drive is high — the family voice spanning 34 years is the episode's longest temporal arc. Evidential strength is high (documented same-album convergence). Focus relevance is moderate because this is a within-family genealogy rather than a cross-tradition translation event."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_004_same_era_dialogue",
+      "from_position": 3,
+      "to_position": 4,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_camaron_to_paco",
+      "system_sensory_note": "Camarón and Paco's collaboration (Tomatito on the Leyenda sessions) is one of the most-documented partnerships of 20th-century flamenco. Paco's 1973 modernization of flamenco instrumentation (congas, bongos, electric bass on Entre Dos Aguas) was one of the conditions that made the 1979 Leyenda imaginable. The map edge runs Paco→Camarón; we author tracklist-order Camarón→Paco at playback time so the listener encounters the rupture first, then the commercial canonization that prepared its ground.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "下一站要倒回 1973 年——把鼓组和电贝斯第一次商业化地塞进 flamenco 身体的那次操作，是 1979 年这场鲁莽得以成立的前提。",
+          "voice_en": "Next we step back to 1973 — the first commercial pass of drum kit and electric bass into flamenco's body, the precondition this 1979 risk needed."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的 1979 年那次破口，是建立在 1973 年这首 rumba 第一次塞进康加和电贝斯之上的——这次先有路，那次才能跑。",
+          "voice_en": "The 1979 rupture you just heard rests on this 1973 rumba's first congas-and-electric-bass move. This song laid the road; that one ran on it."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.71,
+        "dimensions": {
+          "story_drive": 0.72,
+          "concrete_carrier": 0.78,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.55
+        },
+        "rationale": "Concrete carrier strong (specific instrumentation: congas, bongos, electric bass on Entre Dos Aguas). Evidential strength high — partnership and instrumentation both extensively documented. Focus relevance moderate because this is intra-flamenco modernization rather than cross-tradition translation."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_013_genealogical_descent",
+      "from_position": 3,
+      "to_position": 13,
+      "kind": "genealogical_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_camaron_to_dorantes",
+      "system_sensory_note": "La Leyenda del Tiempo (1979) is the founding rupture that made non-traditional instruments acceptable inside flamenco. Every translation edge in this map descends from that rupture — Dorantes' 1998 move to put solo piano at the centre of flamenco compás and cante hondo melisma is unimaginable without the 1979 permission slip.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这一刀开了之后，19 年后会有人不带 cantaor 也不带电吉他，只用一架钢琴去接同一段 cante——这就是这一集的落点。",
+          "voice_en": "After this cut, nineteen years later someone walks in with no cantaor and no electric guitar — just a piano carrying the same cante. That's the landing."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 1979 年听到的那次破口——把鼓和电吉他放进 cante——19 年后，Dorantes 把这件事压缩到了一个人和一架钢琴。",
+          "voice_en": "The 1979 rupture you heard — drums and electric guitar inside cante — Dorantes compressed it nineteen years later into one person and one piano."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.83,
+        "dimensions": {
+          "story_drive": 0.88,
+          "concrete_carrier": 0.82,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.85
+        },
+        "rationale": "High story drive — this is the founding rupture pair, structurally upstream of the entire map. Focus relevance is high because the 1979 event IS the canonical translation-aesthetic precedent for everything after."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_004_to_005_hybridization",
+      "from_position": 4,
+      "to_position": 5,
+      "kind": "hybridization",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Paco's widened palette in 1973 (congas, bongos, electric bass within rumba) is the precondition for Pata Negra's 1987 'blueslería' — pure blues phrasing at the rhythm of bulerías. Foreign harmonic/rhythmic vocabulary inhabiting flamenco's body without dissolving it. No direct map edge; criterion B kinship inside the same modernization wave, two methodological steps apart.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把外来乐器放进 flamenco 身体的这件事，14 年后会被另一对兄弟做得更彻底——把 blues 的句法直接套在 bulerías 的脚步上。",
+          "voice_en": "Putting foreign instruments inside flamenco's body — fourteen years later two brothers go further, fitting blues phrasing directly onto bulerías footwork."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 1973 年那次康加和电贝斯进 flamenco——这一首把外来语种从乐器换成了 blues 句法，但 compás 还是 bulerías。",
+          "voice_en": "The 1973 conga-and-electric-bass move you heard — this swaps the foreign language from instruments to blues phrasing, but the compás stays bulerías."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.66,
+        "dimensions": {
+          "story_drive": 0.62,
+          "concrete_carrier": 0.72,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.78
+        },
+        "rationale": "Focus-aligned hybridization pair — the blueslería move is exactly the kind of audibly-separable two-language carriage this episode tracks. Concrete carrier specific (blues phrasing over bulerías compás). Evidential strength moderate because this is musicological rather than documented citation."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_004_to_009_same_era_dialogue",
+      "from_position": 4,
+      "to_position": 9,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Bridge pair to keep pos 9 (BVSC) inbound-covered. Both Entre Dos Aguas (1973) and Buena Vista Social Club (1997) are template-of-rediscovery moves: Paco commercially canonized modernized flamenco; BVSC commercially canonized aging Cuban son players. Same gesture (international legibility for a local tradition) two and a half decades apart, with the Spanish-Cuban cultural axis in common. Criterion B; no direct edge.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把一种本地传统做成国际通用语的这件事，24 年后会在哈瓦那再发生一次——那条线晚一点会走到。",
+          "voice_en": "Making a local tradition internationally legible — twenty-four years later it happens again in Havana. We'll get there."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你在 1973 年听到 Paco 把 flamenco 做成国际语；这一首 1997 年是同一个动作的古巴版——同一条西班牙语-加勒比海的轴。",
+          "voice_en": "Paco made flamenco internationally legible in 1973; this 1997 record is the Cuban version of that move — same Spanish-Caribbean axis."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.55,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.50,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.62
+        },
+        "rationale": "Bridge pair — connects Iberian modernization to the lateral Cuban axis the next stop opens. Lower focus relevance and evidential strength because the linkage is template-similarity rather than direct citation."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_004_to_013_direct_influence",
+      "from_position": 4,
+      "to_position": 13,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_paco_to_dorantes",
+      "system_sensory_note": "Paco's 1973 commercial canonization is the precondition Dorantes' generation built on. Solo-instrument modernization of flamenco — a single virtuoso carrying the tradition into a wider harmonic palette — is what Paco proved possible on guitar; Dorantes performs the same gesture on piano twenty-five years later.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "一个独奏家用一件乐器扛起整个 flamenco 现代化的逻辑，25 年后会被搬到键盘上——落点就是这一集的锚。",
+          "voice_en": "A single soloist carrying flamenco's modernization on one instrument — twenty-five years later it moves to a keyboard. The anchor of this episode."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的 1973 年那把吉他怎么扛 flamenco，25 年后这架钢琴在做同一件事——独奏家、一件乐器、整个传统。",
+          "voice_en": "The 1973 guitar carrying flamenco you heard — twenty-five years later this piano does the same job. One soloist, one instrument, the whole tradition."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.81,
+        "dimensions": {
+          "story_drive": 0.82,
+          "concrete_carrier": 0.78,
+          "evidential_strength": 0.88,
+          "focus_relevance": 0.78
+        },
+        "rationale": "Strong evidential strength — the Paco-as-precedent thesis is academically documented (uvadoc thesis, AllFlamenco 50-anniversary piece). Focus relevance is the solo-instrument-carries-tradition move that recurs at the anchor."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_005_to_006_methodological_descent",
+      "from_position": 5,
+      "to_position": 6,
+      "kind": "methodological_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Pata Negra's 1987 blueslería and Chano Domínguez's flamenco-piano vocabulary perform the same gesture in different harmonic vocabularies — foreign language inside flamenco's compás, both layers audibly separable. Chano's 1993 debut sits six years after Blues de la Frontera; the methodological precedent is direct even where the citation is not publicly recorded. Criterion B; no map edge.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把外来语种放进 flamenco 这件事，下一站会换成 jazz piano 的和声词汇——同样的姿势，换了一种音节。",
+          "voice_en": "Putting a foreign language inside flamenco — next stop swaps in jazz-piano harmony. Same gesture, different syllables."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 blues 句法跑在 bulerías 上；这首把 blues 换成了 Bill Evans 的和声色块——同一种'两层都听得见'的写法。",
+          "voice_en": "Blues phrasing on bulerías you just heard — this swaps blues for Bill-Evans-style voicings. Same 'both layers audible' logic."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.64,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.70,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Concrete carrier specific (blues phrasing → jazz voicings, both over flamenco compás). Focus relevance high because this pair is the M1 'gene wears a different coat' move twice in series. Evidential strength moderate as direct citation between Pata Negra and Chano is not documented."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_007_methodological_descent",
+      "from_position": 6,
+      "to_position": 7,
+      "kind": "methodological_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_albeniz_to_chano",
+      "system_sensory_note": "Map edge runs Albéniz→Chano (1909→2005); authored at tracklist time as 6→7 so the listener encounters Chano's contemporary flamenco-piano first, then steps back to the 1909 Spanish-classical root that Chano openly cites in his quartet repertoire (Falla / Albéniz / Granados / Mompou). Direction inversion is a playback-order choice — the influence runs from 7 to 6 historically, but at the listener's ear we go 6→7.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "下一站要倒回 1909 年——同样的安达卢西亚材料，第一次被一架钢琴用晚期浪漫的和声盛起来，这条琴血脉的起点。",
+          "voice_en": "Next we step back to 1909 — the same Andalusian materials first held by a piano in late-Romantic harmony. The headwater of this keyboard line."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的那把 21 世纪的 flamenco-jazz 钢琴，承认自己上游就是这里——1909 年 Albéniz 已经把 cante 的旋法放进键盘里了。",
+          "voice_en": "The 21st-century flamenco-jazz piano you heard names this as its source — Albéniz placed cante melisma inside the keyboard back in 1909."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.69,
+        "dimensions": {
+          "story_drive": 0.62,
+          "concrete_carrier": 0.78,
+          "evidential_strength": 0.78,
+          "focus_relevance": 0.62
+        },
+        "rationale": "Concrete carrier strong (Chano's published project pages explicitly list Falla/Albéniz/Granados/Mompou). Evidential strength documented through chanodominguez.com plus the Trancoso doctoral thesis. Story drive moderate because this is a tributary, not the main channel."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_008_direct_influence",
+      "from_position": 6,
+      "to_position": 8,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_jarrett_to_chano",
+      "system_sensory_note": "Map edge runs Jarrett→Chano; authored 6→8 in tracklist order. Chano has openly cited Bill Evans as one of his two primary influences (alongside Paco de Lucía); Jarrett operates on the same European-jazz-piano axis. Chano's solo-piano vocabulary in flamenco is unimaginable without the Evans/Jarrett ECM-era template.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这架钢琴的另一条根不在西班牙——下一站会去到 1975 年的科隆，那条独奏钢琴的母语方言就在那里。",
+          "voice_en": "This piano's other root isn't Spanish — next stop is Cologne, 1975. That's where the solo-piano mother dialect lives."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的那把 flamenco-jazz 钢琴里面，左手持续低音 + 右手长歌唱的写法——出处就在这里，1975 年的科隆。",
+          "voice_en": "The flamenco-jazz piano you heard — sustained left-hand pedal, singing right hand — that grammar comes from here. Cologne, 1975."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.72,
+        "dimensions": {
+          "story_drive": 0.72,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.75,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Documented Chano-cites-Evans citation chain raises evidential strength. Concrete carrier is the audible left-hand-ostinato / right-hand-melisma grammar. Focus relevance is strong via the translation-of-jazz-piano-into-flamenco vector."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_011_same_era_dialogue",
+      "from_position": 6,
+      "to_position": 11,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Chano (b. 1960) and the Tomatito × Camilo Spain (2000) sessions occupy the same flamenco-meets-jazz-piano window. Chano performs both roles inside one body; Spain splits them across two players (flamenco guitar + Latin-jazz piano). The same translation question, two ergonomic solutions. No map edge between these two specific releases; criterion B contemporaneous-peer kinship.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把 flamenco 和 jazz 钢琴塞进一个人的两只手，这一站这么做；下一档会把它拆成两个人——同样的对话，换成二重奏。",
+          "voice_en": "Putting flamenco and jazz piano inside one person's two hands — this stop does it; next bracket splits it across two people. Same conversation, duo form."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 Chano 一个人完成的对话，这首是同样的对话拆给两个乐手：吉他的 cante 词汇和钢琴的 jazz 词汇互相递。",
+          "voice_en": "The conversation Chano held alone you just heard — this is the same dialogue split across two players: guitar cante vocabulary trading with piano jazz vocabulary."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.61,
+        "dimensions": {
+          "story_drive": 0.58,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.68
+        },
+        "rationale": "Focus-aligned (both items execute flamenco × jazz piano translation). Story drive moderate because this is a parallel-solutions pair rather than a turn. Evidential strength moderate — both items in the same window but no direct citation."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_007_to_002_genealogical_descent",
+      "from_position": 7,
+      "to_position": 2,
+      "kind": "genealogical_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Bridge pair — pos 7 (Albéniz 1909) needs an outbound; the natural target is pos 2 (Lebrijano 1976) on the upward family-cante side. Both items work the same Andalusian poetic-cante recovery line: Iberia (1909) processed cante-jondo melisma through piano-virtuoso harmony; Persecución (1976) processed cante-jondo into long-form concept-album narrative. Criterion B kinship; no direct citation chain.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "1909 年这把键盘里已经有 cante 的影子了；67 年后会有人把同一份材料从乐器换回嗓子，做成一张概念专辑。",
+          "voice_en": "Cante's shadow already lives inside this 1909 keyboard — sixty-seven years later someone returns it from instrument to voice, on a concept album."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你在 1909 年那架钢琴里听到的 cante 影子，67 年后被一把家族 cante 嗓子收回去——这次没有钢琴，只有 cante 自己。",
+          "voice_en": "The cante shadow inside that 1909 piano — sixty-seven years later a family cante voice takes it back. No piano this time, just cante itself."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.52,
+        "dimensions": {
+          "story_drive": 0.45,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.45,
+          "focus_relevance": 0.62
+        },
+        "rationale": "Bridge pair — keeps pos 2 inbound and pos 7 outbound covered. Focus relevance via shared poetic-recovery line. Lower scores reflect the absence of direct citation; this is a thematic kinship more than a load-bearing pivot."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_008_to_013_translation",
+      "from_position": 8,
+      "to_position": 13,
+      "kind": "translation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_jarrett_to_dorantes",
+      "system_sensory_note": "Jarrett's solo-piano vocabulary — sustained left-hand ostinato over a singing right hand developing long-form melisma — is the structural blueprint Spanish music press repeatedly compares Orobroy to. Dorantes himself has quipped about playing Orobroy 'like something borrowed' (deflamenco interview). The translation is jazz-piano language imported into flamenco; Jarrett (with Bill Evans) is the source dialect.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这条左手持续 + 右手长歌唱的母语，23 年后会被搬进 cante 的身体——同一架钢琴，换了一种 compás。",
+          "voice_en": "This sustained-left-hand, singing-right-hand mother tongue moves into cante's body twenty-three years from this — same keyboard, different compás."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在科隆听到的那种独奏钢琴语法，到了这首歌，左手还是持续低音，右手开始唱 cante hondo——同一支琴，换了一个传统。",
+          "voice_en": "The Cologne solo-piano grammar you heard — by this song, the left hand still sustains, but the right hand sings cante hondo. Same instrument, different tradition."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.79,
+        "dimensions": {
+          "story_drive": 0.78,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.70,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Focus-aligned at maximum (translation is the kind, jazz-piano-into-flamenco is the move). Concrete carrier strong — sustained-pedal/melisma grammar is audibly transferable between the two pieces. Dorantes' own 'something borrowed' quip plus deflamenco source raises evidence."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_009_to_010_direct_influence",
+      "from_position": 9,
+      "to_position": 10,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_buena-vista_to_cigala-bebo",
+      "system_sensory_note": "Buena Vista (1997) returned aging Cuban son players to international visibility and re-opened the Spanish-Cuban cultural axis Bebo Valdés had been part of pre-exile. Lágrimas Negras (2003) is a direct downstream effect — Fernando Trueba's Calle 54 Records ecosystem and the broader Spanish appetite for flamenco-Cuban dialogue both descend from the Buena Vista breakthrough.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "1997 年这次哈瓦那的复活，6 年后会让一架古巴钢琴和一把 flamenco 嗓子坐到同一张唱片里——同一条西班牙语-加勒比海的轴。",
+          "voice_en": "Havana's 1997 revival opens a door — six years later a Cuban piano and a flamenco voice sit on one record. Same Spanish-Caribbean axis."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的 1997 年那次哈瓦那回潮，是这首 2003 年录音得以发生的前提——古巴钢琴遇到 flamenco 嗓子的那条桥就架在这里。",
+          "voice_en": "The 1997 Havana revival you heard is what made this 2003 record possible — the bridge between Cuban piano and flamenco voice was laid right there."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.71,
+        "dimensions": {
+          "story_drive": 0.72,
+          "concrete_carrier": 0.68,
+          "evidential_strength": 0.78,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Documented downstream effect via Trueba ecology raises evidential strength. Story drive moderate — opens the lateral Iberian-Cuban arc. Focus relevance solid because Lágrimas Negras is the lateral counterpart of Orobroy's translation aesthetic."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_010_to_014_translation",
+      "from_position": 10,
+      "to_position": 14,
+      "kind": "translation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Cigala × Bebo (2003) and Buika's Mi Niña Lola (2006) share the Javier Limón / Madrid-translation production circuit. Cigala carried flamenco voice into Cuban piano harmony; Buika carried copla and cante into jazz-diva phrasing. Same producer ecology, same mid-2000s window, two routes through the female-or-cante voice into multi-tradition dressing. No direct map edge; criterion B kinship.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把一种本地嗓子放进外来和声里这件事，同一个制作人 3 年后还会做一次——这次嗓子换成了非裔西班牙的女中音。",
+          "voice_en": "Putting a local voice inside foreign harmony — the same producer does it again three years later. This time the voice is an Afro-Spanish mezzo."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的那把 flamenco 嗓子坐进古巴钢琴里——这首 3 年后是同一个制作人的下一步，把 copla 嗓子坐进 jazz 和声里。",
+          "voice_en": "The flamenco voice in Cuban piano harmony you heard — three years later the same producer takes the next step, placing a copla voice inside jazz."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.65,
+        "dimensions": {
+          "story_drive": 0.62,
+          "concrete_carrier": 0.68,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.78
+        },
+        "rationale": "Focus-aligned — both items are paradigmatic translation_aesthetic moves. Concrete carrier (Limón producer common to both projects). Evidential strength moderate — producer linkage is documented but the methodological-pair claim is musicological synthesis."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_011_to_012_same_era_dialogue",
+      "from_position": 11,
+      "to_position": 12,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Bridge pair — Spain (recorded live 1998 Barcelona, released 2000) and Esperanza Fernández's debut (2001) sit one year apart inside the same Spanish-flamenco-meets-jazz translation window. Spain pairs guitar with Latin-jazz piano; Esperanza is accompanied by Dorantes on piano on her canonical soleá. Criterion B contemporaneous-peer kinship; no direct map edge.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把 flamenco 和钢琴坐到同一张唱片里这件事，下一年还会再发生一次——这次钢琴的位置上坐着今天这一集的锚。",
+          "voice_en": "Putting flamenco and piano on one record — it happens again the next year. This time the piano seat is taken by today's anchor."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 flamenco 吉他和 jazz 钢琴的对话，这首是隔年的姊妹篇——cante 嗓子换上来了，弹钢琴的那个人就是今天的锚。",
+          "voice_en": "The flamenco guitar / jazz piano dialogue you heard — this is the sister piece one year later. The cante voice steps forward; the pianist is today's anchor."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.59,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.62
+        },
+        "rationale": "Bridge pair connecting pos 11 to the lateral female-cante slot. Concrete carrier: Dorantes accompanying Esperanza on her debut soleá is documented. Story drive moderate — keeps the lateral arc from collapsing into anchor-only spokes."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_011_to_014_same_era_dialogue",
+      "from_position": 11,
+      "to_position": 14,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Both Spain (2000) and Buika's Mi Niña Lola (2006) belong to the post-Limón Madrid translation cluster. Spain splits flamenco/jazz across two virtuosi; Buika folds copla/cante into jazz-diva phrasing in one voice. Lateral peers in the same translation_aesthetic. Criterion B; no map edge.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把 flamenco 和 jazz 拆给两个乐手的写法，6 年后会被一个 mezzo 嗓子一个人完成——同样的两层都听得见。",
+          "voice_en": "The flamenco-and-jazz split between two virtuosi — six years later one mezzo voice does it alone. Same two layers, still audible."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你在 2000 年听到 flamenco 吉他和 jazz 钢琴互相递；这首把同样的对话压进一个嗓子里——copla、cante、jazz。",
+          "voice_en": "The 2000 flamenco-guitar / Latin-jazz-piano trade you heard — this song compresses the same dialogue inside one voice's phrasing: copla, cante, jazz."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.58,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.58,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.70
+        },
+        "rationale": "Focus-aligned lateral pair. Story drive moderate as this is a within-cluster sibling rather than a turn. Evidential strength moderate — same producer ecology, no direct cross-citation."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_012_to_013_same_era_dialogue",
+      "from_position": 12,
+      "to_position": 13,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_esperanza_to_dorantes",
+      "system_sensory_note": "Esperanza Fernández's 2001 debut (BMG) features Dorantes accompanying her on the canonical soleá En el compás de su sangre and on Gelem, Gelem. Family-circuit linkage: Dorantes' father and Esperanza's mother (Pepa Vargas) are second cousins (deflamenco specialized press). The collaboration is direct, recorded, and documented.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这把 cante 嗓子的钢琴伴奏，三年前已经写出了今天的锚——下一站就是它的独奏版本，没有嗓子，钢琴自己唱。",
+          "voice_en": "This cante voice's piano accompaniment — three years earlier the same hands wrote today's anchor. The next stop is the solo version. No voice, the piano sings."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到这架钢琴在伴 Esperanza 的 cante——三年前同一双手已经写出了这首，没有嗓子，钢琴自己唱 cante。",
+          "voice_en": "The piano you heard accompanying Esperanza's cante — three years earlier those same hands wrote this song. No singer here; the piano sings cante itself."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.78,
+        "dimensions": {
+          "story_drive": 0.80,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.82,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Concrete carrier maximum — Dorantes is literally on Esperanza's record. Evidential strength high (Discogs / es.wikipedia / esperanzafernandez.com all corroborate). Story drive strong — direct collaboration is the cleanest possible pre-anchor predecessor in the lateral cluster."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_012_to_015_same_era_dialogue",
+      "from_position": 12,
+      "to_position": 15,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Esperanza Fernández (Triana, b. 1966) and Carmen Linares (Linares, b. 1951) are the two deep-cante female voices the episode draws on for the lateral / female-cante sub-line. Different generations within the same cante-jondo recovery tradition; both work with poetic-text material (Esperanza on Romani Gelem-Gelem and soleá; Linares on Lorca's Canciones Populares Antiguas). Criterion B kinship; no direct map edge.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这条深 cante 的女嗓血脉，下一档会出现一位前辈——专做 Lorca 诗歌录音的那位老一代 cantaora。",
+          "voice_en": "This deep-cante female line has an elder appearing in the next bracket — the cantaora who recorded Lorca's poetry."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的 Esperanza 的 cante——这一首是上一辈同一条血脉，把 Lorca 的诗放进 cante 里。两代人，同一种深嗓。",
+          "voice_en": "Esperanza's cante you heard — this is the previous generation in the same line, placing Lorca's poetry inside cante. Two generations, one deep voice."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.55,
+        "dimensions": {
+          "story_drive": 0.50,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Bridge pair across two female-cante voices. Focus relevance via shared poetic-recovery line. Lower story drive because the two voices are peers rather than turning a corner."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_013_to_020_direct_influence",
+      "from_position": 13,
+      "to_position": 20,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_agua-aire-fuego_to_dorantes",
+      "system_sensory_note": "Closure pair — same album as the 2010 Nueva versión at position 1 (El tiempo por testigo... A Sevilla). Dorantes returning to Lebrijano's voice on the same record where he re-translates his own Orobroy. The 12-year self-translation and the 34-year family voice meet on one disc; the family voice that was always behind this music finally answers it.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这首 1998 年的独奏钢琴，12 年后会回到家族嗓子的身边——同一张专辑里，钢琴和叔叔的 cante 终于坐到一起。这一集就在那里收尾。",
+          "voice_en": "This 1998 solo piano — twelve years later it returns to the family voice. On one record, the keyboard and the uncle's cante finally sit together. The episode closes there."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的 1998 年那架孤独的钢琴，12 年后回到这里——和叔叔 Lebrijano 的嗓子坐进同一首歌。一直在身后的那把声音终于答了。",
+          "voice_en": "The lonely 1998 piano you heard — twelve years later it returns here, sharing one song with uncle Lebrijano's voice. The voice that was always behind it finally answers."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.87,
+        "dimensions": {
+          "story_drive": 0.95,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Episode-closure pair — story drive maxes because this is the family-voice answer that makes the whole arc resolve. Concrete carrier: same album El tiempo por testigo, documented across dorantes.es and elflamencovive."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_014_to_016_methodological_descent",
+      "from_position": 14,
+      "to_position": 16,
+      "kind": "methodological_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Buika (2006, Equatorial-Guinean parents, Mallorcan upbringing) and María José Llergo (2023, Pozoblanco, ESMUC-trained) sit on the same female-voice-translates-multiple-traditions axis, 17 years apart. Buika folded copla + cante + jazz-diva phrasing; Llergo carries inherited cante from her grandfather Pepe in olive fields into ambient-electronic dressing. Criterion B kinship; no direct map edge.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把 cante 嗓子放进多种外来语里这件事，17 年后会出现一个 Z 世代版本——这次外来语换成了氛围电子。",
+          "voice_en": "Placing a cante voice inside multiple foreign languages — seventeen years later a Gen Z version arrives, the foreign tongue swapped for ambient electronic."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 Buika 把 copla、cante、jazz 套在一个嗓子里——这一首 17 年后是同样的姿势，外面那层换成了氛围电子。",
+          "voice_en": "Buika fitting copla, cante and jazz into one voice you heard — this is the same gesture seventeen years later, the outer layer swapped for ambient electronic."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.61,
+        "dimensions": {
+          "story_drive": 0.58,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.78
+        },
+        "rationale": "Focus-aligned (both items execute the multi-tradition female-voice translation move). Concrete carrier: identifiable cante-as-spine in both. Evidential strength moderate — direct citation Buika→Llergo not documented; lineage is methodological."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_015_to_017_direct_influence",
+      "from_position": 15,
+      "to_position": 17,
+      "kind": "direct_influence",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Carmen Linares' Flamenco Vivo (1996) records Lorca's Canciones Populares Antiguas — the same poetic-recovery line Rosalía's ESMUC flamenco-studies thesis (El Mal Querer, 2018) extends into Gen Z mainstream. Linares is one of the cante voices the post-1980 generation studied; the Lorca / cante-jondo poetic-text axis is shared. Criterion B; no direct edge in map.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把 Lorca 的诗放进 cante 这件事，22 年后会出现一个流行音乐版本——同样的诗歌-cante 轴，外面套了 trap 鼓。",
+          "voice_en": "Putting Lorca's poetry inside cante — twenty-two years later a pop version arrives. Same poetry-cante axis, trap drums on the outside."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 Carmen Linares 的 Lorca 录音——22 年后这条诗歌-cante 的血脉到了主流，外层换成了 trap，但 cante 还在。",
+          "voice_en": "Carmen Linares' Lorca recording you heard — twenty-two years later this poetry-cante line reaches the mainstream, trap on the outside, cante still intact."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.62,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Focus-aligned (translation of poetic-cante material into a new outer layer). Concrete carrier: Lorca repertoire on the Linares side, cante phrasing on the Rosalía side. Evidential strength moderate — Rosalía's ESMUC training is documented; specific Linares→Rosalía citation is not."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_016_to_019_genealogical_descent",
+      "from_position": 16,
+      "to_position": 19,
+      "kind": "genealogical_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Llergo (2023, Pozoblanco) and Lagos (2024, Jerez) are the two current-generation deep-cante voices in the tracklist's downward axis — both carrying inherited cante from family / community elders into contemporary recorded form. Llergo's olive-field cante and Lagos' Jerez cante belong to the same 2020s deep-cante recovery moment. Criterion B; no direct edge.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "Z 世代深 cante 这条线，下一年还有一位 Jerez 的男声把同样的事做了一次——同一代人,同一条传承的脉。",
+          "voice_en": "This Gen Z deep-cante line — the next year a Jerez male voice does the same thing. Same generation, same inheritance pulse."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的那把 Pozoblanco 橄榄园 cante，第二年到 Jerez 又开了一次口——Z 世代两条最深的嗓子互相回应。",
+          "voice_en": "The Pozoblanco olive-field cante you heard — the next year it opens again in Jerez. Gen Z's two deepest voices answering each other."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.57,
+        "dimensions": {
+          "story_drive": 0.52,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.70
+        },
+        "rationale": "Focus-aligned (both are deep-cante translations into contemporary form). Story drive moderate — peers more than turn. Evidential strength moderate — geographic and methodological proximity documented; direct citation not."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_017_to_018_direct_influence",
+      "from_position": 17,
+      "to_position": 18,
+      "kind": "direct_influence",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Rosalía's El Mal Querer (2018) and Tangana's El Madrileño (2021) belong to one cultural pipeline — Tangana extends the post-Rosalía permission for mainstream Iberian-pop with flamenco at the centre. Niño de Elche's bulería voice + La Húngara's gypsy-rumba phrasing + contemporary urban arrangement on Tú Me Dejaste de Querer is the post-Rosalía form codified. Criterion B; no direct map edge.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "2018 年这次主流流行 + flamenco 的破口，3 年后会被一张更直接的西班牙都会专辑接住——同一条管道,更宽的口径。",
+          "voice_en": "The 2018 mainstream-pop-meets-flamenco rupture — three years later a more explicit Spanish urban album catches it. Same pipeline, wider opening."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到 2018 年那次 trap + cante 的破口——这首 3 年后是同一条管道的下游，cantaor、rumbera、都会嘻哈三种声音同时在场。",
+          "voice_en": "The 2018 trap + cante rupture you heard — three years later this song is downstream in the same pipeline: cantaor, rumbera and urban hip-hop all present at once."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.58,
+        "dimensions": {
+          "story_drive": 0.58,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.70
+        },
+        "rationale": "Focus-aligned mainstream-pipeline pair. Concrete carrier: three audibly distinct vocal traditions (Niño de Elche, La Húngara, Tangana) on one Tangana track. Evidential strength moderate — pipeline causality is consensus, not documented direct citation."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_018_to_019_same_era_dialogue",
+      "from_position": 18,
+      "to_position": 19,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Tangana (2021) and Lagos (2024) inhabit the same 2020s Spanish moment from opposite poles — Tangana on mainstream pop with flamenco at the centre, Lagos on contemporary deep cante with poetic-narrative arrangement. Both downstream of the Lebrijano-cante-as-conceptual-album methodology. Criterion B; no direct edge.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同一个十年里，主流口音和深 cante 各自在做翻译——下一站是这条线的 cante 那一极,Jerez 的当代男声。",
+          "voice_en": "Inside one decade, mainstream and deep cante each do their own translation — next stop is the cante pole, a contemporary Jerez male voice."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的那次主流口音里的 flamenco，这一首是同一个十年的另一极——Jerez 男声,深 cante,但用今天的编排说话。",
+          "voice_en": "The mainstream-voice flamenco you heard — this song is the same decade's other pole. Jerez male voice, deep cante, contemporary arrangement."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.55,
+        "dimensions": {
+          "story_drive": 0.50,
+          "concrete_carrier": 0.52,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.68
+        },
+        "rationale": "Focus-aligned across the 2020s mainstream / deep-cante poles. Story drive moderate — peers in time. Evidential strength moderate — both are in the same decade's flamenco-translation conversation, no documented cross-citation."
+      },
+      "user_overrides": []
+    }
+  ]
+}
