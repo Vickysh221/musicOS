@@ -293,6 +293,81 @@ def stitch_c_aligned(
     _run(music, narration, filt, output)
 
 
+def stitch_b(
+    narration_a: Path,
+    narration_b: Path,
+    music: Path,
+    output: Path,
+    anchor_seconds: float,
+) -> None:
+    """Style B (Mode 3): narration_a → clean anchor segment → narration_b.
+
+    Music plays continuously underneath at varying volume; the first
+    ramp-to-100% lands at (anchor_seconds - B_LEAD_IN) in the song.
+    """
+    n_dur_a = probe_duration(narration_a)
+    n_dur_b = probe_duration(narration_b)
+    m_dur = probe_duration(music)
+    t = compute_b_timings(
+        anchor_seconds=anchor_seconds,
+        n_dur_a=n_dur_a,
+        n_dur_b=n_dur_b,
+        music_total=m_dur,
+    )
+
+    # Volume envelope checkpoints (in fusion-output time)
+    duck_a_start = B_INTRO_PAD                              # ramp 1.0 → BED
+    duck_a_end   = B_INTRO_PAD + B_DUCK_RAMP
+    rampup_a_start = duck_a_end + n_dur_a                   # ramp BED → 1.0
+    rampup_a_end = t.first_rampup_end
+    # clean anchor: rampup_a_end .. anchor_clean_end @ 1.0
+    duck_b_start = t.anchor_clean_end                       # ramp 1.0 → BED
+    duck_b_end   = t.duck_b_end
+    rampup_b_start = duck_b_end + n_dur_b                   # ramp BED → 1.0
+    rampup_b_end = t.second_rampup_end
+    # tail: rampup_b_end .. tail_end @ 1.0
+    fadeout_st = t.fadeout_start
+
+    drop = (1.0 - B_BED_LEVEL) / B_DUCK_RAMP
+    rise = (1.0 - B_BED_LEVEL) / B_DUCK_RAMP
+    BED = B_BED_LEVEL
+
+    vol_expr = (
+        f"if(lt(t,{duck_a_start}),1,"
+        f"if(lt(t,{duck_a_end}),1-(t-{duck_a_start})*{drop},"
+        f"if(lt(t,{rampup_a_start}),{BED},"
+        f"if(lt(t,{rampup_a_end}),{BED}+(t-{rampup_a_start})*{rise},"
+        f"if(lt(t,{duck_b_start}),1,"
+        f"if(lt(t,{duck_b_end}),1-(t-{duck_b_start})*{drop},"
+        f"if(lt(t,{rampup_b_start}),{BED},"
+        f"if(lt(t,{rampup_b_end}),{BED}+(t-{rampup_b_start})*{rise},"
+        f"1))))))))"
+    )
+
+    delay_a_ms = int(duck_a_end * 1000)              # narration_a starts here
+    delay_b_ms = int(duck_b_end * 1000)              # narration_b starts here
+
+    filt = (
+        f"[0:a]atrim={t.music_start_in_song}:{t.music_start_in_song + t.music_clip},"
+        f"asetpts=PTS-STARTPTS,"
+        f"volume='{vol_expr}':eval=frame,"
+        f"afade=t=out:st={fadeout_st}:d={B_FADEOUT}[m];"
+        f"[1:a]adelay={delay_a_ms}|{delay_a_ms}[na];"
+        f"[2:a]adelay={delay_b_ms}|{delay_b_ms}[nb];"
+        f"[m][na][nb]amix=inputs=3:duration=longest:dropout_transition=0:normalize=0"
+    )
+    output.parent.mkdir(parents=True, exist_ok=True)
+    subprocess.run([
+        "ffmpeg", "-y",
+        "-i", str(music),
+        "-i", str(narration_a),
+        "-i", str(narration_b),
+        "-filter_complex", filt,
+        "-ac", "2", "-ar", "44100", "-b:a", "192k",
+        str(output),
+    ], check=True)
+
+
 def _run(input0: Path, input1: Path, filt: str, output: Path) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     cmd = [
