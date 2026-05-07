@@ -1,0 +1,77 @@
+{
+  "id": "dorantes_orobroy_orobroy",
+  "artist": "Dorantes",
+  "period": {
+    "label": "Orobroy era / Lebrija flamenco-piano emergence (1998) and self-translation (2010)",
+    "year_start": 1998,
+    "year_end": 2010
+  },
+  "works": [
+    {
+      "title": "Orobroy",
+      "type": "track",
+      "year": 1998
+    },
+    {
+      "title": "Orobroy",
+      "type": "album",
+      "year": 1998
+    },
+    {
+      "title": "Orobroy (Nueva versión)",
+      "type": "track",
+      "year": 2010
+    },
+    {
+      "title": "El tiempo por testigo... A Sevilla",
+      "type": "album",
+      "year": 2010
+    },
+    {
+      "title": "Agua, Aire y Fuego",
+      "type": "track",
+      "year": 2010
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco × jazz piano × Spanish art-music translation",
+    "geographic_locus": "Lebrija (Seville) — Romani Peña-Pinini-Bacán dynasty / Polígono Sur, Seville (2010 community choir)",
+    "historical_role": "Landmark flamenco-piano composition: Dorantes installed jazz left-hand voicings and a long-form ostinato beneath bulería compás and a wordless cante-jondo melisma, putting the piano (historically marginal in flamenco) at the centre of the genre. Awarded Spain's Premio Nacional de la Crítica. The 2010 *Nueva versión* on *El tiempo por testigo... A Sevilla* re-orchestrates the piece with a 28-voice children's choir from the Polígono Sur barrio — turning the song into its own self-translation event 12 years later."
+  },
+  "narrative_slots": {
+    "production_facts": "Original 1998 release on *Orobroy* (BMG/RCA Spain), the artist's debut. *El tiempo por testigo... A Sevilla* (2010, marking 20 years of the composer's career) was recorded live in studio with the working trio (Dorantes piano / Francis Posé double bass / Javi Ruibal percussion) and adds a 28-voice children's choir from the Fundación Meridianos and 9 schools in Seville's Polígono Sur barrio for the *Orobroy (Nueva versión)*.",
+    "member_dynamics": "Dorantes (David Peña Fernández) belongs to one of Spain's oldest Romani flamenco lineages — the Peña-Perrate-Pinini-Bacán dynasty of Lebrija and Utrera. He is grandson of the singer El Pinini, nephew of El Lebrijano (Juan Peña Fernández) and Pedro Bacán, cousin of Inés Bacán and Pedro Peña. The 2010 duet *Agua, Aire y Fuego* with his uncle El Lebrijano on *El tiempo por testigo* is the family lineage made literal — piano nephew accompanying cante-jondo uncle on a single track.",
+    "cultural_venue": "Lebrija and Utrera (Sevillian flamenco heartland). The 2010 album turns toward Seville itself ('A Sevilla'), with the Polígono Sur — a marginalised Seville neighbourhood with a strong Romani population — providing the children's choir. Cultural locus is therefore both the dynastic family table and the working-class barrio.",
+    "instrumentation_details": "Solo piano (1998 original, central section); piano + upright bass + cajón/percussion (working trio configuration); 28-voice children's choir on the 2010 *Nueva versión*. Left-hand ostinato voicings drawn from jazz-piano vocabulary (commonly compared to Bill Evans / Keith Jarrett territory in Spanish music press); right hand traces a melisma derived from cante hondo over a 12-beat bulería compás carried by palmas/cajón.",
+    "release_circumstances": "1998: debut album *Orobroy* released on BMG/RCA Spain; commercial and critical breakthrough across both flamenco and non-flamenco audiences. 2010: *El tiempo por testigo... A Sevilla* released as a 20-year career retrospective with re-recorded versions and three new pieces; *Orobroy (Nueva versión)* adds the children's choir; *Agua, Aire y Fuego* features El Lebrijano. The 2010 *Nueva versión* is the version that returned Dorantes to mainstream Spanish listening in the 2010s and is the version in the user's red-heart library (2025-11-10)."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "frequency_hollowing",
+    "anchor",
+    "dual_version_anchor"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心 2025-11-10: Orobroy (Nueva versión) — El tiempo por testigo... A Sevilla",
+    "红心 2025-11-27: Agua, Aire y Fuego (feat. Dorantes, Lebrijano) — Flamenco Top"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/David_Pe%C3%B1a_Dorantes  [T2-3]",
+    "https://www.deflamenco.com/revista/otros-grupos/david-pena-dorantes-3.html  [T2 specialized press]",
+    "https://www.deflamenco.com/revista/entrevistas/at-this-point-i-play-orobroy-like-something-borrowed-1.html  [T2 artist interview]",
+    "https://www.lavozdelsur.es/cultura/dorantes-25-orobroy-colegios-flamenco-piano_305096_102.html  [T2 — 25 years of Orobroy retrospective]",
+    "https://www.elflamencovive.com/english/dorantes-el-tiempo-por-testigo-a-sevilla-cd.html  [T2 — label/artist page for 2010 album with personnel]",
+    "https://www.dorantes.es/el-tiempo-por-testigo.html  [T1 — artist official page]",
+    "data/user_tracks.json  [user data — red-heart 2025-11-10, 2025-11-27]"
+  ],
+  "is_anchor": true,
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2025-11-10: Orobroy (Nueva versión)"
+    ],
+    "confidence": "high"
+  }
+}

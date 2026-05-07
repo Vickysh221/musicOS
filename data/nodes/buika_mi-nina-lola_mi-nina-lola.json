@@ -1,0 +1,50 @@
+{
+  "id": "buika_mi-nina-lola_mi-nina-lola",
+  "artist": "Concha Buika",
+  "period": {
+    "label": "Mi Niña Lola (2006)",
+    "year_start": 2006,
+    "year_end": 2006
+  },
+  "works": [
+    {
+      "title": "Mi Niña Lola",
+      "type": "track",
+      "year": 2006
+    },
+    {
+      "title": "Mi Niña Lola",
+      "type": "album",
+      "year": 2006
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco × copla × jazz × soul (translation across diaspora)",
+    "geographic_locus": "Palma de Mallorca (Buika's home) / Madrid (recording, with Javier Limón producing)",
+    "historical_role": "Born in Palma de Mallorca to Equatorial-Guinean Bubi parents, Buika translates *between* Black diaspora vocal traditions (jazz, soul, Black Cuban) and Andalusian copla / flamenco — sometimes within a single phrase. *Mi Niña Lola* (2006), produced by Javier Limón (the same producer who made *Lágrimas Negras*), is her flamenco-zambra-as-jazz-diva statement; uDiscover and AllMusic both treat her as a defining post-Camarón translator on the female-voice axis."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 3 April 2006 on DRO Atlantic. Produced by Javier Limón. Sold 80,000+ copies in Spain; strong sales in France.",
+    "member_dynamics": "Born 11 May 1972, Palma de Mallorca, to parents from Equatorial Guinea (Bubi ethnic group). Producer Javier Limón links her work directly to the *Lágrimas Negras* / Cigala–Bebo flamenco–Cuban translation circuit.",
+    "cultural_venue": "Palma de Mallorca / Madrid. Later cinematic visibility through Pedro Almodóvar's *La piel que habito* (2011) soundtrack.",
+    "instrumentation_details": "Voice (Buika) over flamenco guitar plus jazz piano, upright bass, percussion. The album emphasises copla and zambra-style flamenco.",
+    "release_circumstances": "Re-introduced *Mi Niña Lola* (the title track, originally recorded ~50 years prior). Latin Grammy nominee."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "downward_descent",
+    "female_cante_lineage"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Concha_Buika  [T2]",
+    "https://en.wikipedia.org/wiki/Mi_Ni%C3%B1a_Lola  [T2]",
+    "https://www.discogs.com/release/1306211-Buika-Mi-Ni%C3%B1a-Lola  [T2 — Discogs]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

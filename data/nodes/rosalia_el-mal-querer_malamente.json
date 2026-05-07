@@ -1,0 +1,51 @@
+{
+  "id": "rosalia_el-mal-querer_malamente",
+  "artist": "Rosalía",
+  "period": {
+    "label": "El Mal Querer (2018)",
+    "year_start": 2018,
+    "year_end": 2018
+  },
+  "works": [
+    {
+      "title": "Malamente",
+      "type": "track",
+      "year": 2018
+    },
+    {
+      "title": "El Mal Querer",
+      "type": "album",
+      "year": 2018
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco × trap / pop / R&B / reggaeton (Gen Z translation)",
+    "geographic_locus": "Catalonia (Sant Esteve Sesrovires) / Barcelona (ESMUC) / global",
+    "historical_role": "The canonical Gen Z flamenco re-frame. *El Mal Querer* was Rosalía's flamenco-studies thesis at ESMUC under Chiqui de la Línea, released as a major-label album. 'Malamente' opens with a clear bulería compás laid as the foundation of trap palmas — the single most-cited example in the 2010s of flamenco vocabulary translated into pop electronics with both languages still audibly separable."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 2 November 2018 on Sony / Columbia. Co-produced by Rosalía and El Guincho. Conceived as her ESMUC final-degree project on Catalan / Andalusian flamenco modernity.",
+    "member_dynamics": "Rosalía Vila Tobella studied under flamenco master José Miguel Vizcaya 'Chiqui de la Línea' at ESMUC; producer El Guincho (Pablo Díaz-Reixa) as principal collaborator.",
+    "cultural_venue": "Catalonia (Rosalía's home) — significant because Rosalía came to flamenco from outside the Andalusian-Romani inherited line, parallel to Dorantes' move to bring piano (a non-flamenco instrument) into the centre of flamenco.",
+    "instrumentation_details": "Bulería palmas as base for trap kicks; 12/8 bulería compás; tangos, fandangos, pregones across the album. Modified samples of Justin Timberlake's 'Cry Me a River' on 'Bagdad'.",
+    "release_circumstances": "Multiple Latin Grammys, including Album of the Year (the first flamenco-rooted album to win in that category)."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "downward_descent",
+    "gen_z_flamenco"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/El_mal_querer  [T2]",
+    "https://gladyspalmera.com/actualidad/rosalia-track-by-track-mal-querer-flamenco/  [T2 specialized]",
+    "https://firebirdmagazine.com/birds-eye-view/rosalia-flamenco  [T3]",
+    "https://tablaodecarmen.com/en/flamenco-today-from-la-leyenda-del-tiempo-to-el-mal-querer/  [T2-3 specialized]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

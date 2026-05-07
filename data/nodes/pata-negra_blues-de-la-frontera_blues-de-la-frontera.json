@@ -1,0 +1,51 @@
+{
+  "id": "pata-negra_blues-de-la-frontera_blues-de-la-frontera",
+  "artist": "Pata Negra",
+  "period": {
+    "label": "Blues de la Frontera / 'blueslería' (1987)",
+    "year_start": 1987,
+    "year_end": 1987
+  },
+  "works": [
+    {
+      "title": "Blues de la Frontera",
+      "type": "track",
+      "year": 1987
+    },
+    {
+      "title": "Blues de la Frontera",
+      "type": "album",
+      "year": 1987
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco × Delta blues × jazz/swing/reggae hybridization",
+    "geographic_locus": "Seville (Triana / wider Andalucía)",
+    "historical_role": "The Amador brothers (Raimundo and Rafael) coined the genre name 'blueslería' on this record — playing pure blues at the rhythm of bulerías. A primary precedent for the translation aesthetic at the heart of Dorantes' work: foreign vocabulary inhabits flamenco's body without dissolving it. The last record the Amador brothers made together, released also in the UK, US, and Japan."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 1987 on Nuevos Medios. Final album the Amador brothers recorded together; Raimundo subsequently left and Rafael continued solo.",
+    "member_dynamics": "Raimundo and Rafael Amador, brothers from Seville, formed Pata Negra after Veneno dissolved. Raimundo's flamenco guitar combined with Rafael's voice produced the 'blueslería' synthesis.",
+    "cultural_venue": "Andalusian Sevilla — Triana and the wider working-class flamenco circuit; later presented live in Paris and New York.",
+    "instrumentation_details": "Flamenco guitar played as if blues; bulería palmas / compás carrying blues phrasing; band instrumentation drew on swing, reggae, jazz alongside cante.",
+    "release_circumstances": "Released also in England, the United States, and Japan — among the first nuevo-flamenco records to receive a substantial international release."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "hybridization",
+    "upward_root"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://www.publico.es/culturas/pata-negra-blues-frontera-disco-revolucionario-avivo-nuevo-flamenco.html  [T2 Spanish press]",
+    "https://vinylroute.com/2022/02/11/pata-negra-el-blues-de-la-frontera-1987/  [T3]",
+    "https://admin.radionacional.com.ar/pata-negra-y-blues-de-la-frontera-el-clasico-que-fusiono-blues-folclore-y-jazz/  [T2 — RTVE/Radio Nacional]",
+    "https://www.flamencoexport.com/fans/blues-de-la-frontera-pata-negra-en  [T2 specialized]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

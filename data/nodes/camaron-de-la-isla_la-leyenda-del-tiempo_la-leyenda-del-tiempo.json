@@ -1,0 +1,51 @@
+{
+  "id": "camaron-de-la-isla_la-leyenda-del-tiempo_la-leyenda-del-tiempo",
+  "artist": "Camarón de la Isla",
+  "period": {
+    "label": "La leyenda del tiempo / nuevo flamenco rupture (1979)",
+    "year_start": 1979,
+    "year_end": 1979
+  },
+  "works": [
+    {
+      "title": "La leyenda del tiempo",
+      "type": "track",
+      "year": 1979
+    },
+    {
+      "title": "La leyenda del tiempo",
+      "type": "album",
+      "year": 1979
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "cante jondo × rock × jazz fusion (the founding event of nuevo flamenco)",
+    "geographic_locus": "San Fernando, Cádiz / Madrid (recording)",
+    "historical_role": "The album that detonated the modernization of flamenco. Camarón took Lorca's poetry and accepted electric guitar, drum kit, sitar, and flute (Jorge Pardo) into the cante. Initially scandalized purists and was a commercial failure on release; later canonized as the moment 'nuevo flamenco' became inevitable. Every translation aesthetic in this map descends from the rupture this album made acceptable — including Dorantes' piano-into-flamenco move 19 years later."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 16 June 1979 on PolyGram. Produced by Ricardo Pachón (who had also produced Lole y Manuel and the proto-fusion bands Veneno and Imán).",
+    "member_dynamics": "Tomatito on flamenco guitar at Camarón's side. Lyrics drawn from Federico García Lorca's poetry (and Omar Khayyam). Spanish musicians steeped in Jimi Hendrix and progressive rock surrounded the cantaor for the first time.",
+    "cultural_venue": "Recorded in Madrid; the cultural locus was Spain's late-Franco-to-Transición moment, where flamenco was being asked to enter the same modernity rock and jazz had already entered.",
+    "instrumentation_details": "Electric guitar, drum kit, bongos, sitar, flute (Jorge Pardo), plus traditional palmas and zapateados. The presence of a drum kit and sitar in a cante-jondo album was the boundary-breaking gesture.",
+    "release_circumstances": "Initially a commercial failure — purists rejected it. Decades later it is the most-cited single album in flamenco modernization narratives."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "nuevo_flamenco_origin",
+    "upward_root"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/La_Leyenda_del_Tiempo  [T2]",
+    "https://es.wikipedia.org/wiki/La_leyenda_del_tiempo_(%C3%A1lbum)  [T2]",
+    "https://biblioteca.ulpgc.es/blogs/theend/2021/03/25/la-leyenda-del-tiempo-1979  [T2 — university library music blog]",
+    "https://www.udiscovermusic.com/stories/best-camaron-de-la-isla-songs/  [T2-3 music journalism]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

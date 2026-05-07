@@ -1,0 +1,50 @@
+{
+  "id": "vicente-amigo_ciudad-de-las-ideas_ciudad-de-las-ideas",
+  "artist": "Vicente Amigo",
+  "period": {
+    "label": "Ciudad de las Ideas (2000)",
+    "year_start": 2000,
+    "year_end": 2000
+  },
+  "works": [
+    {
+      "title": "Ciudad de las Ideas",
+      "type": "track",
+      "year": 2000
+    },
+    {
+      "title": "Ciudad de las Ideas",
+      "type": "album",
+      "year": 2000
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco guitar virtuoso (post-Paco lineage)",
+    "geographic_locus": "Córdoba",
+    "historical_role": "The flamenco-guitar virtuoso most often called 'the natural continuation of Paco de Lucía' — a parallel solo-instrument modernizer to Dorantes, exact same generation (Amigo b. 1967, Dorantes b. 1969). *Ciudad de las Ideas* won the 2001 Latin Grammy for Best Flamenco Album; lateral peer to Orobroy on the *guitar* side of the same modernization."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 2000. Won 2001 Latin Grammy for Best Flamenco Album, plus the 2002 Ondas Award for best flamenco work.",
+    "member_dynamics": "Studied for a decade with Manolo Sanlúcar; performed with Paco de Lucía in the *Leyendas de la guitarra* show in Seville.",
+    "cultural_venue": "Córdoba — Amigo's home and the album's titular reference. Album includes 'Córdoba', 'a personal vision of my home, letting everyone know that this place is united with my heart'.",
+    "instrumentation_details": "Flamenco guitar lead with full ensemble (cajón, palmas, cante, occasional jazz horn).",
+    "release_circumstances": "International flamenco-guitar canon; one of the most-referenced post-Paco solo-guitar albums."
+  },
+  "tags": [
+    "lateral_dialogue",
+    "same_era_dialogue",
+    "flamenco_modernization"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Vicente_Amigo  [T2]",
+    "https://www.flamencoexport.com/fans/ciudad-de-las-ideas-vicente-amigo-en  [T2 specialized]",
+    "https://www.allaboutjazz.com/musicians/vicente-amigo  [T2 music journalism]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

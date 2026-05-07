@@ -69,3 +69,18 @@ This file is the canonical registry. Add a new focus by appending a section belo
 - Reserved. Maps to user aesthetic mechanism M4 (spec §6).
 - Provisional `connection_kinds_in_scope`: `spectrum_choice`, `arrangement_subtraction`, `room_aesthetic_share`.
 - Provisional `intrinsic_score_weight_overrides`: raise `concrete_carrier` to 0.30 (sparse mixes need a concrete pointer to register).
+
+---
+
+## translation_aesthetic
+
+- **Slug:** `translation_aesthetic`
+- **Episode title pattern (ZH):** `基因穿外套 — <anchor song>`
+- **Maps to:** user aesthetic mechanism M1 (spec §6) — "基因穿外套": two lineages remain audibly separable inside one piece (e.g. jazz piano voicings + bulería compás + cante jondo melisma in *Orobroy*). The episode tracks moments where one tradition is being spoken in another tradition's vocabulary, and where you can still hear both layers.
+- **`connection_kinds_in_scope`:** `translation`, `hybridization`, plus `direct_influence` / `methodological_descent` / `genealogical_descent` / `same_era_dialogue` when the dialogue is specifically about translating one tradition into another's vocabulary (e.g. flamenco compás carrying jazz harmony; Cuban son carrying flamenco cante; trap kit carrying bulería palmas). Pure-genre internal influence ("X taught Y the same thing they both already did") is out of scope.
+- **Node fields the prompt should read** (Phase 2): `production_facts`, `instrumentation_details`, `cultural_venue`, `member_dynamics`, `release_circumstances` (in spec §8 priority order). The OPENER sound cue is sourced via prompt elicitation per the same three-tier fallback used in `bassline_dna` — for translation pieces, the cue should ideally name the **collision moment** (the bar / second range where two languages briefly share the foreground audibly).
+- **Mute rule:** if the node has no documented translation/hybridization significance — i.e. it sits in a single tradition without crossing — assign `narrative_weight: bridge` and `muted_this_episode: true` in tracklist. Single-tradition pillars that the lineage requires for completeness (a deep cante jondo root with no fusion content) are `bridge` here, not `pillar`.
+- **OPENING template seed:** open on one concrete sonic moment in the anchor where two languages collide audibly (16–30 ZH chars; for *Orobroy*, the bulería palmas pulse under jazz left-hand voicings, or the wordless cante-jondo melisma entering over a Bill-Evans-like ostinato). Then a single sentence naming the dual-version frame ("今天我们让这首歌跨过它自己 12 年的自我翻译，1998 与 2010 同时在场"). Then one arc-overview sentence (track count + year span + anchor focus — "基因穿外套，两层都还听得见").
+- **CLOSING template seed:** loop back to the anchor's collision moment with one fresh adjective; explicitly name the 1998↔2010 self-translation as the inner mirror of the whole episode (the song translating itself across 12 years is the same gesture as flamenco translating jazz, jazz translating cante, Cuban son meeting Andalusian copla). Name the two `selected_as_strong` connections that are also `red_heart_tier: hit` — the strongest already-loved echoes the episode surfaced (likely Lebrijano via *Agua, Aire y Fuego* and one of Carmen Linares / David Lagos).
+- **`intrinsic_score_weight_overrides`:** raise `concrete_carrier` to 0.30 (translation needs concrete moments where you can hear both languages — abstract "fusion" without a sonic carrier is the failure mode this focus exists to prevent). Other weights default: story_drive 0.30 / evidential_strength 0.20 / focus_relevance 0.20.
+- **Node selection rule:** inclusion is by lineage merit, NOT by user red-heart hit. `red_heart_tier` shapes closing tone but does not gate node inclusion. (Inherited from `aria_solo_dialectic` / `riff_genealogy`.)

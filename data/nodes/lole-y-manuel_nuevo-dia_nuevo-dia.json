@@ -1,0 +1,51 @@
+{
+  "id": "lole-y-manuel_nuevo-dia_nuevo-dia",
+  "artist": "Lole y Manuel",
+  "period": {
+    "label": "Nuevo Día / nuevo-flamenco birth (1975)",
+    "year_start": 1975,
+    "year_end": 1975
+  },
+  "works": [
+    {
+      "title": "Nuevo Día",
+      "type": "track",
+      "year": 1975
+    },
+    {
+      "title": "Nuevo Día",
+      "type": "album",
+      "year": 1975
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco × hippie folk × Andalusian Arabic-Mediterranean fusion",
+    "geographic_locus": "Seville",
+    "historical_role": "The album most music historians cite as the founding act of nuevo flamenco — released four years before *La leyenda del tiempo* and explicitly cited as influencing both Veneno (1977) and Camarón's *Leyenda* (1979). Producer Ricardo Pachón's first major flamenco-fusion project; introduced instruments like the mellotron to flamenco for the first time."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 1975 on Movieplay/Gong, produced by Ricardo Pachón. First album of Dolores 'Lole' Montoya and Manuel Molina.",
+    "member_dynamics": "Lole's mother was a Romani cantaora; Manuel was a guitarist with hippie/counter-cultural connections. Their pairing softened cante-jondo's pain into something more lyrical — what Lole later called 'something other than singing from pain'.",
+    "cultural_venue": "Seville in the late-Franco era; the album smuggled hippie-Woodstock affect (love, peace, ecology) into flamenco at a politically charged moment.",
+    "instrumentation_details": "Flamenco guitar plus acoustic/folk instrumentation; mellotron — the first time the instrument appears in a flamenco album.",
+    "release_circumstances": "Released without promotion; became a long-tail critical and commercial success and a foundational document of nuevo flamenco."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "upward_root",
+    "nuevo_flamenco_origin"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Lole_y_Manuel  [T2]",
+    "https://www.elespanol.com/el-cultural/escenarios/musica/20251203/lole-manuel-medio-siglo-despues-nuevo-dia-flamenco-cantaba-dolor-cosa/1003744038539_0.html  [T1 — El Español 2025 retrospective interview]",
+    "https://www.efeeme.com/nuevo-dia-1975-de-lole-y-manuel/  [T2 specialized]",
+    "https://lafonoteca.net/disco/nuevo-dia/  [T2-3 specialized]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

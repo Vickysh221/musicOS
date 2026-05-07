@@ -1,0 +1,55 @@
+{
+  "id": "keith-jarrett_the-koln-concert_the-koln-concert",
+  "artist": "Keith Jarrett",
+  "period": {
+    "label": "Köln Concert / solo-piano vocabulary (1975)",
+    "year_start": 1975,
+    "year_end": 1975
+  },
+  "works": [
+    {
+      "title": "The Köln Concert",
+      "type": "album",
+      "year": 1975
+    },
+    {
+      "title": "Where Can I Go Without You",
+      "type": "track",
+      "year": 2015
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "solo-piano improvisation × jazz × Romantic-classical sustained ostinato",
+    "geographic_locus": "Köln Opera House (recording) / global ECM circuit",
+    "historical_role": "The single best-selling solo-piano jazz album in history and the public template for what 'solo piano holding a long form together with a sustained left-hand ostinato over which a singing right hand develops a melisma' sounds like — the structural blueprint Spanish music press repeatedly compares Dorantes' *Orobroy* to. Jarrett is one of the two jazz-piano voices (with Bill Evans) that Spanish flamenco-piano press treats as default reference."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded live at the Köln Opera House on 24 January 1975; released on ECM later that year. The piano available was a smaller, partially broken house instrument — Jarrett initially refused to play it.",
+    "member_dynamics": "Solo. The recording is improvised in real time with no prior composition.",
+    "cultural_venue": "ECM's European jazz aesthetic — high-fidelity, spacious, 'air around the notes' — provides the production grammar that solo-piano flamenco later inherits.",
+    "instrumentation_details": "Solo grand piano (in fact a smaller Bösendorfer baby grand mistakenly delivered, with broken upper register and weak pedals — a constraint Jarrett worked around by emphasising mid-register ostinatos).",
+    "release_circumstances": "Released 1975 on ECM; over 4 million copies sold; standing reference for solo jazz piano in Europe. The user's red-heart 2023-10-23 hit on Jarrett's *Where Can I Go Without You* (from *Jasmine*) confirms direct in-library presence of the vocabulary."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "upward_root",
+    "jazz_piano_root"
+  ],
+  "red_heart_tier": "adjacent",
+  "red_heart_evidence": [
+    "红心 2023-10-23: Where Can I Go Without You — Jasmine (同艺人不同时期)"
+  ],
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/The_K%C3%B6ln_Concert  [T2]",
+    "https://www.npr.org/2012/07/20/15031508/keith-jarrett-on-piano-jazz  [T1 — NPR]",
+    "https://direct.mit.edu/daed/article/148/2/67/27291/Keith-Jarrett-Miscegenation-amp-the-Rise-of-the  [T1 — MIT Press / Daedalus academic]"
+  ],
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2023-10-23: Where Can I Go Without You"
+    ],
+    "confidence": "high"
+  }
+}

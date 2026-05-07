@@ -1,0 +1,51 @@
+{
+  "id": "cigala-bebo_lagrimas-negras_lagrimas-negras",
+  "artist": "Diego El Cigala & Bebo Valdés",
+  "period": {
+    "label": "Lágrimas Negras / flamenco–Cuban son self-translation (2003)",
+    "year_start": 2003,
+    "year_end": 2003
+  },
+  "works": [
+    {
+      "title": "Lágrimas Negras",
+      "type": "track",
+      "year": 2003
+    },
+    {
+      "title": "Lágrimas Negras",
+      "type": "album",
+      "year": 2003
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco cante × Cuban son / bolero / danzón (transatlantic translation)",
+    "geographic_locus": "Madrid (recording) / Havana ↔ Madrid cultural axis",
+    "historical_role": "The exact lateral counterpart to Dorantes' translation aesthetic, executed by another pair on the same circuit. Diego El Cigala's flamenco voice and Bebo Valdés' Cuban piano place each tradition's vocabulary inside the other's body — Cigala sings boleros, tangos, coplas; Valdés' piano accompanies *flamenco* readings of standards like 'La bien pagá' and 'Lágrimas Negras'. Critical bridge to the user's Buena Vista Social Club cluster (Cuban son already in red-heart since 2023)."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 20 August 2003 on Calle 54 Records / BMG Music Spain. Produced by Spanish guitarist/producer Javier Limón and filmmaker Fernando Trueba.",
+    "member_dynamics": "Bebo Valdés (then 84, exiled from Cuba since 1960) at the piano; Diego El Cigala on cante. Trueba's *Calle 54* documentary brought Bebo back to Spanish-speaking audiences; the subsequent Cigala collaboration is the album that translation made possible.",
+    "cultural_venue": "Recorded in Madrid; the cultural locus is the Spanish-Cuban exile axis where Madrid had become a meeting point for flamenco and Cuban music throughout the 1990s–2000s.",
+    "instrumentation_details": "Acoustic piano (Bebo), flamenco/cante voice (Cigala), upright bass, percussion. Nine tracks; classics from both traditions read through each other's grammar.",
+    "release_circumstances": "Major commercial and critical success; multiple Latin Grammys; turned the flamenco-Cuban translation into a mass-market category."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "lateral_dialogue",
+    "transatlantic_translation"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/L%C3%A1grimas_Negras_(album)  [T2]",
+    "https://www.elcigala.com/discografia/lagrimas-negras  [T1 — artist official]",
+    "https://www.discogs.com/release/1998866-Bebo-Cigala-L%C3%A1grimas-Negras  [T2 — Discogs personnel]",
+    "https://www.allmusic.com/album/lagrimas-negras-mw0000481481  [T2-3]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

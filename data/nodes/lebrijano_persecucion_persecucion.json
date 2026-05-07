@@ -1,0 +1,61 @@
+{
+  "id": "lebrijano_persecucion_persecucion",
+  "artist": "El Lebrijano",
+  "period": {
+    "label": "Persecución / Romani cante hondo (1976)",
+    "year_start": 1976,
+    "year_end": 1976
+  },
+  "works": [
+    {
+      "title": "Persecución",
+      "type": "track",
+      "year": 1976
+    },
+    {
+      "title": "Persecución",
+      "type": "album",
+      "year": 1976
+    },
+    {
+      "title": "Agua, Aire y Fuego",
+      "type": "track",
+      "year": 2010
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "cante jondo × narrative concept-album (Romani historical poetry)",
+    "geographic_locus": "Lebrija / Utrera (Peña-Perrate-Bacán dynasty)",
+    "historical_role": "Dorantes' uncle (mother's-side) and the cante-jondo voice that the family lineage flows through. *Persecución* (1976) is Lebrijano's signature concept album, narrating the persecution of the Romani people through poet Félix Grande's verses, breaking convention by introducing 'cante por galeras'. Lebrijano also pioneered the use of symphony orchestras in flamenco — a methodological precedent for Dorantes' 2010 children's-choir orchestration of *Orobroy*. Family lineage made literal in 2010's *Agua, Aire y Fuego* duet on *El tiempo por testigo*."
+  },
+  "narrative_slots": {
+    "production_facts": "*Persecución* released 1976 on Polydor Spain; lyrics adapted from poet Félix Grande, with whom Lebrijano collaborated extensively. Later orchestral works (e.g. *Encuentros*, 1983) extended the symphonic-flamenco methodology.",
+    "member_dynamics": "Born Juan Peña Fernández, 1941, Lebrija. Belongs to the Perrate family of Utrera through his mother María 'la Perrata'. Brother of Pedro Peña; cousin of Pedro Bacán; uncle of Dorantes (David Peña Dorantes). The 2010 duet *Agua, Aire y Fuego* with Dorantes is the family-lineage performance event in this map (and is in user's red-heart, 2025-11-27).",
+    "cultural_venue": "Lebrija — a small Sevillian town that is one of the densest concentrations of Romani flamenco lineage in Spain.",
+    "instrumentation_details": "Cante (voice) plus flamenco guitar; on later works also symphony orchestras and Andalusian-Arabic ensembles.",
+    "release_circumstances": "*Persecución* canonical in cante-hondo discography. Lebrijano died in 2016."
+  },
+  "tags": [
+    "upward_root",
+    "cante_jondo_root",
+    "family_lineage",
+    "library_closure_signal"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心 2025-11-27: Agua, Aire y Fuego (feat. Dorantes, Lebrijano) — Flamenco Top"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://www.romarchive.eu/en/flamenco/juan-pena-el-lebrijano-uncle-juan/  [T1 — RomArchive]",
+    "http://www.spainisculture.com/en/artistas_creadores/el_lebrijano.html  [T1 — Spanish Ministry of Culture]",
+    "https://www.flamencoexport.com/outstanding-artists/persecucion-el-lebrijano-en  [T2 specialized]",
+    "https://www.lebrija.es/es/actualidad/eventos/50-anos-de-Persecucion/  [T1-2 — municipal/cultural archive]",
+    "data/user_tracks.json  [user data — red-heart 2025-11-27]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

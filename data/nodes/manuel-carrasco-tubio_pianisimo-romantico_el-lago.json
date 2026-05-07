@@ -1,0 +1,52 @@
+{
+  "id": "manuel-carrasco-tubio_pianisimo-romantico_el-lago",
+  "artist": "Manuel Carrasco Tubio",
+  "period": {
+    "label": "Pianísimo Romántico (recent)",
+    "year_start": 2020,
+    "year_end": 2024
+  },
+  "works": [
+    {
+      "title": "El Lago",
+      "type": "track",
+      "year": 2024
+    },
+    {
+      "title": "Pianisimo Romántico",
+      "type": "album",
+      "year": 2024
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "Spanish solo-piano romantic / contemplative",
+    "geographic_locus": "Spain",
+    "historical_role": "Single-instrument solo-piano contemplative work in the user's red-heart (2026-05-04) — confirms the user's current ear is on solo piano in a Spanish-language context, which is the exact texture *Orobroy* sits in. Bridge / closure-tone node rather than a load-bearing lineage station."
+  },
+  "narrative_slots": {
+    "production_facts": "Recent solo-piano release.",
+    "member_dynamics": "Solo pianist.",
+    "cultural_venue": "Spanish solo-piano contemporary scene.",
+    "instrumentation_details": "Solo acoustic piano.",
+    "release_circumstances": "In user red-heart as of 2026-05-04, immediately adjacent to David Lagos red-heart hit on the same date."
+  },
+  "tags": [
+    "library_closure_signal",
+    "bridge"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心 2026-05-04: El Lago — Pianisimo Romántico"
+  ],
+  "epistemic_layer": "consensus",
+  "sources": [
+    "data/user_tracks.json  [user data — red-heart 2026-05-04]"
+  ],
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2026-05-04: El Lago"
+    ],
+    "confidence": "high"
+  }
+}

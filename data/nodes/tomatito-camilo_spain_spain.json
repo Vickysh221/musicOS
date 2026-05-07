@@ -1,0 +1,51 @@
+{
+  "id": "tomatito-camilo_spain_spain",
+  "artist": "Tomatito & Michel Camilo",
+  "period": {
+    "label": "Spain / flamenco-guitar × Latin-jazz piano (2000)",
+    "year_start": 2000,
+    "year_end": 2000
+  },
+  "works": [
+    {
+      "title": "Spain",
+      "type": "track",
+      "year": 2000
+    },
+    {
+      "title": "Spain",
+      "type": "album",
+      "year": 2000
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco guitar × Dominican / Latin-jazz piano",
+    "geographic_locus": "Almería (Tomatito) ↔ Santo Domingo / NYC (Camilo) — Barcelona Jazz Festival, 1998 (genesis)",
+    "historical_role": "Lateral counterpart at the *piano-and-guitar* dialogue level: Tomatito (Camarón's longtime guitarist) and Dominican Latin-jazz pianist Michel Camilo improvising Chick Corea's 'Spain' and 'Bésame Mucho' at the Barcelona International Jazz Festival in 1998 — the same year Dorantes released *Orobroy*. The album *Spain* (2000) won the first Latin Grammy for Best Latin Jazz Album. Same translation logic, different pair, exact same era as the anchor."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded after a 1998 Palau de la Música live performance. Released 2000 on Lola Records.",
+    "member_dynamics": "Tomatito had been Camarón's flamenco guitarist on *La leyenda del tiempo* (1979) and after; the Camilo collaboration is his post-Camarón translation work into jazz piano partnership.",
+    "cultural_venue": "Palau de la Música, Barcelona (1998 festival); subsequent international jazz-festival circuit.",
+    "instrumentation_details": "Flamenco guitar (Tomatito) and piano (Camilo); duo and small-ensemble formats.",
+    "release_circumstances": "*Spain* (2000) won Best Latin Jazz Album at the inaugural Latin Grammys. Followed by *Spain Again* (2006) and *Spain Forever* (2016) — a sustained translation collaboration."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "lateral_dialogue",
+    "same_era_dialogue"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Tomatito  [T2]",
+    "https://en.wikipedia.org/wiki/Michel_Camilo  [T2]",
+    "https://www.michelcamilo.com/spainforever  [T1 — artist official]",
+    "https://www.discogs.com/release/3323290-Michel-Camilo-Tomatito-Spain  [T2]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

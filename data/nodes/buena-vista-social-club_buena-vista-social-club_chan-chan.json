@@ -1,0 +1,61 @@
+{
+  "id": "buena-vista-social-club_buena-vista-social-club_chan-chan",
+  "artist": "Buena Vista Social Club",
+  "period": {
+    "label": "Buena Vista Social Club (1997)",
+    "year_start": 1996,
+    "year_end": 1997
+  },
+  "works": [
+    {
+      "title": "Chan Chan",
+      "type": "track",
+      "year": 1997
+    },
+    {
+      "title": "Buena Vista Social Club",
+      "type": "album",
+      "year": 1997
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "Cuban son / bolero / danzón (Havana classical-traditional)",
+    "geographic_locus": "Havana (recording, EGREM Studios) / global",
+    "historical_role": "The 1997 Ry Cooder–Juan de Marcos González project that returned aging Cuban son players (Compay Segundo, Ibrahim Ferrer, Rubén González, Eliades Ochoa, Omara Portuondo) to international visibility. **Critical bridge to the user's red-heart cluster** (Buena Vista Social Club hits 2023-08–2024-01, plus Ibrahim Ferrer solo) — supplies the pre-existing Cuban-son ear that *Lágrimas Negras* (2003) translates flamenco into. Connects the Orobroy episode to the listener's longest-running Latin lineage."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded March 1996 at EGREM Studios, Havana, in seven days. Produced by Ry Cooder for World Circuit. Released 1997. Won 1998 Grammy for Best Tropical Latin Performance; over 8 million copies sold.",
+    "member_dynamics": "Compay Segundo, Ibrahim Ferrer, Rubén González, Eliades Ochoa, Omara Portuondo — most over 70 at recording. Juan de Marcos González as Cuban side-organizer.",
+    "cultural_venue": "Havana, EGREM Studios — formerly RCA Cuba's recording facility, with retained 1950s acoustics.",
+    "instrumentation_details": "Tres, guitar, bongos, bass, piano, voice — classical Cuban son ensemble.",
+    "release_circumstances": "Cultural watershed; reactivated international interest in Cuban traditional music for a decade."
+  },
+  "tags": [
+    "lateral_bridge",
+    "cuban_son_root",
+    "library_closure_signal"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心 2023-09-05: Chan Chan — Buena Vista Social Club",
+    "红心 2023-08-31: De Camino a la Vereda — Buena Vista Social Club",
+    "红心 2023-12-04: Candela — Buena Vista Social Club",
+    "红心 2024-01-22: Amor de Loca Juventud — Buena Vista Social Club"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Buena_Vista_Social_Club_(album)  [T2]",
+    "https://www.worldcircuit.co.uk/Buena_Vista_Social_Club_The_Album.html  [T1 — label page]",
+    "data/user_tracks.json  [user data — red-heart 2023-2024 cluster]"
+  ],
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2023-08-31: De Camino a la Vereda",
+      "红心 2023-09-05: Chan Chan",
+      "红心 2023-12-04: Candela",
+      "红心 2024-01-22: Amor de Loca Juventud"
+    ],
+    "confidence": "high"
+  }
+}

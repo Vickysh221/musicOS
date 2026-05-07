@@ -1,0 +1,326 @@
+{
+  "map_id": "dorantes_orobroy_orobroy",
+  "anchor_node_id": "dorantes_orobroy_orobroy",
+  "spec_version": "0.4",
+  "generated_at": "2026-05-07T00:00:00+00:00",
+  "expansion_notes": "22 nodes total (1 anchor + 7 upward + 5 lateral + 6 downward + 3 library-closure signals + 1 lateral Cuban-son bridge). Coverage tally: 6 activated (anchor Dorantes/Orobroy + Lebrijano via Agua Aire y Fuego + Buena Vista + Carmen Linares + David Lagos + Manuel Carrasco Tubio) / 0 touched_unactivated / 16 untouched. Nodes: 22. Edges: 24 (fact=8, consensus=13, hypothesis=3 = 12.5% — well under 30% cap). Focus = translation_aesthetic (M1, '基因穿外套'); dual-version anchor (1998 original + 2010 Nueva versión on El tiempo por testigo... A Sevilla — encoded as a self-translation edge on the anchor). Sourcing self-check (5 items): all fact-tier claims backed by ≥2 independent sources with ≥1 Tier 1-2; no direct quotations used in fact form; no Wikipedia mirrors miscounted; no silent conflict resolution; expansion_notes records 22 web searches consumed (under 25 cap), 0 web fetches consumed (under 15 cap). Web searches were front-loaded on anchor + 4 critical upward nodes; later nodes leaned on earlier-search corroboration. Hard stops: none triggered. Open questions for user review: (a) Should Niña Pastori or Esperanza Fernández occupy the female-cante same-era lateral slot? (Pastori chosen for Camarón mentorship documented; Fernández is more cante-jondo-deep but had less corroborated single-album anchor.) (b) Albéniz/Falla Spanish-classical-piano root node was deferred — no documented Dorantes citation found within search budget; per design spec drop rather than pad. (c) Lebrijano node currently encodes both *Persecución* and *Agua, Aire y Fuego* — track-curator may want to split if both pieces will be played.",
+  "node_ids": [
+    "dorantes_orobroy_orobroy",
+    "camaron-de-la-isla_la-leyenda-del-tiempo_la-leyenda-del-tiempo",
+    "paco-de-lucia_fuente-y-caudal_entre-dos-aguas",
+    "pata-negra_blues-de-la-frontera_blues-de-la-frontera",
+    "chano-dominguez_chano_chano",
+    "keith-jarrett_the-koln-concert_the-koln-concert",
+    "lole-y-manuel_nuevo-dia_nuevo-dia",
+    "lebrijano_persecucion_persecucion",
+    "cigala-bebo_lagrimas-negras_lagrimas-negras",
+    "tomatito-camilo_spain_spain",
+    "vicente-amigo_ciudad-de-las-ideas_ciudad-de-las-ideas",
+    "nina-pastori_eres-luz_cai",
+    "buena-vista-social-club_buena-vista-social-club_chan-chan",
+    "rosalia_el-mal-querer_malamente",
+    "c-tangana_el-madrileno_tu-me-dejaste-de-querer",
+    "buika_mi-nina-lola_mi-nina-lola",
+    "silvia-perez-cruz_11-de-novembre_no-te-pude-conocer",
+    "maria-jose-llergo_sanacion_nina-de-las-dunas",
+    "nathy-peluso_calambre_buenos-aires",
+    "carmen-linares_flamenco-vivo_zorongo-gitano",
+    "david-lagos_hodierno_romance-de-la-monja",
+    "manuel-carrasco-tubio_pianisimo-romantico_el-lago"
+  ],
+  "edges": [
+    {
+      "id": "edge_camaron_to_dorantes",
+      "type": "genealogical_descent",
+      "source_node_id": "camaron-de-la-isla_la-leyenda-del-tiempo_la-leyenda-del-tiempo",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "La leyenda del tiempo (1979) is the founding rupture that made non-traditional instruments — drum kit, electric guitar, sitar, flute — acceptable inside flamenco. Every translation aesthetic in this map descends from that rupture, including Dorantes' 1998 move to put solo piano at the centre of flamenco compás and cante hondo melisma.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/La_Leyenda_del_Tiempo",
+        "https://biblioteca.ulpgc.es/blogs/theend/2021/03/25/la-leyenda-del-tiempo-1979"
+      ]
+    },
+    {
+      "id": "edge_paco_to_dorantes",
+      "type": "direct_influence",
+      "source_node_id": "paco-de-lucia_fuente-y-caudal_entre-dos-aguas",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "Paco de Lucía's Entre Dos Aguas (1973) is the commercial-canonization moment when modernized flamenco became internationally legible — congas, bongos, electric bass entering flamenco for the first time. Dorantes inherits this widened palette and applies it to piano-led flamenco a generation later. Paco's solo-instrument modernization is the precedent Dorantes' generation built on.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Entre_dos_aguas_(song)",
+        "https://allflamenco.net/en/50-anniversary-entre-dos-aguas/",
+        "https://uvadoc.uva.es/handle/10324/58603"
+      ]
+    },
+    {
+      "id": "edge_pata-negra_to_dorantes",
+      "type": "hybridization",
+      "source_node_id": "pata-negra_blues-de-la-frontera_blues-de-la-frontera",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "Pata Negra's 'blueslería' on Blues de la Frontera (1987) — pure blues at the rhythm of bulerías — is the immediate generational precedent for foreign harmonic vocabulary inhabiting flamenco's body without dissolving it. Dorantes performs the same gesture eleven years later with jazz-piano voicings replacing blues phrasing.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://www.publico.es/culturas/pata-negra-blues-frontera-disco-revolucionario-avivo-nuevo-flamenco.html",
+        "https://admin.radionacional.com.ar/pata-negra-y-blues-de-la-frontera-el-clasico-que-fusiono-blues-folclore-y-jazz/"
+      ]
+    },
+    {
+      "id": "edge_chano_to_dorantes",
+      "type": "methodological_descent",
+      "source_node_id": "chano-dominguez_chano_chano",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "Chano Domínguez (b. Cádiz, 1960) is the methodological elder brother to Dorantes (b. Lebrija, 1969) on the flamenco-piano axis — same materials (post-bop jazz piano + flamenco compás + cante phrasing), slightly earlier in the timeline (Chano debut 1993 vs Orobroy 1998). Domínguez's openly stated dual-influence pairing — Bill Evans + Paco de Lucía — is the public methodological signature both pianists share.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chano_Dom%C3%ADnguez",
+        "https://latinjazznet.com/artists/artist-profile-chano-dominguez",
+        "https://worldmusiccentral.org/2018/05/24/interview-with-chano-dominguez/"
+      ]
+    },
+    {
+      "id": "edge_jarrett_to_dorantes",
+      "type": "translation",
+      "source_node_id": "keith-jarrett_the-koln-concert_the-koln-concert",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "Solo-piano vocabulary — sustained left-hand ostinato over which a singing right hand develops a long-form melisma — is the structural blueprint Spanish music press repeatedly compares Orobroy to. Jarrett's Köln Concert (1975) is the public template for that form. The translation in Orobroy is jazz-piano language imported into flamenco; Jarrett (with Bill Evans) is the source dialect.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_K%C3%B6ln_Concert",
+        "https://www.deflamenco.com/revista/entrevistas/at-this-point-i-play-orobroy-like-something-borrowed-1.html"
+      ]
+    },
+    {
+      "id": "edge_lole-manuel_to_dorantes",
+      "type": "genealogical_descent",
+      "source_node_id": "lole-y-manuel_nuevo-dia_nuevo-dia",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "Nuevo Día (1975), produced by Ricardo Pachón, is the founding act of nuevo flamenco — explicitly cited as influencing Veneno (1977) and Camarón's Leyenda (1979). Without Lole y Manuel softening cante's pain into something more lyrical, Dorantes' 1998 melisma over a piano ostinato would have less air to breathe in.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://www.elespanol.com/el-cultural/escenarios/musica/20251203/lole-manuel-medio-siglo-despues-nuevo-dia-flamenco-cantaba-dolor-cosa/1003744038539_0.html",
+        "https://en.wikipedia.org/wiki/Lole_y_Manuel"
+      ]
+    },
+    {
+      "id": "edge_lebrijano_to_dorantes",
+      "type": "direct_influence",
+      "source_node_id": "lebrijano_persecucion_persecucion",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "El Lebrijano (Juan Peña Fernández) is Dorantes' uncle — same Peña-Perrate-Pinini-Bacán Romani flamenco dynasty of Lebrija and Utrera. Lebrijano pioneered symphony-orchestra-and-cante orchestration (Persecución 1976, Encuentros 1983), the methodological precedent for Dorantes' 2010 children's-choir orchestration of the Nueva versión. Family lineage made literal in the 2010 duet 'Agua, Aire y Fuego' (in user red-heart 2025-11-27).",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://www.romarchive.eu/en/flamenco/juan-pena-el-lebrijano-uncle-juan/",
+        "http://www.spainisculture.com/en/artistas_creadores/el_lebrijano.html",
+        "https://en.wikipedia.org/wiki/David_Pe%C3%B1a_Dorantes"
+      ]
+    },
+    {
+      "id": "edge_camaron_to_paco",
+      "type": "direct_influence",
+      "source_node_id": "paco-de-lucia_fuente-y-caudal_entre-dos-aguas",
+      "target_node_id": "camaron-de-la-isla_la-leyenda-del-tiempo_la-leyenda-del-tiempo",
+      "evidence": "Paco de Lucía and Camarón's collaboration (Tomatito on the Leyenda sessions) is one of the most-documented partnerships in 20th-century flamenco. Paco's 1973 modernization of flamenco instrumentation was one of the conditions that made the 1979 Leyenda imaginable.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/La_Leyenda_del_Tiempo",
+        "https://en.wikipedia.org/wiki/Entre_dos_aguas_(song)"
+      ]
+    },
+    {
+      "id": "edge_jarrett_to_chano",
+      "type": "direct_influence",
+      "source_node_id": "keith-jarrett_the-koln-concert_the-koln-concert",
+      "target_node_id": "chano-dominguez_chano_chano",
+      "evidence": "Chano Domínguez has openly cited Bill Evans as one of his two primary influences (alongside Paco de Lucía); Jarrett operates on the same European-jazz-piano axis. Domínguez's solo-piano vocabulary in flamenco is unimaginable without the Evans/Jarrett ECM-era template.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Chano_Dom%C3%ADnguez",
+        "https://worldmusiccentral.org/2018/05/24/interview-with-chano-dominguez/"
+      ]
+    },
+    {
+      "id": "edge_dorantes_1998_to_2010",
+      "type": "translation",
+      "source_node_id": "dorantes_orobroy_orobroy",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "Self-translation edge. The 1998 Orobroy and the 2010 Orobroy (Nueva versión) — both encoded on this single anchor node per nodes-as-singletons rule — are the dual-version frame of the episode. The 1998 version is solo piano with wordless cante melisma; the 2010 version, recorded with a 28-voice children's choir from Seville's Polígono Sur, re-translates the piece into communal song-form. The 12-year gap is treated as a translation event in its own right, the inner mirror of every other edge in this map.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://www.elflamencovive.com/english/dorantes-el-tiempo-por-testigo-a-sevilla-cd.html",
+        "https://www.dorantes.es/el-tiempo-por-testigo.html",
+        "https://www.lavozdelsur.es/cultura/dorantes-25-orobroy-colegios-flamenco-piano_305096_102.html"
+      ]
+    },
+    {
+      "id": "edge_dorantes_to_cigala-bebo",
+      "type": "same_era_dialogue",
+      "source_node_id": "dorantes_orobroy_orobroy",
+      "target_node_id": "cigala-bebo_lagrimas-negras_lagrimas-negras",
+      "evidence": "Lágrimas Negras (2003) executes the exact lateral counterpart to Orobroy's translation aesthetic — Cigala's flamenco voice in Bebo Valdés' Cuban piano body, vs Dorantes' jazz-piano language in flamenco's body. Same circuit, same producer ecology (Javier Limón connects Buika and Cigala-Bebo), same five-year window. Both are paradigmatic 'gene wears a different coat' performances.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L%C3%A1grimas_Negras_(album)",
+        "https://www.elcigala.com/discografia/lagrimas-negras"
+      ]
+    },
+    {
+      "id": "edge_dorantes_to_tomatito-camilo",
+      "type": "same_era_dialogue",
+      "source_node_id": "dorantes_orobroy_orobroy",
+      "target_node_id": "tomatito-camilo_spain_spain",
+      "evidence": "The 1998 Barcelona International Jazz Festival improvisation that became the Tomatito × Michel Camilo album Spain (2000) is exact-year contemporary with Orobroy (1998). Both pair flamenco virtuoso (guitar / piano) with jazz piano vocabulary — Camilo on the Latin-jazz axis, Dorantes performing both roles inside one body.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://www.michelcamilo.com/spainforever",
+        "https://en.wikipedia.org/wiki/Michel_Camilo",
+        "https://en.wikipedia.org/wiki/Tomatito"
+      ]
+    },
+    {
+      "id": "edge_dorantes_to_amigo",
+      "type": "same_era_dialogue",
+      "source_node_id": "dorantes_orobroy_orobroy",
+      "target_node_id": "vicente-amigo_ciudad-de-las-ideas_ciudad-de-las-ideas",
+      "evidence": "Vicente Amigo (b. 1967) and Dorantes (b. 1969) are the same generation of post-Paco solo-instrument flamenco modernizers — Amigo on guitar, Dorantes on piano. Ciudad de las Ideas (2000) and Orobroy (1998) sit two years apart and address the same modernization question from two instruments.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Vicente_Amigo",
+        "https://www.flamencoexport.com/fans/ciudad-de-las-ideas-vicente-amigo-en"
+      ]
+    },
+    {
+      "id": "edge_camaron_to_pastori",
+      "type": "direct_influence",
+      "source_node_id": "camaron-de-la-isla_la-leyenda-del-tiempo_la-leyenda-del-tiempo",
+      "target_node_id": "nina-pastori_eres-luz_cai",
+      "evidence": "Niña Pastori was born in 1978 in San Fernando, Cádiz — Camarón's home town — and was personally mentored by Camarón as a child. Her early style is documented as following Camarón's purist approach before her pop-leaning crossover.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ni%C3%B1a_Pastori",
+        "https://worldmusiccentral.org/2017/04/01/artist-profiles-nina-pastori/"
+      ]
+    },
+    {
+      "id": "edge_buena-vista_to_cigala-bebo",
+      "type": "direct_influence",
+      "source_node_id": "buena-vista-social-club_buena-vista-social-club_chan-chan",
+      "target_node_id": "cigala-bebo_lagrimas-negras_lagrimas-negras",
+      "evidence": "Buena Vista (1997) returned aging Cuban son players to international visibility and re-opened the Spanish-Cuban cultural axis Bebo Valdés had been part of pre-exile. Lágrimas Negras (2003) is a direct downstream effect — Fernando Trueba's Calle 54 Records ecosystem and the broader Spanish appetite for flamenco-Cuban dialogue both descend from the Buena Vista breakthrough.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/L%C3%A1grimas_Negras_(album)",
+        "https://en.wikipedia.org/wiki/Buena_Vista_Social_Club_(album)"
+      ]
+    },
+    {
+      "id": "edge_dorantes_to_rosalia",
+      "type": "methodological_descent",
+      "source_node_id": "dorantes_orobroy_orobroy",
+      "target_node_id": "rosalia_el-mal-querer_malamente",
+      "evidence": "Both Dorantes and Rosalía bring a non-flamenco surface (piano / pop-trap production) into the centre of flamenco compás and cante phrasing while keeping both languages audibly separable. Rosalía's ESMUC flamenco-studies thesis project (2018) is the Gen Z articulation of the same translation aesthetic Orobroy crystallised in 1998.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/El_mal_querer",
+        "https://gladyspalmera.com/actualidad/rosalia-track-by-track-mal-querer-flamenco/"
+      ]
+    },
+    {
+      "id": "edge_dorantes_to_tangana",
+      "type": "genealogical_descent",
+      "source_node_id": "dorantes_orobroy_orobroy",
+      "target_node_id": "c-tangana_el-madrileno_tu-me-dejaste-de-querer",
+      "evidence": "El Madrileño (2021) extends the post-Rosalía mainstream flamenco-translation pipeline — twelve of fourteen tracks built around collaborations with flamenco / Latin folk / rock figures. The cultural permission for this kind of mainstream album with flamenco at its centre traces backward through Rosalía to the late-1990s flamenco-modernization wave Orobroy belongs to.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "https://en.wikipedia.org/wiki/El_Madrile%C3%B1o",
+        "agent synthesis — direct citation chain Dorantes→Tangana not documented in published sources; placed at hypothesis tier"
+      ]
+    },
+    {
+      "id": "edge_lebrijano_to_buika",
+      "type": "translation",
+      "source_node_id": "lebrijano_persecucion_persecucion",
+      "target_node_id": "buika_mi-nina-lola_mi-nina-lola",
+      "evidence": "Buika's flamenco-zambra-as-jazz-diva translation on Mi Niña Lola (2006), produced by Javier Limón, sits in the female-cante translation lineage that El Lebrijano's Persecución (1976) opened up — cante hondo on poetic-conceptual material, with foreign instrumentation acceptable. Limón's role connects Buika's project directly to the Cigala-Bebo and broader 2000s-Madrid translation circuit Lebrijano helped seed.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Concha_Buika",
+        "https://en.wikipedia.org/wiki/Mi_Ni%C3%B1a_Lola"
+      ]
+    },
+    {
+      "id": "edge_buika_to_silvia-perez-cruz",
+      "type": "methodological_descent",
+      "source_node_id": "buika_mi-nina-lola_mi-nina-lola",
+      "target_node_id": "silvia-perez-cruz_11-de-novembre_no-te-pude-conocer",
+      "evidence": "Buika (2006) and Pérez Cruz (2012) sit on the same female song-form translation axis — voice carrying multiple traditions (jazz, soul, fado, flamenco, Cuban, Brazilian) with both languages audibly separable. Pérez Cruz's effortless multilingual eclecticism is the methodological descendant of Buika's earlier diaspora-translation work, advanced one generation.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "agent synthesis — methodological lineage between female-voice translators not documented as direct citation; placed at hypothesis tier",
+        "https://www.elflamencovive.com/english/silvia-perez-cruz-11-de-novembre-cd.html"
+      ]
+    },
+    {
+      "id": "edge_rosalia_to_llergo",
+      "type": "same_era_dialogue",
+      "source_node_id": "rosalia_el-mal-querer_malamente",
+      "target_node_id": "maria-jose-llergo_sanacion_nina-de-las-dunas",
+      "evidence": "Both Rosalía and Llergo studied flamenco at ESMUC in Barcelona under the same teacher, José Miguel Vizcaya 'Chiqui de la Línea'. They are the two most-cited Gen Z female cante voices of the late-2010s — Rosalía leaning urban/electronic, Llergo with deeper inherited cante from her grandfather Pepe in the olive fields of Pozoblanco.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/El_mal_querer",
+        "https://elartedevivirelflamenco.com/cantaores1070.html",
+        "https://www.infolibre.es/cultura/maria-jose-llergo-no-siento-atada-flamenco-reves-flamenco-libre_1_1193601.html"
+      ]
+    },
+    {
+      "id": "edge_rosalia_to_peluso",
+      "type": "same_era_dialogue",
+      "source_node_id": "rosalia_el-mal-querer_malamente",
+      "target_node_id": "nathy-peluso_calambre_buenos-aires",
+      "evidence": "Both released their breakthrough albums into the same 2018-2020 window — El Mal Querer (2018) and Calambre (2020) — and represent the Iberian-Latin American axis of contemporary flamenco-adjacent translation. Peluso (Argentina-born, Spain-based) extends the lineage outside the peninsula.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Calambre_(album)",
+        "https://en.wikipedia.org/wiki/El_mal_querer"
+      ]
+    },
+    {
+      "id": "edge_dorantes_to_carmen-linares",
+      "type": "direct_influence",
+      "source_node_id": "carmen-linares_flamenco-vivo_zorongo-gitano",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "Carmen Linares is the cante-jondo voice of the same generational cohort as Paco de Lucía and Camarón — the deep-cante root that Dorantes' translation aesthetic flows out of. Lorca's Canciones populares antiguas (1931) — the repertoire Linares records on Flamenco Vivo (1996) — sits in the same poetic recovery line that Lebrijano (Persecución) and Dorantes (Orobroy as wordless cante) participate in.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Carmen_Linares",
+        "https://en.wikipedia.org/wiki/David_Pe%C3%B1a_Dorantes"
+      ]
+    },
+    {
+      "id": "edge_lebrijano_to_lagos",
+      "type": "genealogical_descent",
+      "source_node_id": "lebrijano_persecucion_persecucion",
+      "target_node_id": "david-lagos_hodierno_romance-de-la-monja",
+      "evidence": "David Lagos (Jerez) descends from the same dense Sevillian-cante geography that Lebrijano (Lebrija) and Dorantes (Lebrija) occupy. Hodierno (2024) extends Lebrijano's poetic-conceptual cante-with-contemporary-arrangement methodology into the current generation.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "agent synthesis — Lagos has not publicly cited Lebrijano as direct lineage; geographic and methodological proximity placed at hypothesis tier"
+      ]
+    },
+    {
+      "id": "edge_dorantes_to_carrasco-tubio",
+      "type": "same_era_dialogue",
+      "source_node_id": "dorantes_orobroy_orobroy",
+      "target_node_id": "manuel-carrasco-tubio_pianisimo-romantico_el-lago",
+      "evidence": "Solo-piano contemplative work in a Spanish-language context — bridge node confirming the listener's current ear is on solo piano in Iberian context, the exact texture Orobroy sits in. Same-era dialogue rather than load-bearing lineage.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "data/user_tracks.json",
+        "https://www.dorantes.es/el-tiempo-por-testigo.html"
+      ]
+    }
+  ]
+}

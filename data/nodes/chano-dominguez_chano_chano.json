@@ -1,0 +1,52 @@
+{
+  "id": "chano-dominguez_chano_chano",
+  "artist": "Chano Domínguez",
+  "period": {
+    "label": "Flamenco-jazz piano emergence (early 1990s)",
+    "year_start": 1993,
+    "year_end": 1993
+  },
+  "works": [
+    {
+      "title": "Chano",
+      "type": "album",
+      "year": 1993
+    },
+    {
+      "title": "Hands",
+      "type": "album",
+      "year": 2002
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "post-bop jazz piano × flamenco compás (founding flamenco-piano methodology)",
+    "geographic_locus": "Cádiz / Madrid",
+    "historical_role": "The flamenco-piano methodology that Dorantes' Orobroy steps into and reshapes. Domínguez is the Cádiz-born pianist who openly declared Bill Evans and Paco de Lucía as his two principal influences and built a piano language fluent in tangos, bulerías, alegrías, soleás. *Chano* (1993) and the later Blue Note album *Flamenco Sketches* (2012, Grammy-nominated) bracket the era. He is the methodological elder brother to Dorantes' translation aesthetic — same materials, slightly earlier in the timeline."
+  },
+  "narrative_slots": {
+    "production_facts": "Numerous albums across Nuba, Sunnyside, and Blue Note labels; *Flamenco Sketches* (2012) was nominated for a Grammy and reframes Miles Davis's *Kind of Blue* through flamenco compás.",
+    "member_dynamics": "Self-described chain of influence: Mahavishnu Orchestra and Weather Report → Bill Evans and Thelonious Monk → Paco de Lucía. The Bill Evans / Paco de Lucía pairing is the public methodological signature of his work and the closest documented prior precedent to Dorantes' aesthetic.",
+    "cultural_venue": "Cádiz origin (Andalusian flamenco heartland) plus the international jazz circuit (Blue Note, JAZZBaltica, etc.).",
+    "instrumentation_details": "Acoustic piano in jazz trio / quartet contexts, with palmas and cajón frequently joining; compás-based phrasing applied to standard jazz-piano voicings.",
+    "release_circumstances": "*Chano* (1993) is generally cited as the first major flamenco-jazz piano album by a flamenco-rooted pianist; *Flamenco Sketches* (Blue Note, 2012) earned the project international jazz-press visibility."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "methodological_descent",
+    "upward_root",
+    "flamenco_piano_predecessor"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Chano_Dom%C3%ADnguez  [T2]",
+    "https://latinjazznet.com/artists/artist-profile-chano-dominguez  [T2-3 specialized]",
+    "https://latinjazznet.com/reviews/albums/chano-dominguez-flamenco-sketches/  [T3]",
+    "https://worldmusiccentral.org/2018/05/24/interview-with-chano-dominguez/  [T2 artist interview]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

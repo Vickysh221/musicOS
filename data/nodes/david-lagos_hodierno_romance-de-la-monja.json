@@ -1,0 +1,53 @@
+{
+  "id": "david-lagos_hodierno_romance-de-la-monja",
+  "artist": "David Lagos",
+  "period": {
+    "label": "Hodierno (2024)",
+    "year_start": 2024,
+    "year_end": 2024
+  },
+  "works": [
+    {
+      "title": "Romance de la monja (que no quiso serlo)",
+      "type": "track",
+      "year": 2024
+    },
+    {
+      "title": "Hodierno",
+      "type": "album",
+      "year": 2024
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "current-generation cante × experimental contemporary chamber",
+    "geographic_locus": "Jerez de la Frontera (origin)",
+    "historical_role": "Jerez-born cantaor of the current generation who pairs deep cante hondo with contemporary composition. *Hodierno* (2024) is a recent flamenco-art-music statement; user has 'Romance de la monja (que no quiso serlo)' in red-heart (2026-05-04) — one of the most recent red-heart hits in the entire library, confirming the user's ear is currently deep inside contemporary cante. A natural episode-closing signal."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 2024.",
+    "member_dynamics": "Lagos belongs to the Jerez de la Frontera flamenco lineage — one of cante's most concentrated geographies along with Lebrija and Utrera.",
+    "cultural_venue": "Jerez / Madrid contemporary cante circuit.",
+    "instrumentation_details": "Cante with flamenco guitar plus chamber-music textures.",
+    "release_circumstances": "Recent release, in active rotation in the user's listening as of mid-2026."
+  },
+  "tags": [
+    "library_closure_signal",
+    "current_generation_cante"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心 2026-05-04: Romance de la monja (que no quiso serlo) — Hodierno"
+  ],
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://es.wikipedia.org/wiki/David_Lagos  [T2]",
+    "data/user_tracks.json  [user data — red-heart 2026-05-04]"
+  ],
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2026-05-04: Romance de la monja (que no quiso serlo)"
+    ],
+    "confidence": "high"
+  }
+}

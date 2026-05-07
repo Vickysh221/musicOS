@@ -1,0 +1,50 @@
+{
+  "id": "silvia-perez-cruz_11-de-novembre_no-te-pude-conocer",
+  "artist": "Sílvia Pérez Cruz",
+  "period": {
+    "label": "11 de Novembre (2012)",
+    "year_start": 2012,
+    "year_end": 2012
+  },
+  "works": [
+    {
+      "title": "No te pude conocer",
+      "type": "track",
+      "year": 2012
+    },
+    {
+      "title": "11 de Novembre",
+      "type": "album",
+      "year": 2012
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco × Catalan-folk × fado × Cuban × song-form translation",
+    "geographic_locus": "Palafrugell, Catalonia / Barcelona / global",
+    "historical_role": "The Catalan-rooted vocalist who sustains the *song-form* translation across folk, acoustic jazz, fado, flamenco, Cuban, Brazilian — sometimes within a single album, frequently across four languages (Catalan, Spanish, Portuguese, Galician). *11 de Novembre* (2012) is her first proper solo album of original songs. A defining female-translation voice of the 2010s, methodologically descending from Buika and from the Lebrijano-orchestral lineage in the same way Dorantes does."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 2012. Pérez Cruz composed and arranged all material; co-produced with Raül Fernández Refree. Album titled after her late father Cástor Pérez's birthday.",
+    "member_dynamics": "Father (musician Cástor Pérez) died two days before his birthday; album becomes a memorial dedication.",
+    "cultural_venue": "Palafrugell, Catalonia (havaneras tradition); Barcelona contemporary scene.",
+    "instrumentation_details": "Voice plus acoustic chamber arrangements drawing from flamenco, fado, jazz, Catalan-folk; multilingual.",
+    "release_circumstances": "Gold-certified in Spain (20,000+ copies — significant for an independent release)."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "downward_descent",
+    "female_song_form_lineage"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://www.elflamencovive.com/english/silvia-perez-cruz-11-de-novembre-cd.html  [T2 specialized]",
+    "https://grokipedia.com/page/S%C3%ADlvia_P%C3%A9rez_Cruz  [T3]",
+    "https://www.qobuz.com/fr-fr/album/11-de-novembre-silvia-perez-cruz/0060253701298  [T2 — distributor]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

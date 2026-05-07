@@ -1,0 +1,55 @@
+{
+  "id": "carmen-linares_flamenco-vivo_zorongo-gitano",
+  "artist": "Carmen Linares",
+  "period": {
+    "label": "Flamenco Vivo / Lorca's *Canciones populares antiguas* (1996)",
+    "year_start": 1996,
+    "year_end": 1996
+  },
+  "works": [
+    {
+      "title": "Zorongo Gitano",
+      "type": "track",
+      "year": 1996
+    },
+    {
+      "title": "Flamenco Vivo (Canciones Populares Antiguas) [Recopiladas por Federico García Lorca]",
+      "type": "album",
+      "year": 1996
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "cante hondo × Lorca poetic recovery (deep traditional cante on traditional repertoire)",
+    "geographic_locus": "Linares, Jaén (origin) / Madrid",
+    "historical_role": "Cited as one of the leading exponents of cante hondo of the second half of the 20th century. *Flamenco Vivo* (1996) is her interpretation of the popular songs collected and harmonised by Federico García Lorca in 1931 — a recovery of the deep Andalusian song tradition that flamenco arose from. Princess of Asturias Prize for Arts (2022). User has 'Zorongo Gitano' from this album in red-heart (2026-02-10) — a closing signal that the listener's ear has gone deep into the cante root that Dorantes' translation aesthetic flows out of."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 1996. The repertoire is Lorca's transcriptions of *canciones populares antiguas* (1931).",
+    "member_dynamics": "Born 1951 in Linares (Jaén); generational peer of Paco de Lucía, Camarón, Enrique Morente, José Mercé, Manolo Sanlúcar, Tomatito.",
+    "cultural_venue": "Madrid mature-cante circuit; international concert halls.",
+    "instrumentation_details": "Cante with flamenco guitar; on this album frequent palmas and minimal percussion.",
+    "release_circumstances": "Premio Nacional de Música 2001; Princess of Asturias Award 2022."
+  },
+  "tags": [
+    "library_closure_signal",
+    "cante_jondo_root",
+    "lorca_lineage"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心 2026-02-10: Zorongo Gitano — Flamenco Vivo (Canciones Populares Antiguas) [Recopiladas por Federico García Lorca]"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Carmen_Linares  [T2]",
+    "https://music.apple.com/us/album/flamenco-vivo-canciones-populares-antiguas-recopiladas/1211757146  [T1 — Apple Music label page]",
+    "data/user_tracks.json  [user data — red-heart 2026-02-10]"
+  ],
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2026-02-10: Zorongo Gitano"
+    ],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "maria-jose-llergo_sanacion_nina-de-las-dunas",
+  "artist": "María José Llergo",
+  "period": {
+    "label": "Niña de las Dunas / generation-2020 cantaora (2018)",
+    "year_start": 2018,
+    "year_end": 2020
+  },
+  "works": [
+    {
+      "title": "Niña de las Dunas",
+      "type": "track",
+      "year": 2018
+    },
+    {
+      "title": "Sanación",
+      "type": "album",
+      "year": 2020
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco cante × electronic / contemporary songcraft (current-generation cantaora)",
+    "geographic_locus": "Pozoblanco, Córdoba (origin) / Barcelona (training, ESMUC)",
+    "historical_role": "The current-generation cantaora most often cited alongside Rosalía as the Gen Z flamenco-cante voice — but with a stronger inherited cante line, having learned from her grandfather Pepe (José Sánchez Muñoz) in the olive fields of Pozoblanco. Studied flamenco at ESMUC in Barcelona under the same school that produced Rosalía. 2022 Goya Award for Best Original Song. Active living edge of the female-cante translation lineage."
+  },
+  "narrative_slots": {
+    "production_facts": "*Niña de las Dunas* released 2018 with flamenco guitarist Marc López. Debut album *Sanación* released 2020 on Sony Music.",
+    "member_dynamics": "Born 1994, Pozoblanco, Córdoba. Learned cante from her grandfather Pepe in the olive fields. Trained at conservatory (solfeo, violin) before flamenco specialization at ESMUC under Chiqui de la Línea — same teacher as Rosalía.",
+    "cultural_venue": "Pozoblanco (Córdoba olive country) / Barcelona (training).",
+    "instrumentation_details": "Cante with flamenco guitar; on later work also production-driven contemporary arrangements.",
+    "release_circumstances": "Won Goya Award for Best Song 2022 ('Te espera el mar', from film *Mediterráneo*)."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "downward_descent",
+    "current_generation_cante",
+    "female_cante_lineage"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://elartedevivirelflamenco.com/cantaores1070.html  [T2 specialized]",
+    "https://www.pikaramagazine.com/2018/03/maria-jose-llergo-verdades-flamencas/  [T2 — Spanish cultural press]",
+    "https://www.infolibre.es/cultura/maria-jose-llergo-no-siento-atada-flamenco-reves-flamenco-libre_1_1193601.html  [T1-2 — Infolibre interview]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

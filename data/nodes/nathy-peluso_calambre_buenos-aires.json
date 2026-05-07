@@ -1,0 +1,49 @@
+{
+  "id": "nathy-peluso_calambre_buenos-aires",
+  "artist": "Nathy Peluso",
+  "period": {
+    "label": "Calambre (2020)",
+    "year_start": 2020,
+    "year_end": 2020
+  },
+  "works": [
+    {
+      "title": "Buenos Aires",
+      "type": "track",
+      "year": 2020
+    },
+    {
+      "title": "Calambre",
+      "type": "album",
+      "year": 2020
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "Argentine tango / bolero × hip-hop / soul / flamenco (Latin-American extension)",
+    "geographic_locus": "Luján, Argentina (origin) / Madrid / Barcelona",
+    "historical_role": "Extends the translation lineage *outside* the Iberian peninsula — Argentine-born, Spain-based, fuses tango, salsa, hip-hop, soul, and flamenco. *Calambre* won the Latin Grammy for Best Alternative Music Album (2021). Methodological descendant of the same translation aesthetic at the Latin American end."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 2 October 2020 on Sony Music. Won Best Alternative Music Album at the 2021 Latin Grammys.",
+    "member_dynamics": "Born 1990 in Luján, Argentina; moved to Spain (Murcia, then Barcelona, then Madrid) as a child. The Argentine-Spanish dual rootedness is the engine of her translation work.",
+    "cultural_venue": "Iberian–Latin American axis; Madrid contemporary urban scene.",
+    "instrumentation_details": "Voice across tango, salsa, soul, hip-hop, flamenco-tinted production.",
+    "release_circumstances": "Latin Grammy 2021; sustained festival presence across Spain and Latin America."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "downward_descent",
+    "latin_american_extension"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Calambre_(album)  [T2]",
+    "https://en.wikipedia.org/wiki/Nathy_Peluso  [T2]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

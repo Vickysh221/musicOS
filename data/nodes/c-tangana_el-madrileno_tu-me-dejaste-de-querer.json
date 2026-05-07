@@ -1,0 +1,50 @@
+{
+  "id": "c-tangana_el-madrileno_tu-me-dejaste-de-querer",
+  "artist": "C. Tangana",
+  "period": {
+    "label": "El Madrileño (2021)",
+    "year_start": 2021,
+    "year_end": 2021
+  },
+  "works": [
+    {
+      "title": "Tú Me Dejaste De Querer",
+      "type": "track",
+      "year": 2020
+    },
+    {
+      "title": "El Madrileño",
+      "type": "album",
+      "year": 2021
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco rumba × bachata × hip-hop / pop (post-Rosalía mainstream)",
+    "geographic_locus": "Madrid",
+    "historical_role": "The most commercially dominant post-Rosalía flamenco translation. *El Madrileño* (2021) was the best-selling album in Spain that year, debuted #1 on Spanish charts, #8 US Latin Albums; explicitly a tribute to Spanish roots music with twelve of fourteen tracks built around collaborations with flamenco / Latin folk / rock figures. 'Tú Me Dejaste De Querer' (with Niño de Elche and La Húngara) is the rumba-bachata hinge piece."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 26 February 2021 on Sony Music. Co-produced by Tangana and Alizzz. Tangana described 'Tú Me Dejaste De Querer' as 'the most important song of his career'.",
+    "member_dynamics": "Tangana (Antón Álvarez Alfaro) shifted from hip-hop to root-music collaboration; Niño de Elche (avant-flamenco) and La Húngara (rumba/copla) embody the translation aesthetic on the lead single.",
+    "cultural_venue": "Madrid; the album's title and frame insist on Madrid as a meeting-point for Spanish-language root traditions across the Atlantic.",
+    "instrumentation_details": "Flamenco guitar, palmas, cajón blended with bachata-style guitar phrasing and electronic beat production.",
+    "release_circumstances": "Best-selling album in Spain 2021; broke the post-Rosalía flamenco-pop export market into US Latin charts."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "downward_descent",
+    "post_rosalia"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/El_Madrile%C3%B1o  [T2]",
+    "https://en.wikipedia.org/wiki/T%C3%BA_Me_Dejaste_De_Querer  [T2]",
+    "https://www.npr.org/2022/01/02/1069519800/c-tangana-album-el-madrileno  [T1 — NPR feature]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

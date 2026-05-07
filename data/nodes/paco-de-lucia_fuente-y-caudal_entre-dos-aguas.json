@@ -1,0 +1,51 @@
+{
+  "id": "paco-de-lucia_fuente-y-caudal_entre-dos-aguas",
+  "artist": "Paco de Lucía",
+  "period": {
+    "label": "Fuente y Caudal / flamenco rumba modernization (1973)",
+    "year_start": 1973,
+    "year_end": 1973
+  },
+  "works": [
+    {
+      "title": "Entre dos aguas",
+      "type": "track",
+      "year": 1973
+    },
+    {
+      "title": "Fuente y Caudal",
+      "type": "album",
+      "year": 1973
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "flamenco rumba × Latin/jazz instrumentation (commercial breakthrough of modern flamenco)",
+    "geographic_locus": "Algeciras, Cádiz / Madrid (recording)",
+    "historical_role": "An improvised flamenco rumba — recorded almost as filler at producer José Torregrosa's last-minute request — that crossed over to mainstream Spanish listeners (300,000 copies of *Fuente y Caudal*) and made flamenco internationally legible. The first widely-heard flamenco recording with congas, bongos, and electric bass; replaced traditional palmas with bongo on a flagship track. Both modernization and commercial-canonization root for everything Dorantes' generation built on."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 1973, released on the album *Fuente y Caudal* on Philips/Polygram Spain. Produced by José Torregrosa, who told Paco the album was incomplete and needed one more piece — *Entre dos aguas* was improvised in the session.",
+    "member_dynamics": "Paco de Lucía is the figure Dorantes' jazz-piano colleague Chano Domínguez later called 'his biggest influence along with Bill Evans' — Paco's modernization made flamenco-jazz piano thinkable as a project.",
+    "cultural_venue": "Spain in 1973, two years before Franco's death; the piece functioned as a quiet manifesto that flamenco could change without dissolving.",
+    "instrumentation_details": "Flamenco guitar (Paco) plus congas, bongos, electric bass — instruments that were unheard of in flamenco recordings before this.",
+    "release_circumstances": "Improvised in studio under deadline pressure; became the breakout commercial hit of Paco's career and one of the most-played flamenco pieces in mainstream Spanish radio."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "upward_root",
+    "flamenco_modernization"
+  ],
+  "red_heart_tier": "blind_spot",
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Entre_dos_aguas_(song)  [T2]",
+    "https://allflamenco.net/en/50-anniversary-entre-dos-aguas/  [T2 specialized press]",
+    "https://www.udiscovermusic.com/stories/paco-de-lucia-best-songs/  [T2 music journalism]",
+    "https://uvadoc.uva.es/handle/10324/58603  [T1 academic — Universidad de Valladolid analysis]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}
