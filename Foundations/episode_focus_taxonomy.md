@@ -40,6 +40,21 @@ This file is the canonical registry. Add a new focus by appending a section belo
 
 ---
 
+## riff_inversion
+
+- **Slug:** `riff_inversion`
+- **Episode title pattern (ZH):** `三全音之后 — <anchor song>` (or, when anchor is not tritone-based, substitute the anchor's own riff-defining gesture; the template name remains `riff_inversion`).
+- **`connection_kinds_in_scope`:** `riff_aesthetic_inheritance`, `riff_aesthetic_mutation`, `riff_aesthetic_inversion`, plus `direct_influence` / `methodological_descent` / `genealogical_descent` / `same_era_dialogue` / `hybridization` / `inversion` when the dialogue is about the riff aesthetic itself.
+- **`aesthetic_response` field (required for this focus):** every non-anchor tracklist entry carries one of `heir | mutation | inversion`. This drives Act assignment in Phase 2.
+- **Node fields the prompt should read** (Phase 2): `instrumentation_details`, `production_facts`, `member_dynamics`, `release_circumstances`, `cultural_venue` (in spec §8 priority order, with `instrumentation_details` promoted to first because riff identity is gear-and-technique-driven). The OPENER sound cue is sourced via prompt elicitation per the same three-tier fallback used in `bassline_dna`.
+- **Mute rule:** if the node has no documented riff-aesthetic significance → assign `narrative_weight: bridge` and `muted_this_episode: true` in tracklist.
+- **OPENING template seed:** one concrete sonic micro-description of the anchor's defining riff gesture (16–30 ZH chars; e.g. for *Black Sabbath* the slow tritone climb under thunder/bell); then "今天这一集我们沿着这条 riff 谱系往外走，看后来的人怎么继承、改造、又怎么反叛它"; then one arc-overview sentence (track count + year span + four-act structure).
+- **CLOSING template seed:** name the closing track's inversion gesture; explicitly call out the loopback (closing's minimalism vs. anchor's minimalism, when applicable); name the two `selected_as_strong` connections that are also `red_heart_tier: hit`.
+- **`intrinsic_score_weight_overrides`:** raise `concrete_carrier` to 0.30 (riff identity needs a concrete moment — exact timestamp, exact key, exact technique); leave others at default-minus-0.05 (story_drive 0.30 / evidential_strength 0.20 / focus_relevance 0.20).
+- **Node selection rule (carries forward from Episode 2):** inclusion is by lineage merit, NOT by user red-heart hit.
+
+---
+
 ## voicing (placeholder, not yet shipped)
 
 - **Slug:** `voicing`
