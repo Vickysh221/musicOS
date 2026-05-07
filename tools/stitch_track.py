@@ -40,6 +40,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 FADEOUT = 5.5
+MUSIC_FADE_IN = 1.0      # 1s linear fade-in for music-first styles (C/C_ALIGNED/C_SHORT/B)
 A_OVERLAP = 4.0          # music starts 4s before narration ends
 A_BED_LEVEL = 0.30       # music volume during overlap (under narration tail)
 A_RAMP_AFTER = 1.0       # ramp 0.30 → 1.0 over 1s after narration
@@ -239,6 +240,7 @@ def stitch_c(narration: Path, music: Path, output: Path, excerpt: float) -> None
     filt = (
         f"[0:a]atrim=0:{music_clip},asetpts=PTS-STARTPTS,"
         f"volume='{vol_expr}':eval=frame,"
+        f"afade=t=in:st=0:d={MUSIC_FADE_IN},"
         f"afade=t=out:st={fadeout_st}:d={FADEOUT}[m];"
         f"[1:a]adelay={narration_delay_ms}|{narration_delay_ms}[n];"
         f"[m][n]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0"
@@ -286,6 +288,7 @@ def stitch_c_aligned(
         f"[0:a]atrim={music_start}:{music_start + music_clip},"
         f"asetpts=PTS-STARTPTS,"
         f"volume='{vol_expr}':eval=frame,"
+        f"afade=t=in:st=0:d={MUSIC_FADE_IN},"
         f"afade=t=out:st={fadeout_st}:d={FADEOUT}[m];"
         f"[1:a]adelay={narration_delay_ms}|{narration_delay_ms}[n];"
         f"[m][n]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0"
@@ -351,6 +354,7 @@ def stitch_b(
         f"[0:a]atrim={t.music_start_in_song}:{t.music_start_in_song + t.music_clip},"
         f"asetpts=PTS-STARTPTS,"
         f"volume='{vol_expr}':eval=frame,"
+        f"afade=t=in:st=0:d={MUSIC_FADE_IN},"
         f"afade=t=out:st={fadeout_st}:d={B_FADEOUT}[m];"
         f"[1:a]adelay={delay_a_ms}|{delay_a_ms}[na];"
         f"[2:a]adelay={delay_b_ms}|{delay_b_ms}[nb];"

@@ -28,7 +28,7 @@ from pathlib import Path
 
 from tools.stitch_track import (
     stitch_a, stitch_c, stitch_c_aligned, stitch_b, probe_duration,
-    FADEOUT, A_OVERLAP, A_BED_LEVEL, A_RAMP_AFTER,
+    FADEOUT, MUSIC_FADE_IN, A_OVERLAP, A_BED_LEVEL, A_RAMP_AFTER,
     C_DUCK_LEVEL, OutOfBounds,
 )
 
@@ -139,6 +139,7 @@ def stitch_c_short(narration: Path, music: Path, output: Path) -> None:
     filt = (
         f"[0:a]atrim=0:{music_clip},asetpts=PTS-STARTPTS,"
         f"volume='{vol_expr}':eval=frame,"
+        f"afade=t=in:st=0:d={MUSIC_FADE_IN},"
         f"afade=t=out:st={timeline}:d={fadeout}[m];"
         f"[1:a]adelay={narration_delay_ms}|{narration_delay_ms}[n];"
         f"[m][n]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0"
