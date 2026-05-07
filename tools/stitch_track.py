@@ -167,6 +167,52 @@ def stitch_c(narration: Path, music: Path, output: Path, excerpt: float) -> None
     _run(music, narration, filt, output)
 
 
+def stitch_c_aligned(
+    narration: Path,
+    music: Path,
+    output: Path,
+    excerpt: float,
+    anchor_seconds: float,
+) -> None:
+    """Style C with reverse-computed music start so the post-narration
+    ramp-up to 100% lands at (anchor_seconds - C_LEAD_IN) in the song."""
+    n_dur = probe_duration(narration)
+    m_dur = probe_duration(music)
+    music_start = compute_aligned_music_start(
+        anchor_seconds=anchor_seconds,
+        n_dur=n_dur,
+        music_total=m_dur,
+        post_roll=excerpt,
+        fadeout=FADEOUT,
+    )
+    timeline = C_PREROLL + C_DUCK_RAMP + n_dur + C_DUCK_RAMP + excerpt
+    duck_start = C_PREROLL
+    duck_end = C_PREROLL + C_DUCK_RAMP
+    rampup_start = duck_end + n_dur
+    rampup_end = rampup_start + C_DUCK_RAMP
+    duck_drop = 1.0 - C_DUCK_LEVEL
+    duck_rise = duck_drop / C_DUCK_RAMP
+    vol_expr = (
+        f"if(lt(t,{duck_start}),1,"
+        f"if(lt(t,{duck_end}),1-(t-{duck_start})*{duck_drop / C_DUCK_RAMP},"
+        f"if(lt(t,{rampup_start}),{C_DUCK_LEVEL},"
+        f"if(lt(t,{rampup_end}),{C_DUCK_LEVEL}+(t-{rampup_start})*{duck_rise},"
+        f"1))))"
+    )
+    fadeout_st = timeline
+    music_clip = timeline + FADEOUT
+    narration_delay_ms = int(duck_end * 1000)
+    filt = (
+        f"[0:a]atrim={music_start}:{music_start + music_clip},"
+        f"asetpts=PTS-STARTPTS,"
+        f"volume='{vol_expr}':eval=frame,"
+        f"afade=t=out:st={fadeout_st}:d={FADEOUT}[m];"
+        f"[1:a]adelay={narration_delay_ms}|{narration_delay_ms}[n];"
+        f"[m][n]amix=inputs=2:duration=longest:dropout_transition=0:normalize=0"
+    )
+    _run(music, narration, filt, output)
+
+
 def _run(input0: Path, input1: Path, filt: str, output: Path) -> None:
     output.parent.mkdir(parents=True, exist_ok=True)
     cmd = [
