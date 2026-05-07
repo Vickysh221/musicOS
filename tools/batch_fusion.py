@@ -153,10 +153,15 @@ def stitch_c_short(narration: Path, music: Path, output: Path) -> None:
     ], check=True)
 
 
-def find_match(directory: Path, prefix: str, suffix: str = "") -> Path | None:
-    """Find first `<prefix>*<suffix>.mp3`. With empty suffix, skip split-narration `_a`/`_b` files (Style B fetches them explicitly)."""
+def find_match(directory: Path, prefix: str, suffix: str = "", exact_stem: str | None = None) -> Path | None:
+    """Find first `<prefix>*<suffix>.mp3`. With empty suffix, skip split-narration `_a`/`_b` files (Style B fetches them explicitly).
+    If exact_stem is given, look for <directory>/<exact_stem>.mp3 directly."""
+    if exact_stem:
+        p = directory / f"{exact_stem}.mp3"
+        return p if p.exists() else None
     pattern = f"{prefix}*{suffix}.mp3" if suffix else f"{prefix}*.mp3"
-    for f in directory.glob(pattern):
+    matches = sorted(directory.glob(pattern))
+    for f in matches:
         if not suffix and (f.stem.endswith("_a") or f.stem.endswith("_b")):
             continue
         return f
@@ -190,7 +195,7 @@ def main() -> None:
 
         if style == "PASSTHROUGH":
             # No music: use the narration filename as-is (e.g. `00_opening.mp3`).
-            narration = find_match(args.narration_dir, prefix)
+            narration = find_match(args.narration_dir, prefix, exact_stem=ex.get("narration_stem"))
             if not narration:
                 print(f"  skip {pos}: no narration mp3 matching {prefix}*")
                 continue

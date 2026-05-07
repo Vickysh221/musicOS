@@ -31,7 +31,8 @@
       "transcript_zh": "先听 Black Sabbath 同名歌的开头三十秒。\n\n远处的雨声落了一阵，一口教堂钟从雨里挑出来——一下，又一下——然后 Iommi 的吉他从最低端慢慢爬上来，B 到 F，一个三全音，调到 C# 的 SG，落地的时候像一栋楼塌在地基上。\n\n1970 年 2 月 13 号星期五，伦敦 Vertigo 把这张专辑摆上货架。Iommi 和 Butler 选了那个被中世纪叫做 diabolus in musica 的减五度——魔鬼的音程——把它压到地板上，慢得像葬礼。在他们之前，riff 是用来开路、释放能量的；从这首歌开始，riff 是重力本身。\n\n今天这一集我们沿着这条 riff 谱系往外走，看后来的人怎么继承、改造、又怎么反叛它。\n\n一共十八站，从 1967 到 2003，三十六年；分成四幕——起源、元日、改造、反叛。中心节点是 1970 年伦敦 Regent Sound 那一天的录音，Iommi 三根手指、Butler 一支贝斯、Ward 一套鼓、Ozzy 一段哀号。从那一刻往前推三年是 Cream 和 Hendrix 给的工具箱；往后推十六年是 Metallica 把这套语法放大到极致；再往后是有人把它整个翻过来——温柔、淹没、阳光、极简——一路走到 Jack White 在 2003 年那条只剩五个音符的下行线。",
       "transcript_zh_status": "complete",
       "play_mode": "muted",
-      "fusion_style": "PASSTHROUGH"
+      "fusion_style": "PASSTHROUGH",
+      "narration_stem": "00_opening"
     },
     {
       "position": 1,
@@ -590,7 +591,8 @@
       "transcript_zh": "回到 Seven Nation Army 那条线。\n\n五个音，下行，从 E 到 B——Jack White 用一把吉他通过八度踏板装成贝斯，弹出来。一个人，一只乐器，假装是两个人。\n\n三十三年前，1970 年的 Regent Sound，Iommi 也下行——B 到 F，三全音，四个音的核心动机。两个人，两把乐器，往同一个方向砸。\n\n两边都是极简。Sabbath 用最少的音砸出最大的重量，把 riff 沉到地基里；White 用最少的音、最少的人，把 riff 抬上体育场看台变成万人合唱。一个往下，一个往上；一个是 doom，一个是 chant。但骨架是同一根：一条下行的低音线，独立于和声、独立于人声、独立于解释，先被听见，再被相信。\n\n这条线最激进的反叛，最后回到了源头——不是回到三全音的恶魔音程，是回到那个更深的发现：一个 riff 不需要装饰，只需要少。Sabbath 在 1970 年发现的、最被忽视的那一层——极简——被 White 在 2003 年用相反的情绪重新说了一次。\n\n这一集的两次最大命中是 Paranoid 和 Come As You Are——一首 1970 年用速度证明 riff 可以两分多钟就完成全部论证，一首 1991 年用合唱踏板证明同样的 riff 可以泡进水里反过来用。两端都来自这条三全音的回声。",
       "transcript_zh_status": "complete",
       "play_mode": "muted",
-      "fusion_style": "PASSTHROUGH"
+      "fusion_style": "PASSTHROUGH",
+      "narration_stem": "19_closing"
     },
     {
       "position": 20,
@@ -598,7 +600,8 @@
       "transcript_zh": "1970 这一年的 riff 重力到这里集齐了三种形态——慢、中、快——同一支乐队、同一个棚、同一调、同一个月。下一站把时间拨快十六年，看 Metallica 把这套语法放大到极致。",
       "transcript_zh_status": "complete",
       "play_mode": "muted",
-      "fusion_style": "PASSTHROUGH"
+      "fusion_style": "PASSTHROUGH",
+      "narration_stem": "20_interlude"
     }
   ]
 }
