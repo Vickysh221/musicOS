@@ -109,7 +109,8 @@ Example: `rolling-stones_some-girls_miss-you`
 1. 优先源：官方厂牌页、Wikipedia/Wikimedia、MusicBrainz Cover Art Archive、Discogs、Apple Music / Spotify 公开页、艺人官网。避免来源不明的二改图、粉丝拼贴、低分辨率缩略图。
 2. 选图标准：原版专辑/单曲封面，正方形，长边 ≥ 1000px；若仅有竖版/横版海报，需注明来源后再用作降级方案。
 3. 落盘：保存为 JPG（必要时由 PNG/WebP 转码），放入 `musicos-exhibition/public/covers/`，沿用现有命名规则；同步检查 `data/exhibition.json` 中对应条目的 `cover` 字段是否指向新文件。
-4. 记录来源：在提交说明或 PR 描述中给出图片来源 URL，便于版权核查。无法找到合规来源时停下并报告，不要用占位图静默替换。
+4. **压缩**（必须）：运行 `bash tools/compress_cover.sh <file_path>` 或 `bash tools/compress_cover.sh musicos-exhibition/public/covers/` 批量处理。标准：长边 ≤ 1200px、JPEG q=82（过大自动降级至 q=75）、目标 ≤ 500KB。
+5. 记录来源：在提交说明或 PR 描述中给出图片来源 URL，便于版权核查。无法找到合规来源时停下并报告，不要用占位图静默替换。
 
 ## Hard stops (spec §9.1)
 
