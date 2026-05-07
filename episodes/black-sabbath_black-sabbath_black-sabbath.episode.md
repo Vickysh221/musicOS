@@ -1,0 +1,272 @@
+# 三全音之后 — Black Sabbath · 第 3 期 · riff_inversion 谱系 — 完整剧集文稿
+
+
+**Episode ID:** black-sabbath_black-sabbath_black-sabbath__ep-03
+**Episode Number:** 3
+**Episode Focus:** riff_inversion
+**Spec Version:** 0.4
+**Anchor Track:** Black Sabbath — Black Sabbath (Black Sabbath, 1970)
+**Narrator Persona:** near_listener_v1
+**Generated:** 2026-05-08
+
+---
+
+## Opening
+
+先听 Black Sabbath 同名歌的开头三十秒。
+
+远处的雨声落了一阵，一口教堂钟从雨里挑出来——一下，又一下——然后 Iommi 的吉他从最低端慢慢爬上来，B 到 F，一个三全音，调到 C# 的 SG，落地的时候像一栋楼塌在地基上。
+
+1970 年 2 月 13 号星期五，伦敦 Vertigo 把这张专辑摆上货架。Iommi 和 Butler 选了那个被中世纪叫做 diabolus in musica 的减五度——魔鬼的音程——把它压到地板上，慢得像葬礼。在他们之前，riff 是用来开路、释放能量的；从这首歌开始，riff 是重力本身。
+
+今天这一集我们沿着这条 riff 谱系往外走，看后来的人怎么继承、改造、又怎么反叛它。
+
+一共十八站，从 1967 到 2003，三十六年；分成四幕——起源、元日、改造、反叛。中心节点是 1970 年伦敦 Regent Sound 那一天的录音，Iommi 三根手指、Butler 一支贝斯、Ward 一套鼓、Ozzy 一段哀号。从那一刻往前推三年是 Cream 和 Hendrix 给的工具箱；往后推十六年是 Metallica 把这套语法放大到极致；再往后是有人把它整个翻过来——温柔、淹没、阳光、极简——一路走到 Jack White 在 2003 年那条只剩五个音符的下行线。
+
+---
+
+## Track 1: Cream — Sunshine of Your Love (1967)
+
+### Narration
+
+Sunshine of Your Love 一开声，Jack Bruce 的贝斯就走下来——D 调下行——Eric Clapton 的 SG 在同八度齐奏。两件乐器同一个动作，先于人声。
+
+1967 年 8 月，纽约 Atlantic Studios，Felix Pappalardi 和 Tom Dowd 制作。riff 不是 Clapton 写的，是 Bruce 和 Pete Brown 失眠的夜里写出来的，Clapton 在棚里接住。
+
+在这之前 riff 是串场和铺底；这首之后，riff 自己就是身份证——Ginger Baker 的 shuffle 不抢节拍，贴着贝斯线走。Clapton 后来说 Cream 在这首里第一次找到了自己：以 riff 为中心，重，往低处走。
+
+这种"先给 riff"的写法，1967 年同时从两个方向涌出来——Cream 走低音密度，几个月后 Jimi Hendrix Experience 在伦敦录了 Purple Haze，走音程本身的诅咒感。
+
+---
+
+## Track 2: Jimi Hendrix Experience — Purple Haze (1967)
+
+### Narration
+
+Purple Haze 开头那两下——E 到 B♭——是一个减五度，diabolus in musica，中世纪曾被禁掉的那个音程。Hendrix 的左手反着拨右手用的 Strat，Marshall 100 瓦堆的失真把这个音程吹成一团雾。
+
+1967 年 1 月，伦敦 De Lane Lea Studios，Chas Chandler 制作。Hendrix 自己说这条 riff 是从一个梦里来的——他梦见自己走在一片紫雾里，醒来在纸上写下一首歌。Noel Redding 的贝斯和 Mitch Mitchell 的爵士底鼓都退在 riff 后面，整首歌的入口就是那个减五度，而不是和弦进行，也不是旋律。
+
+你刚才在 Cream 那里听到的贝斯吉他齐奏的低音先行——这里 Hendrix 把动作换了一个：不是齐奏，是一个吉他独自把那个魔鬼音程当成开场白。同年，同样是 riff 先行，但维度不同——Cream 走低音密度，Hendrix 走音程本身的诅咒感。
+
+这个用一个减五度开场的动作，三年后会被 Black Sabbath 慢下来、加重，变成整首歌的重量来源。
+
+---
+
+## Track 3: Black Sabbath — Black Sabbath (1970)
+
+### Narration
+
+三十秒之后，Iommi 的 SG 从 B 爬到 F——三全音——Butler 的 Precision Bass 同步齐奏。120 bpm，但听起来像一半——Bill Ward 的鼓不催，是按住。Ozzy 那句 "What is this that stands before me" 是从 riff 缝隙里挤出来的，不是骑在上面。
+
+1969 年 11 月，伦敦 Regent Sound Studios。Rodger Bain 制作。一天录完，预算不到 500 英镑。Iommi 十几岁在工厂里被机器切掉中指和无名指的指尖，他做了塑料假指套，把吉他降到 C# 标准调以减少手指负担。这个被工伤逼出来的降调，意外地成了重金属低端重量的物理来源。Butler 的歌词来自一场噩梦——一个穿黑袍的人站在他床脚——文字和 riff 来自同一个情绪。
+
+你刚才在 Cream 那里听到了贝斯吉他齐奏的低音语法；在 Hendrix 那里听到了那个减五度的诅咒感。Iommi 和 Butler 把这两件东西收到一起，又做了 1967 年没人做的事：降调、放慢、压到地板上。Cream 给了他们齐奏的语法，Hendrix 给了他们三全音作为开场白，这首歌把两层叠起来再加上速度——慢下来之后，riff 不再带能量出去，反而把能量吸进去。这是 1970 年之前没有的声音契约：不是释放，是停滞和重压。
+
+专辑同周发行的是 The Beatles 的 Let It Be——1970 年这一周 rock 的两个极点同时上货架。多数大厂听完 Sabbath 的母带觉得没法听，Vertigo 当风险项目签下来。批评家最初骂得很凶。三十年后大家才回过神：这首歌不是流派开端，是一种声学契约——riff 等于身份，重量等于意义，慢等于权威。
+
+接下来这条线上的人都是在回应这一刻——同一张专辑马上出现两个变体，1972 年开始把这套语法翻译成别的语言，再往后有人把它整个翻过来。
+
+---
+
+## Track 4: Black Sabbath — War Pigs (1970)
+
+### Narration
+
+War Pigs 开头那段慢板——Iommi 和 Butler 半速齐奏——撑三十秒之后突然加速，鼓刹一变整首歌跑起来。7 分 54 秒，Sabbath 第一次让 riff 撑长歌。
+
+1970 年 6 月，同样的 Regent Sound，同样的 Bain。本来叫 Walpurgis，Vertigo 嫌太黑暗换成 War Pigs。Butler 把越战写进歌词——Sabbath 第一次政治化。Ward 在中段那次提速是他自己加的：慢的房间和快的房间在同一首歌里同居。
+
+你刚才在那首三全音的同名歌里听到 riff 统治整首——这首把同样逻辑拉到八分钟，做了之前没做过的事：用速度变化当戏剧建筑。riff 还是主角，这次学会了换房间出场。
+
+---
+
+## Track 5: Black Sabbath — Iron Man (1970)
+
+### Narration
+
+Iron Man 开头——Iommi 把吉他通过环形调制器——音色不像吉他，像金属人在喉咙里说话。75 bpm，比同名歌还慢。
+
+1970 年 6 月，同一批人，同一个棚。调制器是从一个 session 乐手那里借的，Iommi 说那个音色就这一次再没复刻出来。Ozzy 那句 "I am Iron Man" 也走同一台调制器——他不是唱一个机器人，他在变成那个机器人。
+
+你刚才在那首三全音的同名歌里听到 riff 统治一切——这首更进一步：riff 的音色本身就是故事。机器人不在歌词里，在吉他的失真里。重量第一次不是从音高来，是从音色来。这件事十年后会被 Ozzy 自己带到他下一支乐队。
+
+---
+
+## Track 6: Black Sabbath — Paranoid (1970)
+
+### Narration
+
+Paranoid 开头——E 小调下行，164 bpm——比 Iron Man 快了一倍多。没有吉他独奏，没有过渡段，2 分 50 秒里 riff 反复 statement 又 statement。
+
+1970 年 6 月，同一张专辑。这首是补的——Bain 发现专辑还差两分钟，Iommi 25 分钟写出来，Ozzy 单次录完 vocal。整张专辑两天录完。本来叫 War Pigs，因为这首单曲冲到 UK #4，整张被改名 Paranoid。
+
+你刚才听过那首葬礼速度的同名歌——这首是同张专辑的另一个极点：把同样契约压缩到两分多钟，速度翻倍，装饰砍光。riff 不依赖慢、不依赖时长，依赖的是"riff 即全部"——快慢都成立。这是这条线第一次在 UK 前五的重金属单曲。
+
+---
+
+## Track 7: Metallica — Master of Puppets (1986)
+
+### Narration
+
+Master of Puppets 开头——双轨吉他，E–D–C，212 bpm——Hetfield 右手压在琴桥上掌音，每拍像在地板上钉钉子。4 分 18 秒清音段进来，速度掉到 100 bpm，Burton 的贝斯第一次离开 riff 走一段对位。一分钟后 riff 回归，那一下是物理冲击。
+
+1985 年 10 到 12 月，哥本哈根 Sweet Silence Studios，Flemming Rasmussen 制作。Burton 这首录完六个月后死于巡演大巴翻车——他给这首写了 Metallica 全集最自由的一段贝斯。
+
+你刚才在那首 1970 年的三全音里听到"riff 即全部"——这首是 16 年后的版本，把同样语法拉到极速。Iommi 用慢压地，Hetfield 用快钉地——速度反过来，原理一样：riff 之外的一切退场。Hetfield 和 Ulrich 公开把 Black Sabbath 列为奠基人，这首是那条继承的最大值。继承部分到这里走完，接下来是别人翻译这套契约。
+
+---
+
+## Track 8: Deep Purple — Smoke on the Water (1972)
+
+### Narration
+
+Smoke on the Water 那条 riff——Blackmore 用 Strat 不带失真，四个音，四度叠小三度。每个吉他初学者第一首学的就是这条。
+
+1971 年 12 月，瑞士 Montreux 大酒店外面停的 Rolling Stones Mobile——前一天 Frank Zappa 演出现场 Casino 烧了，Gillan 把火直接写进歌词。Blackmore 故意不挂失真，跟 Sabbath 那种 Marshall 全开的厚度反过来。
+
+你刚才在 Black Sabbath 那首同名歌听到恶魔音程的重量——Blackmore 把三全音换成完全四度加小三度，重量还在但学院化了。riff 谱系第一个横向变体：保留语法，换掉音程，去毒化策略走通了。
+
+---
+
+## Track 9: Led Zeppelin — Immigrant Song (1970)
+
+### Narration
+
+Immigrant Song 那条 riff——A–E–A，158 bpm——Page 的 Les Paul 和 Jones 的贝斯齐奏，shuffle 像北欧神话里的马蹄。Plant 一声尖叫从 riff 顶端浮出来。
+
+1970 年 6 月，Headley Grange，Rolling Stones Mobile。Page 制作。写于冰岛巡演之后。
+
+你刚才在 Jimi Hendrix Experience 那里听到 riff 当发射台的能量——同年 1970，这首把那种动能翻译进北欧神话：riff 先行，方向是冲不是压。Sabbath 在伯明翰把 riff 砸进地基的同一年，Zeppelin 在汉普郡让它起飞——重力和动能。
+
+---
+
+## Track 10: Aerosmith — Walk This Way (1975)
+
+### Narration
+
+Walk This Way 那条 riff——Joe Perry 的 Les Paul，断奏切分，每个十六分音符卡在反拍上——122 bpm。Tyler 的人声跟同样切分进来，声音和吉他咬同一节奏型。
+
+1975 年初，纽约 Record Plant。Perry 说这条 riff 来自他在 Muscle Shoals 听到的一段鼓——把 James Brown 的节奏语法搬到吉他。
+
+你刚才在 Immigrant Song 听到 riff 当推进器——这首换成 James Brown 的切分：riff 先行，动能在，拍子卡反面靠预期落差产生重量。1986 年 Run-DMC 和 Aerosmith 合作录了一版，hip-hop 第一次冲进主流摇滚电台——这件事后面会回响。
+
+---
+
+## Track 11: AC/DC — Back In Black (1980)
+
+### Narration
+
+Back In Black 开头——四小节铃声悬着，Angus Young 的 SG 从 E 跳到 D 再到 A——大调，96 bpm，Chuck Berry shuffle 底子。
+
+1980 年 4 到 5 月，巴哈马 Compass Point，Mutt Lange 制作。Bon Scott 二月去世，Brian Johnson 加入的第一张，原是悼念。Lange 把鼓的混响抽光，干、贴脸。
+
+你刚才在 Smoke on the Water 听到三全音换成新古典——这首走得更彻底：小调恶魔音程整个换成大调 boogie。riff 先行没变，情绪从恐惧翻成从悲剧里走出来的硬气。同样的去毒化策略，五千万张唱片，谱系最商业化的一次成功。
+
+---
+
+## Track 12: Ozzy Osbourne — Crazy Train (1980)
+
+### Narration
+
+Crazy Train 那条 riff——A–F#–D，138 bpm——Randy Rhoads 用 Flying V 交替拨弦，快、干净，像巴洛克弦乐组插进 Marshall 失真。
+
+1980 年，伦敦 Tracks Studios。Ozzy 离开 Sabbath 后的第一张——他故意挑了 Rhoads：UCLA 学古典作曲，在妈妈 Dolores Rhoads 办的 Musonia 音乐学校长大，从小弹巴赫。Ozzy 选他是有意识远离 Iommi 的三全音语汇——同一个主唱，换一种语言。
+
+你刚才在 Iron Man 听到环形调制器把吉他变机器人——十年后，同一个主唱，Rhoads 把音色换成新古典弦乐组。这是 M1 的典型——新古典外套包重金属基因。
+
+---
+
+## Track 13: Rage Against the Machine — Killing in the Name (1992)
+
+### Narration
+
+Killing in the Name 那条 riff——Morello 的 Strat，两个音 E 和 D，加 whammy 踏板的潜水弯音——97 bpm，drop D。Zack 的 rap 跟切分上来，末句重复 16 次——人声被当成第二条 riff。
+
+你刚才在 Walk This Way 听到 Perry 把 James Brown 切分搬上吉他——1986 年 Run-DMC 那版把 funk 送进 hip-hop。Morello 公开把这条 funk-rock groove 列为源头：三步走完。
+
+这是 M1 的另一版本——funk 外套包 metal 重量：funk-groove 套在 Sabbath"riff 即重量"的伦理上，riff 变成政治武器。
+
+---
+
+## Track 14: Metallica — Enter Sandman (1991)
+
+### Narration
+
+Enter Sandman 那条 riff——E–F#–E–G–F#——123 bpm，Hammett 写，Hetfield 全程下拨。慢、重、压住。Bob Rock 把吉他中低频推到墙一样的厚度。
+
+1991 年 5 到 6 月，好莱坞 One on One。Black Album 里写的第一条 riff——乐队有意识决定写更短、更广播友好的歌。
+
+你刚才在 Master of Puppets 听到同一支乐队最复杂的版本——这首是五年后的方向反转：复杂度全部拆掉，速度砍半，只保留 riff 的清晰度。Black Album 在美国卖了一千六百万张，Sabbath 契约简化之后的顶峰。同月另一张专辑发行，方向刚好相反。
+
+---
+
+## Track 15: Guns N' Roses — Sweet Child O' Mine (1987)
+
+### Narration
+
+Sweet Child O' Mine 开头——Slash 的 Les Paul，D–C#–A–G，单音分解和弦，跨四根弦——122 bpm。不是强力和弦，是一段单音旋律线。
+
+1987 年，洛杉矶 Rumbo Studios，Mike Clink 制作。Slash 说那段是他随手练的"马戏团旋律"，Axl 听到立刻定下当 intro。Slash 把 Les Paul 的 tone 拧得偏干净，故意去掉 AC/DC 那种厚墙感。
+
+你刚才在 Back In Black 听到大调 boogie riff 带着自信进来——同样 riff 先行、同样开头比副歌更被记住——这首换了方向：送来的不是力量，是温柔。riff 契约保留，重量第一次被换成柔软。这是谱系的第一次反叛。
+
+---
+
+## Track 16: Nirvana — Come As You Are (1991)
+
+### Narration
+
+Come As You Are 那条 riff——E–F#–E–G–F#，120 bpm，drop D——和 Enter Sandman 几乎同组音、同速度。但 Cobain 把吉他通过 Boss CE-2 合唱踏板送出去，声音不再是墙，是水底。
+
+1991 年 5 到 6 月，Sound City，Butch Vig 制作。Cobain 直说要把硬摇滚的 testosterone 拆掉——他用了 feminise——把 metal-style riff 泡软。
+
+你刚才听到的是商业金属 1991 年的重量顶点——同月发行——这首是它的反面。同组音、同速度、同样 riff 先行，attack 不见了，剩下空心的 riff 在水里。继承结构，否决美学。
+
+---
+
+## Track 17: Soundgarden — Black Hole Sun (1994)
+
+### Narration
+
+Black Hole Sun 那条 riff——Kim Thayil 的 SG 走 drop D，G–E–E♭–B♭–A♭——73 bpm，Sabbath 的葬礼速度。但和声是大调，不是小调三全音。Cornell 的 falsetto 从厚失真上方飘出来。
+
+1993 到 1994 年，西雅图，Beinhorn 制作。Cornell 15 分钟写完。Thayil 用 Iommi 同款 SG 接 Marshall——音色直接抄 Sabbath——和声选了大调。
+
+你刚才听到 Nirvana 在 Come As You Are 把金属泡进水——这首走另一条反叛路：留 Sabbath 的 drop D 和 73 bpm，和声从恶魔小调换成超现实大调。情绪整个翻。
+
+---
+
+## Track 18: The White Stripes — Seven Nation Army (2003)
+
+### Narration
+
+Seven Nation Army 那条 riff——E–E–G–E–D–C–B，五个音的下行——Jack White 用一把 Airline 半空心吉他通过 DigiTech Whammy 踏板调到下八度，听起来像贝斯，但乐队没有贝斯手。两个人：Jack 弹吉他唱歌，Meg 打鼓。
+
+2002 年，伦敦 Toe Rag Studios，全模拟设备。White 公开说他在用约束创作——只能用 1960 年代之前的器材，只能两个人，没有贝斯。这条 riff 后来变成全世界体育场的合唱。
+
+你刚才在 Sweet Child O' Mine 听到 Slash 的下行单音分解和弦——White 在这里推到极端：更少的音、更少的人，一把吉他装两件乐器。把 riff 谱系从最大化的双吉他双轨墙逆推回一个人一根线。
+
+回到这一集开头 Iommi 的 B–F——三全音、四个音的下行动机——White 这条线也是下行、也是低端、也是极简。最激进的反叛回到源头——不是回到三全音，是回到那个更深的发现：极简本身就是 riff 的全部论证。
+
+---
+
+## Interlude
+
+1970 这一年的 riff 重力到这里集齐了三种形态——慢、中、快——同一支乐队、同一个棚、同一调、同一个月。下一站把时间拨快十六年，看 Metallica 把这套语法放大到极致。
+
+---
+
+## Closing
+
+回到 Seven Nation Army 那条线。
+
+五个音，下行，从 E 到 B——Jack White 用一把吉他通过八度踏板装成贝斯，弹出来。一个人，一只乐器，假装是两个人。
+
+三十三年前，1970 年的 Regent Sound，Iommi 也下行——B 到 F，三全音，四个音的核心动机。两个人，两把乐器，往同一个方向砸。
+
+两边都是极简。Sabbath 用最少的音砸出最大的重量，把 riff 沉到地基里；White 用最少的音、最少的人，把 riff 抬上体育场看台变成万人合唱。一个往下，一个往上；一个是 doom，一个是 chant。但骨架是同一根：一条下行的低音线，独立于和声、独立于人声、独立于解释，先被听见，再被相信。
+
+这条线最激进的反叛，最后回到了源头——不是回到三全音的恶魔音程，是回到那个更深的发现：一个 riff 不需要装饰，只需要少。Sabbath 在 1970 年发现的、最被忽视的那一层——极简——被 White 在 2003 年用相反的情绪重新说了一次。
+
+这一集的两次最大命中是 Paranoid 和 Come As You Are——一首 1970 年用速度证明 riff 可以两分多钟就完成全部论证，一首 1991 年用合唱踏板证明同样的 riff 可以泡进水里反过来用。两端都来自这条三全音的回声。
