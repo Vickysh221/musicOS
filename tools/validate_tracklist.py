@@ -3,12 +3,16 @@
 Usage: python3 tools/validate_tracklist.py <slug>
 
 Asserts:
-  - Exactly 18 rows (configurable later via episode_config.yaml)
+  - Exact row count per episode_config.yaml (default 18; per-slug override allowed)
   - Exactly one is_base_node = true
   - Every row.node_id resolves in data/nodes/
   - <=30% of non-muted rows have evidence_basis == 'hypothesis'
   - audio_url resolvable rate >=60% (heuristic: netease_song_id present)
   - focus_relevance_note non-empty on every non-muted row
+  - Duplicate node_ids forbidden unless episode_config.yaml sets
+    allow_duplicate_anchor_node: true for that slug AND exactly one of the duplicate
+    rows carries is_base_node=true (dual-version anchor pattern, e.g. ep4 Orobroy
+    1998↔2010).
 
 Exits 0 on green, 1 with a printed diff on any failure.
 """
@@ -18,11 +22,62 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-EXPECTED_ROWS = 18
+DEFAULT_EXPECTED_ROWS = 18
 HYPOTHESIS_CAP = 0.30
 AUDIO_RESOLVE_FLOOR = 0.60
 VALID_WEIGHTS = {"anchor", "pillar", "supporting", "bridge"}
 BRIDGE_RATIO_WARN = 0.10
+
+
+def _load_config(slug: str) -> dict:
+    """Read episode_config.yaml (lightweight inline parser; no PyYAML dep).
+
+    Supported shape:
+        defaults:
+          expected_rows: 18
+        episodes:
+          <slug>:
+            expected_rows: 20
+            allow_duplicate_anchor_node: true
+    """
+    cfg_path = ROOT / "episode_config.yaml"
+    result = {"expected_rows": DEFAULT_EXPECTED_ROWS, "allow_duplicate_anchor_node": False}
+    if not cfg_path.exists():
+        return result
+    text = cfg_path.read_text()
+    # Tiny YAML subset parser: tracks indentation of two anchor blocks.
+    section = None  # 'defaults' | 'episodes' | None
+    current_slug = None
+    for raw in text.splitlines():
+        line = raw.split("#", 1)[0].rstrip()
+        if not line.strip():
+            continue
+        indent = len(line) - len(line.lstrip())
+        stripped = line.strip()
+        if indent == 0 and stripped.endswith(":"):
+            section = stripped[:-1]
+            current_slug = None
+            continue
+        if section == "defaults" and indent == 2 and ":" in stripped:
+            k, v = [s.strip() for s in stripped.split(":", 1)]
+            if k == "expected_rows":
+                try:
+                    result["expected_rows"] = int(v)
+                except ValueError:
+                    pass
+        elif section == "episodes":
+            if indent == 2 and stripped.endswith(":"):
+                current_slug = stripped[:-1]
+            elif indent == 4 and current_slug == slug and ":" in stripped:
+                k, v = [s.strip() for s in stripped.split(":", 1)]
+                if k == "expected_rows":
+                    try:
+                        result["expected_rows"] = int(v)
+                    except ValueError:
+                        pass
+                elif k == "allow_duplicate_anchor_node":
+                    result["allow_duplicate_anchor_node"] = v.lower() in ("true", "yes", "1")
+    return result
 
 
 def fail(msg: str) -> None:
@@ -31,22 +86,54 @@ def fail(msg: str) -> None:
 
 
 def main(slug: str) -> None:
+    config = _load_config(slug)
+    expected_rows = config["expected_rows"]
+    allow_dup_anchor = config["allow_duplicate_anchor_node"]
+
     path = ROOT / "playlists" / f"{slug}.tracklist.json"
     if not path.exists():
         fail(f"missing {path}")
     rows = json.loads(path.read_text())
     if not isinstance(rows, list):
         fail("tracklist.json must be a JSON array")
-    if len(rows) != EXPECTED_ROWS:
-        fail(f"expected {EXPECTED_ROWS} rows, got {len(rows)}")
+    if len(rows) != expected_rows:
+        fail(f"expected {expected_rows} rows, got {len(rows)}")
 
     positions = sorted([r["position"] for r in rows])
-    if positions != list(range(1, EXPECTED_ROWS + 1)):
-        fail(f"positions are not contiguous 1–{EXPECTED_ROWS}: got {positions}")
+    if positions != list(range(1, expected_rows + 1)):
+        fail(f"positions are not contiguous 1–{expected_rows}: got {positions}")
 
     bases = [r for r in rows if r.get("is_base_node")]
     if len(bases) != 1:
         fail(f"expected exactly one is_base_node, got {len(bases)}")
+
+    # Duplicate node_id rule
+    seen: dict[str, list[int]] = {}
+    for r in rows:
+        seen.setdefault(r["node_id"], []).append(r["position"])
+    duplicates = {nid: ps for nid, ps in seen.items() if len(ps) > 1}
+    if duplicates:
+        if not allow_dup_anchor:
+            fail(
+                f"duplicate node_ids forbidden by default: {duplicates}. Set "
+                f"allow_duplicate_anchor_node: true in episode_config.yaml to permit "
+                f"a dual-version anchor pattern."
+            )
+        # Allowed only when the duplicates are exactly the anchor node and exactly one
+        # of the duplicate rows is the is_base_node.
+        anchor_node_id = bases[0]["node_id"]
+        for nid, ps in duplicates.items():
+            if nid != anchor_node_id:
+                fail(
+                    f"duplicate node_id={nid!r} at positions {ps} is not the anchor "
+                    f"node ({anchor_node_id!r}); only the anchor may appear twice."
+                )
+            anchor_rows = [r for r in rows if r["node_id"] == nid and r.get("is_base_node")]
+            if len(anchor_rows) != 1:
+                fail(
+                    f"dual-version anchor: exactly one of the duplicate {nid!r} rows "
+                    f"must have is_base_node=true; got {len(anchor_rows)}."
+                )
 
     # narrative_weight (spec v0.4 §2.4)
     for r in rows:

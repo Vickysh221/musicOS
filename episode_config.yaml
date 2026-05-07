@@ -1,0 +1,19 @@
+# Per-slug episode configuration overrides.
+# Default row count is 18 (track-curator SKILL.md and validate_tracklist.py default).
+# Episodes that diverge from the default (ep4 onward, ~20 stops to match Miss You / Estranged
+# arc length when the design calls for it) declare their row count here.
+
+defaults:
+  expected_rows: 18
+
+episodes:
+  # Episode 4 — Dorantes / Orobroy. Design at
+  # docs/superpowers/specs/2026-05-07-ep4-orobroy-episode-design.md calls for ~20 stops
+  # (matching Miss You / Estranged arc length) and a dual-version anchor: Orobroy (2010
+  # Nueva versión) at position 1, Orobroy (1998 original) at position 13. Both rows
+  # reference the same node_id `dorantes_orobroy_orobroy` per the nodes-as-singletons
+  # rule (CLAUDE.md). Validator allows duplicate node_ids only when one of them is the
+  # is_base_node anchor and the other is not — see allow_duplicate_anchor_node below.
+  dorantes_orobroy_orobroy:
+    expected_rows: 20
+    allow_duplicate_anchor_node: true
