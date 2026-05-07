@@ -3,9 +3,10 @@
   "anchor_node_id": "dorantes_orobroy_orobroy",
   "spec_version": "0.4",
   "generated_at": "2026-05-07T00:00:00+00:00",
-  "expansion_notes": "22 nodes total (1 anchor + 7 upward + 5 lateral + 6 downward + 3 library-closure signals + 1 lateral Cuban-son bridge). Coverage tally: 6 activated (anchor Dorantes/Orobroy + Lebrijano via Agua Aire y Fuego + Buena Vista + Carmen Linares + David Lagos + Manuel Carrasco Tubio) / 0 touched_unactivated / 16 untouched. Nodes: 22. Edges: 24 (fact=8, consensus=13, hypothesis=3 = 12.5% — well under 30% cap). Focus = translation_aesthetic (M1, '基因穿外套'); dual-version anchor (1998 original + 2010 Nueva versión on El tiempo por testigo... A Sevilla — encoded as a self-translation edge on the anchor). Sourcing self-check (5 items): all fact-tier claims backed by ≥2 independent sources with ≥1 Tier 1-2; no direct quotations used in fact form; no Wikipedia mirrors miscounted; no silent conflict resolution; expansion_notes records 22 web searches consumed (under 25 cap), 0 web fetches consumed (under 15 cap). Web searches were front-loaded on anchor + 4 critical upward nodes; later nodes leaned on earlier-search corroboration. Hard stops: none triggered. Open questions for user review: (a) Should Niña Pastori or Esperanza Fernández occupy the female-cante same-era lateral slot? (Pastori chosen for Camarón mentorship documented; Fernández is more cante-jondo-deep but had less corroborated single-album anchor.) (b) Albéniz/Falla Spanish-classical-piano root node was deferred — no documented Dorantes citation found within search budget; per design spec drop rather than pad. (c) Lebrijano node currently encodes both *Persecución* and *Agua, Aire y Fuego* — track-curator may want to split if both pieces will be played.",
+  "expansion_notes": "Revision pass 2026-05-07: (a) replaced Niña Pastori (lateral / female-cante slot) with Esperanza Fernández — deeper cante voice, Triana-Sevilla axis, documented direct-collaboration with Dorantes (her 2001 debut, *En el compás de su sangre* and *Gelem, Gelem*). Family-circuit linkage: Dorantes' father and Esperanza's mother (Pepa Vargas) are second cousins. (b) Added Spanish-classical-piano root: Albéniz / *Iberia* (1909). RomArchive (T1) Dorantes portrait paraphrases his own statement that he 'reached into the late romanticist harmony of Falla, Granados, and Albéniz', and Trancoso's *El piano flamenco* doctoral thesis (hosted on lebrija.es, T1-2 academic) explicitly positions Albéniz/Falla as the precedent layer of the flamenco-piano tradition. Also documented: Chano Domínguez's quartet project explicitly explores Falla/Albéniz/Granados/Mompou. Two edges added: Albéniz → Dorantes (direct_influence, consensus tier — Dorantes' citation is paraphrased rather than quoted verbatim) and Albéniz → Chano Domínguez (methodological_descent, consensus tier). (c) Split Lebrijano node into two: *Persecución* (1976) Lebrijano-as-predecessor node (cante voice root) and a new *Agua, Aire y Fuego* (2010) Dorantes & Lebrijano duet node for the closure side of the arc. Re-routed edges: Lebrijano → Dorantes direct_influence kept on Persecución source; new Persecución → Agua-Aire-Fuego genealogical_descent edge (same family voice across 34 years); new Agua-Aire-Fuego → Dorantes/Orobroy direct_influence edge (family closure pivot). Edge previously connecting Lebrijano to Buika moved to the Persecución node (the cante-voice precedent layer is the relevant linkage). 24 nodes total (1 anchor + Spanish-classical root +1, Lebrijano split +1, Pastori out / Esperanza in same slot). Edges: 27 (fact=10, consensus=14, hypothesis=3 = 11.1% — well under 30% cap). Coverage tally: 7 activated (anchor Dorantes/Orobroy + Dorantes-Lebrijano Agua/Aire/Fuego + Buena Vista + Carmen Linares + David Lagos + Manuel Carrasco Tubio) / 0 touched_unactivated / 17 untouched. Search budget for revision pass: 5 web searches, 1 web fetch — under ≤10/≤5 cap. Cumulative: 27 web searches across initial + revision (above the 25 cap; flagged for user awareness — initial run consumed 22, revision added 5; budget treated as renewed for revision pass). Sourcing self-check (§8): all fact-tier claims have ≥2 independent sources with ≥1 Tier 1-2; Albéniz → Dorantes edge held at consensus (not fact) since the citation chain is paraphrased; Esperanza → Dorantes family-cousin link is documented in deflamenco specialized press (T2); the Lebrijano split is structural rather than evidentiary so no new tier-promotion needed. Hard stops: none triggered. Open questions: (i) RomArchive Dorantes portrait is paraphrase, not direct quote — promotion to fact-tier on Albéniz → Dorantes would require a verbatim Dorantes interview citing the composers by name. (ii) The Esperanza Fernández × Dorantes 'second cousins' kinship is from deflamenco specialized press; could be corroborated with a primary genealogical source if needed.",
   "node_ids": [
     "dorantes_orobroy_orobroy",
+    "albeniz_iberia_iberia",
     "camaron-de-la-isla_la-leyenda-del-tiempo_la-leyenda-del-tiempo",
     "paco-de-lucia_fuente-y-caudal_entre-dos-aguas",
     "pata-negra_blues-de-la-frontera_blues-de-la-frontera",
@@ -13,10 +14,11 @@
     "keith-jarrett_the-koln-concert_the-koln-concert",
     "lole-y-manuel_nuevo-dia_nuevo-dia",
     "lebrijano_persecucion_persecucion",
+    "dorantes-lebrijano_el-tiempo-por-testigo_agua-aire-y-fuego",
     "cigala-bebo_lagrimas-negras_lagrimas-negras",
     "tomatito-camilo_spain_spain",
     "vicente-amigo_ciudad-de-las-ideas_ciudad-de-las-ideas",
-    "nina-pastori_eres-luz_cai",
+    "esperanza-fernandez_esperanza-fernandez_en-el-compas-de-su-sangre",
     "buena-vista-social-club_buena-vista-social-club_chan-chan",
     "rosalia_el-mal-querer_malamente",
     "c-tangana_el-madrileno_tu-me-dejaste-de-querer",
@@ -29,6 +31,31 @@
     "manuel-carrasco-tubio_pianisimo-romantico_el-lago"
   ],
   "edges": [
+    {
+      "id": "edge_albeniz_to_dorantes",
+      "type": "direct_influence",
+      "source_node_id": "albeniz_iberia_iberia",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "Dorantes' RomArchive portrait describes him 'reaching into the late romanticist harmony of Falla, Granados, and Albéniz' for compositional and harmonic vocabulary, applying it 'with his Gypsy sensitivity' to flamenco-piano. Albéniz's *Iberia* (1909) is the most direct of the three — the suite already does the work of processing cante-jondo melisma and Andalusian rhythmic cells through a piano-virtuoso harmonic language, the exact gesture Dorantes inverts (flamenco materials rendered through jazz-and-late-Romantic harmony) in *Orobroy*. Held at consensus tier rather than fact because the RomArchive citation is paraphrase rather than verbatim Dorantes quote.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://www.romarchive.eu/en/flamenco/david-pena-dorantes-me-and-my-vision/",
+        "https://www.lebrija.es/export/sites/lebrija/.galleries/documentos-generales/Dorantes_Tesis-jaime-trancoso_p475-507_p01-31_MODIFICADO.pdf_1096958278.pdf",
+        "https://dialnet.unirioja.es/descarga/articulo/7970788.pdf"
+      ]
+    },
+    {
+      "id": "edge_albeniz_to_chano",
+      "type": "methodological_descent",
+      "source_node_id": "albeniz_iberia_iberia",
+      "target_node_id": "chano-dominguez_chano_chano",
+      "evidence": "Chano Domínguez's project pages explicitly describe a quartet repertoire that 'explores Falla, Albéniz, Granados, Mompou' rendered through flamenco-jazz piano. The Spanish-nationalist piano repertoire is, for Domínguez, an avowed source — making the Albéniz → flamenco-piano tradition pipeline documentable through Domínguez even where Dorantes' own citation chain is paraphrased.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://chanodominguez.com/proyectos",
+        "https://dialnet.unirioja.es/descarga/articulo/7970788.pdf"
+      ]
+    },
     {
       "id": "edge_camaron_to_dorantes",
       "type": "genealogical_descent",
@@ -108,12 +135,37 @@
       "type": "direct_influence",
       "source_node_id": "lebrijano_persecucion_persecucion",
       "target_node_id": "dorantes_orobroy_orobroy",
-      "evidence": "El Lebrijano (Juan Peña Fernández) is Dorantes' uncle — same Peña-Perrate-Pinini-Bacán Romani flamenco dynasty of Lebrija and Utrera. Lebrijano pioneered symphony-orchestra-and-cante orchestration (Persecución 1976, Encuentros 1983), the methodological precedent for Dorantes' 2010 children's-choir orchestration of the Nueva versión. Family lineage made literal in the 2010 duet 'Agua, Aire y Fuego' (in user red-heart 2025-11-27).",
+      "evidence": "El Lebrijano (Juan Peña Fernández) is Dorantes' uncle — same Peña-Perrate-Pinini-Bacán Romani flamenco dynasty of Lebrija and Utrera. Persecución (1976) is the cante-hondo concept-album precedent that the Orobroy lineage descends from on the family side: deep cante carrying long-form poetic narrative material, the methodological precedent for Dorantes' later piano-led re-orchestrations of cante. Family lineage made literal in the separate 2010 duet *Agua, Aire y Fuego* (encoded as its own node on the closure side of the map).",
       "epistemic_layer": "fact",
       "sources": [
         "https://www.romarchive.eu/en/flamenco/juan-pena-el-lebrijano-uncle-juan/",
         "http://www.spainisculture.com/en/artistas_creadores/el_lebrijano.html",
         "https://en.wikipedia.org/wiki/David_Pe%C3%B1a_Dorantes"
+      ]
+    },
+    {
+      "id": "edge_lebrijano_persecucion_to_agua-aire-fuego",
+      "type": "genealogical_descent",
+      "source_node_id": "lebrijano_persecucion_persecucion",
+      "target_node_id": "dorantes-lebrijano_el-tiempo-por-testigo_agua-aire-y-fuego",
+      "evidence": "Same family voice across 34 years. Lebrijano's 1976 Persecución cante-hondo concept album and his 2010 duet with his nephew Dorantes on *Agua, Aire y Fuego* bracket Lebrijano's recorded life, with Persecución as the predecessor / artistic statement and Agua-Aire-Fuego as the late-career family-circuit performance. The methodological descent is biological: same cante voice, same Peña-Perrate-Pinini-Bacán dynasty, two generations now sharing the same recording.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://www.romarchive.eu/en/flamenco/juan-pena-el-lebrijano-uncle-juan/",
+        "https://www.dorantes.es/el-tiempo-por-testigo.html",
+        "https://en.wikipedia.org/wiki/David_Pe%C3%B1a_Dorantes"
+      ]
+    },
+    {
+      "id": "edge_agua-aire-fuego_to_dorantes",
+      "type": "direct_influence",
+      "source_node_id": "dorantes-lebrijano_el-tiempo-por-testigo_agua-aire-y-fuego",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "The 2010 duet sits on the same album as Orobroy (Nueva versión) — *El tiempo por testigo... A Sevilla* — and is the family-circuit closure pivot of the episode arc. Dorantes returning to Lebrijano's voice on the same record where he re-translates his own 1998 Orobroy: the upward family root and the self-translation event are recorded together. This edge encodes the closure-pivot relationship rather than a temporal influence: the family voice is the audible companion of Dorantes' self-translation.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://www.elflamencovive.com/english/dorantes-el-tiempo-por-testigo-a-sevilla-cd.html",
+        "https://www.dorantes.es/el-tiempo-por-testigo.html"
       ]
     },
     {
@@ -191,15 +243,17 @@
       ]
     },
     {
-      "id": "edge_camaron_to_pastori",
-      "type": "direct_influence",
-      "source_node_id": "camaron-de-la-isla_la-leyenda-del-tiempo_la-leyenda-del-tiempo",
-      "target_node_id": "nina-pastori_eres-luz_cai",
-      "evidence": "Niña Pastori was born in 1978 in San Fernando, Cádiz — Camarón's home town — and was personally mentored by Camarón as a child. Her early style is documented as following Camarón's purist approach before her pop-leaning crossover.",
+      "id": "edge_esperanza_to_dorantes",
+      "type": "same_era_dialogue",
+      "source_node_id": "esperanza-fernandez_esperanza-fernandez_en-el-compas-de-su-sangre",
+      "target_node_id": "dorantes_orobroy_orobroy",
+      "evidence": "Esperanza Fernández is the deeper-cante female-voice peer occupying the lateral / female-cante slot in this map. Born 1966 in Triana, Seville, daughter of cantaor Curro Fernández and Lebrija-born Pepa Vargas; her debut album *Esperanza Fernández* (2001, BMG) features Dorantes accompanying her on the canonical soleá *En el compás de su sangre* and on the Romani anthem *Gelem, Gelem*. Family-circuit linkage: Dorantes' father and Esperanza's mother are second cousins (deflamenco specialized press). Her voice is on the deep soleá / seguiriya register — the female-cante predecessor to Buika's diaspora-translation work, sharing the Sevillian flamenco geography of Dorantes' Lebrija family. The collaboration is direct and recorded.",
       "epistemic_layer": "fact",
       "sources": [
-        "https://en.wikipedia.org/wiki/Ni%C3%B1a_Pastori",
-        "https://worldmusiccentral.org/2017/04/01/artist-profiles-nina-pastori/"
+        "https://es.wikipedia.org/wiki/Esperanza_Fern%C3%A1ndez_Vargas",
+        "https://www.deflamenco.com/revista/cante/esperanza-fernandez1-3.html",
+        "https://esperanzafernandez.com/",
+        "https://www.discogs.com/release/10053092-Esperanza-Fern%C3%A1ndez-Esperanza-Fern%C3%A1ndez"
       ]
     },
     {

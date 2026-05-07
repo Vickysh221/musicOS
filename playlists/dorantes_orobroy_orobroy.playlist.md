@@ -5,7 +5,7 @@
 
 The anchor sits in the middle of the listener's own five-year arc into Iberian music: from Buena Vista Social Club (2023) through Cuban jazz/funk (PALO!, Irakere, 2025) into deep flamenco (Dorantes, Lebrijano, Carmen Linares, David Lagos — late 2025 through May 2026). This map traces the lineage upstream and the descent downstream while keeping the listener's own ear in view.
 
-**Total tracks**: 22 · **Estimated time**: ~95–105 min
+**Total tracks**: 24 · **Estimated time**: ~105–115 min
 
 ---
 
@@ -61,16 +61,29 @@ Released 16 June 1979 on PolyGram. Produced by Ricardo Pachón (also Lole y Manu
 
 ---
 
-## Track 5: El Lebrijano — Persecución (1976) [or "Ven y Sígueme"]
+## Track 5: El Lebrijano — Persecución (1976)
 *From Persecución*
 
-**Cante hondo root + family lineage — M3, hit (via Agua, Aire y Fuego).** Dorantes' uncle. Same Peña-Perrate-Pinini-Bacán Romani flamenco dynasty of Lebrija and Utrera. *Persecución* (1976) narrates the persecution of the Romani people through poet Félix Grande's verses, breaking convention by introducing "cante por galeras" — and pioneering the use of symphony orchestras in flamenco creations, the methodological precedent for Dorantes' 2010 children's-choir orchestration of the *Nueva versión*.
+**Cante hondo root, family voice predecessor — M3.** Dorantes' uncle. Same Peña-Perrate-Pinini-Bacán Romani flamenco dynasty of Lebrija and Utrera. *Persecución* (1976) narrates the persecution of the Romani people through poet Félix Grande's verses, breaking convention by introducing "cante por galeras" as a vehicle for long-form historical narrative. The album's modernity is conceptual / textual rather than instrumental — voice and guitar, but carrying poetic weight unfamiliar to traditional cante.
 
-Born Juan Peña Fernández, 1941, Lebrija. Brother of Pedro Peña; cousin of Pedro Bacán; uncle of Dorantes (David Peña Dorantes). The 2010 duet *Agua, Aire y Fuego* with his nephew on *El tiempo por testigo* is the family lineage made literal — and is in the user's red-heart (2025-11-27). Lebrijano died in 2016.
+Born Juan Peña Fernández, 1941, Lebrija. Brother of Pedro Peña; cousin of Pedro Bacán; uncle of Dorantes (David Peña Dorantes). Lebrijano died in 2016. This is the predecessor pole of the family arc — the 2010 duet with his nephew Dorantes is encoded separately at Track 16 as the closure pole.
 
-**M3**: member-period attention — the family table is part of the Orobroy story.
+**M3**: member-period attention — the family voice on its own, before the duet.
 
 [Listen on NetEase — search El Lebrijano · Persecución]
+
+---
+
+## Track 5b: Isaac Albéniz — Iberia (1909)
+*From Iberia, Books I–IV (suite for piano)*
+
+**Spanish classical-piano root — upward axis, blind spot.** Founding figure of Spanish musical nationalism. *Iberia* (1905–09) is a 12-piece programmatic suite painting Spanish regional portraits — Andalusian, Castilian, Catalan — using cante-jondo melismatic figuration and zapateado rhythmic cells processed through late-Romantic / proto-Impressionist piano-virtuoso harmony. The suite is itself a cartography of Spain: the gesture Dorantes inverts in 1998 when he carries flamenco materials *into* a piano-led harmonic vocabulary.
+
+Dorantes' own RomArchive portrait describes him "reaching into the late romanticist harmony of Falla, Granados, and Albéniz" for his harmonic and compositional vocabulary. Trancoso's *El piano flamenco* doctoral thesis (hosted by the Lebrija municipal archive) names Albéniz/Falla as the precedent layer of the flamenco-piano tradition. Chano Domínguez's quartet project also explicitly explores the Falla / Albéniz / Granados / Mompou repertoire.
+
+**M1**: cante-jondo material rendered through nationalist-classical harmony — the inverse gesture of Orobroy, sourced from a generation before recorded flamenco.
+
+[Listen on NetEase — search Isaac Albéniz · Iberia]
 
 ---
 
@@ -165,16 +178,16 @@ Born Guadalcanal, raised in Córdoba; studied for a decade with Manolo Sanlúcar
 
 ---
 
-## Track 13: Niña Pastori — Cai (2002)
-*From María / Eres Luz era*
+## Track 13: Esperanza Fernández — En el compás de su sangre (2001)
+*From Esperanza Fernández (debut album)*
 
-**Female-cante same-era lateral — M2 visit.** Born 1978 in San Fernando, Cádiz — Camarón's home town — and personally mentored by Camarón as a child. Worked with Alejandro Sanz and Paco Ortega on her first three albums; the most-heard female cante voice of the late 1990s and 2000s on Spanish radio.
+**Deep-cante female voice, family circuit — M1, blind spot.** Born 1966 in Triana, Seville. Daughter of cantaor Curro Fernández and Lebrija-born cantaora Pepa Vargas — and Esperanza's mother and Dorantes' father are second cousins. The collaboration is family. *En el compás de su sangre* is a canonical soleá with lyrics by José de la Tomasa, where Dorantes accompanies her on piano, improvising over a falseta during the central section. The album also includes the Romani anthem *Gelem, Gelem* with Dorantes on piano, and *Garrotín* with lyrics by José Saramago.
 
-Pop-leaning crossover, a gentler lateral on the female-voice translation axis — matters here because the user's ear has shown preference for female flamenco voice (Carmen Linares, Buika downstream). The Camarón-mentorship lineage is documented and direct.
+The deeper voice the user asked for. Where the previous draft of this map placed Niña Pastori (Camarón's San Fernando lineage, pop-leaning crossover) in this slot, Esperanza sits closer to the Orobroy core: same Sevillian-Romani circuit as the Peña-Perrate-Pinini-Bacán dynasty, deep soleá and seguiriya register, recorded duo with Dorantes himself. Debuted at sixteen with Mario Maya's *Amargo*; later shared stages with Paco de Lucía, Camarón, Enrique Morente, Rafael Riqueni; received the Giraldillo del Cante at the XV Bienal de Flamenco de Sevilla (2008).
 
-**M1**: flamenco cante × pop translation, female-voice axis.
+**M1**: deep cante (female voice) × Dorantes piano — the duet form one tier removed from the anchor itself.
 
-[Listen on NetEase — search Niña Pastori · Cai]
+[Listen on NetEase — search Esperanza Fernández · En el compás de su sangre]
 
 ---
 
@@ -191,16 +204,16 @@ This is the version in the user's red-heart (2025-11-10). The 1998 → 2010 gap 
 
 ---
 
-## Track 15: Dorantes feat. El Lebrijano — Agua, Aire y Fuego (2010)
+## Track 15: Dorantes & El Lebrijano — Agua, Aire y Fuego (2010)
 *From El tiempo por testigo... A Sevilla — **HIT**, red-heart 2025-11-27*
 
-**Family lineage made literal — hit.** From the same 2010 album as Track 14. Piano nephew accompanying cante-jondo uncle on a single track. Dorantes and El Lebrijano belong to the same Peña-Perrate-Pinini-Bacán Romani dynasty of Lebrija and Utrera; this duet is the genealogy of the entire upper-axis lineage made audible in one performance.
+**Family lineage made literal — hit, closure pole of the family arc.** From the same 2010 album as Track 14, with cantaor Nolasco also featured. Piano nephew accompanying cante-jondo uncle on a single track. Dorantes and El Lebrijano belong to the same Peña-Perrate-Pinini-Bacán Romani dynasty of Lebrija and Utrera; this duet is the genealogy of the entire upward axis made audible in one performance.
 
-Lebrijano died in 2016, six years after this recording — *Agua, Aire y Fuego* is among the late performances of his cante. The user's red-heart on this track (2025-11-27) confirms the listener's ear has gone all the way to the family table.
+The 34-year arc from *Persecución* (Track 5, 1976) to this duet is the family voice translated across two generations: cante hondo as concept-album poetry → cante hondo as piano-accompanied family ballad. Lebrijano died in 2016, six years after this recording — *Agua, Aire y Fuego* is among the late performances of his cante. The user's red-heart on this track (2025-11-27) confirms the listener's ear has gone all the way to the family table.
 
 **M3 (member-period attention) + hit**: the in-library closure signal that the upward axis has been heard.
 
-[Listen on NetEase — search Dorantes Lebrijano · Agua Aire y Fuego]
+[Listen on NetEase](https://music.163.com/#/song?id=558684506) — Dorantes · Agua, Aire y Fuego (feat. Lebrijano)
 
 ---
 
@@ -295,4 +308,4 @@ The episode closes with Lagos because the listener has, in 2026, walked their ow
 
 ---
 
-*Playlist generated 2026-05-07 · Sonic Cartography · Dorantes / Orobroy anchor expansion · Episode 4 · Focus = translation_aesthetic (M1, "基因穿外套") · Dual-version anchor: 1998 original (Track 8) + 2010 Nueva versión (Track 14)*
+*Playlist generated 2026-05-07 (revised 2026-05-07 same date) · Sonic Cartography · Dorantes / Orobroy anchor expansion · Episode 4 · Focus = translation_aesthetic (M1, "基因穿外套") · Dual-version anchor: 1998 original (Track 8) + 2010 Nueva versión (Track 14) · Revisions: Niña Pastori → Esperanza Fernández (deeper cante, family circuit); added Albéniz/Iberia as Spanish classical-piano root (Track 5b); split Lebrijano into Persecución (Track 5, predecessor) + Agua-Aire-Fuego (Track 15, closure)*

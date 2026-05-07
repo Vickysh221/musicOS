@@ -1,0 +1,58 @@
+{
+  "id": "dorantes-lebrijano_el-tiempo-por-testigo_agua-aire-y-fuego",
+  "artist": "Dorantes & El Lebrijano",
+  "period": {
+    "label": "Family-table closure / nephew-uncle duet (2010)",
+    "year_start": 2010,
+    "year_end": 2010
+  },
+  "works": [
+    {
+      "title": "Agua, Aire y Fuego",
+      "type": "track",
+      "year": 2010
+    },
+    {
+      "title": "El tiempo por testigo... A Sevilla",
+      "type": "album",
+      "year": 2010
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "cante jondo (Lebrijano) × flamenco-jazz piano (Dorantes) — family-circuit duet",
+    "geographic_locus": "Lebrija / Seville (Peña-Perrate-Pinini-Bacán family line made literal)",
+    "historical_role": "The performance event that closes the upward / family-root axis of the Orobroy episode. *Agua, Aire y Fuego* — featured on Dorantes' 2010 retrospective album *El tiempo por testigo... A Sevilla*, also featuring Nolasco — is the late-career duet of nephew and uncle, with Dorantes' piano accompanying El Lebrijano's cante. Lebrijano died in 2016, six years after this recording. The 34-year arc from *Persecución* (1976) to this 2010 duet is the family voice translated across two generations: cante hondo as concept-album poetry → cante hondo as piano-accompanied family ballad."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 2010 on *El tiempo por testigo... A Sevilla*, recorded live in studio with Dorantes' working trio (Dorantes piano / Francis Posé double bass / Javi Ruibal percussion). Track also features cantaor Nolasco. Album marks 20 years of Dorantes' career.",
+    "member_dynamics": "Dorantes (David Peña Fernández, b. 1969, Lebrija) and El Lebrijano (Juan Peña Fernández, b. 1941, Lebrija) are nephew and uncle — Lebrijano is the brother of Dorantes' father. Same Peña-Perrate-Pinini-Bacán Romani flamenco dynasty. The duet performs the genealogy that the rest of the upward axis of the map sketches abstractly.",
+    "cultural_venue": "Sevillian / Lebrija family table — the dynastic Romani-flamenco circuit of Lebrija and Utrera, now staged as a recorded performance event rather than an inherited folkway.",
+    "instrumentation_details": "Cante (Lebrijano voice) + piano (Dorantes) + double bass + percussion + secondary cante (Nolasco). The piano takes the role traditionally held by flamenco guitar — the methodological inversion of the entire Orobroy project performed inside the family.",
+    "release_circumstances": "Track present in user red-heart library since 2025-11-27 (NetEase, *Flamenco Top* compilation, song id 558684506). The library hit on this track confirms the user's ear has reached the family-table closure of the upward axis."
+  },
+  "tags": [
+    "closure",
+    "family_lineage",
+    "library_closure_signal",
+    "translation_aesthetic"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心 2025-11-27: Agua, Aire y Fuego (feat. Dorantes, Lebrijano) — Flamenco Top (NetEase id 558684506)"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://www.elflamencovive.com/english/dorantes-el-tiempo-por-testigo-a-sevilla-cd.html  [T2 — label/artist personnel page for the 2010 album]",
+    "https://www.dorantes.es/el-tiempo-por-testigo.html  [T1 — Dorantes official site, album page]",
+    "https://www.romarchive.eu/en/flamenco/juan-pena-el-lebrijano-uncle-juan/  [T1 — RomArchive: Lebrijano biography, family lineage]",
+    "https://en.wikipedia.org/wiki/David_Pe%C3%B1a_Dorantes  [T2]",
+    "data/user_tracks.json  [user data — red-heart 2025-11-27]"
+  ],
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2025-11-27: Agua, Aire y Fuego (feat. Dorantes, Lebrijano)"
+    ],
+    "confidence": "high"
+  }
+}
