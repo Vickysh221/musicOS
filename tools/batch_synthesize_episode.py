@@ -29,21 +29,21 @@ from pathlib import Path
 from tools.tts_minimax import load_env_local, synthesize
 
 ROOT = Path(__file__).resolve().parent.parent
-MUSIC_DIR = ROOT / "musicos-exhibition" / "public" / "audio"
+DEFAULT_MUSIC_DIR = ROOT / "musicos-exhibition" / "public" / "audio"
 
 
-def music_stem_for_position(pos: int) -> str | None:
+def music_stem_for_position(music_dir: Path, pos: int) -> str | None:
     prefix = f"{pos:02d}_"
-    for f in MUSIC_DIR.glob(f"{prefix}*.mp3"):
+    for f in music_dir.glob(f"{prefix}*.mp3"):
         return f.stem
     return None
 
 
-def output_stem(exhibit: dict) -> str:
+def output_stem(exhibit: dict, music_dir: Path) -> str:
     pos = exhibit["position"]
     kind = exhibit["kind"]
     if kind == "track":
-        stem = music_stem_for_position(pos)
+        stem = music_stem_for_position(music_dir, pos)
         if stem:
             return stem
         return f"{pos:02d}_track"
@@ -76,6 +76,8 @@ def main() -> None:
     p.add_argument("--episode", required=True, type=Path)
     p.add_argument("--voice", required=True)
     p.add_argument("--output-dir", required=True, type=Path)
+    p.add_argument("--music-dir", type=Path, default=DEFAULT_MUSIC_DIR,
+                   help="dir containing NN_<artist>_<track>.mp3 source files; used to derive narration stems")
     p.add_argument("--model", default="speech-02-hd")
     p.add_argument("--force", action="store_true",
                    help="re-synth even if output exists")
@@ -103,7 +105,7 @@ def main() -> None:
         if not parts:
             print(f"  skip {pos:02d} {kind}: no narration text")
             continue
-        stem = output_stem(ex)
+        stem = output_stem(ex, args.music_dir)
 
         for text, source_field, suffix in parts:
             out_path = args.output_dir / f"{stem}{suffix}.mp3"
