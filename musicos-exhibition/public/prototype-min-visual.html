@@ -1,0 +1,595 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+<title>EP3 · Minimal Visual System Prototype</title>
+<style>
+  :root {
+    --bg: #0a0a0c;
+    --ink: #f0eee8;
+    --dim: #6b6862;
+    --rule: #1f1e1c;
+    --glow: #f5d97a;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0; padding: 0;
+    background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    overscroll-behavior: none;
+    user-select: none; -webkit-user-select: none;
+  }
+  body { min-height: 100vh; min-height: 100dvh; }
+
+  /* phone-shaped container, but full-width on actual phone */
+  .frame {
+    max-width: 440px;
+    margin: 0 auto;
+    height: 100vh; height: 100dvh;
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* ---------- stack stage ---------- */
+  .stage {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .disc {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 70vw;
+    max-width: 280px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    overflow: hidden;
+    transform-origin: center center;
+    transition:
+      transform 900ms cubic-bezier(0.32, 0.72, 0.24, 1),
+      opacity 900ms cubic-bezier(0.32, 0.72, 0.24, 1),
+      filter 900ms cubic-bezier(0.32, 0.72, 0.24, 1);
+    will-change: transform, opacity;
+    background: #1a1916;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  }
+  .disc img {
+    width: 100%; height: 100%; object-fit: cover;
+    display: block;
+  }
+  .disc::after {
+    /* vinyl center hole */
+    content: "";
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 14%; height: 14%;
+    border-radius: 50%;
+    background: #0a0a0c;
+    box-shadow: inset 0 0 0 2px #2a2926;
+  }
+
+  /* center disc spins slowly while playing */
+  .disc.center.playing img {
+    animation: spin 18s linear infinite;
+  }
+  @keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+  }
+
+  /* glow ring layer (separate so it doesn't fight transform) */
+  .disc .glow-ring {
+    position: absolute;
+    inset: -8%;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    background: radial-gradient(closest-side, rgba(245,217,122,0.55), rgba(245,217,122,0) 70%);
+    transition: opacity 120ms ease-out;
+  }
+  .disc.glowing .glow-ring { opacity: 1; }
+  .disc.glowing {
+    animation: nudge 600ms cubic-bezier(0.32, 0.72, 0.24, 1);
+  }
+  @keyframes nudge {
+    0%   { filter: brightness(1) saturate(1); }
+    20%  { filter: brightness(1.45) saturate(1.2); }
+    100% { filter: brightness(1) saturate(1); }
+  }
+
+  /* ---------- subtitle ---------- */
+  .subtitle-area {
+    padding: 16px 28px 8px;
+    min-height: 96px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.7;
+    color: var(--ink);
+  }
+  .subtitle {
+    opacity: 0;
+    transition: opacity 280ms ease;
+  }
+  .subtitle.show { opacity: 1; }
+  .now-playing {
+    color: var(--dim);
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .now-playing b { color: var(--ink); font-weight: 500; text-transform: none; }
+
+  /* ---------- controls ---------- */
+  .controls {
+    padding: 12px 24px calc(20px + env(safe-area-inset-bottom));
+    border-top: 1px solid var(--rule);
+  }
+  .progress {
+    height: 3px;
+    background: var(--rule);
+    border-radius: 2px;
+    overflow: hidden;
+    margin-bottom: 14px;
+    cursor: pointer;
+  }
+  .progress > div {
+    height: 100%;
+    background: var(--ink);
+    width: 0;
+    transition: width 100ms linear;
+  }
+  .btnrow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .btn {
+    background: transparent;
+    color: var(--ink);
+    border: 1px solid var(--rule);
+    border-radius: 999px;
+    padding: 10px 16px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .btn.play {
+    border-color: var(--ink);
+    padding: 10px 24px;
+    min-width: 88px;
+  }
+  .btn:disabled { opacity: 0.4; }
+  .stat {
+    flex: 1;
+    text-align: center;
+    color: var(--dim);
+    font-size: 11px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* ---------- info overlay ---------- */
+  .info-toggle {
+    position: absolute;
+    top: calc(12px + env(safe-area-inset-top));
+    right: 14px;
+    color: var(--dim);
+    font-size: 11px;
+    background: transparent;
+    border: 1px solid var(--rule);
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .info {
+    position: absolute;
+    inset: 0;
+    background: rgba(10,10,12,0.96);
+    backdrop-filter: blur(8px);
+    padding: 60px 28px 32px;
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.7;
+    color: var(--ink);
+    z-index: 4;
+    display: none;
+  }
+  .info.show { display: block; }
+  .info h2 { font-size: 16px; font-weight: 500; margin: 0 0 10px; }
+  .info h3 { font-size: 13px; font-weight: 500; color: var(--glow); margin: 18px 0 6px; }
+  .info p { margin: 6px 0; color: #c8c5be; }
+  .info kbd { background: #1f1e1c; padding: 1px 6px; border-radius: 3px; font-size: 11px; }
+</style>
+</head>
+<body>
+<div class="frame">
+
+  <button class="info-toggle" id="infoBtn">说明</button>
+
+  <div class="stage" id="stage">
+    <!-- discs injected here -->
+  </div>
+
+  <div class="subtitle-area">
+    <div class="now-playing"><span id="nowMeta">加载中...</span></div>
+    <div class="subtitle" id="subtitle"></div>
+  </div>
+
+  <div class="controls">
+    <div class="progress" id="progress"><div id="progressBar"></div></div>
+    <div class="btnrow">
+      <button class="btn" id="prevBtn">← 上一站</button>
+      <button class="btn play" id="playBtn">播放</button>
+      <button class="btn" id="nextBtn">下一站 →</button>
+    </div>
+    <div class="stat" id="timeStat" style="margin-top: 8px;"></div>
+  </div>
+
+  <div class="info" id="info">
+    <h2>EP3 · 最小视觉系统原型</h2>
+    <p>三个视觉原语：<b>堆叠 · 交接 · 回响</b>。所有时间画面只做这三件事。</p>
+
+    <h3>堆叠（spatial）</h3>
+    <p>当前曲目居中放大；已播曲目在上方堆叠（按播放顺序、透视压扁）；即将播放在下方（更暗、纯封面）。绝大多数时间画面静止。</p>
+
+    <h3>交接（transition）</h3>
+    <p>一首结束、下一首开始时：新 disc 升入中心，旧 disc 沉入上方堆叠。整集 18 次。</p>
+
+    <h3>回响（callback glow）</h3>
+    <p>TTS 念到一个已经在 stack 里的曲目（说出别的歌的艺人名/歌名）：那张 disc 短暂金光 + 微抖 ~0.6 秒。<b>不区分</b> X / A / anchor，全用同一个原语。</p>
+
+    <h3>检测规则（v0）</h3>
+    <p>逐句扫描字幕文本，匹配已播曲目的艺人名或歌名 → 触发 glow。前向预告（提到尚未播放的曲目）<b>不</b>触发——视觉不剧透。</p>
+
+    <h3>怎么测</h3>
+    <p>耳机一只塞耳朵，盯着屏幕走路，看节奏是否可信赖。重点听 #2/#3/#6/#8/#12 这几首末段——回响的密度对不对。</p>
+
+    <p style="margin-top:24px"><button class="btn" onclick="document.getElementById('info').classList.remove('show')">关闭</button></p>
+  </div>
+</div>
+
+<audio id="audio" preload="metadata"></audio>
+
+<script>
+// =====================================================================
+// EP3 manifest — opening + 18 tracks + closing
+// =====================================================================
+const TRACKS = [
+  { idx: 0,  type: "narration", label: "开场", file: "00_opening",
+    aliases: [] },
+  { idx: 1,  type: "track", artist: "Cream", song: "Sunshine of Your Love", year: 1967,
+    file: "01_cream_sunshine-of-your-love",
+    aliases: ["Cream", "Clapton", "Bruce"] },
+  { idx: 2,  type: "track", artist: "Jimi Hendrix Experience", song: "Purple Haze", year: 1967,
+    file: "02_jimi-hendrix-experience_purple-haze",
+    aliases: ["Hendrix", "Jimi Hendrix Experience", "Purple Haze"] },
+  { idx: 3,  type: "track", artist: "Black Sabbath", song: "Black Sabbath", year: 1970,
+    file: "03_black-sabbath_black-sabbath",
+    aliases: ["Black Sabbath", "Sabbath", "Iommi", "同名歌", "三全音"] },
+  { idx: 4,  type: "track", artist: "Black Sabbath", song: "War Pigs", year: 1970,
+    file: "04_black-sabbath_war-pigs",
+    aliases: ["War Pigs"] },
+  { idx: 5,  type: "track", artist: "Black Sabbath", song: "Iron Man", year: 1970,
+    file: "05_black-sabbath_iron-man",
+    aliases: ["Iron Man", "环形调制器"] },
+  { idx: 6,  type: "track", artist: "Black Sabbath", song: "Paranoid", year: 1970,
+    file: "06_black-sabbath_paranoid",
+    aliases: ["Paranoid"] },
+  { idx: 7,  type: "track", artist: "Metallica", song: "Master of Puppets", year: 1986,
+    file: "07_metallica_master-of-puppets",
+    aliases: ["Master of Puppets", "Hetfield", "Burton"] },
+  { idx: 8,  type: "track", artist: "Deep Purple", song: "Smoke on the Water", year: 1972,
+    file: "08_deep-purple_smoke-on-the-water",
+    aliases: ["Smoke on the Water", "Blackmore", "Deep Purple"] },
+  { idx: 9,  type: "track", artist: "Led Zeppelin", song: "Immigrant Song", year: 1970,
+    file: "09_led-zeppelin_immigrant-song",
+    aliases: ["Immigrant Song", "Zeppelin", "Led Zeppelin", "Page", "Plant"] },
+  { idx: 10, type: "track", artist: "Aerosmith", song: "Walk This Way", year: 1975,
+    file: "10_aerosmith_walk-this-way",
+    aliases: ["Walk This Way", "Perry", "Aerosmith"] },
+  { idx: 11, type: "track", artist: "AC/DC", song: "Back In Black", year: 1980,
+    file: "11_ac-dc_back-in-black",
+    aliases: ["Back In Black", "AC/DC", "Angus Young"] },
+  { idx: 12, type: "track", artist: "Ozzy Osbourne", song: "Crazy Train", year: 1980,
+    file: "12_ozzy-osbourne_crazy-train",
+    aliases: ["Crazy Train", "Rhoads", "Ozzy"] },
+  { idx: 13, type: "track", artist: "Rage Against the Machine", song: "Killing in the Name", year: 1992,
+    file: "13_rage-against-the-machine_killing-in-the-name",
+    aliases: ["Killing in the Name", "Morello", "Rage"] },
+  { idx: 14, type: "track", artist: "Metallica", song: "Enter Sandman", year: 1991,
+    file: "14_metallica_enter-sandman",
+    aliases: ["Enter Sandman"] },
+  { idx: 15, type: "track", artist: "Guns N' Roses", song: "Sweet Child O' Mine", year: 1987,
+    file: "15_guns-n-roses_sweet-child-o-mine",
+    aliases: ["Sweet Child O' Mine", "Slash", "Axl"] },
+  { idx: 16, type: "track", artist: "Nirvana", song: "Come As You Are", year: 1991,
+    file: "16_nirvana_come-as-you-are",
+    aliases: ["Come As You Are", "Cobain", "Nirvana"] },
+  { idx: 17, type: "track", artist: "Soundgarden", song: "Black Hole Sun", year: 1994,
+    file: "17_soundgarden_black-hole-sun",
+    aliases: ["Black Hole Sun", "Cornell", "Thayil", "Soundgarden"] },
+  { idx: 18, type: "track", artist: "The White Stripes", song: "Seven Nation Army", year: 2003,
+    file: "18_the-white-stripes_seven-nation-army",
+    aliases: ["Seven Nation Army", "White Stripes", "Jack White"] },
+  { idx: 19, type: "narration", label: "尾声", file: "19_closing",
+    aliases: [] },
+];
+
+const BASE = "/audio_fusion/ep3/";
+const COVER_BASE = "/covers/";
+
+// covers exist for tracks 1..18 (not for narration items)
+function coverFor(t) {
+  return t.type === "track" ? COVER_BASE + t.file + ".jpg" : null;
+}
+function audioFor(t)   { return BASE + t.file + ".mp3"; }
+function subFor(t)     { return BASE + t.file + ".subtitle.json"; }
+
+// =====================================================================
+// state
+// =====================================================================
+const state = {
+  cur: 0,
+  playing: false,
+  subtitles: {},      // idx -> [{text, start, end}]
+  curSentenceIdx: -1, // index within current track's subtitles
+  raf: null,
+  glowTimers: {},     // idx -> timeout
+};
+
+const audio   = document.getElementById("audio");
+const stage   = document.getElementById("stage");
+const subEl   = document.getElementById("subtitle");
+const nowMeta = document.getElementById("nowMeta");
+const playBtn = document.getElementById("playBtn");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const progBar = document.getElementById("progressBar");
+const progress= document.getElementById("progress");
+const timeStat= document.getElementById("timeStat");
+const infoBtn = document.getElementById("infoBtn");
+const info    = document.getElementById("info");
+
+// =====================================================================
+// rendering: stack layout
+// =====================================================================
+// Discs that are visible in the stack: cur ± 4
+// We render discs for the entire ep but reposition them all on cur change.
+const VISIBLE_RADIUS = 4;
+
+function buildDiscs() {
+  stage.innerHTML = "";
+  TRACKS.forEach(t => {
+    if (t.type !== "track") return;   // narration items don't get a disc
+    const d = document.createElement("div");
+    d.className = "disc";
+    d.dataset.idx = t.idx;
+    d.innerHTML = `
+      <div class="glow-ring"></div>
+      <img alt="${t.song}" loading="lazy" src="${coverFor(t)}" />
+    `;
+    stage.appendChild(d);
+  });
+}
+
+// transform table: relative position (cur - idx) → CSS transform + opacity
+// negative = above (already played), positive = below (upcoming)
+function discStyleFor(rel) {
+  // rel = idx - cur. negative = played (above), positive = upcoming (below).
+  const abs = Math.abs(rel);
+  if (abs > VISIBLE_RADIUS) {
+    return { transform: `translate(-50%, -50%) translateY(${rel < 0 ? -800 : 800}px) scale(0.05)`,
+             opacity: 0, filter: "blur(2px)" };
+  }
+  if (rel === 0) {
+    return { transform: `translate(-50%, -50%) scale(1)`,
+             opacity: 1, filter: "none" };
+  }
+  // perspective-stack: each step further is smaller, more transparent, pushed up/down
+  // step distance shrinks as we go further (compressed perspective)
+  const direction = rel < 0 ? -1 : 1;
+  const stepPx   = [0, 110, 165, 200, 225][abs];   // px from center
+  const scale    = [1, 0.55, 0.42, 0.32, 0.25][abs];
+  const opacity  = [1, 0.85, 0.55, 0.35, 0.2][abs];
+  const blur     = abs >= 3 ? "blur(0.5px)" : "none";
+  return {
+    transform: `translate(-50%, -50%) translateY(${direction * stepPx}px) scale(${scale})`,
+    opacity, filter: blur,
+  };
+}
+
+function relayout() {
+  document.querySelectorAll(".disc").forEach(el => {
+    const idx = +el.dataset.idx;
+    const rel = idx - currentTrackIdx();
+    const s = discStyleFor(rel);
+    el.style.transform = s.transform;
+    el.style.opacity = s.opacity;
+    el.style.filter = s.filter;
+    el.classList.toggle("center", rel === 0);
+    el.classList.toggle("playing", rel === 0 && state.playing);
+  });
+}
+
+// "current track index" is normalized: if narration, use the closest preceding track for layout
+function currentTrackIdx() {
+  const t = TRACKS[state.cur];
+  if (t.type === "track") return t.idx;
+  // for opening (idx=0) anchor on first track; for closing/interlude anchor on last track
+  if (state.cur === 0) return 1;
+  return 18;
+}
+
+// =====================================================================
+// glow trigger
+// =====================================================================
+function triggerGlow(idx) {
+  const el = document.querySelector(`.disc[data-idx="${idx}"]`);
+  if (!el) return;
+  // restart animation cleanly
+  el.classList.remove("glowing");
+  void el.offsetWidth;
+  el.classList.add("glowing");
+  clearTimeout(state.glowTimers[idx]);
+  state.glowTimers[idx] = setTimeout(() => {
+    el.classList.remove("glowing");
+  }, 650);
+}
+
+// =====================================================================
+// callback detection per sentence
+// =====================================================================
+function detectCallbacks(text, curIdx) {
+  // only glow tracks already in the stack (already played, idx < curIdx)
+  // narration "current" maps to currentTrackIdx() + small slack for opening
+  const out = new Set();
+  const ceil = TRACKS[curIdx].type === "track"
+    ? TRACKS[curIdx].idx
+    : (curIdx === 0 ? 0 : 19);
+  TRACKS.forEach(t => {
+    if (t.type !== "track") return;
+    if (t.idx >= ceil) return;        // not yet played → no spoiler glow
+    for (const a of t.aliases) {
+      if (text.includes(a)) {
+        out.add(t.idx);
+        break;
+      }
+    }
+  });
+  return [...out];
+}
+
+// =====================================================================
+// audio + tick loop
+// =====================================================================
+async function loadSubtitle(idx) {
+  if (state.subtitles[idx]) return state.subtitles[idx];
+  try {
+    const r = await fetch(subFor(TRACKS[idx]));
+    const j = await r.json();
+    state.subtitles[idx] = j;
+    return j;
+  } catch (e) {
+    state.subtitles[idx] = [];
+    return [];
+  }
+}
+
+async function selectTrack(newIdx, { autoplay } = { autoplay: true }) {
+  if (newIdx < 0 || newIdx >= TRACKS.length) return;
+  state.cur = newIdx;
+  state.curSentenceIdx = -1;
+  const t = TRACKS[newIdx];
+  audio.src = audioFor(t);
+  audio.currentTime = 0;
+  await loadSubtitle(newIdx);
+  updateMeta();
+  relayout();
+  subEl.classList.remove("show");
+  subEl.textContent = "";
+  if (autoplay) {
+    try { await audio.play(); } catch (e) { /* autoplay blocked */ }
+  }
+}
+
+function updateMeta() {
+  const t = TRACKS[state.cur];
+  if (t.type === "track") {
+    nowMeta.innerHTML = `${String(t.idx).padStart(2,'0')} · ${t.year} · <b>${t.artist}</b> — ${t.song}`;
+  } else {
+    nowMeta.innerHTML = `<b>${t.label}</b>`;
+  }
+  playBtn.textContent = state.playing ? "暂停" : "播放";
+}
+
+function tick() {
+  if (audio.duration && !isNaN(audio.duration)) {
+    const pct = (audio.currentTime / audio.duration) * 100;
+    progBar.style.width = pct + "%";
+    timeStat.textContent = fmt(audio.currentTime) + " / " + fmt(audio.duration);
+  }
+
+  // subtitle sync
+  const subs = state.subtitles[state.cur] || [];
+  const t = audio.currentTime;
+  let curIdx = -1;
+  for (let i = 0; i < subs.length; i++) {
+    if (t >= subs[i].start && t <= subs[i].end + 0.4) { curIdx = i; break; }
+    if (t < subs[i].start) break;
+  }
+  if (curIdx !== state.curSentenceIdx) {
+    state.curSentenceIdx = curIdx;
+    if (curIdx >= 0) {
+      const sentence = subs[curIdx];
+      subEl.textContent = sentence.text;
+      subEl.classList.add("show");
+      // detect & trigger callbacks
+      const hits = detectCallbacks(sentence.text, state.cur);
+      hits.forEach(idx => triggerGlow(idx));
+    } else {
+      subEl.classList.remove("show");
+    }
+  }
+
+  state.raf = requestAnimationFrame(tick);
+}
+
+function fmt(s) {
+  if (!isFinite(s)) return "0:00";
+  s = Math.floor(s);
+  return Math.floor(s/60) + ":" + String(s%60).padStart(2,"0");
+}
+
+// =====================================================================
+// event wiring
+// =====================================================================
+playBtn.addEventListener("click", () => {
+  if (audio.paused) audio.play(); else audio.pause();
+});
+prevBtn.addEventListener("click", () => selectTrack(state.cur - 1));
+nextBtn.addEventListener("click", () => selectTrack(state.cur + 1));
+
+audio.addEventListener("play",  () => { state.playing = true;  updateMeta(); relayout(); });
+audio.addEventListener("pause", () => { state.playing = false; updateMeta(); relayout(); });
+audio.addEventListener("ended", () => {
+  if (state.cur < TRACKS.length - 1) selectTrack(state.cur + 1);
+  else { state.playing = false; updateMeta(); }
+});
+
+progress.addEventListener("click", (e) => {
+  const rect = progress.getBoundingClientRect();
+  const pct = (e.clientX - rect.left) / rect.width;
+  if (audio.duration) audio.currentTime = pct * audio.duration;
+});
+
+infoBtn.addEventListener("click", () => info.classList.toggle("show"));
+info.addEventListener("click", e => {
+  if (e.target === info) info.classList.remove("show");
+});
+
+// keyboard for desktop testing
+document.addEventListener("keydown", e => {
+  if (e.code === "Space")     { e.preventDefault(); playBtn.click(); }
+  else if (e.code === "ArrowLeft")  prevBtn.click();
+  else if (e.code === "ArrowRight") nextBtn.click();
+});
+
+// =====================================================================
+// boot
+// =====================================================================
+buildDiscs();
+selectTrack(0, { autoplay: false });   // start at opening, paused
+state.raf = requestAnimationFrame(tick);
+</script>
+</body>
+</html>

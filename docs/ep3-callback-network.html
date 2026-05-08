@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8" />
+<title>EP3 回指网络 · Sonic Cartography</title>
+<style>
+  :root {
+    --bg: #0b0b0d;
+    --ink: #e8e6df;
+    --dim: #6b6862;
+    --rule: #2a2926;
+    --anchor: #d4a64e;
+    --x: #6ec3c6;
+    --a: #b08fc4;
+    --tease: #c46e72;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink);
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased; }
+  .wrap { max-width: 1280px; margin: 0 auto; padding: 48px 32px 96px; }
+  h1 { font-weight: 500; font-size: 22px; margin: 0 0 8px; letter-spacing: 0.02em; }
+  .sub { color: var(--dim); font-size: 13px; margin-bottom: 28px; }
+  .legend {
+    display: flex; gap: 28px; flex-wrap: wrap;
+    padding: 14px 18px; border: 1px solid var(--rule); border-radius: 8px;
+    margin-bottom: 36px; font-size: 12px; color: var(--ink);
+  }
+  .legend .item { display: flex; align-items: center; gap: 8px; }
+  .swatch { width: 26px; height: 2px; }
+  .swatch.x { background: var(--x); }
+  .swatch.a { background: var(--a); }
+  .swatch.tease { background: var(--tease); border-top: 1px dashed var(--tease); height: 0; }
+  .swatch.dot {
+    width: 12px; height: 12px; border-radius: 50%;
+    background: var(--ink); border: 1px solid var(--ink);
+  }
+  .swatch.dot.anchor { background: var(--anchor); border-color: var(--anchor); }
+
+  .stage { position: relative; }
+  svg { display: block; width: 100%; height: auto; overflow: visible; }
+  .track-label { font-size: 11px; fill: var(--ink); }
+  .track-label.dim { fill: var(--dim); }
+  .track-pos { font-size: 10px; fill: var(--dim); }
+  .anchor-glow { fill: var(--anchor); opacity: 0.18; }
+  .stats { margin-top: 48px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+  .stat { padding: 18px; border: 1px solid var(--rule); border-radius: 8px; }
+  .stat .num { font-size: 28px; font-weight: 500; letter-spacing: -0.01em; }
+  .stat .num.x { color: var(--x); }
+  .stat .num.a { color: var(--a); }
+  .stat .num.anchor { color: var(--anchor); }
+  .stat .lab { font-size: 12px; color: var(--dim); margin-top: 4px; }
+  .note { margin-top: 32px; font-size: 13px; color: var(--dim); line-height: 1.7;
+    border-top: 1px solid var(--rule); padding-top: 24px; }
+  .note b { color: var(--ink); font-weight: 500; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>EP3 回指网络 · Black Sabbath Riff Lineage</h1>
+  <div class="sub">18 条曲目时间轴 + 14 条跨距回指 + 4 条相邻跳转 + 2 条埋伏预告</div>
+
+  <div class="legend">
+    <div class="item"><span class="swatch dot anchor"></span>锚点 #3 Black Sabbath</div>
+    <div class="item"><span class="swatch x"></span>跨距回指 X（≥3 首之前）</div>
+    <div class="item"><span class="swatch a"></span>相邻跳转 A（n±1）</div>
+    <div class="item"><span class="swatch tease"></span>埋伏预告（许诺-兑现）</div>
+  </div>
+
+  <div class="stage">
+    <svg viewBox="0 0 1200 1100" preserveAspectRatio="xMidYMid meet" id="viz"></svg>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">60</div><div class="lab">总段落（18 首 × 平均 3.3 段）</div></div>
+    <div class="stat"><div class="num">36</div><div class="lab">N 节点本体描述（60%）</div></div>
+    <div class="stat"><div class="num x">12</div><div class="lab">X 跨距回指（22%）</div></div>
+    <div class="stat"><div class="num a">4</div><div class="lab">A 相邻跳转（10%）</div></div>
+  </div>
+
+  <div class="note">
+    <p><b>读图法</b>：左列圆点是 18 首曲目（锚点 #3 用金色加大）。右半弧是回指——从晚一首流向早一首，弧线越粗代表那个早期节点被回指越多次。可以看到 <b>4 条粗弧都汇聚在锚点 #3</b>，这是引力井。</p>
+    <p><b>埋伏-兑现</b>：两组虚线（红色）从 #5→#12、#10→#13——作者在早期节点埋下"十年后会回响"的伏笔，后期节点闭环。这是 ep 级叙事弧光，比单条边更高一层。</p>
+    <p><b>相邻跳转</b>（紫色，左侧短线）只有 4 条，集中在 ep 开头的同期对话和同专辑展开（#1↔#2、#3→#4、#9→#10、#16→#17）。其余 12 条全是跨距——<b>跨距才是这一集叙事的主肉</b>。</p>
+  </div>
+</div>
+
+<script>
+const tracks = [
+  { pos: 1,  artist: "Cream",                     song: "Sunshine of Your Love", year: 1967, role: "ancestor"   },
+  { pos: 2,  artist: "Jimi Hendrix Experience",   song: "Purple Haze",           year: 1967, role: "ancestor"   },
+  { pos: 3,  artist: "Black Sabbath",             song: "Black Sabbath",         year: 1970, role: "anchor"     },
+  { pos: 4,  artist: "Black Sabbath",             song: "War Pigs",              year: 1970, role: "descendant" },
+  { pos: 5,  artist: "Black Sabbath",             song: "Iron Man",              year: 1970, role: "descendant" },
+  { pos: 6,  artist: "Black Sabbath",             song: "Paranoid",              year: 1970, role: "descendant" },
+  { pos: 7,  artist: "Metallica",                 song: "Master of Puppets",     year: 1986, role: "descendant" },
+  { pos: 8,  artist: "Deep Purple",               song: "Smoke on the Water",    year: 1972, role: "lateral"    },
+  { pos: 9,  artist: "Led Zeppelin",              song: "Immigrant Song",        year: 1970, role: "lateral"    },
+  { pos: 10, artist: "Aerosmith",                 song: "Walk This Way",         year: 1975, role: "lateral"    },
+  { pos: 11, artist: "AC/DC",                     song: "Back In Black",         year: 1980, role: "lateral"    },
+  { pos: 12, artist: "Ozzy Osbourne",             song: "Crazy Train",           year: 1980, role: "lateral"    },
+  { pos: 13, artist: "Rage Against the Machine",  song: "Killing in the Name",   year: 1992, role: "lateral"    },
+  { pos: 14, artist: "Metallica",                 song: "Enter Sandman",         year: 1991, role: "lateral"    },
+  { pos: 15, artist: "Guns N' Roses",             song: "Sweet Child O' Mine",   year: 1987, role: "descendant" },
+  { pos: 16, artist: "Nirvana",                   song: "Come As You Are",       year: 1991, role: "descendant" },
+  { pos: 17, artist: "Soundgarden",               song: "Black Hole Sun",        year: 1994, role: "descendant" },
+  { pos: 18, artist: "The White Stripes",         song: "Seven Nation Army",     year: 2003, role: "descendant" },
+];
+
+// kind: x = cross-distance back-reference; a = adjacent; tease = forward promise
+const edges = [
+  // adjacent (A) — short, on the LEFT side
+  { from: 2,  to: 1,  kind: "a"     },
+  { from: 4,  to: 3,  kind: "a"     },
+  { from: 10, to: 9,  kind: "a"     },
+  { from: 17, to: 16, kind: "a"     },
+
+  // cross-distance back-references (X) — RIGHT side arcs
+  { from: 6,  to: 3,  kind: "x"     }, // → anchor
+  { from: 7,  to: 3,  kind: "x"     }, // → anchor
+  { from: 8,  to: 3,  kind: "x"     }, // → anchor
+  { from: 9,  to: 2,  kind: "x"     },
+  { from: 11, to: 8,  kind: "x"     },
+  { from: 12, to: 5,  kind: "x"     }, // ← payoff of T5 promise
+  { from: 13, to: 10, kind: "x"     }, // ← payoff of T10 promise
+  { from: 14, to: 7,  kind: "x"     },
+  { from: 15, to: 11, kind: "x"     },
+  { from: 16, to: 14, kind: "x"     },
+  { from: 18, to: 15, kind: "x"     },
+  { from: 18, to: 3,  kind: "x"     }, // closure → anchor
+
+  // planted teases (forward promises) — dashed
+  { from: 5,  to: 12, kind: "tease" },
+  { from: 10, to: 13, kind: "tease" },
+];
+
+const W = 1200, H = 1100;
+const TOP = 60, BOT = 1060;
+const LEFT_X = 380;       // node column x
+const RIGHT_PAD = 140;    // arcs reach from LEFT_X to LEFT_X + reach
+const ROW = (BOT - TOP) / (tracks.length - 1);
+
+// count incoming X edges per target → drives target node "weight"
+const inCount = {};
+edges.forEach(e => { if (e.kind === "x") inCount[e.to] = (inCount[e.to] || 0) + 1; });
+
+const svg = document.getElementById("viz");
+const NS = "http://www.w3.org/2000/svg";
+const el = (n, attrs = {}, text) => {
+  const e = document.createElementNS(NS, n);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  if (text != null) e.textContent = text;
+  return e;
+};
+
+function yOf(pos) { return TOP + (pos - 1) * ROW; }
+
+// --- backbone vertical line ---
+svg.appendChild(el("line", {
+  x1: LEFT_X, y1: TOP, x2: LEFT_X, y2: BOT,
+  stroke: "#2a2926", "stroke-width": 1
+}));
+
+// --- edges first (so nodes paint on top) ---
+edges.forEach(e => {
+  const y1 = yOf(e.from), y2 = yOf(e.to);
+  const goingBack = e.kind === "x" || e.kind === "a";
+  const dashed = e.kind === "tease";
+  let color, width, side;
+  if (e.kind === "x")     { color = "#6ec3c6"; side = +1;
+                            // weight by callbacks-into-target
+                            const w = inCount[e.to] || 1;
+                            width = 0.8 + Math.min(w, 4) * 0.7; }
+  else if (e.kind === "a"){ color = "#b08fc4"; width = 1.2; side = -1; }
+  else                    { color = "#c46e72"; width = 1.0; side = +1; }
+
+  // anchor-bound emphasis
+  if (e.kind === "x" && e.to === 3) { color = "#d4a64e"; width = 2.4; }
+
+  // bezier control points
+  const span = Math.abs(y1 - y2);
+  const reach = side > 0
+    ? Math.min(40 + span * 0.55, RIGHT_PAD * 4)   // right side, scale with distance
+    : 24 + Math.min(span * 0.4, 50);              // left side adjacency
+  const cx = LEFT_X + side * reach;
+  const path = `M ${LEFT_X} ${y1} C ${cx} ${y1}, ${cx} ${y2}, ${LEFT_X} ${y2}`;
+  const p = el("path", {
+    d: path, fill: "none", stroke: color, "stroke-width": width,
+    "stroke-linecap": "round", opacity: dashed ? 0.7 : 0.85
+  });
+  if (dashed) p.setAttribute("stroke-dasharray", "4 4");
+  svg.appendChild(p);
+
+  // small directional arrow tip near target
+  if (!dashed) {
+    const dy = y2 > y1 ? -4 : 4;
+    svg.appendChild(el("circle", {
+      cx: LEFT_X, cy: y2, r: 2.2, fill: color
+    }));
+  }
+});
+
+// --- nodes ---
+tracks.forEach(t => {
+  const y = yOf(t.pos);
+  const isAnchor = t.role === "anchor";
+  const incoming = inCount[t.pos] || 0;
+  // disc radius scales with how often it's referenced back
+  const r = isAnchor ? 14 : 6 + incoming * 1.6;
+
+  if (isAnchor) {
+    svg.appendChild(el("circle", {
+      cx: LEFT_X, cy: y, r: r + 10, class: "anchor-glow"
+    }));
+  }
+  svg.appendChild(el("circle", {
+    cx: LEFT_X, cy: y, r,
+    fill: isAnchor ? "#d4a64e" : "#e8e6df",
+    stroke: isAnchor ? "#d4a64e" : "#0b0b0d",
+    "stroke-width": 1.5
+  }));
+
+  // position number (left of disc)
+  svg.appendChild(el("text", {
+    x: LEFT_X - r - 14, y: y + 4,
+    "text-anchor": "end", class: "track-pos"
+  }, String(t.pos).padStart(2, "0")));
+
+  // year (further left)
+  svg.appendChild(el("text", {
+    x: LEFT_X - r - 44, y: y + 4,
+    "text-anchor": "end", class: "track-pos"
+  }, t.year));
+
+  // artist + song (right of disc — pull further right when arcs are dense)
+  const labelX = LEFT_X - r - 80;
+  svg.appendChild(el("text", {
+    x: labelX, y: y - 1,
+    "text-anchor": "end",
+    class: isAnchor ? "track-label" : "track-label dim",
+    "font-weight": isAnchor ? 600 : 400
+  }, t.artist));
+  svg.appendChild(el("text", {
+    x: labelX, y: y + 12,
+    "text-anchor": "end",
+    class: "track-label",
+    "font-style": "italic",
+    "font-size": 10
+  }, t.song));
+
+  // callback count badge on right
+  if (incoming > 0 && !isAnchor) {
+    svg.appendChild(el("text", {
+      x: LEFT_X + r + 10, y: y + 3.5,
+      class: "track-pos", "fill": "#6ec3c6", "font-size": 10
+    }, "← " + incoming));
+  }
+  if (isAnchor) {
+    svg.appendChild(el("text", {
+      x: LEFT_X + r + 12, y: y + 4,
+      class: "track-pos", "fill": "#d4a64e", "font-size": 11,
+      "font-weight": 600
+    }, "← 4 (anchor)"));
+  }
+});
+
+// --- side legends ---
+svg.appendChild(el("text", {
+  x: LEFT_X - 80, y: 30, "text-anchor": "end",
+  class: "track-pos", "font-size": 10
+}, "曲目（按 ep 内顺序）"));
+svg.appendChild(el("text", {
+  x: LEFT_X + 60, y: 30,
+  class: "track-pos", "font-size": 10, "fill": "#6ec3c6"
+}, "← 跨距回指弧（向上）"));
+svg.appendChild(el("text", {
+  x: LEFT_X - 30, y: 30, "text-anchor": "end",
+  class: "track-pos", "font-size": 10, "fill": "#b08fc4"
+}, "相邻 →"));
+</script>
+</body>
+</html>
