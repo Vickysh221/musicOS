@@ -1,6 +1,7 @@
 import { Redirect, Route, Switch, useRoute } from 'wouter';
 import { Timeline } from './routes/Timeline.js';
 import { TrackDetail } from './routes/TrackDetail.js';
+import { EpisodeFocal } from './routes/EpisodeFocal.js';
 import { Sidebar } from './components/Sidebar.js';
 import './app.css';
 
@@ -41,7 +42,7 @@ export function App() {
             {(params) => <TrackDetail episodeId="ep2" position={Number(params.position)} />}
           </Route>
           <Route path="/ep3">
-            <Timeline episodeId="ep3" />
+            <EpisodeFocal episodeId="ep3" />
           </Route>
           <Route path="/ep3/track/:position">
             {(params) => <TrackDetail episodeId="ep3" position={Number(params.position)} />}
