@@ -19,6 +19,9 @@ interface ExhibitionStore {
   currentTime: number;
   duration: number;
   seekRequest: { time: number; id: number } | null;
+  mentionedSet: ReadonlySet<number>;
+  addMentioned: (positions: number[]) => void;
+  resetMentioned: () => void;
   load: (episodeId: string) => Promise<void>;
   setLanguage: (lang: 'zh' | 'en') => void;
   setMode: (mode: 'auto' | 'manual') => void;
@@ -43,11 +46,34 @@ export const useExhibition = create<ExhibitionStore>((set, get) => ({
   currentTime: 0,
   duration: 0,
   seekRequest: null,
+  mentionedSet: new Set<number>(),
+  addMentioned: (positions) => {
+    if (positions.length === 0) return;
+    const cur = get().mentionedSet;
+    let changed = false;
+    const next = new Set(cur);
+    for (const p of positions) {
+      if (!next.has(p)) {
+        next.add(p);
+        changed = true;
+      }
+    }
+    if (changed) set({ mentionedSet: next });
+  },
+  resetMentioned: () => set({ mentionedSet: new Set<number>() }),
   load: async (episodeId: string) => {
     const current = get().episodeId;
     if (current === episodeId && get().exhibits.length > 0) return;
     // Reset playback when switching episodes
-    set({ exhibits: [], episodeId, playingPosition: null, isPlaying: false, currentTime: 0, duration: 0 });
+    set({
+      exhibits: [],
+      episodeId,
+      playingPosition: null,
+      isPlaying: false,
+      currentTime: 0,
+      duration: 0,
+      mentionedSet: new Set<number>(),
+    });
     const exhibits = await loadExhibition(episodeId);
     set({ exhibits, episodeId });
   },
@@ -71,7 +97,7 @@ export const useExhibition = create<ExhibitionStore>((set, get) => ({
     set({ isPlaying: !isPlaying });
   },
   pause: () => set({ isPlaying: false }),
-  stop: () => set({ playingPosition: null, isPlaying: false, currentTime: 0, duration: 0 }),
+  stop: () => set({ playingPosition: null, isPlaying: false, currentTime: 0, duration: 0, mentionedSet: new Set<number>() }),
   setIsPlaying: (v) => set({ isPlaying: v }),
   setProgress: (currentTime, duration) => set({ currentTime, duration }),
   seekTo: (time) => set({ seekRequest: { time, id: Date.now() } }),
