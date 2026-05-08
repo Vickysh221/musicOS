@@ -220,9 +220,13 @@ def main() -> None:
         music = music_match
 
         if style != "B":
-            narration = find_match(args.narration_dir, prefix)
+            # Derive narration stem from exhibit field or music filename (same
+            # naming convention as batch_synthesize_episode) so we never pick
+            # a stem from a different episode that happens to share the NN_ prefix.
+            nar_stem = ex.get("narration_stem") or music_match.stem
+            narration = find_match(args.narration_dir, prefix, exact_stem=nar_stem)
             if not narration:
-                print(f"  skip {pos}: no narration mp3 matching {prefix}*")
+                print(f"  skip {pos}: no narration mp3 '{nar_stem}.mp3'")
                 continue
 
         try:
