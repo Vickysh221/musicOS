@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useExhibition } from '../store/exhibition.js';
 import { assetUrl } from '../lib/asset-url.js';
+import { setSharedAudioElement, resumeAudioContext } from '../hooks/useAudioAnalyser.js';
 
 export function GlobalPlayer() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
@@ -21,11 +22,19 @@ export function GlobalPlayer() {
     null;
   const src = rawSrc ? assetUrl(rawSrc) : null;
 
+  // Publish the audio element to the shared singleton (used by Spectrum).
+  // src changes remount the <audio> (key={src}), so re-publish on src changes.
+  useEffect(() => {
+    setSharedAudioElement(audioRef.current);
+    return () => setSharedAudioElement(null);
+  }, [src]);
+
   // React to play/pause toggles.
   useEffect(() => {
     const el = audioRef.current;
     if (!el || !src) return;
     if (isPlaying) {
+      resumeAudioContext();
       void el.play().catch(() => setIsPlaying(false));
     } else {
       el.pause();
