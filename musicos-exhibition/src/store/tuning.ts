@@ -28,14 +28,21 @@ export interface TuningParams {
   playingRotX: number;     // stage rotateX during playing — bird's-eye tilt (deg)
   playingOffsetX: number;  // screen-space X shift of the arc center (px)
   playingOffsetY: number;  // screen-space Y shift of the arc center (px)
+  // Focal scene — disc + stage
+  focalDiscSize: number;        // px (square)
+  focalStageY: number;          // % viewport height where focal disc center sits
   // Focal scene — vertical cumulative
   verticalSpacing: number;
   verticalDepth: number;
   verticalShrink: number;
   verticalFade: number;
+  verticalRotX: number;         // deg tilt for mentioned discs
+  verticalRotY: number;         // deg yaw for mentioned discs
+  verticalOffsetX: number;      // px lateral drift per stack level
   focalOffsetY: number;
   // Focal scene — horizontal carousel
   carouselScale: number;
+  carouselRotX: number;         // deg tilt for all carousel cards
   // Visibility of the tuning panel
   panelOpen: boolean;
 }
@@ -62,12 +69,18 @@ export const TUNING_DEFAULTS: TuningParams = {
   playingRotX: 14,
   playingOffsetX: -55,
   playingOffsetY: -169,
+  focalDiscSize: 220,
+  focalStageY: 55,
   verticalSpacing: 110,
   verticalDepth: 80,
   verticalShrink: 0.08,
   verticalFade: 0.12,
+  verticalRotX: 0,
+  verticalRotY: 0,
+  verticalOffsetX: 0,
   focalOffsetY: 60,
   carouselScale: 0.85,
+  carouselRotX: 0,
   panelOpen: false,
 };
 
@@ -87,6 +100,6 @@ export const useTuning = create<TuningStore>()(
       reset: () => set({ ...TUNING_DEFAULTS, panelOpen: true }),
       togglePanel: () => set((s) => ({ panelOpen: !s.panelOpen })),
     }),
-    { name: 'musicos-tuning-v2' },
+    { name: 'musicos-tuning-v3' },
   ),
 );

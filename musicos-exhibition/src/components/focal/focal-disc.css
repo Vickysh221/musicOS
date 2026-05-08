@@ -2,9 +2,10 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 220px;
-  height: 220px;
-  margin: -110px 0 0 -110px;
+  width: var(--disc-size, 220px);
+  height: var(--disc-size, 220px);
+  margin-left: calc(var(--disc-size, 220px) / -2);
+  margin-top: calc(var(--disc-size, 220px) / -2);
   border: 0;
   background: transparent;
   padding: 0;

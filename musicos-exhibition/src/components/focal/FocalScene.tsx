@@ -60,6 +60,9 @@ export function FocalScene() {
             verticalDepth: tuning.verticalDepth,
             verticalShrink: tuning.verticalShrink,
             verticalFade: tuning.verticalFade,
+            verticalRotX: tuning.verticalRotX,
+            verticalRotY: tuning.verticalRotY,
+            verticalOffsetX: tuning.verticalOffsetX,
             focalOffsetY: tuning.focalOffsetY,
           },
         })
@@ -71,6 +74,7 @@ export function FocalScene() {
             arcDepth: tuning.arcDepth,
             arcRotStep: tuning.arcRotStep,
             carouselScale: tuning.carouselScale,
+            carouselRotX: tuning.carouselRotX,
           },
         });
 
@@ -97,7 +101,10 @@ export function FocalScene() {
       </header>
 
       <div className="focal-scene__stage" style={{ perspective: `${tuning.perspective}px` }}>
-        <div className="focal-scene__stage-inner">
+        <div
+          className="focal-scene__stage-inner"
+          style={{ ['--focal-stage-y' as string]: `${tuning.focalStageY}%` }}
+        >
           {tracks.map((t) => {
             const tf = layout.get(t.position);
             if (!tf) return null;
@@ -109,6 +116,7 @@ export function FocalScene() {
                 track={t}
                 transform={tf}
                 isFocal={isFocal}
+                size={tuning.focalDiscSize}
                 zIndex={z}
                 onClick={() => onCardClick(t.position)}
               />

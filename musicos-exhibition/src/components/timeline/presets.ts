@@ -3,7 +3,20 @@ import type { TuningParams } from '../../store/tuning.js';
 type Preset = Omit<TuningParams, 'panelOpen'>;
 
 const ARC_DEFAULTS = { arcSpacing: 440, arcDepth: 150, arcRotStep: 20, playingRotX: 14, playingOffsetX: -55, playingOffsetY: -169 };
-const FOCAL_DEFAULTS = { verticalSpacing: 110, verticalDepth: 80, verticalShrink: 0.08, verticalFade: 0.12, focalOffsetY: 60, carouselScale: 0.85 };
+const FOCAL_DEFAULTS = {
+  focalDiscSize: 220,
+  focalStageY: 55,
+  verticalSpacing: 110,
+  verticalDepth: 80,
+  verticalShrink: 0.08,
+  verticalFade: 0.12,
+  verticalRotX: 0,
+  verticalRotY: 0,
+  verticalOffsetX: 0,
+  focalOffsetY: 60,
+  carouselScale: 0.85,
+  carouselRotX: 0,
+};
 
 export const INTRO_1: Preset = {
   gapX: 240,

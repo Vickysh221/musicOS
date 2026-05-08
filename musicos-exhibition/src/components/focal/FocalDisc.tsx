@@ -9,20 +9,22 @@ interface Props {
   transform: CardTransform;
   zIndex: number;
   isFocal: boolean;
+  size?: number;
   onClick?: () => void;
   transition?: Transition;
 }
 
 const DEFAULT_TRANSITION: Transition = { type: 'spring', stiffness: 220, damping: 26, mass: 0.6 };
 
-export function FocalDisc({ track, transform, zIndex, isFocal, onClick, transition }: Props) {
+export function FocalDisc({ track, transform, zIndex, isFocal, size, onClick, transition }: Props) {
   const { x, y, z, rotX, rotY, rotZ, opacity, scale } = transform;
   const isHearted = track.red_heart_tier === 'hit';
+  const styleVars = size != null ? { ['--disc-size' as string]: `${size}px` } : undefined;
   return (
     <motion.button
       type="button"
       className={`focal-disc${isFocal ? ' focal-disc--focal' : ''}`}
-      style={{ zIndex }}
+      style={{ zIndex, ...styleVars }}
       animate={{ x, y, z, rotateX: rotX, rotateY: rotY, rotateZ: rotZ, scale, opacity }}
       transition={transition ?? DEFAULT_TRANSITION}
       onClick={onClick}

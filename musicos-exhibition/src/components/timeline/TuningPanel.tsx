@@ -56,14 +56,30 @@ const GROUPS: { title: string; sliders: SliderSpec[] }[] = [
     ],
   },
   {
-    title: 'Focal scene',
+    title: 'Focal scene — disc + stage',
+    sliders: [
+      { key: 'focalDiscSize', label: 'disc size', min: 120, max: 320, step: 1 },
+      { key: 'focalStageY', label: 'stage Y %', min: 30, max: 80, step: 1 },
+      { key: 'focalOffsetY', label: 'focal off Y', min: 0, max: 200, step: 1 },
+    ],
+  },
+  {
+    title: 'Focal scene — vertical stack',
     sliders: [
       { key: 'verticalSpacing', label: 'v spacing', min: 60, max: 200, step: 1 },
       { key: 'verticalDepth', label: 'v depth', min: 0, max: 200, step: 1 },
       { key: 'verticalShrink', label: 'v shrink', min: 0, max: 0.2, step: 0.01 },
       { key: 'verticalFade', label: 'v fade', min: 0, max: 0.3, step: 0.01 },
-      { key: 'focalOffsetY', label: 'focal off Y', min: 0, max: 200, step: 1 },
+      { key: 'verticalRotX', label: 'v rot X', min: -30, max: 30, step: 0.5 },
+      { key: 'verticalRotY', label: 'v rot Y', min: -30, max: 30, step: 0.5 },
+      { key: 'verticalOffsetX', label: 'v off X', min: -100, max: 100, step: 1 },
+    ],
+  },
+  {
+    title: 'Focal scene — carousel',
+    sliders: [
       { key: 'carouselScale', label: 'crsl scale', min: 0.5, max: 1.2, step: 0.05 },
+      { key: 'carouselRotX', label: 'crsl rot X', min: -30, max: 30, step: 0.5 },
     ],
   },
 ];

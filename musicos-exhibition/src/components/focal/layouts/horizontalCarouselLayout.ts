@@ -5,6 +5,7 @@ export interface HorizontalCarouselParams {
   arcDepth: number;
   arcRotStep: number;
   carouselScale: number;
+  carouselRotX: number;
 }
 
 export interface HorizontalCarouselArgs {
@@ -36,7 +37,7 @@ export function horizontalCarouselLayout(
       x,
       y: 0,
       z,
-      rotX: 0,
+      rotX: params.carouselRotX,
       rotY,
       rotZ: 0,
       opacity,

@@ -5,6 +5,9 @@ export interface VerticalCumulativeParams {
   verticalDepth: number;
   verticalShrink: number;
   verticalFade: number;
+  verticalRotX: number;
+  verticalRotY: number;
+  verticalOffsetX: number;
   focalOffsetY: number;
 }
 
@@ -53,11 +56,11 @@ export function verticalCumulativeLayout(
     // grows as we go backward in `mentioned`.
     const i = mentioned.length - idxFromBottom; // 1..mentioned.length
     out.set(p, {
-      x: 0,
+      x: i * params.verticalOffsetX,
       y: -params.focalOffsetY - i * params.verticalSpacing,
       z: -i * params.verticalDepth,
-      rotX: 0,
-      rotY: 0,
+      rotX: params.verticalRotX,
+      rotY: params.verticalRotY,
       rotZ: 0,
       opacity: Math.max(0.35, 1 - i * params.verticalFade),
       scale: Math.max(0.4, 1 - i * params.verticalShrink),

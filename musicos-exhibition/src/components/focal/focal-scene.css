@@ -28,6 +28,6 @@
 .focal-scene__stage-inner {
   position: absolute;
   left: 50%;
-  top: 55%;
+  top: var(--focal-stage-y, 55%);
   transform-style: preserve-3d;
 }

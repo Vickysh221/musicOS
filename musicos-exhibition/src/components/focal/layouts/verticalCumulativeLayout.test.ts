@@ -6,6 +6,9 @@ const params = {
   verticalDepth: 50,
   verticalShrink: 0.1,
   verticalFade: 0.15,
+  verticalRotX: 0,
+  verticalRotY: 0,
+  verticalOffsetX: 0,
   focalOffsetY: 60,
 };
 
