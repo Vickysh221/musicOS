@@ -48,8 +48,24 @@ Output naming:
 - pillar tracks with `transcript_zh_a` + `transcript_zh_b` → emit `NN_<stem>_a.mp3` and `NN_<stem>_b.mp3` (Style B fusion).
 
 Idempotent — skips outputs that already exist. Pass `--force` to re-synth.
+Pass `--only-position N` (repeatable) to re-synth a single exhibit.
 Each run appends to `episodes/audio/narration/synthesis_log.jsonl` with
 `usage_characters` (MiniMax billing unit, ≠ input chars).
+
+**Sentence-level timestamps (`--subtitle`):** add `--subtitle` to request
+MiniMax's native sentence-level timing. The TTS request sets
+`subtitle_enable: true` and the API returns a `subtitle_file` URL; we fetch
+it inline and write a sidecar `<stem>.subtitle.json` next to each
+narration mp3. Format is the raw MiniMax payload —
+`[{text, time_begin, time_end, ...}]` with times in **milliseconds** in the
+**narration timeline** (t=0 at narration start). Step 4 reads these and
+emits a fusion-aligned variant.
+
+These timestamps replace the old proportional-by-character estimate in
+`NowPlayingBar.tsx`, which assumed (a) narration starts at t=0 of the
+fusion file and (b) characters are read at uniform speed — both wrong
+for any music-bearing fusion style. When the sidecar exists, the bar
+switches to sentence-level highlighting.
 
 ---
 
@@ -124,9 +140,29 @@ python3 -m tools.batch_fusion \
   --output-dir episodes/audio/fusion
 ```
 
-Idempotent (skip if exists; `--force` to overwrite). Refuses to silently
-truncate — if music is too short for the chosen style, it fails loud and
-points at the gap. That's your signal to go back to Step 2.
+Idempotent (skip if exists; `--force` to overwrite). Pass `--only-position N`
+(repeatable) to re-fuse a single exhibit. Refuses to silently truncate —
+if music is too short for the chosen style, it fails loud and points at
+the gap. That's your signal to go back to Step 2.
+
+**Fusion-aligned subtitles:** if a `<stem>.subtitle.json` sidecar exists
+next to the narration mp3 (Step 1's `--subtitle`), fusion writes a
+companion `<out_stem>.subtitle.json` next to the fused mp3. Times are
+shifted from the narration timeline to the fusion-output timeline by
+adding the per-style narration start offset:
+
+| Style | Narration start in fusion timeline (s) |
+|---|---|
+| `A` | `0` |
+| `C` / `C_ALIGNED` | `C_PREROLL + C_DUCK_RAMP` = `9` |
+| `C_SHORT` | `3.5 + 0.5` = `4` |
+| `B` | narration_a at `B_INTRO_PAD + B_DUCK_RAMP` = `5`; narration_b at `b_timings.duck_b_end` |
+| `PASSTHROUGH` | `0` |
+
+Output JSON is normalized: `[{text, start, end}]` with times in **seconds**
+in the fusion timeline. Source of truth for offsets is
+`NARRATION_OFFSET_BY_STYLE` in `tools/batch_fusion.py` — keep in sync with
+the `adelay` values in `tools/stitch_track.py`.
 
 ---
 
@@ -145,6 +181,13 @@ npx tsx scripts/build-exhibition-json.ts   # repopulates fusion_audio_url from d
 `scripts/build-exhibition-json.ts` auto-detects `/audio_fusion/<NN>_*.mp3`
 on disk and writes `fusion_audio_url` per exhibit. The `TrackDetail` route
 prefers `fusion_audio_url` over the bare `audio_url` for playback.
+
+`NowPlayingBar.tsx` derives the subtitle URL at runtime by replacing the
+`.mp3` suffix on `fusion_audio_url` with `.subtitle.json` and attempting a
+fetch; on 200 it switches to sentence-level highlighting, on 404 it falls
+back to paragraph-proportional estimation. No exhibit-data schema change
+is required to enable subtitles for a track — drop the JSON file next to
+the fusion mp3 and the bar picks it up.
 
 Audition with `npx vite` — every track tile should now play the narrated
 fusion, not the bare music.

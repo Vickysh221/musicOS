@@ -82,6 +82,37 @@ function activeSectionIdx(startTimes: number[], currentTime: number): number {
   return idx;
 }
 
+interface FusionSubtitleSegment {
+  text: string;
+  start: number;
+  end: number;
+}
+
+/**
+ * Sentence-level segments emitted by the fusion pipeline (MiniMax-derived,
+ * already offset to the fusion-output timeline). Returns null while the
+ * fetch is in flight or if no sidecar exists; the bar then falls back to
+ * the proportional-by-character estimate.
+ */
+function useFusionSubtitle(fusionUrl: string | null | undefined): FusionSubtitleSegment[] | null {
+  const [segments, setSegments] = useState<FusionSubtitleSegment[] | null>(null);
+  useEffect(() => {
+    setSegments(null);
+    if (!fusionUrl || !fusionUrl.endsWith('.mp3')) return;
+    const subUrl = fusionUrl.slice(0, -4) + '.subtitle.json';
+    let cancelled = false;
+    fetch(subUrl)
+      .then((r) => (r.ok ? r.json() : null))
+      .then((data: FusionSubtitleSegment[] | null) => {
+        if (cancelled || !Array.isArray(data) || data.length === 0) return;
+        setSegments(data);
+      })
+      .catch(() => { /* fall back silently */ });
+    return () => { cancelled = true; };
+  }, [fusionUrl]);
+  return segments;
+}
+
 function Marquee({ text, className }: { text: string; className?: string }) {
   const viewportRef = useRef<HTMLDivElement | null>(null);
   const trackRef = useRef<HTMLDivElement | null>(null);
@@ -156,8 +187,23 @@ export function NowPlayingBar() {
       : exhibit.transcript_en
     : null;
 
-  const sections = useMemo(() => splitSections(transcript), [transcript]);
-  const startTimes = useMemo(() => sectionStartTimes(sections, duration), [sections, duration]);
+  const fusionSubtitle = useFusionSubtitle(exhibit?.fusion_audio_url ?? null);
+
+  const paragraphSections = useMemo(() => splitSections(transcript), [transcript]);
+  const paragraphStartTimes = useMemo(
+    () => sectionStartTimes(paragraphSections, duration),
+    [paragraphSections, duration],
+  );
+
+  // When MiniMax-derived sentence timestamps are available, use them; otherwise
+  // fall back to the paragraph-proportional estimate. The two modes drive the
+  // same UI (sections list + active highlight).
+  const sections = fusionSubtitle
+    ? fusionSubtitle.map((s) => s.text)
+    : paragraphSections;
+  const startTimes = fusionSubtitle
+    ? fusionSubtitle.map((s) => s.start)
+    : paragraphStartTimes;
 
   const sectionIdx = startTimes.length > 0 ? activeSectionIdx(startTimes, currentTime) : 0;
 

@@ -1,3 +1,4 @@
+
 # 双主角 — Estranged · 第 2 期 · aria↔solo dialectic — 完整剧集文稿
 
 **Episode ID:** guns-n-roses_use-your-illusion-ii_estranged__ep-02

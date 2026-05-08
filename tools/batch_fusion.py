@@ -29,7 +29,9 @@ from pathlib import Path
 from tools.stitch_track import (
     stitch_a, stitch_c, stitch_c_aligned, stitch_b, probe_duration,
     FADEOUT, MUSIC_FADE_IN, A_OVERLAP, A_BED_LEVEL, A_RAMP_AFTER,
-    C_DUCK_LEVEL, OutOfBounds,
+    C_DUCK_LEVEL, C_PREROLL, C_DUCK_RAMP,
+    B_INTRO_PAD, B_DUCK_RAMP, B_ANCHOR_CLEAN, B_LEAD_IN,
+    compute_b_timings, OutOfBounds,
 )
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -85,6 +87,84 @@ STYLE_BY_POSITION: dict[int, str] = {
     18: "C",   # Knights of Cydonia — 623ch
     19: "PASSTHROUGH",   # closing
 }
+
+
+# Style → narration start offset in the fusion-output timeline (seconds).
+# Mirrors the adelay values in stitch_track.py — keep in sync with that file.
+NARRATION_OFFSET_BY_STYLE: dict[str, float] = {
+    "A": 0.0,
+    "C": C_PREROLL + C_DUCK_RAMP,
+    "C_ALIGNED": C_PREROLL + C_DUCK_RAMP,
+    "C_SHORT": 3.5 + 0.5,        # stitch_c_short preroll + duck_ramp
+    "PASSTHROUGH": 0.0,
+}
+
+
+def _normalize_segments(raw: list) -> list[dict]:
+    """MiniMax subtitle segments → list of {text, start, end} in *seconds*.
+    Tolerates both ms (`time_begin`/`time_end`) and seconds keys."""
+    out: list[dict] = []
+    for seg in raw or []:
+        if "time_begin" in seg or "time_end" in seg:
+            start = float(seg.get("time_begin", 0)) / 1000.0
+            end = float(seg.get("time_end", 0)) / 1000.0
+        else:
+            start = float(seg.get("start", 0))
+            end = float(seg.get("end", 0))
+        out.append({"text": seg.get("text", ""), "start": start, "end": end})
+    return out
+
+
+def _shifted(segments: list[dict], offset: float) -> list[dict]:
+    return [{"text": s["text"], "start": s["start"] + offset, "end": s["end"] + offset}
+            for s in segments]
+
+
+def write_fusion_subtitle(
+    style: str,
+    narration: Path | None,
+    out_path: Path,
+    *,
+    narration_a: Path | None = None,
+    narration_b: Path | None = None,
+    b_timings=None,
+) -> Path | None:
+    """If a narration subtitle sidecar exists, emit a fusion-aligned subtitle
+    JSON next to the fusion mp3. Returns the written path, or None if no
+    sidecar was found (fusion still succeeds; UI falls back to estimation).
+    """
+    sub_out = out_path.with_suffix(".subtitle.json")
+    if style == "B":
+        if not narration_a or not narration_b or b_timings is None:
+            return None
+        a_path = narration_a.with_suffix(".subtitle.json")
+        b_path = narration_b.with_suffix(".subtitle.json")
+        if not a_path.exists() or not b_path.exists():
+            return None
+        a_segs = _normalize_segments(json.loads(a_path.read_text(encoding="utf-8")))
+        b_segs = _normalize_segments(json.loads(b_path.read_text(encoding="utf-8")))
+        # narration_a starts at duck_a_end; narration_b starts at b_timings.duck_b_end.
+        a_offset = B_INTRO_PAD + B_DUCK_RAMP
+        b_offset = b_timings.duck_b_end
+        merged = _shifted(a_segs, a_offset) + _shifted(b_segs, b_offset)
+        sub_out.write_text(json.dumps(merged, ensure_ascii=False, indent=2),
+                           encoding="utf-8")
+        return sub_out
+
+    if not narration:
+        return None
+    sidecar = narration.with_suffix(".subtitle.json")
+    if not sidecar.exists():
+        return None
+    offset = NARRATION_OFFSET_BY_STYLE.get(style)
+    if offset is None:
+        return None
+    segs = _normalize_segments(json.loads(sidecar.read_text(encoding="utf-8")))
+    sub_out.write_text(
+        json.dumps(_shifted(segs, offset), ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+    return sub_out
 
 
 def resolve_style(exhibit: dict, fallback: dict[int, str]) -> str | None:
@@ -177,6 +257,8 @@ def main() -> None:
     p.add_argument("--excerpt-seconds-a", type=float, default=100.0)
     p.add_argument("--postroll-seconds-c", type=float, default=60.0)
     p.add_argument("--force", action="store_true")
+    p.add_argument("--only-position", type=int, action="append", default=[],
+                   help="only fuse this exhibit position; repeatable")
     args = p.parse_args()
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
@@ -184,6 +266,8 @@ def main() -> None:
 
     for ex in ep["exhibits"]:
         pos = ex["position"]
+        if args.only_position and pos not in args.only_position:
+            continue
         style = resolve_style(ex, STYLE_BY_POSITION)
         if style is None:
             print(f"  skip {pos}: no style assigned")
@@ -205,6 +289,9 @@ def main() -> None:
                 continue
             shutil.copy2(narration, out_path)
             print(f"  copy  {narration.stem}: passthrough (no music)")
+            sub_written = write_fusion_subtitle("PASSTHROUGH", narration, out_path)
+            if sub_written:
+                print(f"        + {sub_written.name}")
             continue
 
         # Music-bearing styles: stem follows the music filename for downstream wiring.
@@ -265,6 +352,22 @@ def main() -> None:
                 print(f"  unknown style {style} for pos {pos}")
                 continue
             print(f"  fuse  {out_stem}: {tag}")
+
+            if style == "B":
+                b_t = compute_b_timings(
+                    anchor_seconds=float(anchor),
+                    n_dur_a=probe_duration(nar_a),
+                    n_dur_b=probe_duration(nar_b),
+                    music_total=probe_duration(music),
+                )
+                sub_written = write_fusion_subtitle(
+                    style, None, out_path,
+                    narration_a=nar_a, narration_b=nar_b, b_timings=b_t,
+                )
+            else:
+                sub_written = write_fusion_subtitle(style, narration, out_path)
+            if sub_written:
+                print(f"        + {sub_written.name}")
         except (SystemExit, OutOfBounds) as e:
             print(f"  FAIL  {out_stem}: {e}")
 

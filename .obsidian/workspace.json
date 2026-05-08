@@ -26,12 +26,10 @@
             "id": "b47af285212f5179",
             "type": "leaf",
             "state": {
-              "type": "audio",
-              "state": {
-                "file": "musicos-exhibition/public/audio/10_joy-division_isolation.mp3"
-              },
-              "icon": "lucide-file-audio",
-              "title": "10_joy-division_isolation"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ],
@@ -46,12 +44,10 @@
             "id": "55f1a14f33f38e96",
             "type": "leaf",
             "state": {
-              "type": "audio",
-              "state": {
-                "file": "musicos-exhibition/public/audio/06_the-rolling-stones_miss-you.mp3"
-              },
-              "icon": "lucide-file-audio",
-              "title": "06_the-rolling-stones_miss-you"
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]

@@ -81,6 +81,10 @@ def main() -> None:
     p.add_argument("--model", default="speech-02-hd")
     p.add_argument("--force", action="store_true",
                    help="re-synth even if output exists")
+    p.add_argument("--only-position", type=int, action="append", default=[],
+                   help="only synth this exhibit position; repeatable")
+    p.add_argument("--subtitle", action="store_true",
+                   help="request sentence-level timestamps; saves <stem>.subtitle.json next to mp3")
     args = p.parse_args()
 
     load_env_local()
@@ -101,6 +105,8 @@ def main() -> None:
     for ex in ep["exhibits"]:
         pos = ex["position"]
         kind = ex["kind"]
+        if args.only_position and pos not in args.only_position:
+            continue
         parts = text_for(ex)
         if not parts:
             print(f"  skip {pos:02d} {kind}: no narration text")
@@ -117,9 +123,21 @@ def main() -> None:
 
             print(f"  synth {stem}{suffix}: {len(text)} chars from {source_field}")
             audio, meta = synthesize(
-                text, args.voice, api_key, group_id or "", model=args.model
+                text, args.voice, api_key, group_id or "", model=args.model,
+                subtitle=args.subtitle,
             )
             out_path.write_bytes(audio)
+            if args.subtitle:
+                sub_data = meta.get("subtitle")
+                if sub_data:
+                    sub_path = out_path.with_suffix(".subtitle.json")
+                    sub_path.write_text(
+                        json.dumps(sub_data, ensure_ascii=False, indent=2),
+                        encoding="utf-8",
+                    )
+                    print(f"        + {sub_path.name} ({len(sub_data)} segments)")
+                else:
+                    print(f"        ! subtitle requested but missing: {meta.get('subtitle_error', 'no subtitle_file in response')}")
 
             usage = (meta.get("extra_info") or {}).get(
                 "usage_characters", len(text)

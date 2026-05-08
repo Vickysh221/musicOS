@@ -58,7 +58,7 @@ def get_transcript(episode_path: Path, position: int) -> tuple[str, dict]:
 
 
 def synthesize(text: str, voice_id: str, api_key: str, group_id: str,
-               model: str = DEFAULT_MODEL) -> tuple[bytes, dict]:
+               model: str = DEFAULT_MODEL, subtitle: bool = False) -> tuple[bytes, dict]:
     body = {
         "model": model,
         "text": text,
@@ -77,6 +77,8 @@ def synthesize(text: str, voice_id: str, api_key: str, group_id: str,
         },
         "language_boost": "Chinese",
     }
+    if subtitle:
+        body["subtitle_enable"] = True
     url = ENDPOINT
     if "minimaxi.chat" in ENDPOINT:
         url = f"{ENDPOINT}?GroupId={group_id}"
@@ -104,7 +106,18 @@ def synthesize(text: str, voice_id: str, api_key: str, group_id: str,
     audio_hex = (payload.get("data") or {}).get("audio")
     if not audio_hex:
         raise SystemExit(f"no audio in response: {payload}")
-    return bytes.fromhex(audio_hex), {"latency_ms": latency_ms, "extra_info": payload.get("extra_info")}
+    meta = {"latency_ms": latency_ms, "extra_info": payload.get("extra_info")}
+    # MiniMax returns subtitle as a URL (subtitle_file) when subtitle_enable=true.
+    # Fetch it inline so callers receive a parsed [{text,time_begin,time_end}] list.
+    sub_url = (payload.get("data") or {}).get("subtitle_file")
+    if sub_url:
+        try:
+            with urllib.request.urlopen(sub_url, timeout=30) as r:
+                meta["subtitle"] = json.loads(r.read().decode("utf-8"))
+                meta["subtitle_source_url"] = sub_url
+        except Exception as e:
+            meta["subtitle_error"] = repr(e)
+    return bytes.fromhex(audio_hex), meta
 
 
 def log_run(record: dict) -> None:
@@ -120,6 +133,8 @@ def main() -> None:
     p.add_argument("--voice", required=True)
     p.add_argument("--output", required=True, type=Path)
     p.add_argument("--model", default=DEFAULT_MODEL)
+    p.add_argument("--subtitle", action="store_true",
+                   help="request sentence-level timestamps; saves <output>.subtitle.json next to mp3")
     args = p.parse_args()
 
     load_env_local()
@@ -131,11 +146,17 @@ def main() -> None:
     text, exhibit = get_transcript(args.episode, args.position)
     print(f"position {args.position} · {len(text)} chars · voice={args.voice}")
 
-    audio, meta = synthesize(text, args.voice, api_key, group_id, model=args.model)
+    audio, meta = synthesize(text, args.voice, api_key, group_id, model=args.model,
+                             subtitle=args.subtitle)
 
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_bytes(audio)
     print(f"wrote {args.output} ({len(audio):,} bytes, {meta['latency_ms']} ms)")
+    if args.subtitle and meta.get("subtitle"):
+        sub_path = args.output.with_suffix(".subtitle.json")
+        sub_path.write_text(json.dumps(meta["subtitle"], ensure_ascii=False, indent=2),
+                            encoding="utf-8")
+        print(f"wrote {sub_path} ({len(meta['subtitle'])} segments)")
 
     log_run({
         "timestamp": datetime.now(timezone.utc).isoformat(),
