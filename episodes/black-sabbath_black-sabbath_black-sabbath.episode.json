@@ -66,7 +66,8 @@
           "archive_reason": "redundant_with_strong",
           "rationale_zh": "贝斯吉他齐奏到锚点的传承，留给锚点站做汇流回顾时认领。"
         }
-      ]
+      ],
+      "narration_stem": "01_cream_sunshine-of-your-love"
     },
     {
       "position": 2,
@@ -94,7 +95,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_002_to_003_riff_aesthetic_inheritance",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "02_jimi-hendrix-experience_purple-haze"
     },
     {
       "position": 3,
@@ -133,7 +135,8 @@
           "archive_reason": "redundant_with_strong",
           "rationale_zh": "Hendrix 的减五度传承同样在锚点正文里通过自由回顾承接。"
         }
-      ]
+      ],
+      "narration_stem": "03_black-sabbath_black-sabbath"
     },
     {
       "position": 4,
@@ -167,7 +170,8 @@
           "archive_reason": "redundant_with_strong",
           "rationale_zh": "把 riff 进入做成建筑事件这件事，在 Back In Black 站点做对照更顺。"
         }
-      ]
+      ],
+      "narration_stem": "04_black-sabbath_war-pigs"
     },
     {
       "position": 5,
@@ -195,7 +199,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_003_to_005_direct_influence",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "05_black-sabbath_iron-man"
     },
     {
       "position": 6,
@@ -229,7 +234,8 @@
           "archive_reason": "redundant_with_strong",
           "rationale_zh": "清晰度战胜复杂度的两次峰值对照，留给 Enter Sandman 站收。"
         }
-      ]
+      ],
+      "narration_stem": "06_black-sabbath_paranoid"
     },
     {
       "position": 7,
@@ -257,7 +263,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_003_to_007_direct_influence",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "07_metallica_master-of-puppets"
     },
     {
       "position": 8,
@@ -285,7 +292,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_003_to_008_hybridization",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "08_deep-purple_smoke-on-the-water"
     },
     {
       "position": 9,
@@ -319,7 +327,8 @@
           "archive_reason": "low_focus_relevance",
           "rationale_zh": "动能极点和重力极点的跨二十年对照较抽象，本集不强调。"
         }
-      ]
+      ],
+      "narration_stem": "09_led-zeppelin_immigrant-song"
     },
     {
       "position": 10,
@@ -347,7 +356,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_009_to_010_riff_aesthetic_mutation",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "10_aerosmith_walk-this-way"
     },
     {
       "position": 11,
@@ -375,7 +385,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_008_to_011_same_era_dialogue",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "11_ac-dc_back-in-black"
     },
     {
       "position": 12,
@@ -409,7 +420,8 @@
           "archive_reason": "redundant_with_strong",
           "rationale_zh": "单音线作为 riff 的技术线，在 Sweet Child 站做收束更直接。"
         }
-      ]
+      ],
+      "narration_stem": "12_ozzy-osbourne_crazy-train"
     },
     {
       "position": 13,
@@ -443,7 +455,8 @@
           "archive_reason": "off_topic_for_episode",
           "rationale_zh": "Killing in the Name 与 Come As You Are 的同代对话偏向\"反叛策略\"轴，本集让两者各自在自己的强连接里说完。"
         }
-      ]
+      ],
+      "narration_stem": "13_rage-against-the-machine_killing-in-the-name"
     },
     {
       "position": 14,
@@ -471,7 +484,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_007_to_014_methodological_descent",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "14_metallica_enter-sandman"
     },
     {
       "position": 15,
@@ -499,7 +513,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_011_to_015_riff_aesthetic_inversion",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "15_guns-n-roses_sweet-child-o-mine"
     },
     {
       "position": 16,
@@ -527,7 +542,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_014_to_016_inversion",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "16_nirvana_come-as-you-are"
     },
     {
       "position": 17,
@@ -555,7 +571,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_016_to_017_riff_aesthetic_inversion",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "17_soundgarden_black-hole-sun"
     },
     {
       "position": 18,
@@ -583,7 +600,8 @@
       "transcript_en": null,
       "transcript_zh_status": "complete",
       "strong_connection_id": "conn_015_to_018_riff_aesthetic_inversion",
-      "archived_weak_connections": []
+      "archived_weak_connections": [],
+      "narration_stem": "18_the-white-stripes_seven-nation-army"
     },
     {
       "position": 19,
