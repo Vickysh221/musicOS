@@ -1,5 +1,6 @@
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { useExhibition } from '../store/exhibition.js';
+import { useFusionSubtitle } from '../hooks/useFusionSubtitle.js';
 import './now-playing-bar.css';
 
 const NARRATION_LABEL: Record<string, string> = {
@@ -80,37 +81,6 @@ function activeSectionIdx(startTimes: number[], currentTime: number): number {
     if (currentTime >= startTimes[i]) idx = i;
   }
   return idx;
-}
-
-interface FusionSubtitleSegment {
-  text: string;
-  start: number;
-  end: number;
-}
-
-/**
- * Sentence-level segments emitted by the fusion pipeline (MiniMax-derived,
- * already offset to the fusion-output timeline). Returns null while the
- * fetch is in flight or if no sidecar exists; the bar then falls back to
- * the proportional-by-character estimate.
- */
-function useFusionSubtitle(fusionUrl: string | null | undefined): FusionSubtitleSegment[] | null {
-  const [segments, setSegments] = useState<FusionSubtitleSegment[] | null>(null);
-  useEffect(() => {
-    setSegments(null);
-    if (!fusionUrl || !fusionUrl.endsWith('.mp3')) return;
-    const subUrl = fusionUrl.slice(0, -4) + '.subtitle.json';
-    let cancelled = false;
-    fetch(subUrl)
-      .then((r) => (r.ok ? r.json() : null))
-      .then((data: FusionSubtitleSegment[] | null) => {
-        if (cancelled || !Array.isArray(data) || data.length === 0) return;
-        setSegments(data);
-      })
-      .catch(() => { /* fall back silently */ });
-    return () => { cancelled = true; };
-  }, [fusionUrl]);
-  return segments;
 }
 
 function Marquee({ text, className }: { text: string; className?: string }) {
