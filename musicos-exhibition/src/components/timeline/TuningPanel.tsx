@@ -55,6 +55,17 @@ const GROUPS: { title: string; sliders: SliderSpec[] }[] = [
       { key: 'playingOffsetY', label: 'offset Y', min: -400, max: 400, step: 1 },
     ],
   },
+  {
+    title: 'Focal scene',
+    sliders: [
+      { key: 'verticalSpacing', label: 'v spacing', min: 60, max: 200, step: 1 },
+      { key: 'verticalDepth', label: 'v depth', min: 0, max: 200, step: 1 },
+      { key: 'verticalShrink', label: 'v shrink', min: 0, max: 0.2, step: 0.01 },
+      { key: 'verticalFade', label: 'v fade', min: 0, max: 0.3, step: 0.01 },
+      { key: 'focalOffsetY', label: 'focal off Y', min: 0, max: 200, step: 1 },
+      { key: 'carouselScale', label: 'crsl scale', min: 0.5, max: 1.2, step: 0.05 },
+    ],
+  },
 ];
 
 export function TuningPanel() {

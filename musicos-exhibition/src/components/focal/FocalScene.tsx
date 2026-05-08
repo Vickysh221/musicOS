@@ -11,6 +11,7 @@ import { Subtitle } from './Subtitle.js';
 import { Spectrum } from './Spectrum.js';
 import { PlayerBar } from './PlayerBar.js';
 import { FocalDisc } from './FocalDisc.js';
+import { TuningPanel } from '../timeline/TuningPanel.js';
 import type { TrackExhibit } from '../../types.js';
 import './focal-scene.css';
 
@@ -120,6 +121,7 @@ export function FocalScene() {
         listOpen={phase === 'horizontal'}
         onListToggle={() => setPhase((p) => (p === 'vertical' ? 'horizontal' : 'vertical'))}
       />
+      <TuningPanel />
     </div>
   );
 }
