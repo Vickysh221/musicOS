@@ -3,6 +3,7 @@ import type { TuningParams } from '../../store/tuning.js';
 type Preset = Omit<TuningParams, 'panelOpen'>;
 
 const ARC_DEFAULTS = { arcSpacing: 440, arcDepth: 150, arcRotStep: 20, playingRotX: 14, playingOffsetX: -55, playingOffsetY: -169 };
+const FOCAL_DEFAULTS = { verticalSpacing: 110, verticalDepth: 80, verticalShrink: 0.08, verticalFade: 0.12, focalOffsetY: 60, carouselScale: 0.85 };
 
 export const INTRO_1: Preset = {
   gapX: 240,
@@ -21,6 +22,7 @@ export const INTRO_1: Preset = {
   stageRotZ: 10.5,
   perspective: 400,
   ...ARC_DEFAULTS,
+  ...FOCAL_DEFAULTS,
 };
 
 export const INTRO_2: Preset = {
@@ -40,6 +42,7 @@ export const INTRO_2: Preset = {
   stageRotZ: 10.5,
   perspective: 400,
   ...ARC_DEFAULTS,
+  ...FOCAL_DEFAULTS,
 };
 
 export const INTRO_3: Preset = {
@@ -59,6 +62,7 @@ export const INTRO_3: Preset = {
   stageRotZ: -4.5,
   perspective: 4000,
   ...ARC_DEFAULTS,
+  ...FOCAL_DEFAULTS,
 };
 
 export const PLAYING: Preset = {
@@ -78,6 +82,7 @@ export const PLAYING: Preset = {
   stageRotZ: 6.5,
   perspective: 4000,
   ...ARC_DEFAULTS,
+  ...FOCAL_DEFAULTS,
 };
 
 export type Phase = 'intro1' | 'intro2' | 'intro3' | 'playing';
