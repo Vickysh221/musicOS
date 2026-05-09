@@ -31,31 +31,37 @@
 - **角松敏生**：和声编排，AOR 的日本极致版
 - **杏里**：节奏骨架，流行化处理
 - **濱田金吾**：城市深夜质感，最接近西方"下班后"原版气氛
+- **稲垣潤一**：副歌前等待感极典型
+- **ラ・ムー**：City Pop 尾期最梦幻形态，留白推到极端
 
 ### 第三幕：蒸馏（anchor）
-中原めいこ把以上所有层面蒸馏成最轻的形式。Fantasy 是铺垫——同一把声音的另一个形状；Cloudyな午後 是全集高光，外套在这里变成了皮肤。Ginger Root 的尾声揭示：这件外套 40 年后被一个加州人捡起来重新穿上了，循环闭合。
+中原めいこ把以上所有层面蒸馏成最轻的形式。Fantasy 是铺垫——同一把声音的另一个形状；Cloudyな午後 是全集高光，外套在这里变成了皮肤。双尾声：Ginger Root（加州）和 RYUSENKEI（深圳）并置，揭示这件外套还在被人捡起来穿——翻译没有终点。
 
 ---
 
-## 3. 曲目列表（13 首）
+## 3. 曲目列表（17 首）
 
 | # | 艺人 | 曲目 | 专辑 | 轴 | 叙事锚点 | 红心 |
 |---|------|------|------|----|---------|------|
 | 01 | Carole King | It's Too Late | Tapestry (1971) | 上行 | 副歌前停顿原型 | ○ |
 | 02 | James Taylor | Fire and Rain | Sweet Baby James (1970) | 上行 | 人声呼吸与空白的位置关系 | ○ |
-| 03 | Steely Dan | Deacon Blues | Aja (1977) | 上行 | 和弦色彩 + 录音室冷静感 | ○ |
-| 04 | Toto | Georgy Porgy | Toto (1978) | 上行 | 同一批乐手出现在日本 liner notes，枢纽证物 | ○ |
-| 05 | 大瀧詠一 | カナリア諸島にて | ロング・バケイション (1981) | 上行 | 东京内部翻译者：没去洛杉矶，把美国流行从内部复制出来 | ✅ |
-| 06 | 山下達郎 | LOVELAND ISLAND | FOR YOU (1982) | 横向 | 录音室声学，精密度最高，多源确认受 Steely Dan 深度影响 | ✅ |
-| 07 | 竹内まりや | シングル・アゲイン | REQUEST (1987) | 横向/枢纽 | 枢纽人物：叙事回溯 Miss M (1980) 洛杉矶录音，Toto 三人在 liner notes | ✅ |
-| 08 | 角松敏生 | ANKLET | Touch AND GO (1984) | 横向 | 和声编排，AOR 日本极致版 | ✅ |
-| 09 | 杏里 | SHYNESS BOY | BI·KI·NI (1983) | 横向 | 节奏骨架，流行化处理 | ✅ |
-| 10 | 濱田金吾 | Bye Bye Mrs. December | MIDNIGHT CRUISIN' (1982) | 横向 | 城市深夜质感，最接近西方原版气氛 | ✅ |
-| 11 | 中原めいこ | Fantasy | ファンタジー (1983) | anchor 铺垫 | anchor 的另一个形状，同一把声音 | ✅ |
-| 12 | 中原めいこ | Cloudyな午後 | Happy Birthday, Love for you (1982) | **anchor** | **全集高光，外套变成皮肤** | ✅ |
-| 13 | Ginger Root | Loretta | CITY SLICKER (2021) | 下行/尾声 | 外套 40 年后被加州人捡起来重新穿上 | ✅ |
+| 03 | Boz Scaggs | Lowdown | Silk Degrees (1976) | 上行 | AOR 与灵魂乐的接缝处，City Pop 制作人引用最多的西方单曲之一 | ○ |
+| 04 | Steely Dan | Deacon Blues | Aja (1977) | 上行 | 和弦色彩 + 录音室冷静感 | ○ |
+| 05 | Toto | Georgy Porgy | Toto (1978) | 上行 | 同一批乐手出现在日本 liner notes，枢纽证物 | ○ |
+| 06 | 大瀧詠一 | カナリア諸島にて | ロング・バケイション (1981) | 上行 | 东京内部翻译者：没去洛杉矶，把美国流行从内部复制出来 | ✅ |
+| 07 | 山下達郎 | LOVELAND ISLAND | FOR YOU (1982) | 横向 | 录音室声学，精密度最高，多源确认受 Steely Dan 深度影响 | ✅ |
+| 08 | 竹内まりや | シングル・アゲイン | REQUEST (1987) | 横向/枢纽 | 枢纽人物：叙事回溯 Miss M (1980) 洛杉矶录音，Toto 三人在 liner notes | ✅ |
+| 09 | 角松敏生 | ANKLET | Touch AND GO (1984) | 横向 | 和声编排，AOR 日本极致版 | ✅ |
+| 10 | 稲垣潤一 | 夏のクラクション | J．I．(1983) | 横向 | 副歌前等待感极典型，日本知名度高 | ✅ |
+| 11 | ラ・ムー | Late Night Heartache | Thanks Giving (1988) | 横向 | City Pop 尾期最梦幻版本，留白用得最极端 | ✅ |
+| 12 | 杏里 | SHYNESS BOY | BI·KI·NI (1983) | 横向 | 节奏骨架，流行化处理 | ✅ |
+| 13 | 濱田金吾 | Bye Bye Mrs. December | MIDNIGHT CRUISIN' (1982) | 横向 | 城市深夜质感，最接近西方原版气氛 | ✅ |
+| 14 | 中原めいこ | Fantasy | ファンタジー (1983) | anchor 铺垫 | anchor 的另一个形状，同一把声音 | ✅ |
+| 15 | 中原めいこ | Cloudyな午後 | Happy Birthday, Love for you (1982) | **anchor** | **全集高光，外套变成皮肤** | ✅ |
+| 16 | Ginger Root | Loretta | CITY SLICKER (2021) | 下行/尾声 | 外套 40 年后被加州人捡起来重新穿上 | ✅ |
+| 17 | RYUSENKEI | 3号线 | シティ・ミュージック (2021) | 下行/尾声 | 同一件外套在深圳落地——翻译还在继续 | ✅ |
 
-红心覆盖率：10/13 = **77%**（超出 spec §9.1 的 60% 下限）
+红心覆盖率：13/17 = **76%**（超出 spec §9.1 的 60% 下限）
 
 ---
 
@@ -86,7 +92,7 @@
 
 ## 6. 节点约束
 
-- 14 个节点全部新建（vault 中目前无任何 City Pop / 日本音乐节点）
+- 17 个节点全部新建（vault 中目前无任何 City Pop / 日本音乐节点）
 - Anchor node ID：`nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo`
 - 所有节点 `put_node()` 前先 `node_exists()` 检查
 
