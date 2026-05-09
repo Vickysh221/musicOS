@@ -14,6 +14,60 @@
   color: #fff;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
+.subtitle__body {
+  position: relative;
+  display: block;
+  white-space: pre-wrap;
+  word-break: break-word;
+  padding-right: 28px;
+  border-radius: 16px;
+  transition: background 0.2s ease, box-shadow 0.2s ease, padding 0.2s ease;
+}
+.subtitle__body--clamped .subtitle__text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.subtitle__body--expanded {
+  padding: 20px;
+  padding-right: 48px; /* 20px content + 28px chevron lane */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.14) 0%, rgba(255, 255, 255, 0.06) 100%);
+  backdrop-filter: blur(64px) saturate(300%);
+  -webkit-backdrop-filter: blur(64px) saturate(300%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.18),
+    0 0 0 1px rgba(255, 255, 255, 0.08),
+    0 12px 32px rgba(0, 0, 0, 0.18);
+}
+.subtitle__chevron {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.7;
+  transition: opacity 0.15s ease;
+}
+.subtitle__body--expanded .subtitle__chevron {
+  right: 16px;
+  bottom: 16px;
+}
+.subtitle__chevron:hover,
+.subtitle__chevron:focus-visible {
+  opacity: 1;
+  outline: none;
+}
 /* Pill = liquid glass (backdrop blur + white tint) + gradient color overlay.
  * --mention-bg / --mention-bg-hover supply the color stops; alpha is encoded
  * directly in those rgba values so this rule stays pure-style. */

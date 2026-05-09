@@ -89,7 +89,7 @@ describe('findCallbackTargets', () => {
 });
 
 describe('findCallbackPhrases', () => {
-  it('returns one hit per clause, longest-alias-wins', () => {
+  it('emits one hit per clause spanning only the alias token', () => {
     const text = '你刚才在 Cream 那里听到了齐奏；在 Hendrix 那里听到了三全音。';
     const candidates = [
       { position: 1, aliases: ['Cream'] },
@@ -98,16 +98,28 @@ describe('findCallbackPhrases', () => {
     const hits = findCallbackPhrases(text, candidates);
     expect(hits).toHaveLength(2);
     expect(hits[0]?.targetPosition).toBe(1);
-    expect(hits[0]?.phrase).toBe('你刚才在 Cream 那里听到了齐奏');
+    expect(hits[0]?.phrase).toBe('Cream');
+    expect(text.slice(hits[0]!.start, hits[0]!.end)).toBe('Cream');
     expect(hits[1]?.targetPosition).toBe(2);
-    expect(hits[1]?.phrase).toBe('在 Hendrix 那里听到了三全音');
+    expect(hits[1]?.phrase).toBe('Hendrix');
+    expect(text.slice(hits[1]!.start, hits[1]!.end)).toBe('Hendrix');
   });
 
   it('skips clauses with no candidate alias', () => {
     const text = 'Iommi 想出了三全音。Cream 那段齐奏也回来了。';
     const hits = findCallbackPhrases(text, [{ position: 1, aliases: ['Cream'] }]);
     expect(hits).toHaveLength(1);
-    expect(hits[0]?.phrase).toBe('Cream 那段齐奏也回来了');
+    expect(hits[0]?.phrase).toBe('Cream');
+  });
+
+  it('prefers longer alias when two aliases share the same offset', () => {
+    const text = '你听到的是 Black Sabbath 的那段三全音。';
+    const candidates = [
+      { position: 1, aliases: ['Black Sabbath', 'Sabbath'] },
+    ];
+    const hits = findCallbackPhrases(text, candidates);
+    expect(hits).toHaveLength(1);
+    expect(hits[0]?.phrase).toBe('Black Sabbath');
   });
 });
 

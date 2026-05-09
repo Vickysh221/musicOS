@@ -2,14 +2,20 @@ import { useEffect, useMemo, useState } from 'react';
 import { AnimatePresence } from 'framer-motion';
 import { useExhibition } from '../../store/exhibition.js';
 import { useTuning } from '../../store/tuning.js';
-import { useFusionSubtitle } from '../../hooks/useFusionSubtitle.js';
-import { useCurrentAndNext } from '../../hooks/useCurrentAndNext.js';
 import {
   findCallbackTargets,
   findCallbackPhrases,
   aliasesForPosition,
   type CandidateAlias,
 } from '../../lib/callback-phrase.js';
+import {
+  splitParagraphs,
+  paragraphStartTimes,
+  buildSegmentToParagraphMap,
+  activeParagraphIdx,
+} from '../../lib/transcript-paragraphs.js';
+import { useFusionSubtitle } from '../../hooks/useFusionSubtitle.js';
+import { useCurrentAndNext } from '../../hooks/useCurrentAndNext.js';
 import { EP3_ALIASES } from '../../data/ep3-aliases.js';
 import { EPISODES } from '../../lib/episodes.js';
 import { Subtitle, type SubtitleCallback } from './Subtitle.js';
@@ -44,6 +50,8 @@ export function FocalScene() {
   const playingPosition = useExhibition((s) => s.playingPosition);
   const isPlaying = useExhibition((s) => s.isPlaying);
   const currentTime = useExhibition((s) => s.currentTime);
+  const duration = useExhibition((s) => s.duration);
+  const language = useExhibition((s) => s.language);
   const play = useExhibition((s) => s.play);
   const seekTo = useExhibition((s) => s.seekTo);
   const tuning = useTuning();
@@ -67,8 +75,37 @@ export function FocalScene() {
   const anchorPosition = trackPositions[0] ?? 0;
   const currentPosition = lastPlayedTrackPosition ?? anchorPosition;
 
-  const subtitle = useFusionSubtitle(currentExhibit?.fusion_audio_url ?? null);
-  const { current, next } = useCurrentAndNext(subtitle, currentTime);
+  // Subtitle displays the current TRANSCRIPT PARAGRAPH. To stay in sync with
+  // actual audio (variable music intro, TTS pacing, pauses), we drive the
+  // active paragraph off MiniMax sentence-level timestamps when available,
+  // mapping each sentence segment back to its containing paragraph. If no
+  // fusion subtitle exists for the track, we fall back to character-count
+  // proportional timing as a best-effort estimate.
+  const transcript = currentExhibit
+    ? language === 'zh'
+      ? currentExhibit.transcript_zh
+      : currentExhibit.transcript_en
+    : null;
+  const paragraphs = useMemo(() => splitParagraphs(transcript), [transcript]);
+  const fusionSegments = useFusionSubtitle(currentExhibit?.fusion_audio_url ?? null);
+  const { currentIdx: currentSegIdx } = useCurrentAndNext(fusionSegments, currentTime);
+  const segToPara = useMemo(
+    () => (fusionSegments ? buildSegmentToParagraphMap(paragraphs, fusionSegments) : null),
+    [fusionSegments, paragraphs],
+  );
+  const fallbackStartTimes = useMemo(
+    () => paragraphStartTimes(paragraphs, duration),
+    [paragraphs, duration],
+  );
+  let paragraphIdx = -1;
+  if (paragraphs.length > 0) {
+    if (segToPara && currentSegIdx >= 0 && currentSegIdx < segToPara.length) {
+      paragraphIdx = segToPara[currentSegIdx]!;
+    } else {
+      paragraphIdx = activeParagraphIdx(fallbackStartTimes, currentTime);
+    }
+  }
+  const currentParagraph = paragraphIdx >= 0 ? paragraphs[paragraphIdx] ?? null : null;
 
   useEffect(() => {
     if (playingTrackPosition !== null && playingTrackPosition !== lastPlayedTrackPosition) {
@@ -103,8 +140,8 @@ export function FocalScene() {
   }, [exhibits, currentPosition, tracks]);
 
   const phraseHits = useMemo(
-    () => (current ? findCallbackPhrases(current.text, candidates) : []),
-    [current, candidates],
+    () => (currentParagraph ? findCallbackPhrases(currentParagraph, candidates) : []),
+    [currentParagraph, candidates],
   );
 
   const subtitleCallbacks: SubtitleCallback[] = useMemo(
@@ -131,7 +168,7 @@ export function FocalScene() {
       }
       return changed ? next : prev;
     });
-  }, [cbKey, current?.text]);
+  }, [cbKey, currentParagraph]);
 
   const arcTracks: TrackExhibit[] = useMemo(() => {
     const live = [...arcPins].filter((p) => p !== currentPosition).sort((a, b) => a - b);
@@ -180,8 +217,7 @@ export function FocalScene() {
       <header className="focal-scene__header">
         <h1 className="focal-scene__title">{epTitle}</h1>
         <Subtitle
-          current={current?.text ?? null}
-          next={next?.text ?? null}
+          current={currentParagraph}
           callbacks={subtitleCallbacks}
           onPillClick={goToTrack}
         />

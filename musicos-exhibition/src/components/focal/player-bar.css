@@ -1,9 +1,9 @@
-/* Three independent liquid-glass elements per Figma 1414:6298 (mobile @402w):
- *  - progress capsule: ~287/360 wide, 28px tall
- *  - play button: 28×28 circle, ~9px gap from capsule
- *  - list button: 28×28 circle, ~9px gap from play
- * Total row width = capsule + 2*(28+gap) ≈ 360, sitting 119px from bottom.
- * Heights/sizes scaled up modestly for desktop ergonomics. */
+/* Three independent liquid-glass elements:
+ *  - progress capsule: 42px tall, flex-grow fills remaining row width
+ *  - play button: 42×42 circle, 12px gap from capsule
+ *  - list button: 42×42 circle, 12px gap from play
+ * Capsule auto-shrinks (flex: 1 1 auto) so the row fits the increased
+ * button footprint without overflowing the container. */
 .player-bar {
   position: fixed;
   left: 50%;
@@ -12,18 +12,19 @@
   width: min(460px, calc(100% - 48px));
   display: flex;
   align-items: center;
-  gap: 9px;
+  gap: 12px;
   color: #fff;
   z-index: 30;
 }
 .player-bar__progress {
   flex: 1 1 auto;
+  min-width: 0;
   display: flex;
   align-items: center;
   gap: 10px;
-  height: 32px;
-  padding: 0 14px;
-  border-radius: 16px;
+  height: 42px;
+  padding: 0 16px;
+  border-radius: 21px;
   background:
     linear-gradient(
       180deg,
@@ -65,8 +66,8 @@
 .player-bar__btn {
   position: relative;
   flex: 0 0 auto;
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 42px;
   border: 0;
   border-radius: 50%;
   color: rgba(255, 255, 255, 0.92);

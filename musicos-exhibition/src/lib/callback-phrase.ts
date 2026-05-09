@@ -102,8 +102,10 @@ function splitClauses(text: string): Array<[number, number]> {
 
 /**
  * For each clause in `text`, emit at most one PhraseHit pointing to the
- * candidate whose alias appears earliest in the clause. Clauses with no
- * candidate alias are silent.
+ * candidate whose alias appears earliest in the clause. The hit spans only
+ * the alias token itself (e.g. "Layla"), not the surrounding clause, so the
+ * UI can pill just the song/artist name. Clauses with no candidate alias
+ * are silent.
  */
 export function findCallbackPhrases(
   text: string,
@@ -116,21 +118,30 @@ export function findCallbackPhrases(
     if (!slice.trim()) continue;
     let bestPos = -1;
     let bestIdx = Infinity;
+    let bestLen = 0;
     for (const c of candidates) {
       for (const a of c.aliases) {
         if (!a) continue;
         const idx = slice.indexOf(a);
         if (idx === -1) continue;
-        if (idx < bestIdx) {
+        // Earliest alias wins; on tie, longer alias wins (so multi-word
+        // aliases like "Black Sabbath" beat "Sabbath" at the same offset).
+        if (idx < bestIdx || (idx === bestIdx && a.length > bestLen)) {
           bestIdx = idx;
+          bestLen = a.length;
           bestPos = c.position;
         }
       }
     }
     if (bestPos === -1) continue;
-    let ps = s;
-    while (ps < e && /\s/.test(text[ps] ?? '')) ps++;
-    hits.push({ start: ps, end: e, phrase: text.slice(ps, e), targetPosition: bestPos });
+    const start = s + bestIdx;
+    const end = start + bestLen;
+    hits.push({
+      start,
+      end,
+      phrase: text.slice(start, end),
+      targetPosition: bestPos,
+    });
   }
   return hits;
 }

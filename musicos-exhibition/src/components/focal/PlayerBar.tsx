@@ -52,12 +52,12 @@ export function PlayerBar({ onListToggle, listOpen }: Props) {
         aria-label={isPlaying ? 'Pause' : 'Play'}
       >
         {isPlaying ? (
-          <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true">
+          <svg viewBox="0 0 12 12" width="18" height="18" aria-hidden="true">
             <rect x="3" y="2.25" width="2" height="7.5" rx="0.6" fill="currentColor" />
             <rect x="7" y="2.25" width="2" height="7.5" rx="0.6" fill="currentColor" />
           </svg>
         ) : (
-          <svg viewBox="0 0 12 12" width="11" height="11" aria-hidden="true">
+          <svg viewBox="0 0 12 12" width="18" height="18" aria-hidden="true">
             <path d="M3.4 2.2v7.6L9.4 6 3.4 2.2z" fill="currentColor" />
           </svg>
         )}
@@ -69,7 +69,7 @@ export function PlayerBar({ onListToggle, listOpen }: Props) {
         aria-pressed={listOpen}
         aria-label="Toggle list"
       >
-        <svg viewBox="0 0 12 12" width="12" height="12" aria-hidden="true">
+        <svg viewBox="0 0 12 12" width="18" height="18" aria-hidden="true">
           <path
             d="M2 3h8M2 6h8M2 9h8"
             stroke="currentColor"

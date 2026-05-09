@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { mentionColor } from '../../lib/mention-colors.js';
 import './subtitle.css';
@@ -12,7 +13,6 @@ export interface SubtitleCallback {
 
 interface SubtitleProps {
   current: string | null;
-  next: string | null;
   callbacks: SubtitleCallback[];
   onPillClick?: (position: number) => void;
 }
@@ -53,9 +53,35 @@ function buildSegments(text: string, callbacks: SubtitleCallback[]): Seg[] {
   return segs;
 }
 
-export function Subtitle({ current, next: _next, callbacks, onPillClick }: SubtitleProps) {
+function ChevronIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s ease' }}
+    >
+      <polyline points="6 9 12 15 18 9" />
+    </svg>
+  );
+}
+
+export function Subtitle({ current, callbacks, onPillClick }: SubtitleProps) {
   const text = current ?? '';
   const segs = buildSegments(text, callbacks);
+  const [expanded, setExpanded] = useState(false);
+
+  // Auto-collapse whenever the paragraph changes — entering a new paragraph
+  // should always start from the 2-line clamped state.
+  useEffect(() => {
+    setExpanded(false);
+  }, [current]);
 
   return (
     <div className="subtitle">
@@ -63,32 +89,46 @@ export function Subtitle({ current, next: _next, callbacks, onPillClick }: Subti
         <AnimatePresence mode="wait">
           <motion.div
             key={current ?? '__empty__'}
+            className={`subtitle__body${expanded ? ' subtitle__body--expanded' : ' subtitle__body--clamped'}`}
             initial={{ opacity: 0, y: 8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
           >
-            {segs.map((s, idx) =>
-              s.kind === 'plain' ? (
-                <span key={idx}>{s.text}</span>
-              ) : (
-                <button
-                  key={idx}
-                  type="button"
-                  className="subtitle__pill"
-                  onClick={() => onPillClick?.(s.position)}
-                  data-position={s.position}
-                  style={{
-                    ['--mention-bg' as string]: mentionColor(s.position, 0.42),
-                    ['--mention-bg-soft' as string]: mentionColor(s.position, 0.18),
-                    ['--mention-bg-hover' as string]: mentionColor(s.position, 0.6),
-                    ['--mention-bg-soft-hover' as string]: mentionColor(s.position, 0.32),
-                    ['--mention-ring' as string]: mentionColor(s.position, 0.5),
-                  }}
-                >
-                  {s.text}
-                </button>
-              ),
+            <span className="subtitle__text">
+              {segs.map((s, idx) =>
+                s.kind === 'plain' ? (
+                  <span key={idx}>{s.text}</span>
+                ) : (
+                  <button
+                    key={idx}
+                    type="button"
+                    className="subtitle__pill"
+                    onClick={() => onPillClick?.(s.position)}
+                    data-position={s.position}
+                    style={{
+                      ['--mention-bg' as string]: mentionColor(s.position, 0.42),
+                      ['--mention-bg-soft' as string]: mentionColor(s.position, 0.18),
+                      ['--mention-bg-hover' as string]: mentionColor(s.position, 0.6),
+                      ['--mention-bg-soft-hover' as string]: mentionColor(s.position, 0.32),
+                      ['--mention-ring' as string]: mentionColor(s.position, 0.5),
+                    }}
+                  >
+                    {s.text}
+                  </button>
+                ),
+              )}
+            </span>
+            {text && (
+              <button
+                type="button"
+                className="subtitle__chevron"
+                onClick={() => setExpanded((v) => !v)}
+                aria-expanded={expanded}
+                aria-label={expanded ? '收起' : '展开'}
+              >
+                <ChevronIcon open={expanded} />
+              </button>
             )}
           </motion.div>
         </AnimatePresence>
