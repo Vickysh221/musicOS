@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { mentionColor } from '../../lib/mention-colors.js';
 import './subtitle.css';
@@ -15,6 +15,9 @@ interface SubtitleProps {
   current: string | null;
   callbacks: SubtitleCallback[];
   onPillClick?: (position: number) => void;
+  /** Controlled by parent so the full-screen backdrop can also dismiss it. */
+  expanded: boolean;
+  onExpandedChange: (expanded: boolean) => void;
 }
 
 interface PlainSeg {
@@ -72,16 +75,22 @@ function ChevronIcon({ open }: { open: boolean }) {
   );
 }
 
-export function Subtitle({ current, callbacks, onPillClick }: SubtitleProps) {
+export function Subtitle({
+  current,
+  callbacks,
+  onPillClick,
+  expanded,
+  onExpandedChange,
+}: SubtitleProps) {
   const text = current ?? '';
   const segs = buildSegments(text, callbacks);
-  const [expanded, setExpanded] = useState(false);
 
   // Auto-collapse whenever the paragraph changes — entering a new paragraph
-  // should always start from the 2-line clamped state.
+  // should always start from the 2-line clamped state. Users open the panel
+  // explicitly via the chevron when they want to read the full paragraph.
   useEffect(() => {
-    setExpanded(false);
-  }, [current]);
+    onExpandedChange(false);
+  }, [current, onExpandedChange]);
 
   return (
     <div className="subtitle">
@@ -123,7 +132,7 @@ export function Subtitle({ current, callbacks, onPillClick }: SubtitleProps) {
               <button
                 type="button"
                 className="subtitle__chevron"
-                onClick={() => setExpanded((v) => !v)}
+                onClick={() => onExpandedChange(!expanded)}
                 aria-expanded={expanded}
                 aria-label={expanded ? '收起' : '展开'}
               >

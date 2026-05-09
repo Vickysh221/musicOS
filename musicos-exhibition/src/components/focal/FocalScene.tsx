@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react';
-import { AnimatePresence } from 'framer-motion';
+import { AnimatePresence, motion } from 'framer-motion';
 import { useExhibition } from '../../store/exhibition.js';
 import { useTuning } from '../../store/tuning.js';
 import {
@@ -57,12 +57,19 @@ export function FocalScene() {
   const tuning = useTuning();
 
   const [lastPlayedTrackPosition, setLastPlayedTrackPosition] = useState<number | null>(null);
+  // Set of mentioned positions pinned for the duration of the focal song. An
+  // arc lights up the first time the narrator says the linked track's name
+  // (gated by `arcsReady` so we don't fire during the disc's settle animation)
+  // and stays on screen until the focal track changes. Live phrase hits drive
+  // additions; the cleanup on focal-track change is the ONLY removal path.
+  const [arcPins, setArcPins] = useState<Set<number>>(new Set());
   // 1-level back: { position, time } captured when the user jumps to a related
   // song via arc/pill. Cleared when goBack consumes it. Not auto-cleared on
   // natural advance — staying gives users a way to recover the song they
   // detoured from even after the detour song finishes.
   const [previousNav, setPreviousNav] = useState<{ position: number; time: number } | null>(null);
   const [listOpen, setListOpen] = useState(false);
+  const [subtitleExpanded, setSubtitleExpanded] = useState(false);
 
   const tracks = exhibits.filter((e): e is TrackExhibit => e.kind === 'track');
   const currentExhibit = exhibits.find((e) => e.position === playingPosition) ?? null;
@@ -134,6 +141,11 @@ export function FocalScene() {
   }, [currentPosition]);
   const arcsReady = arcsReadyForPos === currentPosition;
 
+  // Clear pins whenever the focal track changes — pins belong to the song.
+  useEffect(() => {
+    setArcPins(new Set());
+  }, [currentPosition]);
+
   // Auto-close the playlist popup after 5s of inactivity.
   useEffect(() => {
     if (!listOpen) return;
@@ -170,19 +182,35 @@ export function FocalScene() {
     [phraseHits],
   );
 
-  // Arcs are a LIVE signal — they appear when the narrator is currently
-  // mentioning the linked song (i.e. the alias is in the active paragraph)
-  // and fade out once the paragraph moves on without re-mentioning it. No
-  // pinning across the whole song.
+  // Pin a target the FIRST time the narrator mentions it (gated by
+  // `arcsReady` so we don't fire during disc settle). Once pinned, the arc
+  // stays for the rest of the focal song — only the focal-track-change
+  // effect above clears the set.
+  const cbKey = phraseHits.map((h) => h.targetPosition).join(',');
+  useEffect(() => {
+    if (!arcsReady || phraseHits.length === 0) return;
+    setArcPins((prev) => {
+      let changed = false;
+      const next = new Set(prev);
+      for (const h of phraseHits) {
+        if (h.targetPosition === currentPosition) continue;
+        if (!next.has(h.targetPosition)) {
+          next.add(h.targetPosition);
+          changed = true;
+        }
+      }
+      return changed ? next : prev;
+    });
+  }, [cbKey, arcsReady, currentPosition, phraseHits]);
+
   const arcTracks: TrackExhibit[] = useMemo(() => {
-    if (!arcsReady) return [];
-    const positions = Array.from(new Set(phraseHits.map((h) => h.targetPosition)))
+    const positions = [...arcPins]
       .filter((p) => p !== currentPosition)
       .sort((a, b) => a - b);
     return positions
       .map((p) => tracks.find((t) => t.position === p))
       .filter((t): t is TrackExhibit => Boolean(t));
-  }, [phraseHits, currentPosition, tracks, arcsReady]);
+  }, [arcPins, currentPosition, tracks]);
 
   const episodeMeta = EPISODES.find((e) => e.id === episodeId);
   const epTitle = episodeMeta?.titleZh ?? '';
@@ -221,12 +249,28 @@ export function FocalScene() {
   return (
     <div className="focal-scene">
       <BackgroundShader persona={1} />
-      <header className="focal-scene__header">
+      <AnimatePresence>
+        {subtitleExpanded && (
+          <motion.div
+            className="subtitle-backdrop"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.18 }}
+            onClick={() => setSubtitleExpanded(false)}
+          />
+        )}
+      </AnimatePresence>
+      <header
+        className={`focal-scene__header${subtitleExpanded ? ' focal-scene__header--lifted' : ''}`}
+      >
         <h1 className="focal-scene__title">{epTitle}</h1>
         <Subtitle
           current={currentParagraph}
           callbacks={subtitleCallbacks}
           onPillClick={goToTrack}
+          expanded={subtitleExpanded}
+          onExpandedChange={setSubtitleExpanded}
         />
       </header>
 

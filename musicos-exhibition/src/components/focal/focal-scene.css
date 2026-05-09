@@ -18,6 +18,11 @@
   max-width: 460px;
   margin: 0 auto;
 }
+/* When subtitle is expanded, header floats above the full-screen subtitle
+ * backdrop (z-index 35) so the paragraph text stays readable on top of it. */
+.focal-scene__header--lifted {
+  z-index: 37;
+}
 .focal-scene__title {
   font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   font-weight: 600;
