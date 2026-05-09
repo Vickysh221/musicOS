@@ -70,7 +70,7 @@ export const TUNING_DEFAULTS: TuningParams = {
   playingOffsetX: -112,
   playingOffsetY: -169,
   focalDiscSize: 268,
-  focalStageY: 65,
+  focalStageY: 58,
   verticalSpacing: 138,
   verticalDepth: 87,
   verticalShrink: 0.04,

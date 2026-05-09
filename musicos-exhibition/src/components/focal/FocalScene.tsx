@@ -57,9 +57,6 @@ export function FocalScene() {
   const tuning = useTuning();
 
   const [lastPlayedTrackPosition, setLastPlayedTrackPosition] = useState<number | null>(null);
-  // Set of mentioned positions pinned for the duration of the focal song. Once
-  // a callback fires, the arc stays until the focal track changes.
-  const [arcPins, setArcPins] = useState<Set<number>>(new Set());
   // 1-level back: { position, time } captured when the user jumps to a related
   // song via arc/pill. Cleared when goBack consumes it. Not auto-cleared on
   // natural advance — staying gives users a way to recover the song they
@@ -73,7 +70,15 @@ export function FocalScene() {
     currentExhibit?.kind === 'track' ? currentExhibit.position : null;
   const trackPositions = tracks.map((t) => t.position).sort((a, b) => a - b);
   const anchorPosition = trackPositions[0] ?? 0;
-  const currentPosition = lastPlayedTrackPosition ?? anchorPosition;
+  // Derive synchronously from `playingTrackPosition` whenever a track is
+  // playing — falling back to the persisted `lastPlayedTrackPosition` only
+  // when narration (a non-track exhibit) is active. The persisted value lags
+  // behind by one render (it's set via useEffect), so reading it directly
+  // would briefly render the previous focal track for a frame after every
+  // play() call. That one-frame stale read is the flicker users see when the
+  // disc swaps position.
+  const currentPosition =
+    playingTrackPosition ?? lastPlayedTrackPosition ?? anchorPosition;
 
   // Subtitle displays the current TRANSCRIPT PARAGRAPH. To stay in sync with
   // actual audio (variable music intro, TTS pacing, pauses), we drive the
@@ -113,10 +118,21 @@ export function FocalScene() {
     }
   }, [playingTrackPosition, lastPlayedTrackPosition]);
 
-  // Focal track changed → wipe arc pins for the new song's callback context.
+  // Gate MentionArcs visibility on a "stage settled" flag: when the focal
+  // track changes, the disc spends ~500ms animating between layoutId-shared
+  // positions (e.g. PreviousDisc → center on goBack, or in-place mount on
+  // natural advance). Showing arcs during that flight looks chaotic, so we
+  // delay arc render until after the spring settles.
+  const ARCS_SETTLE_MS = 520;
+  const [arcsReadyForPos, setArcsReadyForPos] = useState<number | null>(null);
   useEffect(() => {
-    setArcPins(new Set());
+    setArcsReadyForPos(null);
+    const timer = window.setTimeout(() => {
+      setArcsReadyForPos(currentPosition);
+    }, ARCS_SETTLE_MS);
+    return () => window.clearTimeout(timer);
   }, [currentPosition]);
+  const arcsReady = arcsReadyForPos === currentPosition;
 
   // Auto-close the playlist popup after 5s of inactivity.
   useEffect(() => {
@@ -154,28 +170,19 @@ export function FocalScene() {
     [phraseHits],
   );
 
-  const cbKey = phraseHits.map((h) => h.targetPosition).join(',');
-  useEffect(() => {
-    if (phraseHits.length === 0) return;
-    setArcPins((prev) => {
-      let changed = false;
-      const next = new Set(prev);
-      for (const h of phraseHits) {
-        if (!next.has(h.targetPosition)) {
-          next.add(h.targetPosition);
-          changed = true;
-        }
-      }
-      return changed ? next : prev;
-    });
-  }, [cbKey, currentParagraph]);
-
+  // Arcs are a LIVE signal — they appear when the narrator is currently
+  // mentioning the linked song (i.e. the alias is in the active paragraph)
+  // and fade out once the paragraph moves on without re-mentioning it. No
+  // pinning across the whole song.
   const arcTracks: TrackExhibit[] = useMemo(() => {
-    const live = [...arcPins].filter((p) => p !== currentPosition).sort((a, b) => a - b);
-    return live
+    if (!arcsReady) return [];
+    const positions = Array.from(new Set(phraseHits.map((h) => h.targetPosition)))
+      .filter((p) => p !== currentPosition)
+      .sort((a, b) => a - b);
+    return positions
       .map((p) => tracks.find((t) => t.position === p))
       .filter((t): t is TrackExhibit => Boolean(t));
-  }, [arcPins, currentPosition, tracks]);
+  }, [phraseHits, currentPosition, tracks, arcsReady]);
 
   const episodeMeta = EPISODES.find((e) => e.id === episodeId);
   const epTitle = episodeMeta?.titleZh ?? '';
