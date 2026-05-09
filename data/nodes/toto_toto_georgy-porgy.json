@@ -1,0 +1,43 @@
+{
+  "id": "toto_toto_georgy-porgy",
+  "artist": "Toto",
+  "period": {
+    "label": "Toto debut era / 1978-1981",
+    "year_start": 1977,
+    "year_end": 1981
+  },
+  "works": [
+    {
+      "title": "Georgy Porgy",
+      "type": "track",
+      "year": 1978
+    },
+    {
+      "title": "Toto",
+      "type": "album",
+      "year": 1978
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "AOR / soft rock / session musician network",
+    "geographic_locus": "Los Angeles (CBS Studios)",
+    "historical_role": "Toto was formed by the same session musicians who had played on Boz Scaggs's Silk Degrees (1976): David Paich, Jeff Porcaro, David Hungate, and others. Georgy Porgy—featuring Cheryl Lynn on backing vocals—became one of the defining smooth AOR singles of 1978. Two years after its release, Toto members (Porcaro, Lukather, Hungate, and Paich) flew to Los Angeles to record 竹内まりや's Miss M (1980) with producer David Foster. The physical presence of these specific players—their hands, their timing, their vocabulary of subtle hesitation before the beat—is the documented mechanism by which the West Coast AOR grammar entered City Pop's recording practice."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at CBS Studios, Los Angeles, 1978. Produced by David Paich and Jeff Porcaro. The album showcased the session-musician approach to pop construction: each part is voiced to complement rather than compete. Georgy Porgy's rhythm track features Jeff Porcaro's characteristic 'half-time feel with ghost notes'—the drum pattern that creates a sense of spaciousness by implying beats rather than striking them. This ghost-note approach was absorbed by Japanese drum arrangers in the early 1980s.",
+    "member_dynamics": "Toto was explicitly formed as a vehicle for musicians who had spent their careers serving other artists' visions. The band's internal democracy—all six members were credited equally—produced a sound that was collaborative rather than ego-driven. This service orientation, prioritising the song over the player, resonated with Japanese City Pop's similar emphasis on production elegance over virtuoso display.",
+    "cultural_venue": "Toto's self-titled debut reached US #9. Georgy Porgy reached US #48 as a single but received heavy AOR radio rotation. In Japan, Columbia Records' promotion of the album positioned Toto as the apex of sophisticated American studio craft. Japanese recording magazines (Sound & Recording Magazine, Player) analysed Toto's production techniques extensively in 1979-1983.",
+    "instrumentation_details": "Georgy Porgy features Cheryl Lynn (backing vocals), Steve Lukather (guitar), David Hungate (bass), Jeff Porcaro (drums), David Paich and Steve Porcaro (keyboards). The bass line holds a steady quarter-note pulse while the guitar provides staccato chord stabs—the rhythm-section relationship that City Pop adopted as a structural default. Bobby Kimball's lead vocal sits in a mid-range that leaves space above and below for arrangement breathing room.",
+    "release_circumstances": "Released as third single from Toto, 1979. The album Toto went Platinum in the US. In Japan, the same personnel (Lukather, Hungate, Jeff Porcaro, Paich) would work in LA on 竹内まりや Miss M in 1980, creating the documented personnel bridge between West Coast AOR and City Pop."
+  },
+  "user_coverage": {
+    "status": "blind_spot",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Toto_(album)",
+    "https://en.wikipedia.org/wiki/Toto_(band)"
+  ]
+}

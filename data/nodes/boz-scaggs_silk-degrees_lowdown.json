@@ -1,0 +1,43 @@
+{
+  "id": "boz-scaggs_silk-degrees_lowdown",
+  "artist": "Boz Scaggs",
+  "period": {
+    "label": "Silk Degrees era / 1975-1978",
+    "year_start": 1975,
+    "year_end": 1978
+  },
+  "works": [
+    {
+      "title": "Lowdown",
+      "type": "track",
+      "year": 1976
+    },
+    {
+      "title": "Silk Degrees",
+      "type": "album",
+      "year": 1976
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "AOR / blue-eyed soul / soft rock",
+    "geographic_locus": "Los Angeles (Davlen Sound Studios, North Hollywood)",
+    "historical_role": "Lowdown is the documented personnel bridge between West Coast AOR and City Pop: session keyboardist David Paich and drummer Jeff Porcaro, both of whom played on Silk Degrees, co-founded Toto the following year (1977). In 1980, Toto members—including Porcaro, Paich's bandmate Steve Lukather, and bassist David Hungate—recorded 竹内まりや's Miss M in Los Angeles. The same hands that built the groove of Lowdown were physically present in the recording sessions that introduced City Pop to the West Coast studio sound. The song's cool, detached urbanity—the groove that doesn't hurry, the bass that waits a beat before committing—became a structural template for City Pop's 'city at night' aesthetic."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by Joe Wissert at Davlen Sound Studios, North Hollywood, 1975-1976. Session musicians: David Paich (keyboards, co-writer of Lowdown), Jeff Porcaro (drums), David Hungate (bass), Fred Tackett (guitar). Paich and Porcaro went on to co-found Toto in 1977 with Steve Lukather, Steve Porcaro, Bobby Kimball, and David Hungate—the same players who later appeared on 竹内まりや's Miss M (1980). The Silk Degrees sessions were essentially a pre-Toto rehearsal.",
+    "member_dynamics": "Scaggs was dissatisfied with his earlier bluesy work and wanted to move toward sophisticated urban soul. He sought out LA session musicians known for their restraint and precision—the opposite of the blues expressionism he'd been doing. This pursuit of disciplined sophistication was precisely the aesthetic that Japanese City Pop producers were independently developing.",
+    "cultural_venue": "Silk Degrees reached #2 on the Billboard 200 and sold 5 million copies in the US. In Japan, the album was a major AOR reference—CBS Sony promoted it heavily, and it circulated among Japanese arrangers as a production manual for sophisticated urban pop.",
+    "instrumentation_details": "The groove of Lowdown is built on a locked kick-bass relationship that anticipates the beat without rushing it—the bass enters slightly after the one, creating a 'leaning back' effect. This rhythmic patience, combined with Paich's keyboard voicings (ninth and eleventh chords), created the blueprint for City Pop's sophisticated-groove aesthetic.",
+    "release_circumstances": "Released as a single June 1976. Won Grammy for Best R&B Song 1977. Reached US #3 pop and #1 R&B. The Silk Degrees album remained on the chart for 115 weeks."
+  },
+  "user_coverage": {
+    "status": "blind_spot",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Silk_Degrees",
+    "https://en.wikipedia.org/wiki/Toto_(band)"
+  ]
+}

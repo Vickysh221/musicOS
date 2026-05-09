@@ -1,0 +1,46 @@
+{
+  "id": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+  "artist": "中原めいこ",
+  "period": {
+    "label": "Happy Birthday, Love for you era / 1982",
+    "year_start": 1982,
+    "year_end": 1983
+  },
+  "works": [
+    {
+      "title": "Cloudyな午後",
+      "type": "track",
+      "year": 1982
+    },
+    {
+      "title": "Happy Birthday, Love for you",
+      "type": "album",
+      "year": 1982
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / Japanese AOR / translation_aesthetic",
+    "geographic_locus": "Tokyo",
+    "historical_role": "Cloudyな午後 is the distillation point of the episode's thesis: a track that represents the Western AOR translation grammar at its most refined and least visible. Where Boz Scaggs's Lowdown is urban soul wearing a sophisticated suit, and 竹内まりや's Miss M is AOR translated by the literal hands that made it, Cloudyな午後 is the coat worn so long it has become the wearer's own skin. The West Coast harmonic language, the breath before the chorus, the arrangement restraint—all present, all invisible as foreign material. The song is not about its influences; it simply is what they produced when they settled into a Japanese body. The title (Cloudy Afternoon) gives the song its atmospheric quality without needing to describe it: the cloudy afternoon IS the suspended-before-chorus feeling. The weather is the grammar."
+  },
+  "narrative_slots": {
+    "production_facts": "Released on 中原めいこ's debut album Happy Birthday, Love for you (1982), CBS Sony. The production uses the standard City Pop arrangement palette but with unusual restraint: the rhythm section is present but unassertive, the harmonic content is carried primarily by a sustained keyboard pad, and the bass moves in long notes rather than rhythmic patterns. The result is a track where the 'cloudy' quality of the title is achieved through arrangement subtraction rather than addition.",
+    "member_dynamics": "As with Fantasy, 中原めいこ worked within a professional City Pop production context rather than as a producer-songwriter. The arrangers and producers who shaped her early material (Happy Birthday, Love for you) brought the City Pop grammar fully formed; her contribution was a vocal timbre and delivery style that embodied the aesthetic's most essential quality: the impression that the emotion is almost too restrained to reach the listener, and that this near-miss IS the emotion.",
+    "cultural_venue": "中原めいこ was primarily a domestic Japanese artist in the 1980s, known to City Pop audiences but not a mass-market star of the scale of 竹内まりや or 山下達郎. Her rediscovery during the 2010s-2020s City Pop revival was particularly pronounced internationally—Cloudyな午後 accumulated streaming numbers and YouTube views from listeners who found it through the algorithm pathways that made City Pop a global phenomenon.",
+    "instrumentation_details": "The opening bars of Cloudyな午後 establish the breath grammar immediately: a keyboard pad enters, sustains without rhythmic motion, and the vocal follows after what feels like a held breath. The chorus arrival is signalled by a subtle drum fill—not a dramatic change of energy but a quiet confirmation that the song has been building to this point all along. The bass enters more actively in the chorus, the only significant dynamic shift in the track. The weather metaphor of the title is produced by the track's refusal to commit to full rhythmic or harmonic clarity.",
+    "release_circumstances": "Released 1982 on CBS Sony as part of Happy Birthday, Love for you. The song exists in two versions in the user's library: the original album version (NetEase ID 630008) and a version on ロートスの果実 -LOTOS- compilation (NetEase ID 630210). The 1982 original is the canonical reference for this node."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2022-11-02: Cloudyな午後 (Happy Birthday, Love for you)",
+      "红心 2025-12-15: Cloudyな午後 (ロートスの果実 -LOTOS-)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Meiko_Nakahara"
+  ],
+  "secondary_anchor_candidate": false
+}

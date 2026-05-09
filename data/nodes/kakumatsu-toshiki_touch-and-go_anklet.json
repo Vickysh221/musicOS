@@ -1,0 +1,44 @@
+{
+  "id": "kakumatsu-toshiki_touch-and-go_anklet",
+  "artist": "角松敏生",
+  "period": {
+    "label": "Touch AND GO era / 1984",
+    "year_start": 1982,
+    "year_end": 1987
+  },
+  "works": [
+    {
+      "title": "ANKLET",
+      "type": "track",
+      "year": 1984
+    },
+    {
+      "title": "Touch AND GO",
+      "type": "album",
+      "year": 1984
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / AOR / Japanese fusion pop",
+    "geographic_locus": "Tokyo",
+    "historical_role": "角松敏生 represents City Pop's most complete absorption of American AOR's harmonic language: his chord voicings (extended and altered chords, jazz substitutions, dense inner voices) push further toward the Steely Dan pole than most City Pop contemporaries. ANKLET is frequently cited as the peak of his AOR period—a track where the harmony is so dense that it blurs the line between pop and smooth jazz. His approach to the suspended pause before the chorus is the most technically sophisticated in City Pop: the harmony suspends on a chord that belongs to neither the verse nor the chorus key, creating genuine harmonic ambiguity rather than mere delay."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by 角松敏生 himself. Touch AND GO was recorded with session musicians selected for their ability to execute demanding AOR arrangements. 角松敏生 had studied American AOR records extensively and applied their production techniques directly, including the use of Linn drum machines alongside live percussion to create the precise-yet-organic rhythm feel of West Coast studio pop.",
+    "member_dynamics": "角松敏生 was a strong creative independent who produced, arranged, and wrote all his own material. His refusal to simplify his harmonic language for commercial accessibility made him a critical favourite rather than a mass-market star, but his influence on City Pop arrangers—including those who worked with 中原めいこ and 竹内まりや—was significant.",
+    "cultural_venue": "Touch AND GO was well-received by City Pop enthusiasts and music critics but achieved moderate commercial success compared to 山下達郎 or 竹内まりや. Its legacy grew substantially in the City Pop revival of the 2010s-2020s, when its production sophistication became more accessible to international listeners.",
+    "instrumentation_details": "ANKLET features interlocking guitar and keyboard parts that create a harmonic web rather than a melody-plus-accompaniment structure. The bass plays a pattern that anticipates the chord changes rather than reinforcing them—a technique drawn from Steely Dan's Chuck Rainey-era bass philosophy. The saxophone-like keyboard voicings in the bridge mirror the Deacon Blues saxophone idiom.",
+    "release_circumstances": "Released 1984 on CBS Sony. Touch AND GO was 角松敏生's fourth studio album and consolidated his reputation as the most harmonically adventurous City Pop producer of his generation."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2021-12-02: ANKLET (Touch AND GO)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Toshiki_Kadomatsu"
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "takeuchi-mariya_request_single-again",
+  "artist": "竹内まりや",
+  "period": {
+    "label": "REQUEST / comeback era / 1987",
+    "year_start": 1984,
+    "year_end": 1990
+  },
+  "works": [
+    {
+      "title": "シングル・アゲイン",
+      "type": "track",
+      "year": 1987
+    },
+    {
+      "title": "REQUEST",
+      "type": "album",
+      "year": 1987
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / Japanese AOR / singer-songwriter",
+    "geographic_locus": "Tokyo",
+    "historical_role": "竹内まりや is the documented pivot between West Coast AOR and City Pop: in 1980, she recorded Miss M in Los Angeles at Monterrey Sound Studios with producer David Foster and Toto musicians Jeff Porcaro (drums), Steve Lukather (guitar), and David Hungate (bass)—the same personnel who had played on Boz Scaggs's Silk Degrees. This session is the concrete, liner-note-confirmed moment at which Western session musicians physically participated in a City Pop recording. シングル・アゲイン (1987) represents the matured form of what that encounter produced: a vocal style and arrangement language that carries the Carole King breath-and-pause grammar inside Japanese pop, made fully domestic. The song was written by her husband 山下達郎 and became one of the bestselling Japanese singles of the era."
+  },
+  "narrative_slots": {
+    "production_facts": "シングル・アゲイン produced by 山下達郎, released December 1987. The arrangement is spare: acoustic guitar, piano, and 山下達郎's characteristic layered backing vocals sitting under まりや's lead. The song's structure builds toward a chorus that arrives one beat later than expected—a deliberate suspension matching the Carole King tradition of harmonic delay before release. REQUEST sold over 2 million copies, making it one of the best-selling albums in Japanese music history at the time. Background: Miss M (1980) was recorded at Monterrey Sound Studios, Los Angeles with David Foster producing, and featuring Jeff Porcaro, Steve Lukather, and David Hungate of Toto—confirmed by Discogs database and SessionDays archive.",
+    "member_dynamics": "竹内まりや took a hiatus from performing after marrying 山下達郎 in 1982 to focus on family. REQUEST was her comeback album. 山下達郎 wrote シングル・アゲイン specifically as a song she could inhabit fully—the domestic emotional register that City Pop had made its own. The song's subject (a woman who finds herself single again, looking back) is delivered without self-pity, in the restrained key of C major.",
+    "cultural_venue": "REQUEST entered the Oricon chart at #1 and remained there for weeks. It was re-released in 1990 and became a recurrent chart success. シングル・アゲイン remains one of the most recognized City Pop standards and one of the most-streamed Japanese songs globally in the 2020s City Pop revival.",
+    "instrumentation_details": "The arrangement of シングル・アゲイン is a conscious regression toward the acoustic simplicity of Carole King's Tapestry: guitar-piano-voice, minimal percussion. The breath まりや takes before the chorus—audible in the original recording—is the Carole King grammar made Japanese. The bass enters only in the chorus, holding down the space that was empty in the verse.",
+    "release_circumstances": "Released December 1987 as the second single from REQUEST. Reached Oricon #2 as a single. The REQUEST album sold over 2 million copies and remained the best-selling Japanese album by a female artist for several years."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2021-12-19: シングル・アゲイン (2022 Remaster) (REQUEST)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Request_(Mariya_Takeuchi_album)",
+    "https://en.wikipedia.org/wiki/Mariya_Takeuchi",
+    "https://sessiondays.com/2022/07/04/1980-mariya-tekeuchi-missm/"
+  ]
+}

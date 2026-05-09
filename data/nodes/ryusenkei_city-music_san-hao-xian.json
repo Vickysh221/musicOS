@@ -1,0 +1,44 @@
+{
+  "id": "ryusenkei_city-music_san-hao-xian",
+  "artist": "RYUSENKEI",
+  "period": {
+    "label": "シティ・ミュージック era / 2021",
+    "year_start": 2019,
+    "year_end": 2023
+  },
+  "works": [
+    {
+      "title": "3号线",
+      "type": "track",
+      "year": 2021
+    },
+    {
+      "title": "シティ・ミュージック",
+      "type": "album",
+      "year": 2021
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop revival / Chinese indie / translation third-generation",
+    "geographic_locus": "Shenzhen, China",
+    "historical_role": "RYUSENKEI (流线型) is a Shenzhen-based Chinese band whose album シティ・ミュージック—titled in Japanese—makes City Pop music with Chinese lyrics. The translation chain is now three steps: West Coast AOR (California) → City Pop (Tokyo 1980-1988) → 流线型 (Shenzhen 2021). The coat has been worn by a second generation of translators. 3号线 (Line 3) refers to Shenzhen Metro Line 3, placing the City Pop urban-transit fantasy in a Chinese city—the Shenzhen subway playing the role that the Tokyo FM radio or the Californian coastal highway played in earlier iterations of the aesthetic. The grammar (suspended harmony, restrained rhythm, breath before chorus) survives unchanged; the geography has shifted from one side of the Pacific to a third continent."
+  },
+  "narrative_slots": {
+    "production_facts": "RYUSENKEI produces their own material with an aesthetic precision that mirrors the City Pop original: clean digital recording that deliberately avoids contemporary loudness-normalised production, synthesiser choices from the 1980s palette, and mixing that creates space rather than filling it. The album title's Japanese (rather than Chinese) signals the direct lineage claim.",
+    "member_dynamics": "RYUSENKEI is a collaborative band project based in Shenzhen whose members absorbed City Pop through streaming platforms and YouTube during the 2010s global revival. Their engagement with the music is generational—they encountered it as a historical aesthetic before discovering its Western origins, meaning their translation relationship to AOR is mediated through the Japanese version.",
+    "cultural_venue": "シティ・ミュージック was released during the peak of City Pop's global revival and found an audience across East Asia and internationally. The band's Shenzhen location is significant: Shenzhen is one of China's most cosmopolitan and internationally connected cities, making it a plausible site for the continuing translation of an urban aesthetic that has always been about imagining a certain kind of city.",
+    "instrumentation_details": "3号线 opens with a synthesiser pad—the same entry point as many City Pop originals—before a clean bass line and drum pattern establish the rhythm. The chord language is directly descended from the Japanese City Pop vocabulary: major seventh and ninth chords, delayed resolution before the chorus, the familiar breath-hold built into the song's structure. The Chinese lyric sits over an arrangement that could have been produced in Tokyo in 1983.",
+    "release_circumstances": "シティ・ミュージック released 2021 on Chinese independent label. 3号线 became one of the band's most-streamed tracks and was featured in multiple City Pop revival playlists across streaming platforms. RYUSENKEI subsequently gained recognition in international City Pop communities as part of the genre's third-generation translation."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2021-12-02: 3号线 (シティ・ミュージック)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ryusenkei"
+  ]
+}

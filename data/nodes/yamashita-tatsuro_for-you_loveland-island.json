@@ -1,0 +1,45 @@
+{
+  "id": "yamashita-tatsuro_for-you_loveland-island",
+  "artist": "山下達郎",
+  "period": {
+    "label": "FOR YOU era / 1982",
+    "year_start": 1980,
+    "year_end": 1984
+  },
+  "works": [
+    {
+      "title": "LOVELAND ISLAND",
+      "type": "track",
+      "year": 1982
+    },
+    {
+      "title": "FOR YOU",
+      "type": "album",
+      "year": 1982
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / Japanese AOR / studio perfectionism",
+    "geographic_locus": "Tokyo (Air Studios / Onkio Haus)",
+    "historical_role": "山下達郎 is widely described in Japanese music journalism as 'Japan's Steely Dan'—a label that captures both his harmonic sophistication (jazz chord voicings applied to pop structures) and his studio obsessionism (he recorded all backing vocals himself, one part at a time, to achieve his specific harmonic vision). FOR YOU is the consensus peak of City Pop's recording-as-art philosophy. LOVELAND ISLAND exemplifies the approach: a summer-fantasy lyric over a rhythm arrangement of exacting precision, where every instrument is weighted to produce a specific acoustic result. The album represents the maximum translation of West Coast AOR's studio perfectionism into a Japanese pop context."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by 山下達郎 at Air Studios and Onkio Haus, Tokyo, 1982. 山下達郎 sang all background vocals himself, recording each harmonic part separately and mixing them to create the dense, choir-like texture. The rhythm tracks were recorded with handpicked session musicians (including his regular collaborators 青山純 on drums and 伊藤広規 on bass) with specific instructions about timing and tone. This studio-control philosophy—where the producer's ear overrides any individual player's interpretation—mirrors Becker and Fagen's approach on Aja.",
+    "member_dynamics": "山下達郎 is married to 竹内まりや. The two form the creative nucleus of Japanese City Pop's most studied partnership. 山下達郎 served as producer and arranger on several of まりや's albums, and she recorded シングル・アゲイン (1987) with a song he wrote for her. Their creative relationship embodies City Pop's domestication of Western musical ideas within a Japanese aesthetic world.",
+    "cultural_venue": "FOR YOU reached #1 on the Oricon chart. The album was heavily promoted as 'summer listening'—a category that City Pop had invented—and its sales cemented the genre's commercial viability. 山下達郎's perfectionism became a model for City Pop production standards.",
+    "instrumentation_details": "LOVELAND ISLAND features a rhythm arrangement built on 青山純's metronomic drum pattern (closed hi-hat on every eighth note, kick on one and three), 伊藤広規's bass sitting precisely on the beat, and 山下達郎's layered guitars providing harmonic colour without rhythmic assertion. The result is a track where the groove is felt rather than stated—the player restraint that West Coast AOR established as a production virtue.",
+    "release_circumstances": "FOR YOU released September 1982 (Moon Records / CBS Sony). Reached Oricon #1. LOVELAND ISLAND was the album's opening track and became one of 山下達郎's signature summer songs. The album is consistently ranked among the best Japanese pop albums of the 1980s."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2022-04-21: LOVELAND ISLAND (FOR YOU)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/For_You_(Tatsuro_Yamashita_album)",
+    "https://en.wikipedia.org/wiki/Tatsuro_Yamashita"
+  ]
+}

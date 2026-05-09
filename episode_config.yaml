@@ -17,3 +17,7 @@ episodes:
   dorantes_orobroy_orobroy:
     expected_rows: 20
     allow_duplicate_anchor_node: true
+  # Episode 5 — 中原めいこ / Cloudyな午後. translation_aesthetic focus, 17 stops.
+  # Design at docs/superpowers/specs/2026-05-10-citypop-cloudy-afternoon-episode-design.md
+  nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo:
+    expected_rows: 17

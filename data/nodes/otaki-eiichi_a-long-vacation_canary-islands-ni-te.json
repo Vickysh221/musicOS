@@ -1,0 +1,45 @@
+{
+  "id": "otaki-eiichi_a-long-vacation_canary-islands-ni-te",
+  "artist": "大瀧詠一",
+  "period": {
+    "label": "Niagara / A Long Vacation era / 1981",
+    "year_start": 1980,
+    "year_end": 1983
+  },
+  "works": [
+    {
+      "title": "カナリア諸島にて",
+      "type": "track",
+      "year": 1981
+    },
+    {
+      "title": "A Long Vacation (ロング・バケイション)",
+      "type": "album",
+      "year": 1981
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / Japanese AOR / oldies synthesis",
+    "geographic_locus": "Tokyo (Niagara Records / CBS Sony studios)",
+    "historical_role": "大瀧詠一 is the Tokyo-side translator: unlike 竹内まりや, who literally flew to Los Angeles to record with Toto, 大瀧詠一 built his West Coast sound entirely from the inside—through obsessive study of American oldies, Phil Spector productions, Brian Wilson arrangements, and AOR records. He founded Niagara Records in 1975 as a laboratory for applying American pop production techniques to Japanese material. A Long Vacation (1981) was the culmination: an album that sounds unmistakably like California studio pop, built entirely in Tokyo, by a producer who had never worked with Western session musicians. カナリア諸島にて is the album's most atmospheric track—a song that places the listener in a European vacation fantasy through arrangement alone, without irony or quotation. The album sold over 700,000 copies and remains a defining City Pop artifact."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by 大瀧詠一 himself at CBS Sony studios, Tokyo, 1980-1981. All arrangements by 大瀧詠一 and 多羅尾伴内 (his production pseudonym). The album was recorded entirely in Japan with Japanese session musicians, demonstrating that the West Coast sound could be fully reconstructed from the inside—through listening, analysis, and internalization rather than personnel import. The production philosophy contrasted directly with 竹内まりや's approach (actually hiring the Toto musicians): 大瀧詠一 believed the aesthetic could be rebuilt from first principles.",
+    "member_dynamics": "大瀧詠一 had been a member of Happy End (はっぴいえんど) with 細野晴臣, 松本隆, and 鈴木茂—the seminal band that introduced English-style rock to Japanese lyrics in 1970-1972. After Happy End dissolved, each member pursued different approaches to the Western/Japanese synthesis. 大瀧詠一 chose the most radical internalization route: rebuilding American pop from scratch.",
+    "cultural_venue": "A Long Vacation was released on 21 March 1981 and immediately became a cultural phenomenon. The album's cover—a leisure scene in warm colors—and its title defined a Japanese fantasy of Western leisure (バカンス culture) that was inseparable from the City Pop aesthetic. The album stayed on the Japanese charts for years.",
+    "instrumentation_details": "カナリア諸島にて features lush string arrangements, clean electric guitar, and a vocal style that consciously mimics the relaxed phrasing of American soft rock—specifically the way the vocalist sits slightly behind the beat, never pushing. The breath before the chorus is held a full beat longer than strictly necessary, creating the suspension feeling that 大瀧詠一 had identified as the core of the West Coast style.",
+    "release_circumstances": "A Long Vacation released March 1981 (CBS Sony). Over 700,000 copies sold in Japan. Ranked as one of the greatest Japanese pop albums in multiple retrospective polls (Rolling Stone Japan, etc.). Became a primary text for the City Pop revival in the 2010s–2020s when the album's streaming numbers surged globally."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2022-10-27: カナリア諸島にて (A Long Vacation)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/A_Long_Vacation",
+    "https://en.wikipedia.org/wiki/Eiichi_Ohtaki"
+  ]
+}

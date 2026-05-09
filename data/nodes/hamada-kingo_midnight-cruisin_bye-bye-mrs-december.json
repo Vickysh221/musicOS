@@ -1,0 +1,44 @@
+{
+  "id": "hamada-kingo_midnight-cruisin_bye-bye-mrs-december",
+  "artist": "濱田金吾",
+  "period": {
+    "label": "MIDNIGHT CRUISIN' era / 1982",
+    "year_start": 1982,
+    "year_end": 1985
+  },
+  "works": [
+    {
+      "title": "Bye Bye Mrs. December",
+      "type": "track",
+      "year": 1982
+    },
+    {
+      "title": "MIDNIGHT CRUISIN'",
+      "type": "album",
+      "year": 1982
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / Japanese AOR / urban adult contemporary",
+    "geographic_locus": "Tokyo",
+    "historical_role": "濱田金吾 occupies a specific niche within City Pop: the late-night urban register, where the translated AOR grammar takes on a darker, more introspective quality. MIDNIGHT CRUISIN' as an album title maps the geography—not the bright summer beach of many City Pop records but the city at 2am, the kind of nocturnal urban space that American blue-eyed soul (Boz Scaggs, Steely Dan's Night by Night) had defined. Bye Bye Mrs. December is the most complete version of this nocturnal translation: a farewell song set in December, played at a tempo that moves like a slow drive through empty streets."
+  },
+  "narrative_slots": {
+    "production_facts": "MIDNIGHT CRUISIN' was produced with arrangements that lean toward the Boz Scaggs Silk Degrees template: R&B-influenced rhythm section, clean production, and a vocal style that keeps emotional expression within tight bounds. The production restraint—nothing is louder than it needs to be—creates the after-midnight intimacy that distinguishes this strand of City Pop from the sunnier, more radio-ready material of 杏里 or 山下達郎.",
+    "member_dynamics": "濱田金吾 was a singer-songwriter who maintained creative control over his production direction. His insistence on the nocturnal aesthetic made him less commercially successful than his contemporaries but gave his catalog a consistency that made it particularly suited to the late-night City Pop listening context.",
+    "cultural_venue": "MIDNIGHT CRUISIN' developed a devoted cult following rather than mass-market success. Its reputation grew substantially during the City Pop revival, when nocturnal City Pop became one of the most popular subgenre categories on YouTube and streaming platforms.",
+    "instrumentation_details": "Bye Bye Mrs. December features a bass pattern that marks the half-beat, creating a slow-moving quality. The electric piano (rather than acoustic piano or synthesiser) provides harmonic colour in the specific register that evokes late-night urban listening—what American producers called the 'sophisticate' timbre. The breath before the chorus is held for almost two full beats, creating a suspension that matches the song's mood of reluctant farewell.",
+    "release_circumstances": "Released 1982 on CBS Sony. MIDNIGHT CRUISIN' achieved moderate commercial success but became a critical reference for the nocturnal City Pop aesthetic. It is among the most-played Japanese records from the era on international streaming platforms."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2022-10-29: Bye Bye Mrs. December (MIDNIGHT CRUISIN')"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Kingo_Hamada"
+  ]
+}

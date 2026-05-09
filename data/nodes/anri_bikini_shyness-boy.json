@@ -1,0 +1,44 @@
+{
+  "id": "anri_bikini_shyness-boy",
+  "artist": "杏里",
+  "period": {
+    "label": "BI·KI·NI era / 1983",
+    "year_start": 1982,
+    "year_end": 1986
+  },
+  "works": [
+    {
+      "title": "SHYNESS BOY",
+      "type": "track",
+      "year": 1983
+    },
+    {
+      "title": "BI·KI·NI",
+      "type": "album",
+      "year": 1983
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / Japanese AOR / female vocal pop",
+    "geographic_locus": "Tokyo",
+    "historical_role": "杏里 occupies the pop-accessible end of City Pop's translation spectrum: where 角松敏生 pushed harmonic complexity to its limit and 山下達郎 prioritised studio perfection, 杏里 demonstrated that the translated AOR grammar could work in a straightforwardly commercial context. SHYNESS BOY uses the standard City Pop rhythmic skeleton—kick on one and three, hi-hat subdividing, bass sitting on the beat—in a song designed for FM radio airplay. Her approach shows that the West Coast rhythm vocabulary had by 1983 become a City Pop default: a grammar so internalized it required no special invocation."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by 林哲司, one of City Pop's most prolific producer-arrangers, who was known for translating American AOR sounds into accessible Japanese pop. The rhythm arrangement of SHYNESS BOY is a clean application of the Toto session-musician template: tight drums, melodic bass with occasional sixteenth-note fills, clean electric guitar on the offbeats.",
+    "member_dynamics": "杏里 worked with a rotating team of City Pop producers and arrangers throughout her career. Her voice—bright, clean, slightly thin at the top—suited the airy production style that City Pop had inherited from West Coast female vocalists. She was less involved in production decisions than 山下達郎 or 竹内まりや, functioning more as an interpreter of the City Pop arrangement language than as an architect of it.",
+    "cultural_venue": "BI·KI·NI was released in 1983 and established 杏里 as a City Pop star. Her summer-themed material aligned perfectly with City Pop's seasonal imagery and FM radio ecosystem. The album's success demonstrated that the translated AOR grammar had achieved full commercial naturalisation in Japan by 1983.",
+    "instrumentation_details": "SHYNESS BOY features a prominent bass line that marks the beat without pushing it—the 'leaning back' rhythm philosophy absorbed from West Coast session playing. The verse-to-chorus transition includes a two-beat drum fill that serves as the breath-hold before release, a structural device lifted directly from AOR production.",
+    "release_circumstances": "Released 1983 on CBS Sony. SHYNESS BOY was one of BI·KI·NI's key singles. The album was commercially successful and 杏里 continued releasing City Pop material throughout the 1980s."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2021-07-10: SHYNESS BOY (BI·KI·NI)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Anri_(singer)"
+  ]
+}

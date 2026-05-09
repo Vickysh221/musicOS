@@ -1,0 +1,44 @@
+{
+  "id": "ra-mu_thanks-giving_late-night-heartache",
+  "artist": "ラ・ムー",
+  "period": {
+    "label": "ラ・ムー / Thanks Giving era / 1988",
+    "year_start": 1988,
+    "year_end": 1989
+  },
+  "works": [
+    {
+      "title": "Late Night Heartache",
+      "type": "track",
+      "year": 1988
+    },
+    {
+      "title": "Thanks Giving",
+      "type": "album",
+      "year": 1988
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / dream pop / late 1980s Japanese pop",
+    "geographic_locus": "Tokyo",
+    "historical_role": "ラ・ムー represents City Pop at its most extreme in the direction of space and suspension: the project—formed by idol 菊池桃子 and producer/musician 近田春夫—pushed the 'breath before the chorus' grammar to its logical extreme. Late Night Heartache is built on silence as much as sound; the arrangement withholds so many elements that what remains feels like a sketch of a pop song rather than a completed one. This deliberate incompleteness—what the spec terms M4 frequency hollowing (留白偏好)—represents the City Pop translation aesthetic taken to its terminal form. The Western AOR grammar that arrived fully furnished in 1978-1982 has been pared down to essential traces by 1988."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by 近田春夫, a musician-producer who combined avant-garde sensibilities with a deep knowledge of American pop production. The arrangement of Late Night Heartache uses electronic percussion, synthesiser pads, and 菊池桃子's famously untrained vocal style to create a track that sounds both polished and fragile. The production deliberately avoids the full rhythm-section complement of early City Pop, creating a hollowed-out version of the genre.",
+    "member_dynamics": "菊池桃子 was primarily an idol whose vocal limitations became a production constraint that 近田春夫 turned into an aesthetic virtue. Her precise-but-thin voice required arrangements that left her plenty of space rather than competing with her. The result is music where the silence carries as much weight as the notes—a 留白 (blank space) aesthetic that aligns closely with the M4 hollowing preference.",
+    "cultural_venue": "ラ・ムー released only one album (Thanks Giving, 1988) before dissolving. Despite its brief existence, the project became a cult reference for City Pop enthusiasts and—during the 2010s-2020s revival—was rediscovered as an early example of the dreamy, sparse City Pop aesthetic that appealed to international listeners on YouTube and streaming platforms.",
+    "instrumentation_details": "Late Night Heartache features synthesiser bass, electronic drum pads, and minimal melodic content. The primary structural device is a repeating synthesiser figure that hovers without resolving—a chord suspended in air. 菊池桃子's vocal enters and leaves without ceremony, as if the song doesn't need her to complete itself. The breath before her phrases is amplified by the silence around it.",
+    "release_circumstances": "Released 1988 on Polydor Japan. The album Thanks Giving had modest commercial success at release but gained significant posthumous appreciation. ラ・ムー disbanded in 1989 after 菊池桃子 resumed her solo idol career."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2021-07-10: Late Night Heartache (Thanks Giving)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ra-Mu"
+  ]
+}

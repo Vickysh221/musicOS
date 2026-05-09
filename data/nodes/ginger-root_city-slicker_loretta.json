@@ -1,0 +1,44 @@
+{
+  "id": "ginger-root_city-slicker_loretta",
+  "artist": "Ginger Root",
+  "period": {
+    "label": "CITY SLICKER era / 2021",
+    "year_start": 2019,
+    "year_end": 2023
+  },
+  "works": [
+    {
+      "title": "Loretta",
+      "type": "track",
+      "year": 2021
+    },
+    {
+      "title": "CITY SLICKER",
+      "type": "album",
+      "year": 2021
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop revival / indie pop / translation reverse",
+    "geographic_locus": "Los Angeles, California",
+    "historical_role": "Ginger Root (Cameron Lew) is a Japanese-American artist based in Los Angeles who makes City Pop from the opposite direction: where 竹内まりや flew from Tokyo to LA to absorb the West Coast sound, Lew absorbs the Japanese translation of that sound and brings it back to California. The reversal is complete: the Western AOR grammar traveled to Japan, was translated into Japanese, and is now being re-translated by a Californian into music that sounds Japanese. Loretta—with its nostalgic production, deliberate retro Japanese FM radio aesthetic, and chord language drawn directly from 1980s City Pop—demonstrates that the translation aesthetic is now a two-way circuit."
+  },
+  "narrative_slots": {
+    "production_facts": "Cameron Lew produces, writes, and performs nearly all of his own material. CITY SLICKER was released independently and became one of the most-noticed City Pop revival albums in the English-language press. The production consciously recreates the sound of 1980s Japanese FM radio: cassette-warmed tape saturation, synthesiser timbres from the era, and mixing choices that evoke a specific technological moment.",
+    "member_dynamics": "Ginger Root was initially a solo project that evolved into a live band. The City Pop aesthetic was not adopted as pastiche but as a genuine musical language—Lew grew up absorbing both American and Japanese pop and arrived at City Pop as a natural synthesis rather than a nostalgic exercise.",
+    "cultural_venue": "CITY SLICKER was released at the peak of the City Pop global revival (2020-2022), when Japanese 1980s pop was achieving unprecedented international streaming numbers. Ginger Root's music was frequently recommended alongside classic City Pop tracks by streaming algorithms, creating a feedback loop that positioned the revival music as an extension of the original rather than a separate genre.",
+    "instrumentation_details": "Loretta uses synthesiser bass (not sampled but played, in the manner of the original era), live drums played with the 'behind the beat' feel of Toto-era session drumming, and a chord vocabulary drawn directly from 角松敏生 and 山下達郎. The breath before the chorus—present in every City Pop antecedent—appears in Loretta at exactly the structural position a 1982 listener would expect it.",
+    "release_circumstances": "CITY SLICKER released 2021 independently. Loretta became one of the album's most-shared tracks internationally. Ginger Root subsequently toured internationally and was covered in both English and Japanese music press as a figure in the global City Pop revival."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2022-07-25: Loretta (CITY SLICKER)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Ginger_Root_(musician)"
+  ]
+}

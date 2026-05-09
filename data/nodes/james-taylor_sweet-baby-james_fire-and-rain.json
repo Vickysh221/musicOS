@@ -1,0 +1,43 @@
+{
+  "id": "james-taylor_sweet-baby-james_fire-and-rain",
+  "artist": "James Taylor",
+  "period": {
+    "label": "Singer-songwriter emergence / 1969-1972",
+    "year_start": 1969,
+    "year_end": 1972
+  },
+  "works": [
+    {
+      "title": "Fire and Rain",
+      "type": "track",
+      "year": 1970
+    },
+    {
+      "title": "Sweet Baby James",
+      "type": "album",
+      "year": 1970
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "singer-songwriter / soft rock / AOR ancestry",
+    "geographic_locus": "Los Angeles (Sunset Sound) / Aspen Colorado (composition)",
+    "historical_role": "Fire and Rain crystallised the singer-songwriter template that became one of the pillars of AOR: sparse acoustic-piano arrangement, intimate vocal delivery, and deliberate silences between phrases. The space between vocal lines—where the piano sustains and then releases—became a model for how 1970s West Coast pop balanced emotional weight with restraint. Japanese City Pop producers absorbed this 'breath between phrases' as a structural device: the pause before the chorus that invites the listener in rather than pushing them."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at Sunset Sound Recorders, Los Angeles, December 1969. Produced by Peter Asher. The arrangement is deliberately sparse: acoustic guitar, piano, and subtle upright bass. Peter Asher's production philosophy—never fill a space that doesn't need filling—directly influenced the AOR aesthetic that later shaped City Pop production.",
+    "member_dynamics": "Taylor wrote Fire and Rain in three sessions: the first verse about a friend's suicide (Suzanne), the second about his heroin addiction, the third about the breakdown of his band Flying Machine. The confessional directness and emotional restraint—saying hard things quietly—became a template for the 'reserved intimacy' that City Pop vocalists would adopt.",
+    "cultural_venue": "Sunset Sound in 1969-1970 was the apex of LA soft rock production. The same studio network that produced Fire and Rain would, six years later, produce Boz Scaggs's Silk Degrees with the session musicians who would form Toto.",
+    "instrumentation_details": "Acoustic guitar (Taylor), piano (Carole King played on the live version but not the studio recording), upright bass, minimal percussion. The mix places Taylor's voice slightly dry, pushing intimacy. The breath before 'I've seen fire and I've seen rain' is audibly present in the mix—an unedited vocal moment that became part of the song's emotional grammar.",
+    "release_circumstances": "Released November 1970 as the second single from Sweet Baby James. Reached US #3. Became a cornerstone of the singer-songwriter genre alongside Carole King's Tapestry (released five months later)."
+  },
+  "user_coverage": {
+    "status": "blind_spot",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Fire_and_Rain_(song)",
+    "https://en.wikipedia.org/wiki/Sweet_Baby_James"
+  ]
+}

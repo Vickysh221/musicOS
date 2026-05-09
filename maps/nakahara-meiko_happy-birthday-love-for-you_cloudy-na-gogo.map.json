@@ -1,0 +1,181 @@
+{
+  "map_id": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+  "anchor_node_id": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+  "spec_version": "0.4",
+  "generated_at": "2026-05-10T00:00:00Z",
+  "expansion_notes": "translation_aesthetic focus (M1 基因穿外套). Three axes: upward = West Coast AOR ancestry (1970-1978) + Tokyo-side translator (1981); lateral = City Pop generation (1982-1988); downward = modern revival (2021). Pivot: 竹内まりや Miss M (1980) is the documented personnel bridge — Toto members in LA liner notes confirmed by Discogs + SessionDays.",
+  "node_ids": [
+    "james-taylor_sweet-baby-james_fire-and-rain",
+    "carole-king_tapestry_its-too-late",
+    "boz-scaggs_silk-degrees_lowdown",
+    "steely-dan_aja_deacon-blues",
+    "toto_toto_georgy-porgy",
+    "otaki-eiichi_a-long-vacation_canary-islands-ni-te",
+    "yamashita-tatsuro_for-you_loveland-island",
+    "takeuchi-mariya_request_single-again",
+    "kakumatsu-toshiki_touch-and-go_anklet",
+    "inagaki-junichi_j-i_natsu-no-kurakushon",
+    "ra-mu_thanks-giving_late-night-heartache",
+    "anri_bikini_shyness-boy",
+    "hamada-kingo_midnight-cruisin_bye-bye-mrs-december",
+    "nakahara-meiko_fantasy_fantasy",
+    "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+    "ginger-root_city-slicker_loretta",
+    "ryusenkei_city-music_san-hao-xian"
+  ],
+  "edges": [
+    {
+      "id": "edge_jt_ck_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "james-taylor_sweet-baby-james_fire-and-rain",
+      "target_node_id": "carole-king_tapestry_its-too-late",
+      "evidence": "James Taylor played guitar on Carole King's Tapestry sessions; both are co-foundational singer-songwriter AOR texts recorded in the same LA network, 1970-1971.",
+      "epistemic_layer": "fact",
+      "sources": ["https://en.wikipedia.org/wiki/Tapestry_(Carole_King_album)"]
+    },
+    {
+      "id": "edge_ck_boz_descent",
+      "type": "direct_influence",
+      "source_node_id": "carole-king_tapestry_its-too-late",
+      "target_node_id": "boz-scaggs_silk-degrees_lowdown",
+      "evidence": "Tapestry's soft-soul production aesthetic (Lou Adler, A&M Studios) established the LA singer-songwriter/AOR template that Boz Scaggs extended into blue-eyed soul on Silk Degrees. The harmonic suspension vocabulary moves directly between the two records.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/Silk_Degrees"]
+    },
+    {
+      "id": "edge_boz_steely_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "boz-scaggs_silk-degrees_lowdown",
+      "target_node_id": "steely-dan_aja_deacon-blues",
+      "evidence": "Silk Degrees (1976) and Aja (1977) are the two pinnacle AOR studio records of their era, sharing the LA session-musician network and the philosophy of harmonic sophistication as commercial pop grammar.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/Aja_(album)"]
+    },
+    {
+      "id": "edge_boz_toto_personnel",
+      "type": "direct_influence",
+      "source_node_id": "boz-scaggs_silk-degrees_lowdown",
+      "target_node_id": "toto_toto_georgy-porgy",
+      "evidence": "David Paich (keyboards, co-writer of Lowdown) and Jeff Porcaro (drums) played on Silk Degrees and co-founded Toto the following year (1977). The band is a direct institutional continuation of the Silk Degrees session team.",
+      "epistemic_layer": "fact",
+      "sources": ["https://en.wikipedia.org/wiki/Silk_Degrees", "https://en.wikipedia.org/wiki/Toto_(band)"]
+    },
+    {
+      "id": "edge_steely_toto_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "steely-dan_aja_deacon-blues",
+      "target_node_id": "toto_toto_georgy-porgy",
+      "evidence": "Toto and Steely Dan shared the LA session musician ecosystem; some Toto members worked as session players on Steely Dan recordings. Both bands represented the studio-perfectionist wing of AOR.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/Toto_(band)"]
+    },
+    {
+      "id": "edge_toto_mariya_direct",
+      "type": "direct_influence",
+      "source_node_id": "toto_toto_georgy-porgy",
+      "target_node_id": "takeuchi-mariya_request_single-again",
+      "evidence": "Toto members Jeff Porcaro (drums), Steve Lukather (guitar), David Hungate (bass) recorded 竹内まりや's Miss M (1980) at Monterrey Sound Studios, Los Angeles, with producer David Foster. Confirmed by Discogs and SessionDays archive.",
+      "epistemic_layer": "fact",
+      "sources": ["https://www.discogs.com/release/5017612", "https://sessiondays.com/2022/07/04/1980-mariya-tekeuchi-missm/"]
+    },
+    {
+      "id": "edge_jt_otaki_influence",
+      "type": "direct_influence",
+      "source_node_id": "james-taylor_sweet-baby-james_fire-and-rain",
+      "target_node_id": "otaki-eiichi_a-long-vacation_canary-islands-ni-te",
+      "evidence": "大瀧詠一 studied American soft rock and singer-songwriter records extensively as primary references for A Long Vacation's production aesthetic. The restrained vocal phrasing and arrangement sparseness of Fire and Rain is a documented stylistic ancestor.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/A_Long_Vacation"]
+    },
+    {
+      "id": "edge_steely_yamashita_influence",
+      "type": "direct_influence",
+      "source_node_id": "steely-dan_aja_deacon-blues",
+      "target_node_id": "yamashita-tatsuro_for-you_loveland-island",
+      "evidence": "山下達郎 is widely described in Japanese music criticism as 'Japan's Steely Dan', referencing his harmonic sophistication, studio perfectionism, and the specific chord voicing vocabulary derived from Becker and Fagen. Multiple sources confirm the Steely Dan influence.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/Tatsuro_Yamashita", "https://en.wikipedia.org/wiki/For_You_(Tatsuro_Yamashita_album)"]
+    },
+    {
+      "id": "edge_otaki_yamashita_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "otaki-eiichi_a-long-vacation_canary-islands-ni-te",
+      "target_node_id": "yamashita-tatsuro_for-you_loveland-island",
+      "evidence": "大瀧詠一 and 山下達郎 were both alumni of the Happy End / Niagara circle and are the two most studied City Pop producer-artists of the early 1980s. A Long Vacation (1981) and FOR YOU (1982) are consistently co-cited as the defining City Pop studio records.",
+      "epistemic_layer": "fact",
+      "sources": ["https://en.wikipedia.org/wiki/A_Long_Vacation", "https://en.wikipedia.org/wiki/For_You_(Tatsuro_Yamashita_album)"]
+    },
+    {
+      "id": "edge_yamashita_mariya_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "yamashita-tatsuro_for-you_loveland-island",
+      "target_node_id": "takeuchi-mariya_request_single-again",
+      "evidence": "山下達郎 and 竹内まりや are married; 山下達郎 wrote and produced several of her songs including シングル・アゲイン. Their creative partnership is one of City Pop's most studied collaborative relationships.",
+      "epistemic_layer": "fact",
+      "sources": ["https://en.wikipedia.org/wiki/Mariya_Takeuchi"]
+    },
+    {
+      "id": "edge_lateral_generation",
+      "type": "same_era_dialogue",
+      "source_node_id": "takeuchi-mariya_request_single-again",
+      "target_node_id": "kakumatsu-toshiki_touch-and-go_anklet",
+      "evidence": "角松敏生, 竹内まりや, 杏里, 稲垣潤一, 濱田金吾 are all core members of the City Pop generation working in Tokyo within the same 1982-1988 window, sharing arrangers, studios, and label infrastructure (CBS Sony, Toshiba EMI).",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/City_pop"]
+    },
+    {
+      "id": "edge_citypop_nakahara_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "yamashita-tatsuro_for-you_loveland-island",
+      "target_node_id": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+      "evidence": "中原めいこ's production context (CBS Sony, professional City Pop arrangers, 1982) places Cloudyな午後 in direct lineage from the 山下達郎 / 大瀧詠一 studio-perfectionism strand of City Pop. The arrangement restraint and harmonic suspension vocabulary is directly descended.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/Meiko_Nakahara"]
+    },
+    {
+      "id": "edge_mariya_nakahara_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "takeuchi-mariya_request_single-again",
+      "target_node_id": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+      "evidence": "竹内まりや and 中原めいこ are contemporary City Pop female vocalists working within the same production ecosystem (CBS Sony, 1982-1987), sharing arrangers and the same aesthetic grammar.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/Meiko_Nakahara"]
+    },
+    {
+      "id": "edge_fantasy_cloudy_same_artist",
+      "type": "direct_influence",
+      "source_node_id": "nakahara-meiko_fantasy_fantasy",
+      "target_node_id": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+      "evidence": "Fantasy (1983) and Cloudyな午後 (1982) are by the same artist in the same period. Cloudyな午後 was released one year before Fantasy; together they form the core of 中原めいこ's City Pop identity.",
+      "epistemic_layer": "fact",
+      "sources": ["https://en.wikipedia.org/wiki/Meiko_Nakahara"]
+    },
+    {
+      "id": "edge_cloudy_ginger_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+      "target_node_id": "ginger-root_city-slicker_loretta",
+      "evidence": "Ginger Root (Cameron Lew) explicitly works within the City Pop aesthetic, citing 中原めいこ and contemporaries as primary influences. CITY SLICKER's production is a conscious engagement with the 1982-1988 Japanese City Pop canon.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/Ginger_Root_(musician)"]
+    },
+    {
+      "id": "edge_cloudy_ryusenkei_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+      "target_node_id": "ryusenkei_city-music_san-hao-xian",
+      "evidence": "RYUSENKEI's シティ・ミュージック (2021) directly engages with the Japanese City Pop aesthetic, with the album title in Japanese and production vocabulary drawn from the 1982-1988 canon. The third-generation translation chain continues.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/Ryusenkei"]
+    },
+    {
+      "id": "edge_ginger_ryusenkei_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "ginger-root_city-slicker_loretta",
+      "target_node_id": "ryusenkei_city-music_san-hao-xian",
+      "evidence": "Ginger Root and RYUSENKEI are both 2020-2022 City Pop revival artists working independently in different geographies (Los Angeles, Shenzhen) with the same source material. Together they demonstrate that the translation aesthetic has become globally distributed.",
+      "epistemic_layer": "consensus",
+      "sources": ["https://en.wikipedia.org/wiki/City_pop"]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "nakahara-meiko_fantasy_fantasy",
+  "artist": "中原めいこ",
+  "period": {
+    "label": "ファンタジー era / 1983",
+    "year_start": 1982,
+    "year_end": 1985
+  },
+  "works": [
+    {
+      "title": "Fantasy",
+      "type": "track",
+      "year": 1983
+    },
+    {
+      "title": "ファンタジー",
+      "type": "album",
+      "year": 1983
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / Japanese AOR / female vocal pop",
+    "geographic_locus": "Tokyo",
+    "historical_role": "Fantasy is the track that establishes 中原めいこ's signature before Cloudyな午後 completes it. Where Cloudyな午後 achieves a particular atmospheric stillness, Fantasy shows the same voice in a slightly more energetic register—still City Pop, still using the breath-suspension grammar, but with more forward motion. Hearing Fantasy immediately before Cloudyな午後 makes the distillation audible: whatever Fantasy has, Cloudyな午後 has the same thing with all the energy removed, leaving only the essential trace."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced with the standard City Pop arrangement palette of the era: synthesiser bass, live drums, clean electric guitar, and layered backing vocals. The album ファンタジー was 中原めいこ's second studio album and represented her artistic peak before her output began to shift toward more commercial J-pop in the mid-1980s.",
+    "member_dynamics": "中原めいこ was primarily an interpreter rather than a producer or songwriter in the sense that 山下達郎 or 大瀧詠一 were. She worked with professional arrangers who understood the City Pop grammar, and her contribution was a vocal sensibility that sat exactly at the intersection of the Western singer-songwriter tradition (Carole King's emotional directness) and Japanese kawaii pop aesthetics.",
+    "cultural_venue": "The ファンタジー album was released on CBS Sony. 中原めいこ was primarily known to a Japanese domestic audience during the 1980s; her international recognition came entirely through the City Pop revival of the 2010s-2020s, when her tracks were rediscovered by listeners who found them through YouTube recommendation algorithms.",
+    "instrumentation_details": "Fantasy features the characteristic City Pop rhythm-section restraint: the bass and drums hold the groove without asserting it, allowing the harmonic colour (synthesiser pads, guitar chords) to define the track's mood. The vocal melody has wider intervallic leaps than Cloudyな午後, making the energy difference between the two tracks immediately audible.",
+    "release_circumstances": "Released 1983 on CBS Sony. ファンタジー was 中原めいこ's second studio album and achieved respectable sales within the City Pop market. The album is now considered part of her essential catalog."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2021-12-20: Fantasy (ファンタジー)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Meiko_Nakahara"
+  ]
+}

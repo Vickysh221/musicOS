@@ -1,0 +1,43 @@
+{
+  "id": "carole-king_tapestry_its-too-late",
+  "artist": "Carole King",
+  "period": {
+    "label": "Singer-songwriter peak / 1971-1974",
+    "year_start": 1971,
+    "year_end": 1974
+  },
+  "works": [
+    {
+      "title": "It's Too Late",
+      "type": "track",
+      "year": 1971
+    },
+    {
+      "title": "Tapestry",
+      "type": "album",
+      "year": 1971
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "singer-songwriter / soft rock / AOR ancestry",
+    "geographic_locus": "Los Angeles (A&M Studios)",
+    "historical_role": "It's Too Late established the 'breath-hold before the chorus' as a pop structural device: the song sits in Cm7 without resolving, then the vocal re-enters into the chorus at a moment of suspended harmonic weight. Japanese City Pop absorbed this harmonic suspension directly—the feeling of a chord that hasn't landed yet, that keeps the listener in a state of mild expectation. 竹内まりや and 中原めいこ both cite the Tapestry era as formative. The song also introduced the model of a female vocalist as sole author of her emotional world—a template for City Pop's female-fronted introspective style."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded at A&M Studios, Los Angeles. Produced by Lou Adler. Session musicians included James Taylor (guitar) and Russ Kunkel (drums). The piano is King's own, recorded with a slightly warm, room-present sound that became a signature of the era. Engineer Hank Cicalo kept the mix wide and dry, letting space define the emotional texture.",
+    "member_dynamics": "King wrote It's Too Late with Toni Stern about her divorce from Gerry Goffin. The collaboration between King (composer) and Stern (lyricist) produced a song where the music IS the emotional argument—the Cm7 suspension says what the words don't quite say. This 'music carries the weight' ethos was absorbed by Japanese City Pop arrangers.",
+    "cultural_venue": "Tapestry sold 25 million copies and spent 15 weeks at US #1 in 1971. In Japan, it was released by CBS Sony and became a foundational reference for the emerging City Pop aesthetic in the mid-1970s—specifically how to make sophisticated chord changes feel personal rather than academic.",
+    "instrumentation_details": "Piano (King), acoustic guitar (James Taylor on several tracks), electric bass (Charles Larkey), drums (Russ Kunkel). The Cm7-Fm7 alternation in It's Too Late is the harmonic core—two minor seventh chords that never fully resolve, creating perpetual suspension. This harmonic language reappears in City Pop as a signature of the 'urban sophisticated' feeling.",
+    "release_circumstances": "Released as a double A-side with I Feel the Earth Move, May 1971. Reached US #1 for five weeks. Grammy for Record of the Year 1972. Tapestry remained on the Billboard chart for 313 weeks."
+  },
+  "user_coverage": {
+    "status": "blind_spot",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/It%27s_Too_Late_(Carole_King_song)",
+    "https://en.wikipedia.org/wiki/Tapestry_(Carole_King_album)"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "inagaki-junichi_j-i_natsu-no-kurakushon",
+  "artist": "稲垣潤一",
+  "period": {
+    "label": "J.I. debut era / 1983",
+    "year_start": 1982,
+    "year_end": 1986
+  },
+  "works": [
+    {
+      "title": "夏のクラクション",
+      "type": "track",
+      "year": 1983
+    },
+    {
+      "title": "J．I．",
+      "type": "album",
+      "year": 1983
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "City Pop / Japanese AOR / summer pop",
+    "geographic_locus": "Tokyo",
+    "historical_role": "夏のクラクション (Summer Honk) became one of City Pop's most enduring summer anthems—a track where the translation of West Coast AOR's 'summer drive' imagery is so complete that the Japanese lyric and the Californian production vocabulary are indistinguishable from each other. The chorus-approach structure of the song (a long verse that withholds energy before releasing it) is a textbook example of the 'suspended breath' grammar: the listener waits for the horn stabs and drum fill that signal the chorus, and the song makes them wait just long enough to feel the relief when it arrives."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by 船山基紀, one of the most prolific City Pop arrangers of the era. The arrangement combines live drums, synthesiser bass, and brass section in a way that mimics the Boz Scaggs Silk Degrees groove: the rhythm section 'leans back' while the horns provide forward momentum. 稲垣潤一's vocal style—a warm baritone placed slightly behind the beat—is directly modelled on American blue-eyed soul singers.",
+    "member_dynamics": "稲垣潤一 had previously been a studio drummer before transitioning to vocalist in the early 1980s. His percussionist background gave him an unusually precise sense of rhythmic placement—he knew exactly where to hold a phrase to create maximum tension before the chorus.",
+    "cultural_venue": "夏のクラクション was released in summer 1983 and became a major hit, establishing 稲垣潤一 as a City Pop star. The song became associated with Japanese summer imagery in the same way that specific American songs define their seasons, completing the cultural translation of the 'West Coast summer' aesthetic into a Japanese context.",
+    "instrumentation_details": "The horn arrangement (brass stabs on the chorus arrival) is the track's most quoted element. The pause before the brass enters—where only the rhythm section plays—is the song's breath-hold: a full two beats of suspended anticipation. This structural device was identified by later City Pop analysts as one of the genre's most characteristic techniques.",
+    "release_circumstances": "Released summer 1983 on Toshiba EMI. Reached Oricon top 10. 夏のクラクション became a perennial summer playlist staple in Japan and one of the most-streamed City Pop tracks internationally in the 2020s revival."
+  },
+  "user_coverage": {
+    "status": "red_heart",
+    "evidence": [
+      "红心 2025-02-03: 夏のクラクション (J．I．)"
+    ],
+    "confidence": "high"
+  },
+  "epistemic_layer": "consensus",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Jun%27ichi_Inagaki"
+  ]
+}

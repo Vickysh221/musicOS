@@ -1,0 +1,43 @@
+{
+  "id": "steely-dan_aja_deacon-blues",
+  "artist": "Steely Dan",
+  "period": {
+    "label": "Aja era / 1977-1980",
+    "year_start": 1977,
+    "year_end": 1980
+  },
+  "works": [
+    {
+      "title": "Deacon Blues",
+      "type": "track",
+      "year": 1977
+    },
+    {
+      "title": "Aja",
+      "type": "album",
+      "year": 1977
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "AOR / jazz-rock / studio perfectionism",
+    "geographic_locus": "Los Angeles (Village Recorder, ABC Recording Studios)",
+    "historical_role": "Deacon Blues is the paradigm case of 'jazz harmony as pop grammar': the song uses major seventh, minor ninth, and altered dominant chords as structural vocabulary rather than as colour. 山下達郎—widely described in Japanese music journalism as 'Japan's Steely Dan'—absorbed this harmonic approach and applied it to City Pop's pop-accessible format. The song's extended form (seven minutes), its saxophone-as-second-voice arrangement, and most crucially its use of harmonic suspension before the chorus (the Cmaj7–Bm7 movement that delays resolution) became a template for the 'sophisticated pause' at the heart of City Pop's translation aesthetic."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded over 14 months at Village Recorder and ABC Recording Studios, Los Angeles. Fagen and Becker famously cycled through dozens of session musicians for each track, keeping only the takes that achieved their specific vision. The obsessive perfectionism—what Fagen called 'the fascism of sound'—produced a recording where every breath and silence is deliberate. Pete Christlieb's saxophone solo on Deacon Blues is one of the most-studied saxophone performances in AOR: the way he phrases around the beat, never quite on it, became a model for how City Pop horn arrangements were voiced.",
+    "member_dynamics": "Walter Becker and Donald Fagen disbanded the touring version of Steely Dan in 1974 and thereafter worked as a studio project. This studio-only existence—where the sound existed to serve the record, not the performance—was directly influential on City Pop producers who similarly privileged the recorded artifact over any live experience.",
+    "cultural_venue": "Aja won three Grammys including Album of the Year (1979). In Japan, it became a foundational City Pop reference during the 1978-1983 period. 山下達郎's FOR YOU (1982) is frequently analysed alongside Aja as sharing the same commitment to harmonic density and sonic precision.",
+    "instrumentation_details": "The Deacon Blues chord sequence (Cmaj7–Bm7–Em7–A7–Dm7–G7–Cmaj7) embeds jazz substitutions that avoid the dominant-tonic resolution of conventional pop. The bass (Chuck Rainey) plays sparse notes that emphasise harmonic colour over rhythmic drive. This bass philosophy—supporting harmony rather than pushing groove—became one of the markers of City Pop's AOR strand.",
+    "release_circumstances": "Aja released September 1977, US #3. Deacon Blues was not released as a single but became one of the album's most-cited tracks in discussions of AOR craft. In Japan, CBS Sony's promotion of Aja positioned it explicitly as sophisticated urban listening."
+  },
+  "user_coverage": {
+    "status": "blind_spot",
+    "evidence": [],
+    "confidence": "low"
+  },
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Deacon_Blues",
+    "https://en.wikipedia.org/wiki/Aja_(album)"
+  ]
+}
