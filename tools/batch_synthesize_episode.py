@@ -50,14 +50,24 @@ def output_stem(exhibit: dict, music_dir: Path) -> str:
     return f"{pos:02d}_{kind}"
 
 
-def text_for(exhibit: dict) -> list[tuple[str, str, str]]:
+def text_for(exhibit: dict, lang: str = "zh") -> list[tuple[str, str, str]]:
     """Return list of (text, source_field, suffix) for this exhibit.
 
     suffix is '' for the single-mp3 case, or '_a' / '_b' for split pillars.
+
+    When lang='en', transcript_en is used for non-muted track/narration exhibits.
+    Bridge narration always comes from bridge_narration_zh regardless of lang
+    (no EN bridge field exists yet).
     """
     if exhibit.get("muted_this_episode"):
         text = exhibit.get("bridge_narration_zh")
         return [(text, "bridge_narration_zh", "")] if text else []
+
+    if lang == "en":
+        text = exhibit.get("transcript_en")
+        if not text:
+            return []
+        return [(text, "transcript_en", "")]
 
     parts: list[tuple[str, str, str]] = []
     text_a = exhibit.get("transcript_zh_a")
@@ -85,6 +95,9 @@ def main() -> None:
                    help="only synth this exhibit position; repeatable")
     p.add_argument("--subtitle", action="store_true",
                    help="request sentence-level timestamps; saves <stem>.subtitle.json next to mp3")
+    p.add_argument("--lang", default="zh", choices=["zh", "en"],
+                   help="which transcript field to synthesize: zh (default) or en. "
+                        "Bridge narration always uses bridge_narration_zh regardless of --lang.")
     args = p.parse_args()
 
     load_env_local()
@@ -107,9 +120,12 @@ def main() -> None:
         kind = ex["kind"]
         if args.only_position and pos not in args.only_position:
             continue
-        parts = text_for(ex)
+        parts = text_for(ex, lang=args.lang)
         if not parts:
-            print(f"  skip {pos:02d} {kind}: no narration text")
+            if args.lang == "en" and not ex.get("muted_this_episode") and not ex.get("transcript_en"):
+                print(f"  warn  {pos:02d} {kind}: transcript_en is null/empty, skipping")
+            else:
+                print(f"  skip {pos:02d} {kind}: no narration text")
             continue
         stem = output_stem(ex, args.music_dir)
 

@@ -75,7 +75,7 @@ def synthesize(text: str, voice_id: str, api_key: str, group_id: str,
             "format": "mp3",
             "channel": 1,
         },
-        "language_boost": "Chinese",
+        "language_boost": "auto",
     }
     if subtitle:
         body["subtitle_enable"] = True

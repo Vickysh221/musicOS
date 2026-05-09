@@ -29,7 +29,8 @@
       "position": 0,
       "kind": "opening",
       "transcript_zh": "钢琴开声，和弦悬着不解决，人声轻轻进来。\n\n今天这一集，十七首，从一九七零年洛杉矶到二零二一年深圳，沿着一套翻译美学的完整轨迹走一遍。",
-      "transcript_en": null
+      "transcript_en": "Piano opens. The chord hangs, unresolved. A voice enters softly.\n\nSeventeen tracks. 1970 Los Angeles to 2021 Shenzhen. One coat, passed hand to hand.",
+      "transcript_en_status": "complete"
     },
     {
       "position": 1,
@@ -58,7 +59,8 @@
         }
       ],
       "transcript_zh": "吉他单音线条走得慢，短语结尾的停顿不填满，那口气就停在那里，像一个句号变成了省略号。\n\n一九七零年洛杉矶，James Taylor把情绪压进呼吸间隙：每一句话说完，他不急着往下走，停顿留在那里，空着，不用声音填满它，让那个空气自己说话。这是最早的示范：可以不填的地方不填，停顿本身是语法，不是等待，是一种表达。\n\n同年，这个规则在Carole King那里被转译了一次，变成了副歌前悬浮的和弦，停顿换了和声语言，这首歌建立的不是情绪，是规则。",
-      "transcript_en": null,
+      "transcript_en": "The guitar single-line moves slowly. Phrase endings don't fill in. That breath just sits there, a period turned into an ellipsis.\n\n1970 Los Angeles. James Taylor pressed the feeling into the gaps between words.\n\nHe finishes a phrase and doesn't push forward. The pause stays open. Not waiting, not filling. The silence itself is speaking.\n\nThis is the first demonstration: where you can leave space, leave it. The pause is grammar, not hesitation.\n\nThat same year Carole King translated this, turning the pause into a suspended chord before the chorus.\n\nSame gesture, different language. This track didn't establish a mood. It established a rule.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -92,7 +94,8 @@
         }
       ],
       "transcript_zh": "钢琴开声Cm7，不解决。人声进来，那个和弦还悬着，没有去找解决的地方，悬在那里等着，等那口气完全散开之后再说。\n\n一九七一年洛杉矶，Carole King把副歌前那口气做成了和声语法：Cm7挂在那里，人声在和弦悬浮的间隙重新进入，换气的位置变成了结构的位置，空白变成了意义的容器，等待变成了歌曲的轴心。你刚才在Fire and Rain里听到的那口停顿，到这里变成了悬浮的Cm7，同一个手势，换了和声语言，换了乐器的形式，但那个不急着前进的意志还在，等待的姿势还在，停在那里的理由还在。\n\n这个悬浮语法后来没有停在洛杉矶。它不需要人携带，它住在语法里，语法自己会走过去。King没有飞去东京，但这口和弦会自己穿过去，不需要护照，不需要行李，语法比人走得远，比机票走得久，比任何一次物理移动都更能穿透边界。",
-      "transcript_en": null,
+      "transcript_en": "Piano opens on a Cm7 that doesn't resolve. The voice enters, and the chord is still hanging. Still waiting. Waiting for that breath to fully disperse before moving on.\n\n1971 Los Angeles. Carole King built the pre-chorus breath into harmonic grammar.\n\nThe Cm7 stays suspended. The voice re-enters in the gap the chord has held open. The place where you breathe becomes a structural position. Silence becomes a container for meaning.\n\nWhat you heard in Fire and Rain as a pause between phrases, here becomes a suspended Cm7. Same gesture, different instrument. The refusal to rush forward is still there.\n\nThis grammar didn't stay in Los Angeles. It doesn't need a person to carry it. Grammar travels on its own.\n\nKing never flew to Tokyo. But this chord went there anyway. No passport required.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -130,7 +133,8 @@
         }
       ],
       "transcript_zh": "贝斯线明确，节奏组的groove型很稳，每一拍都落在准确的位置，每个音符都服务于整体，没有一个音是为了表现自己的，服务编曲是这批人唯一的语法规则。\n\n一九七六年洛杉矶，Silk Degrees的键盘是David Paich，鼓手是Jeff Porcaro。两个人演奏的是同一套session player语法：精准，服务编曲，不抢戏，把自己的个性藏在整体里面，让歌曲比人更重要，让编曲比演奏者的名字更响亮。这张专辑录完，他们次年离开，组建了Toto，带着同一套手感和同一套演奏语法走进了新的乐团名字里面，语法换了容器，手的惯性还是那双手的惯性，棚里的默契还是那个棚里建立起来的默契。\n\nToto是这套语法的新容器，容器变了，手的惯性没变。这里是针线开始穿的地方，一批乐手的流动，把一套语法从洛杉矶带向了下一站。",
-      "transcript_en": null,
+      "transcript_en": "The bass line is clear. The rhythm section's groove lands on every beat with precision. Every note serves the arrangement, not the player.\n\n1976 Los Angeles. Silk Degrees. Keyboards: David Paich. Drums: Jeff Porcaro.\n\nBoth are playing the same session-player grammar: accurate, self-effacing, hiding individual personality inside the whole. The song matters more than the names on the sleeve.\n\nWhen the album finished, they left and formed Toto the following year. Same hands, same feel, same studio instincts. A new container for the same grammar.\n\nToto is where the needle starts threading. A group of musicians in motion, carrying a set of habits from Los Angeles toward the next destination.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -164,7 +168,8 @@
         }
       ],
       "transcript_zh": "萨克斯与爵士和弦，录音棚里的每一轨都服务于一个精密的整体，没有一个音符是偶然的，每一个细节都是计算的结果，完美是唯一的交货标准。\n\n一九七七年，Steely Dan把爵士和弦当流行语法：jazz chord voicing作为商业流行的基础语法，而不是表演性的插件，不是炫技的装饰，而是句子的结构本身，是歌曲骨架的一部分，是让每首歌都能自己站起来的那根支撑。录音室是他们的乐器，完美是他们的标准，每一次录音都要推倒重来直到达到那个精度，直到没有任何多余的东西，直到每一个音符都在它应该在的地方。\n\n这套语法越过太平洋。山下達郎后来被乐评称为「日本的Steely Dan」，这个标签背后是同一套把爵士和弦做进流行歌的哲学，是录音室完美主义的太平洋对岸版本。Deacon Blues的和弦还没变成日语，但语法已经在太平洋上空飞了。",
-      "transcript_en": null,
+      "transcript_en": "Saxophone, jazz chords, studio perfectionism. Every track serves a precision machine. No note is accidental. Every detail is calculated. Perfect is the only delivery standard.\n\n1977. Steely Dan used jazz chord voicings as pop grammar, not embellishment or technical display.\n\nAs the actual skeleton of the song, the structure that lets it stand on its own.\n\nThe studio is their instrument. They'd tear down a take and rebuild it until nothing was in the wrong place.\n\nThis grammar crossed the Pacific. Yamashita Tatsuro (山下達郎) would later be called \"Japan's Steely Dan\" by critics.\n\nThat label points to the same philosophy: jazz chords as commercial pop foundation, perfectionism as artistic stance.\n\nDeacon Blues hasn't become Japanese yet. But the grammar is already airborne over the ocean.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -194,7 +199,8 @@
         }
       ],
       "transcript_zh": "smooth AOR，Chris Cross贝斯线干净利落，鼓和吉他咬得准。\n\n一九七八年，Toto成员就是Silk Degrees那批session players：Jeff Porcaro、Steve Lukather、David Hungate，同一批手，新的乐团名字。这套演奏语法的物理载体是这三个人。\n\n两年后，这三个人出现在了竹内まりや一九八零年Miss M的liner notes里，西岸语法就这样进了东京棚。针线穿过去的方式不是影响，是物理接触：同一批人，同一批手，在东京的棚里留下了同一套惯性。外套还是英语，穿的人已经是日语。",
-      "transcript_en": null,
+      "transcript_en": "Smooth AOR. The bass line clean, the drums and guitar locked together.\n\n1978. The Toto members are the Silk Degrees session players: Jeff Porcaro, Steve Lukather, David Hungate.\n\nSame hands, new band name. These three people are the physical carrier of the grammar.\n\nTwo years later, those three names appear in the liner notes of Takeuchi Mariya's (竹内まりや) 1980 album Miss M. That's how West Coast grammar entered a Tokyo studio.\n\nNot influence. Physical contact. The same people, the same hands, leaving the same habitual imprint in a Japanese session.\n\nThe coat is still in English. The person wearing it is already Japanese.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -224,7 +230,8 @@
         }
       ],
       "transcript_zh": "人声克制，留白充分，每个音符后面的空气都被保留着，不急着填满任何位置。\n\n一九八一年东京，大瀧詠一没有飞去洛杉矶。他选择的是另一条路：把美国流行乐研究到可以从内部复制，把语法内化成自己的，不需要物理接触，不需要站在同一个棚里。A Long Vacation是这条内化路线的顶点，是一个人在东京把加州音乐研究到可以独立完成的证明。\n\n同一批听众里，山下達郎选择的是另一条路：飞过去，用同一批乐手，在洛杉矶的棚里亲手接触那套语法。两条路，一个目的地，两种不同的翻译方法，各自走到了各自的极致。",
-      "transcript_en": null,
+      "transcript_en": "Restrained vocals. Air preserved after every note. Nothing rushing to fill any gap.\n\n1981 Tokyo. Otaki Eiichi (大瀧詠一) didn't fly to Los Angeles. He chose a different path: studying American pop until he could replicate it from the inside.\n\nInternalizing the grammar so completely that physical contact became unnecessary. A Long Vacation is the peak of that route.\n\nOne person in Tokyo, studying California music until he could produce it independently.\n\nAmong the same generation, Yamashita Tatsuro took the other path: he flew there, worked with those session players, touched the grammar directly in a Los Angeles studio.\n\nTwo paths. One destination. Two methods of translation, each taken to its own extreme.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -258,7 +265,8 @@
         }
       ],
       "transcript_zh": "制作极致，每一轨都按照制作人的耳朵服务，没有一个音是多余的，没有一个音是不够的，每一轨都是精密整体的一个有机组成部分，缺少任何一个都不完整。\n\n一九八二年，FOR YOU专辑，山下達郎把Steely Dan的录音室哲学完整移植到了东京。你刚才在Deacon Blues里听到的爵士和弦作为流行语法，到了山下達郎这里被移植完成，评论家不是随便叫他「日本的Steely Dan」的，那个标签背后是有据可查的美学传承，是同一套把精密度当作语法的录音室哲学在太平洋对岸的实现，是相同的完美主义在不同语言里落地生根，在不同的城市里开出相同形状的花朵。\n\n语法已经到东京了。但它还在制作人的耳朵里，还在棚里，还没有走到棚外，还没有成为任何人都能穿的外套。翻译的工作还没有结束，还有下一步在等着，还有更多的人在等着穿这件外套，等着它变成自己的皮肤。",
-      "transcript_en": null,
+      "transcript_en": "Production at its limit. Every track serves the producer's ear. Nothing excess, nothing missing. Each part is an organic component of a precision whole.\n\n1982. FOR YOU. Yamashita Tatsuro (山下達郎) completed the transplant of Steely Dan's studio philosophy to Tokyo.\n\nThe jazz-chord-as-pop-grammar you just heard in Deacon Blues: it's fully implemented here.\n\nCritics didn't call him \"Japan's Steely Dan\" casually. The label points to a documented aesthetic lineage: precision as grammar, perfectionism as philosophy, realized on the other side of the Pacific.\n\nThe grammar has reached Tokyo. But it's still inside the producer's ear. Still inside the studio. It hasn't walked outside yet.\n\nIt hasn't become a coat that anyone can wear. The translation work isn't finished. There are more people waiting to put this on.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -296,7 +304,8 @@
         }
       ],
       "transcript_zh": "人声与留白的关系很具体：预副歌的停顿，人声在那口气里重新进入，和弦在下面悬着，等那口气走完。\n\n一九八七年，竹内まりや把Carole King的呼吸语法完整内化成了日语。这条线的根基是一九八零年的Miss M：那张专辑在洛杉矶Monterrey Sound Studios录制，制作人David Foster，你刚才在Georgy Porgy里听到的三个乐手，Jeff Porcaro、Steve Lukather、David Hungate，就出现在了Miss M的liner notes里，那是西岸语法进入东京棚的物理接触。那次物理接触，是シングル・アゲイン的根基，是呼吸语法内化的起点。\n\n七年后的成熟形态：外套穿好了，现在开始自然化，语法的来历已经不需要解释了，它已经是母语，是身体的一部分。",
-      "transcript_en": null,
+      "transcript_en": "The relationship between voice and silence is precise: the pre-chorus pause, the vocal re-entering mid-breath, the chord hanging underneath waiting for that breath to resolve.\n\nIn 1987, Takeuchi Mariya (竹内まりや) fully internalized Carole King's breathing grammar into Japanese.\n\nThe foundation goes back to 1980. Miss M, recorded at Monterrey Sound Studios in Los Angeles, produced by David Foster.\n\nThe three musicians you just heard on Georgy Porgy, Jeff Porcaro, Steve Lukather, David Hungate, appear in Miss M's liner notes.\n\nThat was the physical moment of contact: West Coast grammar entering a Tokyo studio.\n\nシングル・アゲイン (Single Again), seven years later, is what that contact matured into.\n\nThe grammar no longer announces its origins. It has become a mother tongue. The coat fits, and you can no longer see the seams.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -326,7 +335,8 @@
         }
       ],
       "transcript_zh": "和弦复杂，副歌前悬浮到两个调性之间，听的时候会有一秒钟不确定方向，不知道它要去哪里。\n\n一九八四年，角松敏生把AOR和弦语法推到了City Pop范围内最复杂的形态：副歌前那个和弦，同时属于两个调性，悬浮在调性之间，不急着告诉你答案，让你在那个不确定里多待一秒钟。这是爵士和弦作为流行语法的极限实验，是把不解决做成结构的日本版本。\n\n把语法推到极限的同时，同一代人里也有人在走反方向：濱田金吾把同一套语法做慢，做进深夜，停顿变成深呼吸，和声语法到了顶，但留白的路线还没有走完，还有另一种极端等在那里。",
-      "transcript_en": null,
+      "transcript_en": "Complex chords. Before the chorus, the harmony floats between two keys at once. There's a moment where you genuinely don't know which direction it's going.\n\n1984. Kadomatsu Toshiki (角松敏生) pushed AOR harmonic grammar to its most complex form within City Pop.\n\nThat pre-chorus chord belongs simultaneously to two different tonal centers. It suspends itself in the ambiguity, in no hurry to give you the answer.\n\nThis is the limit experiment: jazz chords as pop grammar, taken to the edge. The Japanese version of making irresolution into structure.\n\nAt the same time, someone else in the same generation was moving the opposite direction.\n\nHamada Kingo (濱田金吾) slowed the same grammar down into deep night. The pause becoming a deep inhale. Harmonic grammar at its ceiling; the hollowing path still has further to go.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -356,7 +366,8 @@
         }
       ],
       "transcript_zh": "管乐进入前那两拍的等待，是整首歌的结构中心，是这首歌最响的地方，虽然那里什么声音都没有。\n\n一九八三年，稲垣潤一把停顿语法做进了商业单曲。管乐声部的等待感不是装饰，是结构：那两拍空白，是整首歌最响的地方，是所有旋律都在指向的位置。你刚才在シングル・アゲイン里听到的停顿语法，到了这里变成了管乐进场前那两拍的等待，商业化了，但语法的骨头没有变，停顿还在，只是穿上了一件更亮的外套。\n\n翻译已经完成，不需要标注来历，这是语法自然化之后的样子，是外套穿好之后的行走。",
-      "transcript_en": null,
+      "transcript_en": "Those two beats before the brass section enters: that's the structural center of the whole track. The loudest moment in the song is the moment with no sound in it.\n\n1983. Inagaki Junichi (稲垣潤一) built the pause grammar into a commercial single.\n\nThe wait before the brass isn't decoration. It's load-bearing. Those two empty beats are where every melody has been pointing.\n\nThe pause grammar from シングル・アゲイン (Single Again) has been moved here, into the breath before the horns arrive.\n\nIt's more commercial now, but the grammatical skeleton hasn't changed. The pause is still there. Just wearing a brighter coat.\n\nThe translation is done. No citation needed. This is what naturalized grammar looks like: the coat walking on its own.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -386,7 +397,8 @@
         }
       ],
       "transcript_zh": "频率留白极端，和弦悬在空气里，没有节奏的重量压着，声音之间有大片的空气。\n\n一九八八年，City Pop走到尾声，翻译美学在这里走到了频率留白的极端。你刚才在夏のクラクション里听到的是这套语法的商业成熟形态，到了一九八八年城市流行的尾声，同一套语法被精简到只剩和弦悬在空气里，节奏组退到最远处，人声和和弦之间的空气是唯一的内容，留白是主角，声音是留白的边框。\n\n外套穿到快消失了，快消失的时候反而最能看见它原来的形状，看见那件外套最初是怎么被裁制的。",
-      "transcript_en": null,
+      "transcript_en": "Frequency hollowing at its maximum. Chords suspended in air. No rhythmic weight pressing down. Huge stretches of air between sounds.\n\n1988. City Pop approaching its end. The translation aesthetic reaches the extreme of deliberate emptiness.\n\nThe commercial, polished form you just heard in 夏のクラクション: by 1988, that same grammar has been stripped to chords hanging in air.\n\nThe rhythm section retreats to the far distance. The air between voice and chord is the only content.\n\nThe silence is the main character. The sounds are its frame.\n\nThe coat has been worn almost to invisibility. When it nearly disappears, you can finally see its original shape, see how it was cut in the first place.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -416,7 +428,8 @@
         }
       ],
       "transcript_zh": "Toto风格的鼓型，节奏骨架来自West Coast session playing，每个鼓击都干净利落，每一拍都落在它该在的位置。\n\n一九八三年，杏里的节奏骨架是完全的West Coast语法，但作为City Pop单曲，这首歌不需要任何来历的标注，听的时候不会想起那件外套的裁制地，不会想起那批session players，不会想起那间洛杉矶的棚。翻译的自然化在这里已经完成，穿到不觉得是外套，外套才真正穿好，穿好的外套和皮肤之间已经没有边界。\n\n接下来同一代人里有一个声音，中原めいこ，外套的线条在她那里更可辨认，翻译的层次更清晰可见。",
-      "transcript_en": null,
+      "transcript_en": "Toto-style drum pattern. The rhythmic skeleton is pure West Coast session playing. Every hit clean, every beat landing exactly where it belongs.\n\n1983. Anri's (杏里) rhythmic foundation is entirely West Coast grammar. But as a City Pop single, this track needs no attribution.\n\nListening, you don't think of where the coat was tailored. Don't think of the session players, don't think of the Los Angeles studio.\n\nThe naturalization is complete. When you wear a coat so completely you forget it's a coat, that's when it's really been worn in.\n\nThe coat and the skin: no longer any boundary between them.\n\nSomewhere in the same generation, there's a voice where the coat's seams are slightly more visible. That voice is Nakahara Meiko (中原めいこ).",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -450,7 +463,8 @@
         }
       ],
       "transcript_zh": "慢速，副歌前那口气像深吸，不是换气，是停顿被做成了呼吸的重量，让你感觉到时间本身的分量。\n\n一九八二年，濱田金吾把Boz Scaggs的城市蓝调翻译成了东京的深夜慢版。角松敏生把和声语法推到极致，走的是向上的方向，这里走的是向下的方向：停顿被做成深呼吸，同样的预副歌空白，在慢速度下变成了一口气的重量，城市孤独感的夜间日文版本，夜深了，一个人的慢版。\n\n这里是夜的深处。接下来，中原めいこ的Cloudyな午後，时间变了，白天，阴天，语法相同，感觉换了一个方向，从夜到昼，从重到轻，同一件外套穿进了不同的天气里。",
-      "transcript_en": null,
+      "transcript_en": "Slow tempo. That pre-chorus breath lands like a deep inhale, not a simple breath catch. The pause has become the weight of breathing itself.\n\n1982. Hamada Kingo (濱田金吾) translated Boz Scaggs's urban blues into a Tokyo late-night slow version.\n\nKadomatsu pushed harmonic grammar upward. This moves the opposite direction, downward, into depth.\n\nThe same pre-chorus silence, at this slower speed, becomes the weight of a single drawn breath.\n\nUrban loneliness in Japanese, night version. Alone in the small hours.\n\nThis is the deepest part of the night. Next: Nakahara Meiko's (中原めいこ) Cloudyな午後. The time shifts to daytime, overcast.\n\nSame grammar, different direction. From night to day, from heavy to light. The same coat worn into different weather.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -480,7 +494,8 @@
         }
       ],
       "transcript_zh": "同一把嗓子，能量稍高一点，语法的层次更可辨认，外套的线条还在，还隐约可见。\n\n一九八三年，中原めいこ在Fantasy里用的是同一套语法，但能量还多了一点，外套的线条还在，裁缝的针线还隐约可见，语法的来历还没有完全消失在声音里。同一把嗓子，同一套语法，但有多余的能量需要被蒸馏，有多余的层次需要被去掉。\n\n紧接着，同一把嗓子进入Cloudyな午後，多余的能量被蒸馏掉，只剩一个阴天午后的轮廓。值得注意的是，Cloudyな午後比Fantasy早一年录制，但在这里，Fantasy是通向终点的最后一步，是蒸馏开始之前的状态。",
-      "transcript_en": null,
+      "transcript_en": "Same voice, slightly more energy. The layers of grammar are more legible here. The coat's seams are still faintly visible.\n\n1983. Nakahara Meiko (中原めいこ) in Fantasy is using the same grammar. But there's extra energy that hasn't been distilled out yet.\n\nThe tailor's stitching still shows faintly. The grammar's origins haven't fully dissolved into the sound.\n\nSame voice, same grammar. A surplus of energy that still needs refining. Layers that still need to be removed.\n\nNext, that same voice enters Cloudyな午後. The extra energy is distilled away. What's left is only the outline of a cloudy afternoon.\n\nNote: Cloudyな午後 was recorded a year earlier than Fantasy. But in this arc, Fantasy is the last step before the destination, the state just before distillation begins.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -522,7 +537,8 @@
         }
       ],
       "transcript_zh": "钢琴开声，和弦悬着，人声很轻进来，像有人在隔壁房间说话，不用说很大声，你也能听见。\n\n这首歌是这条链条的终点。\n\n还记得一九七零年Fire and Rain里那口停顿吗，James Taylor让短语结尾的空气保持住，不填满，那是最初的示范，可以不填的地方不填，停顿本身是语法。到了这首歌，那口停顿已经成为了骨架：钢琴和弦悬着，人声在那个空隙里进来，不解决，不急，不慌张。\n\n还记得Silk Degrees的那批session players，记得Jeff Porcaro和Steve Lukather出现在Miss M的liner notes里，那次物理接触把West Coast的手感带进了东京的棚，把一套惯性从洛杉矶带到了日本的录音现场。那份手感的最终形态在这首歌里已经无痕迹，只剩录音的质感，只剩声音本身。\n\n还记得Deacon Blues，记得山下達郎被叫做「日本的Steely Dan」，那套把爵士和弦当流行语法的哲学越过太平洋，被移植，被内化，到了这首歌里，和弦不再是哲学，只是一个阴天午后的颜色，只是那个颜色本身。\n\n还记得シングル・アゲイン，记得Carole King的呼吸语法被竹内まりや内化成日语，七年的自然化，到了这首歌，已经不需要任何关于来历的注脚，它就是日语，就是这个语言本身在说话。\n\n这首歌比Fantasy早一年录制，一九八二年，它是蒸馏的终点。从James Taylor的呼吸间隙、Steely Dan的和弦语法、Toto乐手的物理接触，所有翻译语法在这首歌里已经无法辨认，只剩一个阴天午后。外套变成了皮肤。",
-      "transcript_en": null,
+      "transcript_en": "Piano opens. The chord hangs. A voice enters very softly, like someone talking in the next room. No need to raise it. You can hear it anyway.\n\nThis track is where the chain ends.\n\nRemember the pause in Fire and Rain. James Taylor leaving the air at the end of a phrase unfilled. Original demonstration: where you can leave silence, leave it.\n\nThe pause is its own grammar. In this song, that pause has become the skeleton itself.\n\nThe piano chord hangs. The voice enters in the gap. Unresolved. Unhurried.\n\nRemember the Silk Degrees session players. Jeff Porcaro and Steve Lukather appearing in Miss M's liner notes. That physical contact brought West Coast feel into a Tokyo studio.\n\nA habit carried from Los Angeles to a Japanese recording session. In this song, that feel has left no trace. Only the recording texture remains. Only the sound itself.\n\nRemember Deacon Blues. Remember Yamashita Tatsuro being called Japan's Steely Dan. That philosophy of jazz chords as pop grammar, crossing the Pacific, transplanted and internalized.\n\nIn this song, the chords are no longer a philosophy. They are just the color of a cloudy afternoon. Just that color.\n\nRemember シングル・アゲイン (Single Again). Carole King's breathing grammar internalized into Japanese by Takeuchi Mariya. Seven years of naturalization.\n\nIn this song, no footnote about origins is needed. It is Japanese. The language itself is speaking.\n\nThis track was recorded a year before Fantasy, 1982. It is the endpoint of distillation.\n\nJames Taylor's breath-gaps. Steely Dan's harmonic grammar. The physical contact of the Toto players.\n\nAll of it unrecognizable here. Only a cloudy afternoon remains. The coat has become skin.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -552,7 +568,8 @@
         }
       ],
       "transcript_zh": "synth pad开头，节奏框架是City Pop，贝斯线干净，声音里有一种熟悉的距离感。\n\n二零二一年，加州，Cameron Lew在洛杉矶把日本人对加州音乐的翻译再翻译了一次。你刚才在中原めいこ的Cloudyな午後里听到的，是加州音乐经过东京后的样子。Ginger Root在洛杉矶把那个东京版本再翻译了一次，回到了外套被裁制的地方，但外套的形状已经改过了。\n\n翻译闭环：起点和终点在同一个地理，但中间绕了四十年的东京。外套回到起点，形状已经变了。",
-      "transcript_en": null,
+      "transcript_en": "Synth pad opening. City Pop rhythmic frame. Bass line clean. A familiar kind of distance in the sound.\n\n2021. California. Cameron Lew in Los Angeles re-translated the Japanese translation of California music.\n\nWhat you just heard in Nakahara Meiko's Cloudyな午後: that's California music after it passed through Tokyo. Ginger Root in Los Angeles took that Tokyo version and translated it once more.\n\nBack to where the coat was originally cut. But the coat's shape has already been altered by the journey.\n\nThe translation loop closes: start and end at the same geography, but forty years of Tokyo in between. The coat returns to its origin. Its shape has changed.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
@@ -582,14 +599,16 @@
         }
       ],
       "transcript_zh": "synth pad，贝斯线干净，歌词是普通话，唱的是一条城市地铁线。\n\n二零二一年，深圳，RYUSENKEI把City Pop语法带进了第三座城市。你刚才在Cloudyな午後里听到的语法，到了深圳这里唱词变成了普通话，地铁从东京变成了三号线，城市从昭和东京变成了当代深圳，但和弦语法、贝斯惯性、停顿位置，一样都没有变。\n\nCalifornia到Tokyo，Tokyo到Shenzhen，翻译没有终点。外套每穿到一座城市，就长出一条新的线，但骨架还是那件。",
-      "transcript_en": null,
+      "transcript_en": "Synth pad. Bass line clean. Lyrics in Mandarin. The song is about a city metro line.\n\n2021. Shenzhen. RYUSENKEI carries City Pop grammar into a third city.\n\nThe grammar you just heard in Cloudyな午後: here, the lyrics become Mandarin. The metro shifts from Tokyo to Line 3. The city shifts from Showa-era Tokyo to contemporary Shenzhen.\n\nBut the chord grammar, the bass habits, the position of the pauses: none of that has changed.\n\nCalifornia to Tokyo. Tokyo to Shenzhen. Translation has no endpoint. Every city the coat reaches, a new thread grows out from it. But the skeleton is still the same coat.",
+      "transcript_en_status": "complete",
       "transcript_zh_status": "complete"
     },
     {
       "position": 18,
       "kind": "closing",
       "transcript_zh": "钢琴和弦还悬着，不解决，这是Cloudyな午後教给我们的。\n\nシングル・アゲイン把那口悬浮语法从洛杉矶带回东京，Fantasy用同一把嗓子把能量调到刚刚好，这件外套经过四十年的穿戴，已经无法脱下，因为它早已变成皮肤。",
-      "transcript_en": null
+      "transcript_en": "The piano chord is still hanging. Still not resolving. Cloudyな午後taught us that.\n\nシングル・アゲイン (Single Again) carried the suspended grammar from Los Angeles back to Tokyo.\n\nFantasy dialed the energy to exactly the right level, in the same voice.\n\nThis coat, after forty years of wearing, can no longer be taken off. Because it became skin a long time ago.",
+      "transcript_en_status": "complete"
     }
   ]
 }
