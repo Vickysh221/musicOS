@@ -1,0 +1,755 @@
+{
+  "playlist_slug": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+  "episode_number": 5,
+  "episode_focus": "translation_aesthetic",
+  "episode_title_zh": "基因穿外套 — Cloudyな午後",
+  "episode_title_en": "The Coat That Fits — Cloudyな午後",
+  "episode_arc": {
+    "from": { "position": 1, "label": "James Taylor — Fire and Rain (1970)" },
+    "to":   { "position": 15, "label": "中原めいこ — Cloudyな午後 (1982)" },
+    "coda": { "position": 17, "label": "RYUSENKEI — 3号线 (2021)" }
+  },
+  "connection_kinds_in_scope": [
+    "translation",
+    "hybridization",
+    "direct_influence",
+    "methodological_descent",
+    "genealogical_descent",
+    "same_era_dialogue"
+  ],
+  "muted_positions": [],
+  "position_labels": {
+    "1":  "James Taylor — Fire and Rain (1970)",
+    "2":  "Carole King — It's Too Late (1971)",
+    "3":  "Boz Scaggs — Lowdown (1976)",
+    "4":  "Steely Dan — Deacon Blues (1977)",
+    "5":  "Toto — Georgy Porgy (1978)",
+    "6":  "大瀧詠一 — カナリア諸島にて (1981)",
+    "7":  "山下達郎 — LOVELAND ISLAND (1982)",
+    "8":  "竹内まりや — シングル・アゲイン (1987)",
+    "9":  "角松敏生 — ANKLET (1984)",
+    "10": "稲垣潤一 — 夏のクラクション (1983)",
+    "11": "ラ・ムー — Late Night Heartache (1988)",
+    "12": "杏里 — SHYNESS BOY (1983)",
+    "13": "濱田金吾 — Bye Bye Mrs. December (1982)",
+    "14": "中原めいこ — Fantasy (1983)",
+    "15": "中原めいこ — Cloudyな午後 (1982)",
+    "16": "Ginger Root — Loretta (2021)",
+    "17": "RYUSENKEI — 3号线 (2021)"
+  },
+  "connection_pairs": [
+    {
+      "id": "conn_001_to_002_same_era_dialogue",
+      "from_position": 1,
+      "to_position": 2,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_jt_ck_dialogue",
+      "system_sensory_note": "James Taylor and Carole King shared the same LA session-musician network in 1970–71; Taylor played guitar on Tapestry. Both records pioneer the 'breath-pause as structural element' vocal grammar that City Pop producers would later absorb. The pair establishes the AOR origin-node cluster from which the translation chain begins.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "你刚才听到的这口停顿，同年在洛杉矶另一间棚里，一位女词人把它做成了副歌前的悬浮和弦。同一套语法，换了一张嘴。",
+          "voice_en": "The breath-pause you just heard — in another LA studio that same year, a songwriter made it a suspended chord before the chorus. Same grammar, different mouth."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在James Taylor那里听到的那口呼吸，到了这里被做成了Cm7的悬挂。同一个停顿手势，换了和声语言。",
+          "voice_en": "The breath-pause from James Taylor just now — here it becomes a suspended Cm7. Same gesture, different harmonic language."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.685,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.70,
+          "evidential_strength": 0.80,
+          "focus_relevance": 0.60
+        },
+        "rationale": "Concrete carrier is strong: Taylor played guitar on Tapestry, documented. Story drive is the arc-opening pair — lays the LA network foundation — but is not itself a narrative turn."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_008_translation",
+      "from_position": 2,
+      "to_position": 8,
+      "kind": "translation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "No direct documented connection between Carole King and 竹内まりや; this is thematic kinship via the Cm7 harmonic-suspension vocabulary that travels through the LA chain (King → AOR template → Toto/Foster). シングル・アゲイン's pre-chorus hold is audibly descended from the It's Too Late harmonic suspension, but the lineage is mediated, not direct.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这口副歌前的悬浮和弦，在洛杉矶被录进了这张唱片。十六年后，同一口气会在东京被一位女声完整内化，说成日语。",
+          "voice_en": "The harmonic suspension you just heard will surface sixteen years later in Tokyo — the same breath before the chorus, now Japanese."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Carole King那里听到的副歌前悬挂，到了竹内まりや这里已经完全内化成了母语。呼吸还在，语言换了。",
+          "voice_en": "The pre-chorus suspension from Carole King just now, fully internalized into Japanese — here in 竹内まりや. The breath is the same; the language changed."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.59,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.40,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Focus relevance is high — this is a textbook translation-aesthetic cross-tradition pair. Evidential strength is the weakest dimension: the link is thematic kinship without a paper trail, making this one of the episode's three null-edge pairs."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_005_direct_influence",
+      "from_position": 3,
+      "to_position": 5,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_boz_toto_personnel",
+      "system_sensory_note": "David Paich (keyboards, Lowdown co-writer) and Jeff Porcaro (drums) recorded Silk Degrees and co-founded Toto the following year. Wikipedia and the Toto band history confirm both names on both records. This is the single best-documented personnel bridge in the first half of the episode: the coat being cut.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这张专辑里的键盘手和鼓手，次年离开，用同一批人组了一支新乐队。那支乐队后来出现在了日本录音棚里。",
+          "voice_en": "The keyboardist and drummer on this record left the following year to form a new band. That band later turned up in a Japanese studio."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Boz Scaggs那张专辑里听到的键盘手和鼓手，就是现在这支乐队。同一批手，换了一个乐团的名字。",
+          "voice_en": "The keyboardist and drummer you just heard on Boz Scaggs — they are this band. Same hands, different name."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.87,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.95,
+          "evidential_strength": 0.90,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Concrete carrier maxes: named personnel (Paich, Porcaro) appear on both records, two Tier-2 sources. Story drive is high: this pair is the literal seam where the coat is sewn — the physical personnel bridge the episode's arc depends on."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_004_to_007_direct_influence",
+      "from_position": 4,
+      "to_position": 7,
+      "kind": "direct_influence",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_steely_yamashita_influence",
+      "system_sensory_note": "山下達郎's use of jazz chord voicings as commercial pop grammar is the most-cited Steely Dan inheritance in Japanese music criticism. Multiple sources confirm the 'Japan's Steely Dan' characterisation. The evidence basis is musicological consensus with multiple Wikipedia/journalism sources.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这套把爵士和弦当流行语法的录音室哲学，越过太平洋。十年后在东京，有人把它做得比这里更完整，评论家的对比还是落回到这个名字。",
+          "voice_en": "Jazz chords as pop grammar crossed the Pacific. A decade later in Tokyo, someone pushed this further — critics still reached for this band's name."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Steely Dan那里听到的爵士和弦作为流行语法，到了山下達郎这里被推到了极致。「日本的Steely Dan」这个标签，评论家不是随便叫的。",
+          "voice_en": "The Steely Dan jazz-chord grammar you just heard — here in 山下達郎 it is complete. The label 'Japan's Steely Dan' earned, not given."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.715,
+        "dimensions": {
+          "story_drive": 0.80,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Story drive is strong: the Steely Dan → 山下達郎 lineage is the most documented cross-Pacific translation in City Pop criticism. Concrete carrier is moderate — the label exists but no single sonic moment is pinned."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_005_to_008_translation",
+      "from_position": 5,
+      "to_position": 8,
+      "kind": "translation",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_toto_mariya_direct",
+      "system_sensory_note": "Jeff Porcaro (drums), Steve Lukather (guitar), David Hungate (bass) appear in the liner notes of 竹内まりや's Miss M (1980), recorded at Monterrey Sound Studios, Los Angeles, produced by David Foster. Confirmed by Discogs release 5017612 and SessionDays professional archive. This is the physical moment of contact — the coat hand-stitched across the Pacific.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这张专辑录完两年后，这支乐队里的三个人飞去洛杉矶，给一位日本女歌手录了一张专辑。针线从这里穿过去的。",
+          "voice_en": "Two years after this record, three members of this band flew to Los Angeles and played on a Japanese artist's album. The thread passes through here."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Toto那里听到的三个乐手，他们出现在一九八零年Miss M的liner notes里。西岸的语法就是这样进入东京录音棚的。",
+          "voice_en": "The three players from Toto you just heard appear in the liner notes of Miss M, recorded in 1980. That is how West Coast grammar entered the Tokyo studio."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.955,
+        "dimensions": {
+          "story_drive": 0.95,
+          "concrete_carrier": 1.0,
+          "evidential_strength": 0.95,
+          "focus_relevance": 0.90
+        },
+        "rationale": "Highest-scored pair in the episode. Concrete carrier maxes: named personnel confirmed by two independent Tier-2 sources (Discogs, SessionDays). Story drive maxes because this is the physical contact moment the entire episode arc rests on — translation as literal shared studio, not metaphor."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_007_same_era_dialogue",
+      "from_position": 6,
+      "to_position": 7,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_otaki_yamashita_dialogue",
+      "system_sensory_note": "大瀧詠一 and 山下達郎 are co-alumni of the Happy End / Niagara circle. A Long Vacation (1981) and FOR YOU (1982) are consistently co-cited in Japanese music scholarship as the definitive City Pop studio records. The pair dramatises two translation paths: internal research (Otaki) vs. direct studio contact (Yamashita/Takeuchi).",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "没有飞去洛杉矶这条路，还有另一条：把美国流行乐研究到能从内部复制。明年，同一批听众会听到另一位用的是截然不同的方法。",
+          "voice_en": "There was another path besides going to Los Angeles — study the source until you can replicate it from inside. Next year, another Tokyo artist chose the opposite approach."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "大瀧詠一选择的是内部研究路线。山下達郎选择的是录音室完美主义路线。两张专辑，相差一年，是City Pop两种翻译策略的对照标本。",
+          "voice_en": "大瀧詠一 studied from within; 山下達郎 brought the studio here. Two albums, one year apart — two translation strategies side by side."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.67,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.80,
+          "focus_relevance": 0.60
+        },
+        "rationale": "Evidential strength is high: co-alumni status, simultaneous critical recognition, Wikipedia sources. The pair's narrative value is structural contrast (two translation methods) rather than a single dramatic pivot."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_007_to_015_genealogical_descent",
+      "from_position": 7,
+      "to_position": 15,
+      "kind": "genealogical_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_citypop_nakahara_descent",
+      "system_sensory_note": "中原めいこ's 1982 CBS Sony production context places Cloudyな午後 in direct stylistic lineage from the 山下達郎 studio-perfectionism strand. The connection is structural: shared production philosophy, shared label era, shared aesthetic restraint. Evidence is musicological consensus.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这套把每一轨都服务于制作人耳朵的录音室声学，同年在东京被另一位歌手用到了，用得更轻，更收敛，多余的能量都蒸馏掉了。",
+          "voice_en": "This studio philosophy — every track serving the producer's ear — that same year in Tokyo reached another singer, who stripped it further, distilling it down."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在山下達郎那里听到的录音室声学极致，到了这里被蒸馏了一遍：同一套语法，多余的能量去掉了，只剩一个阴天下午的感觉。",
+          "voice_en": "The studio perfectionism from 山下達郎 just now — here it is distilled once more: same grammar, excess stripped away, leaving one cloudy afternoon."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.665,
+        "dimensions": {
+          "story_drive": 0.70,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.70
+        },
+        "rationale": "Story drive contributes: this pair leads to the anchor and frames the 'distillation' metaphor. Concrete carrier is moderate — shared label and era, but no named arranger or session to pin it to."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_008_to_015_translation",
+      "from_position": 8,
+      "to_position": 15,
+      "kind": "translation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_mariya_nakahara_dialogue",
+      "system_sensory_note": "竹内まりや and 中原めいこ share the 1982–87 CBS Sony production ecosystem and their records share arrangers, studios, and aesthetic grammar. The thematic through-line (Carole King → Miss M → シングル・アゲイン → Cloudyな午後) is the episode's spine. The edge covers the lateral CBS Sony relationship.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "从洛杉矶带回来的语法在这里已经完全成熟了。后面还有一位女声，把同一批语法再蒸馏一遍，蒸馏到只剩一个下午的轮廓。",
+          "voice_en": "The grammar brought back from Los Angeles is fully matured here. Ahead, another voice will distill it once more, down to just an afternoon's outline."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在竹内まりや那里听到的Carole King呼吸语法，已经完全内化成了日语。到了这里再蒸一遍，轮廓只剩这么多。",
+          "voice_en": "The Carole King breathing grammar from 竹内まりや just now, fully internalized into Japanese — here it is distilled once more. Just this much left."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.645,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.60,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Focus relevance is the dominant dimension: this pair completes the translation chain spine (LA physical contact → matured form → distillation). Concrete carrier is moderate — shared production ecosystem but no named personnel link."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_014_to_015_direct_influence",
+      "from_position": 14,
+      "to_position": 15,
+      "kind": "direct_influence",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_fantasy_cloudy_same_artist",
+      "system_sensory_note": "Fantasy (1983) and Cloudyな午後 (1982) are by the same artist. Cloudyな午後 was released one year before Fantasy; both are placed here in narrative order (Fantasy as pre-anchor buildup) rather than strict chronology. The 'distillation' story — same voice, same grammar, more energy → less energy → essence — is audible and structurally important for the anchor introduction.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "紧接着，同一把嗓子，但语法被精简了，多余的能量蒸馏掉，只剩轮廓本身。",
+          "voice_en": "Same voice, same grammar — next, with the excess stripped away, leaving only the outline itself."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Fantasy里听到的是同一把嗓子，略高的能量，略多的外套。这一首是蒸馏之后的样子：一样的语法，轻了一圈。",
+          "voice_en": "The Fantasy you just heard — same voice, slightly more energy, slightly more coat. This is the distilled version: same grammar, lighter."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.775,
+        "dimensions": {
+          "story_drive": 0.80,
+          "concrete_carrier": 0.75,
+          "evidential_strength": 0.80,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Story drive is strong: this pair is the direct pre-anchor setup, the 'same voice, stripped down' moment before the anchor lands. Concrete carrier is solid: same artist, same year, audibly comparable vocabulary."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_015_to_016_genealogical_descent",
+      "from_position": 15,
+      "to_position": 16,
+      "kind": "genealogical_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_cloudy_ginger_descent",
+      "system_sensory_note": "Ginger Root (Cameron Lew) explicitly cites 中原めいこ and contemporaries as primary influences. CITY SLICKER's production is a conscious engagement with the 1982-1988 City Pop canon. The 'reverse translation' (California re-translating Tokyo's translation of California) is the episode's downward-axis narrative.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这件外套穿了四十年，绕了一圈，回到加州。下面会出现一位加州人，把日本人对加州音乐的翻译再翻译回加州。",
+          "voice_en": "This coat traveled forty years, looped, and came back to California — a Californian re-translating the Japanese translation of California music."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在中原めいこ那里听到的，是加州音乐经过东京之后的样子。Ginger Root在洛杉矶，把那个东京的样子再翻译了一次。外套回到了起点。",
+          "voice_en": "What you just heard in 中原めいこ — California music filtered through Tokyo. Ginger Root in Los Angeles re-translated that Tokyo version. The coat returned to its origin."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.65,
+        "dimensions": {
+          "story_drive": 0.70,
+          "concrete_carrier": 0.60,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.70
+        },
+        "rationale": "Story drive is the main contributor: the reverse-translation loop is the episode's conceptual payoff in the downward axis. Concrete carrier is moderate — explicit artist influence claim without a named sonic moment."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_015_to_017_genealogical_descent",
+      "from_position": 15,
+      "to_position": 17,
+      "kind": "genealogical_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_cloudy_ryusenkei_descent",
+      "system_sensory_note": "RYUSENKEI's シティ・ミュージック (2021) directly engages the 1982-1988 City Pop canon; the album title is in Japanese. 3号线 places the City Pop urban-transit fantasy in Shenzhen, extending the translation chain to a third geography. Consensus sources confirm the lineage.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "外套还没有停。四十年后，另一城市的地铁线上，有一支乐队把这件外套穿上了，唱词是普通话。",
+          "voice_en": "The coat keeps moving. Forty years on, on another city's metro line, a band put it on — the lyrics now in Mandarin."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在中原めいこ那里听到的外套，到了深圳这里，唱词变成了普通话，地铁线变成了三号线。语法没有变。",
+          "voice_en": "The coat from 中原めいこ just now — in Shenzhen, the lyrics shift to Mandarin, the metro line becomes Line 3. The grammar unchanged."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.66,
+        "dimensions": {
+          "story_drive": 0.65,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Focus relevance is the dominant dimension: third-generation translation (California → Tokyo → Shenzhen) is the episode's thesis made literal. Concrete carrier includes the Japanese album title as a documented lineage claim."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_016_to_017_same_era_dialogue",
+      "from_position": 16,
+      "to_position": 17,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_ginger_ryusenkei_dialogue",
+      "system_sensory_note": "Ginger Root (Los Angeles) and RYUSENKEI (Shenzhen) are both 2021 downward-axis nodes demonstrating that the translation aesthetic has become globally distributed. Neither knew the other; both independently reconstructed the same grammar from the same Japanese 1980s source material. The pair shows the coat is now self-replicating.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "加州把外套穿回来了。同年，深圳有人在做一模一样的事：同一件外套，同一批语法，唱词换成中文。翻译没有终点。",
+          "voice_en": "California put the coat back on. That same year in Shenzhen, someone was doing the same thing — same coat, same grammar, lyrics now in Chinese."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Ginger Root那里听到的是同一套语法，同一个时代，不同的地理。洛杉矶和深圳，二零二一年，两件同款外套。",
+          "voice_en": "The grammar you just heard in Ginger Root — same coat, same era, different geography. Los Angeles and Shenzhen, 2021, wearing the same thing."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.595,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.70
+        },
+        "rationale": "Focus relevance is the main contributor: the pair proves the translation aesthetic is geographically self-replicating, which is the episode's closing thesis. Concrete carrier and evidential strength are modest — the connection is structural/conceptual, not personnel-based."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_001_to_006_direct_influence",
+      "from_position": 1,
+      "to_position": 6,
+      "kind": "direct_influence",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_jt_otaki_influence",
+      "system_sensory_note": "大瀧詠一's A Long Vacation production draws on the restrained vocal aesthetics of American singer-songwriter records. The James Taylor restrained-vocal sparseness is a musicologically-cited stylistic ancestor. Evidence is consensus; no direct documented quotation from Otaki citing Fire and Rain specifically. This pair illustrates the 'internal translation path' counterpoint to the physical studio-contact path.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种克制的人声与留白，越过太平洋，被一个东京制作人研究到可以从内部复制，而他从未去过洛杉矶。",
+          "voice_en": "This restrained vocal sparseness crossed the Pacific, studied to replication by a Tokyo producer who never went to Los Angeles."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在James Taylor那里听到的人声克制与空白，被大瀧詠一内化成一套可以在东京独立完成的生产语法。这就是内化路线。",
+          "voice_en": "The restrained vocal space from James Taylor just now, internalized by 大瀧詠一 into a grammar he could execute in Tokyo alone. The internal-translation path."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.57,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.60
+        },
+        "rationale": "This pair's value is structural contrast: it introduces the 'internal research' translation strategy before the 'physical studio contact' strategy (CP3/CP5) arrives. Story drive and concrete carrier are modest — no named moment or personnel to anchor it."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_004_to_009_translation",
+      "from_position": 4,
+      "to_position": 9,
+      "kind": "translation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "No direct documented connection between Steely Dan and 角松敏生; the pair is thematic kinship — both deploy jazz chord language as commercial pop grammar, with 角松敏生 representing the most harmonically complex City Pop station. Backed_by_edge_id is null; evidence is musicological inference from shared vocabulary.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把爵士和弦当流行语法，这条线在日本会有一个极端化的实验：有人把它推到了副歌前的和声同时属于两个调的程度。",
+          "voice_en": "Jazz chords as pop grammar — in Japan this gets pushed to an extreme: a chord before the chorus that belongs to two keys at once."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Steely Dan那里听到的爵士和弦作为流行语法，到了角松敏生这里已经是City Pop范围内的极限形态了。",
+          "voice_en": "The Steely Dan jazz-chord grammar you just heard — here in 角松敏生 it reaches its City Pop limit. The most harmonically complex station."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.56,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Focus relevance is the main contributor: this pair extends the Steely Dan harmonic-grammar translation to its City Pop extreme. One of three null-edge pairs; evidence is inference from shared vocabulary rather than documented influence."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_013_translation",
+      "from_position": 3,
+      "to_position": 13,
+      "kind": "translation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "No direct documented connection between Boz Scaggs and 濱田金吾; the pair is thematic kinship via the 'nocturnal city-blues feeling' and slow-tempo pre-chorus pause. 濱田金吾's Midnight Cruisin' era production shares the Silk Degrees rhythm-section aesthetic. One of three null-edge pairs; musicological consensus, no paper trail.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这种城市蓝调的夜间孤独感，在东京会被做成慢速深夜版本，副歌前的停顿像深吸一口气，而不是快速换气。",
+          "voice_en": "The nocturnal city-blues feeling — in Tokyo it becomes a slow late-night version: the pre-chorus pause a deep inhale, not a quick breath."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Boz Scaggs那里听到的城市蓝调夜间感，到了濱田金吾这里慢下来了。副歌前那口气是深吸，不是换气。城市换了，孤独感的语法没换。",
+          "voice_en": "The nocturnal city-blues from Boz Scaggs just now — here in 濱田金吾 it slows. That pre-chorus breath is a deep inhale. The city changed; the grammar of loneliness didn't."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.56,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Focus relevance is the main contributor: the 'nocturnal city-blues' translation is a secondary strand of the episode that illustrates translation as emotional-register migration, not just harmonic vocabulary migration. One of three null-edge pairs."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_003_direct_influence",
+      "from_position": 2,
+      "to_position": 3,
+      "kind": "direct_influence",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_ck_boz_descent",
+      "system_sensory_note": "Tapestry's soft-soul LA production aesthetic established the template that Boz Scaggs extended into blue-eyed soul on Silk Degrees. The harmonic suspension vocabulary and the 'restrained emotion over a polished rhythm section' philosophy moves directly between the two records. Map edge documents the connection.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这口悬浮和弦确立了洛杉矶这套流行制作语法。五年后，同一间城市里，一位蓝调歌手把它推进了蓝眼灵魂乐，节奏更重，外套换了颜色。",
+          "voice_en": "This harmonic suspension established the LA pop production grammar. Five years later, a blues singer in the same city pushed it into blue-eyed soul — same coat, heavier beat."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Carole King那里听到的洛杉矶制作语法，到了Boz Scaggs这里加重了节奏，换进了蓝眼灵魂乐。语法延续，颜色换了。",
+          "voice_en": "The LA production grammar from Carole King just now — in Boz Scaggs it gets a heavier rhythm section and blue-eyed soul. Same grammar, different colour."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.635,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.70,
+          "focus_relevance": 0.60
+        },
+        "rationale": "Concrete carrier and evidential strength are the main contributors: the soft-soul → blue-eyed-soul step is documented in the map edge with Wikipedia support. The pair completes the LA AOR ancestry chain before the Toto personnel pivot."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_004_same_era_dialogue",
+      "from_position": 3,
+      "to_position": 4,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_boz_steely_dialogue",
+      "system_sensory_note": "Silk Degrees (1976) and Aja (1977) are the two pinnacle AOR studio records of their era, sharing the LA session-musician network and the philosophy of harmonic sophistication as commercial pop grammar. The pair represents the two-peak moment of West Coast AOR before the Toto personnel split.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "把复杂和弦做进流行单曲，这间城市同年还有另一支乐队把同一件事做得更学术，更冷，更彻底。",
+          "voice_en": "Complex chords into pop — that same year in the same city, another band was doing the same thing more academically, more coldly, more completely."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在Boz Scaggs那里听到的把复杂和弦当流行语法的方向，到了Steely Dan这里变得更精密、更学术。同一间城市，同一条路，不同的终点。",
+          "voice_en": "The complex-chords-as-pop-grammar direction from Boz Scaggs just now — in Steely Dan it becomes more precise, more academic. Same city, same road, different destination."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.625,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.70,
+          "focus_relevance": 0.55
+        },
+        "rationale": "Evidential strength is the main contributor: both records are co-cited peak AOR documents, map edge confirmed. Focus relevance is modest — this is same-tradition dialogue, not yet cross-cultural translation."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_008_to_010_same_era_dialogue",
+      "from_position": 8,
+      "to_position": 10,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_lateral_generation",
+      "system_sensory_note": "竹内まりや and 稲垣潤一 are both core members of the City Pop generation working in Tokyo within the same 1982-1988 window, sharing arrangers, studios, and label infrastructure. The lateral_generation edge in the map covers this entire peer group.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同一批东京录音棚、同一批编曲师、同一个年代。这套语法在这代人里还有很多变体，下面会听到其中一个更商业的版本。",
+          "voice_en": "Same Tokyo studios, same arrangers, same decade. This grammar had many variants in this generation — ahead, a more commercial one."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在竹内まりや那里听到的是同一套语法的精致形态。到了稲垣潤一这里，同一批语法被做进了商业单曲，管乐进来了，停顿依然在。",
+          "voice_en": "What you just heard in 竹内まりや — the same grammar in a more polished form. In 稲垣潤一 it becomes a commercial single; brass section added, the pause still there."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.57,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.60
+        },
+        "rationale": "Coverage pair for the lateral generation chain. Evidential strength is moderate — lateral_generation edge with consensus support. All four dimensions are balanced; the pair's primary function is connecting the lateral axis."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_010_to_011_same_era_dialogue",
+      "from_position": 10,
+      "to_position": 11,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "稲垣潤一 (1983) and ラ・ムー (1988) represent early and late stages of the City Pop lateral axis. The connection is structural: both deploy the pre-chorus pause as a central gesture, but 稲垣潤一's brass-section pop is a commercial peak while ラ・ムー represents the frequency-hollowing endpoint of the genre's evolution.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "管乐声部进来，停顿感是整首歌的中心。到了City Pop后期，这套语法会被做得更稀疏，频率留白推到最大。",
+          "voice_en": "The pause is this song's structural centre. Into later City Pop, this grammar gets sparser — the frequency emptiness pushed to its maximum."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在稲垣潤一那里听到的是这套语法的商业化成熟形态。到了一九八八年，City Pop尾声，同一套语法被精简到只剩轮廓，和弦悬在空气里。",
+          "voice_en": "The commercial-form grammar from 稲垣潤一 just now. In 1988, City Pop's final chapter, that same grammar is stripped to just an outline, chords suspended in air."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.495,
+        "dimensions": {
+          "story_drive": 0.50,
+          "concrete_carrier": 0.45,
+          "evidential_strength": 0.45,
+          "focus_relevance": 0.60
+        },
+        "rationale": "Coverage pair showing temporal evolution of the translation aesthetic from commercial peak (稲垣 1983) to frequency-hollowed endpoint (ラ・ムー 1988). Evidential strength is modest — null edge, no direct documented link."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_011_to_012_same_era_dialogue",
+      "from_position": 11,
+      "to_position": 12,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "ラ・ムー (1988) and 杏里 (1983) are lateral City Pop nodes placed in narrative sequence to illustrate the frequency-hollowing end of the translation aesthetic before the naturalisation complete endpoint. The connection is thematic: both represent the 'translation so complete it needs no marking' station, approached from different angles.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "频率留白到了极端。这代人里有一首歌，翻译已经完成到了不需要任何标注的程度，听的时候不会想起这件外套的来历。",
+          "voice_en": "Frequency emptiness at its extreme. This generation also has a song where the translation is so complete it needs no marking — you forget where the coat came from."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在ラ・ムー那里听到的是留白被推到最大的样子。到了杏里这里，翻译完成了：节奏骨架是West Coast，但作为City Pop单曲已经不需要标注了。",
+          "voice_en": "The maximum emptiness from ラ・ムー just now. In 杏里, the translation is complete: the rhythm is West Coast, but as City Pop it no longer needs labelling."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.475,
+        "dimensions": {
+          "story_drive": 0.50,
+          "concrete_carrier": 0.45,
+          "evidential_strength": 0.40,
+          "focus_relevance": 0.55
+        },
+        "rationale": "Coverage pair. Focus relevance is the main contributor: the pair contrasts two endpoints of the translation-complete state (hollowed-out vs. naturalised). Both evidential strength and concrete carrier are modest — null edge, thematic kinship only."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_012_to_014_same_era_dialogue",
+      "from_position": 12,
+      "to_position": 14,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "杏里 (1983) and 中原めいこ Fantasy (1983) are both 1983 City Pop female vocalists working in the CBS Sony production ecosystem. The pair leads the listener from the 'translation naturalised' endpoint into the same-artist pre-anchor setup, making the transition from the lateral generation to the anchor sequence.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "翻译自然化到这里。接下来，同一代人里有一个声音，你能更清楚地听见这件外套是怎么被穿上的。",
+          "voice_en": "Translation naturalised here. Ahead, a voice in the same generation where you can hear more clearly how the coat was put on."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在杏里那里听到的是外套穿到不觉得是外套的状态。到了这里，同一把嗓子，语法的层次更可辨认，外套的线条更清晰。",
+          "voice_en": "What you just heard in 杏里 is the coat worn so naturally it disappears. Here, the same voice — the grammar's layers more distinct, the coat's seams visible."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.515,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.50,
+          "evidential_strength": 0.40,
+          "focus_relevance": 0.60
+        },
+        "rationale": "Story drive is the main contributor: this pair bridges the lateral generation into the pre-anchor sequence, with the 'translation naturalised vs. seams visible' contrast as the narrative transition."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_009_to_013_same_era_dialogue",
+      "from_position": 9,
+      "to_position": 13,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_lateral_generation",
+      "system_sensory_note": "角松敏生 and 濱田金吾 are both named in the lateral_generation edge evidence as core City Pop generation members. The pair dramatises two translation endpoints: harmonically maximalist (角松) vs. nocturnal-minimalist (濱田), both reached via the same West Coast AOR ancestry.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "和弦推到了最复杂的形态。同一代人里，另一条路走的是反向：把语法做慢，做进深夜，副歌前的停顿变成一口深呼吸。",
+          "voice_en": "The chords pushed to their most complex form. Another path in the same generation takes the opposite direction — slow, nocturnal, the pre-chorus pause a deep breath."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在角松敏生那里听到的是和声语法被推到极限的样子。到了濱田金吾这里，同一批语法被做慢了，放进了深夜，一切都重了一些。",
+          "voice_en": "The harmonic grammar pushed to its limit in 角松敏生 just now. In 濱田金吾 the same grammar slows, moves into the night, everything heavier."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.57,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.60
+        },
+        "rationale": "The pair's narrative value is structural contrast: harmonically complex vs. nocturnal-minimalist translation endpoints, both descended from the same AOR ancestry. Evidential strength is moderate via the lateral_generation edge."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_013_to_015_same_era_dialogue",
+      "from_position": 13,
+      "to_position": 15,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "濱田金吾 (1982) and 中原めいこ Cloudyな午後 (1982) are both 1982 City Pop records from the CBS Sony production ecosystem. This pair leads directly into the anchor and frames the 'day after the night' translation contrast: 濱田's late-night Boz Scaggs translation → 中原めいこ's overcast-afternoon distillation.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这首深夜版本把停顿做到了极致。这集的落点就在前面：一首歌，所有外来语法都已消失，只剩一个阴天午后。",
+          "voice_en": "This late-night version takes the pause to its extreme. Just ahead — a song where all the grammar disappears, leaving one overcast afternoon."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在濱田金吾那里听到的是夜间翻译的极致版本。到了这里，时间变了，白天，阴天，外套已经穿成皮肤了。",
+          "voice_en": "The nocturnal translation at its extreme in 濱田金吾 just now. Here, the time shifts — daytime, overcast. The coat has become skin."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.605,
+        "dimensions": {
+          "story_drive": 0.70,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Story drive is the main contributor: this pair leads directly to the anchor and frames the final translation contrast (night → afternoon, heavy → distilled). Concrete carrier is moderate — same year, same label, but null edge."
+      },
+      "user_overrides": []
+    }
+  ]
+}
