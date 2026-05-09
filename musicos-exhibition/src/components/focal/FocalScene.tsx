@@ -301,6 +301,7 @@ export function FocalScene() {
             tracks={arcTracks}
             discSize={tuning.focalDiscSize}
             onArcClick={goToTrack}
+            dimmed={subtitleExpanded}
           />
         </div>
       </div>

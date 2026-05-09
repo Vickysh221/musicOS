@@ -5,6 +5,12 @@
   pointer-events: none;
   overflow: visible;
   z-index: 1100;
+  transition: opacity 0.2s ease;
+}
+/* Faded when the user is reading the expanded transcript — the connection
+ * orbit shouldn't compete with the paragraph for attention. */
+.mention-arcs--dimmed {
+  opacity: 0.25;
 }
 .mention-arcs__arc {
   pointer-events: auto;

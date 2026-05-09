@@ -9,6 +9,8 @@ interface Props {
   /** Current focal disc diameter in px (arcs orbit just outside this). */
   discSize: number;
   onArcClick: (position: number) => void;
+  /** Fade the orbit out when the transcript is expanded for reading. */
+  dimmed?: boolean;
 }
 
 const STROKE = 26;
@@ -50,7 +52,7 @@ function arcCenters(n: number): number[] {
   return Array.from({ length: n }, (_, i) => -90 + i * step);
 }
 
-export function MentionArcs({ tracks, discSize, onArcClick }: Props) {
+export function MentionArcs({ tracks, discSize, onArcClick, dimmed = false }: Props) {
   const r = discSize / 2 + RADIUS_GAP;
   const padding = STROKE / 2 + 18;
   const half = r + padding;
@@ -66,7 +68,7 @@ export function MentionArcs({ tracks, discSize, onArcClick }: Props) {
 
   return (
     <svg
-      className="mention-arcs"
+      className={`mention-arcs${dimmed ? ' mention-arcs--dimmed' : ''}`}
       width={size}
       height={size}
       viewBox={`0 0 ${size} ${size}`}
