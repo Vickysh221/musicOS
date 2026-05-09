@@ -1,49 +1,109 @@
+/* Three independent liquid-glass elements per Figma 1414:6298 (mobile @402w):
+ *  - progress capsule: ~287/360 wide, 28px tall
+ *  - play button: 28×28 circle, ~9px gap from capsule
+ *  - list button: 28×28 circle, ~9px gap from play
+ * Total row width = capsule + 2*(28+gap) ≈ 360, sitting 119px from bottom.
+ * Heights/sizes scaled up modestly for desktop ergonomics. */
 .player-bar {
   position: fixed;
-  left: 12px;
-  right: 12px;
-  bottom: 16px;
+  left: 50%;
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 24px);
+  transform: translateX(-50%);
+  width: min(460px, calc(100% - 48px));
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 14px;
-  border-radius: 22px;
-  color: rgba(255, 255, 255, 0.95);
+  gap: 9px;
+  color: #fff;
   z-index: 30;
-}
-.player-bar__btn {
-  flex: 0 0 auto;
-  width: 36px;
-  height: 36px;
-  border: 0;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.08);
-  color: inherit;
-  cursor: pointer;
-  font-size: 14px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-.player-bar__btn--play {
-  background: rgba(255, 255, 255, 0.18);
-}
-.player-bar__btn--list-open {
-  background: rgba(255, 255, 255, 0.28);
 }
 .player-bar__progress {
   flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 32px;
+  padding: 0 14px;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18) 0%,
+      rgba(255, 255, 255, 0.06) 55%,
+      rgba(0, 0, 0, 0.12) 100%
+    );
+}
+.player-bar__time {
+  flex: 0 0 auto;
+  font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 1;
+  color: rgba(255, 255, 255, 0.85);
+  font-variant-numeric: tabular-nums;
+  min-width: 28px;
+}
+.player-bar__time--remaining {
+  text-align: right;
+}
+.player-bar__track {
+  flex: 1 1 auto;
+  position: relative;
   height: 4px;
   border-radius: 2px;
-  background: rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.22);
   cursor: pointer;
-  position: relative;
+  box-shadow: inset 0 0.5px 0.5px rgba(255, 255, 255, 0.45);
 }
-.player-bar__progress-fill {
+.player-bar__fill {
   position: absolute;
   left: 0;
   top: 0;
   bottom: 0;
   border-radius: 2px;
   background: rgba(255, 255, 255, 0.85);
+}
+.player-bar__btn {
+  position: relative;
+  flex: 0 0 auto;
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.92);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+  transition: color 0.15s ease, transform 0.15s ease, background 0.2s ease;
+  background:
+    radial-gradient(
+      circle at 50% 28%,
+      rgba(255, 255, 255, 0.30) 0%,
+      rgba(255, 255, 255, 0.08) 45%,
+      rgba(0, 0, 0, 0.28) 100%
+    );
+}
+.player-bar__btn:hover {
+  color: #fff;
+  transform: translateY(-0.5px);
+  background:
+    radial-gradient(
+      circle at 50% 28%,
+      rgba(255, 255, 255, 0.38) 0%,
+      rgba(255, 255, 255, 0.12) 45%,
+      rgba(0, 0, 0, 0.30) 100%
+    );
+}
+.player-bar__btn--on {
+  color: #fff;
+}
+.player-bar__btn--on::after {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+  pointer-events: none;
 }

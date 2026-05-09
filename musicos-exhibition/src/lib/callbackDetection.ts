@@ -4,14 +4,17 @@ const PROXIMITY_CHARS = 8;
 export interface DetectOptions {
   /** Allow plain substring match when no marker is anywhere in the sentence. */
   allowPlain?: boolean;
+  /** Include forward references (positions >= currentPosition). Default: backward only. */
+  anyDirection?: boolean;
 }
 
 /**
  * Returns the set of exhibit positions referenced as callbacks in `text`.
  *
  * Rules:
- *  - Only positions strictly less than `currentPosition`.
  *  - Position 0 (opening) excluded.
+ *  - By default only positions strictly less than `currentPosition`; pass
+ *    `anyDirection: true` to also catch forward intros.
  *  - Alias must appear within PROXIMITY_CHARS chars of a callback marker.
  *  - If no marker is in the sentence and options.allowPlain is true, fall back
  *    to plain substring (graceful degradation).
@@ -37,7 +40,8 @@ export function detectCallbacks(
   for (const [posStr, aliasList] of Object.entries(aliases)) {
     const pos = Number(posStr);
     if (pos === 0) continue;
-    if (pos >= currentPosition) continue;
+    if (pos === currentPosition) continue;
+    if (!options.anyDirection && pos >= currentPosition) continue;
     for (const a of aliasList) {
       const idx = text.indexOf(a);
       if (idx === -1) continue;

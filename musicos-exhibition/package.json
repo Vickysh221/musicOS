@@ -7,7 +7,7 @@
     "test": "tests"
   },
   "scripts": {
-    "dev": "npm run sync-data && vite",
+    "dev": "npm run sync-data && vite --host",
     "build": "npm run sync-data && vite build",
     "preview": "vite preview --port 4173",
     "test": "vitest run",

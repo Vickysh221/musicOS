@@ -1,0 +1,21 @@
+.mention-arcs {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  overflow: visible;
+  z-index: 1100;
+}
+.mention-arcs__arc {
+  pointer-events: auto;
+  cursor: pointer;
+  transition: filter 0.18s ease;
+}
+.mention-arcs__arc:hover {
+  filter: brightness(1.25);
+}
+.mention-arcs__arc text {
+  pointer-events: none;
+  font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  user-select: none;
+}

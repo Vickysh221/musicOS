@@ -1,9 +1,9 @@
 .focal-scene {
-  position: relative;
-  width: 100%;
+  position: fixed;
+  inset: 0;
   height: 100dvh;
   overflow: hidden;
-  background: #0d0d0d;
+  background: transparent;
   color: #fff;
 }
 .focal-scene__header {
@@ -11,19 +11,27 @@
   left: 0;
   right: 0;
   top: 0;
-  padding: 16px 16px 8px;
+  /* padding-top clears the floating sidebar toggle pill (40px tall at top:
+   * env+12px), leaving ~24px breathing room before the title. */
+  padding: calc(env(safe-area-inset-top, 0px) + 76px) 30px 0;
   z-index: 20;
+  max-width: 460px;
+  margin: 0 auto;
 }
-.focal-scene__ep {
-  font-size: 12px;
-  letter-spacing: 0.18em;
-  opacity: 0.6;
-  text-transform: uppercase;
-  margin-bottom: 8px;
+.focal-scene__title {
+  font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  margin: 6px 0 -4px;
+  opacity: 0.8;
+  color: #fff;
+  letter-spacing: 0;
 }
 .focal-scene__stage {
   position: absolute;
   inset: 0;
+  z-index: 1;
 }
 .focal-scene__stage-inner {
   position: absolute;

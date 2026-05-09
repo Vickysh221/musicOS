@@ -33,9 +33,16 @@ let analyserBoundEl: HTMLAudioElement | null = null;
  */
 export function getOrCreateAnalyser(audio: HTMLAudioElement): AnalyserNode | null {
   if (analyserBoundEl === audio && analyserNode) return analyserNode;
+  // Different element (e.g. <audio key={src}> remounted on track change) —
+  // tear the old graph down and rebuild against the new one.
   if (analyserBoundEl && analyserBoundEl !== audio) {
-    // Different element — we cannot rebind a MediaElementSource.
-    return null;
+    try { analyserSource?.disconnect(); } catch { /* ignore */ }
+    try { analyserNode?.disconnect(); } catch { /* ignore */ }
+    try { void analyserCtx?.close(); } catch { /* ignore */ }
+    analyserCtx = null;
+    analyserSource = null;
+    analyserNode = null;
+    analyserBoundEl = null;
   }
   try {
     const Ctor =
@@ -46,6 +53,7 @@ export function getOrCreateAnalyser(audio: HTMLAudioElement): AnalyserNode | nul
     if (!analyserNode) {
       analyserNode = analyserCtx.createAnalyser();
       analyserNode.fftSize = 128;
+      analyserNode.smoothingTimeConstant = 0.78;
       analyserSource.connect(analyserNode);
       analyserNode.connect(analyserCtx.destination);
     }

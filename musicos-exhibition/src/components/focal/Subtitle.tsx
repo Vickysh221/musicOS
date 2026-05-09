@@ -1,71 +1,61 @@
 import { motion, AnimatePresence } from 'framer-motion';
+import { mentionColor } from '../../lib/mention-colors.js';
 import './subtitle.css';
+
+export interface SubtitleCallback {
+  /** Span within `current` that gets pilled. */
+  start: number;
+  end: number;
+  /** Track this callback points to (drives pill color and click action). */
+  targetPosition: number;
+}
 
 interface SubtitleProps {
   current: string | null;
   next: string | null;
-  /** Position → aliases. Pills only render for positions in `mentionedSet`. */
-  aliases: Record<number, string[]>;
-  mentionedSet: ReadonlySet<number>;
+  callbacks: SubtitleCallback[];
   onPillClick?: (position: number) => void;
 }
 
-interface PillSegment {
-  kind: 'pill';
-  position: number;
-  text: string;
-}
-interface PlainSegment {
+interface PlainSeg {
   kind: 'plain';
   text: string;
 }
-type Segment = PillSegment | PlainSegment;
+interface PillSeg {
+  kind: 'pill';
+  text: string;
+  position: number;
+}
+type Seg = PlainSeg | PillSeg;
 
-/**
- * Walks `text` left-to-right, greedily wrapping the longest matching alias
- * for any pill-eligible position into a <span class="pill">.
- */
-function segmentText(
-  text: string,
-  aliases: Record<number, string[]>,
-  eligible: ReadonlySet<number>,
-): Segment[] {
+function buildSegments(text: string, callbacks: SubtitleCallback[]): Seg[] {
   if (!text) return [];
-  const candidates: { pos: number; alias: string }[] = [];
-  for (const pos of eligible) {
-    const list = aliases[pos];
-    if (!list) continue;
-    for (const a of list) candidates.push({ pos, alias: a });
+  // Sort + drop overlaps so pills never collide. Earlier wins.
+  const valid = callbacks
+    .filter((c) => c.start >= 0 && c.end > c.start && c.end <= text.length)
+    .slice()
+    .sort((a, b) => a.start - b.start);
+  const ordered: SubtitleCallback[] = [];
+  let cursor = 0;
+  for (const c of valid) {
+    if (c.start < cursor) continue;
+    ordered.push(c);
+    cursor = c.end;
   }
-  // Prefer longer aliases first so "Black Sabbath" wins over "Sabbath".
-  candidates.sort((a, b) => b.alias.length - a.alias.length);
-
-  const segments: Segment[] = [];
+  const segs: Seg[] = [];
   let i = 0;
-  while (i < text.length) {
-    let matched: { pos: number; alias: string } | null = null;
-    for (const c of candidates) {
-      if (text.startsWith(c.alias, i)) {
-        matched = c;
-        break;
-      }
-    }
-    if (matched) {
-      segments.push({ kind: 'pill', position: matched.pos, text: matched.alias });
-      i += matched.alias.length;
-    } else {
-      const last = segments[segments.length - 1];
-      const ch = text[i] ?? '';
-      if (last && last.kind === 'plain') last.text += ch;
-      else segments.push({ kind: 'plain', text: ch });
-      i++;
-    }
+  for (const c of ordered) {
+    if (c.start > i) segs.push({ kind: 'plain', text: text.slice(i, c.start) });
+    segs.push({ kind: 'pill', text: text.slice(c.start, c.end), position: c.targetPosition });
+    i = c.end;
   }
-  return segments;
+  if (i < text.length) segs.push({ kind: 'plain', text: text.slice(i) });
+  return segs;
 }
 
-export function Subtitle({ current, next, aliases, mentionedSet, onPillClick }: SubtitleProps) {
-  const currentSegs = segmentText(current ?? '', aliases, mentionedSet);
+export function Subtitle({ current, next: _next, callbacks, onPillClick }: SubtitleProps) {
+  const text = current ?? '';
+  const segs = buildSegments(text, callbacks);
 
   return (
     <div className="subtitle">
@@ -78,26 +68,30 @@ export function Subtitle({ current, next, aliases, mentionedSet, onPillClick }: 
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.3, ease: 'easeOut' }}
           >
-            {currentSegs.map((s, i) =>
-              s.kind === 'pill' ? (
+            {segs.map((s, idx) =>
+              s.kind === 'plain' ? (
+                <span key={idx}>{s.text}</span>
+              ) : (
                 <button
-                  key={i}
+                  key={idx}
                   type="button"
                   className="subtitle__pill"
                   onClick={() => onPillClick?.(s.position)}
                   data-position={s.position}
+                  style={{
+                    ['--mention-bg' as string]: mentionColor(s.position, 0.42),
+                    ['--mention-bg-soft' as string]: mentionColor(s.position, 0.18),
+                    ['--mention-bg-hover' as string]: mentionColor(s.position, 0.6),
+                    ['--mention-bg-soft-hover' as string]: mentionColor(s.position, 0.32),
+                    ['--mention-ring' as string]: mentionColor(s.position, 0.5),
+                  }}
                 >
                   {s.text}
                 </button>
-              ) : (
-                <span key={i}>{s.text}</span>
               ),
             )}
           </motion.div>
         </AnimatePresence>
-      </div>
-      <div className="subtitle__next" aria-hidden="true">
-        {next}
       </div>
     </div>
   );

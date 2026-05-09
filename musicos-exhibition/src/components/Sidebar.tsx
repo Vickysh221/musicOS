@@ -9,6 +9,8 @@ interface SidebarProps {
 
 export function Sidebar({ currentEpisodeId }: SidebarProps) {
   const [open, setOpen] = useState(false);
+  const currentEp = EPISODES.find((e) => e.id === currentEpisodeId);
+  const epLabel = currentEp ? `EP${String(currentEp.number).padStart(3, '0')}` : '';
 
   return (
     <aside className={`sidebar${open ? ' sidebar--open' : ''}`}>
@@ -18,7 +20,14 @@ export function Sidebar({ currentEpisodeId }: SidebarProps) {
         onClick={() => setOpen((v) => !v)}
         aria-label={open ? 'Collapse episode list' : 'Expand episode list'}
       >
-        <span className="sidebar__toggle-icon">{open ? '‹' : '›'}</span>
+        <span className="sidebar__toggle-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+            <line x1="4" y1="7" x2="20" y2="7" />
+            <line x1="4" y1="12" x2="20" y2="12" />
+            <line x1="4" y1="17" x2="20" y2="17" />
+          </svg>
+        </span>
+        {epLabel && <span className="sidebar__toggle-label">{epLabel}</span>}
       </button>
 
       <nav className="sidebar__nav" aria-label="Episodes">

@@ -15,9 +15,95 @@
 .focal-disc__art {
   width: 100%;
   height: 100%;
-  border-radius: 18px;
+  border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 18px 60px rgba(0, 0, 0, 0.5);
+}
+/* Focal vinyl ring — Figma 1746:7766: outer frosted-glass disc with concentric
+ * grooves; inner cover at ~50.6% with a thin white-33% border.
+ *
+ * The stationary highlight + glass tint live on .focal-disc--focal::before so
+ * they don't rotate with the spinner. The grooves + the inner cover live in
+ * .focal-disc__spinner, which is the element that spins via @keyframes. The
+ * label sits outside the spinner so text stays upright. */
+.focal-disc--focal::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle at 50% 28%,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.06) 42%,
+    rgba(0, 0, 0, 0.45) 100%
+  );
+  backdrop-filter: blur(28px) saturate(160%);
+  -webkit-backdrop-filter: blur(28px) saturate(160%);
+  border: 1px solid rgba(255, 255, 255, 0.33);
+  box-shadow:
+    inset 0 2px 0 rgba(255, 255, 255, 0.18),
+    0 24px 80px rgba(0, 0, 0, 0.55);
+}
+.focal-disc__spinner {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  animation: focal-disc-spin 30s linear infinite;
+  animation-play-state: paused;
+}
+.focal-disc--playing .focal-disc__spinner {
+  animation-play-state: running;
+}
+.focal-disc__spinner::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  background: repeating-radial-gradient(
+    circle at 50% 50%,
+    rgba(255, 255, 255, 0.05) 0px,
+    rgba(255, 255, 255, 0.05) 1px,
+    rgba(0, 0, 0, 0.22) 1px,
+    rgba(0, 0, 0, 0.22) 3px
+  );
+  mix-blend-mode: overlay;
+  opacity: 0.6;
+}
+/* Iridescent shimmer (Figma image_15) — rainbow lighting overlay layered with
+ * mix-blend-hard-light. Sits stationary above the spinner so the rainbow halo
+ * doesn't rotate with the vinyl (matches how real vinyl reflections behave —
+ * the light source is fixed, the disc moves under it). */
+.focal-disc__shimmer {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  background-image: url('/focal-textures/vinyl-shimmer.png');
+  background-size: 134% 134%;
+  background-position: center;
+  background-repeat: no-repeat;
+  mix-blend-mode: hard-light;
+  opacity: 0.5;
+}
+.focal-disc--focal .focal-disc__art {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50.6%;
+  height: 50.6%;
+  transform: translate(-50%, -50%);
+  border: 2px solid rgba(255, 255, 255, 0.33);
+  box-sizing: border-box;
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.55),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+@keyframes focal-disc-spin {
+  to {
+    transform: rotate(360deg);
+  }
 }
 .focal-disc__art img,
 .focal-disc__art-placeholder {
@@ -32,25 +118,44 @@
 .focal-disc__label {
   position: absolute;
   left: 50%;
-  bottom: -56px;
+  bottom: 12%;
   transform: translateX(-50%);
-  padding: 8px 14px;
-  border-radius: 14px;
   display: flex;
-  gap: 8px;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  box-shadow: none;
+  filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.7));
+  font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  text-align: left;
+  pointer-events: none;
   white-space: nowrap;
-  color: rgba(255, 255, 255, 0.95);
+  letter-spacing: -0.24px;
+}
+.focal-disc__song-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
 }
 .focal-disc__song {
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: 400;
+  font-size: 18.6px;
+  line-height: 19.76px;
+  color: #fff;
 }
 .focal-disc__artist {
-  font-size: 12px;
-  opacity: 0.75;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19.76px;
+  color: rgba(235, 235, 245, 0.6);
+  margin-top: 5px;
 }
 .focal-disc__heart {
-  margin-left: 4px;
-  color: #ff6b81;
+  font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  letter-spacing: -0.33px;
 }
