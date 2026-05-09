@@ -16,7 +16,7 @@ import {
 } from '../../lib/transcript-paragraphs.js';
 import { useFusionSubtitle } from '../../hooks/useFusionSubtitle.js';
 import { useCurrentAndNext } from '../../hooks/useCurrentAndNext.js';
-import { EP3_ALIASES } from '../../data/ep3-aliases.js';
+import { ALIASES_BY_EPISODE } from '../../data/episode-aliases.js';
 import { EPISODES } from '../../lib/episodes.js';
 import { Subtitle, type SubtitleCallback } from './Subtitle.js';
 import { PlayerBar } from './PlayerBar.js';
@@ -164,7 +164,8 @@ export function FocalScene() {
   // Candidate set: every track that connects INTO the focal (strong + archived).
   const candidates: CandidateAlias[] = useMemo(() => {
     const positions = findCallbackTargets(exhibits, currentPosition);
-    return positions.map((p) => ({ position: p, aliases: aliasesForPosition(p, tracks, EP3_ALIASES) }));
+    const curated = ALIASES_BY_EPISODE[episodeId ?? ''] ?? {};
+    return positions.map((p) => ({ position: p, aliases: aliasesForPosition(p, tracks, curated) }));
   }, [exhibits, currentPosition, tracks]);
 
   const phraseHits = useMemo(

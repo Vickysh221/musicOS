@@ -63,29 +63,28 @@ ROOT = Path(__file__).resolve().parent.parent
 #     20: "PASSTHROUGH",
 # }
 
-# Episode 2 — Estranged · aria↔solo dialectic (2026-05-06)
-# All narrations >350ch → C; muted tracks → C_SHORT; opening/closing → PASSTHROUGH
+# Episode 5 — Cloudyな午後 · translation_aesthetic (2026-05-10)
+# EN narrations all 600-1684ch → C for all tracks; opening/closing → PASSTHROUGH
 STYLE_BY_POSITION: dict[int, str] = {
     0:  "PASSTHROUGH",   # opening
-    1:  "C",   # Child in Time — 576ch
-    2:  "C",   # Layla — 559ch
-    3:  "C",   # Stairway to Heaven — 491ch
-    4:  "C_SHORT",       # The Who — muted bridge 131ch
-    5:  "C",   # Free Bird — 565ch
-    6:  "C",   # Bohemian Rhapsody — 606ch
-    7:  "C",   # Comfortably Numb — 546ch
-    8:  "C",   # Fade to Black — 516ch
-    9:  "C_SHORT",       # Metallica One — muted bridge 144ch
-    10: "C",   # Estranged — ANCHOR 1092ch
-    11: "C",   # November Rain — 639ch
-    12: "C",   # Nothing Else Matters — 532ch
-    13: "C",   # Don't Break My Heart — 426ch
-    14: "C",   # Champagne Supernova — 611ch
-    15: "C",   # Paranoid Android — 575ch
-    16: "C",   # 丸ノ内サディスティック — 482ch
-    17: "C",   # Welcome to the Black Parade — 621ch
-    18: "C",   # Knights of Cydonia — 623ch
-    19: "PASSTHROUGH",   # closing
+    1:  "C",   # James Taylor — 646ch EN
+    2:  "C",   # Carole King — 793ch EN (pillar)
+    3:  "C",   # Boz Scaggs — 695ch EN (pillar)
+    4:  "C",   # Steely Dan — 794ch EN (pillar)
+    5:  "C",   # Toto — 627ch EN
+    6:  "C",   # 大瀧詠一 — 711ch EN
+    7:  "C",   # 山下達郎 — 815ch EN (pillar)
+    8:  "C",   # 竹内まりや — 822ch EN (pillar)
+    9:  "C",   # 角松敏生 — 814ch EN
+    10: "C",   # 稲垣潤一 — 730ch EN
+    11: "C",   # ラ・ムー — 689ch EN
+    12: "C",   # 杏里 — 739ch EN
+    13: "C",   # 濱田金吾 — 749ch EN
+    14: "C",   # 中原めいこ Fantasy — 770ch EN
+    15: "C",   # 中原めいこ Cloudyな午後 — ANCHOR 1684ch EN
+    16: "C",   # Ginger Root — 660ch EN
+    17: "C",   # RYUSENKEI — 600ch EN
+    18: "PASSTHROUGH",   # closing
 }
 
 

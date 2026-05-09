@@ -1,0 +1,1230 @@
+[
+  {
+    "kind": "narration",
+    "position": 0,
+    "exhibit_type": "opening",
+    "transcript_zh": "钢琴开声，和弦悬着不解决，人声轻轻进来。\n\n今天这一集，十七首，从一九七零年洛杉矶到二零二一年深圳，沿着一套翻译美学的完整轨迹走一遍。",
+    "transcript_en": "Piano opens. The chord hangs, unresolved. A voice enters softly.\n\nSeventeen tracks. 1970 Los Angeles to 2021 Shenzhen. One coat, passed hand to hand.",
+    "transcript_zh_status": "missing",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "fusion_audio_url": "/audio_fusion/ep5/00_opening.mp3"
+  },
+  {
+    "kind": "track",
+    "position": 1,
+    "node_id": "james-taylor_sweet-baby-james_fire-and-rain",
+    "year": 1970,
+    "artist": "James Taylor",
+    "song": "Fire and Rain",
+    "album": "Sweet Baby James",
+    "exhibit_type": "ancestor",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": null,
+    "audio_url": "/audio/ep5/01_james-taylor_fire-and-rain.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/01_james-taylor_fire-and-rain.mp3",
+    "album_cover_url": "/covers/01_james-taylor_fire-and-rain.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "吉他单音线条走得慢，短语结尾的停顿不填满，那口气就停在那里，像一个句号变成了省略号。\n\n一九七零年洛杉矶，James Taylor把情绪压进呼吸间隙：每一句话说完，他不急着往下走，停顿留在那里，空着，不用声音填满它，让那个空气自己说话。这是最早的示范：可以不填的地方不填，停顿本身是语法，不是等待，是一种表达。\n\n同年，这个规则在Carole King那里被转译了一次，变成了副歌前悬浮的和弦，停顿换了和声语言，这首歌建立的不是情绪，是规则。",
+    "transcript_en": "The guitar single-line moves slowly. Phrase endings don't fill in. That breath just sits there, a period turned into an ellipsis.\n\n1970 Los Angeles. James Taylor pressed the feeling into the gaps between words.\n\nHe finishes a phrase and doesn't push forward. The pause stays open. Not waiting, not filling. The silence itself is speaking.\n\nThis is the first demonstration: where you can leave space, leave it. The pause is grammar, not hesitation.\n\nThat same year Carole King translated this, turning the pause into a suspended chord before the chorus.\n\nSame gesture, different language. This track didn't establish a mood. It established a rule.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "AOR",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "blind_spot",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_001_to_002_same_era_dialogue",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_001_to_006_direct_influence",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [],
+    "connections_out": [
+      {
+        "id": "conn_001_to_002_same_era_dialogue",
+        "other_position": 2,
+        "other_label": "Carole King — It's Too Late (1971)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "historical",
+        "narration_zh": "你刚才听到的这口停顿，同年在洛杉矶另一间棚里，一位女词人把它做成了副歌前的悬浮和弦。同一套语法，换了一张嘴。",
+        "narration_en": "The breath-pause you just heard — in another LA studio that same year, a songwriter made it a suspended chord before the chorus. Same grammar, different mouth."
+      },
+      {
+        "id": "conn_001_to_006_direct_influence",
+        "other_position": 6,
+        "other_label": "大瀧詠一 — カナリア諸島にて (1981)",
+        "kind": "direct_influence",
+        "evidence_basis": "musicological",
+        "narration_zh": "这种克制的人声与留白，越过太平洋，被一个东京制作人研究到可以从内部复制，而他从未去过洛杉矶。",
+        "narration_en": "This restrained vocal sparseness crossed the Pacific, studied to replication by a Tokyo producer who never went to Los Angeles."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 2,
+    "node_id": "carole-king_tapestry_its-too-late",
+    "year": 1971,
+    "artist": "Carole King",
+    "song": "It's Too Late",
+    "album": "Tapestry",
+    "exhibit_type": "ancestor",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": null,
+    "audio_url": "/audio/ep5/02_carole-king_its-too-late.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/02_carole-king_its-too-late.mp3",
+    "album_cover_url": "/covers/02_carole-king_its-too-late.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "钢琴开声Cm7，不解决。人声进来，那个和弦还悬着，没有去找解决的地方，悬在那里等着，等那口气完全散开之后再说。\n\n一九七一年洛杉矶，Carole King把副歌前那口气做成了和声语法：Cm7挂在那里，人声在和弦悬浮的间隙重新进入，换气的位置变成了结构的位置，空白变成了意义的容器，等待变成了歌曲的轴心。你刚才在Fire and Rain里听到的那口停顿，到这里变成了悬浮的Cm7，同一个手势，换了和声语言，换了乐器的形式，但那个不急着前进的意志还在，等待的姿势还在，停在那里的理由还在。\n\n这个悬浮语法后来没有停在洛杉矶。它不需要人携带，它住在语法里，语法自己会走过去。King没有飞去东京，但这口和弦会自己穿过去，不需要护照，不需要行李，语法比人走得远，比机票走得久，比任何一次物理移动都更能穿透边界。",
+    "transcript_en": "Piano opens on a Cm7 that doesn't resolve. The voice enters, and the chord is still hanging. Still waiting. Waiting for that breath to fully disperse before moving on.\n\n1971 Los Angeles. Carole King built the pre-chorus breath into harmonic grammar.\n\nThe Cm7 stays suspended. The voice re-enters in the gap the chord has held open. The place where you breathe becomes a structural position. Silence becomes a container for meaning.\n\nWhat you heard in Fire and Rain as a pause between phrases, here becomes a suspended Cm7. Same gesture, different instrument. The refusal to rush forward is still there.\n\nThis grammar didn't stay in Los Angeles. It doesn't need a person to carry it. Grammar travels on its own.\n\nKing never flew to Tokyo. But this chord went there anyway. No passport required.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "AOR",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "blind_spot",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "pillar",
+    "strong_connection_id": "conn_001_to_002_same_era_dialogue",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_002_to_003_direct_influence",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_002_to_008_translation",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_001_to_002_same_era_dialogue",
+        "other_position": 1,
+        "other_label": "James Taylor — Fire and Rain (1970)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "historical",
+        "narration_zh": "你刚才在James Taylor那里听到的那口呼吸，到了这里被做成了Cm7的悬挂。同一个停顿手势，换了和声语言。",
+        "narration_en": "The breath-pause from James Taylor just now — here it becomes a suspended Cm7. Same gesture, different harmonic language."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_002_to_008_translation",
+        "other_position": 8,
+        "other_label": "竹内まりや — シングル・アゲイン (1987)",
+        "kind": "translation",
+        "evidence_basis": "musicological",
+        "narration_zh": "这口副歌前的悬浮和弦，在洛杉矶被录进了这张唱片。十六年后，同一口气会在东京被一位女声完整内化，说成日语。",
+        "narration_en": "The harmonic suspension you just heard will surface sixteen years later in Tokyo — the same breath before the chorus, now Japanese."
+      },
+      {
+        "id": "conn_002_to_003_direct_influence",
+        "other_position": 3,
+        "other_label": "Boz Scaggs — Lowdown (1976)",
+        "kind": "direct_influence",
+        "evidence_basis": "musicological",
+        "narration_zh": "这口悬浮和弦确立了洛杉矶这套流行制作语法。五年后，同一间城市里，一位蓝调歌手把它推进了蓝眼灵魂乐，节奏更重，外套换了颜色。",
+        "narration_en": "This harmonic suspension established the LA pop production grammar. Five years later, a blues singer in the same city pushed it into blue-eyed soul — same coat, heavier beat."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 3,
+    "node_id": "boz-scaggs_silk-degrees_lowdown",
+    "year": 1976,
+    "artist": "Boz Scaggs",
+    "song": "Lowdown",
+    "album": "Silk Degrees",
+    "exhibit_type": "ancestor",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": null,
+    "audio_url": "/audio/ep5/03_boz-scaggs_lowdown.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/03_boz-scaggs_lowdown.mp3",
+    "album_cover_url": "/covers/03_boz-scaggs_lowdown.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "贝斯线明确，节奏组的groove型很稳，每一拍都落在准确的位置，每个音符都服务于整体，没有一个音是为了表现自己的，服务编曲是这批人唯一的语法规则。\n\n一九七六年洛杉矶，Silk Degrees的键盘是David Paich，鼓手是Jeff Porcaro。两个人演奏的是同一套session player语法：精准，服务编曲，不抢戏，把自己的个性藏在整体里面，让歌曲比人更重要，让编曲比演奏者的名字更响亮。这张专辑录完，他们次年离开，组建了Toto，带着同一套手感和同一套演奏语法走进了新的乐团名字里面，语法换了容器，手的惯性还是那双手的惯性，棚里的默契还是那个棚里建立起来的默契。\n\nToto是这套语法的新容器，容器变了，手的惯性没变。这里是针线开始穿的地方，一批乐手的流动，把一套语法从洛杉矶带向了下一站。",
+    "transcript_en": "The bass line is clear. The rhythm section's groove lands on every beat with precision. Every note serves the arrangement, not the player.\n\n1976 Los Angeles. Silk Degrees. Keyboards: David Paich. Drums: Jeff Porcaro.\n\nBoth are playing the same session-player grammar: accurate, self-effacing, hiding individual personality inside the whole. The song matters more than the names on the sleeve.\n\nWhen the album finished, they left and formed Toto the following year. Same hands, same feel, same studio instincts. A new container for the same grammar.\n\nToto is where the needle starts threading. A group of musicians in motion, carrying a set of habits from Los Angeles toward the next destination.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "AOR",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "blind_spot",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "pillar",
+    "strong_connection_id": "conn_003_to_005_direct_influence",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_002_to_003_direct_influence",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_003_to_004_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_003_to_013_translation",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_002_to_003_direct_influence",
+        "other_position": 2,
+        "other_label": "Carole King — It's Too Late (1971)",
+        "kind": "direct_influence",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在Carole King那里听到的洛杉矶制作语法，到了Boz Scaggs这里加重了节奏，换进了蓝眼灵魂乐。语法延续，颜色换了。",
+        "narration_en": "The LA production grammar from Carole King just now — in Boz Scaggs it gets a heavier rhythm section and blue-eyed soul. Same grammar, different colour."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_003_to_005_direct_influence",
+        "other_position": 5,
+        "other_label": "Toto — Georgy Porgy (1978)",
+        "kind": "direct_influence",
+        "evidence_basis": "historical",
+        "narration_zh": "这张专辑里的键盘手和鼓手，次年离开，用同一批人组了一支新乐队。那支乐队后来出现在了日本录音棚里。",
+        "narration_en": "The keyboardist and drummer on this record left the following year to form a new band. That band later turned up in a Japanese studio."
+      },
+      {
+        "id": "conn_003_to_013_translation",
+        "other_position": 13,
+        "other_label": "濱田金吾 — Bye Bye Mrs. December (1982)",
+        "kind": "translation",
+        "evidence_basis": "musicological",
+        "narration_zh": "这种城市蓝调的夜间孤独感，在东京会被做成慢速深夜版本，副歌前的停顿像深吸一口气，而不是快速换气。",
+        "narration_en": "The nocturnal city-blues feeling — in Tokyo it becomes a slow late-night version: the pre-chorus pause a deep inhale, not a quick breath."
+      },
+      {
+        "id": "conn_003_to_004_same_era_dialogue",
+        "other_position": 4,
+        "other_label": "Steely Dan — Deacon Blues (1977)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "把复杂和弦做进流行单曲，这间城市同年还有另一支乐队把同一件事做得更学术，更冷，更彻底。",
+        "narration_en": "Complex chords into pop — that same year in the same city, another band was doing the same thing more academically, more coldly, more completely."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 4,
+    "node_id": "steely-dan_aja_deacon-blues",
+    "year": 1977,
+    "artist": "Steely Dan",
+    "song": "Deacon Blues",
+    "album": "Aja",
+    "exhibit_type": "ancestor",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": null,
+    "audio_url": "/audio/ep5/04_steely-dan_deacon-blues.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/04_steely-dan_deacon-blues.mp3",
+    "album_cover_url": "/covers/04_steely-dan_deacon-blues.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "萨克斯与爵士和弦，录音棚里的每一轨都服务于一个精密的整体，没有一个音符是偶然的，每一个细节都是计算的结果，完美是唯一的交货标准。\n\n一九七七年，Steely Dan把爵士和弦当流行语法：jazz chord voicing作为商业流行的基础语法，而不是表演性的插件，不是炫技的装饰，而是句子的结构本身，是歌曲骨架的一部分，是让每首歌都能自己站起来的那根支撑。录音室是他们的乐器，完美是他们的标准，每一次录音都要推倒重来直到达到那个精度，直到没有任何多余的东西，直到每一个音符都在它应该在的地方。\n\n这套语法越过太平洋。山下達郎后来被乐评称为「日本的Steely Dan」，这个标签背后是同一套把爵士和弦做进流行歌的哲学，是录音室完美主义的太平洋对岸版本。Deacon Blues的和弦还没变成日语，但语法已经在太平洋上空飞了。",
+    "transcript_en": "Saxophone, jazz chords, studio perfectionism. Every track serves a precision machine. No note is accidental. Every detail is calculated. Perfect is the only delivery standard.\n\n1977. Steely Dan used jazz chord voicings as pop grammar, not embellishment or technical display.\n\nAs the actual skeleton of the song, the structure that lets it stand on its own.\n\nThe studio is their instrument. They'd tear down a take and rebuild it until nothing was in the wrong place.\n\nThis grammar crossed the Pacific. Yamashita Tatsuro (山下達郎) would later be called \"Japan's Steely Dan\" by critics.\n\nThat label points to the same philosophy: jazz chords as commercial pop foundation, perfectionism as artistic stance.\n\nDeacon Blues hasn't become Japanese yet. But the grammar is already airborne over the ocean.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "AOR",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "blind_spot",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "pillar",
+    "strong_connection_id": "conn_004_to_007_direct_influence",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_003_to_004_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_004_to_009_translation",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_003_to_004_same_era_dialogue",
+        "other_position": 3,
+        "other_label": "Boz Scaggs — Lowdown (1976)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在Boz Scaggs那里听到的把复杂和弦当流行语法的方向，到了Steely Dan这里变得更精密、更学术。同一间城市，同一条路，不同的终点。",
+        "narration_en": "The complex-chords-as-pop-grammar direction from Boz Scaggs just now — in Steely Dan it becomes more precise, more academic. Same city, same road, different destination."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_004_to_007_direct_influence",
+        "other_position": 7,
+        "other_label": "山下達郎 — LOVELAND ISLAND (1982)",
+        "kind": "direct_influence",
+        "evidence_basis": "musicological",
+        "narration_zh": "这套把爵士和弦当流行语法的录音室哲学，越过太平洋。十年后在东京，有人把它做得比这里更完整，评论家的对比还是落回到这个名字。",
+        "narration_en": "Jazz chords as pop grammar crossed the Pacific. A decade later in Tokyo, someone pushed this further — critics still reached for this band's name."
+      },
+      {
+        "id": "conn_004_to_009_translation",
+        "other_position": 9,
+        "other_label": "角松敏生 — ANKLET (1984)",
+        "kind": "translation",
+        "evidence_basis": "musicological",
+        "narration_zh": "把爵士和弦当流行语法，这条线在日本会有一个极端化的实验：有人把它推到了副歌前的和声同时属于两个调的程度。",
+        "narration_en": "Jazz chords as pop grammar — in Japan this gets pushed to an extreme: a chord before the chorus that belongs to two keys at once."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 5,
+    "node_id": "toto_toto_georgy-porgy",
+    "year": 1978,
+    "artist": "Toto",
+    "song": "Georgy Porgy",
+    "album": "Toto",
+    "exhibit_type": "ancestor",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": null,
+    "audio_url": "/audio/ep5/05_toto_georgy-porgy.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/05_toto_georgy-porgy.mp3",
+    "album_cover_url": "/covers/05_toto_georgy-porgy.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "smooth AOR，Chris Cross贝斯线干净利落，鼓和吉他咬得准。\n\n一九七八年，Toto成员就是Silk Degrees那批session players：Jeff Porcaro、Steve Lukather、David Hungate，同一批手，新的乐团名字。这套演奏语法的物理载体是这三个人。\n\n两年后，这三个人出现在了竹内まりや一九八零年Miss M的liner notes里，西岸语法就这样进了东京棚。针线穿过去的方式不是影响，是物理接触：同一批人，同一批手，在东京的棚里留下了同一套惯性。外套还是英语，穿的人已经是日语。",
+    "transcript_en": "Smooth AOR. The bass line clean, the drums and guitar locked together.\n\n1978. The Toto members are the Silk Degrees session players: Jeff Porcaro, Steve Lukather, David Hungate.\n\nSame hands, new band name. These three people are the physical carrier of the grammar.\n\nTwo years later, those three names appear in the liner notes of Takeuchi Mariya's (竹内まりや) 1980 album Miss M. That's how West Coast grammar entered a Tokyo studio.\n\nNot influence. Physical contact. The same people, the same hands, leaving the same habitual imprint in a Japanese session.\n\nThe coat is still in English. The person wearing it is already Japanese.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "AOR",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "blind_spot",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_005_to_008_translation",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_003_to_005_direct_influence",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_003_to_005_direct_influence",
+        "other_position": 3,
+        "other_label": "Boz Scaggs — Lowdown (1976)",
+        "kind": "direct_influence",
+        "evidence_basis": "historical",
+        "narration_zh": "你刚才在Boz Scaggs那张专辑里听到的键盘手和鼓手，就是现在这支乐队。同一批手，换了一个乐团的名字。",
+        "narration_en": "The keyboardist and drummer you just heard on Boz Scaggs — they are this band. Same hands, different name."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_005_to_008_translation",
+        "other_position": 8,
+        "other_label": "竹内まりや — シングル・アゲイン (1987)",
+        "kind": "translation",
+        "evidence_basis": "historical",
+        "narration_zh": "这张专辑录完两年后，这支乐队里的三个人飞去洛杉矶，给一位日本女歌手录了一张专辑。针线从这里穿过去的。",
+        "narration_en": "Two years after this record, three members of this band flew to Los Angeles and played on a Japanese artist's album. The thread passes through here."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 6,
+    "node_id": "otaki-eiichi_a-long-vacation_canary-islands-ni-te",
+    "year": 1981,
+    "artist": "大瀧詠一",
+    "song": "カナリア諸島にて",
+    "album": "A Long Vacation",
+    "exhibit_type": "ancestor",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "22711224",
+    "audio_url": "/audio/ep5/06_otaki-eiichi_kanaria-shoto-nite.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/06_otaki-eiichi_kanaria-shoto-nite.mp3",
+    "album_cover_url": "/covers/06_otaki-eiichi_kanaria-shoto-nite.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "人声克制，留白充分，每个音符后面的空气都被保留着，不急着填满任何位置。\n\n一九八一年东京，大瀧詠一没有飞去洛杉矶。他选择的是另一条路：把美国流行乐研究到可以从内部复制，把语法内化成自己的，不需要物理接触，不需要站在同一个棚里。A Long Vacation是这条内化路线的顶点，是一个人在东京把加州音乐研究到可以独立完成的证明。\n\n同一批听众里，山下達郎选择的是另一条路：飞过去，用同一批乐手，在洛杉矶的棚里亲手接触那套语法。两条路，一个目的地，两种不同的翻译方法，各自走到了各自的极致。",
+    "transcript_en": "Restrained vocals. Air preserved after every note. Nothing rushing to fill any gap.\n\n1981 Tokyo. Otaki Eiichi (大瀧詠一) didn't fly to Los Angeles. He chose a different path: studying American pop until he could replicate it from the inside.\n\nInternalizing the grammar so completely that physical contact became unnecessary. A Long Vacation is the peak of that route.\n\nOne person in Tokyo, studying California music until he could produce it independently.\n\nAmong the same generation, Yamashita Tatsuro took the other path: he flew there, worked with those session players, touched the grammar directly in a Los Angeles studio.\n\nTwo paths. One destination. Two methods of translation, each taken to its own extreme.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "adjacent",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_006_to_007_same_era_dialogue",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_001_to_006_direct_influence",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_001_to_006_direct_influence",
+        "other_position": 1,
+        "other_label": "James Taylor — Fire and Rain (1970)",
+        "kind": "direct_influence",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在James Taylor那里听到的人声克制与空白，被大瀧詠一内化成一套可以在东京独立完成的生产语法。这就是内化路线。",
+        "narration_en": "The restrained vocal space from James Taylor just now, internalized by 大瀧詠一 into a grammar he could execute in Tokyo alone. The internal-translation path."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_006_to_007_same_era_dialogue",
+        "other_position": 7,
+        "other_label": "山下達郎 — LOVELAND ISLAND (1982)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "historical",
+        "narration_zh": "没有飞去洛杉矶这条路，还有另一条：把美国流行乐研究到能从内部复制。明年，同一批听众会听到另一位用的是截然不同的方法。",
+        "narration_en": "There was another path besides going to Los Angeles — study the source until you can replicate it from inside. Next year, another Tokyo artist chose the opposite approach."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 7,
+    "node_id": "yamashita-tatsuro_for-you_loveland-island",
+    "year": 1982,
+    "artist": "山下達郎",
+    "song": "LOVELAND ISLAND",
+    "album": "FOR YOU",
+    "exhibit_type": "lateral",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "22693802",
+    "audio_url": "/audio/ep5/07_yamashita-tatsuro_loveland-island.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/07_yamashita-tatsuro_loveland-island.mp3",
+    "album_cover_url": "/covers/07_yamashita-tatsuro_loveland-island.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "制作极致，每一轨都按照制作人的耳朵服务，没有一个音是多余的，没有一个音是不够的，每一轨都是精密整体的一个有机组成部分，缺少任何一个都不完整。\n\n一九八二年，FOR YOU专辑，山下達郎把Steely Dan的录音室哲学完整移植到了东京。你刚才在Deacon Blues里听到的爵士和弦作为流行语法，到了山下達郎这里被移植完成，评论家不是随便叫他「日本的Steely Dan」的，那个标签背后是有据可查的美学传承，是同一套把精密度当作语法的录音室哲学在太平洋对岸的实现，是相同的完美主义在不同语言里落地生根，在不同的城市里开出相同形状的花朵。\n\n语法已经到东京了。但它还在制作人的耳朵里，还在棚里，还没有走到棚外，还没有成为任何人都能穿的外套。翻译的工作还没有结束，还有下一步在等着，还有更多的人在等着穿这件外套，等着它变成自己的皮肤。",
+    "transcript_en": "Production at its limit. Every track serves the producer's ear. Nothing excess, nothing missing. Each part is an organic component of a precision whole.\n\n1982. FOR YOU. Yamashita Tatsuro (山下達郎) completed the transplant of Steely Dan's studio philosophy to Tokyo.\n\nThe jazz-chord-as-pop-grammar you just heard in Deacon Blues: it's fully implemented here.\n\nCritics didn't call him \"Japan's Steely Dan\" casually. The label points to a documented aesthetic lineage: precision as grammar, perfectionism as philosophy, realized on the other side of the Pacific.\n\nThe grammar has reached Tokyo. But it's still inside the producer's ear. Still inside the studio. It hasn't walked outside yet.\n\nIt hasn't become a coat that anyone can wear. The translation work isn't finished. There are more people waiting to put this on.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "pillar",
+    "strong_connection_id": "conn_004_to_007_direct_influence",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_006_to_007_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_007_to_015_genealogical_descent",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_004_to_007_direct_influence",
+        "other_position": 4,
+        "other_label": "Steely Dan — Deacon Blues (1977)",
+        "kind": "direct_influence",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在Steely Dan那里听到的爵士和弦作为流行语法，到了山下達郎这里被推到了极致。「日本的Steely Dan」这个标签，评论家不是随便叫的。",
+        "narration_en": "The Steely Dan jazz-chord grammar you just heard — here in 山下達郎 it is complete. The label 'Japan's Steely Dan' earned, not given."
+      },
+      {
+        "id": "conn_006_to_007_same_era_dialogue",
+        "other_position": 6,
+        "other_label": "大瀧詠一 — カナリア諸島にて (1981)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "historical",
+        "narration_zh": "大瀧詠一选择的是内部研究路线。山下達郎选择的是录音室完美主义路线。两张专辑，相差一年，是City Pop两种翻译策略的对照标本。",
+        "narration_en": "大瀧詠一 studied from within; 山下達郎 brought the studio here. Two albums, one year apart — two translation strategies side by side."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_007_to_015_genealogical_descent",
+        "other_position": 15,
+        "other_label": "中原めいこ — Cloudyな午後 (1982)",
+        "kind": "genealogical_descent",
+        "evidence_basis": "musicological",
+        "narration_zh": "这套把每一轨都服务于制作人耳朵的录音室声学，同年在东京被另一位歌手用到了，用得更轻，更收敛，多余的能量都蒸馏掉了。",
+        "narration_en": "This studio philosophy — every track serving the producer's ear — that same year in Tokyo reached another singer, who stripped it further, distilling it down."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 8,
+    "node_id": "takeuchi-mariya_request_single-again",
+    "year": 1987,
+    "artist": "竹内まりや",
+    "song": "シングル・アゲイン",
+    "album": "REQUEST",
+    "exhibit_type": "lateral",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "22794572",
+    "audio_url": "/audio/ep5/08_takeuchi-mariya_single-again.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/08_takeuchi-mariya_single-again.mp3",
+    "album_cover_url": "/covers/08_takeuchi-mariya_single-again.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "人声与留白的关系很具体：预副歌的停顿，人声在那口气里重新进入，和弦在下面悬着，等那口气走完。\n\n一九八七年，竹内まりや把Carole King的呼吸语法完整内化成了日语。这条线的根基是一九八零年的Miss M：那张专辑在洛杉矶Monterrey Sound Studios录制，制作人David Foster，你刚才在Georgy Porgy里听到的三个乐手，Jeff Porcaro、Steve Lukather、David Hungate，就出现在了Miss M的liner notes里，那是西岸语法进入东京棚的物理接触。那次物理接触，是シングル・アゲイン的根基，是呼吸语法内化的起点。\n\n七年后的成熟形态：外套穿好了，现在开始自然化，语法的来历已经不需要解释了，它已经是母语，是身体的一部分。",
+    "transcript_en": "The relationship between voice and silence is precise: the pre-chorus pause, the vocal re-entering mid-breath, the chord hanging underneath waiting for that breath to resolve.\n\nIn 1987, Takeuchi Mariya (竹内まりや) fully internalized Carole King's breathing grammar into Japanese.\n\nThe foundation goes back to 1980. Miss M, recorded at Monterrey Sound Studios in Los Angeles, produced by David Foster.\n\nThe three musicians you just heard on Georgy Porgy, Jeff Porcaro, Steve Lukather, David Hungate, appear in Miss M's liner notes.\n\nThat was the physical moment of contact: West Coast grammar entering a Tokyo studio.\n\nシングル・アゲイン (Single Again), seven years later, is what that contact matured into.\n\nThe grammar no longer announces its origins. It has become a mother tongue. The coat fits, and you can no longer see the seams.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "pillar",
+    "strong_connection_id": "conn_005_to_008_translation",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_002_to_008_translation",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_008_to_015_translation",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_008_to_010_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_002_to_008_translation",
+        "other_position": 2,
+        "other_label": "Carole King — It's Too Late (1971)",
+        "kind": "translation",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在Carole King那里听到的副歌前悬挂，到了竹内まりや这里已经完全内化成了母语。呼吸还在，语言换了。",
+        "narration_en": "The pre-chorus suspension from Carole King just now, fully internalized into Japanese — here in 竹内まりや. The breath is the same; the language changed."
+      },
+      {
+        "id": "conn_005_to_008_translation",
+        "other_position": 5,
+        "other_label": "Toto — Georgy Porgy (1978)",
+        "kind": "translation",
+        "evidence_basis": "historical",
+        "narration_zh": "你刚才在Toto那里听到的三个乐手，他们出现在一九八零年Miss M的liner notes里。西岸的语法就是这样进入东京录音棚的。",
+        "narration_en": "The three players from Toto you just heard appear in the liner notes of Miss M, recorded in 1980. That is how West Coast grammar entered the Tokyo studio."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_008_to_015_translation",
+        "other_position": 15,
+        "other_label": "中原めいこ — Cloudyな午後 (1982)",
+        "kind": "translation",
+        "evidence_basis": "musicological",
+        "narration_zh": "从洛杉矶带回来的语法在这里已经完全成熟了。后面还有一位女声，把同一批语法再蒸馏一遍，蒸馏到只剩一个下午的轮廓。",
+        "narration_en": "The grammar brought back from Los Angeles is fully matured here. Ahead, another voice will distill it once more, down to just an afternoon's outline."
+      },
+      {
+        "id": "conn_008_to_010_same_era_dialogue",
+        "other_position": 10,
+        "other_label": "稲垣潤一 — 夏のクラクション (1983)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "同一批东京录音棚、同一批编曲师、同一个年代。这套语法在这代人里还有很多变体，下面会听到其中一个更商业的版本。",
+        "narration_en": "Same Tokyo studios, same arrangers, same decade. This grammar had many variants in this generation — ahead, a more commercial one."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 9,
+    "node_id": "kakumatsu-toshiki_touch-and-go_anklet",
+    "year": 1984,
+    "artist": "角松敏生",
+    "song": "ANKLET",
+    "album": "TOUCH AND GO",
+    "exhibit_type": "lateral",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "22819664",
+    "audio_url": "/audio/ep5/09_kadomatsu-toshiki_anklet.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/09_kadomatsu-toshiki_anklet.mp3",
+    "album_cover_url": null,
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "和弦复杂，副歌前悬浮到两个调性之间，听的时候会有一秒钟不确定方向，不知道它要去哪里。\n\n一九八四年，角松敏生把AOR和弦语法推到了City Pop范围内最复杂的形态：副歌前那个和弦，同时属于两个调性，悬浮在调性之间，不急着告诉你答案，让你在那个不确定里多待一秒钟。这是爵士和弦作为流行语法的极限实验，是把不解决做成结构的日本版本。\n\n把语法推到极限的同时，同一代人里也有人在走反方向：濱田金吾把同一套语法做慢，做进深夜，停顿变成深呼吸，和声语法到了顶，但留白的路线还没有走完，还有另一种极端等在那里。",
+    "transcript_en": "Complex chords. Before the chorus, the harmony floats between two keys at once. There's a moment where you genuinely don't know which direction it's going.\n\n1984. Kadomatsu Toshiki (角松敏生) pushed AOR harmonic grammar to its most complex form within City Pop.\n\nThat pre-chorus chord belongs simultaneously to two different tonal centers. It suspends itself in the ambiguity, in no hurry to give you the answer.\n\nThis is the limit experiment: jazz chords as pop grammar, taken to the edge. The Japanese version of making irresolution into structure.\n\nAt the same time, someone else in the same generation was moving the opposite direction.\n\nHamada Kingo (濱田金吾) slowed the same grammar down into deep night. The pause becoming a deep inhale. Harmonic grammar at its ceiling; the hollowing path still has further to go.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_009_to_013_same_era_dialogue",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_004_to_009_translation",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_004_to_009_translation",
+        "other_position": 4,
+        "other_label": "Steely Dan — Deacon Blues (1977)",
+        "kind": "translation",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在Steely Dan那里听到的爵士和弦作为流行语法，到了角松敏生这里已经是City Pop范围内的极限形态了。",
+        "narration_en": "The Steely Dan jazz-chord grammar you just heard — here in 角松敏生 it reaches its City Pop limit. The most harmonically complex station."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_009_to_013_same_era_dialogue",
+        "other_position": 13,
+        "other_label": "濱田金吾 — Bye Bye Mrs. December (1982)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "和弦推到了最复杂的形态。同一代人里，另一条路走的是反向：把语法做慢，做进深夜，副歌前的停顿变成一口深呼吸。",
+        "narration_en": "The chords pushed to their most complex form. Another path in the same generation takes the opposite direction — slow, nocturnal, the pre-chorus pause a deep breath."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 10,
+    "node_id": "inagaki-junichi_j-i_natsu-no-kurakushon",
+    "year": 1983,
+    "artist": "稲垣潤一",
+    "song": "夏のクラクション",
+    "album": "J-I",
+    "exhibit_type": "lateral",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "414613",
+    "audio_url": "/audio/ep5/10_inagaki-junichi_natsu-no-kurakushon.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/10_inagaki-junichi_natsu-no-kurakushon.mp3",
+    "album_cover_url": null,
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "管乐进入前那两拍的等待，是整首歌的结构中心，是这首歌最响的地方，虽然那里什么声音都没有。\n\n一九八三年，稲垣潤一把停顿语法做进了商业单曲。管乐声部的等待感不是装饰，是结构：那两拍空白，是整首歌最响的地方，是所有旋律都在指向的位置。你刚才在シングル・アゲイン里听到的停顿语法，到了这里变成了管乐进场前那两拍的等待，商业化了，但语法的骨头没有变，停顿还在，只是穿上了一件更亮的外套。\n\n翻译已经完成，不需要标注来历，这是语法自然化之后的样子，是外套穿好之后的行走。",
+    "transcript_en": "Those two beats before the brass section enters: that's the structural center of the whole track. The loudest moment in the song is the moment with no sound in it.\n\n1983. Inagaki Junichi (稲垣潤一) built the pause grammar into a commercial single.\n\nThe wait before the brass isn't decoration. It's load-bearing. Those two empty beats are where every melody has been pointing.\n\nThe pause grammar from シングル・アゲイン (Single Again) has been moved here, into the breath before the horns arrive.\n\nIt's more commercial now, but the grammatical skeleton hasn't changed. The pause is still there. Just wearing a brighter coat.\n\nThe translation is done. No citation needed. This is what naturalized grammar looks like: the coat walking on its own.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_008_to_010_same_era_dialogue",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_010_to_011_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_008_to_010_same_era_dialogue",
+        "other_position": 8,
+        "other_label": "竹内まりや — シングル・アゲイン (1987)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在竹内まりや那里听到的是同一套语法的精致形态。到了稲垣潤一这里，同一批语法被做进了商业单曲，管乐进来了，停顿依然在。",
+        "narration_en": "What you just heard in 竹内まりや — the same grammar in a more polished form. In 稲垣潤一 it becomes a commercial single; brass section added, the pause still there."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_010_to_011_same_era_dialogue",
+        "other_position": 11,
+        "other_label": "ラ・ムー — Late Night Heartache (1988)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "管乐声部进来，停顿感是整首歌的中心。到了City Pop后期，这套语法会被做得更稀疏，频率留白推到最大。",
+        "narration_en": "The pause is this song's structural centre. Into later City Pop, this grammar gets sparser — the frequency emptiness pushed to its maximum."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 11,
+    "node_id": "ra-mu_thanks-giving_late-night-heartache",
+    "year": 1988,
+    "artist": "ラ・ムー",
+    "song": "Late Night Heartache",
+    "album": "Thanks-Giving",
+    "exhibit_type": "lateral",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "26155423",
+    "audio_url": "/audio/ep5/11_ra-mu_late-night-heartache.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/11_ra-mu_late-night-heartache.mp3",
+    "album_cover_url": "/covers/11_ra-mu_late-night-heartache.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "频率留白极端，和弦悬在空气里，没有节奏的重量压着，声音之间有大片的空气。\n\n一九八八年，City Pop走到尾声，翻译美学在这里走到了频率留白的极端。你刚才在夏のクラクション里听到的是这套语法的商业成熟形态，到了一九八八年城市流行的尾声，同一套语法被精简到只剩和弦悬在空气里，节奏组退到最远处，人声和和弦之间的空气是唯一的内容，留白是主角，声音是留白的边框。\n\n外套穿到快消失了，快消失的时候反而最能看见它原来的形状，看见那件外套最初是怎么被裁制的。",
+    "transcript_en": "Frequency hollowing at its maximum. Chords suspended in air. No rhythmic weight pressing down. Huge stretches of air between sounds.\n\n1988. City Pop approaching its end. The translation aesthetic reaches the extreme of deliberate emptiness.\n\nThe commercial, polished form you just heard in 夏のクラクション: by 1988, that same grammar has been stripped to chords hanging in air.\n\nThe rhythm section retreats to the far distance. The air between voice and chord is the only content.\n\nThe silence is the main character. The sounds are its frame.\n\nThe coat has been worn almost to invisibility. When it nearly disappears, you can finally see its original shape, see how it was cut in the first place.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_010_to_011_same_era_dialogue",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_011_to_012_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_010_to_011_same_era_dialogue",
+        "other_position": 10,
+        "other_label": "稲垣潤一 — 夏のクラクション (1983)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在稲垣潤一那里听到的是这套语法的商业化成熟形态。到了一九八八年，City Pop尾声，同一套语法被精简到只剩轮廓，和弦悬在空气里。",
+        "narration_en": "The commercial-form grammar from 稲垣潤一 just now. In 1988, City Pop's final chapter, that same grammar is stripped to just an outline, chords suspended in air."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_011_to_012_same_era_dialogue",
+        "other_position": 12,
+        "other_label": "杏里 — SHYNESS BOY (1983)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "频率留白到了极端。这代人里有一首歌，翻译已经完成到了不需要任何标注的程度，听的时候不会想起这件外套的来历。",
+        "narration_en": "Frequency emptiness at its extreme. This generation also has a song where the translation is so complete it needs no marking — you forget where the coat came from."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 12,
+    "node_id": "anri_bikini_shyness-boy",
+    "year": 1983,
+    "artist": "杏里",
+    "song": "SHYNESS BOY",
+    "album": "BI·KI·NI",
+    "exhibit_type": "lateral",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "22817987",
+    "audio_url": "/audio/ep5/12_anri_shyness-boy.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/12_anri_shyness-boy.mp3",
+    "album_cover_url": "/covers/12_anri_shyness-boy.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "Toto风格的鼓型，节奏骨架来自West Coast session playing，每个鼓击都干净利落，每一拍都落在它该在的位置。\n\n一九八三年，杏里的节奏骨架是完全的West Coast语法，但作为City Pop单曲，这首歌不需要任何来历的标注，听的时候不会想起那件外套的裁制地，不会想起那批session players，不会想起那间洛杉矶的棚。翻译的自然化在这里已经完成，穿到不觉得是外套，外套才真正穿好，穿好的外套和皮肤之间已经没有边界。\n\n接下来同一代人里有一个声音，中原めいこ，外套的线条在她那里更可辨认，翻译的层次更清晰可见。",
+    "transcript_en": "Toto-style drum pattern. The rhythmic skeleton is pure West Coast session playing. Every hit clean, every beat landing exactly where it belongs.\n\n1983. Anri's (杏里) rhythmic foundation is entirely West Coast grammar. But as a City Pop single, this track needs no attribution.\n\nListening, you don't think of where the coat was tailored. Don't think of the session players, don't think of the Los Angeles studio.\n\nThe naturalization is complete. When you wear a coat so completely you forget it's a coat, that's when it's really been worn in.\n\nThe coat and the skin: no longer any boundary between them.\n\nSomewhere in the same generation, there's a voice where the coat's seams are slightly more visible. That voice is Nakahara Meiko (中原めいこ).",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_012_to_014_same_era_dialogue",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_011_to_012_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_011_to_012_same_era_dialogue",
+        "other_position": 11,
+        "other_label": "ラ・ムー — Late Night Heartache (1988)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在ラ・ムー那里听到的是留白被推到最大的样子。到了杏里这里，翻译完成了：节奏骨架是West Coast，但作为City Pop单曲已经不需要标注了。",
+        "narration_en": "The maximum emptiness from ラ・ムー just now. In 杏里, the translation is complete: the rhythm is West Coast, but as City Pop it no longer needs labelling."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_012_to_014_same_era_dialogue",
+        "other_position": 14,
+        "other_label": "中原めいこ — Fantasy (1983)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "翻译自然化到这里。接下来，同一代人里有一个声音，你能更清楚地听见这件外套是怎么被穿上的。",
+        "narration_en": "Translation naturalised here. Ahead, a voice in the same generation where you can hear more clearly how the coat was put on."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 13,
+    "node_id": "hamada-kingo_midnight-cruisin_bye-bye-mrs-december",
+    "year": 1982,
+    "artist": "濱田金吾",
+    "song": "Bye Bye Mrs. December",
+    "album": "Midnight Cruisin'",
+    "exhibit_type": "lateral",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "1454109038",
+    "audio_url": "/audio/ep5/13_hamada-kingo_bye-bye-mrs-december.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/13_hamada-kingo_bye-bye-mrs-december.mp3",
+    "album_cover_url": "/covers/13_hamada-kingo_bye-bye-mrs-december.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "慢速，副歌前那口气像深吸，不是换气，是停顿被做成了呼吸的重量，让你感觉到时间本身的分量。\n\n一九八二年，濱田金吾把Boz Scaggs的城市蓝调翻译成了东京的深夜慢版。角松敏生把和声语法推到极致，走的是向上的方向，这里走的是向下的方向：停顿被做成深呼吸，同样的预副歌空白，在慢速度下变成了一口气的重量，城市孤独感的夜间日文版本，夜深了，一个人的慢版。\n\n这里是夜的深处。接下来，中原めいこ的Cloudyな午後，时间变了，白天，阴天，语法相同，感觉换了一个方向，从夜到昼，从重到轻，同一件外套穿进了不同的天气里。",
+    "transcript_en": "Slow tempo. That pre-chorus breath lands like a deep inhale, not a simple breath catch. The pause has become the weight of breathing itself.\n\n1982. Hamada Kingo (濱田金吾) translated Boz Scaggs's urban blues into a Tokyo late-night slow version.\n\nKadomatsu pushed harmonic grammar upward. This moves the opposite direction, downward, into depth.\n\nThe same pre-chorus silence, at this slower speed, becomes the weight of a single drawn breath.\n\nUrban loneliness in Japanese, night version. Alone in the small hours.\n\nThis is the deepest part of the night. Next: Nakahara Meiko's (中原めいこ) Cloudyな午後. The time shifts to daytime, overcast.\n\nSame grammar, different direction. From night to day, from heavy to light. The same coat worn into different weather.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_009_to_013_same_era_dialogue",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_003_to_013_translation",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_013_to_015_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_003_to_013_translation",
+        "other_position": 3,
+        "other_label": "Boz Scaggs — Lowdown (1976)",
+        "kind": "translation",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在Boz Scaggs那里听到的城市蓝调夜间感，到了濱田金吾这里慢下来了。副歌前那口气是深吸，不是换气。城市换了，孤独感的语法没换。",
+        "narration_en": "The nocturnal city-blues from Boz Scaggs just now — here in 濱田金吾 it slows. That pre-chorus breath is a deep inhale. The city changed; the grammar of loneliness didn't."
+      },
+      {
+        "id": "conn_009_to_013_same_era_dialogue",
+        "other_position": 9,
+        "other_label": "角松敏生 — ANKLET (1984)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在角松敏生那里听到的是和声语法被推到极限的样子。到了濱田金吾这里，同一批语法被做慢了，放进了深夜，一切都重了一些。",
+        "narration_en": "The harmonic grammar pushed to its limit in 角松敏生 just now. In 濱田金吾 the same grammar slows, moves into the night, everything heavier."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_013_to_015_same_era_dialogue",
+        "other_position": 15,
+        "other_label": "中原めいこ — Cloudyな午後 (1982)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "这首深夜版本把停顿做到了极致。这集的落点就在前面：一首歌，所有外来语法都已消失，只剩一个阴天午后。",
+        "narration_en": "This late-night version takes the pause to its extreme. Just ahead — a song where all the grammar disappears, leaving one overcast afternoon."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 14,
+    "node_id": "nakahara-meiko_fantasy_fantasy",
+    "year": 1983,
+    "artist": "中原めいこ",
+    "song": "Fantasy",
+    "album": "Fantasy",
+    "exhibit_type": "lateral",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "630264",
+    "audio_url": "/audio/ep5/14_nakahara-meiko_fantasy.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/14_nakahara-meiko_fantasy.mp3",
+    "album_cover_url": null,
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "同一把嗓子，能量稍高一点，语法的层次更可辨认，外套的线条还在，还隐约可见。\n\n一九八三年，中原めいこ在Fantasy里用的是同一套语法，但能量还多了一点，外套的线条还在，裁缝的针线还隐约可见，语法的来历还没有完全消失在声音里。同一把嗓子，同一套语法，但有多余的能量需要被蒸馏，有多余的层次需要被去掉。\n\n紧接着，同一把嗓子进入Cloudyな午後，多余的能量被蒸馏掉，只剩一个阴天午后的轮廓。值得注意的是，Cloudyな午後比Fantasy早一年录制，但在这里，Fantasy是通向终点的最后一步，是蒸馏开始之前的状态。",
+    "transcript_en": "Same voice, slightly more energy. The layers of grammar are more legible here. The coat's seams are still faintly visible.\n\n1983. Nakahara Meiko (中原めいこ) in Fantasy is using the same grammar. But there's extra energy that hasn't been distilled out yet.\n\nThe tailor's stitching still shows faintly. The grammar's origins haven't fully dissolved into the sound.\n\nSame voice, same grammar. A surplus of energy that still needs refining. Layers that still need to be removed.\n\nNext, that same voice enters Cloudyな午後. The extra energy is distilled away. What's left is only the outline of a cloudy afternoon.\n\nNote: Cloudyな午後 was recorded a year earlier than Fantasy. But in this arc, Fantasy is the last step before the destination, the state just before distillation begins.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_014_to_015_direct_influence",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_012_to_014_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_012_to_014_same_era_dialogue",
+        "other_position": 12,
+        "other_label": "杏里 — SHYNESS BOY (1983)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在杏里那里听到的是外套穿到不觉得是外套的状态。到了这里，同一把嗓子，语法的层次更可辨认，外套的线条更清晰。",
+        "narration_en": "What you just heard in 杏里 is the coat worn so naturally it disappears. Here, the same voice — the grammar's layers more distinct, the coat's seams visible."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_014_to_015_direct_influence",
+        "other_position": 15,
+        "other_label": "中原めいこ — Cloudyな午後 (1982)",
+        "kind": "direct_influence",
+        "evidence_basis": "historical",
+        "narration_zh": "紧接着，同一把嗓子，但语法被精简了，多余的能量蒸馏掉，只剩轮廓本身。",
+        "narration_en": "Same voice, same grammar — next, with the excess stripped away, leaving only the outline itself."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 15,
+    "node_id": "nakahara-meiko_happy-birthday-love-for-you_cloudy-na-gogo",
+    "year": 1982,
+    "artist": "中原めいこ",
+    "song": "Cloudyな午後",
+    "album": "Happy Birthday Love for You",
+    "exhibit_type": "anchor",
+    "is_base_node": true,
+    "mechanism_tags": [],
+    "netease_song_id": "630008",
+    "audio_url": "/audio/ep5/15_nakahara-meiko_cloudy-na-gogo.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/15_nakahara-meiko_cloudy-na-gogo.mp3",
+    "album_cover_url": null,
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "钢琴开声，和弦悬着，人声很轻进来，像有人在隔壁房间说话，不用说很大声，你也能听见。\n\n这首歌是这条链条的终点。\n\n还记得一九七零年Fire and Rain里那口停顿吗，James Taylor让短语结尾的空气保持住，不填满，那是最初的示范，可以不填的地方不填，停顿本身是语法。到了这首歌，那口停顿已经成为了骨架：钢琴和弦悬着，人声在那个空隙里进来，不解决，不急，不慌张。\n\n还记得Silk Degrees的那批session players，记得Jeff Porcaro和Steve Lukather出现在Miss M的liner notes里，那次物理接触把West Coast的手感带进了东京的棚，把一套惯性从洛杉矶带到了日本的录音现场。那份手感的最终形态在这首歌里已经无痕迹，只剩录音的质感，只剩声音本身。\n\n还记得Deacon Blues，记得山下達郎被叫做「日本的Steely Dan」，那套把爵士和弦当流行语法的哲学越过太平洋，被移植，被内化，到了这首歌里，和弦不再是哲学，只是一个阴天午后的颜色，只是那个颜色本身。\n\n还记得シングル・アゲイン，记得Carole King的呼吸语法被竹内まりや内化成日语，七年的自然化，到了这首歌，已经不需要任何关于来历的注脚，它就是日语，就是这个语言本身在说话。\n\n这首歌比Fantasy早一年录制，一九八二年，它是蒸馏的终点。从James Taylor的呼吸间隙、Steely Dan的和弦语法、Toto乐手的物理接触，所有翻译语法在这首歌里已经无法辨认，只剩一个阴天午后。外套变成了皮肤。",
+    "transcript_en": "Piano opens. The chord hangs. A voice enters very softly, like someone talking in the next room. No need to raise it. You can hear it anyway.\n\nThis track is where the chain ends.\n\nRemember the pause in Fire and Rain. James Taylor leaving the air at the end of a phrase unfilled. Original demonstration: where you can leave silence, leave it.\n\nThe pause is its own grammar. In this song, that pause has become the skeleton itself.\n\nThe piano chord hangs. The voice enters in the gap. Unresolved. Unhurried.\n\nRemember the Silk Degrees session players. Jeff Porcaro and Steve Lukather appearing in Miss M's liner notes. That physical contact brought West Coast feel into a Tokyo studio.\n\nA habit carried from Los Angeles to a Japanese recording session. In this song, that feel has left no trace. Only the recording texture remains. Only the sound itself.\n\nRemember Deacon Blues. Remember Yamashita Tatsuro being called Japan's Steely Dan. That philosophy of jazz chords as pop grammar, crossing the Pacific, transplanted and internalized.\n\nIn this song, the chords are no longer a philosophy. They are just the color of a cloudy afternoon. Just that color.\n\nRemember シングル・アゲイン (Single Again). Carole King's breathing grammar internalized into Japanese by Takeuchi Mariya. Seven years of naturalization.\n\nIn this song, no footnote about origins is needed. It is Japanese. The language itself is speaking.\n\nThis track was recorded a year before Fantasy, 1982. It is the endpoint of distillation.\n\nJames Taylor's breath-gaps. Steely Dan's harmonic grammar. The physical contact of the Toto players.\n\nAll of it unrecognizable here. Only a cloudy afternoon remains. The coat has become skin.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "anchor",
+    "strong_connection_id": null,
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_007_to_015_genealogical_descent",
+        "archive_reason": "already_told"
+      },
+      {
+        "connection_id": "conn_008_to_015_translation",
+        "archive_reason": "already_told"
+      },
+      {
+        "connection_id": "conn_013_to_015_same_era_dialogue",
+        "archive_reason": "already_told"
+      },
+      {
+        "connection_id": "conn_014_to_015_direct_influence",
+        "archive_reason": "already_told"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_007_to_015_genealogical_descent",
+        "other_position": 7,
+        "other_label": "山下達郎 — LOVELAND ISLAND (1982)",
+        "kind": "genealogical_descent",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在山下達郎那里听到的录音室声学极致，到了这里被蒸馏了一遍：同一套语法，多余的能量去掉了，只剩一个阴天下午的感觉。",
+        "narration_en": "The studio perfectionism from 山下達郎 just now — here it is distilled once more: same grammar, excess stripped away, leaving one cloudy afternoon."
+      },
+      {
+        "id": "conn_008_to_015_translation",
+        "other_position": 8,
+        "other_label": "竹内まりや — シングル・アゲイン (1987)",
+        "kind": "translation",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在竹内まりや那里听到的Carole King呼吸语法，已经完全内化成了日语。到了这里再蒸一遍，轮廓只剩这么多。",
+        "narration_en": "The Carole King breathing grammar from 竹内まりや just now, fully internalized into Japanese — here it is distilled once more. Just this much left."
+      },
+      {
+        "id": "conn_014_to_015_direct_influence",
+        "other_position": 14,
+        "other_label": "中原めいこ — Fantasy (1983)",
+        "kind": "direct_influence",
+        "evidence_basis": "historical",
+        "narration_zh": "你刚才在Fantasy里听到的是同一把嗓子，略高的能量，略多的外套。这一首是蒸馏之后的样子：一样的语法，轻了一圈。",
+        "narration_en": "The Fantasy you just heard — same voice, slightly more energy, slightly more coat. This is the distilled version: same grammar, lighter."
+      },
+      {
+        "id": "conn_013_to_015_same_era_dialogue",
+        "other_position": 13,
+        "other_label": "濱田金吾 — Bye Bye Mrs. December (1982)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在濱田金吾那里听到的是夜间翻译的极致版本。到了这里，时间变了，白天，阴天，外套已经穿成皮肤了。",
+        "narration_en": "The nocturnal translation at its extreme in 濱田金吾 just now. Here, the time shifts — daytime, overcast. The coat has become skin."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_015_to_016_genealogical_descent",
+        "other_position": 16,
+        "other_label": "Ginger Root — Loretta (2021)",
+        "kind": "genealogical_descent",
+        "evidence_basis": "musicological",
+        "narration_zh": "这件外套穿了四十年，绕了一圈，回到加州。下面会出现一位加州人，把日本人对加州音乐的翻译再翻译回加州。",
+        "narration_en": "This coat traveled forty years, looped, and came back to California — a Californian re-translating the Japanese translation of California music."
+      },
+      {
+        "id": "conn_015_to_017_genealogical_descent",
+        "other_position": 17,
+        "other_label": "RYUSENKEI — 3号线 (2021)",
+        "kind": "genealogical_descent",
+        "evidence_basis": "musicological",
+        "narration_zh": "外套还没有停。四十年后，另一城市的地铁线上，有一支乐队把这件外套穿上了，唱词是普通话。",
+        "narration_en": "The coat keeps moving. Forty years on, on another city's metro line, a band put it on — the lyrics now in Mandarin."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 16,
+    "node_id": "ginger-root_city-slicker_loretta",
+    "year": 2021,
+    "artist": "Ginger Root",
+    "song": "Loretta",
+    "album": "CITY SLICKER",
+    "exhibit_type": "descendant",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "1844862467",
+    "audio_url": "/audio/ep5/16_ginger-root_loretta.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/16_ginger-root_loretta.mp3",
+    "album_cover_url": "/covers/16_ginger-root_loretta.jpg",
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "synth pad开头，节奏框架是City Pop，贝斯线干净，声音里有一种熟悉的距离感。\n\n二零二一年，加州，Cameron Lew在洛杉矶把日本人对加州音乐的翻译再翻译了一次。你刚才在中原めいこ的Cloudyな午後里听到的，是加州音乐经过东京后的样子。Ginger Root在洛杉矶把那个东京版本再翻译了一次，回到了外套被裁制的地方，但外套的形状已经改过了。\n\n翻译闭环：起点和终点在同一个地理，但中间绕了四十年的东京。外套回到起点，形状已经变了。",
+    "transcript_en": "Synth pad opening. City Pop rhythmic frame. Bass line clean. A familiar kind of distance in the sound.\n\n2021. California. Cameron Lew in Los Angeles re-translated the Japanese translation of California music.\n\nWhat you just heard in Nakahara Meiko's Cloudyな午後: that's California music after it passed through Tokyo. Ginger Root in Los Angeles took that Tokyo version and translated it once more.\n\nBack to where the coat was originally cut. But the coat's shape has already been altered by the journey.\n\nThe translation loop closes: start and end at the same geography, but forty years of Tokyo in between. The coat returns to its origin. Its shape has changed.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop Revival",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_015_to_016_genealogical_descent",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_016_to_017_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_015_to_016_genealogical_descent",
+        "other_position": 15,
+        "other_label": "中原めいこ — Cloudyな午後 (1982)",
+        "kind": "genealogical_descent",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在中原めいこ那里听到的，是加州音乐经过东京之后的样子。Ginger Root在洛杉矶，把那个东京的样子再翻译了一次。外套回到了起点。",
+        "narration_en": "What you just heard in 中原めいこ — California music filtered through Tokyo. Ginger Root in Los Angeles re-translated that Tokyo version. The coat returned to its origin."
+      }
+    ],
+    "connections_out": [
+      {
+        "id": "conn_016_to_017_same_era_dialogue",
+        "other_position": 17,
+        "other_label": "RYUSENKEI — 3号线 (2021)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "加州把外套穿回来了。同年，深圳有人在做一模一样的事：同一件外套，同一批语法，唱词换成中文。翻译没有终点。",
+        "narration_en": "California put the coat back on. That same year in Shenzhen, someone was doing the same thing — same coat, same grammar, lyrics now in Chinese."
+      }
+    ],
+    "connections_lateral": []
+  },
+  {
+    "kind": "track",
+    "position": 17,
+    "node_id": "ryusenkei_city-music_san-hao-xian",
+    "year": 2021,
+    "artist": "RYUSENKEI",
+    "song": "3号线",
+    "album": "シティ・ミュージック",
+    "exhibit_type": "descendant",
+    "is_base_node": false,
+    "mechanism_tags": [],
+    "netease_song_id": "811549",
+    "audio_url": "/audio/ep5/17_ryusenkei_san-hao-xian.mp3",
+    "fusion_audio_url": "/audio_fusion/ep5/17_ryusenkei_san-hao-xian.mp3",
+    "album_cover_url": null,
+    "duration_seconds": null,
+    "unavailable": false,
+    "transcript_zh": "synth pad，贝斯线干净，歌词是普通话，唱的是一条城市地铁线。\n\n二零二一年，深圳，RYUSENKEI把City Pop语法带进了第三座城市。你刚才在Cloudyな午後里听到的语法，到了深圳这里唱词变成了普通话，地铁从东京变成了三号线，城市从昭和东京变成了当代深圳，但和弦语法、贝斯惯性、停顿位置，一样都没有变。\n\nCalifornia到Tokyo，Tokyo到Shenzhen，翻译没有终点。外套每穿到一座城市，就长出一条新的线，但骨架还是那件。",
+    "transcript_en": "Synth pad. Bass line clean. Lyrics in Mandarin. The song is about a city metro line.\n\n2021. Shenzhen. RYUSENKEI carries City Pop grammar into a third city.\n\nThe grammar you just heard in Cloudyな午後: here, the lyrics become Mandarin. The metro shifts from Tokyo to Line 3. The city shifts from Showa-era Tokyo to contemporary Shenzhen.\n\nBut the chord grammar, the bass habits, the position of the pauses: none of that has changed.\n\nCalifornia to Tokyo. Tokyo to Shenzhen. Translation has no endpoint. Every city the coat reaches, a new thread grows out from it. But the skeleton is still the same coat.",
+    "transcript_zh_status": "complete",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "genre": "City Pop Revival",
+    "episode_focus": "translation_aesthetic",
+    "red_heart_tier": "hit",
+    "red_heart_matched_seeds": [],
+    "muted_this_episode": false,
+    "bridge_narration_zh": null,
+    "bridge_narration_en": null,
+    "narrative_weight": "supporting",
+    "strong_connection_id": "conn_015_to_017_genealogical_descent",
+    "archived_weak_connections": [
+      {
+        "connection_id": "conn_016_to_017_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      }
+    ],
+    "connections_in": [
+      {
+        "id": "conn_015_to_017_genealogical_descent",
+        "other_position": 15,
+        "other_label": "中原めいこ — Cloudyな午後 (1982)",
+        "kind": "genealogical_descent",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在中原めいこ那里听到的外套，到了深圳这里，唱词变成了普通话，地铁线变成了三号线。语法没有变。",
+        "narration_en": "The coat from 中原めいこ just now — in Shenzhen, the lyrics shift to Mandarin, the metro line becomes Line 3. The grammar unchanged."
+      },
+      {
+        "id": "conn_016_to_017_same_era_dialogue",
+        "other_position": 16,
+        "other_label": "Ginger Root — Loretta (2021)",
+        "kind": "same_era_dialogue",
+        "evidence_basis": "musicological",
+        "narration_zh": "你刚才在Ginger Root那里听到的是同一套语法，同一个时代，不同的地理。洛杉矶和深圳，二零二一年，两件同款外套。",
+        "narration_en": "The grammar you just heard in Ginger Root — same coat, same era, different geography. Los Angeles and Shenzhen, 2021, wearing the same thing."
+      }
+    ],
+    "connections_out": [],
+    "connections_lateral": []
+  },
+  {
+    "kind": "narration",
+    "position": 18,
+    "exhibit_type": "thematic_closure",
+    "transcript_zh": "钢琴和弦还悬着，不解决，这是Cloudyな午後教给我们的。\n\nシングル・アゲイン把那口悬浮语法从洛杉矶带回东京，Fantasy用同一把嗓子把能量调到刚刚好，这件外套经过四十年的穿戴，已经无法脱下，因为它早已变成皮肤。",
+    "transcript_en": "The piano chord is still hanging. Still not resolving. Cloudyな午後taught us that.\n\nシングル・アゲイン (Single Again) carried the suspended grammar from Los Angeles back to Tokyo.\n\nFantasy dialed the energy to exactly the right level, in the same voice.\n\nThis coat, after forty years of wearing, can no longer be taken off. Because it became skin a long time ago.",
+    "transcript_zh_status": "missing",
+    "transcript_en_status": "complete",
+    "narrator_persona_zh": null,
+    "narrator_persona_en": null,
+    "fusion_audio_url": "/audio_fusion/ep5/18_closing.mp3"
+  }
+]

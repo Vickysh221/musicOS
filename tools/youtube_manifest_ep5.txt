@@ -1,0 +1,55 @@
+# YouTube fetch manifest for ep5 — 17 tracks (translation_aesthetic / 中原めいこ Cloudyな午後)
+# Format: <video_id>|<filename_stem>
+# Run: python3 -m tools.fetch_audio_youtube tools/youtube_manifest_ep5.txt
+# Output dir: musicos-exhibition/public/audio/ep5/
+
+# 01 James Taylor — Fire and Rain (1970) — Rhino/Warner official audio
+EbD7lfrsY2s|ep5/01_james-taylor_fire-and-rain
+
+# 02 Carole King — It's Too Late (1971) — CaroleKingVEVO official
+VkKxmnrRVHo|ep5/02_carole-king_its-too-late
+
+# 03 Boz Scaggs — Lowdown (1976) — BozScaggsVEVO official audio
+I-hKBmTAADo|ep5/03_boz-scaggs_lowdown
+
+# 04 Steely Dan — Deacon Blues (1977) — Steely Dan Topic auto-upload
+OyCDicG0tDs|ep5/04_steely-dan_deacon-blues
+
+# 05 Toto — Georgy Porgy (1978) — TotoVEVO official
+EWIgEtkE3GA|ep5/05_toto_georgy-porgy
+
+# 06 大瀧詠一 — カナリア諸島にて (1981) — Eiichi Ohtaki Topic auto-upload
+artb6vftPRg|ep5/06_otaki-eiichi_kanaria-shoto-nite
+
+# 07 山下達郎 — LOVELAND ISLAND (1982) — fan upload (official channel only has 2:45 promo clip)
+nO5z8CsxRuA|ep5/07_yamashita-tatsuro_loveland-island
+
+# 08 竹内まりや — シングル・アゲイン (1987) — official artist channel (live 2014, no studio upload)
+fb8-I8vle9s|ep5/08_takeuchi-mariya_single-again
+
+# 09 角松敏生 — ANKLET (1984) — fan upload (no Topic upload available)
+9HeIctVxzPI|ep5/09_kadomatsu-toshiki_anklet
+
+# 10 稲垣潤一 — 夏のクラクション (1983) — Junichi Inagaki Topic auto-upload
+8I6PQl2BELw|ep5/10_inagaki-junichi_natsu-no-kurakushon
+
+# 11 ラ・ムー — Late Night Heartache (1988) — RA MU Topic auto-upload
+OYwozLG75ac|ep5/11_ra-mu_late-night-heartache
+
+# 12 杏里 — SHYNESS BOY (1983) — ANRI Topic auto-upload
+50qu96dvhH8|ep5/12_anri_shyness-boy
+
+# 13 濱田金吾 — Bye Bye Mrs. December (1982) — Kingo Hamada Topic auto-upload
+vJKF_apMgcc|ep5/13_hamada-kingo_bye-bye-mrs-december
+
+# 14 中原めいこ — Fantasy (1983) — Meiko Nakahara Topic auto-upload
+CMZRJb1jxzE|ep5/14_nakahara-meiko_fantasy
+
+# 15 中原めいこ — Cloudyな午後 (1982) — Meiko Nakahara Topic auto-upload
+2FAcFaIHaW0|ep5/15_nakahara-meiko_cloudy-na-gogo
+
+# 16 Ginger Root — Loretta (2021) — official artist channel (music video)
+u-WTfP3WJc4|ep5/16_ginger-root_loretta
+
+# 17 RYUSENKEI — 3号线 (2021) — RYUSENKEI Topic auto-upload
+JaXrPmi1aQQ|ep5/17_ryusenkei_san-hao-xian

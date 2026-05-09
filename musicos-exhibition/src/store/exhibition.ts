@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import type { Exhibit } from '../types.js';
 import { loadExhibition } from '../lib/load-exhibition.js';
+import { EPISODES } from '../lib/episodes.js';
 
 function playableExhibits(exhibits: Exhibit[]): Exhibit[] {
   return exhibits
@@ -64,10 +65,13 @@ export const useExhibition = create<ExhibitionStore>((set, get) => ({
   load: async (episodeId: string) => {
     const current = get().episodeId;
     if (current === episodeId && get().exhibits.length > 0) return;
+    const meta = EPISODES.find((e) => e.id === episodeId);
+    const defaultLanguage = meta?.defaultLanguage ?? 'zh';
     // Reset playback when switching episodes
     set({
       exhibits: [],
       episodeId,
+      language: defaultLanguage,
       playingPosition: null,
       isPlaying: false,
       currentTime: 0,

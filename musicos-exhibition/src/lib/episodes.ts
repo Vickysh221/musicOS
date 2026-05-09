@@ -6,6 +6,7 @@ export interface EpisodeMeta {
   anchor: string;
   focus: string;
   year: string;
+  defaultLanguage?: 'zh' | 'en';
 }
 
 export const EPISODES: EpisodeMeta[] = [
@@ -44,5 +45,15 @@ export const EPISODES: EpisodeMeta[] = [
     anchor: 'Dorantes',
     focus: 'translation_aesthetic',
     year: '1909–2024',
+  },
+  {
+    id: 'ep5',
+    number: 5,
+    titleZh: 'Cloudyな午後 — 基因穿外套',
+    titleEn: 'Translation Aesthetic — City Pop',
+    anchor: '中原めいこ',
+    focus: 'translation_aesthetic',
+    year: '1970–2021',
+    defaultLanguage: 'en',
   },
 ];
