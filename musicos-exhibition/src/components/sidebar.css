@@ -140,13 +140,13 @@
     bottom: auto;
     width: auto;
     height: 40px;
-    background: rgba(20, 20, 20, 0.55);
-    border-radius: 20px;
-    backdrop-filter: blur(18px) saturate(140%);
-    -webkit-backdrop-filter: blur(18px) saturate(140%);
-    box-shadow:
-      0 1px 0 rgba(255, 255, 255, 0.08) inset,
-      0 6px 24px rgba(0, 0, 0, 0.35);
+    /* Collapsed: no pill background — the hamburger + EP label sit naked
+     * over the focal scene so the icon's left edge lines up with the
+     * header's 12px gutter. The drawer surface only appears on --open. */
+    background: transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    box-shadow: none;
     transition:
       width 0.25s cubic-bezier(0.4, 0, 0.2, 1),
       height 0.25s cubic-bezier(0.4, 0, 0.2, 1),
@@ -189,10 +189,12 @@
     width: auto;
     height: 40px;
     margin-top: 0;
-    padding: 0 16px 0 12px;
+    /* No left padding — sidebar already sits at left:12px, so the icon's
+     * left edge lands on the same 12px gutter as the title/transcript. */
+    padding: 0 16px 0 0;
     gap: 10px;
     flex-shrink: 0;
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(255, 255, 255, 0.62);
   }
   .sidebar__toggle-label {
     display: inline-block;
@@ -200,7 +202,7 @@
     font-weight: 600;
     font-size: 14px;
     letter-spacing: 0.04em;
-    color: rgba(255, 255, 255, 0.92);
+    color: rgba(255, 255, 255, 0.62);
   }
   .sidebar__nav {
     flex-direction: column;

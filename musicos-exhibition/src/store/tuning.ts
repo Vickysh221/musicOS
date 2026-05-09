@@ -70,7 +70,7 @@ export const TUNING_DEFAULTS: TuningParams = {
   playingOffsetX: -112,
   playingOffsetY: -169,
   focalDiscSize: 268,
-  focalStageY: 58,
+  focalStageY: 56,
   verticalSpacing: 138,
   verticalDepth: 87,
   verticalShrink: 0.04,
@@ -100,6 +100,6 @@ export const useTuning = create<TuningStore>()(
       reset: () => set({ ...TUNING_DEFAULTS, panelOpen: true }),
       togglePanel: () => set((s) => ({ panelOpen: !s.panelOpen })),
     }),
-    { name: 'musicos-tuning-v6' },
+    { name: 'musicos-tuning-v7' },
   ),
 );

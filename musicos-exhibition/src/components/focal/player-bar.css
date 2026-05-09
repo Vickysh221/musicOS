@@ -9,7 +9,7 @@
   left: 50%;
   bottom: calc(env(safe-area-inset-bottom, 0px) + 24px);
   transform: translateX(-50%);
-  width: min(460px, calc(100% - 48px));
+  width: min(460px, calc(100% - 24px));
   display: flex;
   align-items: center;
   gap: 12px;
@@ -54,6 +54,19 @@
   background: rgba(255, 255, 255, 0.22);
   cursor: pointer;
   box-shadow: inset 0 0.5px 0.5px rgba(255, 255, 255, 0.45);
+  /* Prevent the page from scrolling when the user drags on the track on
+   * touch devices — the pointer-move handler needs to drive seek instead. */
+  touch-action: none;
+}
+/* Invisible hit-area extender — bumps the vertical pointer target from 4px
+ * up to ~36px (the capsule is 42px tall) so the bar is comfortable to grab
+ * and drag without resizing the visible track. Children that explicitly
+ * sit on top (the fill) keep their own bounds; the pseudo only widens the
+ * empty space around the visual bar. */
+.player-bar__track::before {
+  content: '';
+  position: absolute;
+  inset: -16px 0;
 }
 .player-bar__fill {
   position: absolute;

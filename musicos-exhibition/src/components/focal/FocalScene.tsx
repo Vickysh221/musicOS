@@ -29,7 +29,7 @@ import type { CardTransform } from '../timeline/timeline-keyframes.js';
 import type { TrackExhibit } from '../../types.js';
 import './focal-scene.css';
 
-const RESUME_REWIND_SEC = 300; // tap-back resumes 5 minutes before saved breakpoint
+const RESUME_REWIND_SEC = 10; // tap-back resumes 10 seconds before saved breakpoint
 const POPUP_IDLE_REVERT_MS = 5000;
 const ACTIVITY_EVENTS = ['pointerdown', 'keydown', 'wheel', 'touchstart'] as const;
 
@@ -227,9 +227,13 @@ export function FocalScene() {
 
   // Jump to a related song via arc or subtitle pill. Captures the song we're
   // leaving (and its current playback time) as the 1-level back anchor.
+  // Connection-driven nav also collapses the transcript — paragraph rollover
+  // and natural advance both preserve the user's expanded state, but
+  // explicit jumps via a connection reset to the clamped 2-line view.
   const goToTrack = (target: number) => {
     if (target === currentPosition) return;
     setPreviousNav({ position: currentPosition, time: currentTime });
+    setSubtitleExpanded(false);
     play(target);
   };
 
@@ -242,6 +246,7 @@ export function FocalScene() {
     if (!previousNav) return;
     const { position, time } = previousNav;
     setPreviousNav(null);
+    setSubtitleExpanded(false);
     play(position);
     seekTo(Math.max(0, time - RESUME_REWIND_SEC));
   };

@@ -20,7 +20,6 @@ const DEFAULT_TRANSITION: Transition = { type: 'spring', stiffness: 220, damping
 
 export function FocalDisc({ track, transform, zIndex, isFocal, size, playing = false, onClick, transition }: Props) {
   const { x, y, z, rotX, rotY, rotZ, opacity, scale } = transform;
-  const isHearted = track.red_heart_tier === 'hit';
   const styleVars = size != null ? { ['--disc-size' as string]: `${size}px` } : undefined;
   const className = [
     'focal-disc',
@@ -53,14 +52,7 @@ export function FocalDisc({ track, transform, zIndex, isFocal, size, playing = f
       {isFocal && <div className="focal-disc__shimmer" aria-hidden="true" />}
       {isFocal && (
         <div className="focal-disc__label">
-          <div className="focal-disc__song-row">
-            <span className="focal-disc__song">{track.song}</span>
-            {isHearted && (
-              <span className="focal-disc__heart" aria-label="Red heart">
-                ♥
-              </span>
-            )}
-          </div>
+          <span className="focal-disc__song">{track.song}</span>
           <span className="focal-disc__artist">{track.artist}</span>
         </div>
       )}

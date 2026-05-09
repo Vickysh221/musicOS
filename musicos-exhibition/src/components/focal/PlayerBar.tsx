@@ -1,3 +1,4 @@
+import { useRef } from 'react';
 import { useExhibition } from '../../store/exhibition.js';
 import './liquid-glass.css';
 import './player-bar.css';
@@ -25,16 +26,30 @@ export function PlayerBar({ onListToggle, listOpen }: Props) {
   const pct = duration > 0 ? Math.min(1, currentTime / duration) : 0;
   const remaining = Math.max(0, duration - currentTime);
 
+  const trackRef = useRef<HTMLDivElement>(null);
+  const seekFromClientX = (clientX: number) => {
+    const el = trackRef.current;
+    if (!el || duration <= 0) return;
+    const rect = el.getBoundingClientRect();
+    const ratio = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+    seekTo(ratio * duration);
+  };
+
   return (
     <div className="player-bar">
       <div className="player-bar__progress lg-surface">
         <span className="player-bar__time player-bar__time--current">{fmt(currentTime)}</span>
         <div
+          ref={trackRef}
           className="player-bar__track"
-          onClick={(e) => {
-            const rect = (e.currentTarget as HTMLDivElement).getBoundingClientRect();
-            const t = ((e.clientX - rect.left) / rect.width) * duration;
-            seekTo(Math.max(0, t));
+          onPointerDown={(e) => {
+            e.currentTarget.setPointerCapture(e.pointerId);
+            seekFromClientX(e.clientX);
+          }}
+          onPointerMove={(e) => {
+            // Only seek while dragging — buttons === 0 means hovering, not pressed.
+            if (e.buttons === 0) return;
+            seekFromClientX(e.clientX);
           }}
           role="slider"
           aria-valuemin={0}

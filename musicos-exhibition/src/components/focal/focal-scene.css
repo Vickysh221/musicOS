@@ -12,8 +12,9 @@
   right: 0;
   top: 0;
   /* padding-top clears the floating sidebar toggle pill (40px tall at top:
-   * env+12px), leaving ~24px breathing room before the title. */
-  padding: calc(env(safe-area-inset-top, 0px) + 76px) 30px 0;
+   * env+12px), leaving ~24px breathing room before the title. Horizontal
+   * 12px aligns with the floating sidebar pill (left: 12px). */
+  padding: calc(env(safe-area-inset-top, 0px) + 76px) 12px 0;
   z-index: 20;
   max-width: 460px;
   margin: 0 auto;

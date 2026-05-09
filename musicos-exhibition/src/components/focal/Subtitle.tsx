@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { mentionColor } from '../../lib/mention-colors.js';
 import './subtitle.css';
@@ -85,12 +84,10 @@ export function Subtitle({
   const text = current ?? '';
   const segs = buildSegments(text, callbacks);
 
-  // Auto-collapse whenever the paragraph changes — entering a new paragraph
-  // should always start from the 2-line clamped state. Users open the panel
-  // explicitly via the chevron when they want to read the full paragraph.
-  useEffect(() => {
-    onExpandedChange(false);
-  }, [current, onExpandedChange]);
+  // Expanded state is fully owned by the parent. Paragraph rollover within
+  // the same track AND natural track advance both preserve the user's
+  // expand/collapse choice. The parent collapses explicitly only when the
+  // user navigates via a connection (pill/arc click or back-disc).
 
   return (
     <div className="subtitle">
