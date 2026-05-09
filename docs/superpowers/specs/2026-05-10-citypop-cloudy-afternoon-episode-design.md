@@ -21,13 +21,13 @@
 ### 第一幕：气从哪里来（上行轴，西方源头）
 1970s 加州录音室孕育了一套"呼吸美学"：副歌前的停顿、人声与空白的关系、和弦色彩里的悬浮感。Carole King、James Taylor 建立了人声呼吸的位置感；Steely Dan 把这套语法冷却进精密的录音室工艺；Toto 的 session 乐手网络成为把这套语法物理运输到日本的载体。
 
-### 枢纽时刻：洛杉矶录音（1977–1981）
-日本各主要厂牌（Alfa Records、Air Records 等）系统性安排艺人赴洛杉矶录音，部分与 Toto 成员或同圈 session 乐手合作。这不是"影响"，是字面意义上同一个棚、同一台压缩机、同一批手。大瀧詠一是日本侧最早主动研究并传导这套语法的人物。
+### 枢纽时刻：同一间录音棚（1980）
+不是"影响"，是字面意义上同一个棚、同一台压缩机、同一批手——可查证的具体案例：竹内まりや *Miss M*（1980）在洛杉矶 Monterrey Sound Studios 录制，制作人 David Foster，鼓手 Jeff Porcaro、吉他 Steve Lukather、贝斯 David Hungate 三位 Toto 核心成员出现在 liner notes 里（来源：Discogs + SessionDays 档案）。这张专辑是西方声音语法物理进入 City Pop 的载体。大瀧詠一走的是另一条路：他没有去洛杉矶，而是在东京把美国流行乐研究到可以从内部复制——他是翻译者，不是合作者。
 
 ### 第二幕：外套各自改了版型（横向轴，City Pop 同代人）
 每位日本艺人拿走了外套的不同那一层：
 - **山下達郎**：录音室声学，精密度最高，最接近 Toto 的工作方式
-- **竹内まりや**：人声呼吸的位置，最贴近 Carole King 原型
+- **竹内まりや**：枢纽人物——她的 Miss M (1980) 是唯一可查证的"Toto 乐手进日本录音棚"案例；她同时也是把 Carole King 人声呼吸位置带进 City Pop 的人
 - **角松敏生**：和声编排，AOR 的日本极致版
 - **杏里**：节奏骨架，流行化处理
 - **中森明菜**：戏剧性留白，idol 路线里最接近 City Pop 气质的时期
@@ -46,12 +46,12 @@
 | 02 | James Taylor | Fire and Rain | Sweet Baby James (1970) | 上行 | 人声呼吸与空白的位置关系 | ○ |
 | 03 | Steely Dan | Deacon Blues | Aja (1977) | 上行 | 和弦色彩 + 录音室冷静感 | ○ |
 | 04 | Toto | Georgy Porgy | Toto (1978) | 上行 | 同一批乐手出现在日本 liner notes，枢纽证物 | ○ |
-| 05 | 大瀧詠一 | カナリア諸島にて | ロング・バケイション (1981) | 上行/枢纽 | 主动把西方语法带进日本的传导者 | ✅ |
-| 06 | 山下達郎 | LOVELAND ISLAND | FOR YOU (1982) | 横向 | 录音室声学，精密度最高 | ✅ |
-| 07 | 竹内まりや | シングル・アゲイン | REQUEST (1987) | 横向 | 人声呼吸位置，最贴近 Carole King | ✅ |
+| 05 | 大瀧詠一 | カナリア諸島にて | ロング・バケイション (1981) | 上行 | 东京内部翻译者：没去洛杉矶，把美国流行从内部复制出来 | ✅ |
+| 06 | 山下達郎 | LOVELAND ISLAND | FOR YOU (1982) | 横向 | 录音室声学，精密度最高，多源确认受 Steely Dan 深度影响 | ✅ |
+| 07 | 竹内まりや | シングル・アゲイン | REQUEST (1987) | 横向/枢纽 | 枢纽人物：叙事回溯 Miss M (1980) 洛杉矶录音，Toto 三人在 liner notes | ✅ |
 | 08 | 角松敏生 | ANKLET | Touch AND GO (1984) | 横向 | 和声编排，AOR 日本极致版 | ✅ |
 | 09 | 杏里 | SHYNESS BOY | BI·KI·NI (1983) | 横向 | 节奏骨架，流行化处理 | ✅ |
-| 10 | 中森明菜 | スローモーション | debut single (1982) | 横向 | 戏剧性留白，idol 路线里最 City Pop | ○ |
+| 10 | 中森明菜 | 北ウィング | 北ウィング (1984) | 横向 | 城市感最完整的一面，idol 路线里留白用得最精准 | ○ |
 | 11 | 濱田金吾 | Bye Bye Mrs. December | MIDNIGHT CRUISIN' (1982) | 横向 | 城市深夜质感，最接近西方原版气氛 | ✅ |
 | 12 | 中原めいこ | Fantasy | ファンタジー (1983) | anchor 铺垫 | anchor 的另一个形状，同一把声音 | ✅ |
 | 13 | 中原めいこ | Cloudyな午後 | Happy Birthday, Love for you (1982) | **anchor** | **全集高光，外套变成皮肤** | ✅ |
@@ -77,11 +77,11 @@
 
 需要在 map 展开时查证的核心事实：
 
-1. Toto 成员（Steve Lukather / David Paich / Jeff Porcaro）是否确实出现在具体日本 City Pop 唱片的录音人员名单中——需要 ≥2 独立来源
-2. 大瀧詠一 ロング・バケイション 的制作背景与西方声音参照文献
-3. 山下達郎对 Steely Dan 影响的第一手表述（访谈/笔记）
-4. 中森明菜 スローモーション 的编曲师及制作背景
-5. 中原めいこ Cloudyな午後 的制作背景（专辑、编曲师、录音地点）
+1. **已核实**：竹内まりや Miss M (1980)，Toto 三人（Porcaro / Lukather / Hungate）+ David Foster，洛杉矶 Monterrey Sound Studios — Discogs + SessionDays 档案确认
+2. 大瀧詠一 ロング・バケイション 的制作背景：确认为日本国内制作（Happy End 旧成员），需查证他研究美国流行乐的第一手文献
+3. 山下達郎对 Steely Dan 影响的第一手表述（访谈/笔记）——多源描述他为"日本的 Steely Dan"，需找具体访谈
+4. 中森明菜 北ウィング (1984) 的编曲师及制作背景
+5. 中原めいこ Cloudyな午後 的制作背景（编曲师、录音地点）
 
 所有 fact 级声明需 ≥2 独立来源，至少 1 个 Tier 1–2（参见 sourcing principles）。
 
