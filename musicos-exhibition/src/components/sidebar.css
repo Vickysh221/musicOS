@@ -148,18 +148,27 @@
     -webkit-backdrop-filter: none;
     box-shadow: none;
     transition:
+      top 0.25s cubic-bezier(0.4, 0, 0.2, 1),
+      left 0.25s cubic-bezier(0.4, 0, 0.2, 1),
       width 0.25s cubic-bezier(0.4, 0, 0.2, 1),
       height 0.25s cubic-bezier(0.4, 0, 0.2, 1),
-      border-radius 0.25s;
+      border-radius 0.25s,
+      padding 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .sidebar--open {
-    width: min(260px, calc(100vw - 24px));
-    height: auto;
-    max-height: calc(100dvh - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px) - 24px);
-    border-radius: 18px;
-    /* Open drawer is a liquid-glass surface so the focal-scene title +
-     * transcript behind it stay legible at their original positions. The
-     * closed pill keeps the darker tint above for icon contrast. */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100dvh;
+    max-height: none;
+    border-radius: 0;
+    /* Drawer goes edge-to-edge; padding keeps the hamburger+EP005 anchored
+     * at viewport (12, env-top + 12) so its absolute position matches the
+     * collapsed state, while the items below inherit the 12px gutter. */
+    padding:
+      calc(env(safe-area-inset-top, 0px) + 12px)
+      12px
+      env(safe-area-inset-bottom, 0px);
     background:
       linear-gradient(
         180deg,
@@ -169,9 +178,7 @@
       );
     backdrop-filter: blur(28px) saturate(160%);
     -webkit-backdrop-filter: blur(28px) saturate(160%);
-    box-shadow:
-      inset 0 1px 0 rgba(255, 255, 255, 0.18),
-      0 10px 28px rgba(0, 0, 0, 0.4);
+    box-shadow: none;
   }
   .sidebar--open .sidebar__item {
     color: rgba(255, 255, 255, 0.7);
@@ -194,6 +201,11 @@
     padding: 0 16px 0 0;
     gap: 10px;
     flex-shrink: 0;
+    /* Stretch + inherited justify-content:center would re-center the icon
+     * inside the wider open drawer, shifting EP005 rightward. Pin it left
+     * so its absolute screen position matches the collapsed state. */
+    align-self: flex-start;
+    justify-content: flex-start;
     color: rgba(255, 255, 255, 0.62);
   }
   .sidebar__toggle-label {
@@ -206,19 +218,27 @@
   }
   .sidebar__nav {
     flex-direction: column;
-    padding: 4px 0 8px;
-    gap: 2px;
+    padding: 12px 0 16px;
+    gap: 4px;
     display: none;
   }
   .sidebar--open .sidebar__nav { display: flex; }
   .sidebar__item {
     border-left: 2px solid transparent;
     border-bottom: none;
-    padding: 8px 0;
+    padding: 14px 0;
   }
   .sidebar__item--active { border-left-color: #f6f6f4; }
-  .sidebar__num { width: 52px; }
+  .sidebar__num {
+    width: 64px;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+  }
+  .sidebar__title-zh { font-size: 18px; }
+  .sidebar__title-en { font-size: 14px; }
+  .sidebar__anchor { font-size: 12px; margin-top: 4px; }
   .sidebar__info {
+    gap: 3px;
     opacity: 0;
     transform: translateX(-8px);
     transition: opacity 0.2s 0.05s, transform 0.2s 0.05s;

@@ -33,6 +33,37 @@
   opacity: 0.8;
   color: #fff;
   letter-spacing: 0;
+  /* Single line; hide overflow so the marquee can scroll inside without
+   * pushing the disc/transcript layout. */
+  white-space: nowrap;
+  overflow: hidden;
+}
+.focal-scene__title-track {
+  display: inline-flex;
+  align-items: center;
+}
+.focal-scene__title-text {
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+/* When overflowing, the track holds two identical copies. Each copy carries
+ * its own trailing gap, so a -50% translateX shifts the second copy exactly
+ * onto the first copy's starting offset for a seamless loop. */
+.focal-scene__title--marquee .focal-scene__title-text {
+  padding-right: 2.5em;
+}
+.focal-scene__title--marquee .focal-scene__title-track {
+  animation: focal-title-marquee 18s linear infinite;
+  will-change: transform;
+}
+@keyframes focal-title-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .focal-scene__title--marquee .focal-scene__title-track {
+    animation: none;
+  }
 }
 .focal-scene__stage {
   position: absolute;

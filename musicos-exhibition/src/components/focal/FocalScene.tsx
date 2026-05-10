@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useExhibition } from '../../store/exhibition.js';
 import { useTuning } from '../../store/tuning.js';
@@ -242,6 +242,27 @@ export function FocalScene() {
   const episodeMeta = EPISODES.find((e) => e.id === episodeId);
   const epTitle = (language === 'en' ? episodeMeta?.titleEn : episodeMeta?.titleZh) ?? '';
 
+  // Title is constrained to a single line. When the rendered text exceeds
+  // the available header width we duplicate it and run a horizontal marquee
+  // so the full title can still be read; otherwise we leave it static.
+  const titleWrapRef = useRef<HTMLHeadingElement>(null);
+  const titleTextRef = useRef<HTMLSpanElement>(null);
+  const [titleOverflow, setTitleOverflow] = useState(false);
+  useLayoutEffect(() => {
+    const wrap = titleWrapRef.current;
+    const text = titleTextRef.current;
+    if (!wrap || !text) return;
+    const check = () => {
+      // 1px slack avoids flapping on sub-pixel layout rounding.
+      setTitleOverflow(text.scrollWidth > wrap.clientWidth + 1);
+    };
+    check();
+    const ro = new ResizeObserver(check);
+    ro.observe(wrap);
+    ro.observe(text);
+    return () => ro.disconnect();
+  }, [epTitle]);
+
   const focalTrack = useMemo(
     () => tracks.find((t) => t.position === currentPosition) ?? null,
     [tracks, currentPosition],
@@ -296,7 +317,17 @@ export function FocalScene() {
       <header
         className={`focal-scene__header${subtitleExpanded ? ' focal-scene__header--lifted' : ''}`}
       >
-        <h1 className="focal-scene__title">{epTitle}</h1>
+        <h1
+          ref={titleWrapRef}
+          className={`focal-scene__title${titleOverflow ? ' focal-scene__title--marquee' : ''}`}
+        >
+          <span className="focal-scene__title-track">
+            <span ref={titleTextRef} className="focal-scene__title-text">{epTitle}</span>
+            {titleOverflow && (
+              <span className="focal-scene__title-text" aria-hidden="true">{epTitle}</span>
+            )}
+          </span>
+        </h1>
         <Subtitle
           current={currentParagraph}
           callbacks={subtitleCallbacks}
