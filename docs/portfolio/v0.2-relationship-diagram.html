@@ -413,6 +413,56 @@
     margin: 0 auto;
   }
 
+  /* phone-sketch: stage 0–3 reuse the phone chrome with a sketch interior */
+  .phone-sketch-canvas {
+    position: absolute;
+    left: 14px; right: 14px;
+    top: 96px;
+    bottom: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .phone-sketch-canvas svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+    overflow: visible;
+  }
+  .phone-sketch-canvas .v01-list {
+    width: calc(100% - 8px);
+    max-width: none;
+    padding: 4px 0;
+    overflow: hidden;
+  }
+  .phone-sketch-canvas .v01-list .v01-row { gap: 8px; padding: 6px 8px; }
+  .phone-sketch-canvas .v01-list .v01-row .meta .t { font-size: 11.5px; }
+  .phone-sketch-canvas .v01-list .v01-row .meta .a { font-size: 10px; }
+
+  .phone-sketch-foot {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    padding: 11px 22px 16px;
+    font-family: -apple-system, "PingFang SC", sans-serif;
+    font-size: 11px;
+    line-height: 1.45;
+    color: var(--reject);
+    border-top: 1px solid rgba(255,255,255,0.04);
+    background: rgba(0,0,0,0.28);
+  }
+  .phone-sketch-foot.kept { color: var(--gold); }
+  .phone-sketch-foot .label {
+    display: block;
+    color: var(--dim);
+    font-family: ui-monospace, "SF Mono", monospace;
+    font-size: 9px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+  }
+  .phone-sketch-foot.kept .label { color: rgba(245,217,122,0.7); }
+
   .status {
     display: flex;
     justify-content: space-between;
@@ -586,6 +636,44 @@
       0 0 24px -4px rgba(245,217,122,0.4);
   }
   .bubble:hover { transform: translate(-50%, -50%) scale(1.04); }
+
+  /* arc-pill overlay: title-bands wrapping the focal disc */
+  .arc-pills-svg {
+    position: absolute;
+    inset: -22px;
+    pointer-events: none;
+    overflow: visible;
+  }
+  .arc-pills-svg .arc-pill {
+    opacity: 0;
+    transition: opacity 380ms var(--ease);
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  .arc-pills-svg .arc-pill.shown { opacity: 0.7; }
+  .arc-pills-svg .arc-pill.surfacing { opacity: 1; }
+  .arc-band {
+    fill: none;
+    stroke-width: 22;
+    stroke-linecap: round;
+    transition: stroke 360ms var(--ease), filter 360ms var(--ease);
+  }
+  .arc-band.warm  { stroke: rgba(196, 110, 114, 0.55); }
+  .arc-band.green { stroke: rgba(120, 138, 105, 0.50); }
+  .arc-pill.surfacing .arc-band {
+    stroke: rgba(245, 217, 122, 0.85);
+    filter: drop-shadow(0 0 8px rgba(245, 217, 122, 0.35));
+  }
+  .arc-text {
+    fill: rgba(240, 238, 232, 0.92);
+    font-family: -apple-system, "PingFang SC", sans-serif;
+    font-size: 9.5px;
+    font-weight: 500;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    dominant-baseline: middle;
+  }
+  .arc-pill.surfacing .arc-text { fill: #0a0a0c; font-weight: 600; }
 
   .player {
     position: absolute;
@@ -1012,9 +1100,22 @@
         </div>
       </div>
       <div class="stage-visual">
-        <div style="width:100%;max-width:320px;">
-          <div class="v01-list-label">EP001 · LIST VIEW</div>
-          <div class="v01-list" id="v01List"></div>
+        <div class="phone">
+          <div class="status">
+            <span>9:41</span>
+            <span style="font-family:ui-monospace,monospace;letter-spacing:0.05em;">●●●　●　▮</span>
+          </div>
+          <div class="ep-meta">
+            <div class="ep-id">EP001 · v0.1 · LIST</div>
+            <div class="ep-title" style="font-size:13px;line-height:1.4;margin-bottom:8px;">从 Miss You 听起，<br/>Bassline DNA 如何走上前台</div>
+          </div>
+          <div class="phone-sketch-canvas">
+            <div class="v01-list" id="v01List"></div>
+          </div>
+          <div class="phone-sketch-foot">
+            <span class="label">问题</span>
+            关系是隐含的，节目的结构被 UI 默认掉了。
+          </div>
         </div>
       </div>
     </div>
@@ -1035,7 +1136,16 @@
         </div>
       </div>
       <div class="stage-visual">
-        <div class="sketch-frame">
+        <div class="phone">
+          <div class="status">
+            <span>9:41</span>
+            <span style="font-family:ui-monospace,monospace;letter-spacing:0.05em;">●●●　●　▮</span>
+          </div>
+          <div class="ep-meta">
+            <div class="ep-id">EXPLORATION 01 · 砍掉</div>
+            <div class="ep-title" style="font-size:13px;line-height:1.4;margin-bottom:8px;">星系 — 每首歌一颗星，<br/>关系是连线</div>
+          </div>
+          <div class="phone-sketch-canvas">
           <svg viewBox="0 0 270 480">
             <defs>
               <pattern id="gx-cov-missyou" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -1089,6 +1199,11 @@
             <text class="sketch-annot" x="6" y="265">连线交叉</text>
             <text class="sketch-annot dim" x="20" y="460">6 nodes · 10 edges · phone width</text>
           </svg>
+          </div>
+          <div class="phone-sketch-foot">
+            <span class="label">为什么砍</span>
+            视觉密度对，认知姿势错。听众被变成了图书馆员。
+          </div>
         </div>
       </div>
     </div>
@@ -1109,8 +1224,17 @@
         </div>
       </div>
       <div class="stage-visual">
-        <div class="sketch-frame" style="aspect-ratio: 4/3; max-width: 460px;">
-          <svg viewBox="0 0 460 340">
+        <div class="phone">
+          <div class="status">
+            <span>9:41</span>
+            <span style="font-family:ui-monospace,monospace;letter-spacing:0.05em;">●●●　●　▮</span>
+          </div>
+          <div class="ep-meta">
+            <div class="ep-id">EXPLORATION 02 · 砍掉</div>
+            <div class="ep-title" style="font-size:13px;line-height:1.4;margin-bottom:8px;">图谱 — 横轴时间、纵轴流派、<br/>箭头是引用</div>
+          </div>
+          <div class="phone-sketch-canvas">
+          <svg viewBox="0 0 320 460">
             <defs>
               <pattern id="gr-cov-missyou" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
                 <image href="../../musicos-exhibition/public/covers/06_the-rolling-stones_miss-you.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="xMidYMid slice"/>
@@ -1135,42 +1259,55 @@
               </marker>
             </defs>
 
-            <!-- axes -->
-            <line class="graph-axis" x1="44" y1="290" x2="430" y2="290"/>
-            <line class="graph-axis" x1="44" y1="40"  x2="44"  y2="290"/>
-            <!-- x ticks -->
-            <text class="graph-tick" x="44"  y="306" text-anchor="start">1968</text>
-            <text class="graph-tick" x="160" y="306" text-anchor="middle">1974</text>
-            <text class="graph-tick" x="280" y="306" text-anchor="middle">1980</text>
-            <text class="graph-tick" x="430" y="306" text-anchor="end">1988</text>
-            <!-- y labels -->
-            <text class="graph-tick" x="38" y="100" text-anchor="end">BLUES</text>
-            <text class="graph-tick" x="38" y="170" text-anchor="end">FUNK</text>
-            <text class="graph-tick" x="38" y="240" text-anchor="end">PUNK</text>
+            <!-- axes (portrait): x=time horizontal at bottom, y=genre vertical at left -->
+            <line class="graph-axis" x1="56" y1="400" x2="296" y2="400"/>
+            <line class="graph-axis" x1="56" y1="80"  x2="56"  y2="400"/>
 
-            <!-- arrows (drawn first so cover-nodes overdraw the line tails) -->
-            <path class="graph-arrow" d="M 80 170 Q 160 130 240 170" marker-end="url(#arrh)"/>
-            <path class="graph-arrow" d="M 240 170 Q 257 152 275 170" marker-end="url(#arrh)"/>
-            <path class="graph-arrow" d="M 140 100 Q 200 130 275 170" marker-end="url(#arrh)"/>
-            <path class="graph-arrow" d="M 170 100 Q 250 160 330 240" marker-end="url(#arrh)"/>
-            <path class="graph-arrow" d="M 80 170 Q 110 130 140 100" marker-end="url(#arrh)"/>
+            <!-- x ticks -->
+            <text class="graph-tick" x="56"  y="416" text-anchor="start">1968</text>
+            <text class="graph-tick" x="136" y="416" text-anchor="middle">1974</text>
+            <text class="graph-tick" x="216" y="416" text-anchor="middle">1980</text>
+            <text class="graph-tick" x="296" y="416" text-anchor="end">1988</text>
+
+            <!-- y labels (genre rows) -->
+            <text class="graph-tick" x="50" y="124" text-anchor="end">BLUES</text>
+            <text class="graph-tick" x="50" y="244" text-anchor="end">FUNK</text>
+            <text class="graph-tick" x="50" y="364" text-anchor="end">PROG</text>
+
+            <!-- faint row guides -->
+            <line x1="56" y1="124" x2="296" y2="124" stroke="rgba(240,238,232,0.05)" stroke-width="1"/>
+            <line x1="56" y1="244" x2="296" y2="244" stroke="rgba(240,238,232,0.05)" stroke-width="1"/>
+            <line x1="56" y1="364" x2="296" y2="364" stroke="rgba(240,238,232,0.05)" stroke-width="1"/>
+
+            <!-- arrows: drawn first so cover-nodes overdraw line tails -->
+            <path class="graph-arrow" d="M 76 244 Q 130 200 184 244" marker-end="url(#arrh)"/>
+            <path class="graph-arrow" d="M 196 244 Q 210 230 224 244" marker-end="url(#arrh)"/>
+            <path class="graph-arrow" d="M 96 124 Q 160 180 224 244" marker-end="url(#arrh)"/>
+            <path class="graph-arrow" d="M 138 124 Q 180 240 232 364" marker-end="url(#arrh)"/>
+            <path class="graph-arrow" d="M 76 244 Q 80 180 96 124" marker-end="url(#arrh)"/>
 
             <!-- cover nodes -->
-            <circle cx="80"  cy="170" r="14" fill="url(#gr-cov-coldsweat)"       stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
-            <circle cx="140" cy="100" r="14" fill="url(#gr-cov-layla)"            stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
-            <circle cx="170" cy="100" r="14" fill="url(#gr-cov-stairway)"         stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
-            <circle cx="240" cy="170" r="14" fill="url(#gr-cov-stayinalive)"      stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
-            <circle cx="275" cy="170" r="16" fill="url(#gr-cov-missyou)"          stroke="rgba(245,217,122,0.65)" stroke-width="1.5"/>
-            <circle cx="330" cy="240" r="14" fill="url(#gr-cov-comfortablynumb)"  stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
+            <circle cx="76"  cy="244" r="14" fill="url(#gr-cov-coldsweat)"       stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
+            <circle cx="96"  cy="124" r="14" fill="url(#gr-cov-layla)"           stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
+            <circle cx="138" cy="124" r="14" fill="url(#gr-cov-stairway)"        stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
+            <circle cx="184" cy="244" r="14" fill="url(#gr-cov-stayinalive)"     stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
+            <circle cx="224" cy="244" r="16" fill="url(#gr-cov-missyou)"         stroke="rgba(245,217,122,0.65)" stroke-width="1.5"/>
+            <circle cx="232" cy="364" r="14" fill="url(#gr-cov-comfortablynumb)" stroke="rgba(240,238,232,0.25)" stroke-width="1"/>
 
-            <!-- legend callout -->
-            <rect class="graph-legend" x="320" y="32" width="118" height="46" rx="3"/>
-            <text class="graph-legend-text" x="328" y="48">图例 LEGEND</text>
-            <text class="graph-legend-text" x="328" y="62">▸ anchor</text>
-            <text class="graph-legend-text" x="328" y="74">→ borrowed-from</text>
-            <line x1="320" y1="55" x2="290" y2="55" stroke="rgba(196,110,114,0.4)" stroke-width="1" stroke-dasharray="2 2"/>
-            <text class="sketch-annot" x="220" y="58">用户得先学这个</text>
+            <!-- legend callout (top-right) -->
+            <rect class="graph-legend" x="186" y="32" width="120" height="40" rx="3"/>
+            <text class="graph-legend-text" x="194" y="46">图例 LEGEND</text>
+            <text class="graph-legend-text" x="194" y="58">▸ anchor · → ref</text>
+
+            <!-- "用户得先学这个" annotation pointing at legend -->
+            <line x1="186" y1="52" x2="148" y2="56" stroke="rgba(196,110,114,0.5)" stroke-width="1" stroke-dasharray="2 2"/>
+            <text class="sketch-annot" x="142" y="60" text-anchor="end">先学这个</text>
           </svg>
+          </div>
+          <div class="phone-sketch-foot">
+            <span class="label">为什么砍</span>
+            认知成本前置：图把听众变成读者，把节目变成展览。
+          </div>
         </div>
       </div>
     </div>
@@ -1191,7 +1328,16 @@
         </div>
       </div>
       <div class="stage-visual">
-        <div class="sketch-frame" style="max-width:320px;">
+        <div class="phone">
+          <div class="status">
+            <span>9:41</span>
+            <span style="font-family:ui-monospace,monospace;letter-spacing:0.05em;">●●●　●　▮</span>
+          </div>
+          <div class="ep-meta">
+            <div class="ep-id">EXPLORATION 03 · 砍掉</div>
+            <div class="ep-title" style="font-size:13px;line-height:1.4;margin-bottom:8px;">黑胶透出 — 当下封面之下，<br/>半透明叠着引用源</div>
+          </div>
+          <div class="phone-sketch-canvas">
           <svg viewBox="0 0 320 480" class="vinyl-svg">
             <defs>
               <pattern id="vb-cov-missyou" patternUnits="objectBoundingBox" patternContentUnits="objectBoundingBox" width="1" height="1">
@@ -1216,12 +1362,8 @@
               </radialGradient>
             </defs>
 
-            <!-- phone-frame chrome (dashed, sketch feel) -->
-            <rect x="22" y="20" width="276" height="440" rx="28"
-                  fill="none" stroke="rgba(240,238,232,0.16)" stroke-width="1" stroke-dasharray="3 4"/>
-
             <!-- ambient bleed wash behind everything -->
-            <rect x="22" y="20" width="276" height="440" rx="28" fill="url(#vb-bleed)"/>
+            <rect x="0" y="0" width="320" height="480" fill="url(#vb-bleed)"/>
 
             <!-- ghost-bubble: top (Layla) — bleeding through -->
             <g opacity="0.32">
@@ -1283,6 +1425,11 @@
 
             <text class="sketch-annot dim" x="22" y="470">现在播放的是哪一张，引用的又是哪一张</text>
           </svg>
+          </div>
+          <div class="phone-sketch-foot">
+            <span class="label">为什么砍</span>
+            模糊掉信息和装饰的边界。"看不懂"以"好看"的名义留下来，是欺骗。
+          </div>
         </div>
       </div>
     </div>
@@ -1293,11 +1440,11 @@
     <div class="stage-grid">
       <div class="stage-copy">
         <span class="stage-tag">落点 · 留下来的形态</span>
-        <h2>焦点圆盘 + 命中弧 + 封面环</h2>
+        <h2>焦点圆盘 + 命中弧 + 曲目弧</h2>
         <div class="stage-body">
           三种探索都失败在同一个地方：它们让"关系"成了一个需要被解读的图层。落点反过来：让关系跟着叙述长出来。
           <br/><br/>
-          屏幕中央始终是当下这首歌的圆盘封面，一道极细的进度弧绕着它走。当口播提到一首相关曲目，那首歌的封面以一个小圆环的形式从屏幕外缘淡入到焦点圆盘旁，像被句子吸出来的；同时字幕里那个词被点亮一拍。点击封面环或胶囊词，跳到那首歌。
+          屏幕中央始终是当下这首歌的圆盘封面，一道极细的进度弧绕着它走。当口播提到一首相关曲目，那一首的标题以一段弧形条带从盘外升起，贴着外圈，像被句子吸出来的；同时字幕里那个词被点亮一拍。点击曲目弧或胶囊词，跳到那首歌。封面环在这一版被刻意舍弃：盘外只留标题，画面更安静，焦点不被四枚小封面分摊。
         </div>
 
         <!-- substate tabs for landing -->
@@ -1351,9 +1498,25 @@
                 <div class="a">THE ROLLING STONES</div>
               </div>
 
-              <div class="bubble" id="bubble-b1" style="--x:-14%; --y:18%; background-image:url('../../musicos-exhibition/public/covers/02_derek-and-the-dominos_layla.jpg');"></div>
-              <div class="bubble" id="bubble-b2" style="--x:118%; --y:38%; background-image:url('../../musicos-exhibition/public/covers/07_pink-floyd_comfortably-numb.jpg');"></div>
-              <div class="bubble" id="bubble-b3" style="--x:108%; --y:96%; background-image:url('../../musicos-exhibition/public/covers/03_led-zeppelin_stairway-to-heaven.jpg');"></div>
+              <svg class="arc-pills-svg" viewBox="0 0 244 244">
+                <defs>
+                  <path id="arc-top"   d="M 47.4 33.1  A 116 116 0 0 1 196.6 33.1"/>
+                  <path id="arc-left"  d="M 40 204    A 116 116 0 0 1 6.5 112"/>
+                  <path id="arc-right" d="M 231 82.3  A 116 116 0 0 1 210.9 196.6"/>
+                </defs>
+                <g class="arc-pill" id="bubble-b1" data-pill="b1">
+                  <use href="#arc-top" class="arc-band warm"/>
+                  <text class="arc-text"><textPath href="#arc-top" startOffset="50%" text-anchor="middle">Layla</textPath></text>
+                </g>
+                <g class="arc-pill" id="bubble-b2" data-pill="b2">
+                  <use href="#arc-left" class="arc-band green"/>
+                  <text class="arc-text"><textPath href="#arc-left" startOffset="50%" text-anchor="middle">Comfortably Numb</textPath></text>
+                </g>
+                <g class="arc-pill" id="bubble-b3" data-pill="b3">
+                  <use href="#arc-right" class="arc-band green"/>
+                  <text class="arc-text"><textPath href="#arc-right" startOffset="50%" text-anchor="middle">Stairway to Heaven</textPath></text>
+                </g>
+              </svg>
             </div>
           </div>
 
@@ -1647,15 +1810,15 @@
   }
   landingTabs.forEach(t => t.addEventListener("click", () => applyLanding(t.dataset.sub)));
 
-  // pill / bubble click illustrates the binding
-  document.querySelectorAll("#subtitle .pill, #phone .bubble").forEach(el => {
+  // pill / arc-pill click illustrates the binding
+  document.querySelectorAll("#subtitle .pill, #phone .arc-pill").forEach(el => {
     el.addEventListener("click", () => {
       const id = el.dataset.pill || el.id.replace("bubble-", "");
-      document.querySelectorAll("#phone .bubble").forEach(b => b.classList.remove("surfacing"));
+      document.querySelectorAll("#phone .arc-pill").forEach(b => b.classList.remove("surfacing"));
       document.querySelectorAll("#subtitle .pill").forEach(p => p.classList.remove("lit"));
-      const bubble = document.getElementById("bubble-" + id);
+      const arc = document.getElementById("bubble-" + id);
       const pill = document.querySelector('#subtitle .pill[data-pill="'+id+'"]');
-      if (bubble) bubble.classList.add("shown", "surfacing");
+      if (arc) arc.classList.add("shown", "surfacing");
       if (pill) pill.classList.add("lit");
     });
   });
