@@ -93,8 +93,11 @@ def main() -> None:
                    help="re-synth even if output exists")
     p.add_argument("--only-position", type=int, action="append", default=[],
                    help="only synth this exhibit position; repeatable")
-    p.add_argument("--subtitle", action="store_true",
-                   help="request sentence-level timestamps; saves <stem>.subtitle.json next to mp3")
+    p.add_argument("--subtitle", action=argparse.BooleanOptionalAction, default=True,
+                   help="request sentence-level timestamps; saves <stem>.subtitle.json next to mp3 "
+                        "(default: on; pass --no-subtitle to disable). Sidecars are required by "
+                        "batch_fusion to emit fusion-aligned subtitles — without them the front-end "
+                        "falls back to char-count estimation and audio/text drift by seconds.")
     p.add_argument("--lang", default="zh", choices=["zh", "en"],
                    help="which transcript field to synthesize: zh (default) or en. "
                         "Bridge narration always uses bridge_narration_zh regardless of --lang.")

@@ -52,11 +52,17 @@ Pass `--only-position N` (repeatable) to re-synth a single exhibit.
 Each run appends to `episodes/audio/narration/synthesis_log.jsonl` with
 `usage_characters` (MiniMax billing unit, ≠ input chars).
 
-**Sentence-level timestamps (`--subtitle`):** add `--subtitle` to request
-MiniMax's native sentence-level timing. The TTS request sets
-`subtitle_enable: true` and the API returns a `subtitle_file` URL; we fetch
-it inline and write a sidecar `<stem>.subtitle.json` next to each
-narration mp3. Format is the raw MiniMax payload —
+**Sentence-level timestamps (`--subtitle`, default ON):** the script
+requests MiniMax's native sentence-level timing on every synthesis unless
+you pass `--no-subtitle`. The TTS request sets `subtitle_enable: true` and
+the API returns a `subtitle_file` URL; we fetch it inline and write a
+sidecar `<stem>.subtitle.json` next to each narration mp3.
+
+**These sidecars are required.** Without them, Step 4 cannot emit a
+fusion-aligned subtitle, and the front-end falls back to a
+character-count estimate that drifts by seconds across the music
+preroll/postroll and any pause in the narration. If you ever run with
+`--no-subtitle`, plan to re-synth before fusion. Format is the raw MiniMax payload —
 `[{text, time_begin, time_end, ...}]` with times in **milliseconds** in the
 **narration timeline** (t=0 at narration start). Step 4 reads these and
 emits a fusion-aligned variant.

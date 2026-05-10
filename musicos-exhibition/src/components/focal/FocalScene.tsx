@@ -214,7 +214,7 @@ export function FocalScene() {
   }, [arcPins, currentPosition, tracks]);
 
   const episodeMeta = EPISODES.find((e) => e.id === episodeId);
-  const epTitle = episodeMeta?.titleZh ?? '';
+  const epTitle = (language === 'en' ? episodeMeta?.titleEn : episodeMeta?.titleZh) ?? '';
 
   const focalTrack = useMemo(
     () => tracks.find((t) => t.position === currentPosition) ?? null,

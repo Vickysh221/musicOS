@@ -138,6 +138,20 @@
   white-space: nowrap;
   letter-spacing: -0.24px;
 }
+/* Frosted glass layer behind the song + artist text — blurs the spinning
+ * vinyl grooves under the label so the text reads cleanly without dimming
+ * the rest of the disc. Sits behind the spans via z-index: -1 (the label's
+ * translateX establishes a stacking context that contains it). */
+.focal-disc__label::before {
+  content: '';
+  position: absolute;
+  inset: -4px -10px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: -1;
+  pointer-events: none;
+}
 .focal-disc__song {
   font-weight: 400;
   font-size: 18.6px;

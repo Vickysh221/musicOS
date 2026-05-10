@@ -16,10 +16,27 @@
 }
 .subtitle__body {
   position: relative;
+  /* `isolation: isolate` creates a stacking context so the ::before glass
+   * layer can sit behind the text via z-index: -1 without escaping. */
+  isolation: isolate;
   display: block;
   white-space: pre-wrap;
   word-break: break-word;
   padding-right: 28px;
+}
+/* Frosted glass layer behind the transcript text — blurs the focal scene
+ * (background shader / disc) under the paragraph so the words read cleanly
+ * without darkening the whole header. Excludes the chevron lane so the
+ * collapse/expand button keeps a clear background. */
+.subtitle__body::before {
+  content: '';
+  position: absolute;
+  inset: -4px 28px -4px -8px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: -1;
+  pointer-events: none;
 }
 .subtitle__body--clamped .subtitle__text {
   display: -webkit-box;

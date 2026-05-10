@@ -415,6 +415,25 @@ make validate-episode SLUG=<slug>
 
 展览站读这一份 JSON 渲染（`musicos-exhibition/src/`）。
 
+### Step 3b：callback alias 表（前端 highlight 命中表）
+
+**为什么需要**：FocalScene 的回响弧 (`MentionArcs`) + transcript pill 高亮，由 `src/lib/callback-phrase.ts → findCallbackPhrases` 驱动。该函数只在当前段旁白文本里出现 candidate 的 alias 子串时才点亮。Auto-derived alias 仅有 `track.artist` + `track.song`，对以下场景不够：
+
+1. 双语 episode（EN narration + 日文 song title），EN 旁白用 Romaji 引用 → kanji `track.song` 匹配不上
+2. 旁白用专辑名（"Aja", "Silk Degrees"）、人名（"Jeff Porcaro"）、合作棚（"Miss M"）等非曲名载体引用前作
+3. 多曲目共享同一艺人（如 EP3 Black Sabbath × 4，EP5 中原めいこ × 2），artist 别名按"最早出现"约定指向第一首，其余靠 song title 别名消歧
+
+**怎么做**：
+
+1. 写 `musicos-exhibition/src/data/ep<N>-aliases.ts`，导出 `EP<N>_ALIASES: Record<number, string[]>`，键是 position，值是该 position 的别名子串列表（包含 ZH 全名、EN Romaji、专辑名、关键人名、合作棚、其他载体）
+2. 在 `musicos-exhibition/src/data/episode-aliases.ts` 注册 `ep<N>: EP<N>_ALIASES`
+3. 跑 `python3 tools/ep5_callback_audit.py`（按 ep5 模板复制改路径）→ 产出 `docs/ep<N>_callback_test.md`，标注每条 (focal, candidate) 在 ZH/EN transcript 里是否命中
+4. 对每条 SILENT 行做选择：(a) 删 archived_weak_connection（这条 arc 不该存在）/(b) 在 narration 里加显式提名 / (c) 在 alias 表里加新别名
+
+**验证**：FIRES 行总数 / 总 candidate 对数 应 ≥ 80%。SILENT 行必须显式归类后保留。
+
+**参考实现**：`tools/ep5_callback_audit.py`，`musicos-exhibition/src/data/ep5-aliases.ts`，`docs/ep5_callback_test.md`。
+
 ### 音频融合
 
 `docs/episode_audio_pipeline.md` 定义独立的运行手册：

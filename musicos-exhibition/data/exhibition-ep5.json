@@ -191,6 +191,10 @@
       {
         "connection_id": "conn_003_to_013_translation",
         "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_001_to_003_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
       }
     ],
     "connections_in": [
@@ -275,6 +279,10 @@
       {
         "connection_id": "conn_004_to_009_translation",
         "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_002_to_004_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
       }
     ],
     "connections_in": [
@@ -346,6 +354,10 @@
       {
         "connection_id": "conn_003_to_005_direct_influence",
         "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_004_to_005_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
       }
     ],
     "connections_in": [
@@ -407,6 +419,10 @@
     "archived_weak_connections": [
       {
         "connection_id": "conn_001_to_006_direct_influence",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_002_to_006_direct_influence",
         "archive_reason": "redundant_with_strong"
       }
     ],
@@ -473,6 +489,10 @@
       },
       {
         "connection_id": "conn_007_to_015_genealogical_descent",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_003_to_007_direct_influence",
         "archive_reason": "redundant_with_strong"
       }
     ],
@@ -552,6 +572,10 @@
       },
       {
         "connection_id": "conn_008_to_010_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_004_to_008_direct_influence",
         "archive_reason": "redundant_with_strong"
       }
     ],
@@ -633,6 +657,10 @@
       {
         "connection_id": "conn_004_to_009_translation",
         "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_007_to_009_direct_influence",
+        "archive_reason": "redundant_with_strong"
       }
     ],
     "connections_in": [
@@ -694,6 +722,10 @@
     "archived_weak_connections": [
       {
         "connection_id": "conn_010_to_011_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_007_to_010_direct_influence",
         "archive_reason": "redundant_with_strong"
       }
     ],
@@ -884,6 +916,10 @@
       },
       {
         "connection_id": "conn_013_to_015_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_008_to_013_same_era_dialogue",
         "archive_reason": "redundant_with_strong"
       }
     ],
@@ -1128,6 +1164,14 @@
       {
         "connection_id": "conn_016_to_017_same_era_dialogue",
         "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_007_to_016_genealogical_descent",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_008_to_016_genealogical_descent",
+        "archive_reason": "redundant_with_strong"
       }
     ],
     "connections_in": [
@@ -1189,6 +1233,10 @@
     "archived_weak_connections": [
       {
         "connection_id": "conn_016_to_017_same_era_dialogue",
+        "archive_reason": "redundant_with_strong"
+      },
+      {
+        "connection_id": "conn_007_to_017_genealogical_descent",
         "archive_reason": "redundant_with_strong"
       }
     ],
