@@ -35,138 +35,169 @@
     color: var(--ink);
     font-family: -apple-system, "PingFang SC", "Helvetica Neue", system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    overscroll-behavior: none;
   }
-  .wrap { max-width: 1200px; margin: 0 auto; padding: 64px 32px 96px; }
 
-  /* ==================== HEADER ==================== */
-  header.head { margin-bottom: 48px; }
-  .eyebrow {
+  .app {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 400px;
+    grid-template-rows: minmax(0, 1fr);
+    column-gap: 40px;
+    padding: 36px 40px;
+    align-items: stretch;
+  }
+
+  /* ==================== JOURNEY STEPPER (vertical) ==================== */
+  .journey {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+  }
+  .journey-eyebrow {
     font-family: ui-monospace, "SF Mono", monospace;
-    font-size: 11px;
+    font-size: 10px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--dim);
-    margin-bottom: 12px;
-  }
-  h1 {
-    font-weight: 500;
-    font-size: 32px;
-    letter-spacing: -0.01em;
-    line-height: 1.2;
-    margin: 0 0 16px;
-  }
-  .lede {
-    color: var(--ink-soft);
-    font-size: 15.5px;
-    line-height: 1.75;
-    max-width: 64ch;
-    margin: 0;
-  }
-
-  /* ==================== JOURNEY STEPPER ==================== */
-  .journey {
-    margin: 56px 0 40px;
-    position: relative;
+    margin: 4px 0 18px 4px;
   }
   .steps {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 0;
-    position: relative;
-    z-index: 2;
-  }
-  .step {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    gap: 0;
+    flex: 1;
+    min-height: 0;
+  }
+  .steps li {
+    position: relative;
+    flex: 1 1 0;
+    min-height: 0;
+    display: flex;
+  }
+  .steps li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    left: 13px;
+    top: 26px;
+    bottom: 4px;
+    width: 1px;
+    background: var(--rule);
+  }
+  .step {
+    display: grid;
+    grid-template-columns: 18px 1fr;
+    grid-template-rows: auto auto auto;
+    column-gap: 12px;
+    row-gap: 2px;
+    align-items: start;
     cursor: pointer;
     background: transparent;
-    border: none;
-    padding: 0;
+    border: 1px solid transparent;
+    padding: 10px 12px 10px 8px;
     color: inherit;
     text-align: left;
     font: inherit;
+    border-radius: 8px;
+    width: 100%;
+    transition: background 220ms var(--ease), border-color 220ms var(--ease);
   }
   .step .dot {
-    width: 12px;
-    height: 12px;
+    grid-row: 1;
+    grid-column: 1;
+    width: 9px;
+    height: 9px;
     border-radius: 50%;
     background: var(--rule);
     border: 1px solid var(--rule);
-    transition: background 320ms var(--ease), border-color 320ms var(--ease), transform 320ms var(--ease);
+    margin: 5px 0 0 5px;
+    transition: background 320ms var(--ease), border-color 320ms var(--ease), box-shadow 320ms var(--ease);
   }
   .step .num {
+    grid-row: 1;
+    grid-column: 2;
     font-family: ui-monospace, "SF Mono", monospace;
     font-size: 10px;
     letter-spacing: 0.16em;
     color: var(--dim);
     transition: color 320ms var(--ease);
+    line-height: 1.4;
   }
-  .step .lab {
-    font-size: 13px;
+  .step .lab-name {
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 12.5px;
+    font-weight: 500;
+    color: var(--ink-soft);
+    transition: color 320ms var(--ease);
+    line-height: 1.4;
+  }
+  .step .lab-sub {
+    grid-row: 3;
+    grid-column: 2;
+    font-size: 11.5px;
     color: var(--dim);
     transition: color 320ms var(--ease);
     line-height: 1.4;
   }
   .step.done .dot { background: var(--ink-soft); border-color: var(--ink-soft); }
-  .step.done .num, .step.done .lab { color: var(--ink-soft); }
-  .step.active .dot { background: var(--gold); border-color: var(--gold); transform: scale(1.25); box-shadow: 0 0 0 4px rgba(245,217,122,0.12); }
+  .step.done .num { color: var(--ink-soft); }
+  .step.done .lab-name { color: var(--ink-soft); }
+  .step.active {
+    background: rgba(245,217,122,0.04);
+    border-color: rgba(245,217,122,0.18);
+  }
+  .step.active .dot { background: var(--gold); border-color: var(--gold); box-shadow: 0 0 0 4px rgba(245,217,122,0.12); }
   .step.active .num { color: var(--gold); }
-  .step.active .lab { color: var(--ink); font-weight: 500; }
+  .step.active .lab-name { color: var(--ink); }
+  .step.active .lab-sub { color: var(--ink-soft); }
+  .step.reject.active {
+    background: rgba(196,110,114,0.05);
+    border-color: rgba(196,110,114,0.18);
+  }
   .step.reject.active .dot { background: var(--reject); border-color: var(--reject); box-shadow: 0 0 0 4px rgba(196,110,114,0.12); }
   .step.reject.active .num { color: var(--reject); }
 
-  .steps::before {
-    content: "";
-    position: absolute;
-    left: 6px; right: 6px;
-    top: 5px;
-    height: 1px;
-    background: linear-gradient(90deg, var(--rule) 0%, var(--rule) 100%);
-    z-index: -1;
-  }
-
   /* ==================== STAGE PANEL ==================== */
-  .stages {
-    position: relative;
-    min-height: 620px;
-  }
-  .stage {
-    position: absolute;
-    inset: 0;
-    opacity: 0;
-    transform: translateY(8px);
-    transition: opacity 480ms var(--ease), transform 480ms var(--ease);
-    pointer-events: none;
-  }
-  .stage.active {
-    opacity: 1;
-    transform: translateY(0);
-    pointer-events: auto;
-    position: relative;
-  }
-  .stage:not(.active) { display: none; }
-
-  .stage-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 56px;
-    align-items: stretch;
-  }
-  @media (max-width: 920px) {
-    .stage-grid { grid-template-columns: 1fr; gap: 32px; }
-  }
+  /* stages/stage/stage-grid all dissolve via display:contents so
+     .stage-copy and .stage-visual land directly into the .app grid columns */
+  .stages, .stage, .stage-grid { display: contents; }
+  .stage:not(.active) > .stage-grid > .stage-copy,
+  .stage:not(.active) > .stage-grid > .stage-visual { display: none !important; }
 
   .stage-copy {
+    grid-column: 3;
+    grid-row: 1;
+    align-self: stretch;
+    justify-self: stretch;
+    width: 100%;
+    height: 100%;
+    min-height: 0;
+    padding: 32px 32px;
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 18px;
     display: flex;
     flex-direction: column;
-    gap: 18px;
-    padding-top: 4px;
+    justify-content: center;
+    gap: 14px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--rule) transparent;
   }
+  .stage-copy::-webkit-scrollbar { width: 6px; }
+  .stage-copy::-webkit-scrollbar-track { background: transparent; }
+  .stage-copy::-webkit-scrollbar-thumb { background: var(--rule); border-radius: 3px; }
   .stage-tag {
     font-family: ui-monospace, "SF Mono", monospace;
     font-size: 11px;
@@ -179,25 +210,26 @@
 
   .stage h2 {
     margin: 0;
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 500;
-    line-height: 1.3;
-    letter-spacing: -0.005em;
+    line-height: 1.28;
+    letter-spacing: -0.012em;
   }
   .stage-body {
     color: var(--ink-soft);
-    font-size: 14.5px;
+    font-size: 14px;
     line-height: 1.78;
-    max-width: 52ch;
+    margin: 0;
   }
   .verdict {
-    margin-top: 8px;
+    margin-top: 4px;
     padding: 14px 16px;
     border-left: 1px solid var(--reject);
     background: rgba(196, 110, 114, 0.05);
     color: var(--ink-soft);
-    font-size: 13.5px;
+    font-size: 13px;
     line-height: 1.7;
+    border-radius: 0 6px 6px 0;
   }
   .verdict.kept {
     border-left-color: var(--gold);
@@ -214,14 +246,21 @@
   .verdict.kept .verdict-label { color: var(--gold); }
 
   .stage-visual {
-    background: var(--panel);
-    border: 1px solid var(--rule);
-    border-radius: 16px;
-    padding: 28px;
+    grid-column: 2;
+    grid-row: 1;
+    align-self: stretch;
+    justify-self: stretch;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    padding: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 460px;
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
     position: relative;
   }
 
@@ -366,39 +405,43 @@
   }
 
   /* ==================== STAGE 4 · landing (mobile, real covers) ==================== */
+  /* iOS-style segmented control */
   .substate-tabs {
-    display: flex;
-    gap: 0;
+    display: inline-flex;
+    gap: 2px;
     border: 1px solid var(--rule);
-    border-radius: 999px;
-    padding: 4px;
+    border-radius: 9px;
+    padding: 3px;
     background: var(--panel-2);
     width: fit-content;
-    margin-bottom: 20px;
+    margin: 4px 0 4px;
   }
   .substate-tab {
     border: none;
     background: transparent;
-    color: var(--dim);
-    font-family: ui-monospace, "SF Mono", monospace;
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    padding: 7px 14px;
-    border-radius: 999px;
+    color: var(--ink-soft);
+    font-family: -apple-system, "PingFang SC", "Helvetica Neue", sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.01em;
+    padding: 5px 12px;
+    border-radius: 6px;
     cursor: pointer;
-    transition: color 200ms var(--ease), background 200ms var(--ease);
+    transition: color 200ms var(--ease), background 200ms var(--ease), box-shadow 200ms var(--ease);
   }
-  .substate-tab:hover { color: var(--ink-soft); }
+  .substate-tab:hover { color: var(--ink); }
   .substate-tab.active {
     color: var(--ink);
-    background: var(--rule);
+    background: rgba(255,255,255,0.06);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.35), inset 0 0 0 0.5px rgba(255,255,255,0.06);
   }
-  .substate-name { color: var(--ink); }
-  .substate-name-2 { color: var(--dim); margin-left: 5px; }
+  .substate-name { color: inherit; font-weight: 500; }
+  .substate-name-2 { color: inherit; opacity: 0.6; margin-left: 5px; }
 
   .phone {
-    width: 100%;
-    max-width: 360px;
+    height: 100%;
+    width: auto;
+    max-height: 800px;
+    max-width: 100%;
     aspect-ratio: 9 / 19.5;
     background: linear-gradient(180deg, #050507 0%, #0d0d10 100%);
     border-radius: 42px;
@@ -410,7 +453,6 @@
     position: relative;
     overflow: hidden;
     color: var(--ink);
-    margin: 0 auto;
   }
 
   /* phone-sketch: stage 0–3 reuse the phone chrome with a sketch interior */
@@ -466,11 +508,21 @@
   .status {
     display: flex;
     justify-content: space-between;
-    padding: 14px 28px 6px;
-    font-family: ui-monospace, "SF Mono", monospace;
-    font-size: 11px;
+    align-items: center;
+    padding: 14px 24px 4px;
+    font-family: -apple-system, "SF Pro Display", "PingFang SC", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.01em;
     color: var(--ink);
   }
+  .status-icons {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--ink);
+  }
+  .status-icons svg { display: block; }
   .ep-meta { padding: 8px 28px 0; }
   .ep-id {
     font-family: ui-monospace, "SF Mono", monospace;
@@ -754,17 +806,34 @@
   .binding-inset .edge.dashed { stroke-dasharray: 3 3; }
 
   /* ==================== STAGE 5 · PC three states ==================== */
-  .pc-frame {
+  /* PC frame is designed at 800×500. .pc-scaler reserves the slot in the
+     viewport, .pc-frame is rendered at design size and scaled via JS
+     (transform: scale, set inline) on resize. */
+  .pc-scaler {
     width: 100%;
+    max-width: 640px;
     aspect-ratio: 16 / 10;
+    max-height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 14px;
+    --pc-scale: 0.6;
+  }
+  .pc-frame {
+    width: 800px;
+    height: 500px;
     background: linear-gradient(180deg, #08080a 0%, #0e0d10 100%);
     border-radius: 14px;
     border: 1px solid var(--rule);
     box-shadow:
       0 0 0 1px rgba(255,255,255,0.02) inset,
       0 24px 60px -20px rgba(0,0,0,0.7);
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     overflow: hidden;
+    transform-origin: top left;
+    transform: scale(var(--pc-scale));
   }
   .pc-bezel {
     height: 22px;
@@ -1006,79 +1075,22 @@
   .pc-drawer-line.current { color: var(--ink); }
   .pc-drawer-line .pill { font-size: 12px; }
 
-  /* ==================== WALKER NAV ==================== */
-  .walker {
-    margin-top: 36px;
-    padding-top: 24px;
-    border-top: 1px solid var(--rule);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: ui-monospace, "SF Mono", monospace;
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    color: var(--ink-soft);
-  }
-  .walker-btn {
-    background: transparent;
-    border: 1px solid var(--rule);
-    color: var(--ink-soft);
-    padding: 9px 18px;
-    border-radius: 999px;
-    cursor: pointer;
-    font: inherit;
-    transition: border-color 200ms var(--ease), color 200ms var(--ease), background 200ms var(--ease);
-  }
-  .walker-btn:hover:not(:disabled) {
-    border-color: var(--gold-dim);
-    color: var(--ink);
-    background: rgba(245,217,122,0.03);
-  }
-  .walker-btn:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-  }
-  .walker-pos {
-    color: var(--dim);
-  }
-  .walker-pos b { color: var(--ink); font-weight: 500; }
-
-  /* ==================== UTIL ==================== */
-  footer.foot {
-    margin-top: 48px;
-    padding-top: 18px;
-    border-top: 1px solid var(--rule);
-    font-family: ui-monospace, "SF Mono", monospace;
-    font-size: 10px;
-    color: var(--dim);
-    letter-spacing: 0.06em;
-    display: flex;
-    justify-content: space-between;
-  }
+  /* binding-inset retained in CSS but no longer rendered; safe to ignore */
 </style>
 </head>
 <body>
-<div class="wrap">
+<div class="app">
 
-<header class="head">
-  <div class="eyebrow">v0.2 · prototype/min-visual-system · 2026·05</div>
-  <h1>把"关联"做成界面：从探索到落地的心路</h1>
-  <p class="lede">
-    v0.1 把节目压成一份歌单，关系是隐含的。v0.2 的整段思考其实就在解决一个问题：
-    歌曲与歌曲之间的关联，要长出怎样的形态，才能让用户在听的时候被它接住，而不是被它要求去解读。
-    下面是这条思路上被砍掉的三条岔路，最终留下的形态，以及它在 PC 端的延伸。
-  </p>
-</header>
-
-<!-- ==================== JOURNEY STEPPER ==================== -->
+<!-- ==================== JOURNEY STEPPER (vertical) ==================== -->
 <nav class="journey">
+  <div class="journey-eyebrow">v0.2 · 把"关联"做成界面</div>
   <ol class="steps" id="steps">
-    <li><button class="step" data-stage="0"><span class="dot"></span><span class="num">01</span><span class="lab">起点 v0.1<br/>歌单</span></button></li>
-    <li><button class="step reject" data-stage="1"><span class="dot"></span><span class="num">02</span><span class="lab">星系<br/>砍掉</span></button></li>
-    <li><button class="step reject" data-stage="2"><span class="dot"></span><span class="num">03</span><span class="lab">图谱<br/>砍掉</span></button></li>
-    <li><button class="step reject" data-stage="3"><span class="dot"></span><span class="num">04</span><span class="lab">黑胶透出<br/>砍掉</span></button></li>
-    <li><button class="step" data-stage="4"><span class="dot"></span><span class="num">05</span><span class="lab">落点<br/>焦点圆盘 · 弧 · 封面环</span></button></li>
-    <li><button class="step" data-stage="5"><span class="dot"></span><span class="num">06</span><span class="lab">PC 延伸<br/>三态</span></button></li>
+    <li><button class="step" data-stage="0"><span class="dot"></span><span class="num">01</span><span class="lab-name">起点 v0.1</span><span class="lab-sub">歌单</span></button></li>
+    <li><button class="step reject" data-stage="1"><span class="dot"></span><span class="num">02</span><span class="lab-name">星系</span><span class="lab-sub">砍掉</span></button></li>
+    <li><button class="step reject" data-stage="2"><span class="dot"></span><span class="num">03</span><span class="lab-name">图谱</span><span class="lab-sub">砍掉</span></button></li>
+    <li><button class="step reject" data-stage="3"><span class="dot"></span><span class="num">04</span><span class="lab-name">黑胶透出</span><span class="lab-sub">砍掉</span></button></li>
+    <li><button class="step" data-stage="4"><span class="dot"></span><span class="num">05</span><span class="lab-name">落点</span><span class="lab-sub">焦点圆盘 · 弧 · 封面环</span></button></li>
+    <li><button class="step" data-stage="5"><span class="dot"></span><span class="num">06</span><span class="lab-name">PC 延伸</span><span class="lab-sub">三态</span></button></li>
   </ol>
 </nav>
 
@@ -1103,7 +1115,11 @@
         <div class="phone">
           <div class="status">
             <span>9:41</span>
-            <span style="font-family:ui-monospace,monospace;letter-spacing:0.05em;">●●●　●　▮</span>
+            <span class="status-icons">
+              <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="0.7"/><rect x="4.7" y="5" width="3" height="6" rx="0.7"/><rect x="9.4" y="3" width="3" height="8" rx="0.7"/><rect x="14.1" y="0" width="3" height="11" rx="0.7"/></svg>
+              <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5.5c2.3 0 4.4.9 6 2.3l-1 1c-1.4-1.2-3.1-1.9-5-1.9s-3.6.7-5 1.9l-1-1c1.6-1.4 3.7-2.3 6-2.3zm0 3.5c1.4 0 2.7.5 3.7 1.4l-1 1c-.7-.7-1.7-1.1-2.7-1.1s-2 .4-2.7 1.1l-1-1c1-.9 2.3-1.4 3.7-1.4zm0 3.5c.7 0 1.3.3 1.7.7l-1.7 1.7-1.7-1.7c.4-.4 1-.7 1.7-.7z"/></svg>
+              <svg width="25" height="11" viewBox="0 0 25 11"><rect x="0.5" y="0.5" width="21" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.45"/><rect x="2" y="2" width="18" height="7" rx="1" fill="currentColor"/><rect x="22" y="3.5" width="1.5" height="4" rx="0.5" fill="currentColor" fill-opacity="0.45"/></svg>
+            </span>
           </div>
           <div class="ep-meta">
             <div class="ep-id">EP001 · v0.1 · LIST</div>
@@ -1139,7 +1155,11 @@
         <div class="phone">
           <div class="status">
             <span>9:41</span>
-            <span style="font-family:ui-monospace,monospace;letter-spacing:0.05em;">●●●　●　▮</span>
+            <span class="status-icons">
+              <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="0.7"/><rect x="4.7" y="5" width="3" height="6" rx="0.7"/><rect x="9.4" y="3" width="3" height="8" rx="0.7"/><rect x="14.1" y="0" width="3" height="11" rx="0.7"/></svg>
+              <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5.5c2.3 0 4.4.9 6 2.3l-1 1c-1.4-1.2-3.1-1.9-5-1.9s-3.6.7-5 1.9l-1-1c1.6-1.4 3.7-2.3 6-2.3zm0 3.5c1.4 0 2.7.5 3.7 1.4l-1 1c-.7-.7-1.7-1.1-2.7-1.1s-2 .4-2.7 1.1l-1-1c1-.9 2.3-1.4 3.7-1.4zm0 3.5c.7 0 1.3.3 1.7.7l-1.7 1.7-1.7-1.7c.4-.4 1-.7 1.7-.7z"/></svg>
+              <svg width="25" height="11" viewBox="0 0 25 11"><rect x="0.5" y="0.5" width="21" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.45"/><rect x="2" y="2" width="18" height="7" rx="1" fill="currentColor"/><rect x="22" y="3.5" width="1.5" height="4" rx="0.5" fill="currentColor" fill-opacity="0.45"/></svg>
+            </span>
           </div>
           <div class="ep-meta">
             <div class="ep-id">EXPLORATION 01 · 砍掉</div>
@@ -1227,7 +1247,11 @@
         <div class="phone">
           <div class="status">
             <span>9:41</span>
-            <span style="font-family:ui-monospace,monospace;letter-spacing:0.05em;">●●●　●　▮</span>
+            <span class="status-icons">
+              <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="0.7"/><rect x="4.7" y="5" width="3" height="6" rx="0.7"/><rect x="9.4" y="3" width="3" height="8" rx="0.7"/><rect x="14.1" y="0" width="3" height="11" rx="0.7"/></svg>
+              <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5.5c2.3 0 4.4.9 6 2.3l-1 1c-1.4-1.2-3.1-1.9-5-1.9s-3.6.7-5 1.9l-1-1c1.6-1.4 3.7-2.3 6-2.3zm0 3.5c1.4 0 2.7.5 3.7 1.4l-1 1c-.7-.7-1.7-1.1-2.7-1.1s-2 .4-2.7 1.1l-1-1c1-.9 2.3-1.4 3.7-1.4zm0 3.5c.7 0 1.3.3 1.7.7l-1.7 1.7-1.7-1.7c.4-.4 1-.7 1.7-.7z"/></svg>
+              <svg width="25" height="11" viewBox="0 0 25 11"><rect x="0.5" y="0.5" width="21" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.45"/><rect x="2" y="2" width="18" height="7" rx="1" fill="currentColor"/><rect x="22" y="3.5" width="1.5" height="4" rx="0.5" fill="currentColor" fill-opacity="0.45"/></svg>
+            </span>
           </div>
           <div class="ep-meta">
             <div class="ep-id">EXPLORATION 02 · 砍掉</div>
@@ -1331,7 +1355,11 @@
         <div class="phone">
           <div class="status">
             <span>9:41</span>
-            <span style="font-family:ui-monospace,monospace;letter-spacing:0.05em;">●●●　●　▮</span>
+            <span class="status-icons">
+              <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="0.7"/><rect x="4.7" y="5" width="3" height="6" rx="0.7"/><rect x="9.4" y="3" width="3" height="8" rx="0.7"/><rect x="14.1" y="0" width="3" height="11" rx="0.7"/></svg>
+              <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5.5c2.3 0 4.4.9 6 2.3l-1 1c-1.4-1.2-3.1-1.9-5-1.9s-3.6.7-5 1.9l-1-1c1.6-1.4 3.7-2.3 6-2.3zm0 3.5c1.4 0 2.7.5 3.7 1.4l-1 1c-.7-.7-1.7-1.1-2.7-1.1s-2 .4-2.7 1.1l-1-1c1-.9 2.3-1.4 3.7-1.4zm0 3.5c.7 0 1.3.3 1.7.7l-1.7 1.7-1.7-1.7c.4-.4 1-.7 1.7-.7z"/></svg>
+              <svg width="25" height="11" viewBox="0 0 25 11"><rect x="0.5" y="0.5" width="21" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.45"/><rect x="2" y="2" width="18" height="7" rx="1" fill="currentColor"/><rect x="22" y="3.5" width="1.5" height="4" rx="0.5" fill="currentColor" fill-opacity="0.45"/></svg>
+            </span>
           </div>
           <div class="ep-meta">
             <div class="ep-id">EXPLORATION 03 · 砍掉</div>
@@ -1467,11 +1495,15 @@
         </div>
       </div>
 
-      <div class="stage-visual" style="flex-direction:column;gap:18px;">
+      <div class="stage-visual">
         <div class="phone" id="phone">
           <div class="status">
             <span>9:41</span>
-            <span style="font-family:ui-monospace,monospace;letter-spacing:0.05em;">●●●　●　▮</span>
+            <span class="status-icons">
+              <svg width="17" height="11" viewBox="0 0 17 11" fill="currentColor"><rect x="0" y="7" width="3" height="4" rx="0.7"/><rect x="4.7" y="5" width="3" height="6" rx="0.7"/><rect x="9.4" y="3" width="3" height="8" rx="0.7"/><rect x="14.1" y="0" width="3" height="11" rx="0.7"/></svg>
+              <svg width="15" height="11" viewBox="0 0 15 11" fill="currentColor"><path d="M7.5.5c2.3 0 4.4.9 6 2.3l-1 1c-1.4-1.2-3.1-1.9-5-1.9s-3.6.7-5 1.9l-1-1c1.6-1.4 3.7-2.3 6-2.3zm0 3.5c1.4 0 2.7.5 3.7 1.4l-1 1c-.7-.7-1.7-1.1-2.7-1.1s-2 .4-2.7 1.1l-1-1c1-.9 2.3-1.4 3.7-1.4zm0 3.5c.7 0 1.3.3 1.7.7l-1.7 1.7-1.7-1.7c.4-.4 1-.7 1.7-.7z"/></svg>
+              <svg width="25" height="11" viewBox="0 0 25 11"><rect x="0.5" y="0.5" width="21" height="10" rx="2.5" fill="none" stroke="currentColor" stroke-opacity="0.45"/><rect x="2" y="2" width="18" height="7" rx="1" fill="currentColor"/><rect x="22" y="3.5" width="1.5" height="4" rx="0.5" fill="currentColor" fill-opacity="0.45"/></svg>
+            </span>
           </div>
           <div class="ep-meta">
             <div class="ep-id">EP001</div>
@@ -1527,26 +1559,6 @@
           </div>
         </div>
 
-        <!-- binding inset -->
-        <div class="binding-inset" style="width:100%;max-width:360px;">
-          <h4>双向绑定 · 同一根数据线</h4>
-          <svg viewBox="0 0 360 170" preserveAspectRatio="xMidYMid meet">
-            <rect class="node" x="115" y="6" width="130" height="28" rx="5"/>
-            <text class="lab" x="180" y="24" text-anchor="middle">phrase hit · t=12.4s</text>
-            <path class="edge" d="M 180 34 L 80 64"/>
-            <path class="edge" d="M 180 34 L 280 64"/>
-            <rect class="node" x="14" y="64" width="132" height="28" rx="5"/>
-            <text class="lab" x="80" y="82" text-anchor="middle">arc / bubble surfaces</text>
-            <rect class="node" x="214" y="64" width="132" height="28" rx="5"/>
-            <text class="lab" x="280" y="82" text-anchor="middle">subtitle pill lights</text>
-            <path class="edge dashed" d="M 80 92 L 180 134"/>
-            <path class="edge dashed" d="M 280 92 L 180 134"/>
-            <text class="lab dim" x="120" y="113" text-anchor="middle">tap</text>
-            <text class="lab dim" x="240" y="113" text-anchor="middle">tap</text>
-            <rect class="node gold" x="115" y="134" width="130" height="28" rx="5"/>
-            <text class="lab gold" x="180" y="152" text-anchor="middle">goToTrack(target)</text>
-          </svg>
-        </div>
       </div>
     </div>
   </article>
@@ -1585,6 +1597,7 @@
       </div>
 
       <div class="stage-visual">
+        <div class="pc-scaler">
         <div class="pc-frame">
           <div class="pc-bezel">
             <div class="pc-bezel-dot"></div>
@@ -1661,23 +1674,12 @@
 
           </div>
         </div>
+        </div>
       </div>
     </div>
   </article>
 
 </section>
-
-<!-- ==================== WALKER ==================== -->
-<nav class="walker">
-  <button class="walker-btn" id="walkerPrev" disabled>← 上一步</button>
-  <span class="walker-pos"><b id="walkerNum">01</b> / 06　·　← / → 切换</span>
-  <button class="walker-btn" id="walkerNext">下一步 →</button>
-</nav>
-
-<footer class="foot">
-  <span>musicos · v0.2 portfolio · prototype/min-visual-system</span>
-  <span>tap stepper or use arrow keys</span>
-</footer>
 
 </div>
 
@@ -1712,15 +1714,12 @@
     }
   });
 
-  /* ============ stepper / walker ============ */
+  /* ============ stepper ============ */
   const STAGE_COUNT = 6;
   let currentStage = 0;
 
   const stages = document.querySelectorAll(".stage");
   const stepBtns = document.querySelectorAll("#steps .step");
-  const walkerPrev = document.getElementById("walkerPrev");
-  const walkerNext = document.getElementById("walkerNext");
-  const walkerNum = document.getElementById("walkerNum");
 
   function setStage(idx) {
     if (idx < 0 || idx >= STAGE_COUNT) return;
@@ -1730,18 +1729,18 @@
       b.classList.toggle("active", i === idx);
       b.classList.toggle("done", i < idx);
     });
-    walkerPrev.disabled = idx === 0;
-    walkerNext.disabled = idx === STAGE_COUNT - 1;
-    walkerNum.textContent = String(idx + 1).padStart(2, "0");
 
     // when entering landing or PC stage, force the substate to the first one
     if (idx === 4) applyLanding("rest");
-    if (idx === 5) applyPc("ambient");
+    if (idx === 5) {
+      applyPc("ambient");
+      // .stage-visual just transitioned from display:none to flex, give it a
+      // frame to settle before measuring
+      requestAnimationFrame(() => { if (typeof fitPcFrame === "function") fitPcFrame(); });
+    }
   }
 
   stepBtns.forEach((b, i) => b.addEventListener("click", () => setStage(i)));
-  walkerPrev.addEventListener("click", () => setStage(currentStage - 1));
-  walkerNext.addEventListener("click", () => setStage(currentStage + 1));
 
   document.addEventListener("keydown", (e) => {
     if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
@@ -1839,10 +1838,25 @@
   }
   pcTabs.forEach(t => t.addEventListener("click", () => applyPc(t.dataset.pc)));
 
+  /* ============ PC frame scaling (design size 800×500 → fit container) ============ */
+  const pcScaler = document.querySelector(".pc-scaler");
+  function fitPcFrame() {
+    if (!pcScaler) return;
+    const w = pcScaler.clientWidth;
+    if (w > 0) pcScaler.style.setProperty("--pc-scale", String(w / 800));
+  }
+  if (pcScaler && "ResizeObserver" in window) {
+    new ResizeObserver(fitPcFrame).observe(pcScaler);
+  }
+  window.addEventListener("resize", fitPcFrame);
+  fitPcFrame();
+
   /* init */
   setStage(0);
   applyLanding("rest");
   applyPc("ambient");
+  // re-fit after first layout flush (stage 5 may not be visible at init)
+  requestAnimationFrame(fitPcFrame);
 })();
 </script>
 </body>
