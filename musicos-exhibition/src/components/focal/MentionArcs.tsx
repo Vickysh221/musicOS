@@ -4,7 +4,7 @@ import type { TrackExhibit } from '../../types.js';
 import './mention-arcs.css';
 
 interface Props {
-  /** Currently-pinned callback targets, in deterministic order. */
+  /** Currently-pinned callback targets, in mention order. Color slot = index. */
   tracks: TrackExhibit[];
   /** Current focal disc diameter in px (arcs orbit just outside this). */
   discSize: number;
@@ -14,8 +14,9 @@ interface Props {
 }
 
 const STROKE = 26;
-const TEXT_FONT_SIZE = 11;
+const TEXT_FONT_SIZE = 13;
 const RADIUS_GAP = 22;
+const HALO_FILTER_ID = 'mention-arc-halo';
 
 function arcPath(
   centerDeg: number,
@@ -75,12 +76,21 @@ export function MentionArcs({ tracks, discSize, onArcClick, dimmed = false }: Pr
       style={{ marginLeft: -size / 2, marginTop: -size / 2 }}
       aria-hidden={N === 0}
     >
+      <defs>
+        {/* Shared halo: a Gaussian blur applied to the colored ghost text
+         * underneath each label, producing the "diffused light" behind the
+         * letters without darkening the glass band itself. */}
+        <filter id={HALO_FILTER_ID} x="-50%" y="-200%" width="200%" height="500%">
+          <feGaussianBlur stdDeviation="2.6" />
+        </filter>
+      </defs>
       <AnimatePresence>
         {tracks.map((track, i) => {
           const centerDeg = centers[i] ?? -90;
           const { d } = arcPath(centerDeg, spanDeg, r, cx, cy);
           const pathId = `mention-arc-${track.position}`;
-          const gradId = `mention-arc-grad-${track.position}`;
+          const textColor = mentionColor(i, 1);
+          const haloColor = mentionColor(i, 0.85);
           return (
             <motion.g
               key={track.position}
@@ -94,40 +104,50 @@ export function MentionArcs({ tracks, discSize, onArcClick, dimmed = false }: Pr
             >
               <defs>
                 <path id={pathId} d={d} fill="none" />
-                {/* Vertical gradient (top→bottom) of the mention color so each
-                 * arc reads as a tinted glass band, not a flat stroke. */}
-                <linearGradient id={gradId} x1="0" y1="0" x2="0" y2="1">
-                  <stop offset="0%" stopColor={mentionColor(track.position, 0.5)} />
-                  <stop offset="100%" stopColor={mentionColor(track.position, 0.18)} />
-                </linearGradient>
               </defs>
-              {/* Glass base — white-translucent, gives the liquid-glass tint. */}
+              {/* Frosted-glass band — pure white translucent stroke. The
+               * BackgroundShader behind the focal stage shows through, giving
+               * the band its glass read; color lives only in the text. */}
               <path
                 d={d}
-                stroke="rgba(255, 255, 255, 0.18)"
+                stroke="rgba(255, 255, 255, 0.22)"
                 strokeWidth={STROKE}
                 strokeLinecap="round"
                 fill="none"
               />
-              {/* Color gradient overlay. */}
-              <path
-                d={d}
-                stroke={`url(#${gradId})`}
-                strokeWidth={STROKE}
-                strokeLinecap="round"
-                fill="none"
-              />
+              {/* Diffused color halo behind the letters — colored ghost layer
+               * blurred via the shared filter. Drawn first so the sharp text
+               * sits cleanly on top. */}
               <text
                 fontSize={TEXT_FONT_SIZE}
-                fill="#fff"
-                fontWeight={500}
+                fill={haloColor}
+                fontWeight={600}
+                letterSpacing="0.3"
+                filter={`url(#${HALO_FILTER_ID})`}
+              >
+                <textPath
+                  href={`#${pathId}`}
+                  startOffset="50%"
+                  textAnchor="middle"
+                  dominantBaseline="central"
+                  alignmentBaseline="central"
+                >
+                  {track.song}
+                </textPath>
+              </text>
+              {/* Sharp, fully-saturated label on top. */}
+              <text
+                fontSize={TEXT_FONT_SIZE}
+                fill={textColor}
+                fontWeight={600}
                 letterSpacing="0.3"
               >
                 <textPath
                   href={`#${pathId}`}
                   startOffset="50%"
                   textAnchor="middle"
-                  dominantBaseline="middle"
+                  dominantBaseline="central"
+                  alignmentBaseline="central"
                 >
                   {track.song}
                 </textPath>

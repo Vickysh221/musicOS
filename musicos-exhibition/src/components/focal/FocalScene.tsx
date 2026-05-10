@@ -18,6 +18,7 @@ import { useFusionSubtitle } from '../../hooks/useFusionSubtitle.js';
 import { useCurrentAndNext } from '../../hooks/useCurrentAndNext.js';
 import { ALIASES_BY_EPISODE } from '../../data/episode-aliases.js';
 import { EPISODES } from '../../lib/episodes.js';
+import { MAX_MENTION_SLOTS } from '../../lib/mention-colors.js';
 import { Subtitle, type SubtitleCallback } from './Subtitle.js';
 import { PlayerBar } from './PlayerBar.js';
 import { FocalDisc } from './FocalDisc.js';
@@ -204,14 +205,39 @@ export function FocalScene() {
     });
   }, [cbKey, arcsReady, currentPosition, phraseHits]);
 
+  // Preserve insertion order from arcPins (Set keeps insertion order in JS) so
+  // arcs render in the order the narrator first mentioned them. Hard-cap at
+  // MAX_MENTION_SLOTS so the per-focal color palette never collides.
   const arcTracks: TrackExhibit[] = useMemo(() => {
     const positions = [...arcPins]
       .filter((p) => p !== currentPosition)
-      .sort((a, b) => a - b);
+      .slice(0, MAX_MENTION_SLOTS);
     return positions
       .map((p) => tracks.find((t) => t.position === p))
       .filter((t): t is TrackExhibit => Boolean(t));
   }, [arcPins, currentPosition, tracks]);
+
+  // Map a target position → its color slot for the current focal song. Built
+  // from arcPins (the source of truth) but augmented with any phrase hits in
+  // the current paragraph that haven't pinned yet — this avoids a one-frame
+  // color mismatch on the pill the very first time a target is mentioned,
+  // since the pinning useEffect runs after this render.
+  const slotByPosition = useMemo(() => {
+    const m = new Map<number, number>();
+    let i = 0;
+    for (const p of arcPins) {
+      if (p === currentPosition) continue;
+      if (i >= MAX_MENTION_SLOTS) break;
+      m.set(p, i++);
+    }
+    for (const h of phraseHits) {
+      if (h.targetPosition === currentPosition) continue;
+      if (m.has(h.targetPosition)) continue;
+      if (i >= MAX_MENTION_SLOTS) break;
+      m.set(h.targetPosition, i++);
+    }
+    return m;
+  }, [arcPins, phraseHits, currentPosition]);
 
   const episodeMeta = EPISODES.find((e) => e.id === episodeId);
   const epTitle = (language === 'en' ? episodeMeta?.titleEn : episodeMeta?.titleZh) ?? '';
@@ -274,6 +300,7 @@ export function FocalScene() {
         <Subtitle
           current={currentParagraph}
           callbacks={subtitleCallbacks}
+          slotByPosition={slotByPosition}
           onPillClick={goToTrack}
           expanded={subtitleExpanded}
           onExpandedChange={setSubtitleExpanded}

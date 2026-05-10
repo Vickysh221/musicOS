@@ -13,6 +13,9 @@ export interface SubtitleCallback {
 interface SubtitleProps {
   current: string | null;
   callbacks: SubtitleCallback[];
+  /** position → color slot (0..MAX_MENTION_SLOTS-1) for the current focal song.
+   * Pills look up their slot here so they share a color with the matching arc. */
+  slotByPosition: Map<number, number>;
   onPillClick?: (position: number) => void;
   /** Controlled by parent so the full-screen backdrop can also dismiss it. */
   expanded: boolean;
@@ -77,6 +80,7 @@ function ChevronIcon({ open }: { open: boolean }) {
 export function Subtitle({
   current,
   callbacks,
+  slotByPosition,
   onPillClick,
   expanded,
   onExpandedChange,
@@ -106,22 +110,26 @@ export function Subtitle({
                 s.kind === 'plain' ? (
                   <span key={idx}>{s.text}</span>
                 ) : (
-                  <button
-                    key={idx}
-                    type="button"
-                    className="subtitle__pill"
-                    onClick={() => onPillClick?.(s.position)}
-                    data-position={s.position}
-                    style={{
-                      ['--mention-bg' as string]: mentionColor(s.position, 0.42),
-                      ['--mention-bg-soft' as string]: mentionColor(s.position, 0.18),
-                      ['--mention-bg-hover' as string]: mentionColor(s.position, 0.6),
-                      ['--mention-bg-soft-hover' as string]: mentionColor(s.position, 0.32),
-                      ['--mention-ring' as string]: mentionColor(s.position, 0.5),
-                    }}
-                  >
-                    {s.text}
-                  </button>
+                  (() => {
+                    const slot = slotByPosition.get(s.position) ?? 0;
+                    return (
+                      <button
+                        key={idx}
+                        type="button"
+                        className="subtitle__pill"
+                        onClick={() => onPillClick?.(s.position)}
+                        data-position={s.position}
+                        data-text={s.text}
+                        style={{
+                          ['--mention-text' as string]: mentionColor(slot, 1),
+                          ['--mention-glow' as string]: mentionColor(slot, 0.95),
+                          ['--mention-ring' as string]: mentionColor(slot, 0.5),
+                        }}
+                      >
+                        <span className="subtitle__pill-text">{s.text}</span>
+                      </button>
+                    );
+                  })()
                 ),
               )}
             </span>
