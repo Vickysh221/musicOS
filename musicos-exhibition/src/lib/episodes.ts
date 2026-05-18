@@ -56,4 +56,13 @@ export const EPISODES: EpisodeMeta[] = [
     year: '1970–2021',
     defaultLanguage: 'en',
   },
+  {
+    id: 'ep6',
+    number: 6,
+    titleZh: "The 'In' Crowd — 翻唱即创作",
+    titleEn: "The 'In' Crowd — Cover as Authorship",
+    anchor: 'Ramsey Lewis Trio',
+    focus: 'translation_aesthetic',
+    year: '1955–1993',
+  },
 ];

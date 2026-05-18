@@ -1,0 +1,59 @@
+# YouTube fetch manifest for ep6 — 18 tracks (translation_aesthetic / Ramsey Lewis Trio · The 'In' Crowd)
+# Format: <video_id>|<filename_stem>
+# Run: python3 -m tools.fetch_audio_youtube tools/youtube_manifest_ep6.txt
+# Output dir: musicos-exhibition/public/audio/ep6/
+
+# 01 Erroll Garner — Misty (1955) — UMG provided
+UOLEEkYO4MA|ep6/01_erroll-garner_misty
+
+# 02 Ahmad Jamal Trio — Poinciana (Live at the Pershing, 1958) — UMG provided
+h09YJjsjM0A|ep6/02_ahmad-jamal_poinciana
+
+# 03 Herbie Hancock — Cantaloupe Island (1964, Empyrean Isles)
+8B1oIXGX0Io|ep6/03_herbie-hancock_cantaloupe-island
+
+# 04 The Animals — House of the Rising Sun (1964) — official music video
+yOoyJ7ZOli0|ep6/04_the-animals_house-of-the-rising-sun
+
+# 05 Dobie Gray — The In Crowd (1964) — Gusto Records upload
+kIghK0K1BKo|ep6/05_dobie-gray_the-in-crowd
+
+# 06 Ramsey Lewis Trio — The 'In' Crowd (Live at Bohemian Caverns, 1965) — UMG provided
+sB-DndAgbuE|ep6/06_ramsey-lewis-trio_the-in-crowd
+
+# 07 The Mamas & The Papas — In Crowd (If You Can Believe Your Eyes and Ears, 1966)
+fzjmlyafhos|ep6/07_mamas-and-the-papas_the-in-crowd
+
+# 08 Georgie Fame & The Blue Flames — Yeh, Yeh (1965) — UMG Topic
+9nRmV2I-yLQ|ep6/08_georgie-fame-blue-flames_yeh-yeh
+
+# 09 Ramsey Lewis Trio — Hang On Sloopy (Live at the Lighthouse, 1965) — UMG provided
+yR5Tkk60erE|ep6/09_ramsey-lewis_hang-on-sloopy
+
+# 10 Ramsey Lewis — Wade in the Water (1966, Cadet) — UMG provided
+4NAMMdYHJW8|ep6/10_ramsey-lewis_wade-in-the-water
+
+# 11 Cannonball Adderley Quintet — Mercy, Mercy, Mercy (1966, Capitol) — UMG provided
+y7FFLYXEOqA|ep6/11_cannonball-adderley_mercy-mercy-mercy
+
+# 12 Young-Holt Unlimited — Soulful Strut (1968, Brunswick)
+BCVgJEDD8jk|ep6/12_young-holt-unlimited_soulful-strut
+
+# 13 Julie Driscoll, Brian Auger & The Trinity — This Wheel's on Fire (1968)
+6eJHKjV1ecs|ep6/13_julie-driscoll-brian-auger-trinity_this-wheels-on-fire
+
+# 14 Ramsey Lewis — Sun Goddess (1974, Columbia, ft. Earth Wind & Fire)
+l_fJQRTYgNQ|ep6/14_ramsey-lewis_sun-goddess
+
+# 15 The James Taylor Quartet — Mission Impossible (1987, Re-Elect The President)
+pXmLzstX-xo|ep6/15_james-taylor-quartet_mission-impossible
+
+# 16 The Brand New Heavies — Never Stop (1991) — official video
+WVj6FiZTwSM|ep6/16_the-brand-new-heavies_never-stop
+
+# 17 Us3 — Cantaloop (Flip Fantasia) (1992, Blue Note) — official video
+# (vUgmKA9fPq4 went unavailable 2026-05; swapped to official video)
+JwBjhBL9G6U|ep6/17_us3_cantaloop-flip-fantasia
+
+# 18 Jamiroquai — Too Young to Die (1993, Sony Soho Square) — official music video
+mjeWKssl8Ic|ep6/18_jamiroquai_too-young-to-die

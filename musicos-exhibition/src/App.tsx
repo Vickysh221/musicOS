@@ -6,6 +6,8 @@ import { Sidebar } from './components/Sidebar.js';
 import './app.css';
 
 function useCurrentEpisodeId(): string {
+  const [isEp6] = useRoute('/ep6/:rest*');
+  const [isEp6Exact] = useRoute('/ep6');
   const [isEp5] = useRoute('/ep5/:rest*');
   const [isEp5Exact] = useRoute('/ep5');
   const [isEp4] = useRoute('/ep4/:rest*');
@@ -14,6 +16,7 @@ function useCurrentEpisodeId(): string {
   const [isEp3Exact] = useRoute('/ep3');
   const [isEp2] = useRoute('/ep2/:rest*');
   const [isEp2Exact] = useRoute('/ep2');
+  if (isEp6 || isEp6Exact) return 'ep6';
   if (isEp5 || isEp5Exact) return 'ep5';
   if (isEp4 || isEp4Exact) return 'ep4';
   if (isEp3 || isEp3Exact) return 'ep3';
@@ -39,7 +42,7 @@ export function App() {
             {(params) => <TrackDetail episodeId="ep1" position={Number(params.position)} />}
           </Route>
           <Route path="/ep2">
-            <Timeline episodeId="ep2" />
+            <EpisodeFocal episodeId="ep2" />
           </Route>
           <Route path="/ep2/track/:position">
             {(params) => <TrackDetail episodeId="ep2" position={Number(params.position)} />}
@@ -61,6 +64,12 @@ export function App() {
           </Route>
           <Route path="/ep5/track/:position">
             {(params) => <TrackDetail episodeId="ep5" position={Number(params.position)} />}
+          </Route>
+          <Route path="/ep6">
+            <EpisodeFocal episodeId="ep6" />
+          </Route>
+          <Route path="/ep6/track/:position">
+            {(params) => <TrackDetail episodeId="ep6" position={Number(params.position)} />}
           </Route>
           <Route>
             <div style={{ padding: 24 }}>404 — not found</div>

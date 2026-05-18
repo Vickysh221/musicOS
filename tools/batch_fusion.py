@@ -65,26 +65,51 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # Episode 5 — Cloudyな午後 · translation_aesthetic (2026-05-10)
 # EN narrations all 600-1684ch → C for all tracks; opening/closing → PASSTHROUGH
+# STYLE_BY_POSITION_EP5: dict[int, str] = {
+#     0:  "PASSTHROUGH",   # opening
+#     1:  "C",   # James Taylor — 646ch EN
+#     2:  "C",   # Carole King — 793ch EN (pillar)
+#     3:  "C",   # Boz Scaggs — 695ch EN (pillar)
+#     4:  "C",   # Steely Dan — 794ch EN (pillar)
+#     5:  "C",   # Toto — 627ch EN
+#     6:  "C",   # 大瀧詠一 — 711ch EN
+#     7:  "C",   # 山下達郎 — 815ch EN (pillar)
+#     8:  "C",   # 竹内まりや — 822ch EN (pillar)
+#     9:  "C",   # 角松敏生 — 814ch EN
+#     10: "C",   # 稲垣潤一 — 730ch EN
+#     11: "C",   # ラ・ムー — 689ch EN
+#     12: "C",   # 杏里 — 739ch EN
+#     13: "C",   # 濱田金吾 — 749ch EN
+#     14: "C",   # 中原めいこ Fantasy — 770ch EN
+#     15: "C",   # 中原めいこ Cloudyな午後 — ANCHOR 1684ch EN
+#     16: "C",   # Ginger Root — 660ch EN
+#     17: "C",   # RYUSENKEI — 600ch EN
+#     18: "PASSTHROUGH",   # closing
+# }
+
+# Episode 6 — Ramsey Lewis Trio · The 'In' Crowd · translation_aesthetic (2026-05-18)
+# ZH narrations 313-845ch → C for all tracks; opening/closing → PASSTHROUGH
 STYLE_BY_POSITION: dict[int, str] = {
-    0:  "PASSTHROUGH",   # opening
-    1:  "C",   # James Taylor — 646ch EN
-    2:  "C",   # Carole King — 793ch EN (pillar)
-    3:  "C",   # Boz Scaggs — 695ch EN (pillar)
-    4:  "C",   # Steely Dan — 794ch EN (pillar)
-    5:  "C",   # Toto — 627ch EN
-    6:  "C",   # 大瀧詠一 — 711ch EN
-    7:  "C",   # 山下達郎 — 815ch EN (pillar)
-    8:  "C",   # 竹内まりや — 822ch EN (pillar)
-    9:  "C",   # 角松敏生 — 814ch EN
-    10: "C",   # 稲垣潤一 — 730ch EN
-    11: "C",   # ラ・ムー — 689ch EN
-    12: "C",   # 杏里 — 739ch EN
-    13: "C",   # 濱田金吾 — 749ch EN
-    14: "C",   # 中原めいこ Fantasy — 770ch EN
-    15: "C",   # 中原めいこ Cloudyな午後 — ANCHOR 1684ch EN
-    16: "C",   # Ginger Root — 660ch EN
-    17: "C",   # RYUSENKEI — 600ch EN
-    18: "PASSTHROUGH",   # closing
+    0:  "PASSTHROUGH",   # opening (397ch)
+    1:  "C",   # Erroll Garner — Misty (314ch)
+    2:  "C",   # Ahmad Jamal — Poinciana (449ch, pillar)
+    3:  "C",   # Herbie Hancock — Cantaloupe Island (332ch)
+    4:  "C",   # The Animals — House of the Rising Sun (325ch)
+    5:  "C",   # Dobie Gray — The In Crowd (455ch, pillar)
+    6:  "C",   # Ramsey Lewis Trio — The 'In' Crowd — ANCHOR (845ch)
+    7:  "C",   # Mamas & Papas — The 'In' Crowd (464ch, pillar)
+    8:  "C",   # Georgie Fame — Yeh Yeh (486ch, pillar)
+    9:  "C",   # Ramsey Lewis — Hang On Sloopy (337ch)
+    10: "C",   # Ramsey Lewis — Wade in the Water (326ch)
+    11: "C",   # Cannonball Adderley — Mercy Mercy Mercy (335ch)
+    12: "C",   # Young-Holt Unlimited — Soulful Strut (334ch)
+    13: "C",   # Driscoll/Auger — Wheels on Fire (334ch)
+    14: "C",   # Ramsey Lewis — Sun Goddess (321ch)
+    15: "C",   # James Taylor Quartet — Mission Impossible (339ch)
+    16: "C",   # Brand New Heavies — Never Stop (340ch)
+    17: "C",   # Us3 — Cantaloop (458ch, pillar)
+    18: "C",   # Jamiroquai — Too Young to Die (313ch)
+    19: "PASSTHROUGH",   # closing (162ch)
 }
 
 
@@ -117,6 +142,20 @@ def _normalize_segments(raw: list) -> list[dict]:
 def _shifted(segments: list[dict], offset: float) -> list[dict]:
     return [{"text": s["text"], "start": s["start"] + offset, "end": s["end"] + offset}
             for s in segments]
+
+
+def compute_b_offsets_no_music(anchor_seconds: float, n_dur_a: float):
+    """Compute the two narration offsets needed for Style B subtitle alignment
+    without requiring access to the source music file. The bounds-check arms of
+    compute_b_timings depend on music_total, but the offsets we need
+    (a_offset, b_offset) are purely a function of n_dur_a and the style
+    constants. Returns (a_offset, b_offset) in fusion-timeline seconds.
+    """
+    a_offset = B_INTRO_PAD + B_DUCK_RAMP
+    first_rampup_end = B_INTRO_PAD + B_DUCK_RAMP + n_dur_a + B_DUCK_RAMP
+    anchor_clean_end = first_rampup_end + B_ANCHOR_CLEAN
+    b_offset = anchor_clean_end + B_DUCK_RAMP  # == duck_b_end
+    return a_offset, b_offset
 
 
 def write_fusion_subtitle(
@@ -247,6 +286,91 @@ def find_match(directory: Path, prefix: str, suffix: str = "", exact_stem: str |
     return None
 
 
+def emit_subtitles_only(ep: dict, args) -> None:
+    """Walk every exhibit, find the existing fusion mp3 in --output-dir, and
+    write a `<stem>.subtitle.json` next to it by shifting the narration sidecar
+    by the per-style fusion offset. Skips silently when sidecars are missing.
+    """
+    out_dir = args.output_dir
+    fusion_files = {p.stem: p for p in out_dir.glob("*.mp3")}
+    if not fusion_files:
+        print(f"  no fusion mp3s found in {out_dir}; nothing to subtitle")
+        return
+
+    for ex in ep["exhibits"]:
+        pos = ex["position"]
+        if args.only_position and pos not in args.only_position:
+            continue
+        style = resolve_style(ex, STYLE_BY_POSITION)
+        if style is None:
+            print(f"  skip {pos}: no style assigned")
+            continue
+
+        prefix = f"{pos:02d}_"
+        # Locate the existing fusion mp3 by prefix (skipping split-narration `_a`/`_b`).
+        fusion = None
+        for stem in sorted(fusion_files):
+            if stem.startswith(prefix) and not stem.endswith(("_a", "_b")):
+                fusion = fusion_files[stem]
+                break
+        if not fusion:
+            print(f"  skip {pos}: no fusion mp3 in {out_dir} matching {prefix}*")
+            continue
+
+        sub_out = fusion.with_suffix(".subtitle.json")
+        if sub_out.exists() and not args.force:
+            print(f"  skip {fusion.stem}: subtitle already exists")
+            continue
+
+        if style == "B":
+            anchor = ex.get("anchor_timestamp_seconds")
+            if anchor is None:
+                print(f"  FAIL  pos {pos}: style B requires anchor_timestamp_seconds")
+                continue
+            nar_a = find_match(args.narration_dir, prefix, suffix="_a")
+            nar_b = find_match(args.narration_dir, prefix, suffix="_b")
+            if not nar_a or not nar_b:
+                print(f"  skip {pos}: style B needs {prefix}*_a.mp3 and {prefix}*_b.mp3")
+                continue
+            sub_a = nar_a.with_suffix(".subtitle.json")
+            sub_b = nar_b.with_suffix(".subtitle.json")
+            if not sub_a.exists() or not sub_b.exists():
+                print(f"  skip {pos}: missing narration subtitle sidecars ({sub_a.name} / {sub_b.name})")
+                continue
+            n_dur_a = probe_duration(nar_a)
+            a_off, b_off = compute_b_offsets_no_music(float(anchor), n_dur_a)
+            a_segs = _normalize_segments(json.loads(sub_a.read_text(encoding="utf-8")))
+            b_segs = _normalize_segments(json.loads(sub_b.read_text(encoding="utf-8")))
+            merged = _shifted(a_segs, a_off) + _shifted(b_segs, b_off)
+            sub_out.write_text(json.dumps(merged, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"  sub   {fusion.stem}: B (a@{a_off:.1f}s, b@{b_off:.1f}s) → {sub_out.name}")
+            continue
+
+        # PASSTHROUGH / A / C / C_ALIGNED / C_SHORT — single narration file.
+        if style == "PASSTHROUGH":
+            nar_stem = ex.get("narration_stem") or fusion.stem
+        else:
+            nar_stem = ex.get("narration_stem") or fusion.stem
+        narration = find_match(args.narration_dir, prefix, exact_stem=nar_stem)
+        if not narration:
+            print(f"  skip {pos}: no narration mp3 '{nar_stem}.mp3'")
+            continue
+        sidecar = narration.with_suffix(".subtitle.json")
+        if not sidecar.exists():
+            print(f"  skip {pos}: narration subtitle sidecar missing ({sidecar.name})")
+            continue
+        offset = NARRATION_OFFSET_BY_STYLE.get(style)
+        if offset is None:
+            print(f"  skip {pos}: no offset known for style {style}")
+            continue
+        segs = _normalize_segments(json.loads(sidecar.read_text(encoding="utf-8")))
+        sub_out.write_text(
+            json.dumps(_shifted(segs, offset), ensure_ascii=False, indent=2),
+            encoding="utf-8",
+        )
+        print(f"  sub   {fusion.stem}: {style} (offset {offset:.1f}s) → {sub_out.name}")
+
+
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--episode", required=True, type=Path)
@@ -258,10 +382,21 @@ def main() -> None:
     p.add_argument("--force", action="store_true")
     p.add_argument("--only-position", type=int, action="append", default=[],
                    help="only fuse this exhibit position; repeatable")
+    p.add_argument("--subtitle-only", action="store_true",
+                   help="don't re-fuse audio; only emit fusion-aligned subtitle JSON next to "
+                        "existing fusion mp3s. Useful for retrofitting subtitle sidecars onto "
+                        "episodes whose narration was synthesized before subtitle support landed. "
+                        "Requires narration .subtitle.json sidecars in --narration-dir; source "
+                        "music files are NOT required (B-style offsets are computed from "
+                        "narration durations alone).")
     args = p.parse_args()
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     ep = json.loads(args.episode.read_text(encoding="utf-8"))
+
+    if args.subtitle_only:
+        emit_subtitles_only(ep, args)
+        return
 
     for ex in ep["exhibits"]:
         pos = ex["position"]
