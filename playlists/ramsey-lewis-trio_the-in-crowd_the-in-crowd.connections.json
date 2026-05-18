@@ -1,0 +1,849 @@
+{
+  "playlist_slug": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+  "episode_number": 6,
+  "episode_focus": "translation_aesthetic",
+  "episode_title_zh": "基因穿外套 — The 'In' Crowd 的翻唱拓扑",
+  "episode_title_en": "Coat of Genes — The Cover-Topology Around The 'In' Crowd",
+  "episode_arc": {
+    "from": { "position": 1, "label": "Erroll Garner — Misty (1955)" },
+    "to":   { "position": 6, "label": "Ramsey Lewis Trio — The 'In' Crowd (1965)" },
+    "coda": { "position": 18, "label": "Jamiroquai — Too Young to Die (1993)" }
+  },
+  "connection_kinds_in_scope": [
+    "translation",
+    "hybridization",
+    "direct_influence",
+    "methodological_descent",
+    "genealogical_descent",
+    "same_era_dialogue"
+  ],
+  "muted_positions": [],
+  "position_labels": {
+    "1": "Erroll Garner — Misty (1955)",
+    "2": "Ahmad Jamal Trio — Poinciana (1958)",
+    "3": "Herbie Hancock — Cantaloupe Island (1964)",
+    "4": "The Animals — House of the Rising Sun (1964)",
+    "5": "Dobie Gray — The In Crowd (1964)",
+    "6": "Ramsey Lewis Trio — The 'In' Crowd (1965)",
+    "7": "The Mamas & The Papas — The 'In' Crowd (1966)",
+    "8": "Georgie Fame & The Blue Flames — Yeh, Yeh (1965)",
+    "9": "Ramsey Lewis Trio — Hang On Sloopy (1965)",
+    "10": "Ramsey Lewis — Wade in the Water (1966)",
+    "11": "Cannonball Adderley Quintet — Mercy, Mercy, Mercy (1966)",
+    "12": "Young-Holt Unlimited — Soulful Strut (1968)",
+    "13": "Julie Driscoll, Brian Auger & The Trinity — This Wheel's on Fire (1968)",
+    "14": "Ramsey Lewis — Sun Goddess (1974)",
+    "15": "James Taylor Quartet — Mission Impossible (1986)",
+    "16": "The Brand New Heavies — Never Stop (1990)",
+    "17": "Us3 — Cantaloop (Flip Fantasia) (1992)",
+    "18": "Jamiroquai — Too Young to Die (1993)"
+  },
+  "connection_pairs": [
+    {
+      "id": "conn_001_to_002_methodological_descent",
+      "from_position": 1,
+      "to_position": 2,
+      "kind": "methodological_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_jamal_to_garner_methodological_descent",
+      "system_sensory_note": "Garner's 1955 Carmel live trio is the live-piano-trio-plays-popular-material precedent; the 1958 follow-up on Argo is the next iteration of the same idea — black piano trio plays standards live, LP sells for years. Garner's locked-hands and the later space/dynamics extension are the two upstream language sources Lewis will draw from in 1965. Translation_aesthetic weights: value = 0.30·story_drive + 0.30·concrete_carrier + 0.20·evidential_strength + 0.20·focus_relevance.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "三年后另一支三人组会在 Argo 公司接住这套写法,再加上空气与留白。",
+          "voice_en": "Three years on another trio at Argo will pick up this formula and add air and silence."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的 Garner 1955 那张,是这门钢琴语言的根——锁式左手,卖了一百万张。",
+          "voice_en": "Garner's 1955 LP you just heard is the root of this piano language — locked-hands left, a million copies sold."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.58,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.50
+        },
+        "rationale": "Upstream methodological hand-off — strong concrete carrier (locked-hands → space/dynamics) but only indirectly about translation; both pianists set the stage Lewis enters."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_003_methodological_descent",
+      "from_position": 2,
+      "to_position": 3,
+      "kind": "methodological_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Hancock has cited Jamal repeatedly as a foundational influence — Jamal's use of space and dynamics around an insistent left-hand vamp prefigures Hancock's modal ostinato approach on Cantaloupe Island. Criterion B kinship: no direct edge in the map, but the line from Jamal's space-and-dynamics piano trio to Hancock's modal-vamp soul-jazz is the missing rung between Axis A's piano-trio root and the same-era Blue Note parallel that frames the anchor.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这套'左手压住、右手提溜'的写法,六年后会在纽约被另一位钢琴家改成模态硬切。",
+          "voice_en": "This 'left hand holds, right hand floats' design will be cut into a modal version by another pianist in New York six years on."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Jamal 那边听到的留白与动态,Hancock 是公开承认的学生。",
+          "voice_en": "The space and dynamics you just heard in Jamal — Hancock has publicly named him as a teacher."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.51,
+        "dimensions": {
+          "story_drive": 0.45,
+          "concrete_carrier": 0.58,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.48
+        },
+        "rationale": "Bridges upstream piano-trio root to same-era Blue Note parallel. Concrete carrier (modal vamp ↔ space/dynamics) carries the pair."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_002_to_006_methodological_descent",
+      "from_position": 2,
+      "to_position": 6,
+      "kind": "methodological_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_ahmadjamal_to_ramseylewis_methodological_descent",
+      "system_sensory_note": "The methodological root of the anchor. Same Chicago Argo label, same live-piano-trio-plays-popular-material formula, same use of space and dynamics to turn standards into crossover instrumentals. Jamal's Pershing LP charted for 108 weeks; Lewis has named Jamal as his foundational influence in interviews. The In Crowd is the formula's second Argo peak seven years later.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这套 Chicago / Argo 黑人钢琴三重奏弹流行曲的写法,七年后会在 DC 跑出全公司最响的一炮。",
+          "voice_en": "This Chicago Argo black-piano-trio formula will produce the label's loudest hit seven years on in a DC live date."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Jamal 那张 Pershing 听到的同一家公司、同一种架势,Lewis 自己公开承认是他的样板。",
+          "voice_en": "The same label, same trio stance you just heard on Jamal's Pershing — Lewis has publicly named it as his template."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.78,
+        "dimensions": {
+          "story_drive": 0.78,
+          "concrete_carrier": 0.80,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.72
+        },
+        "rationale": "Foundational methodological descent into the anchor; high concrete carrier (label/format/personnel all named) plus Lewis's own attribution."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_004_same_era_dialogue",
+      "from_position": 3,
+      "to_position": 4,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Both are 1964 transatlantic statements of the new cover-as-authorship mid-60s mode that Lewis enters in 1965. Hancock takes a modal acoustic-jazz form to a soul-jazz audience; the UK side takes a public-domain folk song and turns it into R&B authorship via Hammond/Vox arrangement. Same 1964 moment, two instrument families.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同一年大西洋彼岸,Hammond 与 Vox 风琴正把一首公版民谣翻成英国 R&B 摇滚的作者性主张。",
+          "voice_en": "The same year across the Atlantic, Hammond and Vox organs are turning a public-domain folk song into UK R&B authorship."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Hancock 那边听到的'流行素材当作者陈述',大西洋这边 1964 年同步在出。",
+          "voice_en": "The 'use popular material as authorship' move you just heard in Hancock — the Atlantic side runs it the same year."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.56,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.50,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Frames the 1964 transatlantic climate the anchor will absorb."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_015_direct_influence",
+      "from_position": 3,
+      "to_position": 15,
+      "kind": "direct_influence",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_hancock_to_jtq_direct_influence",
+      "system_sensory_note": "Hancock's mid-60s Blue Note records (Empyrean Isles, Maiden Voyage) were a primary template for the JTQ / Acid Jazz Hammond-organ sound: modal vamps, tight horn punctuation, rhythm-section-as-engine. JTQ regularly covered the Blue Note canon (incl. Hancock material) in live sets. Direct influence inside the same Acid Jazz scene that re-canonized Lewis on the Cadet side.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "1986 年伦敦的一支 Hammond 四重奏会公开把 Blue Note 60s 模态语言翻成俱乐部地板乐。",
+          "voice_en": "In 1986 a London Hammond quartet will openly turn this Blue Note 60s modal language into dancefloor music."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听到的 Hancock 60s 模态 vamp,正是 JTQ 1986 用 Hammond 接过的那条架势。",
+          "voice_en": "The 60s Hancock modal vamp you just heard is exactly what JTQ took over with Hammond in 1986."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.55,
+        "dimensions": {
+          "story_drive": 0.45,
+          "concrete_carrier": 0.60,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.60
+        },
+        "rationale": "Documented direct-influence pair within the Blue Note → Acid Jazz lineage running parallel to the Lewis → Acid Jazz line."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_003_to_017_translation",
+      "from_position": 3,
+      "to_position": 17,
+      "kind": "translation",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_hancock_to_us3_translation",
+      "system_sensory_note": "The cleanest documented sample-as-translation pair in the map. Geoff Wilkinson licensed Cantaloupe Island whole from Blue Note as the first track in EMI's then-novel Blue Note sampling deal; rapped over it; sold platinum. The 1964 acoustic-jazz hit becomes a 1992 hip-hop / Acid Jazz crossover. Axis B closing image — cover-as-authorship has matured into sample-as-authorship.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "1992 年 EMI 会把这段 1964 的模态 vamp 整段卖给伦敦的一组 hip-hop 制作人。",
+          "voice_en": "In 1992 EMI will license this entire 1964 modal vamp to a London hip-hop trio to rap over."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听的 Hancock 1964 模态 vamp,正是 Us3 整段抽出来做底子的那段——Blue Note 第一次卖金库。",
+          "voice_en": "The 1964 Hancock vamp you just heard is exactly the bed Us3 lifted whole — Blue Note's first vault license."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.74,
+        "dimensions": {
+          "story_drive": 0.78,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.52
+        },
+        "rationale": "Single highest-evidenced translation pair — whole-master license is documented. Concrete carrier and evidential strength both maxed."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_004_to_005_same_era_dialogue",
+      "from_position": 4,
+      "to_position": 5,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_dobiegray_to_animals_lateral",
+      "system_sensory_note": "Two transatlantic 1964 statements of 'pop hit as authored cover' — Animals (May 1964, UK #1 / US #1) make arrangement-as-authorship of a public-domain folk song; Gray (Oct 1964, US #13) makes lyric-as-mod-anthem of Billy Page's tune. The two together are the source culture Lewis arrives into seven months later.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "五个月后 LA 一位黑人歌手会用同样的姿态把别人写的歌当成自己的——这次对应的是 mod 圈的拍手节奏。",
+          "voice_en": "Five months later in LA a Black singer will claim someone else's song the same way — paired with mod-scene clap, not Hammond."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Animals 那边听到的'把别人的歌当成自己的',五个月后 Dobie Gray 在 LA 用 mod 圈话术做了一遍。",
+          "voice_en": "The 'claim someone else's song as your own' move you just heard in the Animals — Dobie Gray ran it in LA five months later."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.60,
+        "dimensions": {
+          "story_drive": 0.62,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.58,
+          "focus_relevance": 0.68
+        },
+        "rationale": "Frames the 1964 'pop hit as authored cover' climate the anchor inherits."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_004_to_006_translation",
+      "from_position": 4,
+      "to_position": 6,
+      "kind": "translation",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_animals_to_ramseylewis_translation",
+      "system_sensory_note": "Independent transatlantic parallel — Animals (May 1964) and Lewis (May 1965) both demonstrate that cover-as-authorship is the dominant mid-60s mode. Burdon's vocal authorship of a public-domain folk song and Price's organ arrangement are the rock-side counterpart to Lewis's piano-trio reading of Dobie Gray. Same gesture, different instrument families, exactly one year apart.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "整整一年后,Argo 公司会在 DC 用钢琴三重奏做同一件事——Hammond 换成三角钢琴。",
+          "voice_en": "Exactly one year later, Argo will do the same with a piano trio in DC — grand piano instead of Hammond."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Animals 那边听到的'翻唱当作者性',一年后 Ramsey Lewis 在三角钢琴上做了一遍。",
+          "voice_en": "The 'cover-as-authorship' you just heard in the Animals — Ramsey Lewis ran it on grand piano a year later."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.66,
+        "dimensions": {
+          "story_drive": 0.72,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.85
+        },
+        "rationale": "High focus-relevance — explicit translation-aesthetic frame, transatlantic parallel one year apart."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_004_to_008_same_era_dialogue",
+      "from_position": 4,
+      "to_position": 8,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_animals_to_georgiefame_lateral",
+      "system_sensory_note": "The two organ-driven UK R&B/jazz singles that frame 1964–65 on the same EMI sub-label — same Hammond/Vox-Continental sound, same Newcastle-vs-Soho mod-club circuit feeding the charts. Both reverse-distill American material into UK Mod dance hits. The Animals are the rock-side anchor of the same UK ecosystem that imported Lewis.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "几个月后 Soho 那条街上,另一支英国乐队会用 Hammond 风琴把美国拉丁爵士曲翻成 mod 舞曲。",
+          "voice_en": "A few months later on a Soho street another UK band will turn an American Latin-jazz tune into mod-club dance via Hammond."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Animals 听到的 Hammond/Vox + 翻唱美国素材,半年后 Soho 那边的同行同步在出。",
+          "voice_en": "The Hammond/Vox + cover-American template you heard in the Animals — Soho peers were running it the same six months."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.58,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.60,
+          "focus_relevance": 0.55
+        },
+        "rationale": "UK Mod ecosystem same-era frame — concrete carrier strong (same label, same instrument, same scene)."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_005_to_006_translation",
+      "from_position": 5,
+      "to_position": 6,
+      "kind": "translation",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_dobiegray_to_ramseylewis_in-crowd_translation",
+      "system_sensory_note": "The source-song pair — the cleanest documented instance of the anchor's translation aesthetic. Gray's Charger 105 (Oct 1964, Billboard #13) is the vocal R&B object. Lewis cuts the instrumental cover live at Bohemian Caverns 13–15 May 1965, ~7 months after Gray's release: strips Billy Page's lyric, keeps the changes and stop-time hook, replaces vocal with right-hand blues melisma, turns audience clap-along into the rhythm engine. This pair IS the anchor's translation event.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "七个月后 DC 一间俱乐部的现场录音里,这条 R&B 嗓子会被拆掉,只留和弦、hook 与拍手。",
+          "voice_en": "Seven months later in a DC club tape, this R&B voice will be stripped — only the changes, the hook and the audience clap stay."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才听的 Dobie Gray 那把 R&B 嗓子,七个月后被 Lewis 整段拆掉,人声位置交给右手 blues。",
+          "voice_en": "The R&B voice you just heard from Dobie Gray — Lewis stripped it whole seven months later, the vocal slot going to right-hand blues."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.91,
+        "dimensions": {
+          "story_drive": 0.95,
+          "concrete_carrier": 0.95,
+          "evidential_strength": 0.92,
+          "focus_relevance": 0.95
+        },
+        "rationale": "Highest-scored pair in the episode. Story-drive maxes (this IS the anchor translation event); concrete carrier maxes (lyric stripped, audience-as-rhythm engineered into the tape)."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_007_translation",
+      "from_position": 6,
+      "to_position": 7,
+      "kind": "translation",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_ramseylewis_to_mamaspapas_in-crowd_translation",
+      "system_sensory_note": "The triple-translation triptych closes. The Mamas & The Papas cut The In Crowd for their Feb 1966 debut LP, eight months after Lewis's #5 hit. John Phillips's arrangement re-translates Lewis's instrumental groove back into a four-part vocal folk-rock setting — closing the Gray → Lewis → Mamas&Papas loop in 14 months. Per Lewis's NPR interview, his version became the reference for subsequent covers, not Gray's.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "再等八个月,LA 一支四声部民谣摇滚组合会把这段无人声 groove 再翻回声音。",
+          "voice_en": "Eight months on, an LA four-part folk-rock vocal group will translate this voiceless groove back into voice."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Lewis 那张 1965 现场听到的无人声 groove,八个月后被 Mamas & Papas 翻成四声部合唱。",
+          "voice_en": "The voiceless groove you just heard on Lewis's 1965 tape — Mamas & Papas turned it back into four-part harmony eight months later."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.86,
+        "dimensions": {
+          "story_drive": 0.92,
+          "concrete_carrier": 0.85,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Closes the triple-translation triptych — structural payoff of Axis A's opening movement."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_008_same_era_dialogue",
+      "from_position": 6,
+      "to_position": 8,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_ramseylewis_to_georgiefame_same_era_dialogue",
+      "system_sensory_note": "The Axis B opening pair. Fame's Yeh Yeh (UK #1 Jan 1965) is the contemporary UK Mod-scene mirror of what Lewis does four months later in DC: small jazz-organ combo plays a covered Latin-jazz tune to a young dance audience. Flamingo Club residency was the UK Mod analog of Bohemian Caverns. Parallel invention, not influence.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同一个 1965 年头,在伦敦 Soho 另一间俱乐部里,一支英国乐队同步在做这件事。",
+          "voice_en": "The same early 1965, in another Soho club, a UK band is running the parallel version on the other side of the Atlantic."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Lewis DC 现场听到的'小爵士组翻流行素材跳舞',Fame 在 Soho 同步做了。",
+          "voice_en": "The 'small jazz combo turns pop into dance' move you heard in Lewis's DC date — Fame ran the parallel in Soho."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.79,
+        "dimensions": {
+          "story_drive": 0.82,
+          "concrete_carrier": 0.78,
+          "evidential_strength": 0.80,
+          "focus_relevance": 0.75
+        },
+        "rationale": "Opens Axis B with the cleanest transatlantic parallel pair — both venues, both formulas, both chart peaks documented."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_011_methodological_descent",
+      "from_position": 6,
+      "to_position": 11,
+      "kind": "methodological_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_ramseylewis_to_cannonball_methodological_descent",
+      "system_sensory_note": "Cannonball Adderley Quintet (Capitol, recorded live 20 Oct 1966 at Capitol Studio A with invited audience, #11 Billboard) is the direct methodological descent of The In Crowd formula. Zawinul wrote it specifically as gospel-flavored single; engineered 'live' atmosphere (audience hand-picked into studio) is the studio-side answer to Lewis's actual Bohemian Caverns night. NPR explicitly names Adderley as Lewis's successor.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "Lewis 这一夜的'观众成了节奏组',十七个月后会被 Capitol 公司在 LA 翻成棚内版。",
+          "voice_en": "Lewis's 'audience-as-rhythm-section' move from tonight will be cut into a studio version at Capitol seventeen months later."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Lewis DC 听到的拍手成了节奏组,Cannonball 1966 在棚内重做——观众请进去。",
+          "voice_en": "The audience-clap-as-rhythm move you heard on Lewis's DC date — Cannonball redid it in studio in 1966 with a hand-picked audience."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.82,
+        "dimensions": {
+          "story_drive": 0.85,
+          "concrete_carrier": 0.92,
+          "evidential_strength": 0.85,
+          "focus_relevance": 0.65
+        },
+        "rationale": "Strongest concrete carrier in the downstream lineage — the audience-engineering detail is a single sentence the listener can hear."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_006_to_017_methodological_descent",
+      "from_position": 6,
+      "to_position": 17,
+      "kind": "methodological_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_ramseylewis_to_us3_methodological_descent",
+      "system_sensory_note": "The arc-closure pair across both axes. Us3's project on Hand on the Torch — license the Blue Note vault, rap over the soul-jazz canon, sell platinum — is the 1992 methodological grandchild of Lewis's 1965 move. The In Crowd reverse-distilled Dobie Gray's vocal into piano; the 1992 act reverse-distills Hancock's piano into hip-hop. Same gesture, sample-based 90s version, closing the A+B arc.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "二十七年后,伦敦一组 hip-hop 制作人会用 sample 取代翻唱,做同一种作者性姿态。",
+          "voice_en": "Twenty-seven years on a London hip-hop crew will run the same authorship gesture with sample instead of cover."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Lewis 1965 听到的'翻唱当自己的陈述',1992 年 Us3 用 sample 做了同一件事。",
+          "voice_en": "The 'cover as authorship' you heard on Lewis's 1965 date — Us3 ran it in 1992 with sample replacing cover."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.79,
+        "dimensions": {
+          "story_drive": 0.88,
+          "concrete_carrier": 0.78,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.85
+        },
+        "rationale": "Arc-closure pair — high story-drive (the gesture's 27-year evolution into the sample era) and focus-relevance."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_007_to_009_same_era_dialogue",
+      "from_position": 7,
+      "to_position": 9,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Criterion B kinship inside the immediate aftermath of the anchor. The Mamas & The Papas's Feb 1966 reading and Lewis's own Sep 1965 follow-up (McCoys cover, #11 Hot 100) are within four months of each other in opposite directions of the cover-as-authorship gesture — Mamas re-vocalize what Lewis instrumentalized; Lewis applies the formula to a rock #1 he reverse-distills the same way. Two simultaneous answers to the In Crowd template.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "同样这个 1965 年下半年,Lewis 自己在同一间俱乐部又录了一场,这次翻的是一首摇滚冠军。",
+          "voice_en": "The same late 1965, Lewis cut another date at the same club — this time covering a rock #1 single."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Mamas 听到的'把 Lewis 器乐 groove 翻回声音',Lewis 自己同步在做下一首翻唱。",
+          "voice_en": "The 'translate Lewis's groove back to voice' move you heard from the Mamas — Lewis himself was running the next cover in parallel."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.54,
+        "dimensions": {
+          "story_drive": 0.58,
+          "concrete_carrier": 0.50,
+          "evidential_strength": 0.45,
+          "focus_relevance": 0.62
+        },
+        "rationale": "Criterion B kinship inside the anchor's immediate aftermath."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_008_to_013_methodological_descent",
+      "from_position": 8,
+      "to_position": 13,
+      "kind": "methodological_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Criterion B kinship across the UK Hammond-soul-jazz line. Fame's 1965 Flamingo Club Hammond combo and the 1968 Streetnoise Hammond-organ readings are the two pillar UK Mod-era Hammond statements. Brian Auger has explicitly cited Jimmy Smith / Jack McDuff and the broader soul-jazz scene Fame helped open; the line is the same UK Hammond inheritance the Acid Jazz scene later canonized.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "三年后伦敦同一条 Hammond 线还在长——这次是一位女歌手加上 Auger 的 Hammond 翻 Dylan。",
+          "voice_en": "Three years on the same London Hammond line keeps growing — this time a female singer plus Auger's Hammond cover Dylan."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Fame 1965 听到的 Hammond + 翻美国素材,三年后 Auger 与 Driscoll 用同一台机器接上。",
+          "voice_en": "The Hammond + cover-American template you heard in Fame's 1965 set — Auger and Driscoll took the same machine three years on."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.55,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.45,
+          "focus_relevance": 0.58
+        },
+        "rationale": "Connects the UK Hammond line through Axis B."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_009_to_010_methodological_descent",
+      "from_position": 9,
+      "to_position": 10,
+      "kind": "methodological_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Criterion B personnel-transition pair. The Sep 1965 session is the last Lewis Trio recording with the original Eldee Young / Red Holt rhythm section; the 1966 follow-up is the first with Maurice White on drums and Cleveland Eaton on bass. Same Lewis-led methodological gesture, different rhythm section — and the source material leaps from rock #1 to a traditional African-American spiritual, proving the formula's source-category catholicity.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "Young 和 Holt 这一段过后会走人,Lewis 下一张换上新节奏组,把范式带去翻一首传统圣歌。",
+          "voice_en": "Young and Holt will leave after this. Lewis's next hit brings in a new rhythm section and runs the template on a traditional spiritual."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Lewis Sloopy 听的还是 Young/Holt 节奏组,他们走后,下一张换上新人翻圣歌。",
+          "voice_en": "The rhythm on Lewis's Sloopy you just heard is still Young/Holt — after they left, the next hit took the template to a spiritual."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.60,
+        "dimensions": {
+          "story_drive": 0.62,
+          "concrete_carrier": 0.72,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.55
+        },
+        "rationale": "Lewis-internal personnel pivot. Concrete carrier strong (named personnel transition + named source-category leap)."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_009_to_012_genealogical_descent",
+      "from_position": 9,
+      "to_position": 12,
+      "kind": "genealogical_descent",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Criterion B personnel-diaspora pair. The Sep 1965 session is the last Lewis Trio recording with Eldee Young (bass) and Red Holt (drums); they leave in early 1966 and form Young-Holt Trio, later Young-Holt Unlimited. The 1968 Brunswick gold single is the direct diaspora outcome — even though the released track was session musicians, the brand and lineage line goes through this personnel.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "这场是 Young/Holt 在 Lewis 名下最后一场。三年后 Brunswick 会把他们的名字挂上一张金唱片。",
+          "voice_en": "This is Young/Holt's last session under Lewis. Three years on Brunswick will put their name on a gold single."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Lewis Sloopy 听到的节奏组就是 Young/Holt,他们离开后在 Brunswick 出了金唱片。",
+          "voice_en": "The Young/Holt rhythm section you heard on Lewis's Sloopy — they left and cut a gold single on Brunswick under their own name."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.54,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.45
+        },
+        "rationale": "Personnel-diaspora outcome of the anchor's rhythm section."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_010_to_011_same_era_dialogue",
+      "from_position": 10,
+      "to_position": 11,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Criterion B 1966 same-year peer pair. The 1966 Cadet hit and the Oct 1966 Capitol hit are both soul-jazz crossover singles where a black combo plus engineered or captured audience yields a top-20 pop single. Lewis brings the gospel source material; Cannonball brings the gospel-flavored Zawinul composition with hand-picked studio audience. Two studios, two labels, same 1966 methodological climate.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "几个月后 Capitol 也想做同样的事——把福音味的曲子用 live 录,观众请进棚里坐着拍手。",
+          "voice_en": "A few months later Capitol will run the same idea — cut a gospel-flavored tune live with a hand-picked studio audience."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Lewis Wade 听到的福音 + 现场结构,Cannonball 几个月后用棚内观众做了同一件事。",
+          "voice_en": "The gospel + live structure you heard on Lewis's Wade — Cannonball ran the studio version with a hand-picked audience months later."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.59,
+        "dimensions": {
+          "story_drive": 0.58,
+          "concrete_carrier": 0.72,
+          "evidential_strength": 0.55,
+          "focus_relevance": 0.52
+        },
+        "rationale": "Two 1966 peer instances of the same gospel + live-audience template — concrete carrier strong via the audience-engineering detail."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_011_to_016_same_era_dialogue",
+      "from_position": 11,
+      "to_position": 16,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_cannonball_to_brandnewheavies_lateral",
+      "system_sensory_note": "Cannonball's 1967 Mercy Mercy Mercy! LP was a foundational rare-groove DJ record in the UK 80s scenes that produced the Heavies — alongside Lewis's Cadet sides and Donald Byrd's CTI / Blue Note 70s LPs, this Capitol soul-jazz hit was a Camden/Soho club staple in the Acid Jazz pre-history. The Heavies' 1990 debut palette literally rebuilds the late-60s Capitol/Cadet soul-jazz combo sound.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "二十四年后伦敦的一支乐队会把这种 Capitol 60s 末 soul-jazz 声响整段拆出来重做。",
+          "voice_en": "Twenty-four years on a London band will take this late-60s Capitol soul-jazz sound apart and reassemble it for the club."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Cannonball 1966 听的 Capitol soul-jazz 组合声响,Brand New Heavies 1990 拆出来重做。",
+          "voice_en": "The Capitol soul-jazz sound you heard on Cannonball's 1966 hit — Brand New Heavies tore it apart in 1990 London."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.46,
+        "dimensions": {
+          "story_drive": 0.45,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.35,
+          "focus_relevance": 0.45
+        },
+        "rationale": "Documented within the rare-groove → Acid Jazz lineage but the specific Cannonball → Heavies citation is hypothesis-tier."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_012_to_014_genealogical_descent",
+      "from_position": 12,
+      "to_position": 14,
+      "kind": "genealogical_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Criterion B Lewis-extended-family late-period pair. Young-Holt Unlimited (post-Lewis personnel, 1968 #3 Hot 100) and Lewis's 1974 Columbia hit (co-written with his former drummer's new band, his biggest 70s seller) are both downstream of the In Crowd-era trio's break-up. The cover-as-authorship gesture has migrated from translating other people's hits into peer-coauthoring jazz-funk hybrid singles with departed-then-returned bandmates.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "六年后 Lewis 自己会在 Columbia 与他前打鼓手的新乐队共著一张 jazz-funk 大碟。",
+          "voice_en": "Six years on Lewis himself will co-write a jazz-funk hit at Columbia with his former drummer's new band."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Young-Holt 听到的 Lewis 范式延伸,Lewis 自己 1974 年也在 Columbia 续上这条线。",
+          "voice_en": "The Lewis-template extension you heard on Young-Holt — Lewis himself picked the line up again at Columbia in 1974."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.50,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.40
+        },
+        "rationale": "Late-period Lewis-extended-family pair."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_013_to_015_genealogical_descent",
+      "from_position": 13,
+      "to_position": 15,
+      "kind": "genealogical_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": "edge_juliedriscoll_to_jtq_genealogical_descent",
+      "system_sensory_note": "Brian Auger's Hammond-organ soul-jazz late-60s recordings with Driscoll (Streetnoise 1969) are the direct UK Hammond-soul-jazz precedent that the late-80s Acid Jazz Hammond combo consciously revived — Auger was a touchstone figure in the mod-revival DJ canon. Genealogical descent across the British Hammond-soul-jazz line from late-60s Mod into late-80s Acid Jazz.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "十七年后伦敦会出一支专做 Hammond 的四重奏,公开把 Auger 这条 UK Hammond 线当模板复活。",
+          "voice_en": "Seventeen years on a London Hammond quartet will openly revive Auger's UK Hammond line as template."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Driscoll/Auger 听到的 1968 UK Hammond soul-jazz,正是 JTQ 1986 公开复活的那条线。",
+          "voice_en": "The 1968 UK Hammond soul-jazz you heard on Driscoll/Auger — JTQ openly revived that line in 1986."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.52,
+        "dimensions": {
+          "story_drive": 0.50,
+          "concrete_carrier": 0.58,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.50
+        },
+        "rationale": "UK Hammond line continuity into Acid Jazz."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_014_to_016_genealogical_descent",
+      "from_position": 14,
+      "to_position": 16,
+      "kind": "genealogical_descent",
+      "evidence_basis": "musicological",
+      "backed_by_edge_id": null,
+      "system_sensory_note": "Criterion B 70s soul-jazz → Acid Jazz pair. Lewis's 1974 Columbia jazz-funk hit is exactly the early-70s American jazz-funk hybrid the Brand New Heavies's 1990 debut palette explicitly reverse-engineers. Acid Jazz scene founders named Lewis, Crusaders, Roy Ayers and Donald Byrd as the early-70s catalog they were rebuilding for 1990 UK club soul.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "十六年后伦敦俱乐部一支乐队会公开把 Lewis 70s jazz-funk hybrid 当原料拆。",
+          "voice_en": "Sixteen years on a London club band will openly take Lewis's 70s jazz-funk hybrid apart as raw material."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Lewis Sun Goddess 听到的 jazz-funk hybrid,Brand New Heavies 1990 直接拆做原料。",
+          "voice_en": "The jazz-funk hybrid you heard on Lewis's Sun Goddess — Brand New Heavies tore it apart sixteen years later as raw material."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.54,
+        "dimensions": {
+          "story_drive": 0.58,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.50,
+          "focus_relevance": 0.45
+        },
+        "rationale": "Late-Lewis → Acid Jazz revival pair."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_015_to_016_same_era_dialogue",
+      "from_position": 15,
+      "to_position": 16,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_jtq_to_brandnewheavies_dialogue",
+      "system_sensory_note": "JTQ (1986) and Brand New Heavies (1988–91) are the two founding acts of Eddie Piller's Acid Jazz label/scene, both rooted in the London mod-revival club nights that re-canonized 60s/70s soul-jazz. Same-era UK dialogue: instrumental Hammond-driven jazz funk and band-led club soul are the two complementary sides of the early Acid Jazz palette.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "几年后伦敦同一片场景会长出另一支乐队——这次是乐队加女主唱,与 Hammond 器乐互为一对。",
+          "voice_en": "A few years on the same London scene will grow another band — this time band plus female lead, paired with the Hammond-instrumental side."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 JTQ 听到的 Hammond 器乐侧 Acid Jazz,几年后同厂牌的 BNH 是乐队侧的对头。",
+          "voice_en": "The Hammond-instrumental Acid Jazz you heard on JTQ — the same label put out Brand New Heavies a few years on, the band-side counterpart."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.55,
+        "dimensions": {
+          "story_drive": 0.55,
+          "concrete_carrier": 0.62,
+          "evidential_strength": 0.65,
+          "focus_relevance": 0.42
+        },
+        "rationale": "Documented Acid Jazz scene-founding pair, two complementary halves of the early palette."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_016_to_018_same_era_dialogue",
+      "from_position": 16,
+      "to_position": 18,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_brandnewheavies_to_jamiroquai_dialogue",
+      "system_sensory_note": "Jamiroquai's 1993 single (UK #10) is the Acid Jazz scene's chart-pop graduation: same horns + clavinet + falsetto palette as the Heavies' 1990 debut but pushed to international pop radio. Jay Kay frequented the same UK rare-groove / Acid Jazz clubs the Heavies emerged from; Jamiroquai's first single was on Eddie Piller's Acid Jazz Records before Sony. Same-era UK scene dialogue.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "三年后 Acid Jazz 厂牌会签下另一位伦敦俱乐部常客——同样的 clavinet、号、假声,推上国际榜。",
+          "voice_en": "Three years on the Acid Jazz label will sign another regular of the same clubs — same clavinet, horns, falsetto, pushed to global chart."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 BNH 1990 听的 Acid Jazz 调色盘,Jamiroquai 三年后推到国际 pop 榜——同一个厂牌出道。",
+          "voice_en": "The Acid Jazz palette you heard on BNH's 1990 debut — Jamiroquai pushed it onto the global pop chart three years on."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.60,
+        "dimensions": {
+          "story_drive": 0.62,
+          "concrete_carrier": 0.65,
+          "evidential_strength": 0.70,
+          "focus_relevance": 0.45
+        },
+        "rationale": "Scene-graduation pair to the episode's coda — well-documented Acid Jazz Records lineage."
+      },
+      "user_overrides": []
+    },
+    {
+      "id": "conn_017_to_018_same_era_dialogue",
+      "from_position": 17,
+      "to_position": 18,
+      "kind": "same_era_dialogue",
+      "evidence_basis": "historical",
+      "backed_by_edge_id": "edge_us3_to_jamiroquai_lateral",
+      "system_sensory_note": "Us3 Cantaloop (UK Nov 1992) and Jamiroquai's 1993 single are the two breakthrough UK Acid Jazz-derived hits of 1992–93 — Us3 graduates the scene via sampling; Jamiroquai graduates it via live-band funk. Both came out of the same London rare-groove / Acid Jazz Records milieu within months of each other, framing the moment when the UK soul-jazz revival broke globally.",
+      "narration_modes": {
+        "foreshadow_anonymous_at_from": {
+          "voice_zh": "七个月后同一片场景会用乐队加假声做出第二张国际单曲——sample 这一侧让位给现场乐队。",
+          "voice_en": "Seven months later the same scene will produce a second international single via band plus falsetto — sample hands off to live band."
+        },
+        "foreshadow_named_at_from": null,
+        "callback_named_at_to": {
+          "voice_zh": "你刚才在 Us3 听到的 sample 版 Acid Jazz 国际单曲,Jamiroquai 七个月后用现场乐队做了第二版。",
+          "voice_en": "The sample-side Acid Jazz hit you heard on Us3 — Jamiroquai cut the live-band version seven months later. Also UK Top 10."
+        }
+      },
+      "intrinsic_score": {
+        "value": 0.58,
+        "dimensions": {
+          "story_drive": 0.60,
+          "concrete_carrier": 0.55,
+          "evidential_strength": 0.70,
+          "focus_relevance": 0.50
+        },
+        "rationale": "Coda-positioned scene-peer pair — two 1992-93 UK Acid Jazz international breakthroughs."
+      },
+      "user_overrides": []
+    }
+  ]
+}
