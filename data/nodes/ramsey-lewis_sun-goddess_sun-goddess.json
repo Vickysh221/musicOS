@@ -1,0 +1,52 @@
+{
+  "id": "ramsey-lewis_sun-goddess_sun-goddess",
+  "artist": "Ramsey Lewis",
+  "period": {
+    "label": "EWF-collab fusion era",
+    "year_start": 1974,
+    "year_end": 1974
+  },
+  "works": [
+    {
+      "title": "Sun Goddess",
+      "type": "track",
+      "year": 1974
+    },
+    {
+      "title": "Sun Goddess",
+      "type": "album",
+      "year": 1974
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "jazz-funk fusion (Lewis acoustic piano + Fender Rhodes; EWF backing)",
+    "geographic_locus": "Chicago — Columbia Records",
+    "historical_role": "Maurice White's gratitude record to his mentor. By 1974 White's Earth, Wind & Fire was a global force; he returned to Lewis with his band, co-produced the album and lent EWF as the backing group. 'Sun Goddess' (the title track) became a major fusion hit — proof that the soul-jazz crossover Lewis pioneered in 1965 had matured into the 1970s fusion mainstream via the same person who started as Lewis's apprentice drummer. Late-axis-A node: the cover-as-authorship method now becomes mentor-as-coauthor."
+  },
+  "narrative_slots": {
+    "production_facts": "Released October 1974 on Columbia Records. Co-produced by Lewis and Maurice White. Charles Stepney involvement in arrangements.",
+    "member_dynamics": "Ramsey Lewis (piano, Fender Rhodes), Maurice White (drums, vocals, kalimba), Verdine White (bass), Philip Bailey (vocals, percussion), Larry Dunn (synthesizer) — essentially EWF backing Lewis.",
+    "cultural_venue": "Chicago jazz/R&B continuum; Columbia Records.",
+    "instrumentation_details": "Lewis acoustic piano + Fender Rhodes layered with EWF horn punctuation, kalimba breaks, Verdine White bass funk. Tempo and texture closer to mid-70s fusion than soul-jazz; cover-as-authorship method now applied at the band-as-text scale.",
+    "release_circumstances": "Columbia CK 33194, October 1974. Album #1 R&B, #12 Pop, double platinum eventually. 'Sun Goddess' single #20 R&B / #44 Pop."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "mentor_apprentice_return",
+    "fusion",
+    "ewf_collab",
+    "1974"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Sun_Goddess_(album)  [T2-3]",
+    "https://somethingelsereviews.com/2016/02/05/maurice-whites-gratitude-gave-formed-mentor-ramsey-lewis-a-hit-with-sun-goddess/  [T3]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

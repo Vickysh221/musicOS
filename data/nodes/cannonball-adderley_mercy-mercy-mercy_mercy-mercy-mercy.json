@@ -1,0 +1,53 @@
+{
+  "id": "cannonball-adderley_mercy-mercy-mercy_mercy-mercy-mercy",
+  "artist": "Cannonball Adderley Quintet",
+  "period": {
+    "label": "Capitol crossover era",
+    "year_start": 1966,
+    "year_end": 1967
+  },
+  "works": [
+    {
+      "title": "Mercy, Mercy, Mercy",
+      "type": "track",
+      "year": 1966
+    },
+    {
+      "title": "Mercy, Mercy, Mercy! Live at 'The Club'",
+      "type": "album",
+      "year": 1967
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "soul-jazz hard-bop with audience-fueled crossover",
+    "geographic_locus": "Capitol Studios, Hollywood (staged-live recording)",
+    "historical_role": "The lateral peer of 'The In Crowd' — same gesture, one year later, one Grammy category over. Recorded October 20, 1966 at Capitol Studios in Hollywood in front of an invited audience with an open bar, then released as 'Live at The Club' (Capitol-friendly fiction — actually a staged live recording, not at the closed Chicago club of that name). Composed by Joe Zawinul, featuring his Wurlitzer electric piano (one of the earliest prominent jazz uses). Hit #11 Billboard Hot 100; won the 1967 Grammy for Best Instrumental Jazz Performance — the same award Lewis took in 1966. Same audience-as-instrument production trick, same soul-jazz crossover demographic, same Grammy seat — direct same-era dialogue with the anchor."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded October 20, 1966 at Capitol Studios, Hollywood. Producer: David Axelrod. The live ambience was created by inviting friends/fans into the studio with an open bar; Capitol's liner notes claimed the recording was at 'The Club' (Chicago) for narrative effect.",
+    "member_dynamics": "Cannonball Adderley (alto sax), Nat Adderley (cornet), Joe Zawinul (Wurlitzer electric piano, composer), Victor Gaskin (bass), Roy McCurdy (drums). Zawinul would leave 1970 to co-found Weather Report — same fusion arc as Maurice White / EWF emerging from the Lewis trio.",
+    "cultural_venue": "Hollywood-studio-as-club-room — the fictionalized live setting underlines how studied the 'live crossover' format had become by 1966.",
+    "instrumentation_details": "Zawinul's Wurlitzer carries the gospel-derived 16-bar head; Cannonball's alto answers in calls; the audience claps locked to the backbeat. Same texture as Lewis's 'In Crowd' but with horn front-line instead of piano.",
+    "release_circumstances": "Capitol Records, ST-2663, released early 1967. #11 Hot 100; album #2 Billboard Top 200. Grammy 1967 for Best Instrumental Jazz Performance — Lewis's exact Grammy category, one year on. Grammy Hall of Fame inducted 2021."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "same_era_dialogue",
+    "soul_jazz",
+    "audience_as_instrument",
+    "1966"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Mercy,_Mercy,_Mercy  [T2-3]",
+    "https://en.wikipedia.org/wiki/Mercy,_Mercy,_Mercy!_Live_at_%22The_Club%22  [T2-3 — album, staged-live recording disclosure]",
+    "https://www.udiscovermusic.com/stories/cannonball-adderley-mercy-mercy-mercy/  [T2 — feature]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "jamiroquai_emergency-on-planet-earth_too-young-to-die",
+  "artist": "Jamiroquai",
+  "period": {
+    "label": "Acid jazz mainstream peak",
+    "year_start": 1992,
+    "year_end": 1993
+  },
+  "works": [
+    {
+      "title": "Too Young to Die",
+      "type": "track",
+      "year": 1993
+    },
+    {
+      "title": "Emergency on Planet Earth",
+      "type": "album",
+      "year": 1993
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "UK acid-jazz mainstream / Stevie Wonder–Roy Ayers–Donald Byrd descent",
+    "geographic_locus": "London — Acid Jazz Records (debut), then Sony S2",
+    "historical_role": "The acid-jazz movement's most commercially successful global act. Formed 1992 by Jay Kay; debut single 'When You Gonna Learn' came out on Acid Jazz Records before a Sony deal. Emergency on Planet Earth (June 1993) hit UK #1; 'Too Young to Die' single reached UK #10. Stated influences across all interviews: Stevie Wonder (Innervisions era), Roy Ayers, Donald Byrd, Herbie Hancock. The episode's mainstream-pop endpoint for the soul-jazz translation lineage — a record selling stadium tickets in 1993 whose musical DNA traces directly through 70s jazz-funk and 60s soul-jazz back to the Lewis crossover moment."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 1992–93; released 14 June 1993 on Sony S2 (after the Acid Jazz Records debut single deal). Producer Mike Nielsen with Jamiroquai.",
+    "member_dynamics": "Jay Kay (vocals), Toby Smith (keyboards/co-writer), Stuart Zender (bass), Nick van Gelder (drums), Wallis Buchanan (didgeridoo). Smith and Kay co-wrote most material studying Innervisions-era Stevie Wonder records.",
+    "cultural_venue": "Late-1980s/early-90s London acid-jazz club scene; same label founding context as Brand New Heavies (Acid Jazz Records, Eddie Piller).",
+    "instrumentation_details": "Clavinet / Rhodes-keyboard heavy arrangements; funk bass front-mixed; falsetto vocal phrasing modeled on Wonder. 'Too Young to Die' opens with a moaning chord vamp + funk drum break — direct soul-jazz textural inheritance.",
+    "release_circumstances": "Sony S2 467921, June 1993. UK Albums Chart #1; eventually 6× platinum UK. Single 'Too Young to Die' reached UK #10. The episode's most public proof that the lineage Lewis started in 1965 still drove mainstream pop in 1993."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "uk_acid_jazz_mainstream_peak",
+    "soul_jazz_descent",
+    "1993"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Emergency_on_Planet_Earth  [T2-3]",
+    "https://en.wikipedia.org/wiki/Jamiroquai  [T2-3]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

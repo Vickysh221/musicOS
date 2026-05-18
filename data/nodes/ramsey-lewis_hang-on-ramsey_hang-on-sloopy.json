@@ -1,0 +1,54 @@
+{
+  "id": "ramsey-lewis_hang-on-ramsey_hang-on-sloopy",
+  "artist": "Ramsey Lewis Trio",
+  "period": {
+    "label": "Argo follow-up",
+    "year_start": 1965,
+    "year_end": 1966
+  },
+  "works": [
+    {
+      "title": "Hang On Sloopy",
+      "type": "track",
+      "year": 1965
+    },
+    {
+      "title": "Hang On Ramsey!",
+      "type": "album",
+      "year": 1965
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "soul-jazz piano-trio cover-as-authorship (self-extension of anchor)",
+    "geographic_locus": "Chicago / Argo Records",
+    "historical_role": "Released months after 'The In Crowd' to capitalize on the formula. Covers the McCoys' 1965 #1 garage-rock hit (itself a translation of the song's earlier R&B incarnation by The Vibrations as 'My Girl Sloopy'). Single charted #11 Hot 100 / #6 R&B. Demonstrates that the Lewis crossover method was a method, not a single trick — and that the trio was prepared to translate rock-pop hits as fluently as R&B ones."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded live at Bohemian Caverns same engagement series; released late 1965 on Cadet (Argo had been renamed Cadet by this point). Album 'Hang On Ramsey!' followed early 1966.",
+    "member_dynamics": "Same original trio: Lewis / Young / Holt. Last major release before the trio split in mid-1966.",
+    "cultural_venue": "Bohemian Caverns again — the formula required the room.",
+    "instrumentation_details": "Same piano-trio + audience formula; the McCoys' garage-rock riff converted into a left-hand piano vamp.",
+    "release_circumstances": "Cadet single, late 1965; Hot 100 #11, R&B #6. Grammy 1966 Best Rhythm & Blues Group Performance for 'Hold It Right There' (from the same period)."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "self_extension",
+    "soul_jazz",
+    "piano_trio_crossover",
+    "1965"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Hang_On_Ramsey!  [T3]",
+    "https://en.wikipedia.org/wiki/Ramsey_Lewis  [T2-3]"
+  ],
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2024-03-28: The In Crowd (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ramsey-lewis_wade-in-the-water_wade-in-the-water",
+  "artist": "Ramsey Lewis",
+  "period": {
+    "label": "Post-split trio, Maurice White era",
+    "year_start": 1966,
+    "year_end": 1969
+  },
+  "works": [
+    {
+      "title": "Wade in the Water",
+      "type": "track",
+      "year": 1966
+    },
+    {
+      "title": "Wade in the Water",
+      "type": "album",
+      "year": 1966
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "soul-jazz piano with gospel-spiritual translation",
+    "geographic_locus": "Chicago — Cadet Records (Argo renamed)",
+    "historical_role": "First album with the reconstituted trio (Cleveland Eaton bass + Maurice White drums replacing Young/Holt). Title track — a 19th-century spiritual — hit #19 Pop / #5 R&B; the album reached #2 R&B and #10 Pop. Translates the cover-as-authorship method from R&B (Gray) and pop (McCoys) into the gospel-spiritual canon. Critically: this is the record where a young Maurice White first plays on a hit, the start of a three-year apprenticeship before founding Earth, Wind & Fire."
+  },
+  "narrative_slots": {
+    "production_facts": "Released 1966 on Cadet Records; producer Esmond Edwards. Big-band charts by Chicago arranger Richard Evans share the spotlight with the trio.",
+    "member_dynamics": "First Lewis record with Cleveland Eaton (bass) and Maurice White (drums). White's tenure 1966–69 would include 'Up Pops Ramsey Lewis' (1968), 'Maiden Voyage' (1968), 'Another Voyage' (1969 — first recorded kalimba). White left mid-1970 to form Earth, Wind & Fire; co-produced Lewis's 'Sun Goddess' (1974) in return.",
+    "cultural_venue": "Chicago Cadet/Chess studio ecosystem.",
+    "instrumentation_details": "Lewis's gospel-blues piano with brass charts behind. The shift away from the small-room handclap aesthetic toward bigger arrangement — but the cover-as-authorship logic continues.",
+    "release_circumstances": "Cadet LPS-774, 1966; #2 R&B LPs, #10 Top 200 LPs. 'Hold It Right There' from this album won the Grammy for Best R&B Group Performance."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "self_extension",
+    "personnel_pivot_maurice_white",
+    "soul_jazz",
+    "gospel_translation",
+    "1966"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Wade_in_the_Water_(album)  [T2-3]",
+    "https://en.wikipedia.org/wiki/Maurice_White  [T2-3 — White's tenure with Lewis 1966-69, EWF founding]",
+    "https://www.allmusic.com/album/wade-in-the-water-mw0000192767  [T3]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

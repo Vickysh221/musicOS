@@ -1,0 +1,53 @@
+{
+  "id": "georgie-fame-blue-flames_yeh-yeh_yeh-yeh",
+  "artist": "Georgie Fame and the Blue Flames",
+  "period": {
+    "label": "UK Mod organ-soul era",
+    "year_start": 1964,
+    "year_end": 1965
+  },
+  "works": [
+    {
+      "title": "Yeh Yeh",
+      "type": "track",
+      "year": 1964
+    },
+    {
+      "title": "Yeh Yeh",
+      "type": "album",
+      "year": 1965
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "UK Mod / R&B-jazz Hammond organ vocal",
+    "geographic_locus": "London — Flamingo Club, Wardour Street",
+    "historical_role": "Exact-year UK parallel to 'The In Crowd': Georgie Fame's cover of Mongo Santamaria's 'Yeh Yeh' (with Jon Hendricks's lyric) hit UK #1 for two weeks in January 1965, displacing the Beatles. Same gesture — Black American jazz material rendered through a UK Mod Hammond/vocal vehicle — recorded almost in parallel with Lewis's translation of Dobie Gray. Fame's residency at the Flamingo Club (Soho) was the central UK Mod venue, and 'Yeh Yeh' is the recorded artifact of how Mod culture consumed Black American jazz live, not as a curiosity but as dance music."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded autumn 1964, released as Columbia (UK) single late 1964; reached UK #1 January 14, 1965 (2 weeks). Original by Mongo Santamaria with lyric by Jon Hendricks (Lambert, Hendricks & Ross).",
+    "member_dynamics": "Georgie Fame (b. Clive Powell, 1943 Lancashire) on Hammond organ and lead vocal. The Blue Flames band varied; the 1964 lineup included Mick Eve (sax), John McLaughlin (briefly, on guitar).",
+    "cultural_venue": "Flamingo Club, 33–37 Wardour Street, Soho — the central UK Mod all-nighter venue, where Black American jazz singles and US R&B records were the diet of the Mod audience.",
+    "instrumentation_details": "Hammond organ-led arrangement with the Blue Flames' soul-jazz horn section. Fame's vocal is laconic, scat-influenced; the harmonic content stays close to the bop-rooted Santamaria original.",
+    "release_circumstances": "Columbia (EMI) DB 7428, late 1964. UK #1 (2 weeks Jan 1965), US #21. Exact parallel to Lewis's anchor: same year, same translation gesture (American jazz → organ-led popular vehicle), but from the UK Mod side of the Atlantic."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "uk_mod_parallel",
+    "cover_translation",
+    "hammond_organ",
+    "1965"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://www.songfacts.com/facts/georgie-fame/yeh-yeh  [T3]",
+    "https://www.officialcharts.com/songs/georgie-fame-yeh-yeh/  [T1 — Official Charts UK]",
+    "https://en.wikipedia.org/wiki/Yeh,_Yeh  [T2-3]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

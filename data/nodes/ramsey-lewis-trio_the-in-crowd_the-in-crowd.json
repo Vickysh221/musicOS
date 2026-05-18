@@ -1,0 +1,70 @@
+{
+  "id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+  "artist": "Ramsey Lewis Trio",
+  "period": {
+    "label": "Argo crossover era — Bohemian Caverns live (1965)",
+    "year_start": 1965,
+    "year_end": 1966
+  },
+  "works": [
+    {
+      "title": "The 'In' Crowd",
+      "type": "track",
+      "year": 1965
+    },
+    {
+      "title": "The In Crowd",
+      "type": "album",
+      "year": 1965
+    },
+    {
+      "title": "The In Crowd - The Ultimate Mod Collection from the Original Style Movement 1958 - 1967",
+      "type": "album",
+      "year": 2008
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "soul-jazz × piano-trio crossover × cover-as-authorship",
+    "geographic_locus": "Chicago (band base, Argo/Chess label) → Washington D.C. (Bohemian Caverns recording venue)",
+    "historical_role": "Three-night live recording (May 13–15, 1965) at Bohemian Caverns, Washington D.C., that crystallized the soul-jazz piano-trio cover-as-authorship method. Lewis takes Dobie Gray's Top-40 R&B single from late 1964 — heard the morning of the session in a DC coffee shop after a waitress (Nettie) suggested it — and renders it as an instrumental groove, with audience hand-claps and shouted encouragement built into the rhythm rather than mixed under it. The title cut became a #5 Hot 100 / #2 R&B single; the album hit #2 on Billboard's Top 200 LPs; the trio won the 1966 Grammy for Best Instrumental Jazz Performance by an Individual or Group, and the single was inducted into the Grammy Hall of Fame in 2009. The album is structurally a covers set: Dobie Gray (1964), Buddy Johnson ('Since I Fell for You'), Pee Wee King/Redd Stewart ('Tennessee Waltz'), Gale Garnett/Ray Rivers, Alex North ('Spartacus' love theme), Antônio Carlos Jobim & Vinicius de Moraes ('Felicidade'), Duke Ellington ('Come Sunday'). Lewis's phrasing — Lewis's own words from his memoir: looking for 'a song — not a jazz song — that we thought jazz people could play that could reach out to a wide audience' — became the template for the entire soul-jazz crossover wave of 1965–69."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded live at Bohemian Caverns, Washington D.C., on May 13–15, 1965. Released July 1965 on Argo Records, LP-757 (Chess Records' jazz subsidiary; renamed Cadet later in 1965/66). Producer: Esmond Edwards (Argo / Cadet house producer). The 'audience as instrument' approach was intentional — claps, whistles, and the room ambience are mixed forward in the final master rather than treated as background; Lewis told WBGO they wanted to reach a wide audience 'with the music: melody, rhythm, harmony' rather than gimmicks. The waitress-suggestion origin story (Nettie at a DC coffee shop near Howard Theatre) appears in both Lewis's memoir and Redd Holt's recollection.",
+    "member_dynamics": "Ramsey Lewis (piano), Eldee Young (acoustic bass and cello — the cello featured on certain album tracks), Redd Holt (drums). This 1956-formed working trio had its 1956–65 run culminate in this record; within 12 months Young and Holt would leave to form Young-Holt Unlimited (1968 hit 'Soulful Strut') and Lewis would recruit Cleveland Eaton (bass) plus a young Chicago session drummer named Maurice White — who later mentored under Lewis for three years before founding Earth, Wind & Fire (1970). Lewis would co-produce Maurice White's 'Sun Goddess' (1974) when White returned the favour. The Bohemian Caverns recording captures the final months of the original trio.",
+    "cultural_venue": "Bohemian Caverns, an underground jazz club at 11th & U Streets NW, Washington D.C. — sat at the centre of DC's Black middle-class entertainment district (the Howard Theatre, the U Street corridor) and was a 1960s circuit stop for Black jazz acts working between New York and Chicago. The cover photo shows Lewis and the trio on the venue's small stage with the crowd visible at table-level. The room's tight reverb and close audience are inseparable from the record's sound.",
+    "instrumentation_details": "Piano trio in its purest form: grand piano, upright bass (Young doubling on cello for select cuts), traditional jazz drum kit. Lewis's right hand carries the melody mostly in single-note lines and octave doublings; his left hand voices block-chord stabs in the lower middle register, syncopated against the snare backbeat. The signature texture is the contrast between Lewis's restrained piano dynamics and the foregrounded crowd handclaps — a stripped, almost gospel-tempo backbeat that doesn't try to swing in the bebop sense. On 'The In Crowd' specifically, Lewis builds the head on a vamping left-hand 4-bar figure, lets the audience lock to it via claps, then opens the right hand into a blues-rooted solo over the same loop — the form is closer to a soul groove than a jazz chorus structure.",
+    "release_circumstances": "Released July 1965 on Argo (Chess subsidiary) as LP-757. The 'In' Crowd single was the breakout: #5 Hot 100, #2 R&B, eventually inducted into the Grammy Hall of Fame (2009). The album reached #2 on Billboard's Top LPs and earned the trio the 1966 Grammy for Best Instrumental Jazz Performance by Individual or Group. The user's red-heart hit is the 2008 UK 'Ultimate Mod Collection' compilation — physical evidence that the record's secondary life passed through the UK Mod / Northern Soul / early-acid-jazz dancefloor canon decades after release."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "anchor",
+    "soul_jazz",
+    "piano_trio_crossover",
+    "audience_as_instrument",
+    "cover_as_authorship",
+    "uk_mod_reception",
+    "argo_chess",
+    "1965"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心: Ramsey Lewis Trio — The In Crowd (via 'The In Crowd - The Ultimate Mod Collection 1958–1967' UK compilation — the user's track-level hit on the anchor song, contextualized as Mod-era canon)"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/The_In_Crowd_(Ramsey_Lewis_album)  [T2-3 — recording dates/venue, personnel, tracklist, chart, Grammy]",
+    "https://www.wbgo.org/music/2023-05-08/book-excerpt-ramsey-lewis-on-the-genesis-of-his-smash-hit-the-in-crowd  [T1-2 — Lewis's own memoir on the song's discovery and recording philosophy]",
+    "https://www.npr.org/2015/05/13/406453504/the-in-crowd-an-audience-fueled-jazz-pop-crossover-hit  [T2 — audience-as-instrument framing]",
+    "https://www.udiscovermusic.com/stories/the-ramsey-lewis-trio-the-in-crowd-feature/  [T2 — backstory feature]",
+    "https://www.discogs.com/master/56896-The-Ramsey-Lewis-Trio-The-In-Crowd  [T4 — discography]",
+    "data/user_tracks.json  [user red-heart hit via UK Mod compilation]"
+  ],
+  "is_anchor": true,
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2024-03-28: The In Crowd"
+    ],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "map_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+  "anchor_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+  "spec_version": "0.4",
+  "generated_at": "2026-05-18T00:00:00Z",
+  "expansion_notes": "Anchor: Ramsey Lewis Trio — 'The In Crowd' (1965, Argo, live @ Bohemian Caverns, Washington DC). Focus axes: A (primary) translation_aesthetic / 翻唱拓扑 — soul-jazz reverse-distillation of pop/R&B material into instrumental authorship; B (secondary) UK Mod transatlantic reception → Northern Soul / Acid Jazz seeds. Paradigm: B-then-decide. Search budget used: 22 web_search + 11 web_fetch (under 25/15 caps). Axis edge counts (anchor-touching): upward 6 / lateral 10 / downward 13 (under 15/12/20 caps). Epistemic tiers across 29 edges: fact 16, consensus 11, hypothesis 2 (hypothesis ratio 6.9%, well under 30% hard stop). Coverage: 4/20 nodes activated, 3 touched_unactivated, 13 untouched — thin coverage anchor as flagged in the idea doc; lineage explanatory weight (translation-as-authorship + UK Mod reception) carries the episode logic. Notable triple-translation chronology around the title track (Dobie Gray Oct 1964 → Ramsey Lewis May 1965 → Mamas & The Papas Feb 1966) is the episode's structural opening triptych.",
+  "node_ids": [
+    "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+    "dobie-gray_dobie-gray-sings_the-in-crowd",
+    "mamas-and-the-papas_if-you-can-believe-your-eyes-and-ears_the-in-crowd",
+    "ahmad-jamal_at-the-pershing_poinciana",
+    "erroll-garner_concert-by-the-sea_misty",
+    "vince-guaraldi_jazz-impressions-of-black-orpheus_cast-your-fate-to-the-wind",
+    "cannonball-adderley_mercy-mercy-mercy_mercy-mercy-mercy",
+    "ramsey-lewis_hang-on-ramsey_hang-on-sloopy",
+    "ramsey-lewis_wade-in-the-water_wade-in-the-water",
+    "young-holt-unlimited_soulful-strut_soulful-strut",
+    "ramsey-lewis_sun-goddess_sun-goddess",
+    "georgie-fame-blue-flames_yeh-yeh_yeh-yeh",
+    "the-animals_animals_house-of-the-rising-sun",
+    "julie-driscoll-brian-auger-trinity_streetnoise_this-wheels-on-fire",
+    "bryan-ferry_these-foolish-things_these-foolish-things",
+    "james-taylor-quartet_mission-impossible_mission-impossible",
+    "the-brand-new-heavies_the-brand-new-heavies_never-stop",
+    "us3_hand-on-the-torch_cantaloop-flip-fantasia",
+    "herbie-hancock_empyrean-isles_cantaloupe-island",
+    "jamiroquai_emergency-on-planet-earth_too-young-to-die"
+  ],
+  "edges": [
+    {
+      "id": "edge_dobiegray_to_ramseylewis_in-crowd_translation",
+      "type": "translation",
+      "source_node_id": "dobie-gray_dobie-gray-sings_the-in-crowd",
+      "target_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "evidence": "Dobie Gray's 'The In Crowd' (Charger 105, released October 1964, peaked Billboard Hot 100 #13 Feb 1965) is the source song. Ramsey Lewis Trio cut their instrumental cover live at Bohemian Caverns 13–15 May 1965, ~7 months after Gray's release. Lewis strips Billy Page's lyric ('I'm in with the in crowd / I go where the in crowd goes'), keeps the chord changes and the iconic stop-time hook, replaces the vocal with right-hand piano blues melismas, and turns the audience clap-along into the rhythmic engine. This is the cleanest documented instance of the 'cover-as-reverse-distillation' aesthetic — pop R&B vocal → soul-jazz instrumental authorship — that organizes Axis A.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_In_Crowd_(song)  [T2 — chronology + chart positions]",
+        "https://en.wikipedia.org/wiki/The_In_Crowd_(Ramsey_Lewis_album)  [T2 — recording dates + venue]",
+        "https://www.npr.org/2015/05/13/406453504/the-in-crowd-an-audience-fueled-jazz-pop-crossover-hit  [T1 — NPR feature on Lewis's reading of Gray's tune]",
+        "https://www.wbgo.org/music/2023-05-08/book-excerpt-ramsey-lewis-on-the-genesis-of-his-smash-hit-the-in-crowd  [T2 — Lewis memoir excerpt on choosing the song]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_mamaspapas_in-crowd_translation",
+      "type": "translation",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "mamas-and-the-papas_if-you-can-believe-your-eyes-and-ears_the-in-crowd",
+      "evidence": "The Mamas & The Papas cut 'The In Crowd' for their debut LP 'If You Can Believe Your Eyes and Ears' (Dunhill DS-50006, released February 1966), eight months after Lewis's #5 pop hit. John Phillips's arrangement re-translates Lewis's instrumental groove back into a four-part vocal folk-rock setting — closing the loop on the Gray → Lewis → Mamas&Papas chain in 14 months and demonstrating how the 'In Crowd' platform absorbed every reading thrown at it. Per Lewis's own NPR interview, his version became the de facto reference for subsequent covers, not Gray's.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/If_You_Can_Believe_Your_Eyes_and_Ears  [T2 — tracklist + release date]",
+        "https://en.wikipedia.org/wiki/The_In_Crowd_(song)  [T2 — cover chronology, Lewis as reference template]",
+        "https://www.npr.org/2015/05/13/406453504/the-in-crowd-an-audience-fueled-jazz-pop-crossover-hit  [T1 — Lewis on his version becoming the reference]"
+      ]
+    },
+    {
+      "id": "edge_ahmadjamal_to_ramseylewis_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "ahmad-jamal_at-the-pershing_poinciana",
+      "target_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "evidence": "Ahmad Jamal's live trio at Chicago's Pershing Hotel (Jan 1958, released as 'At the Pershing: But Not for Me' on Argo LP-628) is the explicit methodological model: same Chicago Argo label, same live piano-trio-plays-popular-material formula, same use of dynamics and space to convert standards into crossover instrumentals. Jamal's 'Poinciana' (Jamal-arrangement, 108 weeks on the Billboard album chart) proved that a Chicago black piano trio reading popular material live could chart pop. Lewis has cited Jamal as his foundational influence in interviews; 'The In Crowd' is the formula's second peak seven years later on the same label.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Ahmad_Jamal_at_the_Pershing:_But_Not_for_Me  [T2 — chart longevity + Argo personnel]",
+        "https://en.wikipedia.org/wiki/Ahmad_Jamal  [T2 — Lewis cites Jamal as influence; Chicago Argo overlap]",
+        "https://www.wbgo.org/music/2023-05-08/book-excerpt-ramsey-lewis-on-the-genesis-of-his-smash-hit-the-in-crowd  [T2 — Lewis on Pershing model for Bohemian Caverns date]"
+      ]
+    },
+    {
+      "id": "edge_errollgarner_to_ramseylewis_direct_influence",
+      "type": "direct_influence",
+      "source_node_id": "erroll-garner_concert-by-the-sea_misty",
+      "target_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "evidence": "Erroll Garner's 'Concert by the Sea' (recorded 19 Sep 1955 Carmel CA, released 1956 on Columbia CL-883) is the prior live-piano-trio crossover landmark — over one million copies sold in 1956 alone, the best-selling jazz LP of the 1950s. Garner's locked-hands left-hand strum and orchestral right-hand approach establish the template Lewis inherits: a live piano trio that plays popular standards (incl. Garner's own 'Misty', which became a Sinatra/Mathis pop standard) to a general audience. The audience-as-instrument idea on 'The In Crowd' (Bohemian Caverns clap-along) extends Garner's live-recording-as-pop-event precedent.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Concert_by_the_Sea_(Erroll_Garner_album)  [T2 — sales + chronology]",
+        "https://en.wikipedia.org/wiki/Erroll_Garner  [T2 — 'Misty' as standard, locked-hands technique]",
+        "https://www.allaboutjazz.com/concert-by-the-sea-erroll-garner-trio-columbia-legacy-review-by-mark-corroto  [T3 — critical reading of Garner's piano-trio crossover precedent]"
+      ]
+    },
+    {
+      "id": "edge_vinceguaraldi_to_ramseylewis_same_era_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "vince-guaraldi_jazz-impressions-of-black-orpheus_cast-your-fate-to-the-wind",
+      "target_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "evidence": "Vince Guaraldi's 'Cast Your Fate to the Wind' (Fantasy 1962, Grammy Best Original Jazz Composition 1963, Billboard #22) proved 2–3 years before 'The In Crowd' that an instrumental piano-trio single could chart in the pop top 40. Both are Bay Area / Chicago piano-trio leaders who use an extended pedaled left-hand vamp under a singable right-hand melody to bridge jazz audiences to AM-radio listeners. Guaraldi's commercial breakthrough is the same-era proof-of-concept Lewis's 'In Crowd' completes with a #5 peak in 1965.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cast_Your_Fate_to_the_Wind  [T2 — chart position + Grammy]",
+        "https://en.wikipedia.org/wiki/Jazz_Impressions_of_Black_Orpheus  [T2 — album personnel + release]",
+        "https://www.npr.org/2015/05/13/406453504/the-in-crowd-an-audience-fueled-jazz-pop-crossover-hit  [T1 — broader 'piano trio crossover' context Lewis is operating within]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_cannonball_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "cannonball-adderley_mercy-mercy-mercy_mercy-mercy-mercy",
+      "evidence": "Cannonball Adderley Quintet's 'Mercy, Mercy, Mercy!' (Capitol, recorded live 20 Oct 1966 at Capitol Studio A with an invited audience, released early 1967, #11 Billboard Hot 100) is the direct methodological descent of 'The In Crowd' formula: a black jazz combo cuts a 'live' soul-jazz track with audience clap-along and turns it into a pop crossover hit. Cannonball's brother-on-vibes-like-Maurice Joe Zawinul wrote it specifically as a gospel-flavored single, and the engineered 'live' atmosphere (audience hand-picked into the studio) is the studio-side answer to Lewis's actual Bohemian Caverns night. Direction of influence is unambiguous: Lewis May 1965 → Adderley Oct 1966.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Mercy,_Mercy,_Mercy!_Live_at_%22The_Club%22  [T2 — recording venue, audience setup, chart position]",
+        "https://en.wikipedia.org/wiki/Mercy,_Mercy,_Mercy  [T2 — Zawinul authorship + soul-jazz crossover lineage]",
+        "https://www.npr.org/2015/05/13/406453504/the-in-crowd-an-audience-fueled-jazz-pop-crossover-hit  [T1 — NPR explicitly cites Adderley as Lewis's successor in this lineage]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_hangonsloopy_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "ramsey-lewis_hang-on-ramsey_hang-on-sloopy",
+      "evidence": "'Hang On Sloopy' (Cadet 5525, recorded live at Bohemian Caverns Sep 1965, peaked #11 Billboard Hot 100 Dec 1965) is Lewis Trio's same-venue same-year follow-up — same formula re-applied within four months. Source song is The McCoys' rock #1 (Sept 1965), again instrumental reverse-distillation of a vocal pop hit. Demonstrates the In Crowd template scaled into a deliberate practice rather than a one-off.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Hang_On_Ramsey!  [T2 — recording dates, venue, personnel, chart]",
+        "https://en.wikipedia.org/wiki/Hang_On_Sloopy  [T2 — McCoys chart, cover chronology]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_wadeinthewater_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "ramsey-lewis_wade-in-the-water_wade-in-the-water",
+      "evidence": "After Eldee Young and Red Holt left in early 1966 to form what became Young-Holt Unlimited, Lewis recruited drummer Maurice White (later Earth, Wind & Fire) and bassist Cleveland Eaton. Their first hit was 'Wade in the Water' (Cadet, summer 1966, #19 Billboard Hot 100, gold), this time reverse-distilling the traditional African-American spiritual rather than a contemporary R&B/rock single. Same template, gospel source — proves the formula's catholicity across pop, rock, gospel, and folk-rock material.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Wade_in_the_Water_(album)  [T2 — personnel transition, chart, gold cert]",
+        "https://en.wikipedia.org/wiki/Ramsey_Lewis  [T2 — Maurice White tenure 1966–69]",
+        "https://www.udiscovermusic.com/stories/the-ramsey-lewis-trio-the-in-crowd-feature/  [T2 — context on formula extension]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_younghol_genealogical_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "young-holt-unlimited_soulful-strut_soulful-strut",
+      "evidence": "Eldee Young (bass) and Red Holt (drums) — the In Crowd rhythm section — left Lewis in early 1966 and formed Young-Holt Trio (later Young-Holt Unlimited). 'Soulful Strut' (Brunswick 55391, Nov 1968, #3 Billboard Hot 100, #1 Cash Box, gold) is the diaspora outcome: the same Chicago soul-jazz pulse Young and Holt locked behind Lewis at Bohemian Caverns, now under their own name, continuing the In Crowd gesture into the late-60s soul-jazz singles market. (Notably the released track was an Eugene Record/Sonny Sanders production with session musicians playing over a Barbara Acklin instrumental track — Young-Holt were the brand; the lineage line is the personnel name, not the actual rhythm playing.)",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Young-Holt_Unlimited  [T2 — formation from Lewis trio]",
+        "https://en.wikipedia.org/wiki/Soulful_Strut  [T2 — release, chart, production caveat]",
+        "https://en.wikipedia.org/wiki/Ramsey_Lewis  [T2 — personnel departure timeline]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_sungoddess_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "ramsey-lewis_sun-goddess_sun-goddess",
+      "evidence": "Lewis's 'Sun Goddess' (Columbia, 1974, title track co-written with Maurice White and the Earth, Wind & Fire principals; Lewis's biggest 70s seller) is the 10-years-later evolution of the crossover instinct: instead of reverse-distilling a vocal hit, Lewis now collaborates with his former drummer Maurice White's pop-soul ensemble (EWF) on a hybrid jazz-funk-disco production. The In Crowd formula has migrated from 'cover a pop hit' to 'co-author with a pop ensemble', but the underlying instinct — pop crossover via jazz piano vocabulary, with the band's regular drummer the personnel bridge — is continuous.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Sun_Goddess  [T2 — personnel, EWF collaboration, chart]",
+        "https://en.wikipedia.org/wiki/Ramsey_Lewis  [T2 — Maurice White trajectory from Lewis trio to EWF]",
+        "https://www.udiscovermusic.com/stories/the-ramsey-lewis-trio-the-in-crowd-feature/  [T2 — Lewis's crossover continuity into 70s fusion]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_georgiefame_same_era_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "georgie-fame-blue-flames_yeh-yeh_yeh-yeh",
+      "evidence": "Georgie Fame & The Blue Flames' 'Yeh, Yeh' (Columbia DB-7428, recorded 1964, #1 UK Singles Chart Jan 1965) is the contemporary UK Mod-scene mirror of what Lewis did four months later in DC: a small jazz-organ combo plays a covered Latin-jazz tune (Mongo Santamaría / Lambert-Hendricks-Ross 'Yeh, Yeh' from Afro Roots, vocalized in mod-scene style) to a young dance audience. Fame's Flamingo Club residency was the explicit UK Mod analog of Lewis's Bohemian Caverns — both 1964–65 anchor venues for the jazz-meets-pop-dance transition. Direction is dialogue, not influence: parallel inventions in the same transatlantic moment.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Yeh,_Yeh  [T2 — Fame chart, songwriter chronology]",
+        "https://en.wikipedia.org/wiki/Georgie_Fame  [T2 — Flamingo residency, mod scene context]",
+        "https://en.wikipedia.org/wiki/Mod_(subculture)  [T2 — UK soul-jazz / R&B as mod sound]"
+      ]
+    },
+    {
+      "id": "edge_animals_to_georgiefame_lateral",
+      "type": "same_era_dialogue",
+      "source_node_id": "the-animals_animals_house-of-the-rising-sun",
+      "target_node_id": "georgie-fame-blue-flames_yeh-yeh_yeh-yeh",
+      "evidence": "The Animals' 'House of the Rising Sun' (Columbia DB-7301, recorded 18 May 1964, UK #1 / US #1) and Fame's 'Yeh, Yeh' (Columbia DB-7428, UK #1 Jan 1965) are the two organ-driven UK R&B/jazz singles that frame 1964–65 on the same EMI sub-label — same Hammond/Vox-Continental sound, same Newcastle-vs-Soho mod-club circuit feeding the charts. Both reverse-distill American material (Animals: traditional folk / Bob Dylan's 1962 reading; Fame: Mongo Santamaría / LHR jazz vocalese) into UK Mod dance hits. The Animals are the rock-side anchor of the same UK R&B/Mod ecosystem that imported Lewis.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_House_of_the_Rising_Sun  [T2 — Animals recording date, chart, source material]",
+        "https://en.wikipedia.org/wiki/Mod_(subculture)  [T2 — UK R&B / Hammond organ as mod sound]",
+        "https://en.wikipedia.org/wiki/Yeh,_Yeh  [T2 — Fame chart]"
+      ]
+    },
+    {
+      "id": "edge_animals_to_ramseylewis_translation",
+      "type": "translation",
+      "source_node_id": "the-animals_animals_house-of-the-rising-sun",
+      "target_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "evidence": "Independent same-year parallel: The Animals (May 1964) and Lewis (May 1965) both demonstrate that 'cover-as-authorship' is the dominant transatlantic mid-60s mode — Burdon's vocal authorship of a public-domain folk song / Price's organ arrangement is the rock-side counterpart to Lewis's piano-trio reading of Dobie Gray. They are framed here as a translation-aesthetic dialogue across the Atlantic: same gesture, different instrument families.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_House_of_the_Rising_Sun  [T2 — authorship debate around Burdon/Price arrangement]",
+        "https://www.npr.org/2015/05/13/406453504/the-in-crowd-an-audience-fueled-jazz-pop-crossover-hit  [T1 — Lewis cover-as-authorship reading]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_juliedriscoll_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "julie-driscoll-brian-auger-trinity_streetnoise_this-wheels-on-fire",
+      "evidence": "Julie Driscoll, Brian Auger & The Trinity's 'This Wheel's on Fire' (Marmalade 598-006, March 1968, UK #5; album version on Streetnoise 1969) is the UK Mod / jazz-organ scene's most-cited soul-jazz reading of a 1967 Bob Dylan/Rick Danko basement recording — Hammond organ vamp + soul vocal turning a folk-rock obscurity into UK club authorship. Brian Auger was explicit about Hammond soul-jazz roots (Jimmy Smith / Jack McDuff) and namechecked Lewis's approach. Same gesture: cover American song, reverse-distill it into a UK dancefloor object.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Streetnoise  [T2 — album, personnel, soul-jazz framing]",
+        "https://en.wikipedia.org/wiki/This_Wheel%27s_on_Fire  [T2 — chronology, Dylan source]",
+        "https://en.wikipedia.org/wiki/Brian_Auger  [T2 — Hammond soul-jazz lineage]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_bryanferry_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "bryan-ferry_these-foolish-things_these-foolish-things",
+      "evidence": "Bryan Ferry's solo debut 'These Foolish Things' (Island ILPS-9249, Oct 1973) — an entire LP of pop/jazz/folk covers (Dylan, Lesley Gore, Smokey Robinson, the Stones, the Beatles, Cole Porter standard 'These Foolish Things') — is the most prominent UK glam-rock-era exposition of the 'cover-album-as-authorship' position. Ferry was a Newcastle/London art-school listener inside the same Mod-influenced jazz-organ scene that absorbed Lewis. The album generalizes the In Crowd gesture to a whole-LP authorial stance: a stylist's signature emerges from how he reads other people's songs, not from what he writes.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "https://en.wikipedia.org/wiki/These_Foolish_Things_(Bryan_Ferry_album)  [T2 — tracklist + cover-album concept]",
+        "https://en.wikipedia.org/wiki/Bryan_Ferry  [T2 — Newcastle R&B / soul-jazz background]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_jtq_genealogical_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "james-taylor-quartet_mission-impossible_mission-impossible",
+      "evidence": "James Taylor Quartet's 'Mission Impossible' (Re-Elect The President POLY-001, 1986, debut album by ex-Prisoners Hammond-organ founder James Taylor) is the foundational UK Acid Jazz Hammond-organ revival record: explicit cover of Lalo Schifrin's TV theme, played with the same 'soul-jazz combo plays popular instrumental hook for a dancefloor' aesthetic Lewis pioneered. Taylor & Eddie Piller's Acid Jazz scene was built on rediscovered Blue Note / Cadet / Prestige soul-jazz singles (Lewis prominently among them) being spun in mod-revival London clubs. Direct genealogical descent of the 1960s soul-jazz instrumental-crossover gesture into the late-80s UK club revival.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/James_Taylor_Quartet  [T2 — formation, Hammond-organ revival, Acid Jazz scene origin]",
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — JTQ as founding act, Lewis/Cadet-style soul-jazz as scene source material]",
+        "https://www.allmusic.com/artist/the-james-taylor-quartet-mn0000766797  [T3 — Mission Impossible debut framing]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_brandnewheavies_genealogical_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "the-brand-new-heavies_the-brand-new-heavies_never-stop",
+      "evidence": "The Brand New Heavies' self-titled debut (Acid Jazz JAZID-021, 1990; reissued by Delicious Vinyl with N'Dea Davenport vocals 1991) and lead track 'Never Stop' are the rare-groove / Acid Jazz scene's flagship statement: late-80s UK musicians reverse-engineering early-70s American soul-jazz instrumental records (Lewis, Crusaders, Donald Byrd, Roy Ayers) into a contemporary club-soul sound. They were on Eddie Piller's Acid Jazz label literally named after the scene that came directly out of mod-revival DJs spinning Lewis singles. Genealogical line: Lewis → soul-jazz canon → Acid Jazz label/scene → Heavies.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_Brand_New_Heavies  [T2 — formation, Acid Jazz label, scene origin]",
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — UK rare-groove / mod-revival roots]"
+      ]
+    },
+    {
+      "id": "edge_jtq_to_brandnewheavies_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "james-taylor-quartet_mission-impossible_mission-impossible",
+      "target_node_id": "the-brand-new-heavies_the-brand-new-heavies_never-stop",
+      "evidence": "JTQ (1986) and Brand New Heavies (1988-91) are the two founding acts of Eddie Piller's Acid Jazz label / scene, both rooted in the London mod-revival club nights that re-canonized 60s/70s soul-jazz. Same-era UK dialogue: instrumental Hammond-driven jazz funk (JTQ) and band-led club soul (Heavies) are the two complementary sides of the early Acid Jazz palette.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — JTQ + Heavies as founders]",
+        "https://en.wikipedia.org/wiki/Acid_Jazz_Records  [T2 — Eddie Piller label, founding acts]"
+      ]
+    },
+    {
+      "id": "edge_brandnewheavies_to_jamiroquai_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "the-brand-new-heavies_the-brand-new-heavies_never-stop",
+      "target_node_id": "jamiroquai_emergency-on-planet-earth_too-young-to-die",
+      "evidence": "Jamiroquai's 'Too Young to Die' (Sony Soho2, June 1993, UK #10) from 'Emergency on Planet Earth' is the Acid Jazz scene's chart-pop graduation: same horns + clavinet + falsetto vocal palette as the Heavies' 1990 debut but pushed to international pop radio. Jay Kay had been a regular at the same UK rare-groove / Acid Jazz clubs the Heavies emerged from; Jamiroquai's first single 'When You Gonna Learn' was released on Acid Jazz Records before Sony signed them. Same-era UK scene dialogue: the Heavies set the template, Jamiroquai scaled it to platinum-pop.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Jamiroquai  [T2 — Acid Jazz Records origin]",
+        "https://en.wikipedia.org/wiki/Emergency_on_Planet_Earth  [T2 — album, scene context]",
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — Jamiroquai as commercial peak of scene]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_jamiroquai_genealogical_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "jamiroquai_emergency-on-planet-earth_too-young-to-die",
+      "evidence": "Jamiroquai sits at the terminal-1990s end of the UK Mod-derived lineage Lewis seeded: 'The In Crowd' enters UK Mod club circulation 1965 → becomes a Northern Soul / rare-groove DJ staple through the 70s/80s → fuels the Acid Jazz scene Jay Kay emerges from c.1991. 'Too Young to Die's clavinet + horns + slap-bass + falsetto setup is the late-Acid-Jazz scene re-encoding of the same 1965 'small combo with insistent groove → pop charts' instinct. Genealogical, three-decade descent through clubs and DJ scenes rather than direct musical citation.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — Lewis-era soul-jazz as scene source; Jamiroquai as commercial peak]",
+        "https://en.wikipedia.org/wiki/Northern_soul  [T2 — Northern Soul as Lewis-track transmission belt to 80s UK clubs]",
+        "https://en.wikipedia.org/wiki/Jamiroquai  [T2 — Acid Jazz Records origin]"
+      ]
+    },
+    {
+      "id": "edge_hancock_to_us3_translation",
+      "type": "translation",
+      "source_node_id": "herbie-hancock_empyrean-isles_cantaloupe-island",
+      "target_node_id": "us3_hand-on-the-torch_cantaloop-flip-fantasia",
+      "evidence": "Us3's 'Cantaloop (Flip Fantasia)' (Blue Note 7243-8-80883, 1992 UK / 1993 US) samples the entirety of Herbie Hancock's 'Cantaloupe Island' (Blue Note BLP-4175, recorded 17 June 1964) — Geoff Wilkinson licensed the master from Blue Note as the first track in EMI's then-novel Blue Note sampling deal. Direct, documented sample translation: the 1964 Hancock acoustic-jazz hit becomes the 1992 hip-hop / Acid Jazz crossover, peaking US #9 and making 'Hand on the Torch' the first Blue Note platinum LP. This is the Axis B closing image: 'cover-as-authorship' has matured into 'sample-as-authorship' by 1993.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cantaloop_(Flip_Fantasia)  [T2 — sample provenance, Blue Note licensing, charts]",
+        "https://en.wikipedia.org/wiki/Hand_on_the_Torch  [T2 — first platinum Blue Note LP]",
+        "https://www.whosampled.com/sample/2257/Us3-Cantaloop-(Flip-Fantasia)-Herbie-Hancock-Cantaloupe-Island/  [T4 — sample database confirmation]"
+      ]
+    },
+    {
+      "id": "edge_hancock_to_ramseylewis_same_era_dialogue",
+      "type": "same_era_dialogue",
+      "source_node_id": "herbie-hancock_empyrean-isles_cantaloupe-island",
+      "target_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "evidence": "Herbie Hancock's 'Cantaloupe Island' (Blue Note, 17 June 1964) and 'The In Crowd' (Argo, 13–15 May 1965) are the two paradigmatic mid-60s black-pianist soul-jazz crossover statements — both built on an insistent left-hand modal vamp under a singable right-hand hook, both becoming jukebox/dancefloor staples that brought hard-bop-era pianists into the soul market. Hancock's earlier 'Watermelon Man' (Takin' Off, 1962) had already shown the soul-jazz crossover template. Lewis and Hancock are same-era dialogue across two Chicago/NYC labels (Cadet/Blue Note), both expanding the post-Jamal/Garner piano language toward pop.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Empyrean_Isles  [T2 — recording date, Blue Note context]",
+        "https://en.wikipedia.org/wiki/Cantaloupe_Island  [T2 — modal vamp + soul-jazz framing]",
+        "https://en.wikipedia.org/wiki/Soul_jazz  [T2 — Lewis + Hancock named as soul-jazz crossover exemplars]"
+      ]
+    },
+    {
+      "id": "edge_ramseylewis_to_us3_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "ramsey-lewis-trio_the-in-crowd_the-in-crowd",
+      "target_node_id": "us3_hand-on-the-torch_cantaloop-flip-fantasia",
+      "evidence": "Us3's project on 'Hand on the Torch' — license the Blue Note vault, rap over the soul-jazz canon, sell platinum — is the 1992 methodological grandchild of Lewis's 1965 move: take an existing pop / jazz object, re-instrument it for a new audience, and sell it as your own authorship. The In Crowd reverse-distilled Dobie Gray's vocal into piano; Cantaloop reverse-distills Hancock's piano into hip-hop. Same gesture (cover-as-authorship), updated for the sample-based 90s, closing the A+B arc.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cantaloop_(Flip_Fantasia)  [T2 — Us3 licensing model]",
+        "https://en.wikipedia.org/wiki/Hand_on_the_Torch  [T2 — Blue Note vault sampling concept]",
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — Us3 framed inside the UK Acid Jazz lineage from soul-jazz]"
+      ]
+    },
+    {
+      "id": "edge_hancock_to_jtq_direct_influence",
+      "type": "direct_influence",
+      "source_node_id": "herbie-hancock_empyrean-isles_cantaloupe-island",
+      "target_node_id": "james-taylor-quartet_mission-impossible_mission-impossible",
+      "evidence": "Hancock's mid-60s Blue Note quartet/quintet records (Empyrean Isles, Maiden Voyage) were a primary template for the JTQ / Acid Jazz Hammond-organ sound: modal vamps, tight horn punctuation, rhythm-section-as-engine. JTQ regularly covered the Blue Note canon (incl. Hancock material) in live sets. Direct influence inside the same Acid Jazz scene that re-canonized Lewis on the Cadet side.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/James_Taylor_Quartet  [T2 — Hammond-organ Blue Note/Cadet revival]",
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — scene's reliance on 60s Blue Note + Cadet]"
+      ]
+    },
+    {
+      "id": "edge_cannonball_to_brandnewheavies_lateral",
+      "type": "same_era_dialogue",
+      "source_node_id": "cannonball-adderley_mercy-mercy-mercy_mercy-mercy-mercy",
+      "target_node_id": "the-brand-new-heavies_the-brand-new-heavies_never-stop",
+      "evidence": "Cannonball Adderley's 1967 'Mercy, Mercy, Mercy!' LP was a foundational rare-groove DJ record in the UK 80s scenes the Heavies emerged from — alongside Lewis's Cadet sides and Donald Byrd's CTI / Blue Note 70s LPs, this Capitol soul-jazz hit was a Camden/Soho club staple in the Acid Jazz pre-history. Lineage signal: the Heavies' debut palette literally re-builds the late-60s Capitol/Cadet soul-jazz combo sound for 1990.",
+      "epistemic_layer": "hypothesis",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — rare-groove canon includes Adderley / Lewis 60s soul-jazz]",
+        "https://en.wikipedia.org/wiki/The_Brand_New_Heavies  [T2 — rare-groove origin]"
+      ]
+    },
+    {
+      "id": "edge_dobiegray_to_animals_lateral",
+      "type": "same_era_dialogue",
+      "source_node_id": "dobie-gray_dobie-gray-sings_the-in-crowd",
+      "target_node_id": "the-animals_animals_house-of-the-rising-sun",
+      "evidence": "Dobie Gray's 'The In Crowd' (Oct 1964) and the Animals' 'House of the Rising Sun' (May 1964) are the two transatlantic same-year 1964 statements of 'pop hit as authored cover' on opposite sides of the Atlantic that frame what Lewis (1965) then absorbs and re-translates. Gray's claim to authorship is the lyric-as-mod-anthem (Billy Page composition turned into an in-crowd identity statement); the Animals' claim is the arrangement-as-authorship of a public-domain folk song. Both are the source culture Lewis arrives into.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/The_In_Crowd_(song)  [T2 — Gray's 1964 release]",
+        "https://en.wikipedia.org/wiki/The_House_of_the_Rising_Sun  [T2 — Animals authorship debate]"
+      ]
+    },
+    {
+      "id": "edge_jamal_to_garner_methodological_descent",
+      "type": "methodological_descent",
+      "source_node_id": "erroll-garner_concert-by-the-sea_misty",
+      "target_node_id": "ahmad-jamal_at-the-pershing_poinciana",
+      "evidence": "Erroll Garner's 'Concert by the Sea' (rec. Sep 1955) is the live-piano-trio crossover precedent; Ahmad Jamal's 'At the Pershing' (rec. Jan 1958) is the next major iteration of the same idea — black piano trio plays popular material live, sells to a general pop audience, the LP charts for years. Garner's locked-hands technique and Jamal's space/dynamics extension are the two upstream language sources Lewis drew from in 1965.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Concert_by_the_Sea_(Erroll_Garner_album)  [T2 — chronology, sales]",
+        "https://en.wikipedia.org/wiki/Ahmad_Jamal_at_the_Pershing:_But_Not_for_Me  [T2 — chronology, chart]",
+        "https://en.wikipedia.org/wiki/Ahmad_Jamal  [T2 — Jamal's stated debt to Garner / parallel trio aesthetic]"
+      ]
+    },
+    {
+      "id": "edge_us3_to_jamiroquai_lateral",
+      "type": "same_era_dialogue",
+      "source_node_id": "us3_hand-on-the-torch_cantaloop-flip-fantasia",
+      "target_node_id": "jamiroquai_emergency-on-planet-earth_too-young-to-die",
+      "evidence": "Us3 'Cantaloop' (UK release Nov 1992) and Jamiroquai 'Too Young to Die' (June 1993) are the two breakthrough UK Acid Jazz-derived singles of 1992–93 — Us3 graduates the scene via sampling; Jamiroquai graduates it via live-band funk. Both came out of the same London rare-groove / Acid Jazz Records milieu within months of each other, framing the moment when the UK soul-jazz revival broke globally.",
+      "epistemic_layer": "fact",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Cantaloop_(Flip_Fantasia)  [T2 — Nov 1992 UK release]",
+        "https://en.wikipedia.org/wiki/Emergency_on_Planet_Earth  [T2 — 1993 release, Acid Jazz Records origin]",
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — scene's 1992–93 commercial peak]"
+      ]
+    },
+    {
+      "id": "edge_juliedriscoll_to_jtq_genealogical_descent",
+      "type": "genealogical_descent",
+      "source_node_id": "julie-driscoll-brian-auger-trinity_streetnoise_this-wheels-on-fire",
+      "target_node_id": "james-taylor-quartet_mission-impossible_mission-impossible",
+      "evidence": "Brian Auger's Hammond-organ soul-jazz late-60s recordings with Driscoll (Streetnoise 1969) are the direct UK Hammond-soul-jazz precedent that James Taylor's late-80s Acid Jazz Hammond combo consciously revived — Auger was a touchstone figure in the mod-revival DJ canon Taylor and Eddie Piller were rebuilding from. Genealogical descent across the British Hammond-soul-jazz line from late-60s Mod into late-80s Acid Jazz.",
+      "epistemic_layer": "consensus",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Brian_Auger  [T2 — Hammond soul-jazz, mod-revival canonization]",
+        "https://en.wikipedia.org/wiki/Acid_jazz  [T2 — Auger as scene precedent]",
+        "https://en.wikipedia.org/wiki/James_Taylor_Quartet  [T2 — Hammond revival lineage]"
+      ]
+    }
+  ]
+}

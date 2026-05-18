@@ -1,0 +1,54 @@
+{
+  "id": "bryan-ferry_these-foolish-things_these-foolish-things",
+  "artist": "Bryan Ferry",
+  "period": {
+    "label": "Solo debut from Roxy Music",
+    "year_start": 1973,
+    "year_end": 1973
+  },
+  "works": [
+    {
+      "title": "These Foolish Things",
+      "type": "track",
+      "year": 1973
+    },
+    {
+      "title": "These Foolish Things",
+      "type": "album",
+      "year": 1973
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "Glam-Mod descended cover-as-authorship art-rock",
+    "geographic_locus": "London — Island Records",
+    "historical_role": "Ferry's 1973 solo debut is a full covers album — Roxy Music (minus Eno) playing material spanning 1930s standards (the title track) through Elvis, Bob Dylan, the Rolling Stones, and Ketty Lester. Released October 1973 on Island (UK) / Atlantic (US), UK #5, gold-certified by May 1974. The Mod-descended UK lineage's most explicit 1970s statement of 'a cover is authorship': not an aesthetic to recover, but the entire premise of the record. Direct heir to the cover-as-method gesture that Lewis crystallized in 1965 — except now the translator is a UK art-rock singer using American pop standards as the source material rather than the other way round."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded mid-1973 at AIR Studios London. Produced by Bryan Ferry and John Punter. Released October 5, 1973 on Island ILPS-9249.",
+    "member_dynamics": "Ferry on lead vocal, plus Roxy Music personnel (Phil Manzanera, Andy Mackay, Paul Thompson) and session players. Brian Eno had left Roxy Music two months earlier.",
+    "cultural_venue": "Post-glam UK art-rock; Island Records' songwriter-led aesthetic.",
+    "instrumentation_details": "Each cover wears a different stylistic costume — strings on 'These Foolish Things', country pedal-steel on others, soul-revue arrangements on the Motown covers. The album's coherence is in Ferry's vocal posture rather than in arrangement.",
+    "release_circumstances": "Island ILPS-9249, October 1973. UK #5; gold-certified May 1974 BPI. Direct commercial proof that the cover-as-authorship method could carry a major rock-singer's solo debut as the entire concept."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "cover_as_authorship_concept",
+    "uk_post_mod_heir",
+    "art_rock",
+    "1973"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/These_Foolish_Things_(album)  [T2-3]",
+    "https://www.bryanferry.com/collections/these-foolish-things  [T1 — artist official]"
+  ],
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2026-02-04: Johnny and Mary (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  }
+}

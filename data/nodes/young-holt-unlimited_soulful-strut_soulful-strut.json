@@ -1,0 +1,53 @@
+{
+  "id": "young-holt-unlimited_soulful-strut_soulful-strut",
+  "artist": "Young-Holt Unlimited",
+  "period": {
+    "label": "Post-Lewis-trio breakaway",
+    "year_start": 1966,
+    "year_end": 1968
+  },
+  "works": [
+    {
+      "title": "Soulful Strut",
+      "type": "track",
+      "year": 1968
+    },
+    {
+      "title": "Soulful Strut",
+      "type": "album",
+      "year": 1969
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "soul-jazz / R&B instrumental hit by Lewis-trio personnel diaspora",
+    "geographic_locus": "Chicago — Brunswick Records",
+    "historical_role": "Eldee Young (bass) and Redd Holt (drums) — the rhythm section of the original Lewis trio that recorded 'The In Crowd' — left in mid-1966, formed Young-Holt Trio (with pianist Don Walker), renamed Young-Holt Unlimited in 1968 (with Ken Chaney on piano). 'Soulful Strut' (Brunswick, 1968) hit #3 Hot 100 / #3 R&B and went gold. Footnote that matters for the lineage: the actual instrumental track was recorded by Brunswick's studio band as the karaoke instrumental for Barbara Acklin's vocal 'Am I the Same Girl' — Carl Davis (producer) flipped it as a Young-Holt single without them present on the recording. The Lewis-trio brand carried a #3 hit even when its members weren't in the room."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded by Brunswick Records studio band — actual personnel Sonny Sanders / Tom Tom Washington / Floyd Morris — and credited to Young-Holt Unlimited for marketing. Producer Carl Davis. Released 1968.",
+    "member_dynamics": "Eldee Young (b. 1936 Chicago, d. 2007 Bangkok) and Redd Holt (b. 1932 Chicago) — Lewis's rhythm partners 1956–66. Don Walker (piano) and Ken Chaney (piano, post-1968).",
+    "cultural_venue": "Brunswick / Chicago R&B production circuit.",
+    "instrumentation_details": "Piano-led R&B instrumental with horn section. The 16-bar vamp + soulful melodic figure is structurally close to 'The In Crowd' — same DNA, no longer in the original room.",
+    "release_circumstances": "Brunswick single 55391, 1968; #3 Hot 100, #3 R&B, gold record January 1969 (1 million copies)."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "personnel_diaspora",
+    "soul_jazz",
+    "lewis_trio_split",
+    "1968"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Young-Holt_Unlimited  [T2-3]",
+    "https://www.brunswickrecords.com/the-young-holt-unlimited  [T3 — label history]",
+    "https://internetfm.com/song-of-the-day-soulful-strut-by-young-holt-unlimited/  [T4]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

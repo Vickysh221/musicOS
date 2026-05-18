@@ -1,0 +1,52 @@
+{
+  "id": "james-taylor-quartet_mission-impossible_mission-impossible",
+  "artist": "The James Taylor Quartet",
+  "period": {
+    "label": "Acid Jazz Records founding-era",
+    "year_start": 1986,
+    "year_end": 1988
+  },
+  "works": [
+    {
+      "title": "Mission Impossible",
+      "type": "track",
+      "year": 1987
+    },
+    {
+      "title": "Mission Impossible",
+      "type": "album",
+      "year": 1987
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "Hammond-organ UK acid-jazz revival of 60s soul-jazz/mod material",
+    "geographic_locus": "London — Re Elect The President / Polydor",
+    "historical_role": "Cleanest UK descent line to the anchor's Mod / soul-jazz aesthetic. James Taylor had been Hammond B3 organist in The Prisoners, a 1980s UK Mod-revival band; after the Prisoners broke up he formed the JTQ around the Hammond, the first single 'Blow-Up' came out on Re Elect The President (the label that would soon morph into Acid Jazz Records), and the debut album 'Mission Impossible' (1987) is almost entirely covers of 1960s spy/film themes — Mission Impossible, Goldfinger, Alfie, Mrs. Robinson. A Hammond-led UK band in 1987 making cover-as-authorship an entire artistic identity: the Mod / soul-jazz / Lewis-trio lineage made literal."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 1986–87; released 1987 on Re Elect The President (label founded by Eddie Piller, soon to relaunch as Acid Jazz Records).",
+    "member_dynamics": "James Taylor (Hammond B3 organ), David Taylor (guitar, James's brother), original Prisoners bassist (Allan Crockford), drummer Simon Howard.",
+    "cultural_venue": "Late-80s London acid-jazz / rare-groove scene (clubs: Dingwalls, the WAG Club, Talkin' Loud).",
+    "instrumentation_details": "Hammond B3 + Leslie cabinet leads every track; backed by drums/bass/guitar. The arrangements treat the 60s film-theme melodies as soul-jazz vamps in the Jimmy Smith / Jack McDuff tradition.",
+    "release_circumstances": "Re Elect The President RTP-LP-1, 1987. Cult success that established JTQ as the Hammond-led face of UK acid-jazz revival."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "uk_acid_jazz_revival",
+    "cover_as_authorship",
+    "hammond_organ",
+    "1987"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/James_Taylor_Quartet  [T2-3]",
+    "https://stollerhall.com/shows/james-taylor-quartet/  [T3 — venue bio]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

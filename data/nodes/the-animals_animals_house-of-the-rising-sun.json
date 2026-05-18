@@ -1,0 +1,56 @@
+{
+  "id": "the-animals_animals_house-of-the-rising-sun",
+  "artist": "The Animals",
+  "period": {
+    "label": "UK Mod-era R&B breakthrough",
+    "year_start": 1964,
+    "year_end": 1964
+  },
+  "works": [
+    {
+      "title": "House of the Rising Sun",
+      "type": "track",
+      "year": 1964
+    },
+    {
+      "title": "The Animals",
+      "type": "album",
+      "year": 1964
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "UK Mod-era R&B / British blues with organ-led arrangement",
+    "geographic_locus": "Newcastle / London (UK touring R&B circuit)",
+    "historical_role": "The 1964 #1-on-both-sides-of-the-Atlantic hit that proved a UK R&B band could translate American folk-blues material (the song goes back to early-20th-century field recordings; the band heard Dylan's 1962 version) into a Hammond-organ-and-vocal arrangement that became its own genre-defining text. Same-era UK Mod context as the anchor: the user's UK-Mod-compilation hit on 'The In Crowd' lands in the same scene that consumed The Animals as canon. Bridge node anchoring the UK Mod cultural moment in which Lewis's record had its UK afterlife."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded May 18, 1964 at De Lane Lea Studios, London. Produced by Mickie Most. The single was reportedly recorded in a single take. Released as Columbia (UK) single June 1964.",
+    "member_dynamics": "Eric Burdon (vocals), Alan Price (Vox Continental organ — the song's most identifiable sound), Hilton Valentine (guitar — arpeggiated intro), John Steel (drums), Chas Chandler (bass).",
+    "cultural_venue": "British R&B touring circuit and the same UK Mod club ecosystem (Flamingo, Marquee) that elevated Georgie Fame.",
+    "instrumentation_details": "Vox Continental organ provides the harmonic carpet; Valentine's arpeggiated guitar intro is the iconic gesture. Burdon's vocal is the bridge from American blues phrasing to UK Mod swagger.",
+    "release_circumstances": "Columbia (EMI) DB 7301, June 1964. UK #1 (1 week July 1964), US #1 (3 weeks September 1964). One of the defining records of the UK Mod-era cross-Atlantic translation cycle."
+  },
+  "tags": [
+    "uk_mod_anchor",
+    "translation_aesthetic",
+    "british_invasion_blues",
+    "hammond_organ",
+    "1964"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心: The Animals — House of the Rising Sun"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/The_House_of_the_Rising_Sun  [T2-3]",
+    "https://en.wikipedia.org/wiki/The_Animals_(The_Animals_album)  [T2-3]"
+  ],
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2023-07-03: House of the Rising Sun"
+    ],
+    "confidence": "high"
+  }
+}

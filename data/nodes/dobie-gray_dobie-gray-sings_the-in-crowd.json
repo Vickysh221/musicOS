@@ -1,0 +1,53 @@
+{
+  "id": "dobie-gray_dobie-gray-sings_the-in-crowd",
+  "artist": "Dobie Gray",
+  "period": {
+    "label": "Pre-Drift Away R&B career",
+    "year_start": 1964,
+    "year_end": 1965
+  },
+  "works": [
+    {
+      "title": "The 'In' Crowd",
+      "type": "track",
+      "year": 1964
+    },
+    {
+      "title": "Dobie Gray Sings for 'In' Crowders That 'Go Go' Around",
+      "type": "album",
+      "year": 1965
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "early-60s R&B / soul vocal pop",
+    "geographic_locus": "Los Angeles — Charger Records (Liberty subsidiary)",
+    "historical_role": "The original recording of 'The In Crowd', the song Lewis would translate into instrumental soul-jazz six months later. Written by Billy Page, arranged by his brother Gene Page (later a major Motown / Barry White arranger), released as a Charger single in late 1964. Charted Billboard Hot 100 #13 (peak week Feb 27 1965, 12 weeks on chart), R&B #11, UK #25, Canada #8. The lyric — an in-group manifesto for the cool kids — was the cultural hook; Lewis stripped the words and kept the gesture."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded late 1964, released as Charger Records single. Producer/label connection through the Page brothers (Billy wrote; Gene arranged). Album 'Dobie Gray Sings for \"In\" Crowders That \"Go Go\" Around' followed in 1965.",
+    "member_dynamics": "Dobie Gray (b. Lawrence Darrow Brown, 1940 Texas) was an itinerant R&B vocalist working LA sessions before this break. He would not match the chart success until 'Drift Away' (1973).",
+    "cultural_venue": "Los Angeles R&B / pop production circuit; Charger Records distributed via Liberty.",
+    "instrumentation_details": "Standard mid-60s LA R&B band: drums, electric bass, piano, horn section, female backing vocals; Gray's tenor lead on the verses and the punchy 'I'm in / with the in-crowd' hook chorus.",
+    "release_circumstances": "Late-1964 single peaking early 1965. The song's life beyond Gray begins almost immediately: Lewis records it May 1965; Mamas & Papas record it for their February 1966 debut. Few songs travel three distinct genre dialects within 14 months."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "cover_source",
+    "upstream_of_anchor",
+    "rnb",
+    "1964"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/The_In_Crowd_(song)  [T2-3 — writer, charts, original]",
+    "https://www.discogs.com/release/2856984-Dobie-Gray-The-In-Crowd  [T4 — single discography]",
+    "http://www.soulwalking.co.uk/Dobie%20Gray.html  [T3 — UK soul reference]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

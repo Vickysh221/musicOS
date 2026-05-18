@@ -1,0 +1,52 @@
+{
+  "id": "erroll-garner_concert-by-the-sea_misty",
+  "artist": "Erroll Garner",
+  "period": {
+    "label": "Concert by the Sea era",
+    "year_start": 1954,
+    "year_end": 1956
+  },
+  "works": [
+    {
+      "title": "Misty",
+      "type": "track",
+      "year": 1954
+    },
+    {
+      "title": "Concert by the Sea",
+      "type": "album",
+      "year": 1955
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "swing-era jazz piano → pop standard composition",
+    "geographic_locus": "Sunset School auditorium, Carmel-by-the-Sea, California (Sept 1955 live recording)",
+    "historical_role": "Concert by the Sea (Columbia, 1955) — Garner trio live in Carmel — was a million-selling jazz LP at a time when that was nearly impossible, and one of the earliest models for the live-recording-as-pop-event format that 'The In Crowd' later perfected. Garner's composition 'Misty' (1954, dictated to George Shearing because Garner couldn't read music) became a pop standard via Johnny Mathis's 1959 vocal. Garner's combination of solo-piano-as-pop, behind-the-beat right hand and steady left-hand 4/4 chord stride is the swing-era template for what Jamal then refined and Lewis then translated for the soul-jazz crowd."
+  },
+  "narrative_slots": {
+    "production_facts": "Live recording at Sunset School auditorium, Carmel CA, September 19, 1955; produced for Columbia by Martha Glaser (Garner's manager-producer). Album sold over 1 million copies — almost unheard of for solo jazz.",
+    "member_dynamics": "Erroll Garner (piano), Eddie Calhoun (bass), Denzil Best (drums). Garner famously could not read music — composed 'Misty' in his head and dictated it.",
+    "cultural_venue": "Carmel-by-the-Sea is one of the early cases of a jazz live-recording venue chosen for ambience as much as audience.",
+    "instrumentation_details": "Garner's signature is the 'orchestral piano' approach — left hand maintains a steady 4/4 chord-comp (like a rhythm guitar in a swing big band), right hand plays melody behind the beat with rolling tremolos and grace-note flourishes. The technique foreshadows Lewis's right-hand restraint plus left-hand vamping.",
+    "release_circumstances": "Concert by the Sea released February 1956 on Columbia. Remained a perennial seller; treated by the industry as the proof-point that a jazz piano LP could compete with vocal pop on commercial terms."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "methodological_precursor",
+    "live_recording_as_pop",
+    "solo_piano_crossover",
+    "1955"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Concert_by_the_Sea  [T2-3]",
+    "https://en.wikipedia.org/wiki/Misty_(song)  [T2-3]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "id": "ahmad-jamal_at-the-pershing_poinciana",
+  "artist": "Ahmad Jamal",
+  "period": {
+    "label": "Pershing residency",
+    "year_start": 1958,
+    "year_end": 1959
+  },
+  "works": [
+    {
+      "title": "Poinciana",
+      "type": "track",
+      "year": 1958
+    },
+    {
+      "title": "At the Pershing: But Not for Me",
+      "type": "album",
+      "year": 1958
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "modern piano-trio jazz with space-and-dynamics aesthetic",
+    "geographic_locus": "Chicago — Pershing Hotel lounge, residency 1956–59",
+    "historical_role": "The defining methodological precursor to Lewis. Jamal's trio (Israel Crosby bass, Vernell Fournier drums) refined a piano-trio language built on space, sustained vamps, and groove-locked left-hand patterns rather than virtuosic improvisation. 'At the Pershing: But Not for Me' (recorded January 16, 1958 at the Pershing Hotel) remained on the Billboard top-selling LP chart for ~100 weeks — proof that a jazz piano trio could become mainstream pop in 1958. Ramsey Lewis explicitly cited Jamal as a primary influence: Jamal 'uses a whole 88 keys on the piano… one of the both-hands piano players'. Lewis's Chicago, Lewis's piano trio, Lewis's live-room crossover all descend directly from this template."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded live January 16, 1958, at the Pershing Hotel lounge (Chicago) by engineer Malcolm Chisholm; producer Argo Records. The Pershing was a Black-owned hotel-bar where Jamal had a multi-year residency.",
+    "member_dynamics": "Ahmad Jamal (piano), Israel Crosby (bass — Chicago jazz veteran), Vernell Fournier (drums — New Orleans-via-Chicago, brought the second-line shuffle that defines Jamal's groove). The trio's interlocked telepathy from years of nightly playing is the hidden weapon.",
+    "cultural_venue": "Pershing Hotel, 6400 S. Cottage Grove, Chicago — center of Black South Side jazz nightlife in the 1950s. Same city, same Argo/Chess label home as Lewis seven years later.",
+    "instrumentation_details": "'Poinciana' built on Fournier's military-shuffle snare pattern and Crosby's two-note descending bass figure — a 16-bar vamp that loops the entire piece. Jamal floats melodic fragments over the top, leaves large rests, and lets the room's natural decay carry the harmonic implication. This is the template Lewis would echo with audience claps instead of shuffle snare.",
+    "release_circumstances": "Argo LP-628, released 1958. Ran nearly two years on Billboard's top LP chart; established Argo Records as a jazz pop crossover label and provided the model that Lewis would build on at the same label with 'The In Crowd' in 1965."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "methodological_precursor",
+    "piano_trio",
+    "chicago_argo",
+    "1958"
+  ],
+  "red_heart_tier": "touched",
+  "red_heart_evidence": [
+    "红心 (同艺人): Ahmad Jamal — Saturday Morning (later album, same artist) — confirms user has Jamal in the library context"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/At_the_Pershing:_But_Not_for_Me  [T2-3 — recording details]",
+    "https://magazine.waxpoetics.com/article/an-interview-with-ahmad-jamal/  [T2 — Jamal interview]",
+    "https://ahmadjamal.com/history  [T1 — artist official site]",
+    "https://chicago.suntimes.com/obituaries/2023/4/16/23685773/  [T2 — Sun-Times obit citing Lewis on Jamal]"
+  ],
+  "user_coverage": {
+    "status": "touched_unactivated",
+    "evidence": [
+      "红心 2023-08-28: Saturday Morning (同艺人不同时期)"
+    ],
+    "confidence": "medium"
+  }
+}

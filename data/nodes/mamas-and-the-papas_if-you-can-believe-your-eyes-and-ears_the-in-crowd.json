@@ -1,0 +1,52 @@
+{
+  "id": "mamas-and-the-papas_if-you-can-believe-your-eyes-and-ears_the-in-crowd",
+  "artist": "The Mamas & the Papas",
+  "period": {
+    "label": "Dunhill debut",
+    "year_start": 1966,
+    "year_end": 1966
+  },
+  "works": [
+    {
+      "title": "The 'In' Crowd",
+      "type": "track",
+      "year": 1966
+    },
+    {
+      "title": "If You Can Believe Your Eyes and Ears",
+      "type": "album",
+      "year": 1966
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "Laurel Canyon folk-rock vocal harmony",
+    "geographic_locus": "Los Angeles (Dunhill Records, Lou Adler production)",
+    "historical_role": "Third cover of 'The In Crowd' within 14 months: Cass Elliot leads on a folk-rock vocal harmony arrangement that closes the group's debut album (released February 28, 1966 on Dunhill). The same song now exists in three dialects within a 14-month window — Dobie Gray (R&B vocal, late 1964), Ramsey Lewis Trio (soul-jazz instrumental, July 1965), Mamas & Papas (folk-rock vocal, February 1966). Functions as the third panel in the episode's opening triptych: same song, three genres, audibly separable lineages."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by Lou Adler; recorded late 1965 at Western Recorders, Hollywood. Closes the debut album.",
+    "member_dynamics": "Cass Elliot lead vocal — her voice provides the bridge between the R&B original and the Laurel Canyon vocal-harmony surface; the rest of the group provides the close-harmony bed.",
+    "cultural_venue": "Laurel Canyon / Dunhill Records LA pop scene of 1965–66.",
+    "instrumentation_details": "Folk-rock band textures: acoustic and electric guitars, drums, electric bass, the four-voice vocal harmony stack. The arrangement keeps Billy Page's melodic skeleton intact and translates the R&B punch into a more flowing folk-rock pulse.",
+    "release_circumstances": "Album debut #1 Billboard 200 in May 1966; the single 'California Dreamin' did the commercial work, with 'The In Crowd' cover sitting as the album closer."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "cover_translation",
+    "same_song_lateral",
+    "folk_rock",
+    "1966"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/If_You_Can_Believe_Your_Eyes_and_Ears  [T2-3 — album, tracklist]",
+    "https://halfhearteddude.com/2009/05/great-covers-the-mamas-and-the-papas-if-you-can-believe-your-eyes-and-ears/  [T3-4 — covers-focused commentary]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

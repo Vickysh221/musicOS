@@ -1,0 +1,68 @@
+{
+  "id": "herbie-hancock_empyrean-isles_cantaloupe-island",
+  "artist": "Herbie Hancock",
+  "period": {
+    "label": "Blue Note quintet era",
+    "year_start": 1964,
+    "year_end": 1964
+  },
+  "works": [
+    {
+      "title": "Cantaloupe Island",
+      "type": "track",
+      "year": 1964
+    },
+    {
+      "title": "Empyrean Isles",
+      "type": "album",
+      "year": 1964
+    },
+    {
+      "title": "Watermelon Man",
+      "type": "track",
+      "year": 1973
+    },
+    {
+      "title": "Head Hunters",
+      "type": "album",
+      "year": 1973
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "Blue Note soul-jazz / modal funk pivot, then 1970s jazz-fusion",
+    "geographic_locus": "New York (Blue Note era), then LA / global (Head Hunters)",
+    "historical_role": "Same-year peer to Lewis on the soul-jazz crossover axis. 'Cantaloupe Island' (recorded June 17, 1964 at Van Gelder Studio, NJ) is one of the canonical Blue Note soul-jazz pieces — a 16-bar modal vamp with a 4-chord hook that became the most-sampled 1960s jazz track of the hip-hop era. Direct upstream of Us3's 1992 hit; methodological cousin to the Lewis trio's 1965 anchor. Hancock also recorded 'Watermelon Man' on Head Hunters (1973) — the same composition he wrote in 1962 that helped invent the soul-jazz pop crossover formula; user has the Head Hunters version. Hancock's career arc connects this map's soul-jazz / acid-jazz endpoints across 30 years."
+  },
+  "narrative_slots": {
+    "production_facts": "Empyrean Isles recorded June 17 1964, Rudy Van Gelder Studio, Englewood Cliffs NJ. Producer Alfred Lion. Blue Note BLP-4175, released August 1964. Head Hunters recorded September 1973 at Wally Heider Studios SF, producer David Rubinson; Columbia 32731.",
+    "member_dynamics": "Empyrean Isles quartet: Herbie Hancock (piano), Freddie Hubbard (cornet), Ron Carter (bass), Tony Williams (drums) — the Miles Davis 1960s rhythm-section nucleus. Head Hunters era band: Hancock (Rhodes, clavinet, synth), Bennie Maupin (sax/flute/bass clarinet), Paul Jackson (bass), Harvey Mason (drums), Bill Summers (percussion).",
+    "cultural_venue": "Blue Note studio jazz / 1970s LA fusion ecosystem.",
+    "instrumentation_details": "'Cantaloupe Island' built on F minor → Db7 → D minor 7 → F minor 7 / E♭ 4-chord vamp; sparse piano comping leaves the bass and drums as the carrying voice. The piece's structural simplicity is what makes it endlessly samplable. 'Watermelon Man' on Head Hunters reimagines the 1962 composition with Bill Summers's beer-bottle hindewhu intro and the Mwandishi-era funk band.",
+    "release_circumstances": "Empyrean Isles BLP-4175, Aug 1964. Head Hunters released Oct 1973, charted #13 Billboard 200, eventually 2x platinum — the first jazz album to be certified platinum. Both records are direct lineage-companions to the soul-jazz crossover Lewis pioneered."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "same_era_dialogue",
+    "soul_jazz",
+    "blue_note",
+    "sample_source_of_us3",
+    "1964"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心: Herbie Hancock — Watermelon Man (from Head Hunters)"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Empyrean_Isles  [T2-3]",
+    "https://en.wikipedia.org/wiki/Cantaloupe_Island  [T2-3]",
+    "https://en.wikipedia.org/wiki/Head_Hunters  [T2-3]"
+  ],
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2025-04-16: Watermelon Man"
+    ],
+    "confidence": "high"
+  }
+}

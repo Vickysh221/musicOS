@@ -1,0 +1,52 @@
+{
+  "id": "vince-guaraldi_jazz-impressions-of-black-orpheus_cast-your-fate-to-the-wind",
+  "artist": "Vince Guaraldi Trio",
+  "period": {
+    "label": "Pre-Peanuts crossover",
+    "year_start": 1962,
+    "year_end": 1963
+  },
+  "works": [
+    {
+      "title": "Cast Your Fate to the Wind",
+      "type": "track",
+      "year": 1962
+    },
+    {
+      "title": "Jazz Impressions of Black Orpheus",
+      "type": "album",
+      "year": 1962
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "West Coast piano-trio jazz with bossa nova influence",
+    "geographic_locus": "San Francisco — Fantasy Records",
+    "historical_role": "The immediate three-year precedent for 'The In Crowd' — a piano-trio instrumental that crossed onto pop radio (#22 Hot 100, #9 Easy Listening) and won the 1963 Grammy for Best Original Jazz Composition. Released as the B-side of 'Samba de Orpheus' (April 1962, Fantasy Records); US DJs flipped the single to the catchier 'Cast Your Fate' side. Guaraldi's piano language is melodically simpler than bebop, harmonically open enough to feel pop, with a propulsive but unobtrusive trio groove — the exact mix Lewis would scale up at Bohemian Caverns three years later."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded February 1962 at Fantasy Records' San Francisco studio; producer Max Weiss. Released April 18, 1962 on Fantasy LP-3337 (originally titled 'Jazz Impressions of Black Orpheus'). 'Cast Your Fate' originally the B-side, surfaced by radio play.",
+    "member_dynamics": "Vince Guaraldi (piano), Monty Budwig (bass), Colin Bailey (drums). Guaraldi was about to be commissioned for the Peanuts TV specials (1965 onward) — the soul-jazz crossover sensibility carried directly into that work.",
+    "cultural_venue": "San Francisco's Fantasy Records ecosystem — independent jazz label that also released Dave Brubeck's early West Coast LPs.",
+    "instrumentation_details": "Open piano voicings with bossa-influenced rhythmic floor; the piece is essentially a 16-bar AABA tune in F minor that loops to vamp Guaraldi's right-hand improvisation. The trio interlock is tighter than Garner, more melodic than Jamal.",
+    "release_circumstances": "Fantasy LP-3337, April 1962. Grammy 1963 (Best Original Jazz Composition); #22 Hot 100. Sound Education + Sounds Orchestra later covered it to higher chart heights in 1965. Direct precedent the Argo team would have been watching when they signed Lewis to make a crossover record."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "methodological_precursor",
+    "piano_trio_crossover",
+    "grammy_1963",
+    "1962"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cast_Your_Fate_to_the_Wind  [T2-3 — chart, Grammy, recording]",
+    "https://swingandbeyond.com/2017/04/08/cast-your-fate-to-the-wind-1962-vince-guaraldi/  [T3 — jazz musicology blog]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}

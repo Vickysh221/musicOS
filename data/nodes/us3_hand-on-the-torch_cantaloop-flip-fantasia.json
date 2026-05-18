@@ -1,0 +1,65 @@
+{
+  "id": "us3_hand-on-the-torch_cantaloop-flip-fantasia",
+  "artist": "Us3",
+  "period": {
+    "label": "Blue Note acid-jazz crossover",
+    "year_start": 1992,
+    "year_end": 1993
+  },
+  "works": [
+    {
+      "title": "Cantaloop (Flip Fantasia)",
+      "type": "track",
+      "year": 1992
+    },
+    {
+      "title": "Hand on the Torch",
+      "type": "album",
+      "year": 1993
+    },
+    {
+      "title": "100% Acid Jazz",
+      "type": "album",
+      "year": 1994
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "UK acid-jazz / jazz-hip-hop hybrid built on direct Blue Note sampling",
+    "geographic_locus": "London — Blue Note Records (the first non-American act signed to the historic jazz label)",
+    "historical_role": "The lineage's full circle: a UK acid-jazz act samples Herbie Hancock's 'Cantaloupe Island' (Empyrean Isles, 1964) — a 1960s soul-jazz piece in the exact same scene Lewis's 'In Crowd' emerged from — and turns it into a Hot 100 #9 hit on Blue Note itself, becoming the first album in Blue Note's history to reach platinum. 'Cantaloop (Flip Fantasia)' was called 'probably the best acid jazz single ever' (AllMusic). The UK Mod / Northern Soul / acid-jazz axis is now publicly fed back into the Blue Note canon it descended from — translation aesthetic gone meta."
+  },
+  "narrative_slots": {
+    "production_facts": "Produced by Geoff Wilkinson and Mel Simpson. Built around a chopped sample of Hancock's 'Cantaloupe Island' (1964, Empyrean Isles, Blue Note) — Blue Note granted Us3 unprecedented access to its master tapes after Wilkinson pitched the project. Released October 1992 (single), 1993 (album).",
+    "member_dynamics": "Geoff Wilkinson (producer/programmer), Mel Simpson (producer/keys), rappers Rahsaan Kelly and Kobie Powell, plus session jazz musicians. Built around producer + rapper + jazz session player triangle.",
+    "cultural_venue": "London acid-jazz club scene + Blue Note's New York/LA jazz heritage infrastructure.",
+    "instrumentation_details": "Hancock 'Cantaloupe Island' sample as backbone (the 2-bar piano vamp and bass), live trumpet (Gerard Presencer), live alto sax solos, hip-hop drums and rap verses on top.",
+    "release_circumstances": "Blue Note single October 1992, album 'Hand on the Torch' Sept 1993. 'Cantaloop' Hot 100 #9, Cash Box #7. Album: 2.3 million copies, first Blue Note platinum LP, Grammy nominated. The user's red-heart hit is on a '100% Acid Jazz' compilation including this track."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "acid_jazz",
+    "blue_note_sample_meta",
+    "soul_jazz_descent",
+    "1993"
+  ],
+  "red_heart_tier": "hit",
+  "red_heart_evidence": [
+    "红心: Us3 — Cantaloop (Flip Fantasia) (via '100% Acid Jazz' compilation)"
+  ],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/Cantaloop_(Flip_Fantasia)  [T2-3]",
+    "https://en.wikipedia.org/wiki/Hand_On_the_Torch  [T2-3]",
+    "https://www.udiscovermusic.com/stories/us3-hand-on-the-torch-feature/  [T2 — feature]",
+    "https://www.whosampled.com/sample/172/Us3-Cantaloop-(Flip-Fantasia)-Herbie-Hancock-Cantaloupe-Island/  [T3-4 — sample provenance]"
+  ],
+  "user_coverage": {
+    "status": "activated",
+    "evidence": [
+      "红心 2023-08-28: Cantaloop (Flip Fantasia)",
+      "红心 2023-08-28: Tukka Yoot's Riddim",
+      "红心 2023-08-28: Cantaloop (Filp Fantasia) (edit)"
+    ],
+    "confidence": "high"
+  }
+}

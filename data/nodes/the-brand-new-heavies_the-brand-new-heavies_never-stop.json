@@ -1,0 +1,53 @@
+{
+  "id": "the-brand-new-heavies_the-brand-new-heavies_never-stop",
+  "artist": "The Brand New Heavies",
+  "period": {
+    "label": "Acid Jazz Records breakthrough",
+    "year_start": 1990,
+    "year_end": 1991
+  },
+  "works": [
+    {
+      "title": "Never Stop",
+      "type": "track",
+      "year": 1991
+    },
+    {
+      "title": "The Brand New Heavies",
+      "type": "album",
+      "year": 1990
+    }
+  ],
+  "position_in_era": {
+    "primary_genre_lineage": "UK acid jazz / rare-groove revival of 70s jazz-funk",
+    "geographic_locus": "Ealing, London — Acid Jazz Records",
+    "historical_role": "The flagship release of Acid Jazz Records' breakthrough wave. Debut LP recorded on an £8,000 budget, released April 16 1990, UK-only; the 1991 US Delicious Vinyl licensing deal turned the band into the international face of acid jazz. 'Never Stop' (Sept 1991 single) reached UK #43 / US Hot 100 #54 / US Hot R&B #4. The group's stated influences (per their own press): 'Donald Byrd, the Mizell Brothers, 70s jazz-funk, two-step soul, mixed with a London warehouse party vibe' — direct descent from the soul-jazz crossover tradition Lewis crystallized."
+  },
+  "narrative_slots": {
+    "production_facts": "Recorded 1989–90 in London; budget £8,000. Released April 16, 1990 on Acid Jazz Records (founder Eddie Piller — same lineage as JTQ). 1991 US release on Delicious Vinyl.",
+    "member_dynamics": "Founded 1985 in Ealing by Simon Bartholomew (guitar), Andrew Levy (bass), Jan Kincaid (drums) — clubbing the London rare-groove scene, influenced by James Brown / Meters / Donald Byrd. Vocalist N'Dea Davenport joined for the debut album.",
+    "cultural_venue": "London warehouse-party / rare-groove circuit; clubs Talkin' Loud, the WAG Club, Dingwalls.",
+    "instrumentation_details": "Funk rhythm section + Rhodes/Hammond keys + horn section — direct 70s soul-jazz instrumental template; vocals added on top.",
+    "release_circumstances": "Acid Jazz Records AJXLP-2, April 1990 (UK). US release with Delicious Vinyl 1991. 'Never Stop' single 1991: UK #43, US Hot R&B #4. The album charted UK #69 on re-release."
+  },
+  "tags": [
+    "translation_aesthetic",
+    "uk_acid_jazz_revival",
+    "soul_jazz_descent",
+    "rare_groove",
+    "1991"
+  ],
+  "red_heart_tier": "blind_spot",
+  "red_heart_evidence": [],
+  "epistemic_layer": "fact",
+  "sources": [
+    "https://en.wikipedia.org/wiki/The_Brand_New_Heavies_(album)  [T2-3]",
+    "https://en.wikipedia.org/wiki/The_Brand_New_Heavies  [T2-3]",
+    "https://en.wikipedia.org/wiki/Acid_jazz  [T2-3]"
+  ],
+  "user_coverage": {
+    "status": "untouched",
+    "evidence": [],
+    "confidence": "high"
+  }
+}
