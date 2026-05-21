@@ -4,3 +4,7 @@ dist/
 *.log
 public/audio/
 public/data/
+
+# Fusion mp3s are hosted on Cloudflare R2 (docs/r2_audio_hosting.md), not in git.
+# Subtitle sidecars (*.subtitle.json) stay tracked — they ship with the build.
+public/audio_fusion/**/*.mp3

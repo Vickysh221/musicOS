@@ -52,7 +52,7 @@ export function NarrationCard({ exhibit, label }: Props) {
       {transcript && (
         <p className="narration-card__transcript">{transcript}</p>
       )}
-      {url && <audio ref={audioRef} src={url} preload="none" />}
+      {url && <audio ref={audioRef} src={url} crossOrigin="anonymous" preload="none" />}
     </div>
   );
 }

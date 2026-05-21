@@ -91,6 +91,7 @@ export function TrackDetail({ episodeId, position }: TrackDetailProps) {
             <audio
               ref={audioRef}
               src={playbackUrl}
+              crossOrigin="anonymous"
               autoPlay={mode === 'auto'}
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}

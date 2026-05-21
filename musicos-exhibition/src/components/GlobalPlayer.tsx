@@ -61,6 +61,7 @@ export function GlobalPlayer() {
       ref={audioRef}
       src={src}
       key={src}
+      crossOrigin="anonymous"
       autoPlay={isPlaying}
       onLoadedMetadata={(e) => setProgress(0, (e.target as HTMLAudioElement).duration || 0)}
       onTimeUpdate={(e) => {

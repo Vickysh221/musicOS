@@ -1,0 +1,10 @@
+# Heavy media is served from Cloudflare R2 in production (see docs/r2_audio_hosting.md).
+# Excluding it here keeps the Vercel build/deploy small and fast.
+# Runtime URLs resolve to VITE_AUDIO_BASE via src/lib/asset-url.ts.
+#
+# NOT excluded: *.subtitle.json (fetched by raw path in useFusionSubtitle, must
+# ship with the build) and public/data/*.json.
+
+public/audio_fusion/**/*.mp3
+public/audio/
+public/covers/
