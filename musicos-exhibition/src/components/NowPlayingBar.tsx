@@ -1,4 +1,4 @@
-import { useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useExhibition } from '../store/exhibition.js';
 import { useFusionSubtitle } from '../hooks/useFusionSubtitle.js';
 import './now-playing-bar.css';
@@ -44,10 +44,23 @@ function NextIcon() {
   );
 }
 
-function CaretUpIcon() {
+function ListIcon() {
   return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M12 7.5L21 18a1 1 0 0 1-.83 1.55H3.83A1 1 0 0 1 3 18l9-10.5z" />
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
+    </svg>
+  );
+}
+
+function HeartIcon({ filled }: { filled: boolean }) {
+  return (
+    <svg width="18" height="18" viewBox="0 0 24 24" fill={filled ? 'currentColor' : 'none'} aria-hidden="true">
+      <path
+        d="M12 20.3l-1.45-1.32C5.4 14.36 2 11.28 2 7.5 2 4.42 4.42 2 7.5 2c1.74 0 3.41.81 4.5 2.09C13.09 2.81 14.76 2 16.5 2 19.58 2 22 4.42 22 7.5c0 3.78-3.4 6.86-8.55 11.49L12 20.3z"
+        stroke="currentColor"
+        strokeWidth="1.8"
+        strokeLinejoin="round"
+      />
     </svg>
   );
 }
@@ -83,56 +96,6 @@ function activeSectionIdx(startTimes: number[], currentTime: number): number {
   return idx;
 }
 
-function Marquee({ text, className }: { text: string; className?: string }) {
-  const viewportRef = useRef<HTMLDivElement | null>(null);
-  const trackRef = useRef<HTMLDivElement | null>(null);
-  const [overflow, setOverflow] = useState(false);
-  const [duration, setDuration] = useState(0);
-
-  useLayoutEffect(() => {
-    const v = viewportRef.current;
-    const t = trackRef.current;
-    if (!v || !t) return;
-    const vw = v.clientWidth;
-    const tw = t.scrollWidth;
-    if (tw > vw + 1) {
-      setOverflow(true);
-      // Roughly 60px/s scroll speed.
-      setDuration(Math.max(8, tw / 60));
-    } else {
-      setOverflow(false);
-    }
-  }, [text]);
-
-  useEffect(() => {
-    const v = viewportRef.current;
-    if (!v) return;
-    const ro = new ResizeObserver(() => {
-      const t = trackRef.current;
-      if (!t || !v) return;
-      const vw = v.clientWidth;
-      const tw = t.scrollWidth;
-      setOverflow(tw > vw + 1);
-      if (tw > vw + 1) setDuration(Math.max(8, tw / 60));
-    });
-    ro.observe(v);
-    return () => ro.disconnect();
-  }, []);
-
-  return (
-    <div ref={viewportRef} className={`npb__marquee${overflow ? ' npb__marquee--scroll' : ''} ${className ?? ''}`} aria-live="polite">
-      <div
-        ref={trackRef}
-        className="npb__marquee-track"
-        style={overflow ? { animationDuration: `${duration}s` } : undefined}
-      >
-        <span className="npb__marquee-text">{text}</span>
-        {overflow && <span className="npb__marquee-text" aria-hidden="true">{text}</span>}
-      </div>
-    </div>
-  );
-}
-
 export function NowPlayingBar() {
   const exhibits = useExhibition((s) => s.exhibits);
   const language = useExhibition((s) => s.language);
@@ -146,6 +109,7 @@ export function NowPlayingBar() {
   const prev = useExhibition((s) => s.prev);
 
   const [expanded, setExpanded] = useState(false);
+  const [liked, setLiked] = useState(false);
   const listRef = useRef<HTMLUListElement | null>(null);
   const activeItemRef = useRef<HTMLLIElement | null>(null);
 
@@ -189,8 +153,6 @@ export function NowPlayingBar() {
 
   if (!exhibit) return null;
 
-  const currentSection = sections[sectionIdx] ?? '';
-
   const onSeekToSection = (idx: number) => {
     if (duration <= 0 || startTimes.length === 0) return;
     seekTo((startTimes[idx] ?? 0) + 0.05);
@@ -199,8 +161,6 @@ export function NowPlayingBar() {
   const isTrack = exhibit.kind === 'track';
   const title = isTrack ? exhibit.song : NARRATION_LABEL[exhibit.exhibit_type] ?? 'Narration';
   const subtitle = isTrack ? `${exhibit.artist} · ${exhibit.year}` : null;
-
-  const placeholder = language === 'zh' ? '讲解词建设中' : 'Curatorial note in progress';
 
   return (
     <div className={`npb${expanded ? ' npb--expanded' : ''}`}>
@@ -222,43 +182,47 @@ export function NowPlayingBar() {
       )}
 
       <div className="npb__card">
-        <div className="npb__head">
-          <div className="npb__head-text">
-            <div className="npb__title">{title}</div>
-            {subtitle && <div className="npb__subtitle">{subtitle}</div>}
-          </div>
-          <div className="npb__transport">
-            <button type="button" className="npb__ctrl" onClick={prev} aria-label="Previous">
-              <PrevIcon />
-            </button>
-            <button
-              type="button"
-              className="npb__ctrl npb__ctrl--play"
-              onClick={togglePlay}
-              aria-label={isPlaying ? 'Pause' : 'Play'}
-            >
-              {isPlaying ? <PauseIcon /> : <PlayIcon />}
-            </button>
-            <button type="button" className="npb__ctrl" onClick={next} aria-label="Next">
-              <NextIcon />
-            </button>
-          </div>
+        <div className="npb__head-text">
+          <div className="npb__title">{title}</div>
+          {subtitle && <div className="npb__subtitle">{subtitle}</div>}
         </div>
 
-        <div className="npb__body">
-          <Marquee
-            className="npb__transcript"
-            text={sections.length > 0 ? currentSection : placeholder}
-          />
+        <div className="npb__transport">
+          <button type="button" className="npb__ctrl" onClick={prev} aria-label="Previous">
+            <PrevIcon />
+          </button>
           <button
             type="button"
-            className={`npb__ctrl npb__expand${expanded ? ' npb__expand--open' : ''}`}
+            className="npb__ctrl npb__ctrl--play"
+            onClick={togglePlay}
+            aria-label={isPlaying ? 'Pause' : 'Play'}
+          >
+            {isPlaying ? <PauseIcon /> : <PlayIcon />}
+          </button>
+          <button type="button" className="npb__ctrl" onClick={next} aria-label="Next">
+            <NextIcon />
+          </button>
+        </div>
+
+        <div className="npb__actions">
+          <button
+            type="button"
+            className={`npb__ctrl npb__list-toggle${expanded ? ' npb__list-toggle--open' : ''}`}
             onClick={() => setExpanded((v) => !v)}
             aria-expanded={expanded}
-            aria-label={expanded ? 'Collapse sections' : 'Expand sections'}
+            aria-label={expanded ? 'Collapse sections' : 'Show sections'}
             disabled={sections.length === 0}
           >
-            <CaretUpIcon />
+            <ListIcon />
+          </button>
+          <button
+            type="button"
+            className={`npb__ctrl npb__like${liked ? ' npb__like--on' : ''}`}
+            onClick={() => setLiked((v) => !v)}
+            aria-pressed={liked}
+            aria-label={liked ? 'Unlike' : 'Like'}
+          >
+            <HeartIcon filled={liked} />
           </button>
         </div>
       </div>
