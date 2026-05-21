@@ -16,9 +16,9 @@
 .npb__card {
   pointer-events: auto;
   background: var(--inkwell-bg, #f6f6f4);
-  border-top: 1px solid rgba(17, 17, 17, 0.12);
+  border-top: 1px solid rgb(143, 143, 143);
   /* Clear the 52px collapsed-sidebar gutter so the title isn't occluded. */
-  padding: 16px 28px 16px 80px;
+  padding: 20px 28px 16px 80px;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   align-items: center;

@@ -5,6 +5,7 @@ import {
   useRef,
   useState,
   type MouseEvent as ReactMouseEvent,
+  type PointerEvent as ReactPointerEvent,
 } from 'react';
 import type { ConnectionKind, TrackExhibit } from '../../types.js';
 import { useExhibition } from '../../store/exhibition.js';
@@ -34,6 +35,13 @@ interface Props {
 }
 
 const MOBILE_BREAKPOINT_PX = 768;
+
+// Drag-to-tilt bounds for the playing-phase bird's-eye angle (playingRotX).
+const TILT_MIN_ROTX = -45;
+const TILT_MAX_ROTX = 25;
+const TILT_DEFAULT_ROTX = -28;
+const TILT_IDLE_MS = 3000;
+const TILT_SENSITIVITY = 0.25; // deg of tilt per px of vertical drag
 
 // ep1 connection layer — the related songs sit on a concentric OUTER ring whose
 // params are live-tunable (see the tuning panel). The camera (stage rotateX +
@@ -98,9 +106,18 @@ export function TimelineScene({ tracks }: Props) {
 
   const tuning = useTuning();
   const applyPreset = useTuning((s) => s.applyPreset);
+  const setTuning = useTuning((s) => s.set);
 
   // Layout phase: intro1 → intro3 on mount; flips to "playing" once playback starts.
   const [phase, setPhase] = useState<Phase>('intro1');
+
+  // Drag-to-tilt state (playing phase). isTilting drops the slow stage easing so
+  // the drag tracks 1:1; releasing it restores the easing for the 3s auto-revert.
+  const [isTilting, setIsTilting] = useState(false);
+  const tiltDragRef = useRef<{ startY: number; startRotX: number } | null>(null);
+  const tiltIdleRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const tiltMovedRef = useRef(false);
+  const tiltSuppressClickRef = useRef(false);
 
   // Sync the tuning store to the active phase preset so the panel mirrors what's on screen
   // and live edits feed straight back into the layout.
@@ -113,6 +130,17 @@ export function TimelineScene({ tracks }: Props) {
     const t = setTimeout(() => setPhase('intro3'), INTRO_STEP_MS);
     return () => clearTimeout(t);
   }, [playingPosition]);
+
+  // Leaving the playing phase (or unmounting) abandons any in-progress tilt drag.
+  useEffect(() => {
+    if (phase === 'playing') return;
+    if (tiltIdleRef.current) clearTimeout(tiltIdleRef.current);
+    tiltDragRef.current = null;
+    setIsTilting(false);
+  }, [phase]);
+  useEffect(() => () => {
+    if (tiltIdleRef.current) clearTimeout(tiltIdleRef.current);
+  }, []);
 
   useEffect(() => {
     if (playingPosition !== null) {
@@ -307,10 +335,59 @@ export function TimelineScene({ tracks }: Props) {
   };
 
   const onStageClick = (e: ReactMouseEvent) => {
+    // A tilt drag ends with a synthetic click; don't let it select a card.
+    if (tiltSuppressClickRef.current) {
+      tiltSuppressClickRef.current = false;
+      return;
+    }
     const idx = cardAtPoint(e.clientX, e.clientY);
     if (idx !== null) {
       const t = tracks[idx];
       if (t) play(t.position);
+    }
+  };
+
+  // ── Drag-to-tilt (playing phase) ─────────────────────────────────────────
+  // Holding empty space and dragging vertically nudges the bird's-eye tilt
+  // (playingRotX) within [TILT_MIN, TILT_MAX]; 3s after the last movement it
+  // eases back to the preset default.
+  const scheduleTiltRevert = useCallback(() => {
+    if (tiltIdleRef.current) clearTimeout(tiltIdleRef.current);
+    tiltIdleRef.current = setTimeout(() => {
+      setIsTilting(false);
+      setTuning('playingRotX', TILT_DEFAULT_ROTX);
+    }, TILT_IDLE_MS);
+  }, [setTuning]);
+
+  const onStagePointerDown = (e: ReactPointerEvent) => {
+    if (phase !== 'playing' || e.button !== 0) return;
+    if (cardAtPoint(e.clientX, e.clientY) !== null) return; // empty space only
+    tiltDragRef.current = { startY: e.clientY, startRotX: tuning.playingRotX };
+    tiltMovedRef.current = false;
+    setIsTilting(true);
+    e.currentTarget.setPointerCapture(e.pointerId);
+  };
+
+  const onStagePointerMove = (e: ReactPointerEvent) => {
+    const drag = tiltDragRef.current;
+    if (!drag) return;
+    if (Math.abs(e.clientY - drag.startY) > 2) tiltMovedRef.current = true;
+    const next = Math.min(
+      TILT_MAX_ROTX,
+      Math.max(TILT_MIN_ROTX, drag.startRotX - (e.clientY - drag.startY) * TILT_SENSITIVITY),
+    );
+    setTuning('playingRotX', next);
+    scheduleTiltRevert();
+  };
+
+  const onStagePointerUp = (e: ReactPointerEvent) => {
+    if (!tiltDragRef.current) return;
+    tiltDragRef.current = null;
+    e.currentTarget.releasePointerCapture?.(e.pointerId);
+    if (tiltMovedRef.current) {
+      tiltSuppressClickRef.current = true;
+    } else {
+      setIsTilting(false);
     }
   };
 
@@ -328,6 +405,10 @@ export function TimelineScene({ tracks }: Props) {
         onMouseMove={onStageMouseMove}
         onMouseLeave={() => setHoveredIndex(null)}
         onClick={onStageClick}
+        onPointerDown={onStagePointerDown}
+        onPointerMove={onStagePointerMove}
+        onPointerUp={onStagePointerUp}
+        onPointerCancel={onStagePointerUp}
         style={{ perspective: `${tuning.perspective}px` }}
       >
         <div
@@ -337,7 +418,9 @@ export function TimelineScene({ tracks }: Props) {
               phase === 'playing'
                 ? `translate(${tuning.playingOffsetX}px, ${tuning.playingOffsetY}px) rotateX(${tuning.playingRotX}deg) rotateY(0deg) rotateZ(0deg)`
                 : `rotateX(${tuning.stageRotX}deg) rotateY(${tuning.stageRotY}deg) rotateZ(${tuning.stageRotZ}deg)`,
-            transition: `transform ${INTRO_TRANSITION_MS}ms cubic-bezier(0.22, 1, 0.36, 1)`,
+            transition: isTilting
+              ? 'transform 0ms'
+              : `transform ${INTRO_TRANSITION_MS}ms cubic-bezier(0.22, 1, 0.36, 1)`,
           }}
         >
           {tracks.map((track, i) => {
