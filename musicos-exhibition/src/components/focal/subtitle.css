@@ -134,3 +134,46 @@
 .subtitle__pill:focus-visible::before {
   filter: blur(4px);
 }
+
+/* ─── Nocturne theme overrides ───────────────────────────────────────────── */
+
+/* Subtitle body sits on void — drop the frosted-glass backdrop and let the
+ * text breathe. The transcript is mute-65 under nocturne (DESIGN.md
+ * §Colors-N01 → text mute) since the dial is the only lit object. */
+[data-theme='nocturne'] .subtitle__current {
+  color: rgba(180, 180, 200, 0.65);
+  opacity: 1;
+  text-shadow: none;
+}
+[data-theme='nocturne'] .subtitle__body::before {
+  display: none;
+}
+[data-theme='nocturne'] .subtitle__chevron {
+  color: rgba(180, 180, 200, 0.7);
+}
+/* Pills collapse to the single electric hue regardless of slot
+ * (DESIGN.md §Colors-N01: one saturated color budget). The inline
+ * --mention-* vars from the multi-slot system are intentionally overridden
+ * via direct rules. Keep the halo + ring treatment so the pill still reads
+ * as "a callback target", but pull everything to electric blue. */
+[data-theme='nocturne'] .subtitle__pill {
+  color: rgb(170 168 255);
+  background: rgba(46, 43, 255, 0.10);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow:
+    inset 0 1px 0 rgba(245, 245, 255, 0.06),
+    0 0 0 1px rgba(46, 43, 255, 0.45);
+}
+[data-theme='nocturne'] .subtitle__pill::before {
+  color: rgba(46, 43, 255, 0.85);
+}
+[data-theme='nocturne'] .subtitle__pill:hover,
+[data-theme='nocturne'] .subtitle__pill:focus-visible {
+  color: rgb(220 220 255);
+  background: rgba(46, 43, 255, 0.20);
+  box-shadow:
+    inset 0 1px 0 rgba(245, 245, 255, 0.10),
+    0 0 0 1px rgba(46, 43, 255, 0.75),
+    0 0 12px rgba(46, 43, 255, 0.5);
+}

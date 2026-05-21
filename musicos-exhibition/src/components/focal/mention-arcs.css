@@ -25,3 +25,18 @@
   font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   user-select: none;
 }
+
+/* Nocturne theme — single electric-blue hue at four alpha tiers, with a
+ * per-slot dasharray so the four arcs are distinguishable by cadence rather
+ * than color (DESIGN.md §Colors → never a second saturated hue). Variables are
+ * supplied per-slot via inline style on each .mention-arcs__arc <g>. */
+[data-theme='nocturne'] .mention-arcs__arc .mention-arcs__band {
+  stroke: rgba(46, 43, 255, 0.18);
+  stroke-dasharray: var(--arc-dash);
+}
+[data-theme='nocturne'] .mention-arcs__arc .mention-arcs__halo {
+  fill: var(--arc-electric-halo);
+}
+[data-theme='nocturne'] .mention-arcs__arc .mention-arcs__label {
+  fill: var(--arc-electric);
+}

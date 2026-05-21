@@ -1,0 +1,51 @@
+/* ep1 connection layer — directed edges from a named source card to the
+ * now-playing card, drawn while the narrator is establishing the link. The
+ * SVG overlays the perspective stage in screen space (not 3D-transformed); its
+ * geometry is recomputed per frame against the live card rects. */
+
+.timeline-connections {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* Above the receding cards (zIndex ≤ track count) but below the focal card
+   * (zIndex 1000), so the arrowhead tucks against the playing cover's edge. */
+  z-index: 900;
+  overflow: visible;
+}
+
+.timeline-connections__edge {
+  fill: none;
+  stroke: var(--edge-color, rgba(255, 255, 255, 0.6));
+  stroke-width: 1.6;
+  stroke-dasharray: 6 4;
+  opacity: 0.85;
+  animation: timeline-edge-in 0.4s ease both;
+}
+
+@keyframes timeline-edge-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.85;
+  }
+}
+
+.timeline-connections__label {
+  fill: var(--edge-color, rgba(255, 255, 255, 0.7));
+  font-family: ui-monospace, 'SF Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  paint-order: stroke;
+  stroke: rgba(0, 0, 0, 0.55);
+  stroke-width: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .timeline-connections__edge {
+    animation: none;
+  }
+}

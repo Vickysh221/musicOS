@@ -21,13 +21,24 @@ export interface TuningParams {
   stageRotY: number;       // deg
   stageRotZ: number;       // deg
   perspective: number;     // px
-  // Arc layout (playing phase only)
+  // Arc layout (playing phase only) — INNER ring (the playlist)
   arcSpacing: number;      // px between adjacent card centers along the arc
   arcDepth: number;        // parabolic Z-recession coefficient (px per offset²)
   arcRotStep: number;      // inward rotY per offset step (deg)
   playingRotX: number;     // stage rotateX during playing — bird's-eye tilt (deg)
   playingOffsetX: number;  // screen-space X shift of the arc center (px)
   playingOffsetY: number;  // screen-space Y shift of the arc center (px)
+  // ep1 connection layer — OUTER ring (related songs) + two-ring relationship
+  ringCenterZ: number;     // px z of the shared ring center (more negative = farther from camera)
+  outerRadius: number;     // px radius of the related (outer) ring
+  outerGapDeg: number;     // deg between adjacent related songs on one side
+  outerFrontGapDeg: number;// deg cleared at front-center (no album there; split to two sides)
+  outerRotOffsetDeg: number;// deg the outer ring is rotated vs the inner front
+  outerHeight: number;     // px height offset of the outer ring vs the inner plane
+  outerScale: number;      // scale of related cards
+  outerStaggerZ: number;   // px front/back stagger between alternating related cards
+  focalRecede: number;     // px the now-playing card eases back when links appear
+  ringRecede: number;      // px the rest of the playlist ring recedes when links appear
   // Focal scene — disc + stage
   focalDiscSize: number;        // px (square)
   focalStageY: number;          // % viewport height where focal disc center sits
@@ -66,9 +77,19 @@ export const TUNING_DEFAULTS: TuningParams = {
   arcSpacing: 176,
   arcDepth: 0,
   arcRotStep: -20,
-  playingRotX: -30,
-  playingOffsetX: -112,
-  playingOffsetY: -169,
+  playingRotX: -21,
+  playingOffsetX: -79,
+  playingOffsetY: -65,
+  ringCenterZ: -645,
+  outerRadius: 820,
+  outerGapDeg: 26,
+  outerFrontGapDeg: 60,
+  outerRotOffsetDeg: 0,
+  outerHeight: 90,
+  outerScale: 0.8,
+  outerStaggerZ: 0,
+  focalRecede: 30,
+  ringRecede: 130,
   focalDiscSize: 268,
   focalStageY: 60,
   verticalSpacing: 138,
@@ -100,6 +121,6 @@ export const useTuning = create<TuningStore>()(
       reset: () => set({ ...TUNING_DEFAULTS, panelOpen: true }),
       togglePanel: () => set((s) => ({ panelOpen: !s.panelOpen })),
     }),
-    { name: 'musicos-tuning-v7' },
+    { name: 'musicos-tuning-v8' },
   ),
 );

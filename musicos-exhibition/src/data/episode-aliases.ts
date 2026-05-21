@@ -1,3 +1,5 @@
+import { EP1_ALIASES } from './ep1-aliases.js';
+import { EP2_ALIASES } from './ep2-aliases.js';
 import { EP3_ALIASES } from './ep3-aliases.js';
 import { EP5_ALIASES } from './ep5-aliases.js';
 
@@ -7,6 +9,8 @@ import { EP5_ALIASES } from './ep5-aliases.js';
  * auto-derived aliases still apply via aliasesForPosition.
  */
 export const ALIASES_BY_EPISODE: Record<string, Record<number, string[]>> = {
+  ep1: EP1_ALIASES,
+  ep2: EP2_ALIASES,
   ep3: EP3_ALIASES,
   ep5: EP5_ALIASES,
 };

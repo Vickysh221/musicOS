@@ -18,6 +18,15 @@ const TEXT_FONT_SIZE = 13;
 const RADIUS_GAP = 22;
 const HALO_FILTER_ID = 'mention-arc-halo';
 
+/**
+ * Nocturne theme — single electric-blue hue at 4 alpha tiers plus a per-slot
+ * dasharray. Order: tier 0 is the loudest (solid, full alpha), tier 3 the
+ * quietest (sparse dot pattern). DESIGN.md forbids a second saturated hue, so
+ * connection identity here rides on luminance + cadence, not color.
+ */
+const NOCTURNE_ALPHA = [1.0, 0.78, 0.58, 0.42] as const;
+const NOCTURNE_DASH = ['none', '14 6', '4 4', '2 5'] as const;
+
 function arcPath(
   centerDeg: number,
   spanDeg: number,
@@ -91,6 +100,16 @@ export function MentionArcs({ tracks, discSize, onArcClick, dimmed = false }: Pr
           const pathId = `mention-arc-${track.position}`;
           const textColor = mentionColor(i, 1);
           const haloColor = mentionColor(i, 0.85);
+          // Per-slot CSS vars: Nocturne theme reads --arc-electric* + --arc-dash
+          // via [data-theme="nocturne"] rules in mention-arcs.css. Non-nocturne
+          // themes ignore them — they fall back to the SVG fill/stroke attrs.
+          const nocturneAlpha = NOCTURNE_ALPHA[i] ?? NOCTURNE_ALPHA[NOCTURNE_ALPHA.length - 1]!;
+          const nocturneDash = NOCTURNE_DASH[i] ?? NOCTURNE_DASH[NOCTURNE_DASH.length - 1]!;
+          const arcVars: Record<string, string> = {
+            '--arc-electric': `rgba(46, 43, 255, ${nocturneAlpha})`,
+            '--arc-electric-halo': `rgba(46, 43, 255, ${nocturneAlpha * 0.7})`,
+            '--arc-dash': nocturneDash,
+          };
           return (
             <motion.g
               key={track.position}
@@ -100,7 +119,7 @@ export function MentionArcs({ tracks, discSize, onArcClick, dimmed = false }: Pr
               exit={{ opacity: 0, scale: 0.92 }}
               transition={{ duration: 0.32, ease: 'easeOut' }}
               onClick={() => onArcClick(track.position)}
-              style={{ transformOrigin: `${cx}px ${cy}px` }}
+              style={{ transformOrigin: `${cx}px ${cy}px`, ...arcVars }}
             >
               <defs>
                 <path id={pathId} d={d} fill="none" />
@@ -109,6 +128,7 @@ export function MentionArcs({ tracks, discSize, onArcClick, dimmed = false }: Pr
                * BackgroundShader behind the focal stage shows through, giving
                * the band its glass read; color lives only in the text. */}
               <path
+                className="mention-arcs__band"
                 d={d}
                 stroke="rgba(255, 255, 255, 0.22)"
                 strokeWidth={STROKE}
@@ -119,6 +139,7 @@ export function MentionArcs({ tracks, discSize, onArcClick, dimmed = false }: Pr
                * blurred via the shared filter. Drawn first so the sharp text
                * sits cleanly on top. */}
               <text
+                className="mention-arcs__halo"
                 fontSize={TEXT_FONT_SIZE}
                 fill={haloColor}
                 fontWeight={600}
@@ -137,6 +158,7 @@ export function MentionArcs({ tracks, discSize, onArcClick, dimmed = false }: Pr
               </text>
               {/* Sharp, fully-saturated label on top. */}
               <text
+                className="mention-arcs__label"
                 fontSize={TEXT_FONT_SIZE}
                 fill={textColor}
                 fontWeight={600}

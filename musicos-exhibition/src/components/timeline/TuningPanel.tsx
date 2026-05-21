@@ -8,78 +8,53 @@ interface SliderSpec {
   step: number;
 }
 
+// Only the ep1 playing-ring controls are shown — the intro-procession and
+// focal-disc params live in the store but aren't editable from this view.
 const GROUPS: { title: string; sliders: SliderSpec[] }[] = [
   {
-    title: 'Spacing',
+    title: '当前曲 / Current',
     sliders: [
-      { key: 'gapX', label: 'gap X', min: 10, max: 240, step: 1 },
-      { key: 'riseY', label: 'rise Y', min: -80, max: 80, step: 1 },
-      { key: 'stepZ', label: 'step Z', min: -80, max: 80, step: 1 },
+      { key: 'focalScale', label: '大小 scale', min: 0.8, max: 1.8, step: 0.01 },
+      { key: 'focalZBoost', label: '前后 Z', min: -60, max: 120, step: 1 },
+      { key: 'focalRecede', label: '激活后退', min: 0, max: 200, step: 1 },
     ],
   },
   {
-    title: 'Card rotation',
+    title: '内环·列表 / Inner ring',
     sliders: [
-      { key: 'cardRotX', label: 'rot X', min: -90, max: 90, step: 1 },
-      { key: 'cardRotY', label: 'rot Y', min: -90, max: 90, step: 1 },
-      { key: 'jitterDeg', label: 'jitter Z', min: 0, max: 30, step: 0.5 },
+      { key: 'arcSpacing', label: '专辑间距', min: 60, max: 1200, step: 1 },
+      { key: 'arcDepth', label: '前后深度', min: 0, max: 400, step: 0.5 },
+      { key: 'arcRotStep', label: '每步旋转', min: -20, max: 20, step: 0.5 },
+      { key: 'ringRecede', label: '激活后退', min: 0, max: 300, step: 1 },
     ],
   },
   {
-    title: 'Card size',
+    title: '外环·关联 / Outer ring',
     sliders: [
-      { key: 'cardWidth', label: 'width', min: 60, max: 320, step: 1 },
-      { key: 'cardHeight', label: 'height', min: 60, max: 420, step: 1 },
-      { key: 'focalScale', label: 'focal scale', min: 0.8, max: 1.8, step: 0.01 },
-      { key: 'focalLift', label: 'focal lift', min: -40, max: 60, step: 1 },
-      { key: 'focalZBoost', label: 'focal Z+', min: -60, max: 120, step: 1 },
+      { key: 'outerRadius', label: '半径', min: 400, max: 1400, step: 5 },
+      { key: 'ringCenterZ', label: '离相机(中心Z)', min: -1200, max: 0, step: 5 },
+      { key: 'outerGapDeg', label: '专辑间角距', min: 0, max: 60, step: 0.5 },
+      { key: 'outerFrontGapDeg', label: '正中留空', min: 0, max: 140, step: 1 },
+      { key: 'outerRotOffsetDeg', label: '旋转差', min: -90, max: 90, step: 1 },
+      { key: 'outerHeight', label: '高低差', min: -200, max: 200, step: 1 },
+      { key: 'outerScale', label: '大小', min: 0.4, max: 1.4, step: 0.01 },
+      { key: 'outerStaggerZ', label: '前后参差', min: -200, max: 200, step: 1 },
     ],
   },
   {
-    title: 'Stage orientation',
+    title: '相机 / Camera',
     sliders: [
-      { key: 'stageRotX', label: 'stage X', min: -60, max: 60, step: 0.5 },
-      { key: 'stageRotY', label: 'stage Y', min: -60, max: 60, step: 0.5 },
-      { key: 'stageRotZ', label: 'stage Z', min: -60, max: 60, step: 0.5 },
-      { key: 'perspective', label: 'perspect.', min: 400, max: 4000, step: 50 },
+      { key: 'playingRotX', label: '俯仰 tilt', min: -80, max: 80, step: 1 },
+      { key: 'playingOffsetX', label: '平移 X', min: -400, max: 400, step: 1 },
+      { key: 'playingOffsetY', label: '平移 Y', min: -400, max: 400, step: 1 },
+      { key: 'perspective', label: '透视', min: 400, max: 4000, step: 50 },
     ],
   },
   {
-    title: 'Arc (playing)',
+    title: '卡片 / Card',
     sliders: [
-      { key: 'arcSpacing', label: 'spacing', min: 60, max: 1200, step: 1 },
-      { key: 'arcDepth', label: 'depth', min: 0, max: 400, step: 0.5 },
-      { key: 'arcRotStep', label: 'rot/step', min: -20, max: 20, step: 0.5 },
-      { key: 'playingRotX', label: 'tilt X', min: -80, max: 80, step: 1 },
-      { key: 'playingOffsetX', label: 'offset X', min: -400, max: 400, step: 1 },
-      { key: 'playingOffsetY', label: 'offset Y', min: -400, max: 400, step: 1 },
-    ],
-  },
-  {
-    title: 'Focal scene — disc + stage',
-    sliders: [
-      { key: 'focalDiscSize', label: 'disc size', min: 120, max: 320, step: 1 },
-      { key: 'focalStageY', label: 'stage Y %', min: 30, max: 80, step: 1 },
-      { key: 'focalOffsetY', label: 'focal off Y', min: 0, max: 200, step: 1 },
-    ],
-  },
-  {
-    title: 'Focal scene — vertical stack',
-    sliders: [
-      { key: 'verticalSpacing', label: 'v spacing', min: 60, max: 200, step: 1 },
-      { key: 'verticalDepth', label: 'v depth', min: 0, max: 200, step: 1 },
-      { key: 'verticalShrink', label: 'v shrink', min: 0, max: 0.2, step: 0.01 },
-      { key: 'verticalFade', label: 'v fade', min: 0, max: 0.3, step: 0.01 },
-      { key: 'verticalRotX', label: 'v rot X', min: -30, max: 30, step: 0.5 },
-      { key: 'verticalRotY', label: 'v rot Y', min: -30, max: 30, step: 0.5 },
-      { key: 'verticalOffsetX', label: 'v off X', min: -100, max: 100, step: 1 },
-    ],
-  },
-  {
-    title: 'Focal scene — carousel',
-    sliders: [
-      { key: 'carouselScale', label: 'crsl scale', min: 0.5, max: 1.2, step: 0.05 },
-      { key: 'carouselRotX', label: 'crsl rot X', min: -30, max: 30, step: 0.5 },
+      { key: 'cardWidth', label: '宽', min: 60, max: 320, step: 1 },
+      { key: 'cardHeight', label: '高', min: 60, max: 420, step: 1 },
     ],
   },
 ];

@@ -24,6 +24,8 @@ import { PlayerBar } from './PlayerBar.js';
 import { FocalDisc } from './FocalDisc.js';
 import { MentionArcs } from './MentionArcs.js';
 import { BackgroundShader } from './BackgroundShader.js';
+import { NocturneBackdrop } from './NocturneBackdrop.js';
+import { NocturneFocal } from './NocturneFocal.js';
 import { PreviousDisc } from './PreviousDisc.js';
 import { PlaylistPopup } from './PlaylistPopup.js';
 import type { CardTransform } from '../timeline/timeline-keyframes.js';
@@ -55,6 +57,7 @@ export function FocalScene() {
   const language = useExhibition((s) => s.language);
   const play = useExhibition((s) => s.play);
   const seekTo = useExhibition((s) => s.seekTo);
+  const togglePlay = useExhibition((s) => s.togglePlay);
   const tuning = useTuning();
 
   const [lastPlayedTrackPosition, setLastPlayedTrackPosition] = useState<number | null>(null);
@@ -299,9 +302,14 @@ export function FocalScene() {
     seekTo(Math.max(0, time - RESUME_REWIND_SEC));
   };
 
+  // Scoped theme injection — ep2 enters Nocturne register (electric-blue void
+  // + three-layer luminous controls). Everything is gated via the
+  // [data-theme="nocturne"] attribute on this root so ep3/ep5 are untouched.
+  const theme = episodeId === 'ep2' ? 'nocturne' : null;
+
   return (
-    <div className="focal-scene">
-      <BackgroundShader persona={1} />
+    <div className="focal-scene" data-theme={theme ?? undefined}>
+      {theme === 'nocturne' ? <NocturneBackdrop /> : <BackgroundShader persona={1} />}
       <AnimatePresence>
         {subtitleExpanded && (
           <motion.div
@@ -338,40 +346,58 @@ export function FocalScene() {
         />
       </header>
 
-      <div className="focal-scene__stage" style={{ perspective: `${tuning.perspective}px` }}>
-        <div
-          className="focal-scene__stage-inner"
-          style={{ ['--focal-stage-y' as string]: `${tuning.focalStageY}%` }}
-        >
-          <AnimatePresence>
-            {focalTrack && (
-              <FocalDisc
-                key={focalTrack.position}
-                track={focalTrack}
-                transform={FOCAL_TRANSFORM}
-                isFocal
-                playing={isPlaying}
-                size={tuning.focalDiscSize}
-                zIndex={1000}
+      {theme === 'nocturne' ? (
+        <NocturneFocal
+          focalTrack={focalTrack}
+          isPlaying={isPlaying}
+          currentTime={currentTime}
+          duration={duration}
+          onTogglePlay={togglePlay}
+          onSeek={seekTo}
+          listOpen={listOpen}
+          onListToggle={() => setListOpen((v) => !v)}
+          arcTracks={arcTracks}
+          onArcClick={goToTrack}
+          arcsDimmed={subtitleExpanded}
+        />
+      ) : (
+        <>
+          <div className="focal-scene__stage" style={{ perspective: `${tuning.perspective}px` }}>
+            <div
+              className="focal-scene__stage-inner"
+              style={{ ['--focal-stage-y' as string]: `${tuning.focalStageY}%` }}
+            >
+              <AnimatePresence>
+                {focalTrack && (
+                  <FocalDisc
+                    key={focalTrack.position}
+                    track={focalTrack}
+                    transform={FOCAL_TRANSFORM}
+                    isFocal
+                    playing={isPlaying}
+                    size={tuning.focalDiscSize}
+                    zIndex={1000}
+                  />
+                )}
+              </AnimatePresence>
+              <MentionArcs
+                tracks={arcTracks}
+                discSize={tuning.focalDiscSize}
+                onArcClick={goToTrack}
+                dimmed={subtitleExpanded}
               />
-            )}
-          </AnimatePresence>
-          <MentionArcs
-            tracks={arcTracks}
-            discSize={tuning.focalDiscSize}
-            onArcClick={goToTrack}
-            dimmed={subtitleExpanded}
-          />
-        </div>
-      </div>
+            </div>
+          </div>
+
+          <PlayerBar listOpen={listOpen} onListToggle={() => setListOpen((v) => !v)} />
+        </>
+      )}
 
       <AnimatePresence>
         {previousTrack && (
           <PreviousDisc key={previousTrack.position} track={previousTrack} onClick={goBack} />
         )}
       </AnimatePresence>
-
-      <PlayerBar listOpen={listOpen} onListToggle={() => setListOpen((v) => !v)} />
 
       <PlaylistPopup
         open={listOpen}

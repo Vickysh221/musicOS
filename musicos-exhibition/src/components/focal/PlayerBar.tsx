@@ -62,7 +62,7 @@ export function PlayerBar({ onListToggle, listOpen }: Props) {
       </div>
       <button
         type="button"
-        className="player-bar__btn lg-surface"
+        className={`player-bar__btn player-bar__btn--primary lg-surface${isPlaying ? ' player-bar__btn--playing' : ''}`}
         onClick={togglePlay}
         aria-label={isPlaying ? 'Pause' : 'Play'}
       >
@@ -79,7 +79,7 @@ export function PlayerBar({ onListToggle, listOpen }: Props) {
       </button>
       <button
         type="button"
-        className={`player-bar__btn lg-surface${listOpen ? ' player-bar__btn--on' : ''}`}
+        className={`player-bar__btn player-bar__btn--list lg-surface${listOpen ? ' player-bar__btn--on' : ''}`}
         onClick={onListToggle}
         aria-pressed={listOpen}
         aria-label="Toggle list"

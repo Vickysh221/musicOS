@@ -1,0 +1,319 @@
+/* NocturneFocal — Nocturne register player surface (DESIGN.md §Layout-N01).
+ * Replaces the focal-disc + bottom player-bar pair when [data-theme='nocturne']
+ * is active. The composition reads top-to-bottom: album hero rules the upper
+ * half, then a single glowing concave dial gathers all transport controls in
+ * the lower half. The dial is the only lit object on the page — DESIGN.md
+ * §Selection-as-Light: only one thing emits.
+ *
+ * All measurements derive from the .nocturne-focal__dial --dial-size var
+ * (defaults to 320px, set inline on the dial element), so the surface scales
+ * cleanly if the dial is resized in the parent.
+ */
+
+.nocturne-focal {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  pointer-events: none;
+}
+
+/* ─── Hero — album cover ────────────────────────────────────────────────── */
+/* Full-bleed art occupies the upper portion of the stage. Bottom fades into
+ * the void substrate so the dial below floats on its own gradient and the
+ * eye reads two zones, not a hard split. */
+.nocturne-focal__hero {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 58%;
+  overflow: hidden;
+  pointer-events: none;
+}
+.nocturne-focal__hero-img,
+.nocturne-focal__hero-placeholder {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.nocturne-focal__hero-placeholder {
+  background: linear-gradient(135deg, rgba(46, 43, 255, 0.18), rgba(10, 10, 18, 0.6));
+}
+/* Vignette darkens the edges so the cover never fights the rim halo of the
+ * dial below. ~40% darkening at the corners, neutral at the center. */
+.nocturne-focal__hero-vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 90% 80% at 50% 30%,
+    transparent 0%,
+    transparent 45%,
+    rgba(10, 10, 18, 0.55) 100%
+  );
+}
+/* Bottom-fade ramp — the hero dissolves into the void at the bottom 35% so
+ * the album doesn't end with a hard edge that would compete with the dial
+ * rim. This is what makes the cover feel like it's emerging from the dark. */
+.nocturne-focal__hero-bottom-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 55%;
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    transparent 0%,
+    rgba(10, 10, 18, 0.55) 45%,
+    rgba(10, 10, 18, 0.95) 80%,
+    #0a0a12 100%
+  );
+}
+
+/* ─── Track label — sits on the bottom-fade ramp, just above the dial ──── */
+.nocturne-focal__label {
+  position: absolute;
+  left: 0;
+  right: 0;
+  /* Hero ends at 58%. The dial sits centered in the lower half (see __dial
+   * below); we land the label in the breathing room between hero-end and
+   * dial-top so it reads as a caption to the cover. */
+  top: calc(58% - 56px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0 24px;
+  text-align: center;
+  pointer-events: none;
+  font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.7));
+}
+.nocturne-focal__song {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.2px;
+  color: rgb(245 245 255);
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.nocturne-focal__artist {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.3;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(180, 180, 200, 0.65);
+}
+
+/* ─── Dial — the lit object ─────────────────────────────────────────────── */
+/* Concave bowl that holds the scrub arc, timecode, play button, and list
+ * satellite. Sits in the lower half of the surface, centered horizontally.
+ * DESIGN.md §Materials → Three-Layer Luminous Control:
+ *   layer 1 (AO):     dual-radius black drop shadow beneath
+ *   layer 2 (face):   recessed concave radial gradient
+ *   layer 3 (rim):    three-stop electric halo around the outer edge
+ *   layer 4 (spec):   topward cool-white highlight on ::after
+ */
+.nocturne-focal__dial {
+  position: absolute;
+  left: 50%;
+  /* Sit the dial centered in the lower portion. Bottom anchor (not center)
+   * gives a stable distance from the safe-area inset on mobile. */
+  bottom: calc(env(safe-area-inset-bottom, 0px) + 56px);
+  width: var(--dial-size, 320px);
+  height: var(--dial-size, 320px);
+  transform: translateX(-50%);
+  border-radius: 50%;
+  pointer-events: auto;
+  /* Recessed face — darker toward center to imply concavity, picking up the
+   * electric tint at the rim so the bowl reads as "lit from the edges". */
+  background:
+    radial-gradient(circle at 50% 38%, rgba(28, 28, 46, 0.6) 0%, rgba(10, 10, 22, 0.92) 60%, rgba(8, 8, 16, 1) 100%);
+  box-shadow:
+    /* AO beneath */
+    0 30px 80px rgba(0, 0, 0, 0.7),
+    0 12px 28px rgba(0, 0, 0, 0.5),
+    /* inner well — sells concavity */
+    inset 0 8px 24px rgba(0, 0, 0, 0.65),
+    inset 0 -2px 6px rgba(245, 245, 255, 0.04),
+    /* rim halo — three-stop electric */
+    0 0 0 1px rgba(46, 43, 255, 0.55),
+    0 0 32px rgba(46, 43, 255, 0.40),
+    0 0 96px rgba(46, 43, 255, 0.22);
+}
+/* Topward specular ellipse — fixed light source from the upper screen. The
+ * dial gets a soft white-cool reflection along its upper inside curve. */
+.nocturne-focal__dial::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 70% 36% at 50% 12%,
+    rgba(245, 245, 255, 0.20) 0%,
+    rgba(245, 245, 255, 0.06) 35%,
+    transparent 65%
+  );
+}
+
+/* Scrub arc — full-circle progress traced along the outer dial edge. */
+.nocturne-focal__arc {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  touch-action: none;
+  cursor: pointer;
+}
+.nocturne-focal__arc-fill {
+  filter: drop-shadow(0 0 4px rgba(46, 43, 255, 0.65));
+  transition: stroke-dasharray 0.12s linear;
+}
+.nocturne-focal__arc-handle {
+  filter: drop-shadow(0 0 5px rgba(46, 43, 255, 0.9));
+}
+
+/* Timecode — mono, sits above the play button. */
+.nocturne-focal__timecode {
+  position: absolute;
+  left: 50%;
+  top: calc(50% - 56px);
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', monospace;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  color: rgba(180, 180, 200, 0.75);
+  font-variant-numeric: tabular-nums;
+  pointer-events: none;
+  white-space: nowrap;
+}
+.nocturne-focal__timecode-sep {
+  color: rgba(180, 180, 200, 0.4);
+}
+
+/* Play button — center, three-layer luminous primary control. */
+.nocturne-focal__play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 84px;
+  height: 84px;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0a0a12;
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #e8e8ff 55%, #c8c8ff 100%);
+  box-shadow:
+    /* AO */
+    0 10px 28px rgba(0, 0, 0, 0.55),
+    0 3px 8px rgba(0, 0, 0, 0.4),
+    /* electric rim */
+    0 0 0 1.5px rgba(46, 43, 255, 0.65),
+    0 0 22px rgba(46, 43, 255, 0.55),
+    0 0 52px rgba(46, 43, 255, 0.32);
+  transition: transform 0.15s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
+/* Topward specular highlight — sells the button as a lit lozenge. */
+.nocturne-focal__play::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse 70% 40% at 50% 18%,
+    rgba(255, 255, 255, 0.6),
+    transparent 60%
+  );
+}
+.nocturne-focal__play:hover {
+  background: radial-gradient(circle at 50% 50%, #ffffff 0%, #ececff 55%, #d0d0ff 100%);
+  transform: translate(-50%, calc(-50% - 0.5px));
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.6),
+    0 3px 10px rgba(0, 0, 0, 0.45),
+    0 0 0 1.5px rgba(46, 43, 255, 0.85),
+    0 0 28px rgba(46, 43, 255, 0.7),
+    0 0 70px rgba(46, 43, 255, 0.4);
+}
+/* Glow-pulse while playing — DESIGN.md §Motion: alpha delta ≤0.20, 1800ms. */
+@keyframes nocturne-focal-play-pulse {
+  0%, 100% {
+    box-shadow:
+      0 10px 28px rgba(0, 0, 0, 0.55),
+      0 3px 8px rgba(0, 0, 0, 0.4),
+      0 0 0 1.5px rgba(46, 43, 255, 0.55),
+      0 0 20px rgba(46, 43, 255, 0.45),
+      0 0 52px rgba(46, 43, 255, 0.28);
+  }
+  50% {
+    box-shadow:
+      0 10px 28px rgba(0, 0, 0, 0.55),
+      0 3px 8px rgba(0, 0, 0, 0.4),
+      0 0 0 1.5px rgba(46, 43, 255, 0.82),
+      0 0 28px rgba(46, 43, 255, 0.7),
+      0 0 70px rgba(46, 43, 255, 0.42);
+  }
+}
+.nocturne-focal__play--playing {
+  animation: nocturne-focal-play-pulse 1800ms ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .nocturne-focal__play--playing {
+    animation: none;
+  }
+}
+
+/* List satellite — utility control, sits below the play button inside the
+ * dial well. Not lit unless toggled on (DESIGN.md §Selection-as-Light:
+ * utility controls are not light sources). */
+.nocturne-focal__list {
+  position: absolute;
+  left: 50%;
+  top: calc(50% + 64px);
+  transform: translateX(-50%);
+  width: 36px;
+  height: 36px;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(180, 180, 200, 0.75);
+  background: transparent;
+  box-shadow: 0 0 0 1px rgba(180, 180, 200, 0.18);
+  transition: color 0.18s ease, box-shadow 0.18s ease;
+}
+.nocturne-focal__list:hover {
+  color: rgba(245, 245, 255, 0.92);
+  box-shadow: 0 0 0 1px rgba(46, 43, 255, 0.45);
+}
+.nocturne-focal__list--on {
+  color: rgba(245, 245, 255, 0.95);
+  box-shadow:
+    0 0 0 1px rgba(46, 43, 255, 0.75),
+    0 0 12px rgba(46, 43, 255, 0.55);
+}

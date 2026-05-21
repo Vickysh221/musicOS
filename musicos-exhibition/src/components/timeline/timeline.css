@@ -96,6 +96,18 @@
   .track-card--playing { animation: none; }
 }
 
+/* ep1 connection layer — a lit source card (named by the narrator) carries
+ * the same color as its edge + the now-playing link. Recessed cards fall back
+ * so the active relationship reads clearly. */
+.track-card--lit {
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.2),
+    0 0 0 2px var(--card-slot-color, rgba(17, 17, 17, 0.55)),
+    0 0 22px color-mix(in srgb, var(--card-slot-color, #fff) 45%, transparent);
+}
+.track-card--recessed {
+  filter: grayscale(0.45) brightness(0.97);
+}
 
 .track-card__art {
   width: 100%;
@@ -106,6 +118,46 @@
 
 .track-card__art--placeholder {
   background: linear-gradient(135deg, #ddd, #bbb);
+}
+
+/* ep1 connection layer — current narration sentence, shown while a connection
+ * term is being spoken. Connection names render as colored pills that match
+ * their lit card + edge, and jump to that track on click. */
+.timeline-sentence {
+  position: absolute;
+  left: 50%;
+  bottom: 132px;
+  transform: translateX(-50%);
+  max-width: 620px;
+  width: calc(100% - 80px);
+  padding: 0 20px;
+  text-align: center;
+  z-index: 60;
+  pointer-events: none;
+}
+.timeline-sentence__text {
+  margin: 0;
+  font-family: 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: rgba(17, 17, 17, 0.82);
+}
+.timeline-sentence__pill {
+  pointer-events: auto;
+  border: none;
+  cursor: pointer;
+  padding: 1px 6px;
+  margin: 0 1px;
+  border-radius: 5px;
+  font: inherit;
+  font-weight: 600;
+  color: #111;
+  background: color-mix(in srgb, var(--pill-color, #888) 20%, transparent);
+  box-shadow: inset 0 -2px 0 color-mix(in srgb, var(--pill-color, #888) 80%, transparent);
+  transition: background 0.15s ease;
+}
+.timeline-sentence__pill:hover {
+  background: color-mix(in srgb, var(--pill-color, #888) 34%, transparent);
 }
 
 /* ---------- Stepper ---------- */

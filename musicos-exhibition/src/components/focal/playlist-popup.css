@@ -129,3 +129,173 @@
 .playlist-row__heart--filled {
   color: #fff;
 }
+
+/* ─── Nocturne theme overrides ───────────────────────────────────────────── */
+
+/* Selection-as-light (DESIGN.md §Interaction-N01). All rows default to a
+ * quiet void-raised surface; the selected row becomes the lit element — it
+ * fills with electric glow, its title flips to specular-100, and siblings
+ * fade by distance. The fade is the signature move; without it the
+ * selection just reads as "a colored row" rather than "the lit one". */
+[data-theme='nocturne'] .playlist-row {
+  background: rgba(18, 18, 28, 0.85);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  box-shadow:
+    inset 0 1px 0 rgba(245, 245, 255, 0.04),
+    0 4px 14px rgba(0, 0, 0, 0.45);
+  transition:
+    transform 0.18s ease,
+    background 0.32s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.32s cubic-bezier(0.2, 0.8, 0.2, 1),
+    opacity 0.24s ease;
+}
+[data-theme='nocturne'] .playlist-row__song {
+  color: rgba(180, 180, 200, 0.65);
+}
+[data-theme='nocturne'] .playlist-row__artist {
+  color: rgba(180, 180, 200, 0.35);
+}
+[data-theme='nocturne'] .playlist-row__heart {
+  color: rgba(180, 180, 200, 0.35);
+}
+[data-theme='nocturne'] .playlist-row__cover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+/* Sibling fade by distance — distance-1 dims further, distance-≥2 recedes
+ * into the void. Uses opacity (not just text alpha) so the cover thumb also
+ * fades in concert with the metadata. The 40ms stagger by distance gives the
+ * "spreading darkness" motion DESIGN.md calls for. */
+/* Uniform opacity for non-active rows — distance-based fade replaced with a
+ * viewport-edge fade (see __scroll mask below). The middle of the list reads
+ * at a consistent brightness; only rows physically near the top/bottom of
+ * the visible scroll area fade out as they approach the boundary. */
+[data-theme='nocturne'] .playlist-row:not(.playlist-row--active) {
+  opacity: 0.72;
+}
+
+/* Half-highlight hover — bridges the gap between dormant and lit. The row
+ * picks up a translucent electric wash + a thin electric ring + a soft outer
+ * bloom (no saturated solid bg, no pulse — those belong to the active row).
+ * Song text snaps to specular, artist meta lifts to mute-70 so the hovered
+ * row reads as "primed, not yet selected". */
+[data-theme='nocturne'] .playlist-row:not(.playlist-row--active):hover {
+  background: rgba(46, 43, 255, 0.18);
+  opacity: 1;
+  transform: translateY(-1px);
+  box-shadow:
+    inset 0 1px 0 rgba(245, 245, 255, 0.10),
+    0 0 0 1px rgba(46, 43, 255, 0.55),
+    0 6px 22px rgba(46, 43, 255, 0.28),
+    0 0 32px rgba(46, 43, 255, 0.14);
+}
+[data-theme='nocturne'] .playlist-row:not(.playlist-row--active):hover .playlist-row__song {
+  color: rgb(235 235 250);
+}
+[data-theme='nocturne'] .playlist-row:not(.playlist-row--active):hover .playlist-row__artist {
+  color: rgba(180, 180, 200, 0.72);
+}
+[data-theme='nocturne'] .playlist-row:not(.playlist-row--active):hover .playlist-row__heart {
+  color: rgba(220, 220, 245, 0.82);
+}
+
+/* Layer separation — give the popup a blurred dark plate beneath the rows
+ * so it reads as a distinct surface floating above the dial + cover.
+ * The blur lives on the scroll container so the mask-image edge fade
+ * applies to BOTH the rows and the blurred backdrop in one pass. */
+[data-theme='nocturne'] .playlist-popup__backdrop {
+  background: rgba(6, 6, 12, 0.42);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+[data-theme='nocturne'] .playlist-popup__scroll {
+  padding: 16px 12px;
+  border-radius: 28px;
+  background: linear-gradient(
+    180deg,
+    rgba(10, 10, 22, 0.55) 0%,
+    rgba(10, 10, 22, 0.72) 100%
+  );
+  backdrop-filter: blur(22px) saturate(130%);
+  -webkit-backdrop-filter: blur(22px) saturate(130%);
+  box-shadow:
+    inset 0 1px 0 rgba(245, 245, 255, 0.06),
+    0 12px 40px rgba(0, 0, 0, 0.55);
+  /* Edge fade — rows near the top/bottom of the visible scroll area soften
+   * into the void. The fade range (~10%) is small enough that mid-list rows
+   * stay at full uniform opacity. */
+  -webkit-mask-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    #000 9%,
+    #000 91%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    #000 9%,
+    #000 91%,
+    transparent 100%
+  );
+}
+
+/* The lit row. Fills with electric, picks up an outer halo + inner top-edge
+ * specular, flips text to specular. The fade-recede on siblings above is
+ * what makes this read as "lit" rather than "highlighted". Reference image
+ * shows the row glowing — saturated electric solid + soft outer bloom + a
+ * subtle white inner top edge for the three-layer luminous treatment. */
+[data-theme='nocturne'] .playlist-row--active {
+  background: linear-gradient(180deg, rgb(58 56 255) 0%, rgb(46 43 255) 60%, rgb(38 36 220) 100%);
+  opacity: 1;
+  box-shadow:
+    inset 0 1px 0 rgba(245, 245, 255, 0.22),
+    0 0 0 1px rgba(46, 43, 255, 0.55),
+    0 10px 36px rgba(46, 43, 255, 0.55),
+    0 4px 16px rgba(46, 43, 255, 0.35),
+    0 0 64px rgba(46, 43, 255, 0.28);
+  transition-delay: 0ms;
+}
+[data-theme='nocturne'] .playlist-row--active .playlist-row__song {
+  color: rgb(245 245 255);
+  font-weight: 600;
+  letter-spacing: -0.1px;
+}
+[data-theme='nocturne'] .playlist-row--active .playlist-row__artist {
+  color: rgba(245, 245, 255, 0.78);
+  font-size: 11px;
+  letter-spacing: 0.10em;
+  text-transform: uppercase;
+}
+[data-theme='nocturne'] .playlist-row--active .playlist-row__heart {
+  color: rgba(245, 245, 255, 0.9);
+}
+/* Subtle pulse on the lit row — mirrors the dial + play-button breathing so
+ * "the lit thing" reads consistently across surfaces. */
+@keyframes nocturne-row-pulse {
+  0%, 100% {
+    box-shadow:
+      inset 0 1px 0 rgba(245, 245, 255, 0.22),
+      0 0 0 1px rgba(46, 43, 255, 0.55),
+      0 10px 36px rgba(46, 43, 255, 0.50),
+      0 4px 16px rgba(46, 43, 255, 0.32),
+      0 0 56px rgba(46, 43, 255, 0.24);
+  }
+  50% {
+    box-shadow:
+      inset 0 1px 0 rgba(245, 245, 255, 0.22),
+      0 0 0 1px rgba(46, 43, 255, 0.7),
+      0 12px 44px rgba(46, 43, 255, 0.65),
+      0 4px 18px rgba(46, 43, 255, 0.4),
+      0 0 80px rgba(46, 43, 255, 0.34);
+  }
+}
+[data-theme='nocturne'] .playlist-row--active {
+  animation: nocturne-row-pulse 1800ms ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  [data-theme='nocturne'] .playlist-row--active {
+    animation: none;
+  }
+}

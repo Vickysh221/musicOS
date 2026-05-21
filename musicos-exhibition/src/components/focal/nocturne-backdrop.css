@@ -1,0 +1,44 @@
+/* Nocturne backdrop — three layered surfaces:
+ *  1. void substrate (#0A0A12 — warm-cool tinted near-black; DESIGN.md forbids
+ *     pure #000 because it kills the volumetric atmosphere)
+ *  2. ambient floor wash: radial of electric @ 0.18 anchored bottom-center,
+ *     simulating the lit dial well rising out of the void
+ *  3. offscreen planet: radial of electric @ 0.28 bleeding from upper-right
+ *     so the screen reads as a *space* rather than a *page*
+ *
+ * The "::before"/"::after" carry layers 2 and 3 so the root div's background
+ * stays the void color and individual layers can be tuned without re-staking.
+ */
+.nocturne-backdrop {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: #0a0a12;
+  overflow: hidden;
+}
+.nocturne-backdrop::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 60% at 50% 80%,
+    rgba(46, 43, 255, 0.22) 0%,
+    rgba(46, 43, 255, 0.08) 35%,
+    transparent 65%
+  );
+}
+.nocturne-backdrop::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* Offscreen "planet" — DESIGN.md §Materials → ambient-planet. Placed slightly
+   * past the right edge so its full disc is implied but never resolves on
+   * screen, matching the source reference's half-visible light orb. */
+  background: radial-gradient(
+    circle 480px at 105% 28%,
+    rgba(46, 43, 255, 0.30) 0%,
+    rgba(46, 43, 255, 0.12) 30%,
+    transparent 60%
+  );
+}

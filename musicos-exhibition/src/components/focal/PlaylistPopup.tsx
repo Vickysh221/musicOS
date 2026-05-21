@@ -19,6 +19,10 @@ interface Props {
  */
 export function PlaylistPopup({ open, tracks, currentPosition, onSelect, onClose }: Props) {
   const ordered = tracks.slice().sort((a, b) => a.position - b.position);
+  // Index distance from the selected row (not position-diff — there can be
+  // gaps if a track is muted). Used by the Nocturne theme to fade siblings
+  // by distance (DESIGN.md §Interaction → Selection Inversion).
+  const activeIdx = ordered.findIndex((t) => t.position === currentPosition);
   return (
     <AnimatePresence>
       {open && (
@@ -41,14 +45,16 @@ export function PlaylistPopup({ open, tracks, currentPosition, onSelect, onClose
             aria-label="Playlist"
           >
             <div className="playlist-popup__scroll">
-              {ordered.map((t) => {
+              {ordered.map((t, i) => {
                 const active = t.position === currentPosition;
                 const hearted = t.red_heart_tier === 'hit';
+                const distance = activeIdx >= 0 ? Math.abs(i - activeIdx) : 0;
                 return (
                   <button
                     key={t.position}
                     type="button"
                     className={`playlist-row${active ? ' playlist-row--active' : ''}`}
+                    data-distance={distance}
                     onClick={() => onSelect(t.position)}
                   >
                     <div className="playlist-row__cover">

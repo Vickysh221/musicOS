@@ -11,12 +11,18 @@ interface Props {
   isPlaying: boolean;
   zIndex: number;
   transition?: Transition;
+  /** ep1 connection layer: this card is a named source of the playing track. */
+  lit?: boolean;
+  /** ep1 connection layer: a connection is active and this card isn't part of it. */
+  recessed?: boolean;
+  /** Color slot shared with the connection edge/label when lit. */
+  slotColor?: string;
 }
 
 const DEFAULT_TRANSITION: Transition = { type: 'spring', stiffness: 220, damping: 26, mass: 0.6 };
 
 export const TrackCard = forwardRef<HTMLButtonElement, Props>(function TrackCard(
-  { track, transform, isFocal, isPlaying, zIndex, transition },
+  { track, transform, isFocal, isPlaying, zIndex, transition, lit, recessed, slotColor },
   ref,
 ) {
   const { x, y, z, rotX, rotY, rotZ, opacity, scale } = transform;
@@ -24,7 +30,9 @@ export const TrackCard = forwardRef<HTMLButtonElement, Props>(function TrackCard
   const className =
     'track-card' +
     (isFocal ? ' track-card--focal' : '') +
-    (isFocal && isPlaying ? ' track-card--playing' : '');
+    (isFocal && isPlaying ? ' track-card--playing' : '') +
+    (lit ? ' track-card--lit' : '') +
+    (recessed ? ' track-card--recessed' : '');
 
   return (
     <motion.button
@@ -32,7 +40,7 @@ export const TrackCard = forwardRef<HTMLButtonElement, Props>(function TrackCard
       type="button"
       tabIndex={-1}
       className={className}
-      style={{ zIndex }}
+      style={{ zIndex, ...(slotColor ? { ['--card-slot-color' as string]: slotColor } : {}) }}
       animate={{ x, y, z, rotateX: rotX, rotateY: rotY, rotateZ: rotZ, scale, opacity }}
       transition={transition ?? DEFAULT_TRANSITION}
       aria-label={`${track.position}. ${track.artist} — ${track.song}`}

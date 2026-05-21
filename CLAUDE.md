@@ -41,6 +41,13 @@ Never embed full node objects in a map file. Maps store `node_ids` (references).
 - `playlists/<anchor_slug>.playlist.md` — annotated playlist for each expansion (text/visual mode)
 - `episodes/<anchor_slug>.episode.json` — audio episode script + stitching manifest (audio mode, spec §7B)
 - `episodes/<anchor_slug>.episode.md` — human-readable episode for review before TTS synthesis
+- `anchors/backlog/<slug>.idea.md` — parked anchor ideas not yet ready for expansion (see `anchors/backlog/README.md` for schema)
+
+---
+
+## Anchor backlog (parked ideas)
+
+Before expanding, check `anchors/backlog/` — record-store finds, passing thoughts, and other un-scoped anchor candidates park here. Each `<slug>.idea.md` carries frontmatter (`status`, `surfaced_on`, `source`, `candidate_anchor`) plus free-form notes (coverage signal, candidate focus axes, open decisions, research breadcrumbs). When the user says "let's record this idea for later" or surfaces an anchor without committing to expansion, write a new idea file there rather than starting a map. When greenlit, the idea file becomes the kickoff brief; flip its `status` to `in_progress` once `maps/<slug>.map.json` exists. Full schema: `anchors/backlog/README.md`.
 
 ---
 
