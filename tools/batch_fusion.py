@@ -38,30 +38,30 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # Style assignment: position → 'A' | 'C' | 'C_SHORT' | 'PASSTHROUGH'
 
-# Episode 1 — Miss You · Bassline DNA (calibrated 2026-05-06)
-# STYLE_BY_POSITION_EP1: dict[int, str] = {
-#     0: "PASSTHROUGH",
-#     1: "C",   # JB anchor — bass intro should land first
-#     2: "C",   # Family Affair — needs preroll for groove
-#     3: "C",
-#     4: "C",   # Give Up the Funk — preroll for P-Funk entry
-#     5: "C",   # Stayin' Alive — preroll for the famous intro
-#     6: "C",   # Miss You anchor, 622-char narration
-#     7: "A",
-#     8: "C_SHORT",  # muted, 30s music only
-#     9: "C",
-#     10: "C",  # Isolation — preroll for the bassline
-#     11: "C",
-#     12: "C",  # Another One Bites the Dust — preroll for that bassline
-#     13: "A",
-#     14: "A",
-#     15: "A",
-#     16: "A",
-#     17: "C",
-#     18: "A",
-#     19: "PASSTHROUGH",
-#     20: "PASSTHROUGH",
-# }
+# Episode 1 — Miss You · Bassline DNA (calibrated 2026-05-06; ACTIVE for ep1 re-fusion 2026-05-21)
+STYLE_BY_POSITION: dict[int, str] = {
+    0: "PASSTHROUGH",
+    1: "C",   # JB anchor — bass intro should land first
+    2: "C",   # Family Affair — needs preroll for groove
+    3: "C",
+    4: "C",   # Give Up the Funk — preroll for P-Funk entry
+    5: "C",   # Stayin' Alive — preroll for the famous intro
+    6: "C",   # Miss You anchor, 622-char narration
+    7: "A",
+    8: "C_SHORT",  # muted, 30s music only
+    9: "C",
+    10: "C",  # Isolation — preroll for the bassline
+    11: "C",
+    12: "C",  # Another One Bites the Dust — preroll for that bassline
+    13: "A",
+    14: "A",
+    15: "A",
+    16: "A",
+    17: "C",
+    18: "A",
+    19: "PASSTHROUGH",
+    20: "PASSTHROUGH",
+}
 
 # Episode 5 — Cloudyな午後 · translation_aesthetic (2026-05-10)
 # EN narrations all 600-1684ch → C for all tracks; opening/closing → PASSTHROUGH
@@ -89,7 +89,8 @@ ROOT = Path(__file__).resolve().parent.parent
 
 # Episode 6 — Ramsey Lewis Trio · The 'In' Crowd · translation_aesthetic (2026-05-18)
 # ZH narrations 313-845ch → C for all tracks; opening/closing → PASSTHROUGH
-STYLE_BY_POSITION: dict[int, str] = {
+# STYLE_BY_POSITION_EP6: dict[int, str] = {
+_STYLE_BY_POSITION_EP6: dict[int, str] = {
     0:  "PASSTHROUGH",   # opening (397ch)
     1:  "C",   # Erroll Garner — Misty (314ch)
     2:  "C",   # Ahmad Jamal — Poinciana (449ch, pillar)

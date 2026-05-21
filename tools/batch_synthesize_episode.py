@@ -98,6 +98,14 @@ def main() -> None:
                         "(default: on; pass --no-subtitle to disable). Sidecars are required by "
                         "batch_fusion to emit fusion-aligned subtitles — without them the front-end "
                         "falls back to char-count estimation and audio/text drift by seconds.")
+    p.add_argument("--subtitle-only", action="store_true",
+                   help="fetch MiniMax subtitle timings WITHOUT overwriting existing narration "
+                        "mp3s. Skips work when a .subtitle.json sidecar already exists (use --force "
+                        "to refresh). Use this to retrofit subtitle sidecars onto episodes whose "
+                        "narrations were synthesized before subtitle support landed; the new "
+                        "subtitle corresponds to a fresh TTS call so per-sentence alignment may "
+                        "differ from the baked-in audio by ~100-300ms (vs. seconds of drift from "
+                        "the char-count fallback).")
     p.add_argument("--lang", default="zh", choices=["zh", "en"],
                    help="which transcript field to synthesize: zh (default) or en. "
                         "Bridge narration always uses bridge_narration_zh regardless of --lang.")
@@ -134,22 +142,35 @@ def main() -> None:
 
         for text, source_field, suffix in parts:
             out_path = args.output_dir / f"{stem}{suffix}.mp3"
+            sub_path = out_path.with_suffix(".subtitle.json")
 
-            if out_path.exists() and not args.force:
+            want_subtitle = args.subtitle or args.subtitle_only
+            if args.subtitle_only:
+                if sub_path.exists() and not args.force:
+                    print(f"  skip {stem}{suffix}: subtitle sidecar exists")
+                    total_skipped += 1
+                    continue
+                if not out_path.exists():
+                    print(f"  skip {stem}{suffix}: narration mp3 missing — run without "
+                          f"--subtitle-only to synthesize first")
+                    continue
+                print(f"  sub   {stem}{suffix}: {len(text)} chars from {source_field} (mp3 preserved)")
+            elif out_path.exists() and not args.force:
                 print(f"  skip {stem}{suffix}: already exists")
                 total_skipped += 1
                 continue
+            else:
+                print(f"  synth {stem}{suffix}: {len(text)} chars from {source_field}")
 
-            print(f"  synth {stem}{suffix}: {len(text)} chars from {source_field}")
             audio, meta = synthesize(
                 text, args.voice, api_key, group_id or "", model=args.model,
-                subtitle=args.subtitle,
+                subtitle=want_subtitle,
             )
-            out_path.write_bytes(audio)
-            if args.subtitle:
+            if not args.subtitle_only:
+                out_path.write_bytes(audio)
+            if want_subtitle:
                 sub_data = meta.get("subtitle")
                 if sub_data:
-                    sub_path = out_path.with_suffix(".subtitle.json")
                     sub_path.write_text(
                         json.dumps(sub_data, ensure_ascii=False, indent=2),
                         encoding="utf-8",
@@ -165,6 +186,7 @@ def main() -> None:
             total_chars += len(text)
             total_usage_chars += usage
 
+            log_target = sub_path if args.subtitle_only else out_path
             with log_path.open("a", encoding="utf-8") as f:
                 f.write(json.dumps({
                     "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -179,7 +201,8 @@ def main() -> None:
                     "usage_characters": usage,
                     "output_bytes": len(audio),
                     "latency_ms": meta["latency_ms"],
-                    "output_path": str(out_path.resolve().relative_to(ROOT)),
+                    "output_path": str(log_target.resolve().relative_to(ROOT)),
+                    "mode": "subtitle_only" if args.subtitle_only else "full",
                 }, ensure_ascii=False) + "\n")
 
     print(f"\nDone: {total_runs} synthesized, {total_skipped} skipped")

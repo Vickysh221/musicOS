@@ -1,11 +1,24 @@
-# YouTube fetch manifest for Miss You Episode 1 — round 2 (7 tracks)
+# YouTube fetch manifest for Miss You Episode 1 — full re-fetch (source music re-host)
 # Format:  <video_id>|<filename_stem>
 # Run: python3 -m tools.fetch_audio_youtube tools/youtube_manifest.txt
+# Styles for ep1 are all A/C/C_SHORT (no anchor alignment) so any full canonical
+# studio recording is fine. Channel preference: official artist / -Topic.
 
+B615TiDdjUc|01_james-brown_cold-sweat
+xag5RKD0VHk|02_sly-the-family-stone_family-affair
+Ypgq0qdgVZA|03_david-bowie_fame
+xNpNTkSkrU8|04_parliament_give-up-the-funk-tear-the-roof-off-the-sucker
 bVVwmRbBZ-I|05_bee-gees_stayin-alive
 KuRxXRuAz-I|06_the-rolling-stones_miss-you
+M6zdLTfH-As|07_blondie_heart-of-glass
+nkPKtmCnTIY|08_devo_jocko-homo
 Er9xGRolrT4|09_chic_good-times
+P5JWFUsXd1E|10_joy-division_isolation
+fR0jgT9UX0Q|11_talking-heads_once-in-a-lifetime
+rY0WxgSXdEE|12_queen_another-one-bites-the-dust
 Izx6DQUrsag|13_prince_when-doves-cry
 2Wx_UG_UjTY|14_red-hot-chili-peppers_give-it-away
 DvE7O3bLQgE|15_daft-punk_get-lucky
 2SUwOgmvzK4|16_tame-impala_the-less-i-know-the-better
+7hlGqj3ImQI|17_khruangbin_mar-a-tambi-n
+# 18_mkgee_you-dreamed-of-me — PENDING: title not found on YouTube; confirm actual track
