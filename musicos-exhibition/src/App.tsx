@@ -7,6 +7,7 @@ import { Sidebar } from './components/Sidebar.js';
 import './app.css';
 
 function useCurrentEpisodeId(): string {
+  const [isHome] = useRoute('/');
   const [isEp6] = useRoute('/ep6/:rest*');
   const [isEp6Exact] = useRoute('/ep6');
   const [isEp5] = useRoute('/ep5/:rest*');
@@ -22,6 +23,7 @@ function useCurrentEpisodeId(): string {
   if (isEp4 || isEp4Exact) return 'ep4';
   if (isEp3 || isEp3Exact) return 'ep3';
   if (isEp2 || isEp2Exact) return 'ep2';
+  if (isHome) return ''; // lobby: no episode is active
   return 'ep1';
 }
 

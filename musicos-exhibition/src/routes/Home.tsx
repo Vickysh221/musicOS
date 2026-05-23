@@ -2,8 +2,9 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLocation } from 'wouter';
 import { FloatingCanvas } from '../components/home/FloatingCanvas.js';
 import { FloatingCover, type ExitTarget } from '../components/home/FloatingCover.js';
-import { SLOTS, coverForSlot, stackTarget, type HoverState } from '../components/home/home-layout.js';
+import { SLOTS, coverForSlot, stackTarget, type HoverState, type Slot } from '../components/home/home-layout.js';
 import { loadHomeManifest, type EpisodeManifest } from '../lib/home-manifest.js';
+import { EPISODES } from '../lib/episodes.js';
 import './home.css';
 
 const STACK_EPISODES = new Set(['ep1', 'ep4']);
@@ -29,7 +30,11 @@ export function Home() {
         setManifests(Object.fromEntries(list.map((m) => [m.episodeId, m])));
       })
       .catch((err) => {
-        if (alive) console.error('Failed to load home manifest', err);
+        if (!alive) return;
+        // Static episode JSONs should always resolve; if a fetch fails, fall
+        // back to the first episode rather than stranding the user on LOADING.
+        console.error('Failed to load home manifest', err);
+        setLocation('/ep1');
       });
     return () => {
       alive = false;
@@ -37,11 +42,14 @@ export function Home() {
     };
   }, []);
 
-  function handleClick(episodeId: string) {
+  function handleClick(slot: Slot) {
     if (exitingEpisode) return;
+    const episodeId = slot.episodeId;
     if (STACK_EPISODES.has(episodeId) && !reducedMotion) {
-      // keep `hover` set so the clicked episode's tracklist covers are what collapse
-      // not reset: Home unmounts as soon as setLocation routes away after the collapse
+      // Pin hover to the clicked episode so its tracklist covers are what
+      // collapse into the stack — even when clicked without a prior mouseenter.
+      // hover is intentionally not reset: Home unmounts once setLocation routes away.
+      setHover({ hoveredSlotId: slot.id, activeEpisodeId: episodeId });
       setExitingEpisode(episodeId);
       navTimer.current = window.setTimeout(() => setLocation(`/${episodeId}`), STACK_DURATION_MS);
     } else {
@@ -52,7 +60,7 @@ export function Home() {
   if (!manifests) {
     return (
       <div className="home">
-        <FloatingCanvas episodeCount={6}>
+        <FloatingCanvas episodeCount={EPISODES.length}>
           <div className="home__loading">LOADING</div>
         </FloatingCanvas>
       </div>
@@ -75,7 +83,7 @@ export function Home() {
               exit={exit}
               onHover={() => !exitingEpisode && setHover({ hoveredSlotId: slot.id, activeEpisodeId: slot.episodeId })}
               onLeave={() => !exitingEpisode && setHover(null)}
-              onClick={() => handleClick(slot.episodeId)}
+              onClick={() => handleClick(slot)}
             />
           );
         })}
