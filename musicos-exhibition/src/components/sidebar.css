@@ -20,6 +20,27 @@
   width: 220px;
 }
 
+/* Lobby (homepage) variant: no background strip, ink text on the cream canvas. */
+.sidebar--lobby {
+  background: transparent;
+  color: #111;
+}
+.sidebar--lobby .sidebar__toggle { color: #888; }
+.sidebar--lobby .sidebar__toggle:hover { color: #111; }
+.sidebar--lobby .sidebar__item { color: #888; }
+.sidebar--lobby .sidebar__item:hover {
+  color: #111;
+  background: rgba(17, 17, 17, 0.05);
+}
+.sidebar--lobby .sidebar__item--active {
+  color: #111;
+  border-left-color: #111;
+}
+.sidebar--lobby .sidebar__title-en { color: #999; }
+.sidebar--lobby .sidebar__item--active .sidebar__title-en { color: #555; }
+.sidebar--lobby .sidebar__anchor { color: #aaa; }
+.sidebar--lobby .sidebar__item--active .sidebar__anchor { color: #888; }
+
 /* Toggle button */
 .sidebar__toggle {
   flex-shrink: 0;

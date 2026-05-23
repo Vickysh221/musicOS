@@ -22,6 +22,33 @@ export function Home() {
     [],
   );
 
+  // Mouse-parallax: covers drift opposite the cursor over empty space. Frozen
+  // while a cover is hovered (the gather offset takes over instead).
+  const [mouse, setMouse] = useState<{ x: number; y: number } | null>(null);
+  const [vp, setVp] = useState(() => ({ w: window.innerWidth, h: window.innerHeight }));
+  const rafRef = useRef<number | null>(null);
+  const pendingMouse = useRef<{ x: number; y: number } | null>(null);
+
+  useEffect(() => {
+    const onResize = () => setVp({ w: window.innerWidth, h: window.innerHeight });
+    window.addEventListener('resize', onResize);
+    return () => {
+      window.removeEventListener('resize', onResize);
+      if (rafRef.current != null) cancelAnimationFrame(rafRef.current);
+    };
+  }, []);
+
+  function handleMouseMove(e: { clientX: number; clientY: number }) {
+    if (hover) return; // frozen while a cover is hovered
+    pendingMouse.current = { x: e.clientX, y: e.clientY };
+    if (rafRef.current == null) {
+      rafRef.current = requestAnimationFrame(() => {
+        rafRef.current = null;
+        if (pendingMouse.current) setMouse(pendingMouse.current);
+      });
+    }
+  }
+
   useEffect(() => {
     let alive = true;
     loadHomeManifest()
@@ -73,11 +100,32 @@ export function Home() {
     ? { titleZh: activeEp.titleZh, anchor: activeEp.anchor, year: activeEp.year }
     : null;
 
+  const hoveredSlot = hover ? SLOTS.find((s) => s.id === hover.hoveredSlotId) ?? null : null;
+
+  // Per-cover translate: gather toward the hovered cover when one is active,
+  // otherwise depth-scaled parallax following the cursor. Zero under reduced motion.
+  function offsetFor(slot: Slot): { x: number; y: number } {
+    if (reducedMotion) return { x: 0, y: 0 };
+    if (hoveredSlot) {
+      if (slot.id === hoveredSlot.id) return { x: 0, y: 0 };
+      return {
+        x: ((hoveredSlot.xPct - slot.xPct) / 100) * vp.w * 0.1,
+        y: ((hoveredSlot.yPct - slot.yPct) / 100) * vp.h * 0.1,
+      };
+    }
+    if (!mouse) return { x: 0, y: 0 };
+    const px = mouse.x / vp.w - 0.5;
+    const py = mouse.y / vp.h - 0.5;
+    const f = (slot.depth + 1) * 16;
+    return { x: -px * f, y: -py * f };
+  }
+
   return (
-    <div className="home">
+    <div className="home" onMouseMove={handleMouseMove}>
       <FloatingCanvas episodeCount={EPISODES.length} activeMeta={activeMeta}>
         {SLOTS.map((slot, i) => {
           const exit: ExitTarget | null = exitingEpisode ? stackTarget(i, SLOTS.length) : null;
+          const offset = offsetFor(slot);
           return (
             <FloatingCover
               key={slot.id}
@@ -85,6 +133,9 @@ export function Home() {
               cover={coverForSlot(slot, manifests, hover)}
               active={hover?.hoveredSlotId === slot.id}
               dimmed={hover !== null}
+              frozen={hover !== null}
+              offsetX={offset.x}
+              offsetY={offset.y}
               reducedMotion={reducedMotion}
               exit={exit}
               onHover={() => !exitingEpisode && setHover({ hoveredSlotId: slot.id, activeEpisodeId: slot.episodeId })}

@@ -32,7 +32,7 @@ export function App() {
 
   return (
     <>
-      <Sidebar currentEpisodeId={episodeId} />
+      <Sidebar currentEpisodeId={episodeId} lobby={episodeId === ''} />
       <div className="app-content">
         <Switch>
           <Route path="/">

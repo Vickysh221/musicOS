@@ -16,6 +16,9 @@ interface Props {
   cover: string;
   active: boolean; // this slot is the hovered one
   dimmed: boolean; // some other slot is hovered
+  frozen: boolean; // a cover is hovered — stop drift across the whole canvas
+  offsetX: number; // px translate: mouse parallax (idle) or gather pull (hover)
+  offsetY: number;
   reducedMotion: boolean;
   exit: ExitTarget | null; // ep1/ep4 stacking exit target, or null
   onHover: () => void;
@@ -28,6 +31,9 @@ export function FloatingCover({
   cover,
   active,
   dimmed,
+  frozen,
+  offsetX,
+  offsetY,
   reducedMotion,
   exit,
   onHover,
@@ -47,7 +53,7 @@ export function FloatingCover({
   const className = [
     'floating-cover',
     `floating-cover--depth-${slot.depth}`,
-    reducedMotion || exit ? 'floating-cover--still' : '',
+    reducedMotion || exit || frozen ? 'floating-cover--still' : '',
     dimmed && !active ? 'floating-cover--dimmed' : '',
   ]
     .filter(Boolean)
@@ -68,11 +74,14 @@ export function FloatingCover({
       className={className}
       style={style}
       initial={false}
-      // left/top tween directly (not via layout prop) — fine for a one-shot exit collapse
+      // left/top = base slot position (tweened for the exit collapse); x/y = the
+      // parallax/gather translate offset layered on top via transform.
       animate={{
         left: exit ? `${exit.xPct}%` : `${slot.xPct}%`,
         top: exit ? `${exit.yPct}%` : `${slot.yPct}%`,
-        scale: active ? 1.12 : 1,
+        x: exit ? 0 : offsetX,
+        y: exit ? 0 : offsetY,
+        scale: active ? 1.14 : 1,
         rotate: exit ? exit.rotateDeg : 0,
       }}
       transition={HOVER_SPRING}

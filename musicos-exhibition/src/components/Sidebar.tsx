@@ -5,15 +5,25 @@ import './sidebar.css';
 
 interface SidebarProps {
   currentEpisodeId: string;
+  /** Lobby (homepage) variant: no background, ink text, hover-to-expand. */
+  lobby?: boolean;
 }
 
-export function Sidebar({ currentEpisodeId }: SidebarProps) {
+export function Sidebar({ currentEpisodeId, lobby = false }: SidebarProps) {
   const [open, setOpen] = useState(false);
   const currentEp = EPISODES.find((e) => e.id === currentEpisodeId);
   const epLabel = currentEp ? `EP${String(currentEp.number).padStart(3, '0')}` : '';
 
+  // In lobby mode the list expands on hover rather than via the click toggle.
+  const hoverProps = lobby
+    ? { onMouseEnter: () => setOpen(true), onMouseLeave: () => setOpen(false) }
+    : {};
+
   return (
-    <aside className={`sidebar${open ? ' sidebar--open' : ''}`}>
+    <aside
+      className={`sidebar${open ? ' sidebar--open' : ''}${lobby ? ' sidebar--lobby' : ''}`}
+      {...hoverProps}
+    >
       <button
         type="button"
         className="sidebar__toggle"

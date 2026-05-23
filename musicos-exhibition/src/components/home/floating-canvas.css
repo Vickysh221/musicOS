@@ -1,13 +1,19 @@
 .floating-canvas {
+  /* Reuse ep1's "inkwell" light system (see timeline.css). */
+  --ink-bg: #f6f6f4;
+  --ink-fg: #111;
+  --ink-muted: #888;
   position: fixed;
   inset: 0;
-  background-color: #000;
-  /* Faint dark grid paper. */
+  background-color: var(--ink-bg);
+  /* Faint grid paper — dark hairlines on the cream surface. */
   background-image:
-    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    linear-gradient(rgba(17, 17, 17, 0.045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17, 17, 17, 0.045) 1px, transparent 1px);
   background-size: 32px 32px;
   overflow: hidden;
+  font-family: -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
+  color: var(--ink-fg);
 }
 
 /* Center stage: holds the crosshair at rest, the episode title while active. */
@@ -24,7 +30,7 @@
 }
 
 .floating-canvas__crosshair {
-  color: rgba(255, 255, 255, 0.35);
+  color: rgba(17, 17, 17, 0.4);
   font: 400 18px/1 ui-monospace, 'SF Mono', monospace;
   user-select: none;
 }
@@ -37,13 +43,13 @@
 }
 
 .floating-canvas__title-zh {
-  color: rgba(255, 255, 255, 0.92);
+  color: var(--ink-fg);
   font: 400 30px/1.15 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
   letter-spacing: 0.02em;
 }
 
 .floating-canvas__title-meta {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--ink-muted);
   font: 400 12px/1 ui-monospace, 'SF Mono', monospace;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -51,10 +57,10 @@
 
 .floating-canvas__wordmark {
   position: absolute;
-  left: 28px;
+  left: 72px; /* clear the 52px sidebar gutter */
   top: 22px;
-  color: rgba(255, 255, 255, 0.82);
-  font: 400 20px/1 'PingFang SC', -apple-system, sans-serif;
+  color: var(--ink-fg);
+  font: 500 20px/1 -apple-system, 'Inter', 'Söhne', system-ui, sans-serif;
   letter-spacing: 0.04em;
   pointer-events: none;
 }
@@ -63,7 +69,7 @@
   position: absolute;
   right: 28px;
   top: 24px;
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--ink-muted);
   font: 400 13px/1 ui-monospace, 'SF Mono', monospace;
   letter-spacing: 0.08em;
   pointer-events: none;
