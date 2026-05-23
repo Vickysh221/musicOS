@@ -1,0 +1,42 @@
+.floating-canvas {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  /* Faint dark grid paper. */
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px;
+  overflow: hidden;
+}
+
+.floating-canvas__crosshair {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.35);
+  font: 400 18px/1 ui-monospace, 'SF Mono', monospace;
+  pointer-events: none;
+  user-select: none;
+}
+
+.floating-canvas__wordmark {
+  position: absolute;
+  left: 28px;
+  top: 22px;
+  color: rgba(255, 255, 255, 0.82);
+  font: 400 20px/1 'PingFang SC', -apple-system, sans-serif;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
+
+.floating-canvas__counter {
+  position: absolute;
+  right: 28px;
+  top: 24px;
+  color: rgba(255, 255, 255, 0.5);
+  font: 400 13px/1 ui-monospace, 'SF Mono', monospace;
+  letter-spacing: 0.08em;
+  pointer-events: none;
+}
