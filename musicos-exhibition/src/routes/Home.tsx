@@ -116,7 +116,7 @@ export function Home() {
     if (!mouse) return { x: 0, y: 0 };
     const px = mouse.x / vp.w - 0.5;
     const py = mouse.y / vp.h - 0.5;
-    const f = (slot.depth + 1) * 16;
+    const f = (slot.depth + 1) * 24;
     return { x: -px * f, y: -py * f };
   }
 
