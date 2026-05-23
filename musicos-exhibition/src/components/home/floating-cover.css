@@ -1,12 +1,10 @@
 .floating-cover {
   position: absolute;
-  left: var(--x);
-  top: var(--y);
   width: var(--size, 150px);
   height: var(--size, 150px);
   margin-left: calc(var(--size, 150px) / -2);
   margin-top: calc(var(--size, 150px) / -2);
-  transform-style: preserve-3d;
+  opacity: 1; /* base — depth modifiers below override */
 }
 
 /* Continuous decorative drift — paused under reduced-motion via modifier. */
