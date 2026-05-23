@@ -51,9 +51,10 @@ export function coverForSlot(
   hover: HoverState | null,
 ): string {
   const own = manifests[slot.episodeId];
-  if (!hover) return restingCover(slot, own);
-  if (slot.id === hover.hoveredSlotId) return restingCover(slot, own);
+  if (!own) return '';
+  if (!hover || slot.id === hover.hoveredSlotId) return restingCover(slot, own);
   const active = manifests[hover.activeEpisodeId];
+  if (!active) return restingCover(slot, own);
   return active.trackCovers[slot.previewIndex % active.trackCovers.length] ?? active.anchorCover;
 }
 

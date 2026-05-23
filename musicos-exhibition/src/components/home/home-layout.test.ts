@@ -42,14 +42,25 @@ describe('home-layout', () => {
 
   it('coverForSlot swaps non-hovered slots to the active episode tracklist', () => {
     const hovered = SLOTS[0];
-    const other = SLOTS.find((s) => s.id !== hovered.id)!;
+    const other = SLOTS.find((s) => s.episodeId !== hovered.episodeId)!;
     const hover = { hoveredSlotId: hovered.id, activeEpisodeId: hovered.episodeId };
     expect(coverForSlot(hovered, manifests, hover)).toBe(
       restingCover(hovered, manifests[hovered.episodeId]),
     );
+    const active = manifests[hovered.episodeId];
     expect(coverForSlot(other, manifests, hover)).toBe(
-      manifests[hovered.episodeId].trackCovers[other.previewIndex % 18],
+      active.trackCovers[other.previewIndex % active.trackCovers.length],
     );
+  });
+
+  it('restingCover resolves a numeric resting slot to the indexed track cover', () => {
+    const slot = SLOTS.find((s) => typeof s.resting === 'number')!;
+    const m = manifests[slot.episodeId];
+    expect(restingCover(slot, m)).toBe(m.trackCovers[(slot.resting as number) % m.trackCovers.length]);
+  });
+
+  it('coverForSlot returns empty string when the slot episode is missing from manifests', () => {
+    expect(coverForSlot(SLOTS[0], {}, null)).toBe('');
   });
 
   it('stackTarget converges cards toward center with stagger', () => {
