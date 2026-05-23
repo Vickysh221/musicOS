@@ -1,0 +1,54 @@
+.floating-cover {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size, 150px);
+  height: var(--size, 150px);
+  margin-left: calc(var(--size, 150px) / -2);
+  margin-top: calc(var(--size, 150px) / -2);
+  transform-style: preserve-3d;
+}
+
+/* Continuous decorative drift — paused under reduced-motion via modifier. */
+.floating-cover__drift {
+  width: 100%;
+  height: 100%;
+  animation: floating-cover-drift var(--drift-dur, 18s) ease-in-out var(--drift-delay, 0s) infinite alternate;
+}
+.floating-cover--still .floating-cover__drift {
+  animation: none;
+}
+
+@keyframes floating-cover-drift {
+  from { transform: translate3d(0, 0, 0) rotate(var(--drift-rot, 0deg)); }
+  to   { transform: translate3d(0, -16px, 0) rotate(calc(var(--drift-rot, 0deg) * -1)); }
+}
+
+.floating-cover__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  background: none;
+  border-radius: 3px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.floating-cover__art {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+/* Depth tiers: farther covers sit back (smaller, dimmer). */
+.floating-cover--depth-0 { opacity: 0.78; }
+.floating-cover--depth-1 { opacity: 0.9; }
+.floating-cover--depth-2 { opacity: 1; }
+
+/* When another slot is hovered, previews read slightly recessed. */
+.floating-cover--dimmed { filter: saturate(0.92) brightness(0.92); }
