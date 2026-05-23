@@ -34,10 +34,6 @@ export function FloatingCover({
   onLeave,
   onClick,
 }: Props) {
-  const positionStyle = exit
-    ? { left: `${exit.xPct}%`, top: `${exit.yPct}%` }
-    : { left: `${slot.xPct}%`, top: `${slot.yPct}%` };
-
   // CSS custom properties are not in MotionStyle's strict type under exactOptionalPropertyTypes;
   // double-assert so TypeScript accepts the custom-prop record without error.
   const style = {
@@ -46,7 +42,6 @@ export function FloatingCover({
     '--drift-delay': `${slot.driftDelaySec}s`,
     '--drift-rot': `${slot.rotateDeg}deg`,
     zIndex: active ? 50 : slot.depth + 10,
-    ...positionStyle,
   } as unknown as MotionStyle;
 
   const className = [
@@ -63,6 +58,8 @@ export function FloatingCover({
       className={className}
       style={style}
       animate={{
+        left: exit ? `${exit.xPct}%` : `${slot.xPct}%`,
+        top: exit ? `${exit.yPct}%` : `${slot.yPct}%`,
         scale: active ? 1.12 : 1,
         rotate: exit ? exit.rotateDeg : 0,
       }}

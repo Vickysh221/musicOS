@@ -1,0 +1,13 @@
+.home {
+  position: fixed;
+  inset: 0;
+}
+.home__loading {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.4);
+  font: 400 13px/1 ui-monospace, 'SF Mono', monospace;
+  letter-spacing: 0.1em;
+}
