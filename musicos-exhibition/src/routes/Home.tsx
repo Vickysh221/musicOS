@@ -23,10 +23,14 @@ export function Home() {
 
   useEffect(() => {
     let alive = true;
-    loadHomeManifest().then((list) => {
-      if (!alive) return;
-      setManifests(Object.fromEntries(list.map((m) => [m.episodeId, m])));
-    });
+    loadHomeManifest()
+      .then((list) => {
+        if (!alive) return;
+        setManifests(Object.fromEntries(list.map((m) => [m.episodeId, m])));
+      })
+      .catch((err) => {
+        if (alive) console.error('Failed to load home manifest', err);
+      });
     return () => {
       alive = false;
       if (navTimer.current) window.clearTimeout(navTimer.current);
@@ -37,6 +41,7 @@ export function Home() {
     if (exitingEpisode) return;
     if (STACK_EPISODES.has(episodeId) && !reducedMotion) {
       // keep `hover` set so the clicked episode's tracklist covers are what collapse
+      // not reset: Home unmounts as soon as setLocation routes away after the collapse
       setExitingEpisode(episodeId);
       navTimer.current = window.setTimeout(() => setLocation(`/${episodeId}`), STACK_DURATION_MS);
     } else {

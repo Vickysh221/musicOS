@@ -57,6 +57,8 @@ export function FloatingCover({
     <motion.div
       className={className}
       style={style}
+      initial={false}
+      // left/top tween directly (not via layout prop) — fine for a one-shot exit collapse
       animate={{
         left: exit ? `${exit.xPct}%` : `${slot.xPct}%`,
         top: exit ? `${exit.yPct}%` : `${slot.yPct}%`,
