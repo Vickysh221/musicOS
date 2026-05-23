@@ -1,4 +1,5 @@
-import { Redirect, Route, Switch, useRoute } from 'wouter';
+import { Route, Switch, useRoute } from 'wouter';
+import { Home } from './routes/Home.js';
 import { Timeline } from './routes/Timeline.js';
 import { TrackDetail } from './routes/TrackDetail.js';
 import { EpisodeFocal } from './routes/EpisodeFocal.js';
@@ -33,7 +34,7 @@ export function App() {
       <div className="app-content">
         <Switch>
           <Route path="/">
-            <Redirect to="/ep1" />
+            <Home />
           </Route>
           <Route path="/ep1">
             <Timeline episodeId="ep1" />
