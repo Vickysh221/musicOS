@@ -16,7 +16,8 @@
   color: var(--ink-fg);
 }
 
-/* Center stage: holds the crosshair at rest, the episode title while active. */
+/* Center stage: holds the crosshair at rest, the episode title while active.
+   Sits above the panning cover field so the title stays legible. */
 .floating-canvas__center {
   position: absolute;
   left: 50%;
@@ -27,6 +28,7 @@
   justify-content: center;
   pointer-events: none;
   text-align: center;
+  z-index: 60;
 }
 
 .floating-canvas__crosshair {
