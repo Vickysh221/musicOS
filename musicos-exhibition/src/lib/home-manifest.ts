@@ -1,4 +1,4 @@
-import type { Exhibit } from '../types.js';
+import type { Exhibit, TrackExhibit } from '../types.js';
 import { EPISODES } from './episodes.js';
 import { loadExhibition } from './load-exhibition.js';
 
@@ -11,12 +11,8 @@ export interface EpisodeManifest {
   trackCovers: string[];
 }
 
-function isTrackWithCover(e: Exhibit): e is Exhibit & { album_cover_url: string } {
-  return (
-    (e as { kind?: string }).kind === 'track' &&
-    typeof (e as { album_cover_url?: unknown }).album_cover_url === 'string' &&
-    ((e as { album_cover_url: string }).album_cover_url).length > 0
-  );
+function isTrackWithCover(e: Exhibit): e is TrackExhibit {
+  return e.kind === 'track' && e.album_cover_url !== null && e.album_cover_url.length > 0;
 }
 
 export function buildEpisodeManifest(episodeId: string, exhibits: Exhibit[]): EpisodeManifest {
@@ -28,11 +24,11 @@ export function buildEpisodeManifest(episodeId: string, exhibits: Exhibit[]): Ep
     .slice()
     .sort((a, b) => a.position - b.position);
 
-  const trackCovers = tracks.map((t) => t.album_cover_url);
+  const trackCovers = tracks.map((t) => t.album_cover_url as string);
   const anchor =
-    tracks.find((t) => (t as { exhibit_type?: string }).exhibit_type === 'anchor') ??
-    tracks.find((t) => (t as { is_base_node?: boolean }).is_base_node);
-  const anchorCover = anchor?.album_cover_url ?? trackCovers[0] ?? '';
+    tracks.find((t) => t.exhibit_type === 'anchor') ??
+    tracks.find((t) => t.is_base_node);
+  const anchorCover = (anchor?.album_cover_url as string) ?? trackCovers[0] ?? '';
 
   return {
     episodeId,

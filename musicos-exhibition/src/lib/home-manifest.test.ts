@@ -33,4 +33,12 @@ describe('buildEpisodeManifest', () => {
     const m = buildEpisodeManifest('ep2', [track({ position: 5 }), track({ position: 4 })]);
     expect(m.anchorCover).toBe('/covers/4.jpg');
   });
+
+  it('uses is_base_node track as anchor when no anchor exhibit_type exists', () => {
+    const m = buildEpisodeManifest('ep3', [
+      track({ position: 2, is_base_node: true, album_cover_url: '/covers/base.jpg' }),
+      track({ position: 1 }),
+    ]);
+    expect(m.anchorCover).toBe('/covers/base.jpg');
+  });
 });
