@@ -53,6 +53,16 @@ export function FloatingCover({
     .filter(Boolean)
     .join(' ');
 
+  // Cover swap = a vertical-axis (rotateY) card flip: the old face turns edge-on
+  // while the new face turns in. Staggered by slot so the swap ripples across the
+  // canvas. Reduced motion collapses it to an instant opacity swap.
+  const flipTransition: Transition = reducedMotion
+    ? { duration: 0 }
+    : { duration: 0.42, ease: [0.4, 0, 0.2, 1], delay: (slot.previewIndex % 14) * 0.018 };
+  const flipInitial = reducedMotion ? { opacity: 0 } : { rotateY: -90, opacity: 0 };
+  const flipAnimate = reducedMotion ? { opacity: 1 } : { rotateY: 0, opacity: 1 };
+  const flipExit = reducedMotion ? { opacity: 0 } : { rotateY: 90, opacity: 0 };
+
   return (
     <motion.div
       className={className}
@@ -76,17 +86,17 @@ export function FloatingCover({
           onMouseLeave={onLeave}
           onClick={onClick}
         >
-          <AnimatePresence initial={false} mode="popLayout">
+          <AnimatePresence initial={false}>
             <motion.img
               key={cover}
               className="floating-cover__art"
               src={assetUrl(cover)}
               alt=""
               draggable={false}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              transition={{ duration: 0.3 }}
+              initial={flipInitial}
+              animate={flipAnimate}
+              exit={flipExit}
+              transition={flipTransition}
             />
           </AnimatePresence>
         </button>

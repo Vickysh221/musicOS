@@ -32,6 +32,8 @@
   background: none;
   border-radius: 3px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+  /* Depth for the rotateY cover-swap flip (see FloatingCover). */
+  perspective: 700px;
 }
 
 .floating-cover__art {
@@ -41,6 +43,8 @@
   height: 100%;
   object-fit: cover;
   border-radius: 3px;
+  /* Hide the mirrored back while a face rotates past 90° during the flip. */
+  backface-visibility: hidden;
 }
 
 /* Depth tiers: farther covers sit back (smaller, dimmer). */

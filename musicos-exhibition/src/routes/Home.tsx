@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useLocation } from 'wouter';
-import { FloatingCanvas } from '../components/home/FloatingCanvas.js';
+import { FloatingCanvas, type EpisodeBadge } from '../components/home/FloatingCanvas.js';
 import { FloatingCover, type ExitTarget } from '../components/home/FloatingCover.js';
 import { SLOTS, coverForSlot, stackTarget, type HoverState, type Slot } from '../components/home/home-layout.js';
 import { loadHomeManifest, type EpisodeManifest } from '../lib/home-manifest.js';
@@ -67,9 +67,15 @@ export function Home() {
     );
   }
 
+  const activeEpisodeId = exitingEpisode ?? hover?.activeEpisodeId ?? null;
+  const activeEp = activeEpisodeId ? EPISODES.find((e) => e.id === activeEpisodeId) : undefined;
+  const activeMeta: EpisodeBadge | null = activeEp
+    ? { titleZh: activeEp.titleZh, anchor: activeEp.anchor, year: activeEp.year }
+    : null;
+
   return (
     <div className="home">
-      <FloatingCanvas episodeCount={6}>
+      <FloatingCanvas episodeCount={EPISODES.length} activeMeta={activeMeta}>
         {SLOTS.map((slot, i) => {
           const exit: ExitTarget | null = exitingEpisode ? stackTarget(i, SLOTS.length) : null;
           return (

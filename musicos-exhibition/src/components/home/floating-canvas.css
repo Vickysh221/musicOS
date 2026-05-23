@@ -10,15 +10,43 @@
   overflow: hidden;
 }
 
-.floating-canvas__crosshair {
+/* Center stage: holds the crosshair at rest, the episode title while active. */
+.floating-canvas__center {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  text-align: center;
+}
+
+.floating-canvas__crosshair {
   color: rgba(255, 255, 255, 0.35);
   font: 400 18px/1 ui-monospace, 'SF Mono', monospace;
-  pointer-events: none;
   user-select: none;
+}
+
+.floating-canvas__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.floating-canvas__title-zh {
+  color: rgba(255, 255, 255, 0.92);
+  font: 400 30px/1.15 'PingFang SC', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  letter-spacing: 0.02em;
+}
+
+.floating-canvas__title-meta {
+  color: rgba(255, 255, 255, 0.5);
+  font: 400 12px/1 ui-monospace, 'SF Mono', monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
 
 .floating-canvas__wordmark {
